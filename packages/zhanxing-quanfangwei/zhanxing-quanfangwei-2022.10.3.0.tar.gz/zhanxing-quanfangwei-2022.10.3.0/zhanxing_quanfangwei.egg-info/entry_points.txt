@@ -1,0 +1,4 @@
+[console_scripts]
+ZhanxingQuanfangwei = ZhanxingQuanfangwei.__main__:main
+zhanxing-quanfangwei = ZhanxingQuanfangwei.__main__:main
+
