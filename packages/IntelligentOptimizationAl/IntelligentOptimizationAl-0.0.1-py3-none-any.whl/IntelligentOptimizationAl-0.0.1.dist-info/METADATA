@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: IntelligentOptimizationAl
+Version: 0.0.1
+Summary: Intelligent optimization algorithm,PSO、GWO
+Author: inswsi
+Author-email: 2471364272@qq.com
+Requires: numpy
+
