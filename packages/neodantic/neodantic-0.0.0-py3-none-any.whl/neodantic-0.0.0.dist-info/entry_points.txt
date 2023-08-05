@@ -1,0 +1,3 @@
+[console_scripts]
+neodantic=neodantic.__main__:main
+
