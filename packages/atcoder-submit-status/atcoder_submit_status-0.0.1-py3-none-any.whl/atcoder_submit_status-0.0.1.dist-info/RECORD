@@ -1,0 +1,16 @@
+atcoder_submit_status/__about__.py,sha256=6ShsEY25IzB7fq-S-WsCOM5hcJBNK4rUHfdJsdGMrIs,337
+atcoder_submit_status/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atcoder_submit_status/cli.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atcoder_submit_status/fetch.py,sha256=F1PcJTazYVEkFRykq0ebVmn5F3D6DTav6GHIVxivarA,3890
+atcoder_submit_status/log_formatter.py,sha256=T_k7dlxqEcG6PQiHi6V2Yq3BE0pNzZwLWrbfIZVZRE4,2302
+atcoder_submit_status/login.py,sha256=-T5BzXwIoj_yWNuwYphIsR75govEuAYnctY42t_t06k,1782
+atcoder_submit_status/logout.py,sha256=7KvIxjcaWBnv0HQ_hZtfch8JdI3g38BpxrH6V4DEM68,1194
+atcoder_submit_status/main.py,sha256=Z0oAlNSOB7clNR-VwkdwQZ6h9MQP5aEVE3S-6PCoPiA,3330
+atcoder_submit_status/service.py,sha256=wzHqpTzmHH17gWbIRD69a4k_R8bjj7QVB5HoiwUc6h0,8883
+atcoder_submit_status/utils.py,sha256=E3hz6qN3k54qZEibOKC-DCezprdqySRgtko35lkGyTo,3407
+atcoder_submit_status/watch.py,sha256=_JK9pnWDU990r-MamfWqOLrmAcfuzP3xAdWaDg6AXLE,3206
+atcoder_submit_status-0.0.1.dist-info/METADATA,sha256=DnqQ2Sk2GY1xUSxknmQI70kHp6P69BN3V8GOperL9MM,5049
+atcoder_submit_status-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+atcoder_submit_status-0.0.1.dist-info/entry_points.txt,sha256=OmN3sBLnZ1-I3NkPYr_o5v5XdbQxKuIIYAwzVN1LzTk,57
+atcoder_submit_status-0.0.1.dist-info/top_level.txt,sha256=mXUXnKk_LKWMsc_UxLM5dzXqtLjhZCVFJDAQja0dUqE,22
+atcoder_submit_status-0.0.1.dist-info/RECORD,,
