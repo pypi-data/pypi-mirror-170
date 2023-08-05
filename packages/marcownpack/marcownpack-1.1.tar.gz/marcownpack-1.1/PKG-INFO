@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: marcownpack
+Version: 1.1
+Summary: oh hi lolz
+Home-page: https://github.com/imadethisaccountsoicanmakeanissue/marcownpack
+Author: Marc Thompson
+Author-email: taoun11ttu@outlook.com
+License: BSD-2-Clause
+Project-URL: Documentation, https://github.com/imadethisaccountsoicanmakeanissue/marcownpack/wiki
+Description: Marc's cool package
+        ==============================================================================
+        
+        Package of the cool!!!!
+        
+        
+        Changes
+        =======
+        
+        
+        1.0 - 2017-09-18
+        ----------------
+        
+        - Initial release.
+        - Fact function, Variable name function.
+        
+Keywords: my,package,keywords
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: docs
