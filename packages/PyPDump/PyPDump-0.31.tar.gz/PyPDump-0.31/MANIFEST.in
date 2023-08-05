@@ -1,0 +1,4 @@
+include PyPDump/requirements.txt
+include PyPDump/thirdparty.json
+include PyPDump/README.MD
+include PyPDump/LICENSE
