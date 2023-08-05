@@ -1,0 +1,10 @@
+
+[dev]
+pytest
+pytest-cov
+coverage
+tox
+
+[doc]
+sphinx
+furo
