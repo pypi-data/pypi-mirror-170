@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: minikservices
+Version: 0.0.1
+Summary: App to start, stop and view minikube services easily.
+Home-page: https://github.com/dszortyka/minikservices
+Author: Daniel Szortyka
+Author-email: daniel.szortyka@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/dszortyka/minikservices/issues
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Source, https://github.com/dszortyka/minikservices/
+Keywords: minikube,k8s,minikube services
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
