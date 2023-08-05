@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+twarc_edits.py
+twarc_edits.egg-info/PKG-INFO
+twarc_edits.egg-info/SOURCES.txt
+twarc_edits.egg-info/dependency_links.txt
+twarc_edits.egg-info/entry_points.txt
+twarc_edits.egg-info/requires.txt
+twarc_edits.egg-info/top_level.txt
