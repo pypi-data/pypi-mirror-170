@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: iterkit
+Version: 1.0.0
+Summary: lookout
+License: MIT
+Author: wayfaring-stranger
+Author-email: zw6p226m@duck.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+## Iterkit
+
+Helpful iter methods
