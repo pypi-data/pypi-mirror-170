@@ -1,0 +1,4 @@
+[console_scripts]
+TancebangdeQianguAomi = TancebangdeQianguAomi.__main__:main
+tancebangde-qiangu-aomi = TancebangdeQianguAomi.__main__:main
+
