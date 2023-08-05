@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: detoxifier
+Version: 0.1
+Summary: Detoxifier library identifies toxic words in a query and detoxified it by replacing toxic words.
+Home-page: UNKNOWN
+Author: Sukanthen.SS
+Author-email: sukanthen1999@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests (==2.25.1)
+
+
+#  Detoxifier
+### " For a Safe, Secure and Positivity enriched Digital World "
+
+### 1) detoxify_text()
+
+Given a input query with toxic comments, this library will exactly spot the toxic words and replace the letters of that particular word with asterisk (*). (eg: moron --> *****) 
+
+
+```console
+from detoxifier import detoxify_text
+
+# Dialogue from American Series Silicon Valley (Season 1)
+input_text = "Hello, Richard Hendricks. I'm a total fucking retard."
+
+detoxify_text(input_text)
+
+```
+
+Output
+```console
+Hello, Richard Hendricks. I'm a total ******* ******."
+```
+
+### 2) check_textual_toxicity()
+
+Given a input query with toxic comments, this library will check for the presence of toxic words in the query.
+
+
+```console
+from detoxifier import check_textual_toxicity
+
+# Dialogue from American Series Silicon Valley (Season 1)
+input_text = "Hello, Richard Hendricks. I'm a total fucking retard."
+
+check_textual_toxicity(input_text)
+
+```
+
+Output
+```console
+1
+## returns 1 if toxic word is present else it returns 0. ##
+```
+
