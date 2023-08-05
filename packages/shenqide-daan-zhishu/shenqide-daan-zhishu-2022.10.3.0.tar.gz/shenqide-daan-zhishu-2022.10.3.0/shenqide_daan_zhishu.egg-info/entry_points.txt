@@ -1,0 +1,4 @@
+[console_scripts]
+ShenqideDaanZhishu = ShenqideDaanZhishu.__main__:main
+shenqide-daan-zhishu = ShenqideDaanZhishu.__main__:main
+
