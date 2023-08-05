@@ -1,0 +1,4 @@
+[console_scripts]
+XiangyuzaiYinduZhanxing = XiangyuzaiYinduZhanxing.__main__:main
+xiangyuzai-yindu-zhanxing = XiangyuzaiYinduZhanxing.__main__:main
+
