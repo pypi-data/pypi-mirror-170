@@ -1,0 +1,4 @@
+[console_scripts]
+ZhiwuJingyouYangsheng = ZhiwuJingyouYangsheng.__main__:main
+zhiwu-jingyou-yangsheng = ZhiwuJingyouYangsheng.__main__:main
+
