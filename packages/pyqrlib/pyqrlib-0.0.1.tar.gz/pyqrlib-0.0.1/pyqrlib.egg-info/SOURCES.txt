@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pyqrlib/__init__.py
+pyqrlib/app.py
+pyqrlib.egg-info/PKG-INFO
+pyqrlib.egg-info/SOURCES.txt
+pyqrlib.egg-info/dependency_links.txt
+pyqrlib.egg-info/top_level.txt

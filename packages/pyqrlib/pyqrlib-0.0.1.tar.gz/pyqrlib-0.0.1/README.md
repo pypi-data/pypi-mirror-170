@@ -1,0 +1,1 @@
+Pyqrcode will help you to create qr codes.
