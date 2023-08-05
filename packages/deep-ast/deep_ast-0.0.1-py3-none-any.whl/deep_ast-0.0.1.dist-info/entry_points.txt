@@ -1,0 +1,3 @@
+[console_scripts]
+deep-ast=deep_ast.app:cli
+
