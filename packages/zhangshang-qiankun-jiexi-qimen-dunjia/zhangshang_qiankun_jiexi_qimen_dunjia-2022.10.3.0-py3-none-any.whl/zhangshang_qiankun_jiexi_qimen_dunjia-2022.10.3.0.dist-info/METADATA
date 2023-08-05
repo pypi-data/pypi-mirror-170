@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: zhangshang-qiankun-jiexi-qimen-dunjia
+Version: 2022.10.3.0
+Summary: 掌上乾坤解析奇门遁甲
+Home-page: https://github.com/apachecn/zhangshang-qiankun-jiexi-qimen-dunjia
+Author: ApacheCN
+Author-email: apachecn@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Documentation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# 掌上乾坤解析奇门遁甲
+
+## 下载
+
+### Docker
+
+```
+docker pull apachecn0/zhangshang-qiankun-jiexi-qimen-dunjia
+docker run -tid -p <port>:80 apachecn0/zhangshang-qiankun-jiexi-qimen-dunjia
+# 访问 http://localhost:{port} 查看文档
+```
+
+### PYPI
+
+```
+pip install zhangshang-qiankun-jiexi-qimen-dunjia
+zhangshang-qiankun-jiexi-qimen-dunjia <port>
+# 访问 http://localhost:{port} 查看文档
+```
+
+### NPM
+
+```
+npm install -g zhangshang-qiankun-jiexi-qimen-dunjia
+zhangshang-qiankun-jiexi-qimen-dunjia <port>
+# 访问 http://localhost:{port} 查看文档
+```
+

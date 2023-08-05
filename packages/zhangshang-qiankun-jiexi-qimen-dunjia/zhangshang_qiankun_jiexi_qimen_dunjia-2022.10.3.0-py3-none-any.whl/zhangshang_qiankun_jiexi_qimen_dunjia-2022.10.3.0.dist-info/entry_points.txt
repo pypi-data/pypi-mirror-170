@@ -1,0 +1,4 @@
+[console_scripts]
+ZhangshangQiankunJiexiQimenDunjia = ZhangshangQiankunJiexiQimenDunjia.__main__:main
+zhangshang-qiankun-jiexi-qimen-dunjia = ZhangshangQiankunJiexiQimenDunjia.__main__:main
+
