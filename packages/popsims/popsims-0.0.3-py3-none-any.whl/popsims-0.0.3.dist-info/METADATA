@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: popsims
+Version: 0.0.3
+Summary: Population simulation code
+License-File: LICENSE
+Requires-Dist: astropy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
