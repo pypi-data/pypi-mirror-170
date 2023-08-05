@@ -1,0 +1,4 @@
+[console_scripts]
+TaluoQuanshuXiudingban = TaluoQuanshuXiudingban.__main__:main
+taluo-quanshu-xiudingban = TaluoQuanshuXiudingban.__main__:main
+
