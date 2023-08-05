@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: fat-wheel
+Version: 1.5.5b0
+Summary: generate fat wheel similar to fat jar in java
+Author: Abhinav Jain
+Author-email: ajchirawa@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: MarkupSafe (==2.1.1)
+Requires-Dist: pkginfo (==1.8.3)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: wheel
+
+=========
+Fat Wheel
+=========
+
+.. image:: https://static.pepy.tech/personalized-badge/fat-wheel?period=month&units=international_system&left_color=black&right_color=orange&left_text=Downloads
+ :target: https://pypi.org/project/fat-wheel/
+
+Fat Wheel are basically wheels which include dependencies inside whl/tar/egg distribution
+similar in java we build a fat jar and run app from jar which have deps in inside the jar
+Fat Wheel try to solve to problems.
+
+1. you just build the fat-wheel and install and run it
+2. as dist have same deps inside when built and same deps install on use site
+3. share code and install deps when have no internet connection(which is not a problem today ;-))
+
+
+Install
+*******
+
+.. code-block:: text
+
+    pip install fat-wheel
+
+
+Usage
+*****
+
+1. BUILD FAT WHEEL
+
+- project_root_dir_path : required
+- pkg_name : required for fat wheel generation
+- version: optional/ default use setup.py version
+
+.. code-block:: text
+
+    fat <project_root_dir_path> --pkg_name <pkg.name> --version 1.0.0
+    <OR Shortcut>
+    fat <project_root_dir_path> -pn <pkg.name> --v 1.0.0
+
+- installation of fat-wheel cmd
+    - pip install your-fat-wheel
+    - install-<name-in-setup>
+    - above cmd will install deps from local deps dir in your pkg
+
+- behind the scene for debugging
+    - read fat-wheel.yaml to specify to files/folder to include <will add files/folder to include from .gitignore>
+    - it will create project copy in build dir with dir name <project-name>-v<version>-<timestamp>
+    - find fat wheel in dist/<version>/ folder
+    - find deps folder in which contain all dowloaded deps and runner.py which install these deps
+    - take a look at updated setup.py
+
+
+2. Build Options available
+
+::
+
+    -pn PKG_NAME,
+    --pkg_name PKG_NAME
+                          project pkg name (example|my.utils|my)
+    -v VERSION,
+    --version VERSION
+                          set build version
+    -fb, --fat-build      create fat  source dist with all dependencies
+    -fw, --fat-wheel      build fat wheel with all dependencies
+
+    < --pkg_name, --version only work for fat option>
+
+    -b, --build           build source dist without dependencies
+    -w, --wheel           build wheel file without dependencies
+    -e, --egg             build egg file without dependencies
+
+
+fat-wheel.yaml
+**************
+
+::
+
+    include:
+      - fat_wheel
+      - setup.py
+      - requirements.txt
+      - doc
+    <sub folder also included>
+    <not supported below options>
+    pkg_name: fat_wheel
+    version: 1.2.2
+    build: wheel
+
+
+not supported yet
+*****************
+1. currently only support flat-layout means root pkg in project root dir
+
+::
+
+    project-root-dir
+     |
+     |--pkg
+     |   |--__init__.py
+     |   |....
+     |....
+
+
+2. fat egg file able to build error in install
+3. ***still in development may or may not support it***
