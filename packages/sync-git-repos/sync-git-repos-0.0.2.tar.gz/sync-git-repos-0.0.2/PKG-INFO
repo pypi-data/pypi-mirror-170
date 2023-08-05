@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sync-git-repos
+Version: 0.0.2
+Summary: Command for syncing git repos
+Author: Anton Gorinenko
+Author-email: anton.gorinenko@gmail.com
+Keywords: python,utils,git
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+See https://github.com/agorinenko/sync-git-repos
