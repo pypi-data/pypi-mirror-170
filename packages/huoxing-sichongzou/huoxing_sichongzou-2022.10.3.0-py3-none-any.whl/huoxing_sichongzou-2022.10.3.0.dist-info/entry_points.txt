@@ -1,0 +1,4 @@
+[console_scripts]
+HuoxingSichongzou = HuoxingSichongzou.__main__:main
+huoxing-sichongzou = HuoxingSichongzou.__main__:main
+
