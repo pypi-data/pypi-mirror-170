@@ -1,0 +1,4 @@
+[console_scripts]
+ZhanxingKantianxia = ZhanxingKantianxia.__main__:main
+zhanxing-kantianxia = ZhanxingKantianxia.__main__:main
+
