@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+fireworks/__init__.py
+fireworks_ai.egg-info/PKG-INFO
+fireworks_ai.egg-info/SOURCES.txt
+fireworks_ai.egg-info/dependency_links.txt
+fireworks_ai.egg-info/top_level.txt
