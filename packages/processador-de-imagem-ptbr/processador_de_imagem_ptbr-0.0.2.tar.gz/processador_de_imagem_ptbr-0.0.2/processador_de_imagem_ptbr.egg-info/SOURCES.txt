@@ -1,0 +1,14 @@
+README.md
+setup.py
+processador_de_imagem_ptbr/__init__.py
+processador_de_imagem_ptbr.egg-info/PKG-INFO
+processador_de_imagem_ptbr.egg-info/SOURCES.txt
+processador_de_imagem_ptbr.egg-info/dependency_links.txt
+processador_de_imagem_ptbr.egg-info/requires.txt
+processador_de_imagem_ptbr.egg-info/top_level.txt
+processador_de_imagem_ptbr/processador/__init__.py
+processador_de_imagem_ptbr/processador/combinacao.py
+processador_de_imagem_ptbr/processador/transformacao.py
+processador_de_imagem_ptbr/utilidades/__init__.py
+processador_de_imagem_ptbr/utilidades/io.py
+processador_de_imagem_ptbr/utilidades/plot.py
