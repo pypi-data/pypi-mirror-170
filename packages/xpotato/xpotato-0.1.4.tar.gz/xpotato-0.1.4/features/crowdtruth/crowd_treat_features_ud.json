@@ -1,0 +1,150 @@
+{
+    "TREAT": [
+        [
+            [
+                "(u_178 / give  :auxCOLONpass (u_18 / be))"
+            ],
+            [],
+            "TREAT"
+        ],
+        [
+            [
+                "(u_14 / yyy  :case (u_11 / with)  :nmod-of (u_80 / treatment))"
+            ],
+            [],
+            "TREAT"
+        ],
+        [
+            [
+                "(u_373 / therapy  :case (u_25 / of))"
+            ],
+            [],
+            "TREAT"
+        ],
+        [
+            [
+                "(u_1 / yyy :.* (u_12 / xxx  :case (u_91 / for)))"
+            ],
+            [],
+            "TREAT"
+        ],
+        [
+            [
+                "(u_332 / reduce  :obj (u_12 / xxx))"
+            ],
+            [],
+            "TREAT"
+        ],
+        [
+            [
+                "(u_1 / xxx :.* (u_12 / receive  :.* (u_91 / yyy)))"
+            ],
+            [],
+            "TREAT"
+        ],
+        [
+            [
+                "(u_1 / treat :.* (u_2 / xxx))"
+            ],
+            [],
+            "TREAT"
+        ],
+        [
+            [
+                "(u_1 / treat :obl (u_2 / yyy :case (u_3 / .*)))"
+            ],
+            [],
+            "TREAT"
+        ],
+        [
+            [
+                "(u_1 / alleviate)"
+            ],
+            [],
+            "TREAT"
+        ],
+        [
+            [
+                "(u_1 / treatment :.* (u_2 / xxx))"
+            ],
+            [
+                "(u_1 / cause :obl (u_2 / yyy :case (u_3 / by)))"
+            ],
+            "TREAT"
+        ],
+        [
+            [
+                "(u_332 / relieve  :obj (u_12 / xxx))"
+            ],
+            [],
+            "TREAT"
+        ],
+        [
+            [
+                "(u_332 / prevent.*  :.* (u_12 / xxx))"
+            ],
+            [
+                "(u_1 / cause :obl (u_2 / yyy :case (u_3 / by)))"
+            ],
+            "TREAT"
+        ]
+    ],
+    "CAUSE": [
+        [
+            [
+                "(u_1 / cause :nsubj|obl (u_2 / yyy))"
+            ],
+            [],
+            "CAUSE"
+        ],
+        [
+            [
+                "(u_1 / cause :.* (u_2 / .* :conj (u_3 / yyy)))"
+            ],
+            [],
+            "CAUSE"
+        ],
+        [
+            [
+                "(u_1 / cause :nsubjCOLONpass|obj (u_2 / xxx))"
+            ],
+            [],
+            "CAUSE"
+        ],
+        [
+            [
+                "(u_1 / yyy  :case (u_731 / due  :fixed (u_28 / to)))"
+            ],
+            [],
+            "CAUSE"
+        ],
+        [
+            [
+                "(u_12 / xxx  :acl (u_144 / cause)  :nmod-of (u_18 / treatment))"
+            ],
+            [],
+            "CAUSE"
+        ],
+        [
+            [
+                "(u_1 / raise  :.* (u_731 / risk  :.* (u_28 / xxx)))"
+            ],
+            [],
+            "CAUSE"
+        ],
+        [
+            [
+                "(u_1 / yyy :.* (u_2 / .* :nmod (u_3 / xxx)))"
+            ],
+            [],
+            "CAUSE"
+        ],
+        [
+            [
+                "(u_1 / yyy :manifestation|mechanism|cause|history|presence|YYY|result|fiber (u_2 / manifestation|mechanism|cause|history|presence|YYY|result|fiber :nmod (u_3 / xxx)))"
+            ],
+            [],
+            "CAUSE"
+        ]
+    ]
+}
