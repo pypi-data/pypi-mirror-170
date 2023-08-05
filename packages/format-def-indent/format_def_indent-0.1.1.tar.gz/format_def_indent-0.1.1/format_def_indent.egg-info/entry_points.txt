@@ -1,0 +1,2 @@
+[console_scripts]
+format-def-indent = format_def_indent._main:main
