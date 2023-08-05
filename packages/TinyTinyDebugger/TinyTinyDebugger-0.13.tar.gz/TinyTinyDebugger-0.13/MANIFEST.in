@@ -1,0 +1,3 @@
+include TinyTinyDebugger/requirements.txt
+include TinyTinyDebugger/thirdparty.json
+include TinyTinyDebugger/README.MD
