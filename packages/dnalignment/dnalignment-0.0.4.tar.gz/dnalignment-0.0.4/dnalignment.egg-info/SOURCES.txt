@@ -1,0 +1,6 @@
+README.md
+setup.py
+dnalignment.egg-info/PKG-INFO
+dnalignment.egg-info/SOURCES.txt
+dnalignment.egg-info/dependency_links.txt
+dnalignment.egg-info/top_level.txt
