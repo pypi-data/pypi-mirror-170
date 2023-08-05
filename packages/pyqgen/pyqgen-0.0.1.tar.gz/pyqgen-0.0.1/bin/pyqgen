@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+import pyqgen
+import sys
+
+sys.exit(pyqgen.main())
