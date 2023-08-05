@@ -1,0 +1,3 @@
+[console_scripts]
+demo-example-package=example_package:main
+

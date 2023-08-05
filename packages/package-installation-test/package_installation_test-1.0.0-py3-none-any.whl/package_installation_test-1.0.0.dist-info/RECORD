@@ -1,0 +1,6 @@
+example_package/__init__.py,sha256=CTlYvQCluTaaYR-nEIFgqeyitVOsaAMlgcDNGDhKj1s,233
+example_package/__main__.py,sha256=4S9cRX4jOVjba8TPOKI3W8xU6s93lE-NzM1H2bu4hA0,107
+package_installation_test-1.0.0.dist-info/entry_points.txt,sha256=Z8zn1JE1cmJvIXvy-xprv5uq-EKVckmwOZEChS9t_tA,61
+package_installation_test-1.0.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+package_installation_test-1.0.0.dist-info/METADATA,sha256=qzkzLqh5Df_lQS0VlZ2JizKy8lz2wo8O4IEYv2Sxab0,3104
+package_installation_test-1.0.0.dist-info/RECORD,,
