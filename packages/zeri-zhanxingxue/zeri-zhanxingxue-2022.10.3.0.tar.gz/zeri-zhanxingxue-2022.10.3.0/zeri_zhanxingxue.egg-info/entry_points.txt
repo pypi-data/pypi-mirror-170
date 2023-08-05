@@ -1,0 +1,4 @@
+[console_scripts]
+ZeriZhanxingxue = ZeriZhanxingxue.__main__:main
+zeri-zhanxingxue = ZeriZhanxingxue.__main__:main
+
