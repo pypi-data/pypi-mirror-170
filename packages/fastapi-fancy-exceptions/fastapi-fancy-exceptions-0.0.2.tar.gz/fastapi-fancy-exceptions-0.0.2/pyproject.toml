@@ -1,0 +1,21 @@
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=43.0.0", "wheel"]
+#"poetry-core"
+build-backend = "setuptools.build_meta"
+#build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "fastapi-fancy-expections"
+version = "0.0.2"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "fastapi_fancy_expections"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.85.0"
+peppercorn = "^0.6"
