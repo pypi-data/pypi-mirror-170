@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/aasare/__init__.py
+src/aasare.egg-info/PKG-INFO
+src/aasare.egg-info/SOURCES.txt
+src/aasare.egg-info/dependency_links.txt
+src/aasare.egg-info/top_level.txt

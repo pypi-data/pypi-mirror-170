@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: aasare
+Version: 0.0.0
+Summary: A small Python Package
+Home-page: https://github.com/Samm-G/aasare
+Author: Samm-G
+Author-email: gsamarth97@gmail.com
+Project-URL: Bug Tracker, https://github.com/Samm-G/aasare/issues
+License-File: LICENSE
+
+# aasare
+An ambitious templater project
