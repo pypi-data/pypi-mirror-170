@@ -1,0 +1,4 @@
+[console_scripts]
+XinjingyouTujian = XinjingyouTujian.__main__:main
+xinjingyou-tujian = XinjingyouTujian.__main__:main
+
