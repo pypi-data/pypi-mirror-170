@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+ShallowTree/BisectionTree.py
+ShallowTree/RandomThresholdTree.py
+ShallowTree/ShallowTree.py
+ShallowTree/best_cut.c
+ShallowTree/ShallowTree.egg-info/PKG-INFO
+ShallowTree/ShallowTree.egg-info/SOURCES.txt
+ShallowTree/ShallowTree.egg-info/dependency_links.txt
+ShallowTree/ShallowTree.egg-info/requires.txt
+ShallowTree/ShallowTree.egg-info/top_level.txt
