@@ -1,0 +1,24 @@
+[package]
+name = "typed-format-version"
+version = "0.2.0"
+edition = "2021"
+authors = ["Peter Pentchev <roam@ringlet.net>"]
+description = "Load format.version.{major,minor} from a structured file."
+license = "BSD-2-Clause"
+repository = "https://gitlab.com/ppentchev/typed-format-version.git"
+keywords = ["format", "version", "deserialize"]
+categories = ["config", "parser-implementations"]
+
+[lib]
+path = "rust/lib.rs"
+
+[dependencies]
+quick-error = "2"
+serde = {version = "1", features = ["derive"]}
+
+[dev-dependencies]
+serde_json = "1"
+serde_yaml = "0.8"
+toml = "0.5.9"
+tracing = "0.1.36"
+tracing-test = "0.2.3"

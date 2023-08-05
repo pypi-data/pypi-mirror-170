@@ -1,0 +1,9 @@
+include .editorconfig
+include Cargo.lock Cargo.toml
+include NEWS.md
+recursive-include python/unit_tests *.py
+include run-clippy.sh
+recursive-include rust *.rs
+recursive-include test_data *.toml
+include tox-delay.nix
+include tox.ini
