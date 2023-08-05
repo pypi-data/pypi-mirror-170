@@ -1,0 +1,9 @@
+src/Unit10/U10_facenet_utils.py,sha256=Y-uXdRuYOk417VtXLdw6zC9O_AOx8RNKZUgvDLgjR3k,21504
+src/Unit10/U10_style_transfer_utils.py,sha256=HbFvT_FYZErqxWODmsmowyo48EoB-k2Eh3NTALmgKEo,1120
+src/Unit10/U10_yolo3_utils.py,sha256=43qfGtkJABtX0ewvB4h3nInBe8bZmyUnAcfortH4wQ4,10121
+src/Unit10/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/Unit10/utils.py,sha256=viPO-dnIr7i_IRDoNqwDuWLqONl3L4HWlwngZHTEE9s,16700
+tichonet_unit10-0.0.1.dist-info/METADATA,sha256=obATt_3cElDPvdNp-JIvDsJtovmtAQ6XX6aigak0Bao,2006
+tichonet_unit10-0.0.1.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+tichonet_unit10-0.0.1.dist-info/licenses/LICENSE,sha256=2zdDjcBmeUTOBtK9v6G57NMvJBbyxW30yeWAnr03Qco,1097
+tichonet_unit10-0.0.1.dist-info/RECORD,,
