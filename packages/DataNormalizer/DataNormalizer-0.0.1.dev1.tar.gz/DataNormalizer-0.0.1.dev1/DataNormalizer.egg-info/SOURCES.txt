@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+DataNormalizer/__init__.py
+DataNormalizer/auth.py
+DataNormalizer/diagnose.py
+DataNormalizer/normalise.py
+DataNormalizer/settings.py
+DataNormalizer/validate.py
+DataNormalizer.egg-info/PKG-INFO
+DataNormalizer.egg-info/SOURCES.txt
+DataNormalizer.egg-info/dependency_links.txt
+DataNormalizer.egg-info/top_level.txt
