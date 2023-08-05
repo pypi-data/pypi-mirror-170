@@ -1,0 +1,10 @@
+pdf_scout/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_scout/app.py,sha256=N17AGFFPdeBR3FbbUjVttO8A-Plsgdl0IZZKN72RofA,4102
+pdf_scout/cache.py,sha256=ITQ-LQ2qh5Ybc6Hkq5az_Wp3rE96DogRjVUiJYoJGVY,208
+pdf_scout/extract.py,sha256=Iu1lts88wNNINY4cGTPXx6puI-w23wLGdF-0C31pG60,4208
+pdf_scout/logger.py,sha256=1z7yB_lt0tzZHiqXBn-ZulVqMwHInEe1wyNTV0cvPSQ,234
+pdf_scout/scoring.py,sha256=ZlkSV0r91dRaxZenHp7Q1dI4z2PLYpPpqFsdMPvVw24,2646
+pdf_scout-0.0.4.dist-info/entry_points.txt,sha256=1ll1TOV2vCyVePcuIY_mr9cRhannTJR4xSuuV2xQPhs,49
+pdf_scout-0.0.4.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pdf_scout-0.0.4.dist-info/METADATA,sha256=iNci2pjzZw_RCj4JQ0cwLBoi3xYsX_h-u5Al3E1gqIY,2771
+pdf_scout-0.0.4.dist-info/RECORD,,
