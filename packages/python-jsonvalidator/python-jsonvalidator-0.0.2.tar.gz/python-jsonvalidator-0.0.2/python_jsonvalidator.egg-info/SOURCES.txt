@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+jsonvalidator/__init__.py
+jsonvalidator/jsonvalidator.py
+jsonvalidator/test_jsonvalidator.py
+python_jsonvalidator.egg-info/PKG-INFO
+python_jsonvalidator.egg-info/SOURCES.txt
+python_jsonvalidator.egg-info/dependency_links.txt
+python_jsonvalidator.egg-info/top_level.txt
