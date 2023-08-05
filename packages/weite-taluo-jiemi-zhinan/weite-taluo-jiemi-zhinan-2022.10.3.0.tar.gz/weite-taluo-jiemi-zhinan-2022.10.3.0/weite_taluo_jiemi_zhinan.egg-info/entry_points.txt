@@ -1,0 +1,4 @@
+[console_scripts]
+WeiteTaluoJiemiZhinan = WeiteTaluoJiemiZhinan.__main__:main
+weite-taluo-jiemi-zhinan = WeiteTaluoJiemiZhinan.__main__:main
+
