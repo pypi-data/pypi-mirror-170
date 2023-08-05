@@ -1,0 +1,4 @@
+[console_scripts]
+HuanxingTaluo = HuanxingTaluo.__main__:main
+huanxing-taluo = HuanxingTaluo.__main__:main
+
