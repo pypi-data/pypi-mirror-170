@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sonouno-server
+Version: 0.4.3
+Summary: A scientific data sonification platform.
+License: MIT
+Author: Pierre Chanial
+Author-email: pierre.chanial@apc.in2p3.fr
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Pillow (>=9.1.1,<10.0.0)
+Requires-Dist: apischema (>=0.17.5,<0.18.0)
+Requires-Dist: bcrypt (>=3.2.0,<4.0.0)
+Requires-Dist: beanie (>=1.8.12,<2.0.0)
+Requires-Dist: fastapi (>=0.72.0,<0.73.0)
+Requires-Dist: fastapi-jwt-auth (>=0.5.0,<0.6.0)
+Requires-Dist: minio (>=7.1.8,<8.0.0)
+Requires-Dist: networkx (>=2.8,<3.0)
+Requires-Dist: pydantic[email] (>=1.9.0,<2.0.0)
+Requires-Dist: python-decouple (>=3.6,<4.0)
+Requires-Dist: scipy (>=1.8.0,<2.0.0)
+Requires-Dist: sonounolib (>=0.5.1,<0.6.0)
+Requires-Dist: streamunolib (>=0.4,<0.5)
+Requires-Dist: uvicorn (>=0.17.0,<0.18.0)
