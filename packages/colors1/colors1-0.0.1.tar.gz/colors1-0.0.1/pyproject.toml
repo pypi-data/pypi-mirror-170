@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "colors1"
+version = "0.0.1"
+authors = [
+  { name="GameGuyOnYT", email="efeoyun@tahca.com" },
+]
+description = "A package where some colors are defined. Very simple, but very useful."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/GameGuyOnYT/colors1-library"
+"Bug Tracker" = "https://github.com/GameGuyOnYT/colors1-library/issues"
