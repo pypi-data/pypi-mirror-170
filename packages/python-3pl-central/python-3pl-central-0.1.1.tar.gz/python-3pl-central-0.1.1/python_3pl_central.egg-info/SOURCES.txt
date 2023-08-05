@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+client/__init__.py
+client/carriers.py
+client/client.py
+client/customer.py
+client/items.py
+client/orders.py
+python_3pl_central.egg-info/PKG-INFO
+python_3pl_central.egg-info/SOURCES.txt
+python_3pl_central.egg-info/dependency_links.txt
+python_3pl_central.egg-info/requires.txt
+python_3pl_central.egg-info/top_level.txt
