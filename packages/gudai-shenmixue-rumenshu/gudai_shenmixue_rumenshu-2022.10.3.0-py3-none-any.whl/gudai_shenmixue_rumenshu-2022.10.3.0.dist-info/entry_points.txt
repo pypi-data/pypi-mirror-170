@@ -1,0 +1,4 @@
+[console_scripts]
+GudaiShenmixueRumenshu = GudaiShenmixueRumenshu.__main__:main
+gudai-shenmixue-rumenshu = GudaiShenmixueRumenshu.__main__:main
+
