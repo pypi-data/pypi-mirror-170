@@ -1,0 +1,3 @@
+[console_scripts]
+gidtasks=gid_tasks.__main__:gidtasks_cli
+
