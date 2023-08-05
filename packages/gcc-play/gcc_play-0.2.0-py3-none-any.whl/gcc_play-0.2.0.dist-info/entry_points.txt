@@ -1,0 +1,3 @@
+[console_scripts]
+gcc_play=gcc_play.cli:gcc_play
+
