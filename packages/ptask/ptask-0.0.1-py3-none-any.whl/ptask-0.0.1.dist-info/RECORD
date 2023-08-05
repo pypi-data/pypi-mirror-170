@@ -1,0 +1,12 @@
+ptask/__init__.py,sha256=mm5ak8sIBQG4UK_rQwaVna4YuBXwlF-b5DT24Vgkto8,599
+ptask/__main__.py,sha256=GCoyN7E0MoRXvH-2DVy9wJTGRGlEbMrO0vN9Qq1gHrc,2234
+ptask/const.py,sha256=E7skfo3_GwUuLk6hYiiTb7ET4Im8gDrt97Ync22yhsI,460
+ptask/process.py,sha256=m4WU3y1KYHIFbsEvpQcKaMD3SdZQTz_YORj4PVtyZ7E,1529
+ptask/tasks.py,sha256=sYk_1Rf5mIppQVrXYNUnmoTV5ck3HJofP046-GIyswU,2650
+ptask/utils.py,sha256=SJEEds42ij32pcM5EP0ATCppbMdc7adnzNECy9flTCA,495
+ptask-0.0.1.dist-info/LICENSE,sha256=WLcMKFpnw598hvKF1ddhK9wrd4hz_xLggeVLi8Qyo0s,1092
+ptask-0.0.1.dist-info/METADATA,sha256=derPelQeZVJ-wRFcfvmOA_veCe7xkTfAuy4KuilxZ6s,2407
+ptask-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ptask-0.0.1.dist-info/entry_points.txt,sha256=yIVrPg7G_pILG4gIQ80C9TRcJvM-y8MDSbD1JXt99_Y,46
+ptask-0.0.1.dist-info/top_level.txt,sha256=hd0NS5c-Yua7aFe7SAi1Qgk4fbxAbve_BA2hjcwaBc0,6
+ptask-0.0.1.dist-info/RECORD,,
