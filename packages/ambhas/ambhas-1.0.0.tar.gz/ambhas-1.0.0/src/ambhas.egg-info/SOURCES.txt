@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/ambhas/__init__.py
+src/ambhas/ai.py
+src/ambhas/dielectric.py
+src/ambhas/dubois.py
+src/ambhas/errlib.py
+src/ambhas/krige.py
+src/ambhas.egg-info/PKG-INFO
+src/ambhas.egg-info/SOURCES.txt
+src/ambhas.egg-info/dependency_links.txt
+src/ambhas.egg-info/top_level.txt
