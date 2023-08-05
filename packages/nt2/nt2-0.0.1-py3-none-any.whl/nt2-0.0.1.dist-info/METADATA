@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: nt2
+Version: 0.0.1
+Summary: CLI to convert between NestedText and JSON, YAML or TOML
+Keywords: NestedText,JSON,YAML,TOML
+Author: Andy Kluger
+Requires-Python: >=3.10
+Classifier: Environment :: Console
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Utilities
+Requires-Dist: cattrs
+Requires-Dist: nestedtext
+Requires-Dist: plumbum
+Requires-Dist: ruamel.yaml
+Requires-Dist: yamlpath==3.6.7
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: flit ; extra == "dev"
+Requires-Dist: ipython ; extra == "dev"
+Requires-Dist: isort ; extra == "dev"
+Requires-Dist: nestedtext ; extra == "dev"
+Requires-Dist: nox ; extra == "dev"
+Requires-Dist: plumbum ; extra == "dev"
+Requires-Dist: rich ; extra == "dev"
+Requires-Dist: ruff ; extra == "dev"
+Requires-Dist: ssort ; extra == "dev"
+Requires-Dist: taskipy ; extra == "dev"
+Requires-Dist: tomli ; extra == "dev"
+Requires-Dist: tomli-w ; extra == "dev"
+Requires-Dist: ward ; extra == "dev"
+Requires-Dist: black ; extra == "fmt"
+Requires-Dist: isort ; extra == "fmt"
+Requires-Dist: ruff ; extra == "fmt"
+Requires-Dist: ssort ; extra == "fmt"
+Requires-Dist: nestedtext ; extra == "test"
+Requires-Dist: plumbum ; extra == "test"
+Requires-Dist: tomli ; extra == "test"
+Requires-Dist: tomli-w ; extra == "test"
+Requires-Dist: ward ; extra == "test"
+Requires-Dist: nestedtext ; extra == "test-without-toml"
+Requires-Dist: plumbum ; extra == "test-without-toml"
+Requires-Dist: ward ; extra == "test-without-toml"
+Requires-Dist: tomli ; extra == "toml"
+Requires-Dist: tomli-w ; extra == "toml"
+Project-URL: Home, https://github.com/andydecleyre/nt2
+Provides-Extra: dev
+Provides-Extra: fmt
+Provides-Extra: test
+Provides-Extra: test-without-toml
+Provides-Extra: toml
