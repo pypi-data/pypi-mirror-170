@@ -1,0 +1,14 @@
+psycopmlutils/__init__.py,sha256=SPIYLuqYyFmL07p8NM4Dv-wzogQ01R-xsGnL2GJHUWI,99
+psycopmlutils/about.py,sha256=LxAFt4uv8opWxtjXpKoRXk6HIFFcJi2kndy8LJkpJ8I,233
+psycopmlutils/loaders/synth/raw/load_synth_data.py,sha256=_MybHdfOi1GHbXiPSbgkryBxvkEUsuQA_Nm56ztdGO4,2213
+psycopmlutils/sql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psycopmlutils/sql/loader.py,sha256=wykIhgMdIOL-j0rxy2heW-X8LCdlo8vf5FrapAHFaHM,2288
+psycopmlutils/sql/writer.py,sha256=_2Le6L64EkC-QrpH5XHICLnEB333ZPYvdkiexIBqhXs,2904
+psycopmlutils/synth_data_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psycopmlutils/synth_data_generator/synth_col_generators.py,sha256=M0XogcF4RXN9VRLGe85ygVbaWbXv3kf5nIUXWsHy1ig,8151
+psycopmlutils/synth_data_generator/synth_prediction_times_generator.py,sha256=X7Y98VEv0ItmnJUHBJGtATTnM8fdLSHo06EpnT9ezig,2464
+psycopmlutils/synth_data_generator/synth_txt_data_generator.py,sha256=S7eYyZTIKVQI6RD-hmgSw8kf_gsl-_vV29YYIIqa6Bg,2252
+psycopmlutils/synth_data_generator/utils.py,sha256=dO76zoS4uOl2Es-n3atJOd0lbEV0mD6ZtTRPOi74wpo,813
+psycopmlutils-0.2.4.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+psycopmlutils-0.2.4.dist-info/METADATA,sha256=TJPdmyrPZHVvaTU1Erw9CE1gLNJX502E_j0jljXLSGI,1349
+psycopmlutils-0.2.4.dist-info/RECORD,,
