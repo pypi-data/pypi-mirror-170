@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+test-825/__init__.py
+test_825.egg-info/PKG-INFO
+test_825.egg-info/SOURCES.txt
+test_825.egg-info/dependency_links.txt
+test_825.egg-info/top_level.txt
