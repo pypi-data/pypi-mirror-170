@@ -1,0 +1,11 @@
+ezd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ezd/command.py,sha256=OSSXIT3S2KUByI45n75JBqEpcwMCealDsc1RmEvy4os,6370
+ezd/config.py,sha256=QaZ0bDS8mNRuIHhc1Ikkt88jbo9utUv5vUQFF2w9Hw8,1088
+ezd/scrt.py,sha256=x--aDOiqMpas7q75yeCkuwOLmFzTlo1tPmjFCU46QRg,1271
+ezd/winsvc.py,sha256=m2iMd5l4L8Xz2m6iGGeEWgM6hpXMKhLfHMv5vrP6rYY,3077
+ezd-0.2.0.dist-info/LICENSE,sha256=gxiBUb9KugcsENHZ478G767lXfe37f-bsP3R1nVxmIM,1089
+ezd-0.2.0.dist-info/METADATA,sha256=pN2tMMyUfeZFw6OndGU7LLQIn8Kyy3Sst9CK3Bt7Gds,6756
+ezd-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ezd-0.2.0.dist-info/entry_points.txt,sha256=UNlN5ZNlR6l3kIrKieT6bJPjsVbB9YIlFHAChIdnDis,42
+ezd-0.2.0.dist-info/top_level.txt,sha256=R0ihh5lej3-NrZQS2B5ys4ReORQq05PmPlRYUHeJu6c,4
+ezd-0.2.0.dist-info/RECORD,,
