@@ -1,0 +1,10 @@
+qpdb/__init__.py,sha256=nIWdy0XQCskaSoR5BRbLOBmmyjMg3c78M8Mw7b69z74,332
+qpdb/log_utils.py,sha256=0QzxQM69o8yyNheIs0GdcAJcZmr8zIj_PeTNYWM6MQM,636
+qpdb/lookup.py,sha256=jZvaXBLQQVi7bt8z6BJyrjlFXgqsI8QrzEXLQ2BPfNw,249
+qpdb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qpdb-0.0.2.dist-info/LICENSE,sha256=TTt3bqs-mhZ0EpRTkUr__poAxxDywNMXGJZ4FmK6t6g,1069
+qpdb-0.0.2.dist-info/METADATA,sha256=rBOq9sUiSneU1GkUxG6xYVaCabDhsmHnY5zKbFVwpIo,2690
+qpdb-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+qpdb-0.0.2.dist-info/entry_points.txt,sha256=NJ0X5Uqu3IJm_HlQqJEEAp-AR51aL4lfGHcrqS0ijaQ,39
+qpdb-0.0.2.dist-info/top_level.txt,sha256=TACVifrM1GpprUx4QzERa762v4mnMeme7z-7XVPWVfI,5
+qpdb-0.0.2.dist-info/RECORD,,
