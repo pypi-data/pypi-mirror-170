@@ -1,0 +1,8 @@
+README.md
+setup.py
+arithmetic/__init__.py
+arithmetic/functions.py
+mathme.egg-info/PKG-INFO
+mathme.egg-info/SOURCES.txt
+mathme.egg-info/dependency_links.txt
+mathme.egg-info/top_level.txt
