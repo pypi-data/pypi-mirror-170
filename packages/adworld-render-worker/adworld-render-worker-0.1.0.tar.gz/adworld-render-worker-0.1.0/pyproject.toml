@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "adworld-render-worker"
+version = "0.1.0"
+description = "The render worker for the adworld pipeline"
+authors = ["Ezra Goss <ezragoss@gmail.com>"]
+license = "BSD"
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.85.0"
+mypy = "^0.981"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
