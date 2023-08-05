@@ -1,0 +1,8 @@
+setup.py
+pytorch_custom_dataset.egg-info/PKG-INFO
+pytorch_custom_dataset.egg-info/SOURCES.txt
+pytorch_custom_dataset.egg-info/dependency_links.txt
+pytorch_custom_dataset.egg-info/requires.txt
+pytorch_custom_dataset.egg-info/top_level.txt
+pytorchdataset/__init__.py
+pytorchdataset/torch_custom_dataset.py

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pytorch-custom-dataset
+Version: 0.1.0
+Summary: build a pytorch custom dataset in two steps
+Home-page: https://github.com/shuds13/pyexample
+Author: Max Ng
+Author-email: maxnghello@gmail.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
