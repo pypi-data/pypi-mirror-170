@@ -1,0 +1,4 @@
+[console_scripts]
+YongtaluoKaiqiChuangyiXiezuoZhilu = YongtaluoKaiqiChuangyiXiezuoZhilu.__main__:main
+yongtaluo-kaiqi-chuangyi-xiezuo-zhilu = YongtaluoKaiqiChuangyiXiezuoZhilu.__main__:main
+
