@@ -1,0 +1,3 @@
+[spacy_factories]
+make_second_opinion_ruler=second_opinion_ruler:make_second_opinion_ruler
+
