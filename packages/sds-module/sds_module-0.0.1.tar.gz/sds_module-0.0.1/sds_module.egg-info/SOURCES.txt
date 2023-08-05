@@ -1,0 +1,11 @@
+pyproject.toml
+setup.py
+sds_module/__init__.py
+sds_module/add.py
+sds_module/divide.py
+sds_module/multiply.py
+sds_module/subtract.py
+sds_module.egg-info/PKG-INFO
+sds_module.egg-info/SOURCES.txt
+sds_module.egg-info/dependency_links.txt
+sds_module.egg-info/top_level.txt
