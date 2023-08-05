@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cached-conv
+Version: 2.3.3
+Summary: Tools allowing to use neural network inside realtime apps.
+Home-page: UNKNOWN
+Author: Antoine CAILLON
+Author-email: caillon@ircam.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+
+UNKNOWN
+
