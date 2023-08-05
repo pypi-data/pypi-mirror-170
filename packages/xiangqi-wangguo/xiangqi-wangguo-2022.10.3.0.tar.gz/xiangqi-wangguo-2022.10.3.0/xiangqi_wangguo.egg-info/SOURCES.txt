@@ -1,0 +1,13 @@
+README.md
+setup.py
+XiangqiWangguo/Dockerfile
+XiangqiWangguo/README.md
+XiangqiWangguo/__init__.py
+XiangqiWangguo/__main__.py
+XiangqiWangguo/file.pdf
+XiangqiWangguo/index.html
+xiangqi_wangguo.egg-info/PKG-INFO
+xiangqi_wangguo.egg-info/SOURCES.txt
+xiangqi_wangguo.egg-info/dependency_links.txt
+xiangqi_wangguo.egg-info/entry_points.txt
+xiangqi_wangguo.egg-info/top_level.txt
