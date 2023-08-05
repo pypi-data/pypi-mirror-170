@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=42", "wheel" ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "normatrix"
+version = "0.4.0"
+authors = [ {name = "Saverio", email = "personnex976@gmail.com"} ]
+readme = "README.md"
+description = "check epitech c coding style"
+keywords = [ "epitech", "coding style", "c", "normatrix" ]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Programming Language :: C",
+    "Topic :: Software Development :: Quality Assurance"
+]
+dependencies = [ "markdown", "regex", "rich" ]
+requires-python = ">=3.7"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pre-commit>=2.20.0",
+    "black>=22.8.0",
+    "flake8>=5.0.4",
+]
+
+[tool.black]
+line-length = 100
+
+[tool.setuptools.packages.find]
+where = [ "src" ]
+include = [ "normatrix*" ]
