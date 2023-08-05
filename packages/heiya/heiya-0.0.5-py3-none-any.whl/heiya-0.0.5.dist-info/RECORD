@@ -1,0 +1,11 @@
+heiya/__init__.py,sha256=GXA2XbXdv0ULZqffeX8RBtMD_1lr2pjuVT-0cHwKa-c,122
+heiya/extensions.py,sha256=3LnuRCviv35gXwUz52uPs4A6obKtXTe96t3vSh5kaUc,244
+heiya/from_hei.py,sha256=VRZSf9UPABIxmwp-5uAJWvefaqcsJn0c_o1mGkPYO0U,4809
+heiya/he_jpg.py,sha256=8K3_8nz7II2AJu2zqzK4Zj9s0PYiKKjWvO93DgJ8inw,2881
+heiya/to_hei.py,sha256=IH__sx2IlUuA_nWC1Yb1VV6ZBfwIVuRBR2dWyn680O4,4253
+heiya/tools.py,sha256=e2dLMu4dXyS9EET7TeMjcnAPBv3vdhND8w5LA6GTvhY,2855
+heiya-0.0.5.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+heiya-0.0.5.dist-info/METADATA,sha256=25l2_RtL8SnbafOqpY7nPGC_Lb14cXJ5THN3TJxuAfo,3638
+heiya-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+heiya-0.0.5.dist-info/top_level.txt,sha256=rcUfpOcFFyrPdvsDIVfnUQrQADgRqmKnkjgH_rcey5M,6
+heiya-0.0.5.dist-info/RECORD,,
