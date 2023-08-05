@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: async-itertools
+Version: 0.0.1
+Summary: Routines for asynchronous iterables
+Author: Zhang Xiaoyu
+Project-URL: Homepage, https://github.com/gszxy/async-itertools
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: furo ; extra == 'doc'
+
+async-itertools
+=================
+
+This library provides wrappers and routines inspired by ``itertools``
+and ``more_itertools``, but for **asynchronous** iterables.
+
+This project is currently under development.
+Feel free to share your thoughts or ideas by submitting an issue or start a discussion.
+
+
+Install
+----------------------
+
+async-itertools requires python >= 3.8
+
+To install with pip, run::
+
+   pip install async_itertools
+
+Overview
+------------------------
+
+This section gives a simple overview of all available functions.
+For detailed usage, please refer to the document.
+
++-----------+------------------------------------------------------------------+
+|category   |functions                                                         |
++===========+==================================================================+
+|grouping   |                                                                  |
++-----------+------------------------------------------------------------------+
+|windowing  |                                                                  |
++-----------+------------------------------------------------------------------+
+|wrapping   |``as_async``                                                      |
++-----------+------------------------------------------------------------------+
+|others     |                                                                  |
++-----------+------------------------------------------------------------------+
+
+
+
+Build and Test
+----------------------
+
+This project uses PEP-517 packaging API. This requires ``build`` package::
+
+   pip install build
+
+To build both ``sdist`` and ``wheel`` package, run::
+
+   python -m build
+
+To install all development dependencies, run::
+
+   pip install setuptools setuptools-scm tox coverage pytest pytest-cov mypy flake8 sphinx furo
+
+This project uses ``tox`` to integrate linting and testing.
+To run tests on all supported python versions(you will need to install them first), run::
+
+   tox
+
+To run static check(flake8) and type check(mypy) only, run::
+
+   tox -e linting
+
+To run tests on specific python versions, for example, on cpython3.9 and 3.10, use::
+
+   tox -e py39,py310
+
+The documents are built using ``sphinx`` and the ``furo`` theme.
+
+To build docs on linux, run::
+
+   cd docs && make html
+
+LICENSE
+----------------------
+
+This project is licensed under the MIT license.
+For detailed information. please read the ``LICENSE`` file in the repository.

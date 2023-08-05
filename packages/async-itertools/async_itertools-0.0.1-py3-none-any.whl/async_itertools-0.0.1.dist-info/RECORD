@@ -1,0 +1,9 @@
+async_itertools/__init__.py,sha256=tj_BuROBVrlShvDT0ThX370OEzheHjo5KhoqPHyXoNo,41
+async_itertools/_version.py,sha256=LMm5XNCiIX0-d8PhBu6GowizEsy50WYpNYJ8Jet6s64,176
+async_itertools/_wrapping/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+async_itertools/_wrapping/as_async.py,sha256=CqW54Cc2JFKGLWc5iHyIpy1AWYEIQo-a6tYJjHvI_J0,258
+async_itertools-0.0.1.dist-info/LICENSE,sha256=1GYtEPVdqtEgDiXR7QR9M6EuosEfpu4HDgsA0OvIuOY,1079
+async_itertools-0.0.1.dist-info/METADATA,sha256=IUDNBro5DtNNxhAoV19ihXlWs80r6NRxxz6HCsYOzPE,3247
+async_itertools-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+async_itertools-0.0.1.dist-info/top_level.txt,sha256=p7Rx8F9XPyOP72MV3OyNyyPUo1nmz--REuiQ_lkXqsk,16
+async_itertools-0.0.1.dist-info/RECORD,,
