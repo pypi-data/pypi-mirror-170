@@ -1,0 +1,5 @@
+matplotlib>=3.4.3
+
+[test]
+pytest<5.0.0
+pytest-cov[all]

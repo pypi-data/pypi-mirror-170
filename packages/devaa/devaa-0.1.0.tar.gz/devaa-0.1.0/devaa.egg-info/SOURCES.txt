@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+devaa/__init__.py
+devaa/plotting.py
+devaa/pycounts.py
+devaa.egg-info/PKG-INFO
+devaa.egg-info/SOURCES.txt
+devaa.egg-info/dependency_links.txt
+devaa.egg-info/requires.txt
+devaa.egg-info/top_level.txt

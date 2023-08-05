@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devaa"
+version = "0.1.0"
+description = "Simple package counting number of words"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE.txt"}
+keywords = ["words", "counter", "foo", "bar"]
+authors = [
+  {email = "a.nicoletta996@gmail.com"},
+  {name = "Andrea Nicoletta"}
+]
+maintainers = [
+  {name = "Andrea Nicoletta", email = "a.nicoletta996@gmail.com"}
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python" 
+]
+
+dependencies = [
+  "matplotlib >=3.4.3"
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest < 5.0.0",
+  "pytest-cov[all]"
+]
+
+[project.urls]
+"homepage" = "https://github.com/Anico2/devaa"
+"Bug Tracker" = "https://github.com/Anico2/devaa/issues"
