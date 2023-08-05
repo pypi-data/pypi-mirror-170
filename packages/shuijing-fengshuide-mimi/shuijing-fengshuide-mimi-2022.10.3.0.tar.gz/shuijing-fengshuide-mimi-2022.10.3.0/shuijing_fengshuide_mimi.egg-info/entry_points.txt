@@ -1,0 +1,4 @@
+[console_scripts]
+ShuijingFengshuideMimi = ShuijingFengshuideMimi.__main__:main
+shuijing-fengshuide-mimi = ShuijingFengshuideMimi.__main__:main
+
