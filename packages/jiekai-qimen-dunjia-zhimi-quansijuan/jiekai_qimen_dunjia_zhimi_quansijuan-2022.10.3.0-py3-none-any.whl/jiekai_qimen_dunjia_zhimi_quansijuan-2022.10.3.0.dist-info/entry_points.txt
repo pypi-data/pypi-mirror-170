@@ -1,0 +1,4 @@
+[console_scripts]
+JiekaiQimenDunjiaZhimiQuansijuan = JiekaiQimenDunjiaZhimiQuansijuan.__main__:main
+jiekai-qimen-dunjia-zhimi-quansijuan = JiekaiQimenDunjiaZhimiQuansijuan.__main__:main
+
