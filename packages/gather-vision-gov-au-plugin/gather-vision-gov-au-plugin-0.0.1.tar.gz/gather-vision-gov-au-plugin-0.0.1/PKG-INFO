@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: gather-vision-gov-au-plugin
+Version: 0.0.1
+Summary: A gather-vision plugin for obtaining data from Australian governments.
+Project-URL: Homepage, https://github.com/anotherbyte-net/gather-vision-gov-au-plugin
+Project-URL: Changelog, https://github.com/anotherbyte-net/gather-vision-gov-au-plugin/blob/main/CHANGELOG.md
+Project-URL: Source, https://github.com/anotherbyte-net/gather-vision-gov-au-plugin
+Project-URL: Tracker, https://github.com/anotherbyte-net/gather-vision-gov-au-plugin/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# gather-vision-gov-au-plugin
+
+A gather-vision plugin for obtaining data from Australian governments.
+
+## Install
+
+Install from PyPI using pip:
+
+```bash
+pip install gather-vision-gov-au-plugin
+```
+
+[![PyPI](https://img.shields.io/pypi/v/gather-vision-gov-au-plugin)](https://pypi.org/project/gather-vision-gov-au-plugin/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/gather-vision-gov-au-plugin)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/anotherbyte-net/gather-vision-gov-au-plugin/Test%20Package/main)](https://github.com/anotherbyte-net/gather-vision-gov-au-plugin/actions)

@@ -1,0 +1,2 @@
+[gather_vision.plugin]
+gov_au = gather_vision_gov_au_plugin.plugin:PluginEntry
