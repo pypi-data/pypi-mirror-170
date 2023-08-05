@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bfactory
+Version: 0.0.3.1
+Summary: A Django backend factory
+Home-page: https://github.com/forkear/bfactory
+Author: Forkear
+Author-email: forkear@no-spam.org
+Project-URL: Documentation, https://github.com/forkear/bfactory/blob/main/README.md
+Project-URL: Source, https://github.com/forkear/bfactory
+Project-URL: Tracker, https://github.com/forkear/bfactory/issues
+Requires-Python: >=3.8
+License-File: LICENSE
