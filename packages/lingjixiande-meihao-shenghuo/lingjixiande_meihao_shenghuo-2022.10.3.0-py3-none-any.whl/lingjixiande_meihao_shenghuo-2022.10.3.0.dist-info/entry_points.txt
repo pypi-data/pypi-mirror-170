@@ -1,0 +1,4 @@
+[console_scripts]
+LingjixiandeMeihaoShenghuo = LingjixiandeMeihaoShenghuo.__main__:main
+lingjixiande-meihao-shenghuo = LingjixiandeMeihaoShenghuo.__main__:main
+
