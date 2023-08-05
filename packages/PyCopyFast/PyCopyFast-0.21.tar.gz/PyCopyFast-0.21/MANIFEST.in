@@ -1,0 +1,4 @@
+include PyCopyFast/requirements.txt
+include PyCopyFast/thirdparty.json
+include PyCopyFast/README.MD
+include PyCopyFast/LICENSE
