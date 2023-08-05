@@ -1,0 +1,5 @@
+setup.py
+IntelligentOptimizationAl.egg-info/PKG-INFO
+IntelligentOptimizationAl.egg-info/SOURCES.txt
+IntelligentOptimizationAl.egg-info/dependency_links.txt
+IntelligentOptimizationAl.egg-info/top_level.txt
