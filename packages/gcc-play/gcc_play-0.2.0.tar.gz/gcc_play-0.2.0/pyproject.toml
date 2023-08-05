@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "gcc_play"
+version = "0.2.0"
+description = "linux commands built with python for my own use."
+authors = ["rai"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = {version = "^22.6.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gcc_play = "gcc_play.cli:gcc_play"
