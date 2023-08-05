@@ -1,0 +1,17 @@
+HISTORY.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+publish.sh
+setup.py
+tox.ini
+performance/performance_test.ipynb
+src/FuncArray.egg-info/PKG-INFO
+src/FuncArray.egg-info/SOURCES.txt
+src/FuncArray.egg-info/dependency_links.txt
+src/FuncArray.egg-info/requires.txt
+src/FuncArray.egg-info/top_level.txt
+src/funcarray/__init__.py
+src/funcarray/func_array.py
+tests/test_functions.py
+tests/test_reshaping.py
