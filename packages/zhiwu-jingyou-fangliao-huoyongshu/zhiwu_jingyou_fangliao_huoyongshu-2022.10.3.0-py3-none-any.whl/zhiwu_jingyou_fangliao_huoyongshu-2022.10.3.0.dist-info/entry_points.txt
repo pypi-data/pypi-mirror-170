@@ -1,0 +1,4 @@
+[console_scripts]
+ZhiwuJingyouFangliaoHuoyongshu = ZhiwuJingyouFangliaoHuoyongshu.__main__:main
+zhiwu-jingyou-fangliao-huoyongshu = ZhiwuJingyouFangliaoHuoyongshu.__main__:main
+
