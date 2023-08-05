@@ -1,0 +1,4 @@
+[console_scripts]
+DangwomenSihouLinghunQunale = DangwomenSihouLinghunQunale.__main__:main
+dangwomen-sihou-linghun-qunale = DangwomenSihouLinghunQunale.__main__:main
+
