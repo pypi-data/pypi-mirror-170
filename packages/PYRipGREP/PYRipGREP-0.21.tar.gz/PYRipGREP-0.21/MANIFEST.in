@@ -1,0 +1,4 @@
+include PYRipGREP/requirements.txt
+include PYRipGREP/thirdparty.json
+include PYRipGREP/README.MD
+include PYRipGREP/LICENSE

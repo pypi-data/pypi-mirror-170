@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+PYRipGREP/LICENSE
+PYRipGREP/README.MD
+PYRipGREP/__init__.py
+PYRipGREP/requirements.txt
+PYRipGREP/thirdparty.json
+PYRipGREP.egg-info/PKG-INFO
+PYRipGREP.egg-info/SOURCES.txt
+PYRipGREP.egg-info/dependency_links.txt
+PYRipGREP.egg-info/requires.txt
+PYRipGREP.egg-info/top_level.txt
