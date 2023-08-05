@@ -1,0 +1,12 @@
+pysignalbot/__init__.py,sha256=rfOg38plbnf7h-iK2qKkG729XPVrZAYdHY_Dhewbu5c,184
+pysignalbot/bot.py,sha256=EqbcM2sDhGCjM_4IXq35Nl4wfl5c5poX7shnfd8UK2Y,11965
+pysignalbot/dispatcher.py,sha256=ZwtlxIgLTNaslR_c292vcboY1R6tK6oW4kQZa7gTRs8,8070
+pysignalbot/exceptions.py,sha256=heSkQ47OM14vrquGl00b9qwEs_ZroRY7-LnnaQRsicM,720
+pysignalbot/filters.py,sha256=ZzUOMR_oaEVUGJlSpCH6HqWB-4PuQMAMISFssWCcnno,6170
+pysignalbot/handlers.py,sha256=GCQPrhvoM1oFfCwXf16lyr1EKebsDo3rJoZRB3vx3I4,8164
+pysignalbot/models.py,sha256=J_wGetXLtRy19mad4sXL06Uh6ifB7eEuhBLboOYohjE,11332
+python_signal_bot-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+python_signal_bot-0.0.5.dist-info/METADATA,sha256=PrX8XO_XpA36w94vTvN_uDvDw6WUNAKEaI3zr3lwTxY,1026
+python_signal_bot-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+python_signal_bot-0.0.5.dist-info/top_level.txt,sha256=uyUJxRIjknpNe5R0E-8oHUKbqCS0EIlKFKB42C3QK6s,12
+python_signal_bot-0.0.5.dist-info/RECORD,,
