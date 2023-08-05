@@ -1,0 +1,12 @@
+LICENSE,sha256=K_3KYK34AxCNTH8AkAC-p2rQDmIeFjGXiBsOqukbUw4,193
+pytest_jinja/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+pytest_jinja/pytest_jinja.py,sha256=38cgwZkfI1Cemrwr3jpZFPbrx2kagke2yhBiC31Mlro,5415
+pytest_jinja/templates/bootstrap/bootstrap_template.html,sha256=VopwMtQDGvcapG89O8POABSpPMJGFzxEf9Z78UY_5sM,747
+pytest_jinja/templates/default/default.html,sha256=5AWG2FkKBlDLIXq88w6fRm8YqXVEzwd7kJJR9-Q661Y,11169
+pytest_jinja/templates/default/main.js,sha256=hVpZym5ItYVDjiT-JJBjoY93ZPEGCSEeODyWTYrrquA,6831
+pytest_jinja/templates/default/style.css,sha256=U75CpCPvR7K5nt4N7YX9TdEEtsfV1TmdXyf1Nja_gKM,2557
+pytest_jinja-0.1.0.dist-info/entry_points.txt,sha256=5J4tWl-UkWzlv-D8naajT1Q-Lu6b9R942vSchV7Mp2A,51
+pytest_jinja-0.1.0.dist-info/LICENSE,sha256=K_3KYK34AxCNTH8AkAC-p2rQDmIeFjGXiBsOqukbUw4,193
+pytest_jinja-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pytest_jinja-0.1.0.dist-info/METADATA,sha256=UdAMpM8tIERNvCu3EtMjgvh-XwFkbH5AWzMbtmFr8MU,6319
+pytest_jinja-0.1.0.dist-info/RECORD,,
