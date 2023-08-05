@@ -1,0 +1,15 @@
+flooss/__init__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+flooss/__main__.py,sha256=6YNAA9dMAyysVGA9BOwerU-oFZmEY2JL5sVkFQffMbo,1968
+flooss/aggregation/__init__.py,sha256=lHyyWr7LuS2B5jJwI63Ni4chsRhqKwPVNah73WVvsIU,79
+flooss/aggregation/aggregation.py,sha256=VegYaKPNnwaTXLhEiKNVyHmDkqCOEki_qyaLgXDLC3w,918
+flooss/dataframe.py,sha256=_3-qOqqs9srjATI3XmzjS-3QzHqk9a98eD0iMj1RslI,836
+flooss/google.py,sha256=QHOf9vwQu_nsId3q5HpyVxr2kEKiGW-ri5l1thATIZc,258
+flooss/plot/__init__.py,sha256=E2O6c3yK95ahN7hxeiqur3Pn2ziE9OAdA9Lgen5C3DY,89
+flooss/plot/plot.py,sha256=rcaRdqhQJ5euSQCG4G1wAt15yUEgD9Uk2QvdKLC1MpE,5473
+flooss/report/__init__.py,sha256=LkHfY8WmKzD0ALkAs7ozFwmMn64D_dYEMpsZOUN8q9Q,69
+flooss/report/_display.py,sha256=6nGg2YrUyV6c0aerfk38gwC-aWNNJDgFODH25pVLwNw,470
+flooss/report/report.py,sha256=t78vU0fUPkPP0N0bAo9eyN72W3fY5O-QjRiVD_S-ags,5252
+flooss-0.1.2.dist-info/LICENSE,sha256=rOaVtO-Z7_e-svYTw4Je5b3_67iOfLGvIG-vzWHvrf4,1071
+flooss-0.1.2.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+flooss-0.1.2.dist-info/METADATA,sha256=kP7kF44Fy51Dd4VRY15PjfpMnOowttcOwWYVsDTJCJI,727
+flooss-0.1.2.dist-info/RECORD,,
