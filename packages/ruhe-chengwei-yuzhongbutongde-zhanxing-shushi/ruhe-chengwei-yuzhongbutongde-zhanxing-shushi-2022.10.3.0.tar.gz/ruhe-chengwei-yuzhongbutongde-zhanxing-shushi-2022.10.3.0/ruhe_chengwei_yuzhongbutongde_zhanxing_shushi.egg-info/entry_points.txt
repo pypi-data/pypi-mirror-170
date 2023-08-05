@@ -1,0 +1,4 @@
+[console_scripts]
+RuheChengweiYuzhongbutongdeZhanxingShushi = RuheChengweiYuzhongbutongdeZhanxingShushi.__main__:main
+ruhe-chengwei-yuzhongbutongde-zhanxing-shushi = RuheChengweiYuzhongbutongdeZhanxingShushi.__main__:main
+
