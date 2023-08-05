@@ -1,0 +1,11 @@
+core/__init__.py,sha256=obYShYthSBzzYzh0HJrn5yK-ZdvrfDrNNQ7QopYgk8U,25
+core/xmlobject.py,sha256=bawlpXb9N-ltIW9jQW3R2TZB9l7xn9Y9gAeHmAxEjgc,1607
+pydrawio/__init__.py,sha256=wLIUhfWyL7uQvlqYJ1fWrfs_zYY7uP8ohpx7ud8qI8U,82
+pydrawio/mxfile.py,sha256=7boDcjiTWQriOXrgmTSlpwKs8DxcCewpeOSGInTi0Tk,1810
+pydrawio/mxgraphmodel.py,sha256=ROQv8RK-7cwucNvJLJYUmLFvv8EXrBQtz-6Lc-ByY-Y,6438
+pydrawio/mxlibrary.py,sha256=_wH5dy3VaP6su0oiXmB99jE4PlLBeSBIgqsj2MJ7MYw,2546
+pydrawio-0.1.4.dist-info/LICENSE.md,sha256=Z8BCi8um3ZcveWgGDgBZn3Rc-TksxdD1lNtS9geMtlk,1070
+pydrawio-0.1.4.dist-info/METADATA,sha256=hcSNiQ2taAFF2IigF8dkPGDzFHNnCfzI_VopwNrcmmc,2254
+pydrawio-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pydrawio-0.1.4.dist-info/top_level.txt,sha256=YX2qE-fdlhh1I46TDkRntoQ9pO7P7sfpFHKeqQ6Jz0U,14
+pydrawio-0.1.4.dist-info/RECORD,,
