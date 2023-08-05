@@ -1,0 +1,3 @@
+[console_scripts]
+image-cli-convert = image_cli.command_line_convert:main
+
