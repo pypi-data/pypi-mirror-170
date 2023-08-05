@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "dovi-helpers"
+version = "0.1.0"
+description = "Command line interface for collection of scripts to convert MKV container into Dolby Vision 8.1 compatible MP4."
+authors = ["Skyross <skyross000@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+packages = [
+    { include = "dovi_helpers" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "*"
+colorama = "*"
+pydantic = "*"
+structlog = "*"
+
+[tool.poetry.group.dev.dependencies]
+black = { version = "*", allow-prereleases = true }
+isort = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[tool.poetry.scripts]
+dovi_helpers = 'dovi_helpers.cli.__main__:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
