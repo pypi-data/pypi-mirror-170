@@ -1,0 +1,6 @@
+numpy
+
+[dev]
+pyyaml
+pip-tools
+pytest

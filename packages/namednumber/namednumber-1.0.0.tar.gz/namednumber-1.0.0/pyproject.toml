@@ -1,0 +1,29 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "namednumber"
+version = "1.0.0"
+description = "Map integers to fun pseudo-random names following a custom format"
+readme = "README.md"
+authors = [{ name = "Torin Halsted", email = "modularizer@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10"
+]
+keywords = ["password-generator","number-to-words","name","uuid-generator"]
+dependencies = ["numpy"]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["pyyaml", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://modularizer.github.io/namednumber/"
+
+[project.scripts]
+namednumber = "namednumber.__main__:main"
