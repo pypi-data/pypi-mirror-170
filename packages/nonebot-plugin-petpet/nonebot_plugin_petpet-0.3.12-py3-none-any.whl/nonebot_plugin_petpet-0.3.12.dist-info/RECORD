@@ -1,0 +1,12 @@
+nonebot_plugin_petpet/__init__.py,sha256=xLuL0QGoKxu7m62y_On1qxLjI_CMMYzOnYrgn9Po6c0,7632
+nonebot_plugin_petpet/config.py,sha256=YgNEA-6jKXyp2j77Bcv39xOrA4ywNf-VpRRVSyO8nRM,636
+nonebot_plugin_petpet/data_source.py,sha256=HuRNrN8UziXEQKgO0jIc_KFelOJnj-htdenstU3fQA8,4582
+nonebot_plugin_petpet/depends.py,sha256=PJuCIusRRtkDE2lsPf6S2yY5Nz76A2k4A7Ay9ak7N-U,7248
+nonebot_plugin_petpet/download.py,sha256=pXIgzCZeYqKfKe5ckbxTor72aFqVeCYfAEZGDg38x-g,2424
+nonebot_plugin_petpet/functions.py,sha256=mtzE53IPluEsxVXSS_flOfZ8g9-R1LG9YykfxCyHO3o,57036
+nonebot_plugin_petpet/manager.py,sha256=dYVrSVDaywitEgVaqEbQoEfzoZfq6Nzuuzi7XYBlFFY,4236
+nonebot_plugin_petpet/utils.py,sha256=p-Tp0_LJ-jWJba7SBSffNBlPkLeqkEEhSQDcEr8mnmA,4773
+nonebot_plugin_petpet-0.3.12.dist-info/LICENSE,sha256=Y46u2BV5EbnQLp5EIx5YRLcHcCiB7sY06At5fiA6PiM,1063
+nonebot_plugin_petpet-0.3.12.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+nonebot_plugin_petpet-0.3.12.dist-info/METADATA,sha256=rGXAFawsQKvitbKFjnh3lK8WU9ziR2jLPaoX8gBYRRk,14862
+nonebot_plugin_petpet-0.3.12.dist-info/RECORD,,
