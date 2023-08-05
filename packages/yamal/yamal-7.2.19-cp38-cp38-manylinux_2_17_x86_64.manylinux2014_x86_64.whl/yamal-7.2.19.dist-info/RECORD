@@ -1,0 +1,16 @@
+yamal-7.2.19.data/scripts/yamal-run.py,sha256=hN7k4UeVjS4qVbuDZN4mEjWyYcPolSO29QdWA5Alx4Y,2485
+yamal-7.2.19.data/scripts/test-yamal-python,sha256=IqndrSE9YKwcO8RAGg4-pzzIlDRWDzgaAsRvH3ZpDss,893
+yamal-7.2.19.dist-info/top_level.txt,sha256=qp9OpqHw48tEtx_10l_2SfdwspKXgbhIyaUPZ34Xvc4,6
+yamal-7.2.19.dist-info/LICENSE,sha256=K-oilpIR02D4PQ0BpO7mLf8asLsXNNTrNwcj57NDX-w,601
+yamal-7.2.19.dist-info/METADATA,sha256=J7dXgJPVQ5Z4CWkI2Az7vNmFYpzuOMGUmzBCN2Pj7LA,352
+yamal-7.2.19.dist-info/RECORD,,
+yamal-7.2.19.dist-info/WHEEL,sha256=-ijGDuALlPxm3HbhKntps0QzHsi-DPlXqgerYTTJkFE,148
+yamal/ytp.pyi,sha256=8pKxps9w3V0zsv1XNbwbsDVx9MZlNR7WjlVM6nWIv5k,2931
+yamal/sys_base.cpython-38-x86_64-linux-gnu.so,sha256=kPmN-NnHKCkr0akEON-5nDwH04EuiYuLxt-pbBmS1FY,1752696
+yamal/ytp.cpython-38-x86_64-linux-gnu.so,sha256=mXmAThhPfytyuT1zjvXlbgoV_EM_33AuQJJLCyVM86g,2776896
+yamal/sys_base.pyi,sha256=hAqgB6tnTQ_YK2FvOmep2rmc0S70ssirePyDeN77FG4,1472
+yamal/__init__.py,sha256=heBTDBN17kPwVCbf48q-I0O1c_-ldPoeynkaPEScUzc,8052
+yamal/testmodule.so,sha256=ZQNNxcYeSXAveeavUry1uaXieQkdO0kq05LTvuhOjnk,1676680
+yamal/tests/sys_tests.py,sha256=YQu15hY0qWmIA5TdjzV4NYizCRmxGMzSjL1AkjOi7aU,6169
+yamal/tests/__init__.py,sha256=FRRhdi0S7q-Ba1S7BeA3mojsRbYiXjBSwcBqj2M7xVk,600
+yamal/tests/ytp.py,sha256=OQ0rN3tRncms3tdsZgyUwVY6jGGPnFFI8RAx6LMiJ4M,28444
