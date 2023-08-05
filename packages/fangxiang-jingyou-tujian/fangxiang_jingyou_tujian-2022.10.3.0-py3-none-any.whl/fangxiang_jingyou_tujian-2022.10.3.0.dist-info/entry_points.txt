@@ -1,0 +1,4 @@
+[console_scripts]
+FangxiangJingyouTujian = FangxiangJingyouTujian.__main__:main
+fangxiang-jingyou-tujian = FangxiangJingyouTujian.__main__:main
+
