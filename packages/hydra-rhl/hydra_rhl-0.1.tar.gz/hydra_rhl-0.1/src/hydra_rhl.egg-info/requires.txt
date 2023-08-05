@@ -1,0 +1,7 @@
+dependency-injector>=4.36.2
+kafka-python>=2.0.2
+python-dotenv
+
+[build]
+build
+twine
