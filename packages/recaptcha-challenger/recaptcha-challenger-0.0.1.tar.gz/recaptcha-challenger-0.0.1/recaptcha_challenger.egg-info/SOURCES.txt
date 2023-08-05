@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+recaptcha_challenger/__init__.py
+recaptcha_challenger/_demo.py
+recaptcha_challenger/core.py
+recaptcha_challenger/exceptions.py
+recaptcha_challenger/settings.py
+recaptcha_challenger/utils.py
+recaptcha_challenger.egg-info/PKG-INFO
+recaptcha_challenger.egg-info/SOURCES.txt
+recaptcha_challenger.egg-info/dependency_links.txt
+recaptcha_challenger.egg-info/requires.txt
+recaptcha_challenger.egg-info/top_level.txt
+recaptcha_challenger/solutions/__init__.py
+recaptcha_challenger/solutions/kernel.py
+recaptcha_challenger/solutions/yolo.py

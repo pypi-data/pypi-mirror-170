@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: recaptcha-challenger
+Version: 0.0.1
+Summary: 🦉 Gracefully face reCAPTCHA challenge with ModelHub embedded solution.
+Home-page: https://github.com/QIN2DIM/recaptcha-challenger
+Author: QIN2DIM
+Author-email: yaoqinse@gmail.com
+Maintainer: QIN2DIM, Bingjie Yan
+Maintainer-email: yaoqinse@gmail.com, bj.yan.pa@qq.com
+License: GNU General Public License v3.0
+Keywords: recaptcha,recaptcha-challenger,recaptcha-solver
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
