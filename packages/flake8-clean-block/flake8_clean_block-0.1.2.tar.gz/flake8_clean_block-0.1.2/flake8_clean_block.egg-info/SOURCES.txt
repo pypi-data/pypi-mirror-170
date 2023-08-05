@@ -1,0 +1,11 @@
+LICENSE
+README.md
+flake8_clean_block.py
+setup.cfg
+setup.py
+flake8_clean_block.egg-info/PKG-INFO
+flake8_clean_block.egg-info/SOURCES.txt
+flake8_clean_block.egg-info/dependency_links.txt
+flake8_clean_block.egg-info/entry_points.txt
+flake8_clean_block.egg-info/requires.txt
+flake8_clean_block.egg-info/top_level.txt
