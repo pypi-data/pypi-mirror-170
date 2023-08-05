@@ -1,0 +1,4 @@
+[console_scripts]
+DiyibenFuzaxingChuangshanghouTaliZhenghouqunZiwoLiaoyuShengjing = DiyibenFuzaxingChuangshanghouTaliZhenghouqunZiwoLiaoyuShengjing.__main__:main
+diyiben-fuzaxing-chuangshanghou-tali-zhenghouqun-ziwo-liaoyu-shengjing = DiyibenFuzaxingChuangshanghouTaliZhenghouqunZiwoLiaoyuShengjing.__main__:main
+
