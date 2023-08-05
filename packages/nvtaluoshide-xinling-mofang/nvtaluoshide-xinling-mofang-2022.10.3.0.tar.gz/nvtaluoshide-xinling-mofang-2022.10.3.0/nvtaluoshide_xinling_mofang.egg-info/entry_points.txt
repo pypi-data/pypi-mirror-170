@@ -1,0 +1,4 @@
+[console_scripts]
+NvtaluoshideXinlingMofang = NvtaluoshideXinlingMofang.__main__:main
+nvtaluoshide-xinling-mofang = NvtaluoshideXinlingMofang.__main__:main
+
