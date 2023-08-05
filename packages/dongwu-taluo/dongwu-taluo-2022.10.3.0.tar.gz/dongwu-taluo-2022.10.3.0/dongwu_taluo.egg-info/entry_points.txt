@@ -1,0 +1,4 @@
+[console_scripts]
+DongwuTaluo = DongwuTaluo.__main__:main
+dongwu-taluo = DongwuTaluo.__main__:main
+
