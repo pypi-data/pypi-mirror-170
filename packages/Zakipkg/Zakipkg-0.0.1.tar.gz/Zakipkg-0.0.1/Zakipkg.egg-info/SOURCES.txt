@@ -1,0 +1,4 @@
+Zakipkg.egg-info/PKG-INFO
+Zakipkg.egg-info/SOURCES.txt
+Zakipkg.egg-info/dependency_links.txt
+Zakipkg.egg-info/top_level.txt
