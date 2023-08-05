@@ -1,0 +1,7 @@
+stream_gears-0.1.13.dist-info/METADATA,sha256=Ag6PzgmlpVhS5IkRaXir-TnUXRHxx9SW_zCFBCS7QHM,819
+stream_gears-0.1.13.dist-info/WHEEL,sha256=EdeA1XdSTKdb8Ens8Bcy9dWCjbCPDPd8vqsLqBElV0w,130
+stream_gears.libs/libcrypto-7db935cf.so.1.1,sha256=34zLT7krbMMU_G2iXn3m1Z9DbNalKKopbuxdRzRHVDU,3068056
+stream_gears.libs/libssl-4dcb90cf.so.1.1,sha256=LLAtdMlaDkny2y4F_4YvjiavUJAPOIaWbQKDUC53KT4,744376
+stream_gears/__init__.py,sha256=2KNb2f44ippbT7tyT5UONTxjP1Fk0FGz9Q7Gi3WdhD4,131
+stream_gears/stream_gears.cpython-310-x86_64-linux-gnu.so,sha256=aefhWA1ABm8s_AKBD7OEbCvz5gsAld76vJhclmUgTnY,4203152
+stream_gears-0.1.13.dist-info/RECORD,,
