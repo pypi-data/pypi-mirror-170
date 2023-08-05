@@ -1,0 +1,4 @@
+[console_scripts]
+JingyouFangliaoQuantujian = JingyouFangliaoQuantujian.__main__:main
+jingyou-fangliao-quantujian = JingyouFangliaoQuantujian.__main__:main
+
