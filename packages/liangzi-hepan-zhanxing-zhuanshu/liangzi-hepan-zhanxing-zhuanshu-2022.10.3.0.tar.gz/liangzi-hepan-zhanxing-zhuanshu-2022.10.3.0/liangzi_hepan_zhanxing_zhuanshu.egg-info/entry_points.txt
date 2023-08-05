@@ -1,0 +1,4 @@
+[console_scripts]
+LiangziHepanZhanxingZhuanshu = LiangziHepanZhanxingZhuanshu.__main__:main
+liangzi-hepan-zhanxing-zhuanshu = LiangziHepanZhanxingZhuanshu.__main__:main
+
