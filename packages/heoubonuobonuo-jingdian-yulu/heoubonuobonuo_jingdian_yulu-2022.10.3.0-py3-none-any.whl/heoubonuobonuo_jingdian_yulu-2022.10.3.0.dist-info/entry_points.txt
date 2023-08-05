@@ -1,0 +1,4 @@
+[console_scripts]
+HeoubonuobonuoJingdianYulu = HeoubonuobonuoJingdianYulu.__main__:main
+heoubonuobonuo-jingdian-yulu = HeoubonuobonuoJingdianYulu.__main__:main
+
