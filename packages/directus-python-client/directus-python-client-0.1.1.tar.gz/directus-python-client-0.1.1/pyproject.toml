@@ -1,0 +1,33 @@
+# Docs and Guide: https://realpython.com/pypi-publish-python-package/#name-your-package
+
+[build-system]
+
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "directus-python-client"
+version = "0.1.1"
+description = "A bunch of scripts that abstracts the Directus-REST-Api for faster development."
+readme = "README.md"
+authors = [{ name = "Quving", email = "vinh-ngu@hotmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["python", "directus"]
+dependencies = [
+    "requests==2.28.1",
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+# dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/Quving/directus-python-client"
+
+[project.scripts]
+realpython = "reader.__main__:main"
