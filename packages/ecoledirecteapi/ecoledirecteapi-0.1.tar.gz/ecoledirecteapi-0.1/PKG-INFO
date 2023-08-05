@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: ecoledirecteapi
+Version: 0.1
+Summary: ecoledirecteapi est une librairie python permetant de communiquer simplement avec l'api ecole directe
+Home-page: https://github.com/8borane8/ecoledirecteapi
+Author: Borane#9999
+License: MIT
+Keywords: ecole directe api
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+
+# EcoleDirecteApi
+
+ecoledirecteapi est une librairie python permetant de communiquer simplement avec l'api ecole directe
+
+## Exemple
+
+```python
+import ecoledirecteapi
+
+client = ecoledirecteapi.Bot()
+client.login("user", "pass")
+
+print(client.evalAverage())
+```
+
+### Fonctions
+```
+    getApiUrl =>
+    getApiVersion =>
+    encodeString =>
+    encodeBody =>
+    getHeaders =>
+    decodeB64 =>
+
+    Bot.login
+    Bot.isLogin
+    Bot.getNotes
+    Bot.evalAverage
+    Bot.getHomeworks
+    Bot.getSchoolLife
+    Bot.getSchedules
+    Bot.getMessages
+```

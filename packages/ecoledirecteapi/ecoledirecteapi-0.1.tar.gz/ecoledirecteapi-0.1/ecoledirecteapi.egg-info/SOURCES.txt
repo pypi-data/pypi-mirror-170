@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+ecoledirecteapi/__init__.py
+ecoledirecteapi.egg-info/PKG-INFO
+ecoledirecteapi.egg-info/SOURCES.txt
+ecoledirecteapi.egg-info/dependency_links.txt
+ecoledirecteapi.egg-info/requires.txt
+ecoledirecteapi.egg-info/top_level.txt
