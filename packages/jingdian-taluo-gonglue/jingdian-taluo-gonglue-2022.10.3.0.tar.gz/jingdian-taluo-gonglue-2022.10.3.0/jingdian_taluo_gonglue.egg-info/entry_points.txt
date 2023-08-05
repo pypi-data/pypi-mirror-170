@@ -1,0 +1,4 @@
+[console_scripts]
+JingdianTaluoGonglue = JingdianTaluoGonglue.__main__:main
+jingdian-taluo-gonglue = JingdianTaluoGonglue.__main__:main
+
