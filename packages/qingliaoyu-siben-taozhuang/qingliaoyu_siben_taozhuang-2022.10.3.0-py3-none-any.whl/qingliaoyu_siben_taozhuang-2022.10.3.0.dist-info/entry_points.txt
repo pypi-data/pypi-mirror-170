@@ -1,0 +1,4 @@
+[console_scripts]
+QingliaoyuSibenTaozhuang = QingliaoyuSibenTaozhuang.__main__:main
+qingliaoyu-siben-taozhuang = QingliaoyuSibenTaozhuang.__main__:main
+
