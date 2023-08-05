@@ -1,0 +1,4 @@
+[console_scripts]
+LazhuMofaChuxueZhinan = LazhuMofaChuxueZhinan.__main__:main
+lazhu-mofa-chuxue-zhinan = LazhuMofaChuxueZhinan.__main__:main
+
