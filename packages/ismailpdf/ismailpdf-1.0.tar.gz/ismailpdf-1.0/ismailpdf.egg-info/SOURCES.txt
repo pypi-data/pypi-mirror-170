@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+ismailpdf/__init__.py
+ismailpdf/pdf2text.py
+ismailpdf.egg-info/PKG-INFO
+ismailpdf.egg-info/SOURCES.txt
+ismailpdf.egg-info/dependency_links.txt
+ismailpdf.egg-info/top_level.txt
