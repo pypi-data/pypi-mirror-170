@@ -1,0 +1,4 @@
+[console_scripts]
+MofaXiaoziTaluoshu = MofaXiaoziTaluoshu.__main__:main
+mofa-xiaozi-taluoshu = MofaXiaoziTaluoshu.__main__:main
+
