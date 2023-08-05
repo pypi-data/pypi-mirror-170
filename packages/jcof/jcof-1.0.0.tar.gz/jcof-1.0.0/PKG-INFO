@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: jcof
+Version: 1.0.0
+Summary: A Python implementation of JCOF: JSON-like Compact Object Format
+Author: WhoAteMyButter
+License: GPL-3.0-or-later
+Project-URL: source, https://gitlab.com/whoatembutter/pyjcof
+Project-URL: changelog, https://gitlab.com/whoatemybutter/pyjcof/blob/main/CHANGELOG.md
+Project-URL: issues, https://gitlab.com/whoatemybutter/pyjcof/-/issues
+Keywords: jcof,pyjcof,json,compact json,jsonlike compact object format,json format,json compact,jcofpy
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Classifier: Topic :: Other/Nonlisted Topic
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE
+
+# pyJCOF
+> A Python implementation of JCOF: JSON-like Compact Object Format
+
+[![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://black.readthedocs.io/en/stable/)
+[![Pylint](https://img.shields.io/badge/pylint-9.19/10.00-ffbf48)](https://pylint.pycqa.org/en/latest/)
+[![License](https://img.shields.io/badge/license-GPL%203%2B-green)](https://spdx.org/licenses/GPL-3.0-or-later.html)
+[![PyPi](https://img.shields.io/pypi/v/pyjcof)](https://pypi.org/project/pyjcof/)
+[![Pipeline](https://img.shields.io/gitlab/pipeline-status/whoatemybutter/pyjcof)](https://gitlab.com/whoatemybutter/pyjcof/-/commits/main) 
+
+For an explanation on what JCOF is, please see https://github.com/mortie/jcof.
+This README does not explain the semantics of JCOF or its syntax.
+
+## Table of contents
+- [📦 Installation](#📦-installation)
+- [🛠 Usage](#🛠-usage)
+- [📰 Changelog](#📰-changelog)
+- [📜 License](#📜-license)
+
+---
+
+## 📦 Installation
+
+pyJCOF is available on PyPi. 
+It requires a Python version of **at least 3.10.0.** and depends on **no packages**.
+
+To install `pyjcof` with pip:
+```shell
+python -m pip install jcof
+```
+> The package name is `jcof`, **not** `pyjcof`.
+
+## 🛠 Usage
+
+`pyJCOF` functions are similar to `json`.
+Use `jcof.dumps` for converting Python values to JCOF,
+and use `jcof.loads` for converting JCOF to Python values.
+
+Use `dump` and `load` for dealing with files rather than objects.
+```python
+import jcof
+
+example = {
+    "people": [
+        {"first-name": "Bob", "age": 32, "occupation": "Plumber", "full-time": True},
+        {
+            "first-name": "Alice",
+            "age": 28,
+            "occupation": "Programmer",
+            "full-time": True,
+        },
+        {"first-name": "Bernard", "age": 36, "occupation": None, "full-time": None},
+        {"first-name": "El", "age": 57, "occupation": "Programmer", "full-time": False},
+    ]
+}
+
+dumped = jcof.dumps(example)
+# 'Programmer;"age""first-name""full-time""occupation";{"people"[(0,iw"Bob"b"Plumber")(0,is"Alice"b,s0)(0,iA"Bernard"n,n)(0,iV"El"B,s0)]}'
+
+assert jcof.loads(dumped) == example
+# Returns nothing; True
+```
+
+## 📰 Changelog
+
+The changelog is at [CHANGELOG.md](CHANGELOG.md).
+
+## 📜 License
+
+`pyjcof` is licensed under
+[GNU General Public License 3.0 or later](https://spdx.org/licenses/GPL-3.0-or-later.html).
+<br/>
