@@ -1,0 +1,2 @@
+dielepy.cp310-win_amd64.pyd
+idcappy.cp310-win_amd64.pyd
