@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hydra-rhl
+Version: 0.1
+Summary: RHL kafka management tool
+Author-email: Real Python <info@realpython.com>
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: dependency-injector (>=4.36.2)
+Requires-Dist: kafka-python (>=2.0.2)
+Requires-Dist: python-dotenv
+Provides-Extra: build
+Requires-Dist: build ; extra == 'build'
+Requires-Dist: twine ; extra == 'build'
+
+# RHL Hydra Kafka Management Tool
