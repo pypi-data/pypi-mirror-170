@@ -1,0 +1,4 @@
+[console_scripts]
+ChaojiandanYoujiFangliao = ChaojiandanYoujiFangliao.__main__:main
+chaojiandan-youji-fangliao = ChaojiandanYoujiFangliao.__main__:main
+
