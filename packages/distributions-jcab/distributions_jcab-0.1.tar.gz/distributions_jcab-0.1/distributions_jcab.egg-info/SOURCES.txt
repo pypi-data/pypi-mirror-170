@@ -1,0 +1,10 @@
+setup.py
+distributions_jcab/Binomialdistribution.py
+distributions_jcab/Gaussiandistribution.py
+distributions_jcab/Generaldistribution.py
+distributions_jcab/__init__.py
+distributions_jcab.egg-info/PKG-INFO
+distributions_jcab.egg-info/SOURCES.txt
+distributions_jcab.egg-info/dependency_links.txt
+distributions_jcab.egg-info/not-zip-safe
+distributions_jcab.egg-info/top_level.txt
