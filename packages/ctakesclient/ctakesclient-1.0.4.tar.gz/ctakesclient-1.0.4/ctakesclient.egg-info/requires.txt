@@ -1,0 +1,7 @@
+requests
+
+[docs]
+sphinx<6
+sphinx-rtd-theme
+
+[tests]
