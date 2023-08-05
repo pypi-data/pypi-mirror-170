@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+opt_sugar/opt_sugar.egg-info/PKG-INFO
+opt_sugar/opt_sugar.egg-info/SOURCES.txt
+opt_sugar/opt_sugar.egg-info/dependency_links.txt
+opt_sugar/opt_sugar.egg-info/requires.txt
+opt_sugar/opt_sugar.egg-info/top_level.txt
