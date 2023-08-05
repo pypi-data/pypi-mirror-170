@@ -1,0 +1,10 @@
+BrailleToKorean/BrailleData.py,sha256=yWUn6qI3Otw2n971Ro2N1bvFWsQ5LffYCqrBRcZkjEM,2496
+BrailleToKorean/BrailleToKor.py,sha256=8r43QzEmlczwMux4QET5E1vK5Iw3XpD-xMusz9e0rGg,17629
+BrailleToKorean/KorData.py,sha256=0NUwxxFEGr0dWrHXQ21TEAQ0K3Y-ZJZmJaiPIi6SuGs,677
+BrailleToKorean/NumberFunc.py,sha256=ObLXmrKFUkpZOVXzEv2V-dQzQiS3DqYGhpl_ohlaj6U,1394
+BrailleToKorean/PunctuationFunc.py,sha256=hBu425XwbbWg3lq8tQfqO3iZ-wbPqEwo47c-CwDFAoc,5433
+BrailleToKorean/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brailletokorean-1.0.1.dist-info/METADATA,sha256=c69Y8Vc0pj3OPvi1Xo9H4Br9rtsHJeBMreFqqAzoD0k,1042
+brailletokorean-1.0.1.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+brailletokorean-1.0.1.dist-info/licenses/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+brailletokorean-1.0.1.dist-info/RECORD,,
