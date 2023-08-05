@@ -1,0 +1,11 @@
+sphinx_autopyproject/__init__.py,sha256=0-KjMcqvFl-ABRafnAAxJrjBQW6XLuCRSRymgYrhh7M,2112
+sphinx_autopyproject/__main__.py,sha256=mCFRKpuchqPGIP8hJ4heQIydn63543IKBwmHpHg5z7w,1133
+sphinx_autopyproject/auto.py,sha256=gOJ9ZThnuod-jRROhqXI3gEC6AdMqG67kGtsOey1dGM,97
+sphinx_autopyproject/dynamic.py,sha256=EPNk2hy3naC0kb3CULEI-jujo9QHmn9RfSKkmMO4IgM,2187
+sphinx_autopyproject/package_metadata.py,sha256=kgMZtT0hIn4qwv5TMfOh2tKtswlfxChulzQcrJ-Ayg8,1717
+sphinx_autopyproject/util.py,sha256=XK4cxFhEsJZAVJpUsZatQnGsZhXA7za6GPeL84gn56A,165
+sphinx_autopyproject-0.0.1rc1.dist-info/entry_points.txt,sha256=a3xaXmCaY_FR8cZjHHzFHoIWSXT819hiVs2gbKlHUBI,80
+sphinx_autopyproject-0.0.1rc1.dist-info/LICENSE,sha256=f1Eba1IdopCF8uBuYWgTotQQh7PoBbFe0KRrf6MT0jw,1078
+sphinx_autopyproject-0.0.1rc1.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+sphinx_autopyproject-0.0.1rc1.dist-info/METADATA,sha256=evnnZgQz5M6zQJguZG10Dxie1qwkGBPPLl56zwHqA9Y,2297
+sphinx_autopyproject-0.0.1rc1.dist-info/RECORD,,
