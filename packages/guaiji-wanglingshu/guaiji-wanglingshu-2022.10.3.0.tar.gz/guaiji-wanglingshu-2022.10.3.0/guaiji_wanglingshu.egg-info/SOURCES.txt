@@ -1,0 +1,12 @@
+README.md
+setup.py
+GuaijiWanglingshu/README.md
+GuaijiWanglingshu/__init__.py
+GuaijiWanglingshu/__main__.py
+GuaijiWanglingshu/file.pdf
+GuaijiWanglingshu/index.html
+guaiji_wanglingshu.egg-info/PKG-INFO
+guaiji_wanglingshu.egg-info/SOURCES.txt
+guaiji_wanglingshu.egg-info/dependency_links.txt
+guaiji_wanglingshu.egg-info/entry_points.txt
+guaiji_wanglingshu.egg-info/top_level.txt
