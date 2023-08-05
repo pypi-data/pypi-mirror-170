@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+kuusaa2.egg-info/PKG-INFO
+kuusaa2.egg-info/SOURCES.txt
+kuusaa2.egg-info/dependency_links.txt
+kuusaa2.egg-info/top_level.txt

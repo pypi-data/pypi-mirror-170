@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: kuusaa2
+Version: 0.0.1
+Summary: A very basic dataset
+Home-page: UNKNOWN
+Author: Elias Debelo
+Author-email: eliascs2012@gmail.com
+License: MIT
+Keywords: Dataset
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Hello, Kuusaa2
+
+Change Log
+----------
+0.0.1 (10/3/2022)
+==
+This is it
+
