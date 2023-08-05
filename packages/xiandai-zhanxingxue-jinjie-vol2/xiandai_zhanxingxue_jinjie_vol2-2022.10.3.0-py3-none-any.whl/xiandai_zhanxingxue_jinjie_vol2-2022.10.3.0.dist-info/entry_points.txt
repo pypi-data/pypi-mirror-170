@@ -1,0 +1,4 @@
+[console_scripts]
+XiandaiZhanxingxueJinjieVol2 = XiandaiZhanxingxueJinjieVol2.__main__:main
+xiandai-zhanxingxue-jinjie-vol2 = XiandaiZhanxingxueJinjieVol2.__main__:main
+
