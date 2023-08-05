@@ -1,0 +1,4 @@
+include BruteCodecChecker/requirements.txt
+include BruteCodecChecker/thirdparty.json
+include BruteCodecChecker/README.MD
+include BruteCodecChecker/LICENSE
