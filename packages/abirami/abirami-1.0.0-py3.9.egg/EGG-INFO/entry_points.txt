@@ -1,0 +1,3 @@
+[console_scripts]
+record_play = analog_modem.record_play:main
+
