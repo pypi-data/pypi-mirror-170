@@ -1,0 +1,15 @@
+kservice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kservice/__main__.py,sha256=_Q5w0c_zEFcOrDbLHbJSyZKktRUWhYWYSlLksOo6npo,617
+kservice/arguments.py,sha256=O7ixrJ3vLnCuvAFUiJoXgvhVtyY4o9HhxzumvSmqu-A,1708
+kservice/cmd_utils.py,sha256=IB738B7--xhzFQatMqhRqKWawGSMAJMhbLDAWiGTyrg,479
+kservice/colors.py,sha256=4r5PZJqTVJ_GedQ_w_-8BIQMA00VP8vhknhQRUjwqiQ,226
+kservice/file_utils.py,sha256=IB738B7--xhzFQatMqhRqKWawGSMAJMhbLDAWiGTyrg,479
+kservice/k8s_utils.py,sha256=a0sp5XZsdJ4FV4vwAVRb93Avh1Qsr9ISrzsq7kejcAU,1150
+kservice/main.py,sha256=5MJ2OB_qv4zhHDjslKJmaULlgRuUohZI8p1T2BgZ8jY,731
+kservice/os_utils.py,sha256=rWbITWZL9F-zjTN2uow3BG7_1hDRv-tiYfQ-Q5QW8xM,4201
+minikservices-0.0.5.dist-info/LICENSE.txt,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+minikservices-0.0.5.dist-info/METADATA,sha256=1760wHACmGuVDOjhabLqewiC0KhYpusrUuitv4kX748,3674
+minikservices-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+minikservices-0.0.5.dist-info/entry_points.txt,sha256=C6DNdB6cuJQryPKC9V6jbKcVWZJ10zWnpe-djzTBodo,48
+minikservices-0.0.5.dist-info/top_level.txt,sha256=HRV1y8giuS4kGCTH-1kgHjR0GO2ogCYpm18AO3IWN5w,9
+minikservices-0.0.5.dist-info/RECORD,,
