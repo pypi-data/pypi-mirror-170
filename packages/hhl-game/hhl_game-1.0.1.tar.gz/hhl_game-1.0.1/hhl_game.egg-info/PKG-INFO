@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hhl-game
+Version: 1.0.1
+Summary: a game engine made by pygame
+Home-page: https://github.com/apammaaaa/fast_game
+Author: sjh
+Author-email: 1607837367@qq.com
+Maintainer: sjh
+Maintainer-email: 1607837367@qq.com
+License: BSD License
+Platform: all
