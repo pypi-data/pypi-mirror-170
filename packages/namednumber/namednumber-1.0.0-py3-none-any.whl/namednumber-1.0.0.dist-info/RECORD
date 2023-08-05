@@ -1,0 +1,17 @@
+namednumber/__init__.py,sha256=cZmnVbXgv7yQExRVjqJdakoEef5vg-MyFd5BXwI3Ey8,168
+namednumber/__main__.py,sha256=LQX4sBB0RktqB16_l276zJ-sIaQ3COOeEQXWF0tfT0Q,1903
+namednumber/fancy_number.py,sha256=lm9UfSRCIhODU-kL5JBnlYFmoBCb_-dCxpdY3H9M7EA,4887
+namednumber/name_fmt.py,sha256=IWgIdlTtu92NecYGFR2mH2ut5bQOIZk2gkWD-8KRANY,10335
+namednumber/named_number.py,sha256=4JsLybvLa6KJlIJM4UhwElQHGNr13CTWpByIo9_F6_c,3331
+namednumber/options.py,sha256=Rt8SwY3TqyU_NkOZDGvhJgCRAOvYjPPVEsEIXlgG3-U,10346
+namednumber/wordlists/128_plural_animals.txt,sha256=rIWE3hprz2_rmZ_-LHlxb5dDO66T2_11hWxhiI4BTqY,1143
+namednumber/wordlists/128_singular_animals.txt,sha256=J1cw9CKE-2l0ctCrpdgCNc8nMqOLEneYL5sGPyolzI0,1025
+namednumber/wordlists/1k_adjectives.txt,sha256=BOXJ2ezt1ULEFSjJ2BoQmgYiicKO_tYzecx-spVTgQY,9403
+namednumber/wordlists/1k_plural_nouns.txt,sha256=LI257OLDbpG67z53Hr-rQpQIqGBKg1gvAO7z7z6_Hz0,9357
+namednumber/wordlists/1k_singular_nouns.txt,sha256=up19xbWk02SX4MBPapX65Y8jQzI_kkqIcO9N-8wIu0c,8255
+namednumber-1.0.0.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+namednumber-1.0.0.dist-info/METADATA,sha256=0UUm-2JSFXln6ZXn84UpM9hjwd2TbdJPceALIz6vNU4,10233
+namednumber-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+namednumber-1.0.0.dist-info/entry_points.txt,sha256=woiZpMC3WvLMKVDpdtJA7H6C1hIZb7TcWpeQX8d4XfY,58
+namednumber-1.0.0.dist-info/top_level.txt,sha256=rMrrjhzM8JyQZxWSsABeCxMYPRVOtvF0fiEAo3PzHCE,12
+namednumber-1.0.0.dist-info/RECORD,,
