@@ -1,0 +1,4 @@
+[console_scripts]
+Lingshang = Lingshang.__main__:main
+lingshang = Lingshang.__main__:main
+
