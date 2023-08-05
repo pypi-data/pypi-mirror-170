@@ -1,0 +1,4 @@
+colorama
+sv-ttk
+plyer
+darkdetect
