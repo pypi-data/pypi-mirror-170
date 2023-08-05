@@ -1,0 +1,4 @@
+[console_scripts]
+TaluoGongzuoJiangyi = TaluoGongzuoJiangyi.__main__:main
+taluo-gongzuo-jiangyi = TaluoGongzuoJiangyi.__main__:main
+
