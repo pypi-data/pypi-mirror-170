@@ -1,0 +1,8 @@
+setup.py
+byzh/__init__.py
+byzh/main.py
+byzh.egg-info/PKG-INFO
+byzh.egg-info/SOURCES.txt
+byzh.egg-info/dependency_links.txt
+byzh.egg-info/not-zip-safe
+byzh.egg-info/top_level.txt
