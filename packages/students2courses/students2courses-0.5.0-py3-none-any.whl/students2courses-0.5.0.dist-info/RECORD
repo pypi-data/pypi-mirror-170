@@ -1,0 +1,10 @@
+students2courses/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+students2courses/course_capacities.csv,sha256=BasdRe7Gq-xJQ7Pe1GGInnk0xfo6AfC7iDipcJ-BLPc,32
+students2courses/examples.py,sha256=6M99sMkIx4uh7_w5mdbuOreCmKCDQWe2F78Y7eE7_Jo,1811
+students2courses/solver.py,sha256=YGgW6HFpkVQ8QHY1-18UsqX9sYAqJsY8VhU_Z71a1Vg,7258
+students2courses/student_votes.csv,sha256=EXGiN7vV29qjSdOMWj-1kG8h6Vy_UcDRB8BKiYr_aYA,145
+students2courses/test_solver.py,sha256=x1GcI68tnghChovOwd0bNyxFNRHB7PY7Ehka-yee6l0,2276
+students2courses-0.5.0.dist-info/METADATA,sha256=dNrpvhD-Me4IVA8PKT-smlyv9ujpJY_4vhCtspjPyqE,15532
+students2courses-0.5.0.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+students2courses-0.5.0.dist-info/licenses/LICENSE,sha256=kKjzsyWRHDzIFljgh6lB6kXKnHSXkdMMlLmsFAQvfG8,1053
+students2courses-0.5.0.dist-info/RECORD,,
