@@ -1,0 +1,10 @@
+shapelyM/__init__.py,sha256=w7VwlVKw4s2jBhY96EtQrF-_eYZgx9S3OXoHKC-UcGs,261
+shapelyM/helpers.py,sha256=tatwpiB4w19XVTYu9lUFDHaSxntnyxN_juL43ligDkE,3802
+shapelyM/lineString.py,sha256=j0A_8J6HyMUP9mgyXMtoV--QS9Go0arKDbIZZOatKP4,4820
+shapelyM/linear_reference.py,sha256=xuf67Z78ZgWjs-Vmmu7zKo_knJ-uPhfKVVjfb94Jg34,866
+shapelyM/measurePoint.py,sha256=0pmGa2lq75rmK59MdUC3a4H7qsau2Oxx9523gsb5Pus,1013
+shapelyM/projection.py,sha256=Zlb0FsDnIsRArto7dabkg9IGn3eIKYpRX_k4-2y6SQw,3476
+shapelyM/debug/autocad.py,sha256=0yTCfTr8RZjD9ftJs8o4kGLaXEEgdWgkM9PHaz9pEBc,7157
+shapelym-0.0.3.dev7.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+shapelym-0.0.3.dev7.dist-info/METADATA,sha256=-B8TNQf5XhZmQNpr0SZ4y1cz0UDbKWA7IbFST-omhjQ,2540
+shapelym-0.0.3.dev7.dist-info/RECORD,,
