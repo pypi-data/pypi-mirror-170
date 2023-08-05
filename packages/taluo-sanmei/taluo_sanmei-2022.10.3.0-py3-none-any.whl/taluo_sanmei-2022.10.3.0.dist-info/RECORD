@@ -1,0 +1,11 @@
+TaluoSanmei/Dockerfile,sha256=EL9KrzZTOAXlF3pgAqKipIvt77gtFsypZ63EkDm0fDg,54
+TaluoSanmei/README.md,sha256=Ytf5QXcpjok5kCReZQPEhHH3_8CIZqF1pLkG3TsgToc,427
+TaluoSanmei/__init__.py,sha256=dN8vkr8h4HYlVJJ3Cy_TMwsIV3A-zc-eo_QWlCDrb8o,232
+TaluoSanmei/__main__.py,sha256=StlRO3acXK2KUuyxyIo8iCn-lrgHJJFtHFGn0N6XCCM,635
+TaluoSanmei/file.pdf,sha256=SgkKCdAKCUgQo3aGlpqR4bOqgHDMJkekVRSkZtuUPVE,7806412
+TaluoSanmei/index.html,sha256=_MGK6QxkE2rVGIG7ZaJ4ecKGzeeH4FZjepNV-U7xoO4,150
+taluo_sanmei-2022.10.3.0.dist-info/METADATA,sha256=Ky_N_6Y5FPJ-7IuVipCewjvQbXKmwqIG3wBA68nIAus,1502
+taluo_sanmei-2022.10.3.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+taluo_sanmei-2022.10.3.0.dist-info/entry_points.txt,sha256=683xVPE2WHbK6u2VDYqIK_Vjde8Zg5i4-R9-whKWerw,100
+taluo_sanmei-2022.10.3.0.dist-info/top_level.txt,sha256=WB09nYJrUyoR5Oua68c8B05havwoZWgxIj4Lf7TBUdU,12
+taluo_sanmei-2022.10.3.0.dist-info/RECORD,,

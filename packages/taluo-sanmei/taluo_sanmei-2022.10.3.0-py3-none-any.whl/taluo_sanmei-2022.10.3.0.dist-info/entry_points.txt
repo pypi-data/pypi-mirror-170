@@ -1,0 +1,4 @@
+[console_scripts]
+TaluoSanmei = TaluoSanmei.__main__:main
+taluo-sanmei = TaluoSanmei.__main__:main
+
