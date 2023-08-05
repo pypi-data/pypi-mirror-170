@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: oleshkooo-excel
+Version: 0.0.1
+Summary: New level of excel control
+Home-page: https://github.com/Oleshkooo/pypi-excel
+Author: Oleshkooo
+Author-email: dev.oleh.khoma@gmail.com
+Project-URL: Bug Tracker, https://github.com/Oleshkooo/pypi-excel/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pypi-excel

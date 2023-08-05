@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/oleshko_excel/__init__.py
+src/oleshko_excel/excel.py
+src/oleshkooo_excel.egg-info/PKG-INFO
+src/oleshkooo_excel.egg-info/SOURCES.txt
+src/oleshkooo_excel.egg-info/dependency_links.txt
+src/oleshkooo_excel.egg-info/requires.txt
+src/oleshkooo_excel.egg-info/top_level.txt
