@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: yacs-stubgen
+Version: 0.1.2.post1
+Summary: Generate stub file for yacs config.
+Home-page: https://github.com/JamzumSum/yacs-stubgen
+License: MIT
+Author: JamzumSum
+Author-email: zzzzss990315@gmail.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: yacs (>=0.1.4,<0.2.0)
+Project-URL: Bug Tracker, https://github.com/JamzumSum/yacs-stubgen/issues
+Project-URL: Repository, https://github.com/JamzumSum/yacs-stubgen
+Description-Content-Type: text/markdown
+
+# yacs-stubgen
+
+Add typing support for your YACS config by generating stub file.
+
+[![python](https://img.shields.io/pypi/pyversions/yacs-stubgen?logo=python&logoColor=white)][home]
+[![version](https://img.shields.io/pypi/v/yacs-stubgen?logo=python)][pypi]
+[![workflow](https://github.com/JamzumSum/yacs-stubgen/actions/workflows/test-pub.yml/badge.svg)](https://github.com/JamzumSum/yacs-stubgen/actions/workflows/test-pub.yml)
+
+## Install
+
+<details>
+
+```sh
+pip install yacs-stubgen
+```
+
+or install from this repo:
+
+```sh
+pip install git+github.com/JamzumSum/yacs-stubgen.git
+```
+
+</details>
+
+## Usage
+
+Add typing support for your [yacs][yacs] config by appending just two lines:
+
+```py
+_C.MODEL.DEVICE = 'cuda'
+...
+# your config items above
+
+from yacs_stubgen import build_pyi
+# this line can be moved to the import header
+build_pyi(_C, __file__, var_name='_C')
+# _C is the CfgNode object, "_C" should be its name correctly
+```
+
+**After** any run/import of this file, a stub file (*.pyi) will be generated.
+Then you will get typing and auto-complete support **if your IDE supports stub files**.
+
+## License
+
+- [MIT](LICENSE)
+- [YACS][yacs] is under [Apache-2.0](https://github.com/rbgirshick/yacs/LICENSE)
+
+[yacs]: https://github.com/rbgirshick/yacs
+[home]: https://github.com/JamzumSum/yacs-stubgen
+[pypi]: https://pypi.org/project/yacs-stubgen
+
