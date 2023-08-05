@@ -1,0 +1,4 @@
+[console_scripts]
+TaluoJiemiVer2 = TaluoJiemiVer2.__main__:main
+taluo-jiemi-ver2 = TaluoJiemiVer2.__main__:main
+
