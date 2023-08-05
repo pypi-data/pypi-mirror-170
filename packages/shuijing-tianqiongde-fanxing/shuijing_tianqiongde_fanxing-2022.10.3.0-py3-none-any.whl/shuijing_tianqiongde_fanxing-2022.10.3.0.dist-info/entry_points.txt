@@ -1,0 +1,4 @@
+[console_scripts]
+ShuijingTianqiongdeFanxing = ShuijingTianqiongdeFanxing.__main__:main
+shuijing-tianqiongde-fanxing = ShuijingTianqiongdeFanxing.__main__:main
+
