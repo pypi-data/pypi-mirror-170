@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/cfa/__init__.py
+src/cfa/__main__.py
+src/cfa/data/README.md
+src/cfa/data/cfa.tar
+src/create_fastapi_app.egg-info/PKG-INFO
+src/create_fastapi_app.egg-info/SOURCES.txt
+src/create_fastapi_app.egg-info/dependency_links.txt
+src/create_fastapi_app.egg-info/entry_points.txt
+src/create_fastapi_app.egg-info/requires.txt
+src/create_fastapi_app.egg-info/top_level.txt
