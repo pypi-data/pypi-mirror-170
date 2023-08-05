@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: TruthDarePy
+Version: 1.0.0
+Summary: Truth Dare Fun Api
+Home-page: https://github.com/Awesome-Prince/Tg-Truth-Dare.git
+Author: Awesome-Prince
+Author-email: DarlingPrince@protonmail.com
+License: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Tg-Truth-Dare
+
+# Examples
+## Installing Package
+```
+$ sh pip3 install -U TruthDarePy
+```
+
+# Truth In English
+```python3
+from TruthDarePy import TD
+love = TD()
+print(love.truth["question"])
+```
+## Truth In Bangala
+```python3
+from TruthDarePy import TD
+love = TD()
+print(love.truth["bangala"])
+```
+
+# Dare In English
+```python3
+from TruthDarePy import TD
+love = TD()
+print(love.dare["question"])
+```
+
+## Dare In Bangala
+```python3
+from TruthDarePy import TD
+love = TD()
+print(love.dare["bn"])
+```
+
+# Get Available Languages
+```python3
+from TruthDarePy import TD
+love = TD()
+print(love.languages())
+```
+
+# Output
+```
+• English - question
+• বাংলা (Bengali) - bn
+• Deutsch (German) - de
+• Español (Spanish) - ea
+• Français (French) - fr
+• हिंदी (Hindi) - hi
+• Tagalog (Filipino) - tl
+```
