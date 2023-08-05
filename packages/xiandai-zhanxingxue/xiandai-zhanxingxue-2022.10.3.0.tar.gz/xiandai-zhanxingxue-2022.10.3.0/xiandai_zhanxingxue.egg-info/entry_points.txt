@@ -1,0 +1,4 @@
+[console_scripts]
+XiandaiZhanxingxue = XiandaiZhanxingxue.__main__:main
+xiandai-zhanxingxue = XiandaiZhanxingxue.__main__:main
+
