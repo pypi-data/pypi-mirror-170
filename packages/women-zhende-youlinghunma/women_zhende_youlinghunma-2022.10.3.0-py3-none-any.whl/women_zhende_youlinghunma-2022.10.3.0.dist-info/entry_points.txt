@@ -1,0 +1,4 @@
+[console_scripts]
+WomenZhendeYoulinghunma = WomenZhendeYoulinghunma.__main__:main
+women-zhende-youlinghunma = WomenZhendeYoulinghunma.__main__:main
+
