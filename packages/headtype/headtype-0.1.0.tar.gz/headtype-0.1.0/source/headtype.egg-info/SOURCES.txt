@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+source/headtype/__init__.py
+source/headtype/_high.py
+source/headtype/_master.py
+source/headtype/_types.py
+source/headtype.egg-info/PKG-INFO
+source/headtype.egg-info/SOURCES.txt
+source/headtype.egg-info/dependency_links.txt
+source/headtype.egg-info/top_level.txt
