@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ColdTOFU
+Version: 0.0.3
+Summary: Cold Atoms Time-of-Flight Utilities
+Home-page: https://github.com/chetanmadasu/TOFU
+Author: Chetan Sriram Madasu
+Author-email: chetan.madasu@gmail.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
