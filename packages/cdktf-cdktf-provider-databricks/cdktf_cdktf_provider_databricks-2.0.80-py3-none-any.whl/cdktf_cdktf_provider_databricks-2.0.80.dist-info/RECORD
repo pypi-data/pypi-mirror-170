@@ -1,0 +1,9 @@
+cdktf_cdktf_provider_databricks/__init__.py,sha256=RQK9yJKtKcXRXsy3GSunOgAzqhR1G4uGzelIPWFpExE,5762094
+cdktf_cdktf_provider_databricks/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdktf_cdktf_provider_databricks/_jsii/__init__.py,sha256=GWadUxVxeWmVS96oXeOIPS__IMh35UVn5ySQsiZBsQg,425
+cdktf_cdktf_provider_databricks/_jsii/provider-databricks@2.0.80.jsii.tgz,sha256=HVEC_t9gb05gEWVJXCD_BzfxPyq1p15SAvwp4gFj428,1666942
+cdktf_cdktf_provider_databricks-2.0.80.dist-info/LICENSE,sha256=qDABaRGjSKVOib1U8viw2P_96sIK7Puo426784oD9f8,15976
+cdktf_cdktf_provider_databricks-2.0.80.dist-info/METADATA,sha256=_Ubwn-gXPpMcTIR3FwneJu-U-TRqZ55tnpgyHMQGEBE,4267
+cdktf_cdktf_provider_databricks-2.0.80.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cdktf_cdktf_provider_databricks-2.0.80.dist-info/top_level.txt,sha256=D4ldcprM7R04L7wIdFSU0czGw8XiURWt-aI5HzpyByw,32
+cdktf_cdktf_provider_databricks-2.0.80.dist-info/RECORD,,
