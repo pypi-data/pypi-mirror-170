@@ -1,0 +1,4 @@
+include cmatcher/requirements.txt
+include cmatcher/thirdparty.json
+include cmatcher/README.MD
+include cmatcher/LICENSE
