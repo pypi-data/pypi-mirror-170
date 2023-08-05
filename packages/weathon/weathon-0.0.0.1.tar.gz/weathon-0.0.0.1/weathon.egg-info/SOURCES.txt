@@ -1,0 +1,12 @@
+README.md
+setup.py
+weathon/__init__.py
+weathon.egg-info/PKG-INFO
+weathon.egg-info/SOURCES.txt
+weathon.egg-info/dependency_links.txt
+weathon.egg-info/not-zip-safe
+weathon.egg-info/requires.txt
+weathon.egg-info/top_level.txt
+weathon/cv/__init__.py
+weathon/nlp/__init__.py
+weathon/utils/__init__.py
