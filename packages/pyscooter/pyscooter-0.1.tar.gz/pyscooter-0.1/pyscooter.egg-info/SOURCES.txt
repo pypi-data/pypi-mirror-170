@@ -1,0 +1,5 @@
+setup.py
+pyscooter.egg-info/PKG-INFO
+pyscooter.egg-info/SOURCES.txt
+pyscooter.egg-info/dependency_links.txt
+pyscooter.egg-info/top_level.txt
