@@ -1,0 +1,102 @@
+[build-system]
+requires = ["flit_core >=3.6,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+dynamic = ["version", "description"]
+name = "sphinx-automagicdoc"
+authors = [{name = "Christian Sachs", email = "sachs.christian@gmail.com"}]
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = []
+dependencies = [
+    "sphinx",
+    "Jinja2",  # is already a dependency of Sphinx
+]
+
+[project.optional-dependencies]
+check = ["black", "isort", "pyproject-flake8", "pylint", "mypy", "types-docutils"]
+doc = ["sphinx", "myst-parser", "sphinx-autopyproject", "sphinx-rtd-theme"]
+
+[project.urls]
+Home = "https://github.com/csachs/sphinx-automagicdoc"
+
+[tool.flit.module]
+name = "sphinx_automagicdoc"
+
+[tool.black]
+skip-string-normalization = 1
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203"]
+max-complexity = 10
+exclude = "venv"
+
+[tool.pylint.'MESSAGE CONTROL']
+disable = "missing-module-docstring,missing-class-docstring,missing-function-docstring"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.sphinx-autopyproject.autopyproject.dynamic]
+project = { type="package", value="name"}
+copyright = { type="package", value="author"}
+author = { type="package", value="author"}
+version = { type="package", value="version"}
+
+[tool.sphinx-autopyproject]
+extensions = [
+    "myst_parser",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.viewcode",
+    "sphinx.ext.doctest",
+    "sphinx_automagicdoc",
+    "sphinx_rtd_theme",
+]
+
+automagic_modules = ["sphinx_automagicdoc"]
+automagic_ignore = ["*test*"]
+
+language = "en"
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+html_theme = "sphinx_rtd_theme"
+
+[tool.sphinx-autopyproject.automagic_files]
+"index.rst" = """
+Welcome to sphinx-automagicdoc's documentation!
+===============================================
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+   README
+   LICENSE
+   sphinx_automagicdoc
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+"""
+
+"README.rst" = """
+Readme
+======
+.. include:: ../README.md
+   :parser: myst_parser.sphinx_
+"""
+
+"LICENSE.rst" = """
+License
+=======
+.. include:: ../LICENSE
+   :parser: myst_parser.sphinx_
+"""
