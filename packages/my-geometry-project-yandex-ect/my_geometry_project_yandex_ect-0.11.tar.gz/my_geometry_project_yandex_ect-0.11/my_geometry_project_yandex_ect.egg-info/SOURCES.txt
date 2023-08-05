@@ -1,0 +1,9 @@
+README.md
+setup.py
+figures/__init__.py
+figures/line.py
+figures/triangle.py
+my_geometry_project_yandex_ect.egg-info/PKG-INFO
+my_geometry_project_yandex_ect.egg-info/SOURCES.txt
+my_geometry_project_yandex_ect.egg-info/dependency_links.txt
+my_geometry_project_yandex_ect.egg-info/top_level.txt
