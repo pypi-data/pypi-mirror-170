@@ -1,0 +1,4 @@
+[console_scripts]
+TujieXingxueDachengVol3 = TujieXingxueDachengVol3.__main__:main
+tujie-xingxue-dacheng-vol3 = TujieXingxueDachengVol3.__main__:main
+
