@@ -1,0 +1,7 @@
+carefree-client>=0.1.2
+carefree-learn[cv]>=0.3.2
+
+[kafka]
+kafka-python
+redis[hiredis]
+cos-python-sdk-v5
