@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: libdevpro
+Version: 0.1
+Summary: Módulo para exemplificar construção de projetos Python no curso PyTools
+Home-page: https://github.com/thiago-garcia/libdevpro
+Author: Thiago Garcia
+Author-email: thiago-garcia@outlook.com
+License: GNU AFFERO GENERAL PUBLIC LICENSE
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Framework :: Pytest
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# libdevpro
+Módulo para exemplificar a construção de projetos Python no curso PyTools
+
+Link para o curso [DevPro](https://pythonpro.com.br/)
+
+Suportada versão 3 do Python
+
+Para instalar:
+
+```console
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements-dev.txt
+```
+
+Para conferir qualidade de código:
+
+```console
+flake8
+```
+
+Tópicos a serem abordados:
+1. Git
+2. Virtualenv
+3. Pip
+4. Integração contínua com GitHub Actions
