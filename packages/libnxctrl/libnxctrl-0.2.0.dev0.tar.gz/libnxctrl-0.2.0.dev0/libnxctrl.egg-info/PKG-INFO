@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: libnxctrl
+Version: 0.2.0.dev0
+Summary: Python Library Emulating Nintendo Switch Controllers
+Home-page: https://github.com/Victrid/libnxctrl
+Author: Weihao Jiang
+Author-email: weihau.chiang@gmail.com
+License: GPLv3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: nxbt
+Provides-Extra: joycontrol
+Provides-Extra: usb
+License-File: LICENSE
+
+# libnxctrl
+Python Library Emulating Nintendo Switch Controllers
