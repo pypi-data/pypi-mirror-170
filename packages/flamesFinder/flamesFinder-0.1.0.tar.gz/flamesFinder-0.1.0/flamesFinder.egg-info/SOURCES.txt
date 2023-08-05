@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+flamesFinder/__init__.py
+flamesFinder/flames.py
+flamesFinder.egg-info/PKG-INFO
+flamesFinder.egg-info/SOURCES.txt
+flamesFinder.egg-info/dependency_links.txt
+flamesFinder.egg-info/top_level.txt
