@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bmb-schema
+Version: 0.3.3
+Summary: Bmbix document types
+Home-page: https://dev.bmbix.com
+Author: Robin Abbi
+Author-email: robin.abbi@downley.net
+License: Proprietary.
+Keywords: bmb
+Platform: UNKNOWN
+Requires-Dist: lxml
+Requires-Dist: bmb.entity
+Requires-Dist: jinja2
+Requires-Dist: WeasyPrint (<=52.0)
+
+Bmbix document types
+

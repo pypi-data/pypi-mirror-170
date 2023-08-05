@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="invoice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="number" type="xs:string" />
+        <xs:element name="date" type="xs:date" />
+        <xs:element name="seller" type="xs:string" />
+        <xs:element name="buyer" type="xs:string" />
+        <xs:element name="currencycode" type="xs:string" />
+        <xs:element name="net" type="xs:decimal" />
+        <xs:element name="vat" type="xs:decimal" />
+        <xs:element name="gross" type="xs:decimal" />
+        <xs:element name="sellername" type="xs:string" minOccurs="0" />
+        <xs:element name="selleraddress1" type="xs:string" minOccurs="0" />
+        <xs:element name="selleraddress2" type="xs:string" minOccurs="0" />
+        <xs:element name="selleraddress3" type="xs:string" minOccurs="0" />
+        <xs:element name="sellerbusinessregistrationnumber" type="xs:string" minOccurs="0" />
+        <xs:element name="sellertaxregistrationnumber" type="xs:string" minOccurs="0" />
+        <xs:element name="customername" type="xs:string" minOccurs="0" />
+        <xs:element name="customeraddress1" type="xs:string" minOccurs="0" />
+        <xs:element name="customeraddress2" type="xs:string" minOccurs="0" />
+        <xs:element name="customeraddress3" type="xs:string" minOccurs="0" />
+        <xs:element name="customerbusinessregistrationnumber" type="xs:string" minOccurs="0" />
+        <xs:element name="customertaxregistrationnumber" type="xs:string" minOccurs="0" />
+        <xs:element name="line" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="quantity"
+              type="xs:decimal" />
+              <xs:element name="unitprice"
+              type="xs:decimal" />
+              <xs:element name="unitofmeasure"
+              type="xs:string" />
+              <xs:element name="itemcode" type="xs:string" />
+              <xs:element name="description"
+              type="xs:string" />
+              <xs:element name="net" type="xs:decimal" />
+              <xs:element name="vatcode" type="xs:string" />
+              <xs:element name="vat" type="xs:decimal" />
+              <xs:element name="gross" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

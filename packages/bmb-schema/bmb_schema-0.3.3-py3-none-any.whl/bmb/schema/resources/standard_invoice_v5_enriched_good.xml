@@ -1,0 +1,33 @@
+<invoice xmlns:r="robin" xmlns:kf="KashFlow" version="5">
+  <number>99X2J</number>
+  <date>2018-05-25</date>
+  <seller>XXX-NOT-AVAILABLE-FROM-KASHFLOW-XXX</seller>
+  <buyer>EAGE01</buyer>
+  <currencycode>GBP</currencycode>
+  <net>25509.0000</net>
+  <vat>5101.8000</vat>
+  <gross>30610.8</gross>
+  <sellername></sellername>
+  <selleraddress1></selleraddress1>
+  <selleraddress2></selleraddress2>
+  <selleraddress3></selleraddress3>
+  <sellerbusinessregistrationnumber></sellerbusinessregistrationnumber>
+  <sellertaxregistrationnumber></sellertaxregistrationnumber>
+  <customername></customername>
+  <customeraddress1></customeraddress1>
+  <customeraddress2></customeraddress2>
+  <customeraddress3></customeraddress3>
+  <customerbusinessregistrationnumber></customerbusinessregistrationnumber>
+  <customertaxregistrationnumber></customertaxregistrationnumber>
+  <line>
+    <quantity>300.0000</quantity>
+    <unitprice>85.0300</unitprice>
+    <unitofmeasure>per</unitofmeasure>
+    <itemcode>3363321</itemcode>
+    <description>very nice clips</description>
+    <net>25509</net>
+    <vatcode>20.0000</vatcode>
+    <vat>5101.8000</vat>
+    <gross>30610.8</gross>
+  </line>
+</invoice>

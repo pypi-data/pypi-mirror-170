@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:400,700");
+@page {
+    size: portrait;
+    margin: 2cm;
+    @bottom-left {
+        color: #449;
+        content: 'This invoice can be automatically imported to your accounts';
+        font-size: 8pt;
+        font-family: sans;
+    }
+    @bottom-right {
+        color: #449;
+        content: 'Powered by bmbix.com | Connecting the worlds accounting systems';
+        font-family: sans;
+        font-size: 8pt;
+    }
+}
+
+html {
+  color: #14213d;
+  font-family: Source Sans Pro;
+  font-size: 11pt;
+  line-height: 1.6;
+  }
+
+html body {
+  margin: 0;
+  }
+
+.section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left {
+    width: 11cm;
+  }
+
+.right {
+}
+
+#s2 {
+    margin-bottom: 1cm;
+}
+
+#s3 table {
+    width: 100%;
+}
+
+
+h1 {
+  color: #333;
+  font-family: sans;
+  font-size: 24pt;
+  margin: 0;
+  }
+
+#logo {
+  display: block;
+  max-width: 3.2cm;
+  max-height: 3.2cm;
+  width: auto;
+  height: auto;
+  }
+
+address {
+  font-style: normal;
+  white-space: pre-line;
+  }
+
+table {
+  overflow-wrap: break-word;
+  border-collapse: collapse;
+  }
+
+th {
+  color: #333;
+  font-weight: 400;
+  text-transform: uppercase;
+  vertical-align: top;
+  border-color: #f6f6f6;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: bold;
+  }
+
+td {
+  vertical-align: top;
+  border-color: #f6f6f6;
+  border-style: solid;
+  border-width: 1px;
+  }
+
+.money {
+  text-align: right;
+}
+.vatcode{
+  text-align: center;
+}

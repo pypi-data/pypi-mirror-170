@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="change_requests_response">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="change_request" maxOccurs="unbounded" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="id" type="xs:string" />
+            <xs:element name="whitelist_id" type="xs:string" />
+            <xs:element name="sender_basic" type="xs:string" />
+            <xs:element name="receiver_basic" type="xs:string" />
+            <xs:element name="desired_sender_status" >
+              <xs:simpleType>
+                <xs:restriction base="xs:string" >
+                  <xs:enumeration value="ON_LIST" />
+                  <xs:enumeration value="OFF_LIST" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="status" >
+              <xs:simpleType>
+                <xs:restriction base="xs:string" >
+                  <xs:enumeration value="APPROVED" />
+                  <xs:enumeration value="DENIED" />
+                  <xs:enumeration value="PENDING" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
