@@ -1,0 +1,4 @@
+[console_scripts]
+ShengmingLunhui = ShengmingLunhui.__main__:main
+shengming-lunhui = ShengmingLunhui.__main__:main
+
