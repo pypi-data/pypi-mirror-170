@@ -1,0 +1,4 @@
+include a_pandas_ex_plode_tool/requirements.txt
+include a_pandas_ex_plode_tool/thirdparty.json
+include a_pandas_ex_plode_tool/README.MD
+include a_pandas_ex_plode_tool/LICENSE
