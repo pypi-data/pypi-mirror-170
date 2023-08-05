@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+wordgeek/__init__.py
+wordgeek/wk.py
+wordgeek.egg-info/PKG-INFO
+wordgeek.egg-info/SOURCES.txt
+wordgeek.egg-info/dependency_links.txt
+wordgeek.egg-info/top_level.txt
