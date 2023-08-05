@@ -1,0 +1,4 @@
+[console_scripts]
+QimenTansuolu = QimenTansuolu.__main__:main
+qimen-tansuolu = QimenTansuolu.__main__:main
+
