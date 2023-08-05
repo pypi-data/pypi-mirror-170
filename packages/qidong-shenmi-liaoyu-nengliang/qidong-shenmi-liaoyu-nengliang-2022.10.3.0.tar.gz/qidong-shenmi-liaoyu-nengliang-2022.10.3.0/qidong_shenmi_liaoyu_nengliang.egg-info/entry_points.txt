@@ -1,0 +1,4 @@
+[console_scripts]
+QidongShenmiLiaoyuNengliang = QidongShenmiLiaoyuNengliang.__main__:main
+qidong-shenmi-liaoyu-nengliang = QidongShenmiLiaoyuNengliang.__main__:main
+
