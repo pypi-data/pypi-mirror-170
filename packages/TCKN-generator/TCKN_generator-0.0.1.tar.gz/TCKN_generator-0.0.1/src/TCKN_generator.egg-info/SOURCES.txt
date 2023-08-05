@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/TCKN_generator/__init__.py
+src/TCKN_generator/generator.py
+src/TCKN_generator/validator.py
+src/TCKN_generator.egg-info/PKG-INFO
+src/TCKN_generator.egg-info/SOURCES.txt
+src/TCKN_generator.egg-info/dependency_links.txt
+src/TCKN_generator.egg-info/top_level.txt
