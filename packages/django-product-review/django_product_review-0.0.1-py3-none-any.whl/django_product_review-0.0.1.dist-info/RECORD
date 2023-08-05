@@ -1,0 +1,17 @@
+review/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+review/admin.py,sha256=EvobwDdofqS7Gf0CS_qxFZrgzbu1Gcz3A0rk-XEqz-k,118
+review/apps.py,sha256=1j3Rur0lDNAE1ztrQJZoQo2-mDoi4sqaPbptGgWZrbw,144
+review/forms.py,sha256=1GdU-Do4yEAb8DrrdLhxKUxRm1AqqNAt4Q7shrtoGuU,441
+review/models.py,sha256=1s1wtBC-1kqu9bMlebjrciX-AMNiyjEdffK2yE2NjaQ,974
+review/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+review/urls.py,sha256=DdGK56pcYtyzAjHGSTit7PpqzYa4pyhOod9-1ntuhdk,136
+review/views.py,sha256=ndtzXiJSj6LvkrSM_SUssewGjrSeq87B3ZLbfORgmmQ,702
+review/migrations/0001_initial.py,sha256=888lHx-FkUOIFxyAkK889DA_VYsY_7oOMuzx0c1U2Q4,1897
+review/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+review/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+review/templatetags/django_review.py,sha256=R8aHi57EOTLnYI752j9tKpRHanbuOIwqmzo4WduyhxM,359
+django_product_review-0.0.1.dist-info/LICENSE,sha256=-ZBK2-de-Br_5cAXpV9mnkEWkWbU8o_Idhc-R_wePHI,1077
+django_product_review-0.0.1.dist-info/METADATA,sha256=jixVQGdrEK_GHnU3UsUbsgl1VRJeJJGy1YDpT57iGTY,3998
+django_product_review-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_product_review-0.0.1.dist-info/top_level.txt,sha256=RSt7ZC4yXLK1sgrChTatqLCtMSIXqYq3_yMzBgO2MSY,7
+django_product_review-0.0.1.dist-info/RECORD,,
