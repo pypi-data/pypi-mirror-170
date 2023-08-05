@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+tomicode/__init__.py
+tomicode/commands.py
+tomicode.py.egg-info/PKG-INFO
+tomicode.py.egg-info/SOURCES.txt
+tomicode.py.egg-info/dependency_links.txt
+tomicode.py.egg-info/top_level.txt

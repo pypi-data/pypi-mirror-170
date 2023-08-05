@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tomicode.py
+Version: 1.0.0
+Summary: Biblioteka do randomowych rzeczy
+Home-page: UNKNOWN
+Author: xMiki3oo5#7346
+Author-email: xmiki3oo5@gmail.com
+License: MIT
+Keywords: random
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+The library for random!
+
