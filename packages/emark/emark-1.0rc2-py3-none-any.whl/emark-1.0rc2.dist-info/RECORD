@@ -1,0 +1,10 @@
+emark/__init__.py,sha256=Wm_Fs0J8bIAddTYLh-KakmXl2TdeeiwliDpnJoQqm7w,152
+emark/_version.py,sha256=gtKTBtWK1it5QsufS21oe35ZsGd-BgMOh7Z415OiTTs,174
+emark/conf.py,sha256=S4ua_cFOS6PQl0dPPCAGpVg_5JijiJPpTUJ5k_FYCFs,281
+emark/message.py,sha256=MRIMab3jsWqQNBsSlwMkR-0SJIzQ5he3HsQ-qhevmuY,6273
+emark/utils.py,sha256=ZWguaPQYmtoie_SUJb6LLUWNDMlSY74dGfl8j9aaLpM,3780
+emark/templates/emark/base.html,sha256=Zt-75dEcZ7DOg3eK2MbHcd1BXbWPLXf5zUzY_AZhneY,5317
+emark-1.0rc2.dist-info/LICENSE,sha256=sSwRs_fa0RLi5Wt3NctIOBPHKRJGcdDkPcbNHYNj6Bs,1518
+emark-1.0rc2.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+emark-1.0rc2.dist-info/METADATA,sha256=ClfMrQ4fzswqAD4uk7p0xZIvrqFJ-2LNlTZXjfpIl7E,5317
+emark-1.0rc2.dist-info/RECORD,,
