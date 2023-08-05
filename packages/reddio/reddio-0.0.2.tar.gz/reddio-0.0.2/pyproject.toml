@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "reddio"
+version = "0.0.2"
+description = "A simple GET only reddit API wrapper"
+authors = ["VarMonke <var.monke@gmail.com>", "WitherredAway <sdssouvic99@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = "*"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
