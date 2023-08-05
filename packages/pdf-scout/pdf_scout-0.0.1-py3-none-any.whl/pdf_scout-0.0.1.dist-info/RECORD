@@ -1,0 +1,13 @@
+pdf_scout/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_scout/app.py,sha256=SO2TdT2DLvjd3E3K9MzaCavYjQbjh4f-xQ1Er0UoeIE,4174
+pdf_scout/cache.py,sha256=ITQ-LQ2qh5Ybc6Hkq5az_Wp3rE96DogRjVUiJYoJGVY,208
+pdf_scout/extract.py,sha256=_tSInfGtMVNA54ztvBQIw1i1HCdesbzFWSed0zBjPsg,4283
+pdf_scout/scoring.py,sha256=kYuq_YhWi2Dtf0iZ3H9OD1DcxG5C63Xw8HhzjyEdEuY,2390
+pdf_scout/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_scout/tests/snapshots/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_scout/tests/snapshots/snap_test_extract.py,sha256=hc3PlLBWlyswYBceq2eCoC9MfaYrg5Sxj1ZJdlVMMQE,2514560
+pdf_scout/tests/test_extract.py,sha256=CwfhIthAsaQWHul8Yh327k2TQMMWyvpvh8_K1QJJbpk,1729
+pdf_scout-0.0.1.dist-info/entry_points.txt,sha256=1ll1TOV2vCyVePcuIY_mr9cRhannTJR4xSuuV2xQPhs,49
+pdf_scout-0.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pdf_scout-0.0.1.dist-info/METADATA,sha256=SGu0aACTcEd_-W4iajf5JiFTnGTrz3Jybsj--2hUnEY,544
+pdf_scout-0.0.1.dist-info/RECORD,,
