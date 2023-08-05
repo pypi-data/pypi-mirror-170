@@ -1,0 +1,10 @@
+apptweak/__init__.py,sha256=YCgBDSje1r2eNFamnD6OkAgw_3HoP2-UQ2L31nZAxc4,477
+apptweak/android.py,sha256=rv95yHaZMASWjLuUKCxhIxkrPh0MLRawCp9CihaKOUs,4295
+apptweak/ios.py,sha256=0hqLiPwVZ0eoicGQoZmQStuAq_SiBrCjtX_idimMgno,427
+apptweak/plateform.py,sha256=M7Yyx4kB9EvS0FBJqH5bMNLqWL5qUA4BWjdJ5tLiaRY,20085
+apptweak/ressource.py,sha256=FpDmRigLHioJE6Ye9hkWzicm93b0W9OTuZYe6Z1t-Rg,2167
+apptweak-2.0.0.dev0.dist-info/LICENSE.txt,sha256=QkRynlEMBP8xagCA_qUcpMGyXjuNyv3jxb7j90mi5WQ,1069
+apptweak-2.0.0.dev0.dist-info/METADATA,sha256=EomdjfieM1lFeOuYZHHEPBp2DTqW9fljlPeS9g7Kd6Q,4420
+apptweak-2.0.0.dev0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+apptweak-2.0.0.dev0.dist-info/top_level.txt,sha256=EZLCxBunXqQzVstNYJSt5jKfHJHiM6zEk5phcSEjkAI,9
+apptweak-2.0.0.dev0.dist-info/RECORD,,
