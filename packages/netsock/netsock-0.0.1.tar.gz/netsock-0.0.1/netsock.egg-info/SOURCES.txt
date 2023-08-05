@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+netsock/__init__.py
+netsock/sock.py
+netsock.egg-info/PKG-INFO
+netsock.egg-info/SOURCES.txt
+netsock.egg-info/dependency_links.txt
+netsock.egg-info/requires.txt
+netsock.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: netsock
+Version: 0.0.1
+Summary: Python module for writing websites.Two It 2022 (two-it.netlify.app API wrapper)
+Home-page: https://github.com/TwoIt202/Network
+Download-URL: https://github.com/TwoIt202/Network/raw/94a179087866ef5bd41a8c6ce777ec0cbffa8268/network.zip
+Author: two-it2022
+Author-email: kodland.group@gmail.com
+License: Apache License, Version 0.1, see LICENSE file
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+
+Python module for Two It project
+                  management platform (TwoIt API wrapper)
