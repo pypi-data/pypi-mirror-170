@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "package-installation-test"
+version = "1.0.0"
+description = "A test package for verifying which Python is in use and where `pip` is installing packages"
+keywords = ['test', 'install']
+authors = ["Karl Knechtel <karl.a.knechtel@gmail.com>"]
+readme = "README.md"
+# This doesn't work yet - see https://github.com/python-poetry/poetry/issues/6689
+# license = "Unlicense"
+# So, specify explicitly (along with other classifiers):
+classifiers = [
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development"
+]
+packages = [
+    { include = "example_package" },
+]
+homepage = "https://github.com/zahlman/package-installation-test"
+repository = "https://github.com/zahlman/package-installation-test"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+demo-example-package = "example_package:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
