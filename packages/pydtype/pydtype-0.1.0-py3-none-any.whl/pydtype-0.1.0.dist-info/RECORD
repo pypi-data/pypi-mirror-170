@@ -1,0 +1,14 @@
+pydtype/__init__.py,sha256=yoo_pjpe4FI14C6_y7sSSlOwuFD5GfTeNs-7qeB4Ciw,260
+pydtype/core/__init__.py,sha256=jEJbwHmtfpneat58yeTn71A7mpXcEuZEXDADXl3286A,127
+pydtype/core/parser.py,sha256=QZri0dtqa07Kcz19SWkr6S25PWu-3SZz4qWiiZyu414,458
+pydtype/core/specifier.py,sha256=eOIvNF_3Ow2VjTORzKYrTIFkAEJ5EQ7fp-5OsZTC1p0,761
+pydtype/core/types.py,sha256=SEq-cJWp6bV7TfgPHN7lUNEc0f5GTNVr_KzGgnFCJho,1472
+pydtype/frameworks/__init__.py,sha256=FVH5hoKEjdWmw1PF2X31BsrNTq-svy3VkEpy9zQcPYw,92
+pydtype/frameworks/numpy.py,sha256=8ZKH0vhb7n4zAfsY4o1Osgd8f8WdQr-eTNLV0SAC_fM,4952
+pydtype/frameworks/struct.py,sha256=YCkJvsoxrPhh3N0d1GVW8FQCBXLPOUJpOVuBW4Z29fU,3248
+pydtype/translator.py,sha256=CdQ9FHZYm-CuKtHUbh8lhW21SbcieXe4zGrjxhaIxBs,640
+pydtype/typing.py,sha256=VPkbLvIB7JwRa-dNpcQLHHdwIH4IWzA0il0p7r6yf54,51
+pydtype-0.1.0.dist-info/LICENSE,sha256=hH54zDfdxZ19a8xqv4JnWFyAHJWm8RcRFdZDTj5LjgU,1072
+pydtype-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pydtype-0.1.0.dist-info/METADATA,sha256=9TybazGIzfQrsIQ_-dg5MycFolYPhnMVG2e34DIiIwo,2146
+pydtype-0.1.0.dist-info/RECORD,,
