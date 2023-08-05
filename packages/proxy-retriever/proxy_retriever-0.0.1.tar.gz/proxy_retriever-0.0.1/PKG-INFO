@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: proxy_retriever
+Version: 0.0.1
+Summary: A small python package utility to easily retrieve and check proxies
+Project-URL: Homepage, https://github.com/pyroTM/proxyRetriever
+Project-URL: Bug Tracker, https://github.com/pyroTM/proxyRetriever/issues
+Author-email: Trisanth Srinivasan <trisanthsrinivasan@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+A simple python package that allows you to retrieve and check proxies easily. Can be used with multithreading to make it marginally faster.
