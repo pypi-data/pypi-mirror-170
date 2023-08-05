@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: gid_tasks
+Version: 0.0.2
+Summary: GidTasks
+Author: BrocaProgs
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pyparsing~=3.0
+Requires-Dist: attrs~=22.1
+Requires-Dist: autoflake~=1.6
+Requires-Dist: autopep8~=1.7
+Requires-Dist: invoke~=1.7
+Requires-Dist: isort~=5.10
+Requires-Dist: marshmallow~=3.18
+Requires-Dist: rich~=12.6
+Requires-Dist: sortedcontainers~=2.4
+Requires-Dist: toml~=0.10
+Requires-Dist: watchdog~=2.1
+Requires-Dist: yarl~=1.8
+Requires-Dist: frozendict~=2.3
+Requires-Dist: Send2Trash~=1.8
+Project-URL: Source, https://github.com/Giddius/GidTasks
+
+
+GidTasks
+==========
+
+.. image:: https://github.com/Giddius/GidTasks/blob/master/docs/images/gid_task_logo.png?raw=true
+
+
+WiP
