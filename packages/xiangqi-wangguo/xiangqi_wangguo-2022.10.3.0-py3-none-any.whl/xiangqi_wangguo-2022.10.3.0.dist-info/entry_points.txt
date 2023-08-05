@@ -1,0 +1,4 @@
+[console_scripts]
+XiangqiWangguo = XiangqiWangguo.__main__:main
+xiangqi-wangguo = XiangqiWangguo.__main__:main
+
