@@ -1,0 +1,17 @@
+infery.cpython-39-darwin.so,sha256=1V1f5caoMzYTJYYKJOPOJ3ew-iBLVcT9CSgqFk3vEnY,2175048
+infery.pyi,sha256=a8xswNHZ8SueaUKByvOC-1EBIUyaH-XGPhiuQtbZdZ4,2731
+tests.cpython-39-darwin.so,sha256=H6PoCsTe1J3tUqo4I4h_KlQrIHoPE-snLUBqW1uEOBY,1657056
+tests.pyi,sha256=G0D4VXf6CujpfiGdKXWiR0wii9y4i5X91ByOtGostPU,3019
+infery/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/infery_tool/model_metadata_example.json,sha256=qtS4B2jDEkzpuCDft_nVQ1zSgE98FSLkI01zLheXfIY,989
+tests/installation_tests/venv_test_runner.sh,sha256=zdwlVLwIrnBwkpJB_uzAk7tojy8DcOd5kglN4CHwQLE,2185
+tests/installation_tests/requirements/empty.requirements.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/installation_tests/requirements/torch_numpy_1_20.requirements.txt,sha256=GTD_MHQkQKdSndABFUjOpfQavxyYJsxXPxR8CrAjwTg,18
+tests/installation_tests/requirements/torch_numpy_1_20.with_infery.requirements.txt,sha256=dxvkEfhYDYbrqBllfmP3QUvbOIeRh5Ajuy0a54swXj4,26
+tests/installation_tests/requirements/torch_numpy_1_20.with_infery_gpu.requirements.txt,sha256=r7wyjmGcahVdBpy_HsU_Rm5LFxhJ6ftGPX2H4I5thlo,30
+tests/unit_tests/test_inferencers/Arial.ttf,sha256=Ull5giWRo0R8_EnZQ9b3aDUI4lVDQHhxwO2P7QX9K9k,773236
+infery_openvino-3.6.0.dist-info/LICENSE,sha256=xbk3exNmWGQ0V59U9TUVZts5p2BI-mzMEdSMc_GldQ4,11342
+infery_openvino-3.6.0.dist-info/METADATA,sha256=h2X9bjfe9mrlX2NiuZkVWbShRnewkBboSPJi1-XCtTs,622
+infery_openvino-3.6.0.dist-info/WHEEL,sha256=-81jCap161k7a_jQ2AisZmu4bdptYu1F4QWfBq4AZxI,103
+infery_openvino-3.6.0.dist-info/top_level.txt,sha256=W4SjdZWE39rdkEfVRcpvypJPYLe0ug4Ln3kP9OUZYu8,13
+infery_openvino-3.6.0.dist-info/RECORD,,
