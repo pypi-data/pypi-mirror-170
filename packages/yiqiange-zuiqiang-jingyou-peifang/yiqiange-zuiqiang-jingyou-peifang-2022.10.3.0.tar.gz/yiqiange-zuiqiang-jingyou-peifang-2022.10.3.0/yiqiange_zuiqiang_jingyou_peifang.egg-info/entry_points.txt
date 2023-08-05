@@ -1,0 +1,4 @@
+[console_scripts]
+YiqiangeZuiqiangJingyouPeifang = YiqiangeZuiqiangJingyouPeifang.__main__:main
+yiqiange-zuiqiang-jingyou-peifang = YiqiangeZuiqiangJingyouPeifang.__main__:main
+
