@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+jcof/__init__.py
+jcof/dumping.py
+jcof/loading.py
+jcof.egg-info/PKG-INFO
+jcof.egg-info/SOURCES.txt
+jcof.egg-info/dependency_links.txt
+jcof.egg-info/requires.txt
+jcof.egg-info/top_level.txt
