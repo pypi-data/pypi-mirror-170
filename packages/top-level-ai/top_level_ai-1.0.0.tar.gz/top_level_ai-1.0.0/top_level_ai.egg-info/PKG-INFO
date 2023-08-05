@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: top-level-ai
+Version: 1.0.0
+Summary: The world's top AI chat framework (just kidding).
+Home-page: https://github.com/ZetaSp/top_level_ai
+Author: Zetaspace
+Author-email: zetaspace@outlook.com
+License: WTFPL
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: Public Domain
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Games/Entertainment :: Simulation
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+The world's top AI chat framework :)
+====================================
+__(just kidding)__
+
+This is a simple AI chatting framework, which you can use to create a chat bot or some kind of assistant etc.
+
+Needs nothing but a wild python, whom you will soon start chatting with.
+
+This is just a toy. Enjoy yourself!
+
+Installation
+-----
+
+```bash
+pip install -U top_level_ai
+```
+
+Example
+-----
+
+```python
+import top_level_ai as magic
+magic.AI()  # 'And this is me.' <- random
+magic.AI(lang='zhs')  # '我听你吗。' <- random
+magic.AI('fuck')  # 'This and also me.'
+magic.AI(1032)  # 'You hey to me.'
+magic.AI('z', lang='zht')  # '好你在聽。'
+```
+
+That's all.
+
+More Resources
+--------------
+
+-   Meow?
+
+License
+-------
+
+[WTFPL](http://www.wtfpl.net/about/).

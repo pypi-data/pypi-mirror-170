@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+top_level_ai/__init__.py
+top_level_ai/__version__.py
+top_level_ai/fancy_ai_core_tech.py
+top_level_ai.egg-info/PKG-INFO
+top_level_ai.egg-info/SOURCES.txt
+top_level_ai.egg-info/dependency_links.txt
+top_level_ai.egg-info/top_level.txt
