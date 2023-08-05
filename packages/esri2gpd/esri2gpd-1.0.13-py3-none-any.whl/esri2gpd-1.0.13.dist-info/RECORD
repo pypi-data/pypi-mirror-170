@@ -1,0 +1,8 @@
+esri2gpd/__init__.py,sha256=JEK2s17ZcdoWmVnZsE0mrwE3csPujMdZwQjwGrO3hmo,97
+esri2gpd/core.py,sha256=wDKQU1YDiZXXNP0foLfGkYfCAw3hdTZlmy-GxI7UJnA,3377
+esri2gpd/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+esri2gpd/tests/test_get.py,sha256=EFyzVi8QuK_aulZtLvYSmXZTyHtA7kZ1LaeIlUWK7Dk,763
+esri2gpd-1.0.13.dist-info/LICENSE,sha256=HwRPgGVug4rj5VctPpyZzSeN60rPDAefvFwasA6QbiM,1103
+esri2gpd-1.0.13.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+esri2gpd-1.0.13.dist-info/METADATA,sha256=C6TsiEWnkH4RApAKyI1eux6zbb3xaAiWE8kqXYBt-Ww,604
+esri2gpd-1.0.13.dist-info/RECORD,,
