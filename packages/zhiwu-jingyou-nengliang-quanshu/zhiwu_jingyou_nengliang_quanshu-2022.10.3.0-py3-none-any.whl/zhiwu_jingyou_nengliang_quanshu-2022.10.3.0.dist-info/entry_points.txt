@@ -1,0 +1,4 @@
+[console_scripts]
+ZhiwuJingyouNengliangQuanshu = ZhiwuJingyouNengliangQuanshu.__main__:main
+zhiwu-jingyou-nengliang-quanshu = ZhiwuJingyouNengliangQuanshu.__main__:main
+
