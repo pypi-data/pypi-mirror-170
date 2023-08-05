@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+CleaningData.egg-info/PKG-INFO
+CleaningData.egg-info/SOURCES.txt
+CleaningData.egg-info/dependency_links.txt
+CleaningData.egg-info/top_level.txt

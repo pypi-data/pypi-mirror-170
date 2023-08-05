@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: CleaningData
+Version: 0.0.1
+Summary: doc readme di
+Home-page: 
+Author: PhamHung
+Author-email: hungpham.tns@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+"""
+Đây là một module giúp bạn xử lý các tác nhân xuất hiện trong file dữ liệu.
+Mong là thế!
+"""
