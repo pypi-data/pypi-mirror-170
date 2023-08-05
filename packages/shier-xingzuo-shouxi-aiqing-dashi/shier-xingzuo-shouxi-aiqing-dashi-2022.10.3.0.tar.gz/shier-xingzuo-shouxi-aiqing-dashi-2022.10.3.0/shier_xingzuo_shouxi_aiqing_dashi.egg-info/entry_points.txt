@@ -1,0 +1,4 @@
+[console_scripts]
+ShierXingzuoShouxiAiqingDashi = ShierXingzuoShouxiAiqingDashi.__main__:main
+shier-xingzuo-shouxi-aiqing-dashi = ShierXingzuoShouxiAiqingDashi.__main__:main
+
