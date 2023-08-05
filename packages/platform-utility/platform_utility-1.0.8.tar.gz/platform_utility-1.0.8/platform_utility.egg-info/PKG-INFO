@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: platform-utility
+Version: 1.0.8
+Summary: Library utility
+Home-page: https://gitlab.com/the-platform1/lib_utility
+Download-URL: https://gitlab.com/the-platform1/lib_utility/-/archive/1.0.7/lib_utility-1.0.8.tar.gz
+Author: Phattara Kiantong
+Author-email: yondaimae1429@gmail.com
+License: MIT
+License-File: LICENSE
+
+**Library utility for project**
+===============================
+
+Library utility for platform project.
+
+Versioning
+----------
+
+-  1.0.8
+
+Authors
+-------
+
+-  **yondaimae1429**
+
