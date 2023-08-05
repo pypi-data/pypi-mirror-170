@@ -1,0 +1,13 @@
+psutil
+numpy>=1.21
+
+[dev]
+black==22.8.*
+mypy==0.981
+
+[dev:python_version < "3.8"]
+types-backports
+
+[doc]
+furo
+sphinx==5.2.*
