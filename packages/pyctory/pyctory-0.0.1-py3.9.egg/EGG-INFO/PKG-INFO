@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyctory
+Version: 0.0.1
+Summary: factory pipeline scheduling simulator with python
+Home-page: https://github.com/PiperLiu/pyctory
+Author: Piper Liu
+Author-email: piperliu@qq.com
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE.txt
+
+# pyctory
+
+[![build](https://github.com/piperliu/pyctory/workflows/build/badge.svg)](https://github.com/piperliu/pyctory/actions?query=workflow%3Abuild)  [![coverage](https://img.shields.io/codecov/c/github/piperliu/pyctory)](https://codecov.io/gh/piperliu/pyctory)  [![pypi](https://img.shields.io/pypi/v/pyctory.svg)](https://pypi.org/project/pyctory/)  [![support-version](https://img.shields.io/pypi/pyversions/pyctory)](https://img.shields.io/pypi/pyversions/pyctory)  [![license](https://img.shields.io/github/license/piperliu/pyctory)](https://github.com/piperliu/pyctory/blob/main/LICENSE)  [![commit](https://img.shields.io/github/last-commit/piperliu/pyctory)](https://github.com/piperliu/pyctory/commits/main)
+
+🐍 🚚  factory pipeline scheduling simulator with python
