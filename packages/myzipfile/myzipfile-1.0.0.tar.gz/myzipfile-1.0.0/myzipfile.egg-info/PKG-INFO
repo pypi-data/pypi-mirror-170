@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: myzipfile
+Version: 1.0.0
+Summary: Fix UTF-8 encoding problems in official zipfile
+Home-page: https://github.com/jtc1246
+Author: Tiancheng Jiao
+Author-email: jtc1246@outlook.com
+License: GPL-2.0 License
+Platform: all
+Requires-Python: >=3
+
+UNKNOWN
+
