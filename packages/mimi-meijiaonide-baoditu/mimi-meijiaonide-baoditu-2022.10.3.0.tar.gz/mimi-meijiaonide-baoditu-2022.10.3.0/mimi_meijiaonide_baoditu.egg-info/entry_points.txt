@@ -1,0 +1,4 @@
+[console_scripts]
+MimiMeijiaonideBaoditu = MimiMeijiaonideBaoditu.__main__:main
+mimi-meijiaonide-baoditu = MimiMeijiaonideBaoditu.__main__:main
+
