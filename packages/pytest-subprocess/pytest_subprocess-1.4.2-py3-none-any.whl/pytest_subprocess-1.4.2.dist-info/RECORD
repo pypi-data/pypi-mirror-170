@@ -1,0 +1,17 @@
+pytest_subprocess/__init__.py,sha256=bwwiKJ13FSZd1MYlgxDlua-Ztfq7rGU9YTww8lxVPr4,224
+pytest_subprocess/asyncio_subprocess.py,sha256=hLCZLSEjC2nsWA9oMaQlVpEbLc4mKxtQ6Yzzo0jYAZc,279
+pytest_subprocess/exceptions.py,sha256=WlqESrVKcFhTpGBB7KbjgmpVWEZC6Cis_bG-Z07JgyQ,442
+pytest_subprocess/fake_popen.py,sha256=AzJ-xpVSA9_AL4dz36omEq8dZZAwg8HKKmekTOQ_BdY,12843
+pytest_subprocess/fake_process.py,sha256=bjSDx21wEaMKLKgyGHY0YbfslOcG4xsBMWgsoiI4Bu8,5389
+pytest_subprocess/fixtures.py,sha256=LLSr-AABj2P9L3XV__c1uKUmzwP_Xq5_rSWKRM5aDqQ,262
+pytest_subprocess/process_dispatcher.py,sha256=Ct_RoqqNk1sEGRl71Oy3LfblNg5WPhhWy3yJfeWrAU8,8662
+pytest_subprocess/process_recorder.py,sha256=VbWq4aJsGYxFXug25NEIHbMYM-CQ6n2V6xvPaIxpv-c,2030
+pytest_subprocess/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_subprocess/types.py,sha256=7jbTdLpxmLqQm78FHQRnWvZuWx42HZUyhL2ZGO1cn2Y,427
+pytest_subprocess/utils.py,sha256=cOTjw6y1kHtMGBrpRGDHXFX-9ozyQ3KGWxNaxl-YGx4,4282
+pytest_subprocess-1.4.2.dist-info/LICENSE,sha256=8DyUd_2TPbOXSgpT3iFYL4qmHTXv96Tq1YFH8ZlXzeY,1106
+pytest_subprocess-1.4.2.dist-info/METADATA,sha256=lzPiUnXfw1oPKAtSFxj00dri0JjJy870IFkiFLZDYCc,24284
+pytest_subprocess-1.4.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytest_subprocess-1.4.2.dist-info/entry_points.txt,sha256=_xtcrWeOQBhK4bQ5QQSd0o6H1O_TOxg1RUbiOtVLmaU,51
+pytest_subprocess-1.4.2.dist-info/top_level.txt,sha256=INhXR0R592KmpNAi9EQwfv5au3XONO5uRsxD0_IJMtE,18
+pytest_subprocess-1.4.2.dist-info/RECORD,,
