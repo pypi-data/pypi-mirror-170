@@ -1,0 +1,4 @@
+[console_scripts]
+QianshiJinshengZhihuidaoDangxia = QianshiJinshengZhihuidaoDangxia.__main__:main
+qianshi-jinsheng-zhihuidao-dangxia = QianshiJinshengZhihuidaoDangxia.__main__:main
+
