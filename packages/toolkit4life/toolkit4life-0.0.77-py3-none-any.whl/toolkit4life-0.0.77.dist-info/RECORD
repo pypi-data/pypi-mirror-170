@@ -1,0 +1,10 @@
+toolkit4life/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toolkit4life/clients/postgres.py,sha256=zioz4XAUZMM8Y9KSHZd8G7jVmNce_G1jMW7-SgMYdyw,738
+toolkit4life/clients/redis.py,sha256=gAh78Y2Pj0KiO_IZTQwHKFCSIobhUQHWWhFbaLJCoyI,2341
+toolkit4life/clients/sqlalchemy.py,sha256=VWFnisHw75NIhfNet43z_bAbQUxB13wU7K8gF8d5Mpw,1903
+toolkit4life/clients/trino.py,sha256=MIyf8KAwjsMIzDC5GyfkKVrlsoaURhaapkc2psNsDfs,793
+toolkit4life-0.0.77.dist-info/LICENSE,sha256=A8ur0NhFUE-4p5M0kzoXpjRU96uaoHhTkeU6xIUZDRs,1074
+toolkit4life-0.0.77.dist-info/METADATA,sha256=E150YKjX_mppsREEY7WKePIogUgf41qj-lTKc1XFygg,1199
+toolkit4life-0.0.77.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+toolkit4life-0.0.77.dist-info/top_level.txt,sha256=rP0ioxofrIj3eVBakfuzifzwDhaFHQzYMqkwjrt3Uto,13
+toolkit4life-0.0.77.dist-info/RECORD,,
