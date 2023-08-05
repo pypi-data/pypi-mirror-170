@@ -1,0 +1,2 @@
+[console_scripts]
+ptask = ptask.__main__:main

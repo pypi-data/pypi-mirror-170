@@ -1,0 +1,80 @@
+# Painless Project
+
+Painless project is a simple cross-platform command line tool written in Python
+for a build task configurations & management
+
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [Painless Project](#painless-project)
+    - [Getting Started](#getting-started)
+        - [Installation](#installation)
+        - [Setup your configurations](#setup-your-configurations)
+
+<!-- markdown-toc end -->
+
+
+## Getting Started
+
+### Installation
+
+Install via pypi:
+
+``` sh
+pip install project
+```
+
+Now you can use the cli tool to manage your build, here is an overview of it:
+
+``` 
+usage: project build_type [options]
+
+A cli tool for manage and config project build
+
+positional arguments:
+  build_type            set the build type based on your task setup
+
+options:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+  -i, --info            print the current build's information
+  -f FILE, --file FILE  custom file task configuration
+  -p PATH, --path PATH  custom build path for the project
+
+Happy building your project! :)
+```
+
+### Setup your configurations
+
+The aim of this tool is not a replacement for any build system out there. It's
+an addon to them, so you can manage to setup your builds on multiple OS. 
+
+The tool is looking for one of the file for checking the command:
+
+> .projecttask
+>
+> tasks.ini
+>
+> .config/tasks.ini
+
+If you don't like the file name or location, you can specify your own file tasks
+with `-f` flag.
+
+And here is a task file example:
+
+``` ini
+[win32]
+init=cmake -B build -G "MinGW Makefiles"
+build=cmake --build build
+clean=rmdir /S/Q build && mkdir build
+run=bin\main.exe
+
+[macos]
+init=cmake -B build -H.
+build=cmake --build build
+clean=rm -r build && mkdir build
+run=bin/main
+```
+
+Then you can run the `project init` command, the tool will look into the right
+command to run based on your OS.

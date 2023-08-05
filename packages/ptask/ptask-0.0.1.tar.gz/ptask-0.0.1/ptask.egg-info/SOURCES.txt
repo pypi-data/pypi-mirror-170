@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ptask/__init__.py
+ptask/__main__.py
+ptask/const.py
+ptask/process.py
+ptask/tasks.py
+ptask/utils.py
+ptask.egg-info/PKG-INFO
+ptask.egg-info/SOURCES.txt
+ptask.egg-info/dependency_links.txt
+ptask.egg-info/entry_points.txt
+ptask.egg-info/top_level.txt
