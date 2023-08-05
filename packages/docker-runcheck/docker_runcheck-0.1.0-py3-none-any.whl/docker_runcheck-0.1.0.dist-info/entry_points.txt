@@ -1,0 +1,3 @@
+[console_scripts]
+docker-runcheck=docker_runcheck.docker-runcheck:run
+
