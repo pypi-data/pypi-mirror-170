@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: glazy
+Version: 0.1.0
+Summary: 
+Author: Josh Orr
+Author-email: josh@orr.blue
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# Global Lazy Injectable Resources
+
+Find out of this name is available, I have the code almost ready to go.
+Don't want to do a bunch of work for a name that I can't use so seeing if this name is ok to use
+with pypi.
+
