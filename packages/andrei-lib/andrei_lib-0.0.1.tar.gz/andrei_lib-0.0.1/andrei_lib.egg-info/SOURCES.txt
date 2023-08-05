@@ -1,0 +1,7 @@
+MANIFEST.in
+README.rst
+setup.py
+andrei_lib.egg-info/PKG-INFO
+andrei_lib.egg-info/SOURCES.txt
+andrei_lib.egg-info/dependency_links.txt
+andrei_lib.egg-info/top_level.txt

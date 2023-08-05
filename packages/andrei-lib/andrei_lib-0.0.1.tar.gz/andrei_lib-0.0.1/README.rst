@@ -1,0 +1,1 @@
+FIsiere in care explicam ce face modului, plus alte informatii utile userului
