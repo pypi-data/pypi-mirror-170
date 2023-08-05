@@ -1,0 +1,4 @@
+[console_scripts]
+eg=electionguard_cli.start:cli
+egui=electionguard_gui.start:run
+
