@@ -1,0 +1,4 @@
+[console_scripts]
+NikeyiTongling = NikeyiTongling.__main__:main
+nikeyi-tongling = NikeyiTongling.__main__:main
+
