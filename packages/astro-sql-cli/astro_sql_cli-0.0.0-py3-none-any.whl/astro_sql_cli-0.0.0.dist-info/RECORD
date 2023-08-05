@@ -1,0 +1,8 @@
+sql_cli/__init__.py,sha256=KrVRuKYFLeSgQcYSHJkdDo1Bpsp-h39rwDORgG8VQP0,85
+sql_cli/__main__.py,sha256=Fia1HjGKFlqruiGyADAm8-40jZvGF97PROgcyYq9vbY,36
+sql_cli/main.py,sha256=C_ILNomF6gHRgwUIws3GXBlMjKQlsfLBSs8qXBDcIDU,392
+astro_sql_cli-0.0.0.dist-info/entry_points.txt,sha256=z7Cl1Meh__BAESn43oGBLjO4RpAEpQmcvruy8Mxl1MI,45
+astro_sql_cli-0.0.0.dist-info/LICENSE,sha256=WN3cYoyJX4HlA1dvaGP5WNY4ZPGBaZYRDPrlAPi33ho,11343
+astro_sql_cli-0.0.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+astro_sql_cli-0.0.0.dist-info/METADATA,sha256=s3iUQY9z-CV_oBgzU4b_ANmsCHhHWlBktM9ku8qAOck,1432
+astro_sql_cli-0.0.0.dist-info/RECORD,,
