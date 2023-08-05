@@ -1,0 +1,11 @@
+setup.py
+pyOpenSubdiv/__init__.py
+pyOpenSubdiv/pysubdivision.py
+pyOpenSubdiv/test_topology.py
+pyOpenSubdiv.egg-info/PKG-INFO
+pyOpenSubdiv.egg-info/SOURCES.txt
+pyOpenSubdiv.egg-info/dependency_links.txt
+pyOpenSubdiv.egg-info/requires.txt
+pyOpenSubdiv.egg-info/top_level.txt
+pyOpenSubdiv/clib/__init__.py
+pyOpenSubdiv/clib/load_library.py
