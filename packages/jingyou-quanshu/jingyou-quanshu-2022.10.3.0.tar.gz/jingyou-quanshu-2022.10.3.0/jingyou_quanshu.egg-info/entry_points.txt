@@ -1,0 +1,4 @@
+[console_scripts]
+JingyouQuanshu = JingyouQuanshu.__main__:main
+jingyou-quanshu = JingyouQuanshu.__main__:main
+
