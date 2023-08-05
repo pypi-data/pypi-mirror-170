@@ -1,0 +1,10 @@
+README.md
+setup.py
+EncodedUriVideo.egg-info/PKG-INFO
+EncodedUriVideo.egg-info/SOURCES.txt
+EncodedUriVideo.egg-info/dependency_links.txt
+EncodedUriVideo.egg-info/requires.txt
+EncodedUriVideo.egg-info/top_level.txt
+encoded_video/__init__.py
+encoded_video/encoded_video.py
+encoded_video/utils.py
