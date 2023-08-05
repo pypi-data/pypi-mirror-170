@@ -1,0 +1,12 @@
+README.md
+setup.py
+GudaiShenmixueRumenshu/README.md
+GudaiShenmixueRumenshu/__init__.py
+GudaiShenmixueRumenshu/__main__.py
+GudaiShenmixueRumenshu/file.pdf
+GudaiShenmixueRumenshu/index.html
+gudai_shenmixue_rumenshu.egg-info/PKG-INFO
+gudai_shenmixue_rumenshu.egg-info/SOURCES.txt
+gudai_shenmixue_rumenshu.egg-info/dependency_links.txt
+gudai_shenmixue_rumenshu.egg-info/entry_points.txt
+gudai_shenmixue_rumenshu.egg-info/top_level.txt
