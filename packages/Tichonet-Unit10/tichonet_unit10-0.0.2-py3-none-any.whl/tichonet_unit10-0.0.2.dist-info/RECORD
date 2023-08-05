@@ -1,0 +1,14 @@
+Tichonet_Unit10/U10_facenet_utils.py,sha256=Y-uXdRuYOk417VtXLdw6zC9O_AOx8RNKZUgvDLgjR3k,21504
+Tichonet_Unit10/U10_style_transfer_utils.py,sha256=HbFvT_FYZErqxWODmsmowyo48EoB-k2Eh3NTALmgKEo,1120
+Tichonet_Unit10/U10_yolo3_utils.py,sha256=43qfGtkJABtX0ewvB4h3nInBe8bZmyUnAcfortH4wQ4,10121
+Tichonet_Unit10/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Tichonet_Unit10/utils.py,sha256=viPO-dnIr7i_IRDoNqwDuWLqONl3L4HWlwngZHTEE9s,16700
+Tichonet_Unit10/datasets/data.mat,sha256=EhiCgJW_kdIVYi0AsqW4eEw1ninZ2cVzSUm45gxbwjE,6038
+Tichonet_Unit10/datasets/test_signs.h5,sha256=U5-3Ru2elH6yRM_Kc_TRsD-b9VJNYJ7u0s123bGxeb4,1477712
+Tichonet_Unit10/datasets/train_signs.h5,sha256=R0gHCdmfLqauQo7MSR_G9l_x0FM2c23YWdVWXgrTz3Q,13281872
+Tichonet_Unit10/datasets/cat_nocat/test_catvnoncat.h5,sha256=ap05zlL6hZU8WDRpW4U0ow7Yz9VJcfsvCAtaJNACuVE,616958
+Tichonet_Unit10/datasets/cat_nocat/train_catvnoncat.h5,sha256=--Vqtnw64o1WTjpkQYkReXbWsxrwo86bsX2_IpCK8kI,2572022
+tichonet_unit10-0.0.2.dist-info/METADATA,sha256=6MdNj4ZHs505oL59NC-W4mwk2xu9ZXlb9ntD4BGGg8U,2006
+tichonet_unit10-0.0.2.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+tichonet_unit10-0.0.2.dist-info/licenses/LICENSE,sha256=2zdDjcBmeUTOBtK9v6G57NMvJBbyxW30yeWAnr03Qco,1097
+tichonet_unit10-0.0.2.dist-info/RECORD,,
