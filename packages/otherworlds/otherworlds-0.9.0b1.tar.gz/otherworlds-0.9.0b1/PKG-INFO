@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: otherworlds
+Version: 0.9.0b1
+Summary: A name generator for new worlds
+License: LGPL-3.0-or-later
+Author: Jurnell Cockhren
+Author-email: jurnell@civichacker.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# Otherworlds
+
+A simple name generator. Mixes Klingon and real Exoplanets and star designations.
+
+
+## How to install
+
+1. Clone this repo
+2. Run `poetry install`
+
+
+## How to generate world names
+
+
+This command generates names using real stars and exoplanets:
+
+```
+poetry run otherworlds
+```
+
+To mix in some Klingon, use the '--klingon' flag:
+
+
+```
+poetry run otherworlds --klingon
+```
+
+
+You can view the full help with this command:
+
+```
+poetry run otherworlds --help
+```
+
