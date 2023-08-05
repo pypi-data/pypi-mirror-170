@@ -1,0 +1,7 @@
+sb3-contrib>=1.6.1
+huggingface_sb3<3.*,>=2.2.1
+tqdm
+rich
+optuna
+pyyaml>=5.1
+pytablewriter~=0.64
