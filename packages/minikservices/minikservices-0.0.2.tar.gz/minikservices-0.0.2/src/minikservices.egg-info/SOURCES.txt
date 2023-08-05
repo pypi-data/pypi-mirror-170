@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/kservice/__init__.py
+src/kservice/arguments.py
+src/kservice/colors.py
+src/kservice/k8s_utils.py
+src/kservice/main.py
+src/kservice/os_utils.py
+src/minikservices.egg-info/PKG-INFO
+src/minikservices.egg-info/SOURCES.txt
+src/minikservices.egg-info/dependency_links.txt
+src/minikservices.egg-info/entry_points.txt
+src/minikservices.egg-info/top_level.txt
