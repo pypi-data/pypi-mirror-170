@@ -1,0 +1,16 @@
+linkrot/__init__.py,sha256=hMu-M1mAdHx7WiGqtEMWSwITqvwOMpdxU8R1_p9foeE,6123
+linkrot/archive.py,sha256=pdz3SrD9vKiM3_p58821aYk3sdxwoQY1TRgfrTi6v8E,1167
+linkrot/backends.py,sha256=IFKnUycr-2zorWuppgw01cv1QZbi6JWrg4VUBROSKDY,9781
+linkrot/cli.py,sha256=jTYYQ6XtslGdfV15tn6SBQH1zvuoE8EXjPXDZeiUmR8,7206
+linkrot/colorprint.py,sha256=vOh1wuSG3dyuEQ4v1uCBFxioyFY7wWleRhvhV7vFbew,748
+linkrot/downloader.py,sha256=0_Xdef63qCsD2VHb3t7343_r7ZC5AjtzCmkSKzcZokU,4897
+linkrot/exceptions.py,sha256=dgAybKva3QR-0jdnabfj3_GZqfeNPQ73BSPAkkJf7Gw,407
+linkrot/extractor.py,sha256=j7XSrmCvhu_aTfb1rDoBHGrFiUMO2EXYfn9eSZC2_-Q,3950
+linkrot/threadpool.py,sha256=ymPyqK1-2dh26k_OJKBrVkV0s4MtkdYX0xjFjLkpiBQ,1590
+linkrot/libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linkrot/libs/xmp.py,sha256=vjvNC7CWvzeeU7pVmNCzdlJrHq-ros6eMYUnJj_s9Ik,2874
+linkrot-3.9.4.dist-info/METADATA,sha256=-lS3W04Mvmh-Mmf90Nk9Z08UNa2ddoIENu9GNUb2h6s,8643
+linkrot-3.9.4.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+linkrot-3.9.4.dist-info/entry_points.txt,sha256=p_tF_kVS1-wZb6KIBtOKI6wLgFKXHCOi8dfCNz9qlwI,45
+linkrot-3.9.4.dist-info/licenses/LICENSE,sha256=i_Yf8Fe33vM9NLaje3xlXcHaThA-YiGRuQFcYaI0SUA,1074
+linkrot-3.9.4.dist-info/RECORD,,
