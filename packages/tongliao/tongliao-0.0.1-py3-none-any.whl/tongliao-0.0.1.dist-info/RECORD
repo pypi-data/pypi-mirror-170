@@ -1,0 +1,10 @@
+tongliao/__init__.py,sha256=jYIILJ0utOSBHqiAlcXfviUx0OLsBPaWzisfuxIa8k8,469
+tongliao/collect_countries_area.py,sha256=2KmufccqiwL95od4h2MDNhBkkAeOl3vE8vYlxVerk7Q,11801
+tongliao/collect_countries_people.py,sha256=oxicOkw8Nn21sBDlnq__BbPb3IhQZOxSOBjlWEk8sUc,1035
+tongliao/collect_data.py,sha256=vqIUiDN1Ad85wO8wQbvrcFgiJiaUZkkFOonyO096TQ4,773
+tongliao/core.py,sha256=qyr-hbh1ypF_9MZC6V0--zmqycGPO--g0sHuHKsn-BA,272
+tongliao/country2tongliao.py,sha256=rxDv5K1kM17a3-QQQrH_2zePq_sYw_GkFnf8aBRydtc,963
+tongliao-0.0.1.dist-info/METADATA,sha256=xwYHrgJAS08iUC8yoLZBylPWiQPSy2lXwuonxInHy5E,2842
+tongliao-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tongliao-0.0.1.dist-info/top_level.txt,sha256=3b8wDiFSAEhQ1gUwxG4uY67zuLnfhfcGleCb_JC-JcI,9
+tongliao-0.0.1.dist-info/RECORD,,
