@@ -1,0 +1,10 @@
+daas_db_operator/__init__.py,sha256=nTFUhQ9bQbBQuNy4wet5TS-RXpQ2zhhTX7bw_j8k9S8,25
+daas_db_operator/db-operate.py,sha256=MWDhXMEk10z4ULl7mAMExcPmVzW6nRYJt-Gz5WRfbp8,1042
+daas_db_operator/dboperate.py,sha256=MWDhXMEk10z4ULl7mAMExcPmVzW6nRYJt-Gz5WRfbp8,1042
+db_operator/DBOperate.py,sha256=MWDhXMEk10z4ULl7mAMExcPmVzW6nRYJt-Gz5WRfbp8,1042
+db_operator/__init__.py,sha256=nTFUhQ9bQbBQuNy4wet5TS-RXpQ2zhhTX7bw_j8k9S8,25
+daas_db_operator-0.0.3.dist-info/LICENSE,sha256=37YuTu3okUMMrHU_Fu1DXG1ZQJwmCEdK7hbssphzdCI,1093
+daas_db_operator-0.0.3.dist-info/METADATA,sha256=p0uqKjHa8ugeYcXi5QqLP1LeLMP0rpd7Q6m-zo7dClQ,607
+daas_db_operator-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+daas_db_operator-0.0.3.dist-info/top_level.txt,sha256=XodCHE1aA3U8L4lFME1ApsuNXbpM5AHq_TS1HMjTPus,17
+daas_db_operator-0.0.3.dist-info/RECORD,,
