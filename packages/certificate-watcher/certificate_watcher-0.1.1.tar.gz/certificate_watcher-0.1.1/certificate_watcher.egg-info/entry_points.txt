@@ -1,0 +1,2 @@
+[console_scripts]
+certificate_watcher = certificate_watcher:main
