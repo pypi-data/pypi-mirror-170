@@ -1,0 +1,4 @@
+[console_scripts]
+LinghunQiyue = LinghunQiyue.__main__:main
+linghun-qiyue = LinghunQiyue.__main__:main
+
