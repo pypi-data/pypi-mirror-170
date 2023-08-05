@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+mihai_lib.egg-info/PKG-INFO
+mihai_lib.egg-info/SOURCES.txt
+mihai_lib.egg-info/dependency_links.txt
+mihai_lib.egg-info/top_level.txt
