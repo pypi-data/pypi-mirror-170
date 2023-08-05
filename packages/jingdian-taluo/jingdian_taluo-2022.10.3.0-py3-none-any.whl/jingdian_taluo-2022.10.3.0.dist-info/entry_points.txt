@@ -1,0 +1,4 @@
+[console_scripts]
+JingdianTaluo = JingdianTaluo.__main__:main
+jingdian-taluo = JingdianTaluo.__main__:main
+
