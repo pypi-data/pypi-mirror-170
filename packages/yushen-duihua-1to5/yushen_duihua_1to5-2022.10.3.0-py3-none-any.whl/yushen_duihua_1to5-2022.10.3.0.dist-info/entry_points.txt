@@ -1,0 +1,4 @@
+[console_scripts]
+YushenDuihua1to5 = YushenDuihua1to5.__main__:main
+yushen-duihua-1to5 = YushenDuihua1to5.__main__:main
+
