@@ -1,0 +1,8 @@
+astropy
+astroquery
+django
+django_extensions
+matplotlib
+numpy
+psycopg2-binary
+python-dotenv
