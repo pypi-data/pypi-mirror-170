@@ -1,0 +1,11 @@
+image_processing_barbara/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_processing_barbara/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_processing_barbara/processing/combination.py,sha256=B5xCsz40lQWKxPyb6mQw_mCiFmlrh1RNWmZ2ehqbOPQ,800
+image_processing_barbara/processing/transformation.py,sha256=tYRzGIC9GjXLGe3M4gnbIeCly3NxLjJc6InOrhl6TXI,353
+image_processing_barbara/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_processing_barbara/utils/io.py,sha256=bxImpgjFptg40CPLMESynIO7NP8KRPiZGVgdLiTCsCQ,197
+image_processing_barbara/utils/plot.py,sha256=6C88TQmlG4MBY4lrPDaHE7VJOeBlTh8ezKNqh_CVgU0,1001
+image_processing_barbara-0.0.1.dist-info/METADATA,sha256=rN9LRoLsFMd5L2OTN9DopC0Q_nfQLQ-oT_CQZPKmqZU,961
+image_processing_barbara-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+image_processing_barbara-0.0.1.dist-info/top_level.txt,sha256=GPVtYfJMjCvc-UdHrN_Ooz0DpQYkfjWKHZxJWP6SxyY,25
+image_processing_barbara-0.0.1.dist-info/RECORD,,
