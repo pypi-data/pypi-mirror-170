@@ -1,0 +1,4 @@
+[console_scripts]
+JingdianTaluoZhidaoShouce = JingdianTaluoZhidaoShouce.__main__:main
+jingdian-taluo-zhidao-shouce = JingdianTaluoZhidaoShouce.__main__:main
+
