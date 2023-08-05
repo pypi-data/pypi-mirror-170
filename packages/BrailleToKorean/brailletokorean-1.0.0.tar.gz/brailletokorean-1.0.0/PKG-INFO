@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: BrailleToKorean
+Version: 1.0.0
+Summary: Braille to Korean translation python package
+Project-URL: Homepage, https://github.com/Bridge-NOONGIL/BrailleToKor_Python
+Author-email: Yujin Yang <ureal980804@gmail.com>, Nayeon Kim <nyn2265@gmail.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# BrailleToKor_Python
+
+점자 문자열을 한국어로 번역할 수 있는 BrailleToKor 파이썬 패키지입니다.
+
+BrailleToKor Python package that translates braille string to Korean.
+
+## Usage Example
