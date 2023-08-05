@@ -1,0 +1,4 @@
+[console_scripts]
+NeizaiXiaohai = NeizaiXiaohai.__main__:main
+neizai-xiaohai = NeizaiXiaohai.__main__:main
+
