@@ -1,0 +1,14 @@
+black
+coverage
+dpath
+linecheck
+nptyping<2
+numexpr
+numpy<1.21,>=1.11
+psutil
+pytest<6,>=4
+sortedcontainers
+wheel
+yaml-changelog
+
+[dev]
