@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: avrzero
+Version: 0.0.3
+Summary: A simple AVR instruction set simulator for educational purposes.
+Project-URL: Homepage, https://github.com/Edward-Ji/AVRZero
+Project-URL: Bug Tracker, https://github.com/Edward-Ji/AVRZero/issues
+Author-email: Edward Ji <jiziao6@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# AVR Zero
+A simple AVR instruction set IDE and simulator for educational purposes.
+
+> **Warning**
+>
+> This is in no way an accurate representation of the AVR instruction set and
+> the AVR assembly. Programs that work in this simulator are not guaranteed to
+> work on an actual AVR chip.
+
+![Screenshot](image/screenshot.png)
+
+## Starting Guide
+
+The project is available on PyPI, simply install it with `pip`.
+
+```
+python -m pip install avrzero
+```
+
+Then, you can run the graphics user interface with
+
+```
+python -m avrzero.gui
+```
+
+Or you can run the command line tools with
+
+```
+python -m avrzero
+```
+
+## Install from Source
+
+First, you need to clone the GitHub repository.
+
+At the project root, run
+
+```
+python -m build
+```
+
+The artifacts will be in the `dist` directory. Install with
+
+```
+python -m pip install --no-deps dist/avrzero-0.1.0-py3-none-any.whl
+```
