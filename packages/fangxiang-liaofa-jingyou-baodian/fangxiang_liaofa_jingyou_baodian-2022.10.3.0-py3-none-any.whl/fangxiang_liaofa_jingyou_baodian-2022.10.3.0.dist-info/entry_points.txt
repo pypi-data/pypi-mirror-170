@@ -1,0 +1,4 @@
+[console_scripts]
+FangxiangLiaofaJingyouBaodian = FangxiangLiaofaJingyouBaodian.__main__:main
+fangxiang-liaofa-jingyou-baodian = FangxiangLiaofaJingyouBaodian.__main__:main
+
