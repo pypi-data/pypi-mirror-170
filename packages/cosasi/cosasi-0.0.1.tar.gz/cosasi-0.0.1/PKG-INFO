@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: cosasi
+Version: 0.0.1
+Summary: COntagion Simulation And Source Inference
+Home-page: https://github.com/lmiconsulting/cosasi
+Author: Lucas H. McCabe
+Author-email: lmccabe@lmi.org
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cosasi (COntagion Simulation And Source Inference)
+
+``cosasi`` is a Python package for graph diffusion source localization, allowing users to:
+
+- **perform and evaluate** source inference using standard techniques from literature,
+- **contribute** innovative localization methods to a growing core library, and
+- **benchmark** new techniques against a battery of comparable schemes.
+
+
+## Table of Contents
+* [Table of Contents](#table-of-contents)
+* [Contact](#contact)
+* [License](#license)
+
+
+
+
+## Contact
+
+Questions? Reach out:
+- Lucas ([email](mailto:lmccabe@lmi.org))
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
