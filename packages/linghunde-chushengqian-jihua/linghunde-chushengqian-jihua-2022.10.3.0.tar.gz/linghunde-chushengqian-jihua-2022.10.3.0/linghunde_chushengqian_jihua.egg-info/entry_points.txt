@@ -1,0 +1,4 @@
+[console_scripts]
+LinghundeChushengqianJihua = LinghundeChushengqianJihua.__main__:main
+linghunde-chushengqian-jihua = LinghundeChushengqianJihua.__main__:main
+
