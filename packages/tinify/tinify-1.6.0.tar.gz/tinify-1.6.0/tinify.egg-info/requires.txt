@@ -1,0 +1,5 @@
+requests<3.0.0,>=2.7.0
+
+[test]
+pytest
+httpretty<1.1.5
