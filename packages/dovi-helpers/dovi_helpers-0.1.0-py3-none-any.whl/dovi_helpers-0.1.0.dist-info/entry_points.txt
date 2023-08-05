@@ -1,0 +1,3 @@
+[console_scripts]
+dovi_helpers=dovi_helpers.cli.__main__:main
+
