@@ -1,0 +1,10 @@
+slackette/__init__.py,sha256=Q6mDn_PMxN0S_nHz0Rmj5lqXVfCGruf1I3hQuiXq8I4,850
+slackette/blocks.py,sha256=s3XobhWlLyaYk3-lLms-UvbBYmw2jOuftqB3iCtwDgQ,1546
+slackette/interactions.py,sha256=zMQsf0C2JQ3enHZh0XOgw9zAQO_4hAwRdJKjCRRYDbc,451
+slackette/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slackette/security.py,sha256=J8tX_10I2FkYGzV-SV5kfQZzmHthnRFLUtYQIhlwB5g,2071
+slackette/types.py,sha256=mqxlaUMaMBeap3R3mHlOBJ6xy2tpMWQZ4M7TOenkdUk,479
+slackette/webhook.py,sha256=0PQBEKccX0xeZpwRS6PRke85YgTXRe6hsnYvZ-n00l8,647
+slackette-0.2.5.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+slackette-0.2.5.dist-info/METADATA,sha256=QEHJVDXHm0FRJdH26dHHN9UC-XNxhoEqwhmmINRC4ZM,422
+slackette-0.2.5.dist-info/RECORD,,
