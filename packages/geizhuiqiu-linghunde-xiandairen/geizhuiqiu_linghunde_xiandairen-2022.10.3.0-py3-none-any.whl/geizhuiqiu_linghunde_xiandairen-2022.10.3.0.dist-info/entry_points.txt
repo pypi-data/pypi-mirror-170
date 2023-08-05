@@ -1,0 +1,4 @@
+[console_scripts]
+GeizhuiqiuLinghundeXiandairen = GeizhuiqiuLinghundeXiandairen.__main__:main
+geizhuiqiu-linghunde-xiandairen = GeizhuiqiuLinghundeXiandairen.__main__:main
+
