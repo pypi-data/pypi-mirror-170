@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: visualeda
+Version: 0.4
+Summary: A library package to ease the EDA process.
+Home-page: https://github.com/arvind444/interactive_eda
+Author: Arvindkumar S P
+Author-email: arvindkumar1998ece@gmail.com
+License: MIT
+Keywords: visualeda,eda,dataanalysis
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+License-File: LICENCE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: dash
+
+The function visualeda(data) is used to create a 
+        Exploratory Data Analysis using plotly with the local server
+        using Dash library. It consist of basic EDA process as html page.
+        
+        We can now focus most on data not on code.
+        
+        The function visualeda(data) takes one argument,
+        which can be a pandas dataframe.
+        
+        E.G -->  visualeda(data=data_frame)
+
