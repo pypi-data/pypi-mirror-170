@@ -1,0 +1,4 @@
+[console_scripts]
+ShengmingMima = ShengmingMima.__main__:main
+shengming-mima = ShengmingMima.__main__:main
+
