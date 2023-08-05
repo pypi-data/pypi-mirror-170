@@ -1,0 +1,2 @@
+vispy<=0.6
+harvesters>=1.4.1
