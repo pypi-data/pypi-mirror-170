@@ -1,0 +1,17 @@
+ppcmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ppcmd/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ppcmd/common/console.py,sha256=r7zOQpnudrTBsV2ropoztzd8E8HNPiPSOJVsfCf9uSQ,146
+ppcmd/common/file_list.py,sha256=9jTDm3OycVqGII65Zge0_ARhB-3X6g8UWovUe1Gp63o,791
+ppcmd/common/location_check.py,sha256=FQ1b34PFuFRErt4aNTQXUkUcBqzqLpN9UhlStwzIx14,67
+ppcmd/common/print.py,sha256=B10ysuQdcJ1MtC1HaRmhRUj5Nl_NAQpET1T0Ak3W-g8,157
+ppcmd/common/run.py,sha256=TeitvDi2bjnuLSAFpxkIoVeMIdSTB5Lg0tBVL9OgdwI,301
+ppcmd/common/sys.py,sha256=kRMogkhWGqTQpT70fMmJhDStL6iiO8WYN-IUqBSoyMU,86
+ppcmd/ppc/__init__.py,sha256=DQiXHqQ3C29f_--ye7aVMDPnITrl9M0zMU42LYY48zE,22
+ppcmd/ppc/ppc.py,sha256=ctRBeO6zjcaZXsscV29hVsIIvz2iLug5_y1-owVlkjw,624
+ppcmd/ppc/ppc_processor.py,sha256=KtpBLA0WNnWMA6Qven-S1mO62zCZdamyJqk6XeXsYz4,200
+ppcmd-0.1.5.dist-info/LICENSE,sha256=oXq-UEgN8CwVtgBG3-wd3uzpAvgOdBmaxnzOW4XZclc,1062
+ppcmd-0.1.5.dist-info/METADATA,sha256=fEoufPmZvLWszgvjaMHpfrXWGs3bT5p2PtOqM9WtYx4,262
+ppcmd-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ppcmd-0.1.5.dist-info/entry_points.txt,sha256=x9jvmn10Ctllb8GqqTOU8mWGn6KUIvM4HXPFVB2opbc,42
+ppcmd-0.1.5.dist-info/top_level.txt,sha256=jbySbdmZGJCDGedwrbChYxvrXtRj-IqbmwLbQkO7U2A,6
+ppcmd-0.1.5.dist-info/RECORD,,
