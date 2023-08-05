@@ -1,0 +1,12 @@
+pystrictconfig/__init__.py,sha256=fmFZyqU6MURWcxD28wJ27glNZOFwP7Mp-Ef-3Usp8fk,519
+pystrictconfig/__main__.py,sha256=KOLL9ZMNipxSuzAdhfDNTnguuRAHBPYCqyCmSnfn_Ek,376
+pystrictconfig/core.py,sha256=nGhu4wAXzTWCqwzpDsWzo75tBLvk8v2UiqARX5Qt4VM,10038
+pystrictconfig/custom.py,sha256=M7M96ZDhbYzbMk9_Ry6pJNJOc9z_7W1rB4OpH5KUuns,1382
+pystrictconfig/schema.py,sha256=EDj34-ELxwMR9OIE-LIczQtgAw16gwceYmOrdWr0slg,347
+pystrictconfig/utils.py,sha256=THmp3n00NQiWq0C8qwPlsVdYRs2iCYP91LMDV2GGF7s,1131
+pystrictconfig-0.0.22.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+pystrictconfig-0.0.22.dist-info/METADATA,sha256=sS6-DtUj7A_vJm0JKeAMbwY2odBCb5MHnQD58JFbXBg,2361
+pystrictconfig-0.0.22.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pystrictconfig-0.0.22.dist-info/entry_points.txt,sha256=0vh3LfOqlVrykN3K8WpalhxBJHm0SLnVwrPM4AFqfRY,59
+pystrictconfig-0.0.22.dist-info/top_level.txt,sha256=YYfjr0dnhLPq5HI2wexYzjbCIs-PxFg9_RrMcQAem_g,15
+pystrictconfig-0.0.22.dist-info/RECORD,,
