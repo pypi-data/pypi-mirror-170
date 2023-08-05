@@ -1,0 +1,6 @@
+numpy
+Pillow
+h5py
+opencv-python
+tqdm
+colorama

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vwiz.egg-info/PKG-INFO
+vwiz.egg-info/SOURCES.txt
+vwiz.egg-info/dependency_links.txt
+vwiz.egg-info/requires.txt
+vwiz.egg-info/top_level.txt
