@@ -1,0 +1,4 @@
+[console_scripts]
+DadiZhanxingxue = DadiZhanxingxue.__main__:main
+dadi-zhanxingxue = DadiZhanxingxue.__main__:main
+
