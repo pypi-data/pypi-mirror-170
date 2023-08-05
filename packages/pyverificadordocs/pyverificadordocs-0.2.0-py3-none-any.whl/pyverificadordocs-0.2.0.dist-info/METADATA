@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pyverificadordocs
+Version: 0.2.0
+Summary: Programa para fazer a verificação de documentos nacionais.
+Author: Diaszano
+Author-email: lucasdiiassantos@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# 🐍 Rastreador de Encomendas
+
+## Esse programa tem como seu intuito fazer a verificação de CPF e CNPJ.
+
+## Como utilizar?
+
+```shell
+$ pip install pyVerificadorDocs
+```
+
+```Python
+from verificadores import CPF, CNPJ
+
+
+async def main():
+    resultado = CPF('000.000.000-00')
+    print(f'CPF é {resultado}')
+    resultado = CNPJ('00.000.000/0000-00')
+    print(f'CNPJ é {resultado}')
+
+
+main()
+```
+
+### O que usamos na infraestrutura?
+
+- [Utilizamos a linguagem Python](https://www.python.org/)
+

@@ -1,0 +1,7 @@
+verificadores/__init__.py,sha256=FhJBm06zVAYKuSGxWeAenfwEhd6cnDA7CvztdEfRtg0,122
+verificadores/cnpj.py,sha256=_5UUUYWndSvywJp4aFoMuMhqCpodUxSoQSJ43Qz0NX8,1516
+verificadores/cpf.py,sha256=j62EKBNO0XV8Es9Fk3c1YK4KU3d8kTG8RJHrdlYVa5o,1309
+pyverificadordocs-0.2.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+pyverificadordocs-0.2.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pyverificadordocs-0.2.0.dist-info/METADATA,sha256=9vT8lFTSnhJGrEOrVnWjCd2lwHEk8xVyv0DAX23G0Y0,857
+pyverificadordocs-0.2.0.dist-info/RECORD,,
