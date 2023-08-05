@@ -1,0 +1,11 @@
+shutup
+numpy
+pandas
+bs4
+metapub
+scidownl
+pdfminer3
+pubmed_parser
+
+[qa]
+nfmodelapis
