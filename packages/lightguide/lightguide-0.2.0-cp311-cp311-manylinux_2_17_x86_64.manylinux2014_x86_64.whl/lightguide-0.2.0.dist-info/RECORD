@@ -1,0 +1,13 @@
+lightguide-0.2.0.dist-info/METADATA,sha256=ULczMQYqlQCwFXuJ0vAyx3ieX1pmVlWyWPJ7M4SS8sI,5293
+lightguide-0.2.0.dist-info/WHEEL,sha256=AjvrwGjpFb1Kov20VJmskKVF6sLrBJZ1h1tDL1tIRz0,131
+lightguide-0.2.0.dist-info/license_files/LICENSE,sha256=tqi_Y64slbCqJW7ndGgNe9GPIfRX2nVGb3YQs7FqzE4,34670
+lightguide/gf.py,sha256=6aqUrlQBCj_cPqi96FibVp0Sy9DTUwsosQthlSUYlRM,9309
+lightguide/utils.py,sha256=N6MUP8uzYmHtSHQrgBUtIFMf2DHYdmG2URGBDpnYIvE,3554
+lightguide/lightguide.pyi,sha256=LHi8P2QSAaai6IgCJUwXM5D8XCydNI6OQ0SO4OT_eWw,580
+lightguide/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lightguide/afk_filter_python.py,sha256=_CNuFXodrRmCM-cSUmW_Tx6qm566kFOQ74GORkgnLis,2540
+lightguide/filters.py,sha256=EKqRp63f7WNN3sjn__cu5xpyBCBYhDrnZ_qsRO64X7Q,75
+lightguide/__init__.py,sha256=nnYNIapheaLwKIW3BdUuq8q4RYDx6FqE5pq4o05154I,90
+lightguide/restitution.py,sha256=9sKkzAUK-QicGEe7YX4987pWUE4gVs4-TKiOMu8Hr80,2674
+lightguide/lightguide.cpython-311-x86_64-linux-gnu.so,sha256=rK9MhTLfVWPHj07-bxhmeKJ5Ro851FiSr1MeXgurl24,6749640
+lightguide-0.2.0.dist-info/RECORD,,
