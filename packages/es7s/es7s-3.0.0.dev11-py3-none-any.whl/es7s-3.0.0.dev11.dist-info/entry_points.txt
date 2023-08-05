@@ -1,0 +1,3 @@
+[console_scripts]
+es7s = es7s.cli.entrypoint:extcall
+list-dir = es7s.cli.entrypoint:extcall_list_dir
