@@ -1,0 +1,14 @@
+djangomodelimport/__init__.py,sha256=3tdGvvRjqTYq6RZYrGxra6MUACBeuXnLZINNShleR54,265
+djangomodelimport/caches.py,sha256=JrCq9PFgDHlaj4Lei1WxTebeDlESdWRP86YZV2juFLI,173
+djangomodelimport/core.py,sha256=sfFH_HP3oqMPxN5HBtZbH-rDMGM6Hu6zn9akT7PWKmc,5596
+djangomodelimport/fields.py,sha256=LpHWUS-OADQrtCda3vRScAo03I0SGOYKtFV6Fkaay7M,6968
+djangomodelimport/formclassbuilder.py,sha256=LnZTpQkmaL4bXjWqChPwFi8MMGu17OcYL77IXV6BUpE,4815
+djangomodelimport/forms.py,sha256=afigvIY0IA2yc5p4YKpBrcPir1COzUU6BN9O-hJ6uWw,1208
+djangomodelimport/loaders.py,sha256=WmbPYxSVl70DvFG0X_p_e_VS-Bx9AXAZ_5vIRQQXOrY,1324
+djangomodelimport/magic.py,sha256=Xo53LVkpB1XhowlAjh5xobMx3rnW1Sdb12Vv9iBVKl8,6990
+djangomodelimport/parsers.py,sha256=4GmXWctGDWToFtQ0ryKw2E_e0SSevDalXT9wXXeKuhc,2699
+djangomodelimport/resultset.py,sha256=wctNFE_kbvr8mOtFNYQPG4CIp2wOCzjpH3_U4DaSp6o,2703
+djangomodelimport/widgets.py,sha256=AUqJ-hMxdIPqHbvyOpm623HJeY5dM5lMbnAU5XF0zrQ,2538
+django_model_import-0.5.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+django_model_import-0.5.0.dist-info/METADATA,sha256=CKp5dLn9umKpGsDwZpe2a_Y-8yoiTECP_APHT6ZxtMw,5029
+django_model_import-0.5.0.dist-info/RECORD,,
