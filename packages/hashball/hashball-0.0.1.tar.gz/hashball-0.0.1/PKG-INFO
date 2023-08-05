@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: hashball
+Version: 0.0.1
+Summary: Hashball Data Structure
+Home-page: https://github.com/ReZeroE/Hashball
+Author: Kevin L.
+Author-email: kevinliu@vt.edu
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/ReZeroE/Hashball/issues
+Keywords: hash,hashball,hashtable,data
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hashball
+Hashtable, but a ball
+
+# Overview
+To be updated...
+
+# Usage
+To be updated...
+
+
+
+
