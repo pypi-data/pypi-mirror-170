@@ -1,0 +1,7 @@
+README.md
+setup.py
+rml_qrcode.egg-info/PKG-INFO
+rml_qrcode.egg-info/SOURCES.txt
+rml_qrcode.egg-info/dependency_links.txt
+rml_qrcode.egg-info/requires.txt
+rml_qrcode.egg-info/top_level.txt
