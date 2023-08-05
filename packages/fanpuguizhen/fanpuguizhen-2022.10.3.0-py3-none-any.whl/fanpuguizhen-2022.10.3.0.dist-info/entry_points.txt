@@ -1,0 +1,4 @@
+[console_scripts]
+Fanpuguizhen = Fanpuguizhen.__main__:main
+fanpuguizhen = Fanpuguizhen.__main__:main
+
