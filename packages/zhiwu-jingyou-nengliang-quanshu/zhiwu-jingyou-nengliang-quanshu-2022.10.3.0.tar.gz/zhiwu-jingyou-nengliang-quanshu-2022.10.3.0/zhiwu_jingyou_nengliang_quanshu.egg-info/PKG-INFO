@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: zhiwu-jingyou-nengliang-quanshu
+Version: 2022.10.3.0
+Summary: 植物精油能量全书
+Home-page: https://github.com/apachecn/zhiwu-jingyou-nengliang-quanshu
+Author: ApacheCN
+Author-email: apachecn@163.com
+License: UNKNOWN
+Description: # 植物精油能量全书
+        
+        ## 下载
+        
+        ### Docker
+        
+        ```
+        docker pull apachecn0/zhiwu-jingyou-nengliang-quanshu
+        docker run -tid -p <port>:80 apachecn0/zhiwu-jingyou-nengliang-quanshu
+        # 访问 http://localhost:{port} 查看文档
+        ```
+        
+        ### PYPI
+        
+        ```
+        pip install zhiwu-jingyou-nengliang-quanshu
+        zhiwu-jingyou-nengliang-quanshu <port>
+        # 访问 http://localhost:{port} 查看文档
+        ```
+        
+        ### NPM
+        
+        ```
+        npm install -g zhiwu-jingyou-nengliang-quanshu
+        zhiwu-jingyou-nengliang-quanshu <port>
+        # 访问 http://localhost:{port} 查看文档
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Documentation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
