@@ -1,0 +1,10 @@
+cinnaroll/__init__.py,sha256=c1zZbq9MwX2X_j0swSYaVoJelUTemK5k9lnyPDbTAdo,2021
+cinnaroll/rollout.py,sha256=0pZ7uQoOEVIkp2Eyt4NyVKqyAQ8NwPo2WUzuDX4t0mw,3329
+cinnaroll-0.0.5.data/scripts/cinnaroll-login,sha256=4edANnjf0w1GuKSPyYr3v5XJAGfTajG0zpyTnSVITXo,649
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/login.py,sha256=VFSKEF2sHqx-WVS6d3c__F2LKXqW-ifcz_LHBF1cIJM,1529
+cinnaroll-0.0.5.dist-info/LICENSE,sha256=Zza3e_6qEdvJn-nGjWfY5x-XVEh00-H1Ry7UEf-yFMw,11346
+cinnaroll-0.0.5.dist-info/METADATA,sha256=FpykFiATYUv8KWoco_usHB_3ymEg3dWUYkeaJmCFpsY,3166
+cinnaroll-0.0.5.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+cinnaroll-0.0.5.dist-info/top_level.txt,sha256=DjGS3KSKqlYL9o_WGjqsHByvaKT3rfbJxKGSXtllDOM,14
+cinnaroll-0.0.5.dist-info/RECORD,,
