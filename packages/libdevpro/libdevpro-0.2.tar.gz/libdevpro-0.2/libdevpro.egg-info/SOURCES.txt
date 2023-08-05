@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libdevpro/__init__.py
+libdevpro/github_api.py
+libdevpro.egg-info/PKG-INFO
+libdevpro.egg-info/SOURCES.txt
+libdevpro.egg-info/dependency_links.txt
+libdevpro.egg-info/not-zip-safe
+libdevpro.egg-info/requires.txt
+libdevpro.egg-info/top_level.txt
