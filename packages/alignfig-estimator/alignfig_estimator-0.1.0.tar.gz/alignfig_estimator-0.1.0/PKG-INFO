@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: alignfig_estimator
+Version: 0.1.0
+Summary: Measuring and estimating tools operation time
+Author: Narek Engibaryan
+Author-email: narek030601@yandex.ru
+Requires-Python: >=3.8
