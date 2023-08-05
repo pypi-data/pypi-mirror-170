@@ -1,0 +1,4 @@
+[console_scripts]
+JingdianWeiteTaluo = JingdianWeiteTaluo.__main__:main
+jingdian-weite-taluo = JingdianWeiteTaluo.__main__:main
+
