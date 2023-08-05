@@ -1,0 +1,13 @@
+ambhas/__init__.py,sha256=tCY8UrI2EN8gAgX0s08YvJUOdb-5jUNqsihKRTPHJak,63
+ambhas/ai.py,sha256=1HCc6tbz9Tv02qcVHz-4y0FaJDa2Iu6DOrP5a0GlGhs,3000
+ambhas/dielectric.py,sha256=umEMsTDGzzBmbTXx_v1pJjfuiwvZJw9DEg-NwvOHKVU,8666
+ambhas/dubois.py,sha256=F6QpfE21w19w__hDDp03wVL64Mp8WTMYjmI96WayCBw,3656
+ambhas/errlib.py,sha256=9qJT7zH-mUFjwriUIwn-WRrQvF8tNnTIMu9akFaGGCQ,8224
+ambhas/krige.py,sha256=HnRpEc42Ot64n8Phhj35cHsZ2HKukZzhbkjMWxPXe7E,8579
+ambhas/richards.py,sha256=CvHLSY-OO2yn-gwba0vLaLf9cmOFx_9NyUFaQaYk_J0,18179
+ambhas/stats.py,sha256=XpiIwrUnuNP0P-XLspwyr4tZFYEDDWw8VIx5Ae-g2X8,7466
+ambhas-1.1.0.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+ambhas-1.1.0.dist-info/METADATA,sha256=d7bvLDVKjrIux8LdYZX61N5kQCmrJNwEobvGpcnYrMw,2065
+ambhas-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ambhas-1.1.0.dist-info/top_level.txt,sha256=i0SNU3pUoai1yR2YLp3mBruVfdXR9wd9w8DLvitcXHY,7
+ambhas-1.1.0.dist-info/RECORD,,
