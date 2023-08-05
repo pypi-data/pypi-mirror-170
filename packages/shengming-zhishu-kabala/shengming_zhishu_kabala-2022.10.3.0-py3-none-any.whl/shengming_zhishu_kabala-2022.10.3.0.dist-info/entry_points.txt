@@ -1,0 +1,4 @@
+[console_scripts]
+ShengmingZhishuKabala = ShengmingZhishuKabala.__main__:main
+shengming-zhishu-kabala = ShengmingZhishuKabala.__main__:main
+
