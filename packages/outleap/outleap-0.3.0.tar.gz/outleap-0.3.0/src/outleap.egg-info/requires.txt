@@ -1,0 +1,4 @@
+llsd
+
+[repl]
+ptpython<4,>=3
