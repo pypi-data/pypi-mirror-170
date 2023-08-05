@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: ssds-module
+Version: 0.0.1
+Summary: My first Python package
+Home-page: UNKNOWN
+Author: Shaunak Dhande
+Author-email: shaunak.dhande@innoplexus.com
+License: UNKNOWN
+Description: My first Python package with a slightly longer description
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

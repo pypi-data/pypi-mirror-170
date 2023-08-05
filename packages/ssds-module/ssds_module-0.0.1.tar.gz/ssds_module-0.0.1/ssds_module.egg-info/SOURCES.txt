@@ -1,0 +1,11 @@
+pyproject.toml
+setup.py
+ssds_module/__init__.py
+ssds_module/add.py
+ssds_module/divide.py
+ssds_module/multiply.py
+ssds_module/subtract.py
+ssds_module.egg-info/PKG-INFO
+ssds_module.egg-info/SOURCES.txt
+ssds_module.egg-info/dependency_links.txt
+ssds_module.egg-info/top_level.txt
