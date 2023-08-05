@@ -1,0 +1,3 @@
+[console_scripts]
+deepcoil=deepcoil.run_deepcoil:main
+
