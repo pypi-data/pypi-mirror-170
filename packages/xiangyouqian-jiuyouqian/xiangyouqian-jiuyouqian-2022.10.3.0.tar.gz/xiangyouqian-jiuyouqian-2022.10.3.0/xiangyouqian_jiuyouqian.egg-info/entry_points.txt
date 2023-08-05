@@ -1,0 +1,4 @@
+[console_scripts]
+XiangyouqianJiuyouqian = XiangyouqianJiuyouqian.__main__:main
+xiangyouqian-jiuyouqian = XiangyouqianJiuyouqian.__main__:main
+
