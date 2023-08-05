@@ -1,0 +1,4 @@
+[console_scripts]
+BaolingxinTaluoTaluoNengliangShuziZhanbu = BaolingxinTaluoTaluoNengliangShuziZhanbu.__main__:main
+baolingxin-taluo-taluo-nengliang-shuzi-zhanbu = BaolingxinTaluoTaluoNengliangShuziZhanbu.__main__:main
+
