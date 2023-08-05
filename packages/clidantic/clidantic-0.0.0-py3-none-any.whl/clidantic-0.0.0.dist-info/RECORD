@@ -1,0 +1,11 @@
+clidantic/__init__.py,sha256=QmN0J2Q5ZluNINWmB2OFMNGlb8UgtzxoAV36dyKWIC4,128
+clidantic/click.py,sha256=mD_f5hzv3q_-AyUe1QcKd-TDN2tqORUNYDqCzfoCw5k,9699
+clidantic/convert.py,sha256=svZQdODFimn8bwqLah114BJtp4rrQ3DtECs_CP8bd34,5914
+clidantic/core.py,sha256=1pazyjgagEblcGXDuGBetc_1Xf7OgZ6ZPCJH7eAW6Ok,8322
+clidantic/fields.py,sha256=G_RL-PF9f8juBBNVShFSygi1GRf8xhexwh7_gSTsMEc,5393
+clidantic/testing.py,sha256=6u6YATUuWa8-0DbBO0F56J2-_F5161sq3fSWOEqAznw,771
+clidantic/types.py,sha256=GvA4VC8u_8-jptW5VigfbLW0rwZP_2A0YUhnXE7YsEk,3249
+clidantic-0.0.0.dist-info/LICENSE,sha256=Pkrro9s1Kj4sVjEMHzi5k0yKc8jEh6oliSOlvNCHC8g,1072
+clidantic-0.0.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+clidantic-0.0.0.dist-info/METADATA,sha256=V872I4eKMCUveMmf6dJnmUhf-Z7vPuDBrtC6gzErQ-E,2729
+clidantic-0.0.0.dist-info/RECORD,,
