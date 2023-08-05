@@ -1,0 +1,11 @@
+jikan4/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jikan4/aiojikan.py,sha256=4BzMVcpBfZwa7UK8vu5aH_3Ih4BJSWWmM5YjoH5HPto,2668
+jikan4/jikan.py,sha256=kK8PrABDN_bmePPxabbtlaNvT-IT9uwuqvCgmOg6F68,2242
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_aiojikan.py,sha256=mhYhWL_Wz76PedsZ-fpw3OQkLhWMeIU0Fs5aFifr9JE,719
+tests/test_jikan.py,sha256=b-U8ZpC6MRugXcVV47LVR3fE9KRvuWhqIiA0UIMwIQ4,557
+jikan4-0.0.1.dist-info/LICENSE,sha256=BBhXHNN5bNKhmoEsPW-mk9AG_rsTyfTSvlo9i2ie7wk,1090
+jikan4-0.0.1.dist-info/METADATA,sha256=Y9Ej1u5N5YtjMEg4J3YS7pDFIGD_myeHfWjz3vl7m6k,419
+jikan4-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jikan4-0.0.1.dist-info/top_level.txt,sha256=AozhKUgYSCZsXS3SamFh0f_6_v1VJRdWrZ12h0qOjAM,13
+jikan4-0.0.1.dist-info/RECORD,,

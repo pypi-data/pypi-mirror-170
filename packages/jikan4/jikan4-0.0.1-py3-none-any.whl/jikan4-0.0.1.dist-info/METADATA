@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: jikan4
+Version: 0.0.1
+Summary: A Python wrapper for the Jikan API
+Author: Matheus Bessa
+Keywords: jikan,jikan4,jikan-api,jikan4-api,jikan-wrapper,jikan4-wrapper,jikan4-python,jikan-python
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (==3.8.3)
+Requires-Dist: requests (==2.28.1)
+
+# jikan4
+ A Python wrapper for the Jikan API V4
