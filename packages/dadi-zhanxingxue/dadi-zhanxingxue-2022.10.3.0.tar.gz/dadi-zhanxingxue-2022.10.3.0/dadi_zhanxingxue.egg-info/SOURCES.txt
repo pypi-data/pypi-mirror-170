@@ -1,0 +1,12 @@
+README.md
+setup.py
+DadiZhanxingxue/README.md
+DadiZhanxingxue/__init__.py
+DadiZhanxingxue/__main__.py
+DadiZhanxingxue/file.pdf
+DadiZhanxingxue/index.html
+dadi_zhanxingxue.egg-info/PKG-INFO
+dadi_zhanxingxue.egg-info/SOURCES.txt
+dadi_zhanxingxue.egg-info/dependency_links.txt
+dadi_zhanxingxue.egg-info/entry_points.txt
+dadi_zhanxingxue.egg-info/top_level.txt
