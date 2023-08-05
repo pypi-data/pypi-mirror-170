@@ -1,0 +1,797 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="What can I contribute?" href="../development/what.html" /><link rel="prev" title="Literature" href="../zliterature.html" />
+
+    <meta name="generator" content="sphinx-5.1.1, furo 2022.06.21"/>
+        <title>Exergy analysis - TESPy 0.6.1 - Leidenfrost&#39;s Library documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #ffffff;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">TESPy 0.6.1 - Leidenfrost's Library documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/./images/logo_tespy_mid.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/./images/logo_tespy_mid_darkmode.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">TESPy 0.6.1 - Leidenfrost's Library documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Thermal Engineering Systems in Python</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and setup</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../basics.html">Modeling Basic Systems</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../basics/intro.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/heat_pump.html">Heat Pump</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/rankine_cycle.html">Rankine Cycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/gas_turbine.html">Gas Turbine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/district_heating.html">District Heating Network</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials.html">Advanced Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/heat_pump_steps.html">Build a Heat Pump Stepwise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/starting_values.html">How to Generate Stable Starting Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/heat_pump_exergy.html">Exergy Analysis of a Ground-Coupled Heat Pump</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/pygmo_optimization.html">Thermal Power Plant Efficiency Optimization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../regular_meeting.html">TESPy community</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modules.html">TESPy modules</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modules/networks.html">Networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/networks.html#network-reader">Network reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/components.html">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/components.html#component-groups-subystems">Component Groups: Subystems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/connections.html">Connections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/characteristics.html">Characteristics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/fluid_properties.html">Fluid properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/ude.html">User defined equations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../benchmarks.html">Benchmarks</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../api.html">API Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../api/components.html">tespy.components module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/connections.html">tespy.connections module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/data.html">tespy.data module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/networks.html">tespy.networks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/tools.html">tespy.tools module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../whats_new.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../zliterature.html">Literature</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Advanced Features</span></p>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Exergy analysis</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contribute to TESPy</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/what.html">What can I contribute?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/how.html">How can I contribute?</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <div class="section" id="exergy-analysis">
+<span id="tespy-advanced-exergy-label"></span><h1>Exergy analysis<a class="headerlink" href="#exergy-analysis" title="Permalink to this heading">#</a></h1>
+<p>Performing thermodynamic cycle analyses making use of the second law of
+thermodynamics provides further process information and uncovers potentials for
+improvement in power plant engineering. Therefore, TESPy’s analyses module
+provides you with an inbuilt and fully automatic exergy analysis.</p>
+<p>We have published a paper with the features described in this section. The
+publication is licensed under an open-access license, download the pdf
+at <a class="reference external" href="https://doi.org/10.3390/en15114087">https://doi.org/10.3390/en15114087</a>, also see <span id="id1">[<a class="reference internal" href="../zliterature.html#id28" title="Francesco Witte, Mathias Hofmann, Julius Meier, Ilja Tuschy, and George Tsatsaronis. Generic and open-source exergy analysis&amp;mdash;extending the simulation framework tespy. Energies, 2022. doi:10.3390/en15114087.">5</a>]</span>.</p>
+<div class="section" id="fundamentals-of-exergy-analysis">
+<h2>Fundamentals of exergy analysis<a class="headerlink" href="#fundamentals-of-exergy-analysis" title="Permalink to this heading">#</a></h2>
+<p>Energy is a concept of the first law of thermodynamics. It cannot be destroyed.
+But regarding the design and analysis of thermal systems, the idea that
+something can be destroyed is useful. According to the second law of
+thermodynamics, the conversion of heat and internal energy into work is
+limited. This constraint and the idea of destruction are applied to introduce a
+new concept: “Exergy”.</p>
+<p>Exergy can be destroyed due to irreversibilities and is able to describe the
+quality of different energy forms. The difference in quality of different forms
+of energy shall be illustrated by the following example. 1 kJ of electrical
+energy is clearly more valuable than 1 kJ of energy in a glass of water at
+ambient temperature <span id="id2">[<a class="reference internal" href="../zliterature.html#id24" title="Adrian Bejan, George Tsatsaronis, and Michael Moran. Thermal Design and Optimization. Wiley, 1996.">8</a>]</span>.</p>
+<p>In literature, exergy is defined as follows:</p>
+<blockquote>
+<div><p><em>“An opportunity for doing useful work exists whenever two systems at
+different states are placed in communication, for in principle work can be
+developed as the two are allowed to come into equilibrium. When one of the
+two systems is a suitably idealized system called an environment and the
+other is some system of interest, exergy is the maximum theoretical useful
+work (shaft work or electrical work) obtainable as the systems interact to
+equilibrium, heat transfer occuring with the environment only.”</em>
+<span id="id3">[<a class="reference internal" href="../zliterature.html#id24" title="Adrian Bejan, George Tsatsaronis, and Michael Moran. Thermal Design and Optimization. Wiley, 1996.">8</a>]</span></p>
+</div></blockquote>
+</div>
+<div class="section" id="terminology">
+<h2>Terminology<a class="headerlink" href="#terminology" title="Permalink to this heading">#</a></h2>
+<p>The definitions and nomenclature of the exergy analysis in TESPy are based on
+<span id="id4">[<a class="reference internal" href="../zliterature.html#id18" title="George Tsatsaronis. Definitions and nomenclature in exergy analysis and exergoeconomics. Energy, 32(4):249 - 253, 2007. doi:10.1016/j.energy.2006.07.002.">25</a>]</span>. The exergy destruction ratios are described in more
+detail in <span id="id5">[<a class="reference internal" href="../zliterature.html#id24" title="Adrian Bejan, George Tsatsaronis, and Michael Moran. Thermal Design and Optimization. Wiley, 1996.">8</a>]</span>. Since the current version of the exergy analysis
+in TESPy only focuses on physical exergy and does not include reaction
+processes yet, chemical exergy is not considered. Changes in kinetic and
+potential exergy are neglected and therefore not considered as well.</p>
+<div class="table-wrapper colwidths-given tight-table docutils container" id="id8">
+<table class="colwidths-given tight-table docutils align-default" id="id8">
+<caption><span class="caption-text">Terminology</span><a class="headerlink" href="#id8" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 10%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>variable</p></th>
+<th class="head"><p>name</p></th>
+<th class="head"><p>symbol</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">ex_physical</span></code>, <code class="code docutils literal notranslate"><span class="pre">Ex_physical</span></code></p></td>
+<td><p>(specific) physical exergy</p></td>
+<td><p><span class="math notranslate nohighlight">\(e^\mathrm{PH}\)</span>, <span class="math notranslate nohighlight">\(E^\mathrm{PH}\)</span></p></td>
+<td><p>due to the deviation of the temperature and pressure of the system from
+those of the environment</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">ex_therm</span></code>, <code class="code docutils literal notranslate"><span class="pre">Ex_therm</span></code></p></td>
+<td><p>(specific) thermal exergy</p></td>
+<td><p><span class="math notranslate nohighlight">\(e^\mathrm{T}\)</span>, <span class="math notranslate nohighlight">\(E^\mathrm{T}\)</span></p></td>
+<td><p>associated with the system temperature</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">ex_mech</span></code>, <code class="code docutils literal notranslate"><span class="pre">Ex_mech</span></code></p></td>
+<td><p>(specific) mechanical exergy</p></td>
+<td><p><span class="math notranslate nohighlight">\(e^\mathrm{M}\)</span>, <span class="math notranslate nohighlight">\(E^\mathrm{M}\)</span></p></td>
+<td><p>associated with the system pressure</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">E_P</span></code></p></td>
+<td><p>product exergy</p></td>
+<td><p><span class="math notranslate nohighlight">\(\dot{E}_\mathrm{P}\)</span></p></td>
+<td><p>represents the desired result(expressed in terms of exergy) generated
+by the system being considered represents the resources (expressed in
+terms of exergy)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">E_F</span></code></p></td>
+<td><p>fuel exergy</p></td>
+<td><p><span class="math notranslate nohighlight">\(\dot{E}_\mathrm{F}\)</span></p></td>
+<td><p>represents the resources (expressed in terms of exergy) expended to
+provide the product exergy</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">E_D</span></code></p></td>
+<td><p>exergy destruction</p></td>
+<td><p><span class="math notranslate nohighlight">\(\dot{E}_\mathrm{D}\)</span></p></td>
+<td><p>thermodynamic inefficienies associated with the irreversibilities
+(entropy generation) within the system boundaries</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">E_L</span></code></p></td>
+<td><p>exergy loss</p></td>
+<td><p><span class="math notranslate nohighlight">\(\dot{E}_\mathrm{L}\)</span></p></td>
+<td><p>thermodynamic inefficienies associated with the transfer of exergy
+through material and energy streams to the surroundings</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">epsilon</span></code></p></td>
+<td><p>exergetic efficiency</p></td>
+<td><p><span class="math notranslate nohighlight">\(\varepsilon\)</span></p></td>
+<td><p>ratio between product exergy and fuel exergy</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">y_D,k</span></code></p></td>
+<td><p>exergy destruction ratio</p></td>
+<td><p><span class="math notranslate nohighlight">\(y_\mathrm{D}\)</span></p></td>
+<td><p>rate of exergy destruction in a component compared to the exergy rate
+of the fuel provided to the overall system</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">y*_D,k</span></code></p></td>
+<td><p>exergy destruction ratio</p></td>
+<td><p><span class="math notranslate nohighlight">\(y^*_\mathrm{D}\)</span></p></td>
+<td><p>rate of exergy destruction in a component compared to the total exergy
+destruction rate within the system</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The generic exergy analysis balance equations have been implemented into
+TESPy for all components, that do not implement chemical reactions. The
+equations for exergy balances at temperature values below the ambient
+temperature are implemented as well, but are not yet fully tested.</p>
+</div>
+</div>
+<div class="section" id="tutorial">
+<h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this heading">#</a></h2>
+<p>In this short tutorial, an exergy analysis is carried out for the so called
+“Solar Energy Generating System” (SEGS). The full python script is available on
+GitHub in an individual repository: <a class="reference external" href="https://github.com/fwitte/SEGS_exergy">https://github.com/fwitte/SEGS_exergy</a>.</p>
+<p>Two other full code examples are to be found at:</p>
+<ul class="simple">
+<li><p>Supercritical CO<sub>2</sub> power cycle: <a class="reference external" href="https://github.com/fwitte/sCO2_exergy">https://github.com/fwitte/sCO2_exergy</a></p></li>
+<li><p>Refrigeration machine: <a class="reference external" href="https://github.com/fwitte/refrigeration_cycle_exergy">https://github.com/fwitte/refrigeration_cycle_exergy</a></p></li>
+</ul>
+<p>SEGS consists of three main systems, the solar field, the steam cycle and the
+cooling water system. In the solar field Therminol VP1 (TVP1) is used as heat transfer
+fluid. In the steam generator and reheater the TVP1 is cooled down to evaporate
+and overheat/reheat the water of the steam cycle. The turbine is divided in a
+high pressure turbine and a low pressure turbine, which are further subdivided
+in 2 parts (high pressure turbine) and 5 parts. In between the stages steam is
+exctracted for preheating. Finally, the main condenser of the steam cycle is
+connected to an air cooling tower. The figure below shows the topology of the
+model.</p>
+<div class="only-light figure align-center">
+<img alt="Topology of the Solar Energy Generating System (SEGS)" src="../_images/flowsheet.svg" /></div>
+<div class="only-dark figure align-center">
+<img alt="Topology of the Solar Energy Generating System (SEGS)" src="../_images/flowsheet_darkmode.svg" /></div>
+<p>The input data are based on literature <span id="id6">[<a class="reference internal" href="../zliterature.html#id4" title="David Kearney and Charles E. Miller. Technical evaluation of project feasibilty for segs vi. 1988. Submitted to Luz Solar Partners VI.">26</a>]</span>, which provides
+measured data. Some parameters are however taken from a follow-up publication,
+as the original data show some inconsistencies, e.g. higher enthalpy at the low
+pressure turbine’s last stage outlet than at its inlet <span id="id7">[<a class="reference internal" href="../zliterature.html#id5" title="Frank Lippke. Simulation of the part-load behavior of a 30 mwe segs plant. Technical Report SAND-95-1293, Sandia National Lab., Albuquerque, June 1995. URL: https://www.osti.gov/biblio/95571, doi:10.2172/95571.">27</a>]</span>. As
+mentioned, you can find all data in the respective GitHub repository.</p>
+<div class="section" id="tespy-model">
+<h3>TESPy model<a class="headerlink" href="#tespy-model" title="Permalink to this heading">#</a></h3>
+<p>The TESPy model consists of 53 components. The feed water tank serves as mixing
+preheater, thus can be modeled using a merge. All other components are modeled
+highlighted in the flowsheet. The preheaters and the main condenser are modeled
+as <code class="code docutils literal notranslate"><span class="pre">Condenser</span></code> instances, while all other heat exchangers are modeled
+using <code class="code docutils literal notranslate"><span class="pre">HeatExchanger</span></code> instances. For the solar field a parabolic trough
+is implemented, calculating the surface area required for the provision of the
+heat input at optimal conditions.</p>
+<p>All components are flagged with the <code class="code docutils literal notranslate"><span class="pre">fkt_group</span></code> parameter, which will
+automatically create functional groups (component groups) for the exergy
+analysis Grassmann diagram. The specification of this parameter is not required
+for the exergy analysis itself, but helps to simplify the automatically
+generated diagram. Components not assigned to any functional group will form
+their respective group.</p>
+<p>Regarding parameter specification, the following parameters are specified:</p>
+<ul class="simple">
+<li><p>isentropic efficiency values</p></li>
+<li><p>electrical conversion efficiencies of motors and generators</p></li>
+<li><p>terminal temperature difference values at preheaters</p></li>
+<li><p>pressure values of steam extraction</p></li>
+<li><p>pressure values in the preheating route</p></li>
+<li><p>pressure losses in the heat exchangers</p></li>
+<li><p>solar fluid temperature</p></li>
+<li><p>steam cycle live steam and reheat temperatures</p></li>
+<li><p>some temperature values in the cooling water system</p></li>
+</ul>
+<p>The ambient state is defined as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pamb</span> <span class="o">=</span> <span class="mf">1.013</span>
+<span class="n">Tamb</span> <span class="o">=</span> <span class="mi">25</span>
+</pre></div>
+</div>
+<p>Pressure and temperature of the ambient air in the cooling tower are equal to
+these values in the script provided.</p>
+<p>For the exact values of the component parameters please see in the referenced
+python script.</p>
+<p>Due to the complexity of the plant, the solver sometimes struggles when given bad
+starting values. Therefore, the TESPy model is built in two steps. After
+solving the initial setup without both of the high pressure preheater
+subcoolers, the missing connections and components are added in a second step
+and the model is again solved.</p>
+</div>
+<div class="section" id="analysis-setup">
+<h3>Analysis setup<a class="headerlink" href="#analysis-setup" title="Permalink to this heading">#</a></h3>
+<p>After the simulation of the plant, the exergy analysis can be carried out.
+To perform it, all exergy streams leaving or entering the network’s system
+boundaries have to be defined by the user. These are:</p>
+<ul class="simple">
+<li><p>fuel exergy <code class="code docutils literal notranslate"><span class="pre">E_F</span></code></p></li>
+<li><p>product exergy <code class="code docutils literal notranslate"><span class="pre">E_P</span></code></p></li>
+<li><p>exergy loss streams <code class="code docutils literal notranslate"><span class="pre">E_L</span></code></p></li>
+<li><p>internal exergy streams not bound to connections <code class="code docutils literal notranslate"><span class="pre">internal_busses</span></code></p></li>
+</ul>
+<p>In case of the solar thermal power plant, the fuel exergy is the heat input at
+the parabolic trough. The product is the electricity produced by the plant,
+i.e. the electricity generated by the turbine generators minus the electricity
+consumed by the pumps and the fan. Lastly, exergy loss streams are the hot air
+leaving the cooling tower and the cold air entering the cooling tower fan from
+the ambient. Similar to the electricity consumption of the fan and pumps the
+cold air will be taken into account as negative value for the total exergy
+loss.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">power</span> <span class="o">=</span> <span class="n">Bus</span><span class="p">(</span><span class="s1">&#39;total output power&#39;</span><span class="p">)</span>
+<span class="n">power</span><span class="o">.</span><span class="n">add_comps</span><span class="p">(</span>
+    <span class="p">{</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">hpt1</span><span class="p">,</span> <span class="s1">&#39;char&#39;</span><span class="p">:</span> <span class="mf">0.97</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;component&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">hpt2</span><span class="p">,</span> <span class="s1">&#39;char&#39;</span><span class="p">:</span> <span class="mf">0.97</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;component&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">lpt1</span><span class="p">,</span> <span class="s1">&#39;char&#39;</span><span class="p">:</span> <span class="mf">0.97</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;component&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">lpt2</span><span class="p">,</span> <span class="s1">&#39;char&#39;</span><span class="p">:</span> <span class="mf">0.97</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;component&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">lpt3</span><span class="p">,</span> <span class="s1">&#39;char&#39;</span><span class="p">:</span> <span class="mf">0.97</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;component&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">lpt4</span><span class="p">,</span> <span class="s1">&#39;char&#39;</span><span class="p">:</span> <span class="mf">0.97</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;component&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">lpt5</span><span class="p">,</span> <span class="s1">&#39;char&#39;</span><span class="p">:</span> <span class="mf">0.97</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;component&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">fwp</span><span class="p">,</span> <span class="s1">&#39;char&#39;</span><span class="p">:</span> <span class="mf">0.95</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;bus&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">condpump</span><span class="p">,</span> <span class="s1">&#39;char&#39;</span><span class="p">:</span> <span class="mf">0.95</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;bus&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">ptpump</span><span class="p">,</span> <span class="s1">&#39;char&#39;</span><span class="p">:</span> <span class="mf">0.95</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;bus&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">cwp</span><span class="p">,</span> <span class="s1">&#39;char&#39;</span><span class="p">:</span> <span class="mf">0.95</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;bus&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">fan</span><span class="p">,</span> <span class="s1">&#39;char&#39;</span><span class="p">:</span> <span class="mf">0.95</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;bus&#39;</span><span class="p">}</span>
+<span class="p">)</span>
+
+<span class="n">heat_input_bus</span> <span class="o">=</span> <span class="n">Bus</span><span class="p">(</span><span class="s1">&#39;heat input&#39;</span><span class="p">)</span>
+<span class="n">heat_input_bus</span><span class="o">.</span><span class="n">add_comps</span><span class="p">({</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">pt</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;bus&#39;</span><span class="p">})</span>
+
+<span class="n">exergy_loss_bus</span> <span class="o">=</span> <span class="n">Bus</span><span class="p">(</span><span class="s1">&#39;exergy loss&#39;</span><span class="p">)</span>
+<span class="n">exergy_loss_bus</span><span class="o">.</span><span class="n">add_comps</span><span class="p">({</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">air_in</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;bus&#39;</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;comp&#39;</span><span class="p">:</span> <span class="n">air_out</span><span class="p">})</span>
+
+<span class="n">SEGSvi</span><span class="o">.</span><span class="n">add_busses</span><span class="p">(</span><span class="n">power</span><span class="p">,</span> <span class="n">heat_input_bus</span><span class="p">,</span> <span class="n">exergy_loss_bus</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In order to define these values a list of busses representing the individual
+exergy streams is passed when creating the ExergyAnalysis instance.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ean</span> <span class="o">=</span> <span class="n">ExergyAnalysis</span><span class="p">(</span><span class="n">SEGSvi</span><span class="p">,</span> <span class="n">E_P</span><span class="o">=</span><span class="p">[</span><span class="n">power</span><span class="p">],</span> <span class="n">E_F</span><span class="o">=</span><span class="p">[</span><span class="n">heat_input_bus</span><span class="p">],</span> <span class="n">E_L</span><span class="o">=</span><span class="p">[</span><span class="n">exergy_loss_bus</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>In this case, the Bus <code class="code docutils literal notranslate"><span class="pre">power</span></code> represents the product exergy, the Bus
+<code class="code docutils literal notranslate"><span class="pre">heat_input_bus</span></code> the fuel exergy of the solar field and the Bus
+<code class="code docutils literal notranslate"><span class="pre">exergy_loss_bus</span></code> the exergy lost with the hot air leaving the cooling
+tower. An example application using the <code class="code docutils literal notranslate"><span class="pre">internal_busses</span></code> can be found in
+the API documentation of class <a class="reference internal" href="../api/tools.html#tespy.tools.analyses.ExergyAnalysis" title="tespy.tools.analyses.ExergyAnalysis"><code class="xref py py-class docutils literal notranslate"><span class="pre">tespy.tools.analyses.ExergyAnalysis</span></code></a>.</p>
+<p>After the setup of the exergy analysis, the
+<a class="reference internal" href="../api/tools.html#tespy.tools.analyses.ExergyAnalysis.analyse" title="tespy.tools.analyses.ExergyAnalysis.analyse"><code class="xref py py-meth docutils literal notranslate"><span class="pre">tespy.tools.analyses.ExergyAnalysis.analyse()</span></code></a> method expects the
+definition of the ambient state, thus ambient temperature and ambient pressure.
+With these information, the analysis is carried out automatically. The value
+of the ambient conditions is passed in the network’s (<code class="code docutils literal notranslate"><span class="pre">nw</span></code>) corresponding
+units.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ean</span><span class="o">.</span><span class="n">analyse</span><span class="p">(</span><span class="n">pamb</span><span class="o">=</span><span class="n">pamb</span><span class="p">,</span> <span class="n">Tamb</span><span class="o">=</span><span class="n">Tamb</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Using the same <a class="reference internal" href="../api/tools.html#tespy.tools.analyses.ExergyAnalysis" title="tespy.tools.analyses.ExergyAnalysis"><code class="xref py py-class docutils literal notranslate"><span class="pre">tespy.tools.analyses.ExergyAnalysis</span></code></a> instance, it is
+possible to run the analysis again with a different ambient state. The data
+generated by the analysis will automatically update, e.g. changing the ambient
+state temperature value to 15 °C.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ean</span><span class="o">.</span><span class="n">analyse</span><span class="p">(</span><span class="n">pamb</span><span class="o">=</span><span class="n">pamb</span><span class="p">,</span> <span class="n">Tamb</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the network’s topology changed a new instance of the
+<code class="code docutils literal notranslate"><span class="pre">ExergyAnalysis</span></code> class needs to be defined.</p>
+</div>
+</div>
+<div class="section" id="checking-consistency">
+<h3>Checking consistency<a class="headerlink" href="#checking-consistency" title="Permalink to this heading">#</a></h3>
+<p>An automatic check of consistency is performed by the analysis. The sum of all
+exergy destruction values of the network’s components and the exergy
+destruction on the respective busses is calculated. On top of that, fuel and
+product exergy values as well as exergy loss are determined. The total exergy
+destruction must therefore be equal to the fuel exergy minus product exergy and
+minus exergy loss. The deviation of that equation is then calculated and
+checked versus a threshold value of <span class="math notranslate nohighlight">\(10^{-3}\)</span> (to componesate for
+rounding errors).</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\dot{E}_\mathrm{D} = \dot{E}_\mathrm{F} - \dot{E}_\mathrm{P} -
+\dot{E}_\mathrm{L}\\\Delta \dot{E} = \dot{E}_\mathrm{F} - \dot{E}_\mathrm{P} -
+\dot{E}_\mathrm{L} - \dot{E}_\mathrm{D}\\\Delta \dot{E} \leq 10^{-3}\end{aligned}\end{align} \]</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the exergy analysis is carried out on a converged simulation and the
+analysis is set up correctly, this equation must be True. Otherwise, an
+error will be printed to the console, which means:</p>
+<ul class="simple">
+<li><p>The simulation of your plant did not converge or</p></li>
+<li><p>the exergy analysis has not been set up correctly. You should
+check, if the definition of the exergy streams <code class="code docutils literal notranslate"><span class="pre">E_F</span></code>, <code class="code docutils literal notranslate"><span class="pre">E_P</span></code>,
+<code class="code docutils literal notranslate"><span class="pre">E_L</span></code> and <code class="code docutils literal notranslate"><span class="pre">internal_busses</span></code> is correct.</p></li>
+</ul>
+<p>If you suspect a bug in the calculation, you are welcome to submit an issue
+on our GitHub page.</p>
+</div>
+<p>Printing the results is possible with the
+<a class="reference internal" href="../api/tools.html#tespy.tools.analyses.ExergyAnalysis.print_results" title="tespy.tools.analyses.ExergyAnalysis.print_results"><code class="xref py py-meth docutils literal notranslate"><span class="pre">tespy.tools.analyses.ExergyAnalysis.print_results()</span></code></a> method. The
+results are printed in six individual tables:</p>
+<ul class="simple">
+<li><p>connections</p></li>
+<li><p>components</p></li>
+<li><p>busses</p></li>
+<li><p>aggregation (aggregation of components and the respective busses)</p></li>
+<li><p>network</p></li>
+<li><p>groups (functional groups)</p></li>
+</ul>
+<p>By default, all of these tables are printed to the prompt. It is possible to
+deselect the tables, e.g. by passing <code class="code docutils literal notranslate"><span class="pre">groups=False</span></code> to the method call.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ean</span><span class="o">.</span><span class="n">print_results</span><span class="p">(</span><span class="n">groups</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">connections</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For the component related tables, i.e. busses, components, aggregation and
+groups, the data are sorted in descending order for the given exergy destruction value
+of the individual entry. The component data contain fuel exergy, product exergy
+and exergy destruction values related to the component itself ignoring losses
+that might occur on the busses, for example, mechanical or electrical
+conversion losses in motors and generators. The bus data contain the respective
+information related to the conversion losses on the busses only. The
+aggregation data contain both, the component and the bus data. For instance,
+a turbine driving a generator will have the electrical energy delivered by the
+generator as product exergy value. The same component’s exergy product without
+considering the mechanical or electrical conversion losses is the shaft power
+delivered by the turbine. From the generator’s perspective, this is the fuel
+exergy, while the product is the electrical energy.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note, that in contrast to the component and bus data, group data do
+not contain fuel and product exergy as well as exergy efficiency. Instead all
+exergy streams entering the system borders of the component group and all
+exergy streams leaving the system borders are calculated. On this basis, a
+graphical representation of the exergy flows in the network can be generated
+in the form of a Grassmann diagram.</p>
+</div>
+</div>
+<div class="section" id="accessing-the-data">
+<h3>Accessing the data<a class="headerlink" href="#accessing-the-data" title="Permalink to this heading">#</a></h3>
+<p>The underlying data for the tabular printouts are stored in
+<a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/dsintro.html">pandas DataFrames</a>.
+Therefore, you can easily access and process these data. To access these use
+the following code snippet.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">connection_data</span> <span class="o">=</span> <span class="n">ean</span><span class="o">.</span><span class="n">connection_data</span>
+<span class="n">bus_data</span> <span class="o">=</span> <span class="n">ean</span><span class="o">.</span><span class="n">bus_data</span>
+<span class="n">component_data</span> <span class="o">=</span> <span class="n">ean</span><span class="o">.</span><span class="n">component_data</span>
+<span class="n">aggregation_data</span> <span class="o">=</span> <span class="n">ean</span><span class="o">.</span><span class="n">aggregation_data</span>
+<span class="n">network_data</span> <span class="o">=</span> <span class="n">ean</span><span class="o">.</span><span class="n">network_data</span>
+<span class="n">group_data</span> <span class="o">=</span> <span class="n">ean</span><span class="o">.</span><span class="n">group_data</span>
+</pre></div>
+</div>
+<p>Lastly, the analysis also provides an input data generator for plotly’s
+<a class="reference external" href="https://plotly.com/python/sankey-diagram/">sankey diagram</a>.</p>
+</div>
+<div class="section" id="plotting">
+<h3>Plotting<a class="headerlink" href="#plotting" title="Permalink to this heading">#</a></h3>
+<p>To use the plotly library, you’ll need to install it first. Please check the
+respective documentation on plotly’s documentation. Generating a sankey
+diagram is then easily done:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+
+<span class="n">links</span><span class="p">,</span> <span class="n">nodes</span> <span class="o">=</span> <span class="n">ean</span><span class="o">.</span><span class="n">generate_plotly_sankey_input</span><span class="p">()</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Sankey</span><span class="p">(</span>
+    <span class="n">arrangement</span><span class="o">=</span><span class="s1">&#39;snap&#39;</span><span class="p">,</span>
+    <span class="n">node</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="n">nodes</span><span class="p">,</span>
+        <span class="s1">&#39;pad&#39;</span><span class="p">:</span><span class="mi">11</span><span class="p">,</span>
+        <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;orange&#39;</span>
+    <span class="p">},</span>
+    <span class="n">link</span><span class="o">=</span><span class="n">links</span>
+<span class="p">))</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="figure align-center">
+<img alt="Sankey diagram of the Soler Energy Generating System (SEGS)" src="../_images/sankey.svg" /></div>
+<p>The <a class="reference internal" href="../api/tools.html#tespy.tools.analyses.ExergyAnalysis.generate_plotly_sankey_input" title="tespy.tools.analyses.ExergyAnalysis.generate_plotly_sankey_input"><code class="xref py py-meth docutils literal notranslate"><span class="pre">tespy.tools.analyses.ExergyAnalysis.generate_plotly_sankey_input()</span></code></a>
+method provides the links and the corresponding nodes for the diagram. Colors
+and node order are assigned automatically but can be changed. Additionally, a
+threshold value for the minimum value of an exergy stream can be specified to
+exclude relatively small values from display.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ean</span><span class="o">.</span><span class="n">generate_plotly_sankey_input</span><span class="p">(</span>
+    <span class="n">node_order</span><span class="o">=</span><span class="p">[</span>
+        <span class="s1">&#39;E_F&#39;</span><span class="p">,</span> <span class="s1">&#39;heat input&#39;</span><span class="p">,</span> <span class="s1">&#39;SF&#39;</span><span class="p">,</span> <span class="s1">&#39;SG&#39;</span><span class="p">,</span> <span class="s1">&#39;LPT&#39;</span><span class="p">,</span> <span class="s1">&#39;RH&#39;</span><span class="p">,</span> <span class="s1">&#39;HPT&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;total output power&#39;</span><span class="p">,</span> <span class="s1">&#39;CW&#39;</span><span class="p">,</span> <span class="s1">&#39;LPP&#39;</span><span class="p">,</span> <span class="s1">&#39;FWP&#39;</span><span class="p">,</span> <span class="s1">&#39;HPP&#39;</span><span class="p">,</span> <span class="s1">&#39;exergy loss&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;E_L&#39;</span><span class="p">,</span> <span class="s1">&#39;E_P&#39;</span><span class="p">,</span> <span class="s1">&#39;E_D&#39;</span>
+    <span class="p">],</span>
+    <span class="n">colors</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;E_F&#39;</span><span class="p">:</span> <span class="s1">&#39;rgba(100, 100, 100, 0.5)&#39;</span><span class="p">},</span>
+    <span class="n">display_thresold</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The coloring of the links is defined by the type of the exergy stream (bound
+to a specific fluid, fuel exergy, product exergy, exergy loss, exergy
+destruction or internal exergy streams not bound to mass flows). Therefore
+colors can be assigned to these types of streams.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>The <code class="code docutils literal notranslate"><span class="pre">node_order</span></code> must contain all exergy streams, thus</p>
+<ul>
+<li><p>ALL component group labels (you can find the labels in the group data
+results printout),</p></li>
+<li><p>lables of the busses used in the definitions of the analysis and</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">'E_F'</span></code>, <code class="code docutils literal notranslate"><span class="pre">'E_P'</span></code>, <code class="code docutils literal notranslate"><span class="pre">'E_D'</span></code> as well as <code class="code docutils literal notranslate"><span class="pre">'E_L'</span></code></p></li>
+</ul>
+</li>
+<li><p>The colors dictionary works with the following keys:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">'E_F'</span></code>, <code class="code docutils literal notranslate"><span class="pre">'E_P'</span></code>, <code class="code docutils literal notranslate"><span class="pre">'E_D'</span></code>, <code class="code docutils literal notranslate"><span class="pre">'E_L'</span></code></p></li>
+<li><p>all labels of the busses used in the definition of the internal exergy
+streams</p></li>
+<li><p>all names of the network’s fluid</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">'mix'</span></code> for any mixture of two or more fluids</p></li>
+</ul>
+</li>
+<li><p>Keys missing in the dictionary will automatically assign a color to the
+link.</p></li>
+<li><p>The respective value are strings representing colors in the RGBA format,
+e.g. <code class="code docutils literal notranslate"><span class="pre">'rgba(100,</span> <span class="pre">100,</span> <span class="pre">100,</span> <span class="pre">0.5)'</span></code>.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Links with negative exergy flow, i.e. when the value of mechanical exergy
+is negative due to pressure lower than ambient pressure and total exergy
+is still negative, cannot be displayed by the sankey diagram.</p>
+</div>
+<p>The underlying exergy stream data is saved in a dictionary, if you want to
+handle the data by yourself.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sankey_data</span> <span class="o">=</span> <span class="n">ean</span><span class="o">.</span><span class="n">sankey_data</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+<p>An additional example is available in the API documentation of the
+<a class="reference internal" href="../api/tools.html#tespy.tools.analyses.ExergyAnalysis" title="tespy.tools.analyses.ExergyAnalysis"><code class="xref py py-class docutils literal notranslate"><span class="pre">tespy.tools.analyses.ExergyAnalysis</span></code></a> class. Full testing of exergy
+analysis at temperature levels below the ambient temperature will be
+implemented soon. Regarding the implementation of chemical exergy as well as
+exergo-economical methods, further work is required. If you are interested in
+contributing, please file an issue at our GitHub page.</p>
+</div>
+</div>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../development/what.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">What can I contribute?</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../zliterature.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Literature</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, Francesco Witte
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            <div class="last-updated">
+              Last updated on Oct 02, 2022</div>
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Exergy analysis</a><ul>
+<li><a class="reference internal" href="#fundamentals-of-exergy-analysis">Fundamentals of exergy analysis</a></li>
+<li><a class="reference internal" href="#terminology">Terminology</a></li>
+<li><a class="reference internal" href="#tutorial">Tutorial</a><ul>
+<li><a class="reference internal" href="#tespy-model">TESPy model</a></li>
+<li><a class="reference internal" href="#analysis-setup">Analysis setup</a></li>
+<li><a class="reference internal" href="#checking-consistency">Checking consistency</a></li>
+<li><a class="reference internal" href="#accessing-the-data">Accessing the data</a></li>
+<li><a class="reference internal" href="#plotting">Plotting</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </body>
+</html>

@@ -1,0 +1,515 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="User defined equations" href="ude.html" /><link rel="prev" title="Characteristics" href="characteristics.html" />
+
+    <meta name="generator" content="sphinx-5.1.1, furo 2022.06.21"/>
+        <title>Fluid properties - TESPy 0.6.1 - Leidenfrost&#39;s Library documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #ffffff;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">TESPy 0.6.1 - Leidenfrost's Library documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/./images/logo_tespy_mid.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/./images/logo_tespy_mid_darkmode.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">TESPy 0.6.1 - Leidenfrost's Library documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Thermal Engineering Systems in Python</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and setup</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../basics.html">Modeling Basic Systems</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../basics/intro.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/heat_pump.html">Heat Pump</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/rankine_cycle.html">Rankine Cycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/gas_turbine.html">Gas Turbine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/district_heating.html">District Heating Network</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials.html">Advanced Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/heat_pump_steps.html">Build a Heat Pump Stepwise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/starting_values.html">How to Generate Stable Starting Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/heat_pump_exergy.html">Exergy Analysis of a Ground-Coupled Heat Pump</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/pygmo_optimization.html">Thermal Power Plant Efficiency Optimization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../regular_meeting.html">TESPy community</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../modules.html">TESPy modules</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="networks.html">Networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="networks.html#network-reader">Network reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html#component-groups-subystems">Component Groups: Subystems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connections.html">Connections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="characteristics.html">Characteristics</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Fluid properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ude.html">User defined equations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../benchmarks.html">Benchmarks</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../api.html">API Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../api/components.html">tespy.components module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/connections.html">tespy.connections module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/data.html">tespy.data module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/networks.html">tespy.networks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/tools.html">tespy.tools module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../whats_new.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../zliterature.html">Literature</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Advanced Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/exergy.html">Exergy analysis</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contribute to TESPy</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/what.html">What can I contribute?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/how.html">How can I contribute?</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <div class="section" id="fluid-properties">
+<span id="tespy-fluid-properties-label"></span><h1>Fluid properties<a class="headerlink" href="#fluid-properties" title="Permalink to this heading">#</a></h1>
+<p>The basic fluid properties are handled by
+<a class="reference external" href="http://www.coolprop.org/">CoolProp</a>. All available fluids can be found on
+their homepage. Also see <span id="id1">[<a class="reference internal" href="../zliterature.html#id3" title="Ian H. Bell, Jorrit Wronski, Sylvain Quoilin, and Vincent Lemort. Pure and pseudo-pure fluid thermophysical property evaluation and the open-source thermophysical property library coolprop. Industrial &amp; Engineering Chemistry Research, 53(6):2498-2508, 2014. doi:10.1021/ie4033999.">4</a>]</span>.</p>
+<div class="section" id="coolprop-back-ends">
+<h2>CoolProp back ends<a class="headerlink" href="#coolprop-back-ends" title="Permalink to this heading">#</a></h2>
+<p>CoolProp provides multiple back ends for fluid property calculation. The
+back ends vary in calculation speed and calculation accuracy. It is possible
+to choose from the following back ends:</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">HEOS</span></code>: Helmhotz Equation Of State with highest accuracy and lowest
+calculation speed. <strong>This is the default back end!</strong></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">BICUBIC</span></code>: Tabular back end with high accuracy and very high
+calculation speed.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">TTSE</span></code>: Tabular back end with lowest accuracy and very high calculation
+speed.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">INCOMP</span></code>: Back end for incompressible fluids.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">IF97</span></code>: Back end for the IAPWS-IF97 of water, very accurate and much
+higher calculation speed than <code class="code docutils literal notranslate"><span class="pre">HEOS</span></code>. Due to a bug in the CoolProp
+back end this option is available with a fix (not the original
+implementation), for more information see the
+<a class="reference external" href="https://github.com/CoolProp/CoolProp/issues/1918/">CoolProp issue #1918</a>.</p></li>
+</ul>
+<p>For more information on the Back ends please visit the CoolProp online
+documentation.</p>
+</div>
+<div class="section" id="pure-and-pseudo-pure-fluids">
+<h2>Pure and pseudo-pure fluids<a class="headerlink" href="#pure-and-pseudo-pure-fluids" title="Permalink to this heading">#</a></h2>
+<p>If you use pure fluids, TESPy directly uses CoolProp functions to gather all
+fluid properties. CoolProp covers the most important fluids such as water, air
+as a pseudo-pure fluid as well as its components, several fuels and
+refrigerants etc.. Look for the aliases in the list of
+<a class="reference external" href="http://www.coolprop.org/fluid_properties/PurePseudoPure.html">fluids</a>.
+All fluids provided in this list cover liquid and gaseous state and the
+two-phase region.</p>
+</div>
+<div class="section" id="incompressible-fluids">
+<h2>Incompressible fluids<a class="headerlink" href="#incompressible-fluids" title="Permalink to this heading">#</a></h2>
+<p>If you are looking for heat transfer fluids, the list of incompressible
+<a class="reference external" href="http://www.coolprop.org/fluid_properties/Incompressibles.html">fluids</a>
+might be interesting for you. In contrast to the pure fluids, the properties
+cover liquid state only.</p>
+</div>
+<div class="section" id="fluid-mixtures">
+<h2>Fluid mixtures<a class="headerlink" href="#fluid-mixtures" title="Permalink to this heading">#</a></h2>
+<p>CoolProp provides fluid properties for two component mixtures. BUT: These are
+NOT integrated in TESPy! Nevertheless, you can use fluid mixtures for gases.</p>
+<div class="section" id="ideal-mixtures-of-gaseous-fluids">
+<h3>Ideal mixtures of gaseous fluids<a class="headerlink" href="#ideal-mixtures-of-gaseous-fluids" title="Permalink to this heading">#</a></h3>
+<p>TESPy can handle mixtures of gaseous fluids, by using the single fluid
+properties from CoolProp together with corresponding equations for mixtures.
+The equations can be found in the
+<a class="reference internal" href="../api/tools.html#module-tespy.tools.fluid_properties" title="tespy.tools.fluid_properties"><code class="xref py py-mod docutils literal notranslate"><span class="pre">fluid_properties</span></code></a> module and are
+applied automatically to the fluid vector.</p>
+</div>
+<div class="section" id="other-mixtures">
+<h3>Other mixtures<a class="headerlink" href="#other-mixtures" title="Permalink to this heading">#</a></h3>
+<p>Apart from partially liquid water in flue gases it is <strong>not possible</strong> to use
+mixtures of liquids and other liquids or gaseous fluids <strong>at the moment</strong>! If
+you try to use a mixture of two liquid or gaseous fluids and liquid fluids,
+e.g. water and methanol, the equations will still be applied, but obviously
+return wrong values. If you have ideas for the implementation of new kinds of
+mixtures we appreciate you contacting us.</p>
+</div>
+</div>
+<div class="section" id="creating-fluid-property-diagrams">
+<span id="fluprodia-label"></span><h2>Creating Fluid Property Diagrams<a class="headerlink" href="#creating-fluid-property-diagrams" title="Permalink to this heading">#</a></h2>
+<div class="figure align-center" id="id2">
+<img alt="logph diagram of NH3 with a simple heat pump cycle" src="../_images/logph_diagram_states.svg" /><p class="caption"><span class="caption-text">Figure: logph diagram of NH3 with a simple heat pump cycle</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</div>
+<div class="figure align-center" id="id3">
+<img alt="Ts diagram of NH3 with a simple heat pump cycle" src="../_images/Ts_diagram_states.svg" /><p class="caption"><span class="caption-text">Figure: Ts diagram of NH3 with a simple heat pump cycle</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</div>
+<p>CoolProp has an inbuilt feature for creating fluid property diagrams.
+Unfortunately, the handling is not very easy at the moment. We recommend using
+fluprodia (Fluid Property Diagram) instead. You can create and customize
+different types of diagrams for all pure and pseudo-pure fluids available in
+CoolProp. In order to plot your process data into a diagram, you can use the
+<code class="code docutils literal notranslate"><span class="pre">get_plotting_data</span></code> method of each component. The method returns a
+dictionary, that can be passed as <code class="code docutils literal notranslate"><span class="pre">**kwargs</span></code> to the
+<code class="code docutils literal notranslate"><span class="pre">calc_individual_isoline</span></code> method of a fluprodia
+<code class="code docutils literal notranslate"><span class="pre">FluidPropertyDiagram</span></code> object. The fluprodia documentation provides
+examples of how to plot a process into different diagrams, too. For more
+information on fluprodia have a look at the
+<a class="reference external" href="https://fluprodia.readthedocs.io/en/latest/">online documentation</a>. You can
+install the package with pip.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install fluprodia
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The plotting data a returned from the <code class="code docutils literal notranslate"><span class="pre">get_plotting_data</span></code> as a
+nested dictionary. The first level key contains the connection id of the
+state change (change state from incoming connection to outgoing
+connection). The table below shows the state change and the respective id.</p>
+<div class="table-wrapper colwidths-given docutils container" id="id4">
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">State change and respective ids of dictionary</span><a class="headerlink" href="#id4" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 67%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>component</p></th>
+<th class="head"><p>state from</p></th>
+<th class="head"><p>state to</p></th>
+<th class="head"><p>id</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>components with one inlet and one outlet only</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">in1</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">out1</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>class HeatExchanger and subclasses</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">in1</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">out1</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">in2</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">out2</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">2</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>class ORCEvaporator</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">in1</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">out1</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">in2</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">out2</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">2</span></code></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">in3</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">out3</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">3</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>class Merge</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">in1</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">out1</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">in2</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">out1</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">2</span></code></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+<tr class="row-odd"><td><p>class Drum</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">out1</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">out2</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>All other components do not return any information as either there is no
+change in state or the state change is accompanied by a change in fluid
+composition.</p>
+</div>
+</div>
+</div>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="ude.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">User defined equations</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="characteristics.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Characteristics</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, Francesco Witte
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            <div class="last-updated">
+              Last updated on Oct 02, 2022</div>
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Fluid properties</a><ul>
+<li><a class="reference internal" href="#coolprop-back-ends">CoolProp back ends</a></li>
+<li><a class="reference internal" href="#pure-and-pseudo-pure-fluids">Pure and pseudo-pure fluids</a></li>
+<li><a class="reference internal" href="#incompressible-fluids">Incompressible fluids</a></li>
+<li><a class="reference internal" href="#fluid-mixtures">Fluid mixtures</a><ul>
+<li><a class="reference internal" href="#ideal-mixtures-of-gaseous-fluids">Ideal mixtures of gaseous fluids</a></li>
+<li><a class="reference internal" href="#other-mixtures">Other mixtures</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#creating-fluid-property-diagrams">Creating Fluid Property Diagrams</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    </body>
+</html>

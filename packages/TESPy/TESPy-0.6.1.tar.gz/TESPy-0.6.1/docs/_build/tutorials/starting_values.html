@@ -1,0 +1,825 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Exergy Analysis of a Ground-Coupled Heat Pump" href="heat_pump_exergy.html" /><link rel="prev" title="Build a Heat Pump Stepwise" href="heat_pump_steps.html" />
+
+    <meta name="generator" content="sphinx-5.1.1, furo 2022.06.21"/>
+        <title>How to Generate Stable Starting Values - TESPy 0.6.1 - Leidenfrost&#39;s Library documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #ffffff;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">TESPy 0.6.1 - Leidenfrost's Library documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/./images/logo_tespy_mid.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/./images/logo_tespy_mid_darkmode.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">TESPy 0.6.1 - Leidenfrost's Library documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Thermal Engineering Systems in Python</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and setup</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../basics.html">Modeling Basic Systems</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../basics/intro.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/heat_pump.html">Heat Pump</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/rankine_cycle.html">Rankine Cycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/gas_turbine.html">Gas Turbine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/district_heating.html">District Heating Network</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../tutorials.html">Advanced Tutorials</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="heat_pump_steps.html">Build a Heat Pump Stepwise</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">How to Generate Stable Starting Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat_pump_exergy.html">Exergy Analysis of a Ground-Coupled Heat Pump</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pygmo_optimization.html">Thermal Power Plant Efficiency Optimization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../regular_meeting.html">TESPy community</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modules.html">TESPy modules</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modules/networks.html">Networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/networks.html#network-reader">Network reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/components.html">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/components.html#component-groups-subystems">Component Groups: Subystems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/connections.html">Connections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/characteristics.html">Characteristics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/fluid_properties.html">Fluid properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/ude.html">User defined equations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../benchmarks.html">Benchmarks</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../api.html">API Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../api/components.html">tespy.components module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/connections.html">tespy.connections module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/data.html">tespy.data module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/networks.html">tespy.networks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/tools.html">tespy.tools module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../whats_new.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../zliterature.html">Literature</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Advanced Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/exergy.html">Exergy analysis</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contribute to TESPy</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/what.html">What can I contribute?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/how.html">How can I contribute?</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <div class="section" id="how-to-generate-stable-starting-values">
+<span id="tespy-tutorial-starting-values-label"></span><h1>How to Generate Stable Starting Values<a class="headerlink" href="#how-to-generate-stable-starting-values" title="Permalink to this heading">#</a></h1>
+<p>Applying numerical algorithms and methods, the starting value of a variable
+is the value used for the first iteration. With more complex TESPy models
+it can happen that the simulation does not converge easily due to a
+combination of “bad” starting values. The solver is especially vulnerable if
+the specified parameters trigger complex equations with respect to the primary
+variables.</p>
+<p>The primary variables of TESPy are mass flow, pressure, enthalpy and fluid
+composition. If such a value is directly specified by the user, the solver has
+a solution for this value before starting the first iteration. Therefore,
+specifying a set of parameters largely including primary variables will
+improve the convergence significantly. Based on the converged solution of a
+initial simulation, it is then possible to adjust the parameters, for example,
+unsetting pressure values and specifying efficiencies instead.</p>
+<p>Here we provide a short tutorial for you to better understand, how this
+process could look like at the example of a subcritical heat pump with
+different working fluids.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the heat pump operates in trans- or supercritical range, some
+modifications have to be made on this setup. We plan to include respective
+examples here in the future.</p>
+</div>
+<p>You can download the full code of this example here:
+<a class="reference download internal" download="" href="../_downloads/efbff42392ab57d8ddd5ef7b13d29904/starting_values.py"><code class="xref download docutils literal notranslate"><span class="pre">starting_values.py</span></code></a></p>
+<div class="section" id="topology-of-the-heat-pump">
+<h2>Topology of the heat pump<a class="headerlink" href="#topology-of-the-heat-pump" title="Permalink to this heading">#</a></h2>
+<p>Following the first tutorial a slightly different topology for a heat pump
+with internal heat exchangers is considered instead of dumping the heat to the
+ambient. You can see the plant topology in the figure below.</p>
+<div class="only-light figure align-center" id="id1">
+<img alt="Topology of heat pump with internal heat exchanger" src="../_images/flowsheet4.svg" /><p class="caption"><span class="caption-text">Figure: Topology of heat pump with internal heat exchanger</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</div>
+<div class="only-dark figure align-center" id="id2">
+<img alt="Topology of heat pump with internal heat exchanger" src="../_images/flowsheet_darkmode4.svg" /><p class="caption"><span class="caption-text">Figure: Topology of heat pump with internal heat exchanger</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</div>
+<p>The system consists of a consumer system, a valve, an evaporator system, a
+compressor and additionally an internal heat exchanger. In order to simulate
+this heat pump, the TESPy model has to be built up. First, the network has to
+be initialized and the refrigerants used have to be specified. This example
+shows how to make the heat pump model work with a variety of working fluids
+with water on both the heat source and heat sink side of the system.</p>
+</div>
+<div class="section" id="running-into-errors">
+<h2>Running into errors<a class="headerlink" href="#running-into-errors" title="Permalink to this heading">#</a></h2>
+<p>As always, we start by importing the necessary TESPy classes.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tespy.networks</span> <span class="kn">import</span> <span class="n">Network</span>
+
+<span class="kn">from</span> <span class="nn">tespy.components</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">Condenser</span><span class="p">,</span> <span class="n">Compressor</span><span class="p">,</span> <span class="n">CycleCloser</span><span class="p">,</span>  <span class="n">HeatExchanger</span><span class="p">,</span>
+    <span class="n">HeatExchangerSimple</span><span class="p">,</span> <span class="n">Pump</span><span class="p">,</span> <span class="n">Sink</span><span class="p">,</span> <span class="n">Source</span><span class="p">,</span> <span class="n">Valve</span>
+    <span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">tespy.connections</span> <span class="kn">import</span> <span class="n">Connection</span><span class="p">,</span> <span class="n">Bus</span>
+</pre></div>
+</div>
+<p>Then, we can build the network by defining components and connections. The
+working fluid will be set with the variable <cite>wf</cite>, <cite>“NH3”</cite> is used in the first
+setup. This way, we will be able to change the working fluid in a flexible
+way.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Click to expand to code section<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">wf</span> <span class="o">=</span> <span class="s2">&quot;NH3&quot;</span>
+
+<span class="c1"># network</span>
+<span class="n">nw</span> <span class="o">=</span> <span class="n">Network</span><span class="p">(</span>
+    <span class="n">fluids</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;water&quot;</span><span class="p">,</span> <span class="n">wf</span><span class="p">],</span>
+    <span class="n">T_unit</span><span class="o">=</span><span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="n">p_unit</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="n">h_unit</span><span class="o">=</span><span class="s2">&quot;kJ / kg&quot;</span><span class="p">,</span> <span class="n">m_unit</span><span class="o">=</span><span class="s2">&quot;kg / s&quot;</span>
+    <span class="p">)</span>
+
+<span class="c1"># components</span>
+<span class="n">cycle_closer</span> <span class="o">=</span> <span class="n">CycleCloser</span><span class="p">(</span><span class="s2">&quot;Refrigerant Cycle Closer&quot;</span><span class="p">)</span>
+
+<span class="c1"># heat source</span>
+<span class="n">heatsource_feedflow</span> <span class="o">=</span> <span class="n">Source</span><span class="p">(</span><span class="s2">&quot;Heat Source Feed Flow&quot;</span><span class="p">)</span>
+<span class="n">heatsource_pump</span> <span class="o">=</span> <span class="n">Pump</span><span class="p">(</span><span class="s2">&quot;Heat Source Recirculation Pump&quot;</span><span class="p">)</span>
+<span class="n">heatsource_evaporator</span> <span class="o">=</span> <span class="n">HeatExchanger</span><span class="p">(</span><span class="s2">&quot;Heat Source Evaporator&quot;</span><span class="p">)</span>
+<span class="n">heatsource_backflow</span> <span class="o">=</span> <span class="n">Sink</span><span class="p">(</span><span class="s2">&quot;Heat Source Back Flow&quot;</span><span class="p">)</span>
+
+<span class="c1"># compression</span>
+<span class="n">compressor</span> <span class="o">=</span> <span class="n">Compressor</span><span class="p">(</span><span class="s2">&quot;Compressor&quot;</span><span class="p">)</span>
+
+<span class="c1"># heat sink</span>
+<span class="n">cons_pump</span> <span class="o">=</span> <span class="n">Pump</span><span class="p">(</span><span class="s2">&quot;Heat Sink Recirculation Pump&quot;</span><span class="p">)</span>
+<span class="n">condenser</span> <span class="o">=</span> <span class="n">Condenser</span><span class="p">(</span><span class="s2">&quot;Heat Sink Condenser&quot;</span><span class="p">)</span>
+<span class="n">cons_heatsink</span> <span class="o">=</span> <span class="n">HeatExchangerSimple</span><span class="p">(</span><span class="s2">&quot;Heat Consumer&quot;</span><span class="p">)</span>
+<span class="n">cons_cycle_closer</span> <span class="o">=</span> <span class="n">CycleCloser</span><span class="p">(</span><span class="s2">&quot;Consumer Feed Flow&quot;</span><span class="p">)</span>
+
+<span class="c1"># internal heat exchange</span>
+<span class="n">int_heatex</span> <span class="o">=</span> <span class="n">HeatExchanger</span><span class="p">(</span><span class="s2">&quot;Internal Heat Exchanger&quot;</span><span class="p">)</span>
+
+<span class="c1"># expansion</span>
+<span class="n">valve</span> <span class="o">=</span> <span class="n">Valve</span><span class="p">(</span><span class="s2">&quot;Expansion Valve&quot;</span><span class="p">)</span>
+
+<span class="c1"># connections</span>
+<span class="c1"># main cycle</span>
+<span class="n">c0</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">cycle_closer</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">heatsource_evaporator</span><span class="p">,</span> <span class="s2">&quot;in2&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="p">)</span>
+<span class="n">c1</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">heatsource_evaporator</span><span class="p">,</span> <span class="s2">&quot;out2&quot;</span><span class="p">,</span> <span class="n">int_heatex</span><span class="p">,</span> <span class="s2">&quot;in2&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>
+<span class="n">c2</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">int_heatex</span><span class="p">,</span> <span class="s2">&quot;out2&quot;</span><span class="p">,</span> <span class="n">compressor</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;2&quot;</span><span class="p">)</span>
+<span class="n">c3</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">compressor</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">condenser</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;3&quot;</span><span class="p">)</span>
+<span class="n">c4</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">condenser</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">int_heatex</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;4&quot;</span><span class="p">)</span>
+<span class="n">c5</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">int_heatex</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">valve</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;5&quot;</span><span class="p">)</span>
+<span class="n">c6</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">valve</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">cycle_closer</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;6&quot;</span><span class="p">)</span>
+
+<span class="n">nw</span><span class="o">.</span><span class="n">add_conns</span><span class="p">(</span>
+    <span class="n">c0</span><span class="p">,</span> <span class="n">c1</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">c3</span><span class="p">,</span> <span class="n">c4</span><span class="p">,</span>
+    <span class="n">c5</span><span class="p">,</span> <span class="n">c6</span>
+    <span class="p">)</span>
+
+<span class="c1"># heat source</span>
+<span class="n">c11</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">heatsource_feedflow</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">heatsource_pump</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;11&quot;</span><span class="p">)</span>
+<span class="n">c12</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">heatsource_pump</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">heatsource_evaporator</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;12&quot;</span><span class="p">)</span>
+<span class="n">c13</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">heatsource_evaporator</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">heatsource_backflow</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;13&quot;</span><span class="p">)</span>
+
+<span class="n">nw</span><span class="o">.</span><span class="n">add_conns</span><span class="p">(</span><span class="n">c11</span><span class="p">,</span> <span class="n">c12</span><span class="p">,</span> <span class="n">c13</span><span class="p">)</span>
+
+<span class="c1"># heat sink</span>
+<span class="n">c21</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">cons_cycle_closer</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">cons_pump</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;21&quot;</span><span class="p">)</span>
+<span class="n">c22</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">cons_pump</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">condenser</span><span class="p">,</span> <span class="s2">&quot;in2&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;22&quot;</span><span class="p">)</span>
+<span class="n">c23</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">condenser</span><span class="p">,</span> <span class="s2">&quot;out2&quot;</span><span class="p">,</span> <span class="n">cons_heatsink</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;23&quot;</span><span class="p">)</span>
+<span class="n">c24</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">cons_heatsink</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">cons_cycle_closer</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;24&quot;</span><span class="p">)</span>
+
+<span class="n">nw</span><span class="o">.</span><span class="n">add_conns</span><span class="p">(</span><span class="n">c21</span><span class="p">,</span> <span class="n">c22</span><span class="p">,</span> <span class="n">c23</span><span class="p">,</span> <span class="n">c24</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details><p>After setting up the topology, the system’s parameters should be set in the
+following way:</p>
+<ul class="simple">
+<li><p>Heat sink temperature levels (<cite>T</cite> at 23 and 24)</p></li>
+<li><p>Heat source temperature levels (<cite>T</cite> at 11 and 13)</p></li>
+<li><p>Degree of overheating after the internal heat exchanger (<cite>Td_bp</cite> at 2)</p></li>
+<li><p>Pinch point temperature difference at the evaporator (<cite>ttd_l</cite>) to derive
+evaporation pressure</p></li>
+<li><p>Temperature difference at the condenser (<cite>ttd_u</cite>) to derive condensation
+pressure</p></li>
+<li><p>Saturated gaseous state of the working fluid (<cite>x=1</cite>) after leaving the
+evaporator</p></li>
+<li><p>Efficiencies of pumps and the compressor (<cite>eta_s</cite>)</p></li>
+<li><p>Pressure losses in all heat exchangers (<cite>pr1</cite>, <cite>pr2</cite>, <cite>pr</cite>)</p></li>
+<li><p>Consumer heat demand (<cite>Q</cite>)</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Click to expand to code section<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># parametrization connections</span>
+<span class="c1"># set feedflow and backflow temperature of heat source and consumer</span>
+<span class="n">T_hs_bf</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">T_hs_ff</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">T_cons_bf</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">T_cons_ff</span> <span class="o">=</span> <span class="mi">90</span>
+
+<span class="c1"># consumer cycle</span>
+<span class="n">c23</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">T</span><span class="o">=</span><span class="n">T_cons_ff</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">fluid</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;water&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">wf</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
+<span class="n">c24</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">T</span><span class="o">=</span><span class="n">T_cons_bf</span><span class="p">)</span>
+
+<span class="c1"># heat source cycle</span>
+<span class="n">c11</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">T</span><span class="o">=</span><span class="n">T_hs_ff</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">fluid</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;water&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">wf</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
+<span class="n">c13</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">T</span><span class="o">=</span><span class="n">T_hs_bf</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># evaporation to fully saturated gas</span>
+<span class="n">c1</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">fluid</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;water&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">wf</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+<span class="c1"># degree of overheating after internal heat exchanger (evaporation side)</span>
+<span class="n">c2</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">Td_bp</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># parametrization components</span>
+<span class="c1"># isentropic efficiency</span>
+<span class="n">cons_pump</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">eta_s</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">heatsource_pump</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">eta_s</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">compressor</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">eta_s</span><span class="o">=</span><span class="mf">0.85</span><span class="p">)</span>
+
+<span class="c1"># pressure ratios</span>
+<span class="n">condenser</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">pr1</span><span class="o">=</span><span class="mf">0.98</span><span class="p">,</span> <span class="n">pr2</span><span class="o">=</span><span class="mf">0.98</span><span class="p">)</span>
+<span class="n">heatsource_evaporator</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">pr1</span><span class="o">=</span><span class="mf">0.98</span><span class="p">,</span> <span class="n">pr2</span><span class="o">=</span><span class="mf">0.98</span><span class="p">)</span>
+<span class="n">cons_heatsink</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">pr</span><span class="o">=</span><span class="mf">0.99</span><span class="p">)</span>
+<span class="n">int_heatex</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">pr1</span><span class="o">=</span><span class="mf">0.98</span><span class="p">,</span> <span class="n">pr2</span><span class="o">=</span><span class="mf">0.98</span><span class="p">)</span>
+
+<span class="c1"># temperature differences</span>
+<span class="n">heatsource_evaporator</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">ttd_l</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">condenser</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">ttd_u</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># consumer heat demand</span>
+<span class="n">cons_heatsink</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">Q</span><span class="o">=-</span><span class="mf">1e6</span><span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">nw</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="s2">&quot;design&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details><p>The system should be well defined with the parameter settings, however no
+solution can be found. We might run in some error, like</p>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ERROR:root:Singularity <span class="k">in</span> jacobian matrix, calculation aborted! Make
+sure your network does not have any linear dependencies <span class="k">in</span> the
+parametrisation. Other reasons might be
+
+-&gt; given temperature with given pressure <span class="k">in</span> two phase region, try
+setting enthalpy instead or provide accurate starting value <span class="k">for</span>
+pressure.
+
+-&gt; given logarithmic temperature differences or kA-values <span class="k">for</span> heat
+exchangers,
+
+-&gt; support better starting values.
+
+-&gt; bad starting value <span class="k">for</span> fuel mass flow of combustion chamber, provide
+small <span class="o">(</span>near to zero, but not zero<span class="o">)</span> starting value.
+</pre></div>
+</div>
+</div>
+<p>or simply not making progress in the convergence</p>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>WARNING:root:The solver does not seem to make any progress, aborting
+calculation. Residual value is <span class="m">7</span>.43e+05. This frequently happens, <span class="k">if</span>
+the solver pushes the fluid properties out of their feasible range.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="fixing-the-errors">
+<h2>Fixing the errors<a class="headerlink" href="#fixing-the-errors" title="Permalink to this heading">#</a></h2>
+<p>To generate good starting values for the simulation, it is recommended to set
+pressure and enthalpy values instead of temperature differences. In this
+example, fixed points can be identified with the help of the logph diagram
+which you can see in the figure below.</p>
+<div class="figure align-center" id="id3">
+<img alt="../_images/logph.svg" src="../_images/logph.svg" /><p class="caption"><span class="caption-text">Figure: Logph diagram of ammonia</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</div>
+<p>A rough estimation of the evaporation and condensation pressure can be
+obtained and will be used to replace the temperature differences at the
+evaporator and the condenser for the starting value generator. After
+condensation, the working fluid is in saturated liquid state. We can retrieve
+the condensation pressure corresponding to a temperature slightly below the
+heat sink temperature by using the CoolProp <cite>PropsSI</cite> interface with the
+respective inputs. The same step can be carried out on the heat source side.
+For the internal heat exchanger, an enthalpy value is specified instead of the
+temperature difference to the boiling point as well. It is important to note
+that the PropertySI function (PropsSI) is used with SI units, which differ
+from the units defined in the network.</p>
+<p>The temperature difference values are unset and pressure and enthalpy values
+are set instead.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">CoolProp.CoolProp</span> <span class="k">as</span> <span class="nn">CP</span>
+
+<span class="c1"># evaporation point</span>
+<span class="n">p_eva</span> <span class="o">=</span> <span class="n">CP</span><span class="o">.</span><span class="n">PropsSI</span><span class="p">(</span><span class="s2">&quot;P&quot;</span><span class="p">,</span> <span class="s2">&quot;Q&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;T&quot;</span><span class="p">,</span> <span class="n">T_hs_bf</span> <span class="o">-</span> <span class="mi">5</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">,</span> <span class="n">wf</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1e-5</span>
+<span class="n">c1</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="n">p_eva</span><span class="p">)</span>
+<span class="n">heatsource_evaporator</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">ttd_l</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+<span class="c1"># condensation point</span>
+<span class="n">p_cond</span> <span class="o">=</span> <span class="n">CP</span><span class="o">.</span><span class="n">PropsSI</span><span class="p">(</span><span class="s2">&quot;P&quot;</span><span class="p">,</span> <span class="s2">&quot;Q&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;T&quot;</span><span class="p">,</span> <span class="n">T_cons_ff</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">,</span> <span class="n">wf</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1e-5</span>
+<span class="n">c4</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="n">p_cond</span><span class="p">)</span>
+<span class="n">condenser</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">ttd_u</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+<span class="c1"># internal heat exchanger to compressor enthalpy</span>
+<span class="n">h_evap</span> <span class="o">=</span> <span class="n">CP</span><span class="o">.</span><span class="n">PropsSI</span><span class="p">(</span><span class="s2">&quot;H&quot;</span><span class="p">,</span> <span class="s2">&quot;Q&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;T&quot;</span><span class="p">,</span> <span class="n">T_hs_bf</span> <span class="o">-</span> <span class="mi">5</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">,</span> <span class="n">wf</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1e-3</span>
+<span class="n">c2</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">Td_bp</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="n">h_evap</span> <span class="o">*</span> <span class="mf">1.01</span><span class="p">)</span>
+
+<span class="c1"># solve the network again</span>
+<span class="n">nw</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="s2">&quot;design&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The model was solved successfully and has stored the starting values for any
+follow-up. Therefore, we can undo our recent changes and restart the
+simulation. For example, the COP is then calculated.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># evaporation point</span>
+<span class="n">c1</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">heatsource_evaporator</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">ttd_l</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># condensation point</span>
+<span class="n">c4</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">condenser</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">ttd_u</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># internal heat exchanger superheating</span>
+<span class="n">c2</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">Td_bp</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+<span class="c1"># solve the network again</span>
+<span class="n">nw</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="s2">&quot;design&quot;</span><span class="p">)</span>
+
+<span class="c1"># calculate the COP</span>
+<span class="n">cop</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span>
+    <span class="n">cons_heatsink</span><span class="o">.</span><span class="n">Q</span><span class="o">.</span><span class="n">val</span>
+    <span class="o">/</span> <span class="p">(</span><span class="n">cons_pump</span><span class="o">.</span><span class="n">P</span><span class="o">.</span><span class="n">val</span> <span class="o">+</span> <span class="n">heatsource_pump</span><span class="o">.</span><span class="n">P</span><span class="o">.</span><span class="n">val</span> <span class="o">+</span> <span class="n">compressor</span><span class="o">.</span><span class="n">P</span><span class="o">.</span><span class="n">val</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cop</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="expand-fix-to-any-working-fluids">
+<h2>Expand fix to any working fluids<a class="headerlink" href="#expand-fix-to-any-working-fluids" title="Permalink to this heading">#</a></h2>
+<p>Finally, using this strategy, it is possible to build a generic function,
+building a network, that works with a variety of working fluids.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Click to expand to code section<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">generate_network_with_starting_values</span><span class="p">(</span><span class="n">wf</span><span class="p">):</span>
+    <span class="c1"># network</span>
+    <span class="n">nw</span> <span class="o">=</span> <span class="n">Network</span><span class="p">(</span>
+        <span class="n">fluids</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;water&quot;</span><span class="p">,</span> <span class="n">wf</span><span class="p">],</span>
+        <span class="n">T_unit</span><span class="o">=</span><span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="n">p_unit</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="n">h_unit</span><span class="o">=</span><span class="s2">&quot;kJ / kg&quot;</span><span class="p">,</span> <span class="n">m_unit</span><span class="o">=</span><span class="s2">&quot;kg / s&quot;</span><span class="p">,</span>
+        <span class="n">iterinfo</span><span class="o">=</span><span class="kc">False</span>
+    <span class="p">)</span>
+
+    <span class="c1"># components</span>
+    <span class="n">cycle_closer</span> <span class="o">=</span> <span class="n">CycleCloser</span><span class="p">(</span><span class="s2">&quot;Refrigerant Cycle Closer&quot;</span><span class="p">)</span>
+
+    <span class="c1"># heat source</span>
+    <span class="n">heatsource_feedflow</span> <span class="o">=</span> <span class="n">Source</span><span class="p">(</span><span class="s2">&quot;Heat Source Feed Flow&quot;</span><span class="p">)</span>
+    <span class="n">heatsource_pump</span> <span class="o">=</span> <span class="n">Pump</span><span class="p">(</span><span class="s2">&quot;Heat Source Recirculation Pump&quot;</span><span class="p">)</span>
+    <span class="n">heatsource_evaporator</span> <span class="o">=</span> <span class="n">HeatExchanger</span><span class="p">(</span><span class="s2">&quot;Heat Source Evaporator&quot;</span><span class="p">)</span>
+    <span class="n">heatsource_backflow</span> <span class="o">=</span> <span class="n">Sink</span><span class="p">(</span><span class="s2">&quot;Heat Source Back Flow&quot;</span><span class="p">)</span>
+
+    <span class="c1"># compression</span>
+    <span class="n">compressor</span> <span class="o">=</span> <span class="n">Compressor</span><span class="p">(</span><span class="s2">&quot;Compressor&quot;</span><span class="p">)</span>
+
+    <span class="c1"># heat sink</span>
+    <span class="n">cons_pump</span> <span class="o">=</span> <span class="n">Pump</span><span class="p">(</span><span class="s2">&quot;Heat Sink Recirculation Pump&quot;</span><span class="p">)</span>
+    <span class="n">condenser</span> <span class="o">=</span> <span class="n">Condenser</span><span class="p">(</span><span class="s2">&quot;Heat Sink Condenser&quot;</span><span class="p">)</span>
+    <span class="n">cons_heatsink</span> <span class="o">=</span> <span class="n">HeatExchangerSimple</span><span class="p">(</span><span class="s2">&quot;Heat Consumer&quot;</span><span class="p">)</span>
+    <span class="n">cons_cycle_closer</span> <span class="o">=</span> <span class="n">CycleCloser</span><span class="p">(</span><span class="s2">&quot;Consumer Feed Flow&quot;</span><span class="p">)</span>
+
+    <span class="c1"># internal heat exchange</span>
+    <span class="n">int_heatex</span> <span class="o">=</span> <span class="n">HeatExchanger</span><span class="p">(</span><span class="s2">&quot;Internal Heat Exchanger&quot;</span><span class="p">)</span>
+
+    <span class="c1"># expansion</span>
+    <span class="n">valve</span> <span class="o">=</span> <span class="n">Valve</span><span class="p">(</span><span class="s2">&quot;Expansion Valve&quot;</span><span class="p">)</span>
+
+    <span class="c1"># connections</span>
+    <span class="c1"># main cycle</span>
+    <span class="n">c0</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">cycle_closer</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">heatsource_evaporator</span><span class="p">,</span> <span class="s2">&quot;in2&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="p">)</span>
+    <span class="n">c1</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">heatsource_evaporator</span><span class="p">,</span> <span class="s2">&quot;out2&quot;</span><span class="p">,</span> <span class="n">int_heatex</span><span class="p">,</span> <span class="s2">&quot;in2&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>
+    <span class="n">c2</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">int_heatex</span><span class="p">,</span> <span class="s2">&quot;out2&quot;</span><span class="p">,</span> <span class="n">compressor</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;2&quot;</span><span class="p">)</span>
+    <span class="n">c3</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">compressor</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">condenser</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;3&quot;</span><span class="p">)</span>
+    <span class="n">c4</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">condenser</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">int_heatex</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;4&quot;</span><span class="p">)</span>
+    <span class="n">c5</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">int_heatex</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">valve</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;5&quot;</span><span class="p">)</span>
+    <span class="n">c6</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">valve</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">cycle_closer</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;6&quot;</span><span class="p">)</span>
+
+    <span class="n">nw</span><span class="o">.</span><span class="n">add_conns</span><span class="p">(</span>
+        <span class="n">c0</span><span class="p">,</span> <span class="n">c1</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">c3</span><span class="p">,</span> <span class="n">c4</span><span class="p">,</span>
+        <span class="n">c5</span><span class="p">,</span> <span class="n">c6</span>
+        <span class="p">)</span>
+
+    <span class="c1"># heat source</span>
+    <span class="n">c11</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">heatsource_feedflow</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">heatsource_pump</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;11&quot;</span><span class="p">)</span>
+    <span class="n">c12</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">heatsource_pump</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">heatsource_evaporator</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;12&quot;</span><span class="p">)</span>
+    <span class="n">c13</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">heatsource_evaporator</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">heatsource_backflow</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;13&quot;</span><span class="p">)</span>
+
+    <span class="n">nw</span><span class="o">.</span><span class="n">add_conns</span><span class="p">(</span><span class="n">c11</span><span class="p">,</span> <span class="n">c12</span><span class="p">,</span> <span class="n">c13</span><span class="p">)</span>
+
+    <span class="c1"># heat sink</span>
+    <span class="n">c21</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">cons_cycle_closer</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">cons_pump</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;20&quot;</span><span class="p">)</span>
+    <span class="n">c22</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">cons_pump</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">condenser</span><span class="p">,</span> <span class="s2">&quot;in2&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;21&quot;</span><span class="p">)</span>
+    <span class="n">c23</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">condenser</span><span class="p">,</span> <span class="s2">&quot;out2&quot;</span><span class="p">,</span> <span class="n">cons_heatsink</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;22&quot;</span><span class="p">)</span>
+    <span class="n">c24</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">cons_heatsink</span><span class="p">,</span> <span class="s2">&quot;out1&quot;</span><span class="p">,</span> <span class="n">cons_cycle_closer</span><span class="p">,</span> <span class="s2">&quot;in1&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;23&quot;</span><span class="p">)</span>
+
+    <span class="n">nw</span><span class="o">.</span><span class="n">add_conns</span><span class="p">(</span><span class="n">c21</span><span class="p">,</span> <span class="n">c22</span><span class="p">,</span> <span class="n">c23</span><span class="p">,</span> <span class="n">c24</span><span class="p">)</span>
+
+    <span class="c1"># set feedflow and backflow temperature of heat source and consumer</span>
+    <span class="n">T_hs_bf</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="n">T_hs_ff</span> <span class="o">=</span> <span class="mi">15</span>
+    <span class="n">T_cons_bf</span> <span class="o">=</span> <span class="mi">50</span>
+    <span class="n">T_cons_ff</span> <span class="o">=</span> <span class="mi">90</span>
+
+    <span class="c1"># consumer cycle</span>
+    <span class="n">c23</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">T</span><span class="o">=</span><span class="n">T_cons_ff</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">fluid</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;water&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">wf</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
+    <span class="n">c24</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">T</span><span class="o">=</span><span class="n">T_cons_bf</span><span class="p">)</span>
+
+    <span class="c1"># heat source cycle</span>
+    <span class="n">c11</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">T</span><span class="o">=</span><span class="n">T_hs_ff</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">fluid</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;water&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">wf</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
+    <span class="n">c13</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">T</span><span class="o">=</span><span class="n">T_hs_bf</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># evaporation to fully saturated gas</span>
+    <span class="n">c1</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">fluid</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;water&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">wf</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+
+    <span class="c1"># parametrization components</span>
+    <span class="c1"># isentropic efficiency</span>
+    <span class="n">cons_pump</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">eta_s</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+    <span class="n">heatsource_pump</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">eta_s</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+    <span class="n">compressor</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">eta_s</span><span class="o">=</span><span class="mf">0.85</span><span class="p">)</span>
+
+    <span class="c1"># pressure ratios</span>
+    <span class="n">condenser</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">pr1</span><span class="o">=</span><span class="mf">0.98</span><span class="p">,</span> <span class="n">pr2</span><span class="o">=</span><span class="mf">0.98</span><span class="p">)</span>
+    <span class="n">heatsource_evaporator</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">pr1</span><span class="o">=</span><span class="mf">0.98</span><span class="p">,</span> <span class="n">pr2</span><span class="o">=</span><span class="mf">0.98</span><span class="p">)</span>
+    <span class="n">cons_heatsink</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">pr</span><span class="o">=</span><span class="mf">0.99</span><span class="p">)</span>
+    <span class="n">int_heatex</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">pr1</span><span class="o">=</span><span class="mf">0.98</span><span class="p">,</span> <span class="n">pr2</span><span class="o">=</span><span class="mf">0.98</span><span class="p">)</span>
+
+    <span class="c1"># evaporation point</span>
+    <span class="n">p_eva</span> <span class="o">=</span> <span class="n">CP</span><span class="o">.</span><span class="n">PropsSI</span><span class="p">(</span><span class="s2">&quot;P&quot;</span><span class="p">,</span> <span class="s2">&quot;Q&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;T&quot;</span><span class="p">,</span> <span class="n">T_hs_bf</span> <span class="o">-</span> <span class="mi">5</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">,</span> <span class="n">wf</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1e-5</span>
+    <span class="n">c1</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="n">p_eva</span><span class="p">)</span>
+
+    <span class="c1"># condensation point</span>
+    <span class="n">p_cond</span> <span class="o">=</span> <span class="n">CP</span><span class="o">.</span><span class="n">PropsSI</span><span class="p">(</span><span class="s2">&quot;P&quot;</span><span class="p">,</span> <span class="s2">&quot;Q&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;T&quot;</span><span class="p">,</span> <span class="n">T_cons_ff</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">,</span> <span class="n">wf</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1e-5</span>
+    <span class="n">c4</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="n">p_cond</span><span class="p">)</span>
+
+    <span class="c1"># internal heat exchanger to compressor enthalpy</span>
+    <span class="n">h_evap</span> <span class="o">=</span> <span class="n">CP</span><span class="o">.</span><span class="n">PropsSI</span><span class="p">(</span><span class="s2">&quot;H&quot;</span><span class="p">,</span> <span class="s2">&quot;Q&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;T&quot;</span><span class="p">,</span> <span class="n">T_hs_bf</span> <span class="o">-</span> <span class="mi">5</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">,</span> <span class="n">wf</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1e-3</span>
+    <span class="n">c2</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">h</span><span class="o">=</span><span class="n">h_evap</span> <span class="o">*</span> <span class="mf">1.01</span><span class="p">)</span>
+
+    <span class="c1"># consumer heat demand</span>
+    <span class="n">cons_heatsink</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">Q</span><span class="o">=-</span><span class="mf">1e6</span><span class="p">)</span>
+
+    <span class="n">power_bus</span> <span class="o">=</span> <span class="n">Bus</span><span class="p">(</span><span class="s2">&quot;Total power input&quot;</span><span class="p">)</span>
+    <span class="n">heat_bus</span> <span class="o">=</span> <span class="n">Bus</span><span class="p">(</span><span class="s2">&quot;Total heat production&quot;</span><span class="p">)</span>
+    <span class="n">power_bus</span><span class="o">.</span><span class="n">add_comps</span><span class="p">(</span>
+        <span class="p">{</span><span class="s2">&quot;comp&quot;</span><span class="p">:</span> <span class="n">compressor</span><span class="p">,</span> <span class="s2">&quot;base&quot;</span><span class="p">:</span> <span class="s2">&quot;bus&quot;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">&quot;comp&quot;</span><span class="p">:</span> <span class="n">cons_pump</span><span class="p">,</span> <span class="s2">&quot;base&quot;</span><span class="p">:</span> <span class="s2">&quot;bus&quot;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">&quot;comp&quot;</span><span class="p">:</span> <span class="n">heatsource_pump</span><span class="p">,</span> <span class="s2">&quot;base&quot;</span><span class="p">:</span> <span class="s2">&quot;bus&quot;</span><span class="p">},</span>
+    <span class="p">)</span>
+    <span class="n">heat_bus</span><span class="o">.</span><span class="n">add_comps</span><span class="p">({</span><span class="s2">&quot;comp&quot;</span><span class="p">:</span> <span class="n">cons_heatsink</span><span class="p">})</span>
+
+    <span class="n">nw</span><span class="o">.</span><span class="n">add_busses</span><span class="p">(</span><span class="n">power_bus</span><span class="p">,</span> <span class="n">heat_bus</span><span class="p">)</span>
+
+    <span class="n">nw</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="s2">&quot;design&quot;</span><span class="p">)</span>
+
+        <span class="c1"># evaporation point</span>
+    <span class="n">c1</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">heatsource_evaporator</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">ttd_l</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+    <span class="c1"># condensation point</span>
+    <span class="n">c4</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">condenser</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">ttd_u</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+    <span class="c1"># internal heat exchanger superheating</span>
+    <span class="n">c2</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">Td_bp</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+    <span class="c1"># solve the network again</span>
+    <span class="n">nw</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="s2">&quot;design&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">nw</span>
+</pre></div>
+</div>
+</div>
+</details><p>We can run that function for different working fluids and plot the results:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+
+<span class="c1"># make text reasonably sized</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s2">&quot;font&quot;</span><span class="p">,</span> <span class="o">**</span><span class="p">{</span><span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="mi">18</span><span class="p">})</span>
+
+<span class="n">cop</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;COP&quot;</span><span class="p">])</span>
+
+<span class="k">for</span> <span class="n">wf</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;NH3&quot;</span><span class="p">,</span> <span class="s2">&quot;R22&quot;</span><span class="p">,</span> <span class="s2">&quot;R134a&quot;</span><span class="p">,</span> <span class="s2">&quot;R152a&quot;</span><span class="p">,</span> <span class="s2">&quot;R290&quot;</span><span class="p">,</span> <span class="s2">&quot;R718&quot;</span><span class="p">]:</span>
+    <span class="n">nw</span> <span class="o">=</span> <span class="n">generate_network_with_starting_values</span><span class="p">(</span><span class="n">wf</span><span class="p">)</span>
+
+    <span class="n">power</span> <span class="o">=</span> <span class="n">nw</span><span class="o">.</span><span class="n">busses</span><span class="p">[</span><span class="s2">&quot;Total power input&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">P</span><span class="o">.</span><span class="n">val</span>
+    <span class="n">heat</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">nw</span><span class="o">.</span><span class="n">busses</span><span class="p">[</span><span class="s2">&quot;Total heat production&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">P</span><span class="o">.</span><span class="n">val</span><span class="p">)</span>
+    <span class="n">cop</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">wf</span><span class="p">]</span> <span class="o">=</span> <span class="n">heat</span> <span class="o">/</span> <span class="n">power</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+<span class="n">cop</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_axisbelow</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Name of working fluid&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Coefficicent of performance&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;COP_by_wf.svg&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="only-light figure align-center" id="id4">
+<img alt="Analysis of the COP using different working fluids" src="../_images/COP_by_wf.svg" /><p class="caption"><span class="caption-text">Figure: Analysis of the COP using different working fluids</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</div>
+<div class="only-dark figure align-center" id="id5">
+<img alt="Analysis of the COP using different working fluids" src="../_images/COP_by_wf_darkmode.svg" /><p class="caption"><span class="caption-text">Figure: Analysis of the COP using different working fluids</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</div>
+</div>
+</div>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="heat_pump_exergy.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Exergy Analysis of a Ground-Coupled Heat Pump</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="heat_pump_steps.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Build a Heat Pump Stepwise</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, Francesco Witte
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            <div class="last-updated">
+              Last updated on Oct 02, 2022</div>
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">How to Generate Stable Starting Values</a><ul>
+<li><a class="reference internal" href="#topology-of-the-heat-pump">Topology of the heat pump</a></li>
+<li><a class="reference internal" href="#running-into-errors">Running into errors</a></li>
+<li><a class="reference internal" href="#fixing-the-errors">Fixing the errors</a></li>
+<li><a class="reference internal" href="#expand-fix-to-any-working-fluids">Expand fix to any working fluids</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    </body>
+</html>

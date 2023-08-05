@@ -1,0 +1,583 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" />
+
+    <meta name="generator" content="sphinx-5.1.1, furo 2022.06.21"/>
+        <title>v0.4.0 - Gibbs’ Gallery (January, 27, 2021) - TESPy 0.6.1 - Leidenfrost&#39;s Library documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #ffffff;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">TESPy 0.6.1 - Leidenfrost's Library documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/./images/logo_tespy_mid.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/./images/logo_tespy_mid_darkmode.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">TESPy 0.6.1 - Leidenfrost's Library documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Thermal Engineering Systems in Python</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and setup</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../basics.html">Modeling Basic Systems</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../basics/intro.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/heat_pump.html">Heat Pump</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/rankine_cycle.html">Rankine Cycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/gas_turbine.html">Gas Turbine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/district_heating.html">District Heating Network</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials.html">Advanced Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/heat_pump_steps.html">Build a Heat Pump Stepwise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/starting_values.html">How to Generate Stable Starting Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/heat_pump_exergy.html">Exergy Analysis of a Ground-Coupled Heat Pump</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/pygmo_optimization.html">Thermal Power Plant Efficiency Optimization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../regular_meeting.html">TESPy community</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modules.html">TESPy modules</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modules/networks.html">Networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/networks.html#network-reader">Network reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/components.html">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/components.html#component-groups-subystems">Component Groups: Subystems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/connections.html">Connections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/characteristics.html">Characteristics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/fluid_properties.html">Fluid properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/ude.html">User defined equations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../benchmarks.html">Benchmarks</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../api.html">API Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../api/components.html">tespy.components module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/connections.html">tespy.connections module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/data.html">tespy.data module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/networks.html">tespy.networks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/tools.html">tespy.tools module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../whats_new.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../zliterature.html">Literature</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Advanced Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/exergy.html">Exergy analysis</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contribute to TESPy</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/what.html">What can I contribute?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/how.html">How can I contribute?</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <div class="section" id="v0-4-0-gibbs-gallery-january-27-2021">
+<h1>v0.4.0 - Gibbs’ Gallery (January, 27, 2021)<a class="headerlink" href="#v0-4-0-gibbs-gallery-january-27-2021" title="Permalink to this heading">#</a></h1>
+<div class="section" id="api-changes">
+<h2>API Changes<a class="headerlink" href="#api-changes" title="Permalink to this heading">#</a></h2>
+<ul>
+<li><p>In order to stick closer to the
+<a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP 8 style guide</a> we changed
+the names of all classes in TESPy to <code class="code docutils literal notranslate"><span class="pre">CamelCase</span></code> instead of
+<code class="code docutils literal notranslate"><span class="pre">snake_case</span></code> as the latter is reserved for methods. This means, you
+need to change your import like in the following examples:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tespy.components</span> <span class="kn">import</span> <span class="n">Turbine</span><span class="p">,</span> <span class="n">CombustionEngine</span>
+<span class="kn">from</span> <span class="nn">tespy.components</span> <span class="kn">import</span> <span class="n">HeatExchanger</span><span class="p">,</span> <span class="n">HeatExchangerSimple</span>
+<span class="kn">from</span> <span class="nn">tespy.connections</span> <span class="kn">import</span> <span class="n">Connection</span>
+<span class="kn">from</span> <span class="nn">tespy.connections</span> <span class="kn">import</span> <span class="n">Bus</span>
+<span class="kn">from</span> <span class="nn">tespy.connections</span> <span class="kn">import</span> <span class="n">Ref</span>
+<span class="kn">from</span> <span class="nn">tespy.networks</span> <span class="kn">import</span> <span class="n">Network</span>
+<span class="kn">from</span> <span class="nn">tespy.tools.characteristics</span> <span class="kn">import</span> <span class="n">CharLine</span>
+
+<span class="c1"># but keep e.g.</span>
+<span class="kn">from</span> <span class="nn">tespy.networks</span> <span class="kn">import</span> <span class="n">load_network</span>
+</pre></div>
+</div>
+<p>The examples in the online documentation and the
+<a class="reference external" href="https://github.com/oemof/oemof-examples/tree/master/oemof_examples/tespy">examples</a>
+repository have been adjusted accordingly
+(<a class="reference external" href="https://github.com/oemof/tespy/pull/237">PR #237</a>).</p>
+</li>
+<li><p>The definition of power and heat transfer of the components
+<a class="reference internal" href="../api/components.html#tespy.components.combustion.engine.CombustionEngine" title="tespy.components.combustion.engine.CombustionEngine"><code class="xref py py-class docutils literal notranslate"><span class="pre">tespy.components.combustion.engine.CombustionEngine</span></code></a>
+and <a class="reference internal" href="../api/components.html#tespy.components.customs.orc_evaporator.ORCEvaporator" title="tespy.components.customs.orc_evaporator.ORCEvaporator"><code class="xref py py-class docutils literal notranslate"><span class="pre">tespy.components.customs.orc_evaporator.ORCEvaporator</span></code></a> as well
+as the heat loss values of the components
+<a class="reference internal" href="../api/components.html#tespy.components.heat_exchangers.solar_collector.SolarCollector" title="tespy.components.heat_exchangers.solar_collector.SolarCollector"><code class="xref py py-class docutils literal notranslate"><span class="pre">tespy.components.heat_exchangers.solar_collector.SolarCollector</span></code></a>
+and
+<a class="reference internal" href="../api/components.html#tespy.components.heat_exchangers.parabolic_trough.ParabolicTrough" title="tespy.components.heat_exchangers.parabolic_trough.ParabolicTrough"><code class="xref py py-class docutils literal notranslate"><span class="pre">tespy.components.heat_exchangers.parabolic_trough.ParabolicTrough</span></code></a>
+have been changed to negative sign as all values are energy output streams
+(<a class="reference external" href="https://github.com/oemof/tespy/pull/215">PR #215</a>) and
+(<a class="reference external" href="https://github.com/oemof/tespy/pull/243">PR #243</a>).</p></li>
+<li><p>Specification of characteristics has changed. Use a dictionary instead of
+DataContainer specification if you want to update more than just the
+characteristic function. E.g. if you have the measurement data for the
+isentropic efficiency of a turbine like below. X-data are ratio of actual
+mass flow to design mass flow and y values are the ratio of actual
+isentropic efficiency to design value of the turbine. Say, you want to
+specify these data as <a class="reference internal" href="../api/tools.html#tespy.tools.characteristics.CharLine" title="tespy.tools.characteristics.CharLine"><code class="xref py py-class docutils literal notranslate"><span class="pre">tespy.tools.characteristics.CharLine</span></code></a> and
+the characteristics should be applied. In order to do that, pass a dictionary
+that contains the <code class="code docutils literal notranslate"><span class="pre">CharLine</span></code> object as <code class="code docutils literal notranslate"><span class="pre">'char_func'</span></code> and set
+<code class="code docutils literal notranslate"><span class="pre">is_set</span></code> to <code class="code docutils literal notranslate"><span class="pre">True</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tespy.components</span> <span class="kn">import</span> <span class="n">Turbine</span>
+<span class="kn">from</span> <span class="nn">tespy.tools.characteristics</span> <span class="kn">import</span> <span class="n">CharLine</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">Turbine</span><span class="p">(</span><span class="s1">&#39;myturbine&#39;</span><span class="p">)</span>
+<span class="c1"># ... design specs</span>
+<span class="c1"># ... design calculation</span>
+<span class="c1"># offdesign case, use char line</span>
+<span class="n">line</span> <span class="o">=</span> <span class="n">CharLine</span><span class="p">(</span>
+  <span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">],</span>
+  <span class="n">y</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.82</span><span class="p">,</span> <span class="mf">0.85</span><span class="p">,</span> <span class="mf">0.855</span><span class="p">,</span> <span class="mf">0.79</span><span class="p">])</span> <span class="o">/</span> <span class="mf">0.855</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">set_attr</span><span class="p">(</span><span class="n">eta_s_char</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;char_func&#39;</span><span class="p">:</span> <span class="n">line</span><span class="p">,</span> <span class="s1">&#39;is_set&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
+</pre></div>
+</div>
+<p>More information on characteristics specification and a fully working example
+can be found in the corresponding section in the online
+<a class="reference internal" href="../modules/components.html#component-characteristic-specification-label"><span class="std std-ref">documentation</span></a>
+(<a class="reference external" href="https://github.com/oemof/tespy/pull/243">PR #243</a>).</p>
+</li>
+<li><p>Characteristic Maps behave differently: Instead of two output dimensions
+<code class="code docutils literal notranslate"><span class="pre">z1</span></code> and <code class="code docutils literal notranslate"><span class="pre">z2</span></code> they do now only hold one output dimension
+<code class="code docutils literal notranslate"><span class="pre">z</span></code>. The calculation of z as function of x and y does not change
+(<a class="reference external" href="https://github.com/oemof/tespy/pull/243">PR #243</a>).</p></li>
+<li><p>The <code class="code docutils literal notranslate"><span class="pre">char_map</span></code> parameter of the component
+<a class="reference internal" href="../api/components.html#tespy.components.turbomachinery.compressor.Compressor" title="tespy.components.turbomachinery.compressor.Compressor"><code class="xref py py-class docutils literal notranslate"><span class="pre">tespy.components.turbomachinery.compressor.Compressor</span></code></a> has been
+split up into two separate parameters:</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">char_map_eta_s</span></code>: Map linking non-dimensional mass flow and speed
+line to isentropic efficiency.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">char_map_pr</span></code>: Map linking non-dimensional mass flow and speed line
+to pressure ratio.</p></li>
+</ul>
+<p>(<a class="reference external" href="https://github.com/oemof/tespy/pull/243">PR #243</a>).</p>
+</li>
+<li><p>Remove class Node (<a class="reference external" href="https://github.com/oemof/tespy/pull/243">PR #243</a>).</p></li>
+<li><p>For reference specification, the <code class="code docutils literal notranslate"><span class="pre">delta</span></code> parameter must be specified
+in the corresponding network unit, e.g. if your pressure unit is set to
+<code class="code docutils literal notranslate"><span class="pre">bar</span></code>, the <code class="code docutils literal notranslate"><span class="pre">delta</span></code> will be interpreted in bar, too
+(<a class="reference external" href="https://github.com/oemof/tespy/pull/243">PR #243</a>).</p></li>
+</ul>
+</div>
+<div class="section" id="new-features">
+<h2>New Features<a class="headerlink" href="#new-features" title="Permalink to this heading">#</a></h2>
+<ul>
+<li><p>Automatic TESPy model documentation: You can generate an automatic model
+report in LaTeX format after a simulation. The document will contain all
+input parameters specified as well as all equations and characteristics
+applied in your previous simulation. Import and function call are implemented
+as follows. This feature will be under future development, driven by user
+requirements. If you have any feedback or suggestions or want to add new data
+you are very welcome to submit an issue in the GitHub repository or even open
+a pull request. The documentation code is located in the
+<a class="reference internal" href="../api/tools.html#module-tespy.tools.document_models" title="tespy.tools.document_models"><code class="xref py py-mod docutils literal notranslate"><span class="pre">tespy.tools.document_models</span></code></a> module.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tespy.tools</span> <span class="kn">import</span> <span class="n">document_model</span>
+
+<span class="n">document_model</span><span class="p">(</span><span class="n">mynetwork</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For further information also check the corresponding section in the online
+documentation (<a class="reference external" href="https://github.com/oemof/tespy/pull/243">PR #243</a>).</p>
+</li>
+<li><p>IF97 back end for properties of water is now supported. A fix was implemented
+in TESPy to solve convergence issues near saturation in region 1. You can use
+the back end by adding <code class="code docutils literal notranslate"><span class="pre">'IF97::water'</span></code> to your network’s fluid list
+(<a class="reference external" href="https://github.com/oemof/tespy/pull/238">PR #238</a>, also see
+<a class="reference external" href="https://github.com/CoolProp/CoolProp/issues/1918">CoolProp Issue #1918</a>).</p></li>
+<li><p>An automatic exergy analysis has been added. The method reliably works for
+temperature values that are larger than the ambient temperature. An
+implementation for temperature values crossing or below the ambient
+temperature is in the making. Also, combustion processes are not covered for
+now (<a class="reference external" href="https://github.com/oemof/tespy/pull/215">PR #215</a>). If you like to
+contribute, you are welcome to submit an issue in the GitHub repository.</p></li>
+<li><p>Add a method <code class="code docutils literal notranslate"><span class="pre">get_plotting_data</span></code> to each component to export the input
+data required by FluProDia in order to generate the data required to display
+state changes in the components in a fluid property diagram. Each component
+returns a nested dictionary containing the respective data. E.g. the return
+value of a <code class="code docutils literal notranslate"><span class="pre">valve</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span> <span class="o">{</span><span class="m">1</span>: <span class="o">{</span>
+     <span class="s1">&#39;isoline_property&#39;</span>: <span class="s1">&#39;h&#39;</span>,
+     <span class="s1">&#39;isoline_value&#39;</span>: <span class="m">773</span>.8970004397456,
+     <span class="s1">&#39;isoline_value_end&#39;</span>: <span class="m">773</span>.8970004397456,
+     <span class="s1">&#39;starting_point_property&#39;</span>: <span class="s1">&#39;p&#39;</span>,
+     <span class="s1">&#39;starting_point_value&#39;</span>: <span class="m">51</span>.164150405253665,
+     <span class="s1">&#39;ending_point_property&#39;</span>: <span class="s1">&#39;p&#39;</span>,
+     <span class="s1">&#39;ending_point_value&#39;</span>: <span class="m">6</span>.831002318100345
+<span class="o">}}</span>
+</pre></div>
+</div>
+<p>The diagrams could look like this:</p>
+<div class="figure align-center" id="id11">
+<img alt="../_images/logph_diagram_states.svg" src="../_images/logph_diagram_states.svg" /><p class="caption"><span class="caption-text">Figure: logph diagram of NH3 with a simple heat pump cycle.</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
+</div>
+<div class="figure align-center" id="id12">
+<img alt="../_images/Ts_diagram_states.svg" src="../_images/Ts_diagram_states.svg" /><p class="caption"><span class="caption-text">Figure: Ts diagram of NH3 with a simple heat pump cycle.</span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
+</div>
+<p>For more information see the respective
+<a class="reference internal" href="../modules/fluid_properties.html#fluprodia-label"><span class="std std-ref">documentation section</span></a>
+(<a class="reference external" href="https://github.com/oemof/tespy/pull/234">PR #234</a>).</p>
+</li>
+<li><p>Add a flag to deactivate calculation of all component equations in every
+iteration. This improves stability in some cases but may reduce calculation
+speed (<a class="reference external" href="https://github.com/oemof/tespy/pull/226">PR #226</a>). To deactivate
+simply specify on calling the
+<a class="reference internal" href="../api/networks.html#tespy.networks.network.Network.solve" title="tespy.networks.network.Network.solve"><code class="xref py py-meth docutils literal notranslate"><span class="pre">tespy.networks.network.Network.solve()</span></code></a> method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mynetwork</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="s1">&#39;design&#39;</span><span class="p">,</span> <span class="n">always_all_equations</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Add a flag use cuda instead of numpy for matrix inversion. With cuda matrix
+inversion is outsourced to the graphics card. Using cuda additionally
+requires <code class="code docutils literal notranslate"><span class="pre">cupy</span></code> installed on your machine
+(<a class="reference external" href="https://github.com/oemof/tespy/pull/226">PR #226</a>). To activate simply
+specify on calling the
+<a class="reference internal" href="../api/networks.html#tespy.networks.network.Network.solve" title="tespy.networks.network.Network.solve"><code class="xref py py-meth docutils literal notranslate"><span class="pre">tespy.networks.network.Network.solve()</span></code></a> method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mynetwork</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="s1">&#39;design&#39;</span><span class="p">,</span> <span class="n">use_cuda</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For more information on <code class="code docutils literal notranslate"><span class="pre">cupy</span></code> visit the online
+<a class="reference external" href="https://docs.cupy.dev/en/stable/index.html">documentation</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In general, calculation time depends on many factors of your local
+machine. You should try and check, if using cuda or disabling always all
+equations benefits your calculation times individually.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h2>Documentation<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Fix several broken links and typos
+(<a class="reference external" href="https://github.com/oemof/tespy/pull/236">PR #236</a>).</p></li>
+</ul>
+</div>
+<div class="section" id="bug-fixes">
+<h2>Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Fix a bug, where checking if parameters are numeric in the <code class="code docutils literal notranslate"><span class="pre">set_attr()</span></code>
+methods of classes connection, bus and component failed in case special numpy
+number types were passed
+(<a class="reference external" href="https://github.com/oemof/tespy/commit/daa1ecb">#daa1ecb</a>,
+<a class="reference external" href="https://github.com/oemof/tespy/commit/b420396">#b420396</a>).</p></li>
+</ul>
+</div>
+<div class="section" id="other-changes">
+<h2>Other Changes<a class="headerlink" href="#other-changes" title="Permalink to this heading">#</a></h2>
+<div class="table-wrapper colwidths-given docutils container" id="id13">
+<table class="colwidths-given docutils align-default" id="id13">
+<caption><span class="caption-text">Adjust value limits for some component parameters</span><a class="headerlink" href="#id13" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>component</p></th>
+<th class="head"><p>parameter</p></th>
+<th class="head"><p>new value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>heat_exchanger_simple</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">zeta.max_val</span></code></p></td>
+<td><p>1e15</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">ks.max_val</span></code> (for Hazen-Williams equation)</p></td>
+<td><p>200</p></td>
+</tr>
+<tr class="row-even"><td><p>valve</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">zeta.max_val</span></code></p></td>
+<td><p>1e15</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><p>On some machines the coloring of the results printout does not work and
+displaces the table in an ugly way. To avoid this, the coloring is changed to
+optional (<a class="reference external" href="https://github.com/oemof/tespy/pull/229">PR #229</a>). Use the
+following line for non-colored printouts:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mynetwork</span><span class="o">.</span><span class="n">print_results</span><span class="p">(</span><span class="n">colored</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>An error message is raised in case the user specifies a fluid vector
+containing fluids, that are not part of the network’s fluid list
+(<a class="reference external" href="https://github.com/oemof/tespy/pull/233">PR #233</a>).</p></li>
+<li><p>An understandable error message is raised in case the user misses out on
+fluids required by components of class CombustionChamber or CombustionEngine
+(<a class="reference external" href="https://github.com/oemof/tespy/commit/7adff43">#7adff43a</a>).</p></li>
+<li><p>For improved convergence stability of the methods
+<a class="reference internal" href="../api/components.html#tespy.components.heat_exchangers.simple.HeatExchangerSimple.kA_group_func" title="tespy.components.heat_exchangers.simple.HeatExchangerSimple.kA_group_func"><code class="xref py py-meth docutils literal notranslate"><span class="pre">tespy.components.heat_exchangers.simple.HeatExchangerSimple.kA_group_func()</span></code></a> and
+<a class="reference internal" href="../api/components.html#tespy.components.heat_exchangers.simple.HeatExchangerSimple.kA_char_group_func" title="tespy.components.heat_exchangers.simple.HeatExchangerSimple.kA_char_group_func"><code class="xref py py-meth docutils literal notranslate"><span class="pre">tespy.components.heat_exchangers.simple.HeatExchangerSimple.kA_char_group_func()</span></code></a>,
+the logarithmic temperature difference is calculated based on the mean
+temperature difference between ambient and inlet and outlet temperature, if
+the terminal temperature differences do not have the same sign
+(<a class="reference external" href="https://github.com/oemof/tespy/pull/225">PR #225</a>).</p></li>
+<li><p>Changes in the equation management of components for much easier maintenance
+and future development
+(<a class="reference external" href="https://github.com/oemof/tespy/pull/243">PR #243</a>).</p></li>
+</ul>
+</div>
+<div class="section" id="contributors">
+<h2>Contributors<a class="headerlink" href="#contributors" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Francesco Witte (<a class="reference external" href="https://github.com/fwitte">&#64;fwitte</a>)</p></li>
+<li><p><a class="reference external" href="https://github.com/juliusmeier">&#64;juliusmeier</a></p></li>
+<li><p><a class="reference external" href="https://github.com/jbueck">&#64;jbueck</a></p></li>
+<li><p>Markus Brandt (<a class="reference external" href="https://github.com/MarBrandt">&#64;MarBrandt</a>)</p></li>
+</ul>
+</div>
+</div>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, Francesco Witte
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            <div class="last-updated">
+              Last updated on Oct 02, 2022</div>
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">v0.4.0 - Gibbs’ Gallery (January, 27, 2021)</a><ul>
+<li><a class="reference internal" href="#api-changes">API Changes</a></li>
+<li><a class="reference internal" href="#new-features">New Features</a></li>
+<li><a class="reference internal" href="#id9">Documentation</a></li>
+<li><a class="reference internal" href="#bug-fixes">Bug Fixes</a></li>
+<li><a class="reference internal" href="#other-changes">Other Changes</a></li>
+<li><a class="reference internal" href="#contributors">Contributors</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    </body>
+</html>
