@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: dycw-utilities
+Version: 0.2.2
+Author-email: Derek Wan <d.wan@icloud.com>
+Requires-Python: >=3.10
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: bump2version; extra == 'dev'
+Requires-Dist: click; extra == 'dev'
+Requires-Dist: fastapi; extra == 'dev'
+Requires-Dist: flake8; extra == 'dev'
+Requires-Dist: flake8-absolute-import; extra == 'dev'
+Requires-Dist: flake8-annotations; extra == 'dev'
+Requires-Dist: flake8-bandit; extra == 'dev'
+Requires-Dist: flake8-bugbear; extra == 'dev'
+Requires-Dist: flake8-comprehensions; extra == 'dev'
+Requires-Dist: flake8-debugger; extra == 'dev'
+Requires-Dist: flake8-eradicate; extra == 'dev'
+Requires-Dist: flake8-executable; extra == 'dev'
+Requires-Dist: flake8-no-pep420; extra == 'dev'
+Requires-Dist: flake8-pie; extra == 'dev'
+Requires-Dist: flake8-print; extra == 'dev'
+Requires-Dist: flake8-simplify; extra == 'dev'
+Requires-Dist: flake8-unused-arguments; extra == 'dev'
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: hypothesis; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: loguru; extra == 'dev'
+Requires-Dist: memory-profiler; extra == 'dev'
+Requires-Dist: numpy; extra == 'dev'
+Requires-Dist: pandas; extra == 'dev'
+Requires-Dist: pip-tools; extra == 'dev'
+Requires-Dist: pqdm; extra == 'dev'
+Requires-Dist: pyinstrument; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: pytest-xdist; extra == 'dev'
+Requires-Dist: sqlalchemy; extra == 'dev'
+Requires-Dist: sqlalchemy2-stubs; extra == 'dev'
+Requires-Dist: tempenv; extra == 'dev'
+Requires-Dist: tqdm; extra == 'dev'
+Requires-Dist: typed-settings; extra == 'dev'
+Requires-Dist: typeguard; extra == 'dev'
+Description-Content-Type: text/markdown
+
+[![PyPI version](https://badge.fury.io/py/dycw-utilities.svg)](https://badge.fury.io/py/dycw-utilities)
+
+# `dycw-utilities`
+
+Miscellaneous Python utilities
