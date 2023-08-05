@@ -1,0 +1,14 @@
+darksheep_imap/__init__.py,sha256=-2xIE1Urg6bRI95PQ-rZSWYAIceMh6w1Wl9wjgLtGZo,523
+darksheep_imap/consts.py,sha256=qjG8F3ktaxP4S-0V6m7o20BoZq_FmcgnI0wMZ-xi0Tw,1209
+darksheep_imap/errors.py,sha256=n1olCJtKwHPx0Uun8LnP_RMNfmIWQazoIL2OsMHitYs,2109
+darksheep_imap/folder.py,sha256=s4dXGBBt3ZENdXmXHqqKWGApWg9b4h0laFMeIu3BYL0,7084
+darksheep_imap/idle.py,sha256=mVu713a2Kr-Wxnov4V38dD7nBElVSb7F3AFANXIK8B8,4454
+darksheep_imap/imap_utf7.py,sha256=I9EC-ZL2q7G4uRGMnY7PXeJhx2AxlEbyEpA2II-xSno,2059
+darksheep_imap/mailbox.py,sha256=unrB5ClKOkzNQ8xXergqCjNmkQeUHIB_7sLP-Zl0Tpw,16619
+darksheep_imap/message.py,sha256=AGLnna0nZAmPDpwmiOO_8STyXEbE8LEG8xGYUet30zI,9662
+darksheep_imap/query.py,sha256=MvUy81MnKgADFPchJWGHCeGS8OU3iGqFJue9zAF3Oj0,16320
+darksheep_imap/utils.py,sha256=18oabrYLMa51Ng0q2Itc1vCTZIEKFnmmoqySf3Eo-nI,7386
+darksheep_imap-0.0.1.dist-info/METADATA,sha256=93ONbwL-AZ9bwS7rSYzNNnx7GFhBXPtRnwDc1SYQ_lg,440
+darksheep_imap-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+darksheep_imap-0.0.1.dist-info/top_level.txt,sha256=LJ5dDda8qO4u7p05W6NdrXv_l9cqKfX3q9yTZvQjgJY,15
+darksheep_imap-0.0.1.dist-info/RECORD,,
