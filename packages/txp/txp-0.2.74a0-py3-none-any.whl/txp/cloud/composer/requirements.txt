@@ -1,0 +1,7 @@
+google-cloud-firestore==2.5.0
+google-cloud-pubsub
+apache-beam==2.40.0
+numpy==1.21.4
+cronsim
+fpdf
+txp[cloud]
