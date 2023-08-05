@@ -1,0 +1,7 @@
+MANIFEST.in
+README.rst
+setup.py
+Bogdan_Alibaba.egg-info/PKG-INFO
+Bogdan_Alibaba.egg-info/SOURCES.txt
+Bogdan_Alibaba.egg-info/dependency_links.txt
+Bogdan_Alibaba.egg-info/top_level.txt
