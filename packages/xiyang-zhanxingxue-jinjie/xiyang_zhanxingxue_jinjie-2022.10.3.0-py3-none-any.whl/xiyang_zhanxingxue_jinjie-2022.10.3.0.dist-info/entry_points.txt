@@ -1,0 +1,4 @@
+[console_scripts]
+XiyangZhanxingxueJinjie = XiyangZhanxingxueJinjie.__main__:main
+xiyang-zhanxingxue-jinjie = XiyangZhanxingxueJinjie.__main__:main
+
