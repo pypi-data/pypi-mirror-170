@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: emepy
+Version: 1.2.2
+Summary: Eigenmode Expansion Python
+Home-page: https://github.com/BYUCamachoLab/emepy
+Author: Ian Hammond
+Author-email: ihammond@byu.edu
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+License-File: LICENSE
+
+EMEPy - Eigenmode Expansion Python. An open-source Python package for the simulation of electromagnetic devices.
