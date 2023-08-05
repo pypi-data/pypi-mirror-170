@@ -1,0 +1,25 @@
+[project]
+name = "pychargecloud"
+version = "0.0.2"
+dependencies = [
+    "aiohttp",
+    "yarl",
+    "pydantic",
+]
+authors = [
+    { name="functionpointer", email="suspendfunction@gmail.com" }
+]
+readme = "README.md"
+license = {file = "LICENSE.md"}
+description = "Access public ev charger information via chargecloud.de"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3.10"
+]
+
+[project.urls]
+homepage = "https://github.com/functionpointer/pychargecloud"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
