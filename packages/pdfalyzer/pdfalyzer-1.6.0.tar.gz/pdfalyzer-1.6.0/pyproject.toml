@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "pdfalyzer"
+version = "1.6.0"
+description = "A PDF analysis toolkit. Scan a PDF with relevant YARA rules, visualize its inner tree-like data structure in living color (lots of colors), force decodes of suspicious font binaries, and more."
+authors = ["Michel C. <michel@cryptadamus.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+homepage = "https://github.com/michelcrypt4d4mus/pdfalyzer"
+repository = "https://github.com/michelcrypt4d4mus/pdfalyzer"
+documentation = "https://github.com/michelcrypt4d4mus/pdfalyzer"
+
+keywords = [
+    "ascii art",
+    "binary",
+    "font",
+    "encoding",
+    "malicious pdf",
+    "malware",
+    "malware analysis",
+    "pdf",
+    "threat assessment",
+    "visualization",
+    "yara"
+]
+
+classifiers = [
+    "Topic :: Artistic Software",
+    "Topic :: Security",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+
+include = [
+    "CHANGELOG.md",
+    { path = "yara" }
+]
+
+
+[tool.poetry.scripts]
+pdfalyze = 'pdfalyzer:pdfalyze'
+pdfalyzer_show_color_theme = 'pdfalyzer.helpers.rich_text_helper:pdfalyzer_show_color_theme'
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+anytree = "~=2.8"
+chardet = "^5.0"
+pdfid = "^1.1"
+PyPDF2 = "^2.10"
+python-dotenv = "^0.21.0"
+rich = "^12.5.1"
+rich-argparse = "^0.3.0"
+#rich_argparse = {path = "../rich-argparse", develop = true}
+yara-python = "^4.2.3"
+plyara = "^2.1.1"
+#yaralizer, yaracodalizer
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
