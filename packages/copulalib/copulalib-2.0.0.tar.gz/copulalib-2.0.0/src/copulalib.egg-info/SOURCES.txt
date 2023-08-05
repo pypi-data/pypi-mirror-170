@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/copulalib/__init__.py
+src/copulalib/copulalib.py
+src/copulalib.egg-info/PKG-INFO
+src/copulalib.egg-info/SOURCES.txt
+src/copulalib.egg-info/dependency_links.txt
+src/copulalib.egg-info/top_level.txt
