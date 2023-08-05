@@ -1,0 +1,4 @@
+[console_scripts]
+HuoyongShuijing = HuoyongShuijing.__main__:main
+huoyong-shuijing = HuoyongShuijing.__main__:main
+
