@@ -1,0 +1,16 @@
+.gitignore
+Dockerfile
+LICENSE.txt
+README.md
+requirements.txt
+setup.py
+libtorrentx/__init__.py
+libtorrentx/__main__.py
+libtorrentx/client.py
+libtorrentx/handle.py
+libtorrentx/session.py
+libtorrentx.egg-info/PKG-INFO
+libtorrentx.egg-info/SOURCES.txt
+libtorrentx.egg-info/dependency_links.txt
+libtorrentx.egg-info/requires.txt
+libtorrentx.egg-info/top_level.txt
