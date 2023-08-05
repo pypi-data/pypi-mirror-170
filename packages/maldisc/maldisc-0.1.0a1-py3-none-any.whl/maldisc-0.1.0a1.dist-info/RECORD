@@ -1,0 +1,13 @@
+maldisc/__init__.py,sha256=IDfjMMwdVrAmRSFDmcC0QkeTMP5EBNGUXXjxnxBTy4g,26
+maldisc/__main__.py,sha256=V_On0pR0WkUal3MU0yz_63C9iueaewwPxwU3Xg1GV1c,5442
+maldisc/anime.py,sha256=J8SSgDwUTAzzo-ROgOsh6OhVLZhT1iIOFgoaaIs1VqY,6255
+maldisc/constants.py,sha256=-f87ajfLzVCL33SFO2gqe5B34d2a3lUHC4zp2ekPcqA,196
+maldisc/exceptions.py,sha256=TTgotFqY7MeXlb8bERU11MJPSTsX_ZT8isahLMp9guk,438
+maldisc/jikanrequests.py,sha256=BGga0z0hA8GDZneHkyLo5_DQS9rUpk6FixVVBbiLO38,1148
+maldisc/logging_.py,sha256=MKBInnySwLuGxQ1UnY7rYLnOdXUGFCLwwVsSk7Xbrek,1584
+maldisc-0.1.0a1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+maldisc-0.1.0a1.dist-info/METADATA,sha256=4yk2A57Hd7sdzJt9h8PpS1-FzqIA_65SZEDFgGktyiI,673
+maldisc-0.1.0a1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+maldisc-0.1.0a1.dist-info/entry_points.txt,sha256=lAc9XZ2EV32gLJNXtvvK3SkDX77O3OCytytfWFAqTHA,50
+maldisc-0.1.0a1.dist-info/top_level.txt,sha256=QYUwFyIEHh4e_klhJveIM8JxfOY1UAJHypfnVircMBY,8
+maldisc-0.1.0a1.dist-info/RECORD,,

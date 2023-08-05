@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: maldisc
+Version: 0.1.0a1
+Summary: MyAnimeList now in Discord!
+Home-page: https://github.com/LynBean/MalDisc
+Author: Kim
+Author-email: 2003victoryy@1utar.my
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: asyncio
+Requires-Dist: discord
+Requires-Dist: platformdirs
+
+Alpha Release 0.1.0-a1
+- Command `ima` can be used to search anime through Jikan API on MyAnimeList
