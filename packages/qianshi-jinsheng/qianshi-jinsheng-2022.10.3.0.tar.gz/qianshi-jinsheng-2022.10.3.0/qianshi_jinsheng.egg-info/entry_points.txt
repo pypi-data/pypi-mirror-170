@@ -1,0 +1,4 @@
+[console_scripts]
+QianshiJinsheng = QianshiJinsheng.__main__:main
+qianshi-jinsheng = QianshiJinsheng.__main__:main
+
