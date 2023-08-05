@@ -1,0 +1,3 @@
+[console_scripts]
+rl_zoo3 = rl_zoo3.cli:main
+rl_zoo3_train = rl_zoo3.train:train
