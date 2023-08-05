@@ -1,0 +1,4 @@
+[console_scripts]
+KaiwuZhimen = KaiwuZhimen.__main__:main
+kaiwu-zhimen = KaiwuZhimen.__main__:main
+
