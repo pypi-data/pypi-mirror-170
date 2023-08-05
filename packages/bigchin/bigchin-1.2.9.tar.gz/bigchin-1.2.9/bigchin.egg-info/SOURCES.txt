@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+bigchin/__init__.py
+bigchin/bigchin_con.py
+bigchin/test.py
+bigchin.egg-info/PKG-INFO
+bigchin.egg-info/SOURCES.txt
+bigchin.egg-info/dependency_links.txt
+bigchin.egg-info/top_level.txt
