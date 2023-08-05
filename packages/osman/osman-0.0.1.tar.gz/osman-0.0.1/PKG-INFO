@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: osman
+Version: 0.0.1
+Summary: A package which lets users oversample class imbalanced(binary) data by Deep Generative Models. It offers two APIS. They are : variational auto encoder and WGAN-GP.
+Author-email: Rafat Ashraf Joy <rafat.joy99@gmail.com>
+Project-URL: Homepage, https://github.com/rajoy99/osman
+Project-URL: Bug Tracker, https://github.com/rajoy99/osman/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#osman 
+
+A package for oversampling class imbalanced binary data.
