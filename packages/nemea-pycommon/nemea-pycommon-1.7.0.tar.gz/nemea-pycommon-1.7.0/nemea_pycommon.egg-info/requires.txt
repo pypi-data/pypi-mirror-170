@@ -1,0 +1,6 @@
+pynspect
+idea-format
+PyYAML
+ply
+jinja2
+redis

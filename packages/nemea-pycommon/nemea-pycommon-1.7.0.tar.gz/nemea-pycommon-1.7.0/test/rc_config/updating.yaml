@@ -1,0 +1,32 @@
+---
+namespace: com.example.nemea
+custom_actions:
+- id: save
+  file:
+    path: /tmp/output1.idea
+- id: syslog
+  syslog:
+    identifier: NEMEA
+    logoption: LOG_PID | LOG_CONS
+    facility: LOG_DAEMON
+    priority: LOG_ALERT
+- id : store
+  file:
+    path: /tmp/test.json
+
+rules:
+- id: 1
+  condition: a0
+  actions:
+  - save
+  - store
+- id: 3
+  condition: true
+  actions:
+  - save
+  - drop
+- id: 2
+  condition: true
+  actions:
+  - store
+  - drop
