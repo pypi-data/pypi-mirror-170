@@ -1,0 +1,4 @@
+[console_scripts]
+TujieGuolaoXingzongXia = TujieGuolaoXingzongXia.__main__:main
+tujie-guolao-xingzong-xia = TujieGuolaoXingzongXia.__main__:main
+
