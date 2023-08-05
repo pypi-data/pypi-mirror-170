@@ -1,0 +1,4 @@
+[console_scripts]
+YuzhouZhiai = YuzhouZhiai.__main__:main
+yuzhou-zhiai = YuzhouZhiai.__main__:main
+
