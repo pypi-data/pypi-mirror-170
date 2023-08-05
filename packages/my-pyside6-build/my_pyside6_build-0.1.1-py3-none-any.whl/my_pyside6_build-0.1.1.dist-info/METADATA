@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: my-pyside6-build
+Version: 0.1.1
+Summary: 
+Author: Nir
+Author-email: 88795475+nrbnlulu@users.noreply.github.com
+Requires-Python: >=3.10,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10

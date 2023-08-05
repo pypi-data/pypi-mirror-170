@@ -1,0 +1,7 @@
+dummy/PySide6-6.3.1-6.3.1-cp310-cp310-linux_x86_64.whl,sha256=h1xrL7QrFHYi3n_tx0Te_kloqEvF1sehWP02nEx1TjI,31203767
+dummy/__init__.py,sha256=xDKRtOuY8iaChn9Ijr7-OCHR2ZTdTdcZCSPKaJdXlMY,36
+dummy/shiboken6-6.3.1-6.3.1-cp310-cp310-linux_x86_64.whl,sha256=e4Pfdq-GCjwF6lafS-pUMf4rn4xrw9PDVWtVadMSgQc,263472
+dummy/shiboken6_generator-6.3.1-6.3.1-cp310-cp310-linux_x86_64.whl,sha256=nAOJlLeQtK-UcpZYO-_Vz0oREX-yi0dgSYONCRN4kAY,1264779
+my_pyside6_build-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+my_pyside6_build-0.1.1.dist-info/METADATA,sha256=K8IT6nEr-KCGfl2rgVwabHzOYhPdln1tNy_Qd1F3-6s,268
+my_pyside6_build-0.1.1.dist-info/RECORD,,
