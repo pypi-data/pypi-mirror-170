@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: hashbase
+Version: 1.0.1
+Summary: A collection of cryptographic hashing algorithms implemented in Python
+Home-page: https://github.com/hasnainroopawalla/hashbase
+Author: Hasnain Roopawalla
+Author-email: hasnain.roopawalla@gmail.com
+License: MIT
+Keywords: python,hashing,hashing-algorithms,hash-functions,cryptography
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hashing
+A collection of hashing algorithms implemented in Python
+
+
