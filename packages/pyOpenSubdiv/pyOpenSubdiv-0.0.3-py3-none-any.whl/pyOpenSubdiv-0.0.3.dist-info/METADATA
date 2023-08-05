@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyOpenSubdiv
+Version: 0.0.3
+Summary: Python Catmull-Clark Subdivision.
+Home-page: UNKNOWN
+Author: GeneralPancake
+License: UNKNOWN
+Keywords: subdivision,opensubdiv,Catmull-Clark,hard-surface
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Requires-Dist: numpy
+
+A Python wrapper for the OpenSubdiv C++ Library far topology refiner.
+

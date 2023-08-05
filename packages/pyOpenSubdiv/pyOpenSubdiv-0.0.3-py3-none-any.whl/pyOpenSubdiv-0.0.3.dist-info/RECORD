@@ -1,0 +1,11 @@
+pyOpenSubdiv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyOpenSubdiv/pysubdivision.py,sha256=h0kz6xeO6gvO9jKAztO8oc8p1VmW0nWDekrfcRUcWm8,7065
+pyOpenSubdiv/test_topology.py,sha256=7FxlzayXp6ZnCuAqxgIkegk8XZDE4hj3Zs8qDAN1Hhs,35527
+pyOpenSubdiv/clib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyOpenSubdiv/clib/ctypes_OpenSubdiv.dll,sha256=aXakHv-1QyUfsfjfVhkV2xK2UxE2wIooWFytUriOW5o,122368
+pyOpenSubdiv/clib/ctypes_OpenSubdiv.so,sha256=780l6knxU_UjNcxvJAD4E6NJb6eFvTy6aWeVOTLKFGw,1208888
+pyOpenSubdiv/clib/load_library.py,sha256=C8jr9tCljxU4gziRuavqPkPxJBbneG-vkK3uwZYvKQ4,564
+pyOpenSubdiv-0.0.3.dist-info/METADATA,sha256=H9_kMDePWwi5lIBR7WR_BPCG1DHfwP94sQMl5XC7lQ0,555
+pyOpenSubdiv-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyOpenSubdiv-0.0.3.dist-info/top_level.txt,sha256=ie9BygZeWFZ5D9f4bYb17kcmdfwKstyvYgVIzifYEzc,13
+pyOpenSubdiv-0.0.3.dist-info/RECORD,,
