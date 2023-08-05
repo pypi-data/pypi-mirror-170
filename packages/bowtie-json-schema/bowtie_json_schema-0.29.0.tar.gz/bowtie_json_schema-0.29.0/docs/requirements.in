@@ -1,0 +1,8 @@
+file:.#egg=bowtie-json-schema
+furo
+hyperlink
+pygments-github-lexers
+sphinx-click
+sphinx>5
+sphinx-json-schema-spec
+sphinxcontrib-spelling>5
