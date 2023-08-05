@@ -1,0 +1,5 @@
+[console_scripts]
+bentoml = bentoml_cli.cli:cli
+
+[pytest11]
+bentoml = bentoml.testing.pytest.plugin
