@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: KTC-API
+Version: 1.1.0
+Summary: little KTC API client
+Home-page: https://github.com/ethosa/ktc-api
+Author: Ethosa
+Author-email: social.ethosa@gmail.com
+License: UNKNOWN
+Keywords: client,api-client,api
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align="center">
+
+# KTC API
+
+</div>
+
+## Install
+```bash
+pip install ktc-api
+```
+
+
+## Usage
+### Sync
+```python
+from ktc_api import KTCClient
+
+client = KTCClient()
+print(client.actual_version())
+```
+### Async
+```python
+from asyncio import new_event_loop
+from ktc_api.aio import AKTCClient
+
+async def main():
+    client = AKTCClient()
+    print(await client.actual_version())
+    await client.close()
+
+if __name__ == '__main__':
+    loop = new_event_loop()
+    loop.run_until_complete(main())
+    loop.close()
+```
+
