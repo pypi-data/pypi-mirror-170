@@ -1,0 +1,7 @@
+MANIFEST.in
+README.rst
+setup.py
+Stefan_packet.egg-info/PKG-INFO
+Stefan_packet.egg-info/SOURCES.txt
+Stefan_packet.egg-info/dependency_links.txt
+Stefan_packet.egg-info/top_level.txt
