@@ -1,0 +1,4 @@
+[console_scripts]
+LinghundeZhenxiang = LinghundeZhenxiang.__main__:main
+linghunde-zhenxiang = LinghundeZhenxiang.__main__:main
+
