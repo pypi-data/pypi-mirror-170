@@ -1,0 +1,8 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/cli.py,sha256=5pqNPYmsbkZlwBNAdFxtOMe2pqYjI4vyAxAWKFR87KM,2730
+src/main.py,sha256=6c3wNaN8eTbtw9JMVeB_b0tphuz_ORCSsI6G3pEW7RQ,4121
+grafana_calendar_annotator-0.0.1.dist-info/entry_points.txt,sha256=irWZ3mkENkVz-BzUCdu2Zi3rphEK8sXP-OfKkdCVCU8,58
+grafana_calendar_annotator-0.0.1.dist-info/LICENSE.txt,sha256=IFNYKCcpMkB8L1FyrrcUrHs3SjTl7LGCWvUJ8pAs3lQ,1087
+grafana_calendar_annotator-0.0.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+grafana_calendar_annotator-0.0.1.dist-info/METADATA,sha256=KuWLkW_NkCCtwWpuzUVrdaV8Ap7rw6bJySjEedNDn_0,2881
+grafana_calendar_annotator-0.0.1.dist-info/RECORD,,
