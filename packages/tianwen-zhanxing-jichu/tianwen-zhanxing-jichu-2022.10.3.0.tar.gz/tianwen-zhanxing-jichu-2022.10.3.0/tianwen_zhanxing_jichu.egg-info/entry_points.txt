@@ -1,0 +1,4 @@
+[console_scripts]
+TianwenZhanxingJichu = TianwenZhanxingJichu.__main__:main
+tianwen-zhanxing-jichu = TianwenZhanxingJichu.__main__:main
+
