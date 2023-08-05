@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: mecons
+Version: 0.0.3
+Summary: MeCons project for measuring consciousness.
+Home-page: https://github.com/chrisferreyra13/mecons-py
+Download-URL: https://github.com/chrisferreyra13/mecons-py
+Maintainer: Christian Ferreyra
+Maintainer-email: chrisferreyra13@gmail.com
+License: BSD-3-Clause
+Project-URL: Source, https://github.com/chrisferreyra13/mecons-py
+Project-URL: Tracker, https://github.com/chrisferreyra13/mecons-py/issues/
+Keywords: consciousness neuroscience neuroimaging MEG EEG brain
+Platform: any
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE.txt
+
+# MeCons
+MeCons is an open-source Python package for measuring consciousness. Built on the shoulders of giants like MNE-Python, SciPy, Numpy, etc., currently it includes a module for complexity metrics.
+
+## Documentation
+Currently under development.
+
+## Installing MeCons
+To install the latest stable version of MeCons, you can use [pip](https://pip.pypa.io/en/stable/) in a terminal:  
+```sh
+pip install -U mecons
+```
+
+## Get the latest code
+To install the latest version of the code using [pip](https://pip.pypa.io/en/stable/) open a terminal and type:
+```sh
+pip install -U https://github.com/chrisferreyra13/mecons-py/archive/main.zip
+```
+To get the latest code using git, open a terminal and type:
+```sh
+git clone https://github.com/chrisferreyra13/mecons-py.git
+```
+
+Alternatively, you can also download a [zip file of the latest development version](https://github.com/chrisferreyra13/mecons-py/archive/main.zip).
+
+## Dependencies
+- Python >= 3.7
+- MNE-Python >= 1.1.0
+- NumPy >= 1.18.1
+- SciPy >= 1.4.1
+
+## Contributing to MeCons
+Please see the [contributing guide](https://github.com/chrisferreyra13/mecons-py/blob/main/CONTRIBUTING.md).
