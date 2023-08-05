@@ -1,0 +1,11 @@
+.DS_Store,sha256=b1gNdipPmM0ngDx1wOVpZeiUDCe9rUvG2Yhgni2QXnI,8196
+strongarm_dataflow/__init__.py,sha256=_uzLCxSt7MFpmtRwvrcvROZZ8Ri1NLwpI6hPMhgBmRk,472
+strongarm_dataflow/dataflow.cpython-37m-darwin.so,sha256=QXGjv1SFIFoBTQ5kp8ZzTIwnVbOIyUlXYdeoU9yxOXk,116616
+strongarm_dataflow/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+strongarm_dataflow/register_contents.py,sha256=roEVoLHIsXdSm93Pq3xpIsj5Iwvnh0t0HHW2C_7b7gw,423
+strongarm_dataflow-3.0.0.data/data/LICENSE.txt,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+strongarm_dataflow-3.0.0.dist-info/LICENSE.txt,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+strongarm_dataflow-3.0.0.dist-info/METADATA,sha256=tVYxdNvJgUiiJsaKyEOgHQXME2abhDj4HqbWmzYtzMI,291
+strongarm_dataflow-3.0.0.dist-info/WHEEL,sha256=zjhvVxjD6g7O3ejxlonIResSLzKh91a-Z9sfR3zAQ80,111
+strongarm_dataflow-3.0.0.dist-info/top_level.txt,sha256=roOFCgTozP4Xfiy43w1iQjmkDfq0SV99MQ_wyJF7KxM,19
+strongarm_dataflow-3.0.0.dist-info/RECORD,,
