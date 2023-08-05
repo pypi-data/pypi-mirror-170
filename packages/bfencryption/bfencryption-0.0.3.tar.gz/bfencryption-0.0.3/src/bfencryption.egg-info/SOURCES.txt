@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/bfencryption/__init__.py
+src/bfencryption.egg-info/PKG-INFO
+src/bfencryption.egg-info/SOURCES.txt
+src/bfencryption.egg-info/dependency_links.txt
+src/bfencryption.egg-info/top_level.txt
