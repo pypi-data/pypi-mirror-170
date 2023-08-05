@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: flamesFinder
+Version: 0.1.2
+Summary: A simple package to find relationship between two people
+Home-page: https://github.com/iniyan2006/flames-pkg
+Author: Iniyan
+Author-email: viniyan563@gmail.com
+License: Apache License 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# flames-pkg
