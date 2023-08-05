@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pychargecloud
+Version: 0.0.1
+Summary: Access public ev charger information via chargecloud.de
+Author-email: functionpointer <suspendfunction@gmail.com>
+Project-URL: Homepage, https://github.com/functionpointer/pychargecloud
+Requires-Python: >=3.10
+License-File: LICENSE.md
+Requires-Dist: aiohttp
+Requires-Dist: yarl
+Requires-Dist: pydantic
+
