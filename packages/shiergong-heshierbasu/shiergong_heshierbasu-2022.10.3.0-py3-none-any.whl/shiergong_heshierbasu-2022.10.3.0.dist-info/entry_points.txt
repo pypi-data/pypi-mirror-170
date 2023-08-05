@@ -1,0 +1,4 @@
+[console_scripts]
+ShiergongHeshierbasu = ShiergongHeshierbasu.__main__:main
+shiergong-heshierbasu = ShiergongHeshierbasu.__main__:main
+
