@@ -1,0 +1,11 @@
+hashball/__init__.py,sha256=GYj0NNgk5AGLHIODXHIJxDfP6nYHggAfzopUNloMtGA,1252
+hashball/chash.py,sha256=NTFqcB7I4VAPwlPnqgwpHMpQzTZQ6bFofjVCNppgi3Q,1415
+hashball/chash_exceptions.py,sha256=RtQFPjlAfdXxN0cFX7jE2xyVDQK601VyVR84NiC1EuA,1652
+hashball/chash_visualize.py,sha256=HXhLiWRTT1ZKNGcG9vZSwExVZD2wII7jwcmvH2lzrrY,3445
+hashball/hashball.py,sha256=pLRpLyfU5mTdfaQPNpepzixcDO3SG5jMGXVxO-aGjgg,4492
+hashball/testcases.py,sha256=64tG7yrqw04woW8ZjQoxOBCxZvbFE48oEfeqgTOZKCE,1576
+hashball-0.0.4.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+hashball-0.0.4.dist-info/METADATA,sha256=5mK0QzeoBMYb1KQWmvdE3TgrSRz9_qC7WgeqtSZrwig,672
+hashball-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hashball-0.0.4.dist-info/top_level.txt,sha256=CkI0D-D8VydAFOeRUp2iWbNe_6bdEi5HUoeiDQV9qU4,9
+hashball-0.0.4.dist-info/RECORD,,
