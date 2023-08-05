@@ -1,0 +1,4 @@
+[console_scripts]
+LingjixianShizuoMook = LingjixianShizuoMook.__main__:main
+lingjixian-shizuo-mook = LingjixianShizuoMook.__main__:main
+
