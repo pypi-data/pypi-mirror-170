@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/fastapi_fancy_exceptions/__init__.py
+src/fastapi_fancy_exceptions/http_exception.py
+src/fastapi_fancy_exceptions.egg-info/PKG-INFO
+src/fastapi_fancy_exceptions.egg-info/SOURCES.txt
+src/fastapi_fancy_exceptions.egg-info/dependency_links.txt
+src/fastapi_fancy_exceptions.egg-info/entry_points.txt
+src/fastapi_fancy_exceptions.egg-info/requires.txt
+src/fastapi_fancy_exceptions.egg-info/top_level.txt
