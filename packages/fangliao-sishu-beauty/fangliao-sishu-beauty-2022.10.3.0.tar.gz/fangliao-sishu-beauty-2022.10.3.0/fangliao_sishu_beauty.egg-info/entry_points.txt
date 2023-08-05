@@ -1,0 +1,4 @@
+[console_scripts]
+FangliaoSishuBeauty = FangliaoSishuBeauty.__main__:main
+fangliao-sishu-beauty = FangliaoSishuBeauty.__main__:main
+

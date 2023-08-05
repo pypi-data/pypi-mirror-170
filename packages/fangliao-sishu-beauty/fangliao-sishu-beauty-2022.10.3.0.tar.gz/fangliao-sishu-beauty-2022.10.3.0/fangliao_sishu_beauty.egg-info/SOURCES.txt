@@ -1,0 +1,12 @@
+README.md
+setup.py
+FangliaoSishuBeauty/README.md
+FangliaoSishuBeauty/__init__.py
+FangliaoSishuBeauty/__main__.py
+FangliaoSishuBeauty/file.pdf
+FangliaoSishuBeauty/index.html
+fangliao_sishu_beauty.egg-info/PKG-INFO
+fangliao_sishu_beauty.egg-info/SOURCES.txt
+fangliao_sishu_beauty.egg-info/dependency_links.txt
+fangliao_sishu_beauty.egg-info/entry_points.txt
+fangliao_sishu_beauty.egg-info/top_level.txt
