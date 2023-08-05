@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: xymol
+Version: 0.0.1
+Summary: eXplain Your MOLecule (XYMOL): A Python package to understand and explain atom/bond contributions of small molecules in machine learning models.
+Home-page: https://github.com/smu-tao-group/xymol
+Author: Hao Tian
+Author-email: htian1997@gmail.com
+License: Apache License 2.0
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# eXplain Your MOLecule (XYMOL)
+
+[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org)
+[![github ci](https://github.com/smu-tao-group/xymol/actions/workflows/ci.yml/badge.svg)](https://github.com/smu-tao-group/xymol/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/smu-tao-group/xymol/branch/main/graph/badge.svg?token=fl4kUOywR3)](https://codecov.io/gh/smu-tao-group/xymol)
+
+XYMOL is A Python package to understand and explain atom/bond contributions of small molecules in machine learning models.

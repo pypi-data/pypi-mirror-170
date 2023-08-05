@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+tests/__init__.py
+tests/test_atom_number.py
+tests/test_drop_each_atom.py
+tests/test_drop_each_bond.py
+tests/test_plot.py
+xymol/__init__.py
+xymol/xymol.py
+xymol.egg-info/PKG-INFO
+xymol.egg-info/SOURCES.txt
+xymol.egg-info/dependency_links.txt
+xymol.egg-info/requires.txt
+xymol.egg-info/top_level.txt
