@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyqgen
+Version: 0.0.1
+Summary: Generating questionnaires from orgmode
+Project-URL: Homepage, https://github.com/glipari/pyqgen
+Project-URL: Bug Tracker, https://github.com/glipari/pyqgen/issues
+Author-email: Giuseppe Lipari <author@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# PyQGen
+
+Author: Giuseppe Lipari
+Email : giuseppe.lipari@univ-lille.fr
+
+- A command line script to generate a randomized list of questions taken
+from a orgmode file. 
+- It uses orgparse to read the orgmode file
+
+TO BE COMPLETED
