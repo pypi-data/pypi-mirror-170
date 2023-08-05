@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: 'zpy: Manage Python Environments in Zsh'
+site_url: https://andydecleyre.github.io/zpy/
+repo_url: https://github.com/andydecleyre/zpy
+docs_dir: ../src
+# site_dir:
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+theme:
+  name: material
+  favicon: img/favicon.png
+  icon:
+    logo: material/ticket-percent
+  font:
+    # text: Overpass
+    text: Jost
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - header.autohide
+    - content.tabs.link
+  palette:
+    - scheme: slate
+      primary: lime
+      accent: light green
+      toggle:
+        icon: material/weather-sunny
+        name: Light Background
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Dark Background
+nav:
+  - index.md
+  - Guide:
+    - start.md
+    - new_proj.md
+    - new_proj/activate.md
+    - new_proj/pipacs.md
+    - new_proj/pipac.md
+    - new_proj/pips_envin.md
+    - new_proj/upgrade.md
+    - new_proj/pyproject.md
+    - new_proj/run.md
+    - existing_projects.md
+    - pipz.md
+    - python_versions.md
+  - Details:
+    - help_all.md
+    - deps.md
+    - install.md
