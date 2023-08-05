@@ -1,0 +1,4 @@
+[console_scripts]
+LunhuiQianshiJinshengLaishengyuan = LunhuiQianshiJinshengLaishengyuan.__main__:main
+lunhui-qianshi-jinsheng-laishengyuan = LunhuiQianshiJinshengLaishengyuan.__main__:main
+
