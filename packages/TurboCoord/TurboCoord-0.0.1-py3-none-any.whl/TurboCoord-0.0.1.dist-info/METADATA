@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: TurboCoord
+Version: 0.0.1
+Summary: Utilities for coordination chemistry and molecular dft automation with TURBOMOLE
+Home-page: https://github.com/wladerer/Coordinate
+Author: William Laderer
+Author-email: wtladerer@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: matplotlib (==3.5.1)
+Requires-Dist: networkx (==2.8.6)
+Requires-Dist: numpy (==1.21.5)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: scipy (==1.8.0)
+Requires-Dist: setuptools (==59.6.0)
+
+UNKNOWN
+
