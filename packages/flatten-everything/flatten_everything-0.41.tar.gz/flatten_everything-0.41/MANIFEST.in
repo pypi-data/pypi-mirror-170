@@ -1,0 +1,4 @@
+include flatten_everything/requirements.txt
+include flatten_everything/thirdparty.json
+include flatten_everything/README.MD
+include flatten_everything/LICENSE
