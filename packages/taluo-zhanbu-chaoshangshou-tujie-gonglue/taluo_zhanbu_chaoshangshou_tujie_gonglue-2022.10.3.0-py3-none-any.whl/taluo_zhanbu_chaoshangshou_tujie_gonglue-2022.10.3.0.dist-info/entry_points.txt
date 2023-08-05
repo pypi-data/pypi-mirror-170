@@ -1,0 +1,4 @@
+[console_scripts]
+TaluoZhanbuChaoshangshouTujieGonglue = TaluoZhanbuChaoshangshouTujieGonglue.__main__:main
+taluo-zhanbu-chaoshangshou-tujie-gonglue = TaluoZhanbuChaoshangshouTujieGonglue.__main__:main
+
