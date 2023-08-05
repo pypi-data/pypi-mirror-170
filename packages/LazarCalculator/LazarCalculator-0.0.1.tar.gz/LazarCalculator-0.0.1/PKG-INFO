@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: LazarCalculator
+Version: 0.0.1
+Summary: Very simple calculator
+Home-page: UNKNOWN
+Author: Alex Arseniev
+Author-email: aagueorguiev@gmail.com
+License: MIT
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+License-File: LICENCE.txt
+
+UNKNOWN
+

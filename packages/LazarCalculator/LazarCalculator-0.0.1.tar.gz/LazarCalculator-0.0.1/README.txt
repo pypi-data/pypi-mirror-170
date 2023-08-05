@@ -1,0 +1,1 @@
+This is a very simple calculator that is covering the following functions: adding, subtracting, multiply, delete, power

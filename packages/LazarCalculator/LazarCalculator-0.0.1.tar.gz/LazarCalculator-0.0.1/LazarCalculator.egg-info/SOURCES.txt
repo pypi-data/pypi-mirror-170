@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+LazarCalculator.egg-info/PKG-INFO
+LazarCalculator.egg-info/SOURCES.txt
+LazarCalculator.egg-info/dependency_links.txt
+LazarCalculator.egg-info/top_level.txt
+clculator/__init__.py
