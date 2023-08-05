@@ -1,0 +1,4 @@
+[console_scripts]
+XinzhaiLiaoyuGuanyuanchen = XinzhaiLiaoyuGuanyuanchen.__main__:main
+xinzhai-liaoyu-guanyuanchen = XinzhaiLiaoyuGuanyuanchen.__main__:main
+
