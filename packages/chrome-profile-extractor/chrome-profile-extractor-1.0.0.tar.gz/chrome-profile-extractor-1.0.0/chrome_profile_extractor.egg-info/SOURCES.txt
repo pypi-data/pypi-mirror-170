@@ -1,0 +1,14 @@
+README.md
+setup.py
+chrome_profile_extractor/__init__.py
+chrome_profile_extractor/chrome_datetime.py
+chrome_profile_extractor/cookie_extract.py
+chrome_profile_extractor/decrypt.py
+chrome_profile_extractor/encrypt.py
+chrome_profile_extractor/password_extract.py
+chrome_profile_extractor.egg-info/PKG-INFO
+chrome_profile_extractor.egg-info/SOURCES.txt
+chrome_profile_extractor.egg-info/dependency_links.txt
+chrome_profile_extractor.egg-info/not-zip-safe
+chrome_profile_extractor.egg-info/requires.txt
+chrome_profile_extractor.egg-info/top_level.txt
