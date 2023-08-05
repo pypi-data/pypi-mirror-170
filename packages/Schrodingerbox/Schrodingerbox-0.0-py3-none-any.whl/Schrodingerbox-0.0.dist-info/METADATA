@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Schrodingerbox
+Version: 0.0
+Summary: Educational tool for learning quantum theory
+Home-page: https://github.com/haakoek/Schrodingerbox
+Author: Audun Skau Hansen and Håkon Kristiansen
+Author-email: a.s.hansen@kjemi.uio.no
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: sympy
+Requires-Dist: numba
+Requires-Dist: evince
+
+# Schrodingerbox
+
+
