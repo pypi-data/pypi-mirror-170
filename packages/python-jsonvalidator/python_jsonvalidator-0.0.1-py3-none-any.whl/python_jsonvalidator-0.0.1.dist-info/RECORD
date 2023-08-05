@@ -1,0 +1,8 @@
+jsonvalidator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonvalidator/flatten_dictionary.py,sha256=6HkvF1mgRBik_II23cem8GheLP7_u9sx8WZ6wEc2zpI,1340
+jsonvalidator/jsonvalidator.py,sha256=Zj6JMrsSJz7c6l8aZeFIgEwinHgbFZZDd3-KFZ_HAbw,3848
+jsonvalidator/test_jsonvalidator.py,sha256=Hh1WD3ZKYlbBsCNhgNjYrW7iWposJwNcy0TPOgbEMOs,6451
+python_jsonvalidator-0.0.1.dist-info/METADATA,sha256=kzKDVC9NCn1SPybHqeU4SKp5UWdGELFFJ4PgY9rf6k4,1885
+python_jsonvalidator-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+python_jsonvalidator-0.0.1.dist-info/top_level.txt,sha256=og6Pet09PClazM--7SjV4HbkVx6YfxDECL3tP8kOQYo,14
+python_jsonvalidator-0.0.1.dist-info/RECORD,,
