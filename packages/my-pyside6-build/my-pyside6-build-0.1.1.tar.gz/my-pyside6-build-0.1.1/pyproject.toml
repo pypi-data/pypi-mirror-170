@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "my-pyside6-build"
+version = "0.1.1"
+description = ""
+authors = ["Nir <88795475+nrbnlulu@users.noreply.github.com>"]
+packages = [
+    { include = "dummy" }
+]
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
