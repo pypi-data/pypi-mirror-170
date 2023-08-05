@@ -1,0 +1,4 @@
+include CreateBat/requirements.txt
+include CreateBat/thirdparty.json
+include CreateBat/README.MD
+include CreateBat/LICENSE

@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+CreateBat/LICENSE
+CreateBat/README.MD
+CreateBat/__init__.py
+CreateBat/requirements.txt
+CreateBat/thirdparty.json
+CreateBat.egg-info/PKG-INFO
+CreateBat.egg-info/SOURCES.txt
+CreateBat.egg-info/dependency_links.txt
+CreateBat.egg-info/top_level.txt
