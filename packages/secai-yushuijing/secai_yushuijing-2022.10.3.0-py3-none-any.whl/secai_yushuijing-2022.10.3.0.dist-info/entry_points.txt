@@ -1,0 +1,4 @@
+[console_scripts]
+SecaiYushuijing = SecaiYushuijing.__main__:main
+secai-yushuijing = SecaiYushuijing.__main__:main
+
