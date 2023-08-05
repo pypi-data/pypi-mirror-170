@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: py-messanger-r2-client
+Version: 1.0.0
+Summary: Messenger client
+Home-page: UNKNOWN
+Author: Roman Sl
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
+
