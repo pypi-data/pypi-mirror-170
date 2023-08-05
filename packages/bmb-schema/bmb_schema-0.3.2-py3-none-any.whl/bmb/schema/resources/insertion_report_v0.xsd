@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="insertion_report">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="invoice" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="date" type="xs:date" />
+              <xs:element name="invoice_uuid" type="xs:string" />
+              <xs:element name="invoice_hash" type="xs:string" />
+              <xs:element name="result" type="xs:string" />
+              <xs:element name="message" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string"
+      use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

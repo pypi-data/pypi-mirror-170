@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<invoices xmlns:kf="KashFlow" version="1.0">
+  <invoice>
+    <date>2017-09-25</date>
+    <seller>6602098</seller>
+    <receiver_basic>12345678-1234-1234-1234-12345678abcd</receiver_basic>
+    <buyer>BICY01</buyer>
+    <net>68.7900</net>
+    <vat>13.7600</vat>
+    <gross>999999999999.99</gross>
+    <line>
+      <quantity>1.0000</quantity>
+      <unitprice>7.2400</unitprice>
+      <unitofmeasure>per</unitofmeasure>
+      <itemcode>3363321</itemcode>
+      <description>exotic bicycle clips</description>
+      <net>8.99</net>
+      <vatcode>20.0000</vatcode>
+      <vat>1.4500</vat>
+      <gross>8.99</gross>
+    </line>
+    <line>
+      <quantity>1.0000</quantity>
+      <unitprice>61.5500</unitprice>
+      <unitofmeasure>per</unitofmeasure>
+      <itemcode>3363323</itemcode>
+      <description>best brass sprockets</description>
+      <net>9.99</net>
+      <vatcode>20.0000</vatcode>
+      <vat>12.3100</vat>
+      <gross>9.99</gross>
+    </line>
+  </invoice>
+  <invoice>
+    <date>2017-09-25</date>
+    <seller>6602098</seller>
+    <receiver_basic>12345678-1234-1234-1234-12345678abcd</receiver_basic>
+    <buyer>CUST01</buyer>
+    <net>82.0000</net>
+    <vat>16.4000</vat>
+    <gross>9.99</gross>
+    <line>
+      <quantity>1.0000</quantity>
+      <unitprice>82.0000</unitprice>
+      <unitofmeasure>per</unitofmeasure>
+      <itemcode>3362556</itemcode>
+      <description />
+      <net>9.99</net>
+      <vatcode>20.0000</vatcode>
+      <vat>16.4000</vat>
+      <gross>9.99</gross>
+    </line>
+  </invoice>
+</invoices>

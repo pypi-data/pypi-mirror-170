@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="decision_request">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="change_request_id" type="xs:integer" />
+        <xs:element name="decision" >
+          <xs:simpleType>
+            <xs:restriction base="xs:string" >
+              <xs:enumeration value="APPROVED" />
+              <xs:enumeration value="DENIED" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="decision_response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="decision_id" type="xs:integer" />
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

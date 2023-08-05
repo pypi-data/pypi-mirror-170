@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Invoice</title>
+    <meta name="description" content="an invoice">
+  </head>
+  <body>
+    <div class="section" id="s1">
+      <div class="left">
+        <h1>Invoice</h1>
+        <img id="logo" src="{{logo_uri}}" />
+        <address id="from">{{inv.header.seller_name|e if inv.header.seller_name}}
+          {{inv.header.seller_address1|e if inv.header.seller_address1}}
+          {{inv.header.seller_address2|e if inv.header.seller_address2}}
+          {{inv.header.seller_address3|e if inv.header.seller_address3}}
+          {{inv.header.seller_business_registration_number|e if inv.header.seller_business_registration_number}}</address>
+      </div>
+      <div class="right">
+    <table>
+        <tr>
+          <th>Buyer</th>
+          <td>
+      <address id="to">{{inv.header.customer_name|e if inv.header.customer_name}}
+        {{inv.header.customer_address1|e if inv.header.customer_address1}}
+        {{inv.header.customer_address2|e if inv.header.customer_address2}}
+        {{inv.header.customer_address3|e if inv.header.customer_address3}}</address>
+          </td>
+        </tr>
+      <tr><th>Number</th><td>{{inv.header.number|e}}</td></tr>
+      <tr><th>Bmbix Doc</th><td>{{invoice_id|e}}</td></tr>
+      <tr><th>Taxpoint</th><td>{{inv.header.date|e}}</td></tr>
+      <tr><th>Account</th><td>{{inv.header.buyer|e}}</td></tr>
+      <tr><th>Currency</th><td>{{inv.header.currencycode|e}}</td></tr>
+      <tr><th>VAT Registration</th><td>{{inv.header.seller_tax_registration_number|e if inv.header.seller_tax_registration_number}}</td></tr>
+    </table>
+    </div>
+  </div>
+
+  <div class="section" id="s2">
+  </div>
+
+  <div class="section" id="s3">
+    <table>
+      <thead>
+        <tr>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>UoM</th>
+        <th>Code</th>
+        <th>Description</th>
+        <th>Net</th>
+        <th>Vat Code</th>
+        <!-- <th>Vat</th> -->
+        <th>Gross</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for line in inv.lines %}
+      <tr>
+        <td class="money">{{"%.2f"|format(line.quantity)|e}}</td>
+        <td class="money">{{"%.2f"|format(line.unitprice)|e}}</td>
+        <td class="vatcode">{{line.unitofmeasure|e}}</td>
+        <td>{{line.itemcode|e}}</td>
+        <td>{{line.description|e}}</td>
+        <td class="money">{{"%.2f"|format(line.net)|e}}</td>
+        <td class="vatcode">{{line.vatcode|e}}</td>
+        <!-- <td>{{line.vat|e}}</td> -->
+        <td class="money">{{"%.2f"|format(line.gross)|e}}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+      </table>
+  </div>
+
+  <div class="section" id="s4">
+    <div class="left"></div>
+    <div class="right">
+      <table id="total">
+        <tbody>
+          <tr><th>net</th><td class="money">{{"%.2f"|format(inv.header.net)|e}}</td></tr>
+          <tr><th>vat</th><td class="money">{{"%.2f" |format(inv.header.vat)|e}}</td></tr>
+          <tr><th>gross</th><td class="money">{{"%.2f"|format(inv.header.gross)|e}}</td></tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+
+  </body>
+</html>

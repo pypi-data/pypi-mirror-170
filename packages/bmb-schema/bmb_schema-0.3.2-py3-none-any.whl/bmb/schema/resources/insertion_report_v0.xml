@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<insertion_report version="0">
+  <invoice>
+    <date>2017-11-08</date>
+    <invoice_uuid>12345678-1234-1234-1234-12345678abcd</invoice_uuid>
+    <invoice_hash>2343243242323423adf</invoice_hash>
+    <result>OK</result>
+    <message>Success</message>
+  </invoice>
+  <invoice>
+    <date>2017-11-09</date>
+    <invoice_uuid>12345678-1234-1234-1234-12345678abce</invoice_uuid>
+    <invoice_hash>2343243242323423ade</invoice_hash>
+    <result>FAIL</result>
+    <message>The message was processed before.</message>
+  </invoice>
+</insertion_report>

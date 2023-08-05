@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<invoice version="5">
+    <number>{{inv.header.number|e}}</number>
+	<date>{{inv.header.date|e}}</date>
+	<seller>{{inv.header.seller|e}}</seller>
+	<buyer>{{inv.header.buyer|e}}</buyer>
+	<currencycode>{{inv.header.currencycode|e}}</currencycode>
+	<net>{{inv.header.net|e}}</net>
+	<vat>{{inv.header.vat|e}}</vat>
+	<gross>{{inv.header.gross|e}}</gross>
+	<sellername>{{inv.header.seller_name|e if inv.header.seller_name}}</sellername>
+	<selleraddress1>{{inv.header.seller_address1|e if inv.header.seller_address1}}</selleraddress1>
+	<selleraddress2>{{inv.header.seller_address2|e if inv.header.seller_address2}}</selleraddress2>
+	<selleraddress3>{{inv.header.seller_address3|e if inv.header.seller_address3}}</selleraddress3>
+	<sellerbusinessregistrationnumber>{{inv.header.seller_business_registration_number|e if inv.header.seller_business_registration_number}}</sellerbusinessregistrationnumber>
+	<sellertaxregistrationnumber>{{inv.header.seller_tax_registration_number|e if inv.header.seller_tax_registration_number}}</sellertaxregistrationnumber>
+    <customername>{{inv.header.customer_name|e if inv.header.customer_name}}</customername>
+	<customeraddress1>{{inv.header.customer_address1|e if inv.header.customer_address1}}</customeraddress1>
+	<customeraddress2>{{inv.header.customer_address2|e if inv.header.customer_address2}}</customeraddress2>
+	<customeraddress3>{{inv.header.customer_address3|e if inv.header.customer_address3}}</customeraddress3>
+	<customerbusinessregistrationnumber>{{inv.header.customer_business_registration_number|e if inv.header.customer_business_registration_number}}</customerbusinessregistrationnumber>
+	<customertaxregistrationnumber>{{inv.header.customer_tax_registration_number|e if inv.header.customer_tax_registration_number}}</customertaxregistrationnumber>
+	{% for line in inv.lines %}
+	<line>
+		<quantity>{{line.quantity|e}}</quantity>
+		<unitprice>{{line.unitprice|e}}</unitprice>
+		<unitofmeasure>{{line.unitofmeasure|e}}</unitofmeasure>
+		<itemcode>{{line.itemcode|e}}</itemcode>
+		<description>{{line.description|e}}</description>
+		<net>{{line.net|e}}</net>
+		<vatcode>{{line.vatcode|e}}</vatcode>
+		<vat>{{line.vat|e}}</vat>
+		<gross>{{line.gross|e}}</gross>
+	</line>
+	{% endfor %}
+</invoice>

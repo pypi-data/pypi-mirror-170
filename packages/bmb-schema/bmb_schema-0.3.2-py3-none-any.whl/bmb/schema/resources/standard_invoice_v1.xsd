@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="invoices">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="invoice" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="date" type="xs:date" />
+              <xs:element name="seller" type="xs:string" />
+              <xs:element name="receiver_basic" type="xs:string" />
+              <xs:element name="buyer" type="xs:string" />
+              <xs:element name="net" type="xs:decimal" />
+              <xs:element name="vat" type="xs:decimal" />
+              <xs:element name="gross" type="xs:decimal" />
+              <xs:element name="line" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="quantity"
+                    type="xs:decimal" />
+                    <xs:element name="unitprice"
+                    type="xs:decimal" />
+                    <xs:element name="unitofmeasure"
+                    type="xs:string" />
+                    <xs:element name="itemcode" type="xs:string" />
+                    <xs:element name="description"
+                    type="xs:string" />
+                    <xs:element name="net" type="xs:decimal" />
+                    <xs:element name="vatcode" type="xs:string" />
+                    <xs:element name="vat" type="xs:decimal" />
+                    <xs:element name="gross" type="xs:decimal" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string"
+      use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

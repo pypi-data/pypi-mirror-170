@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Invoice</title>
+    <meta name="description" content="an invoice">
+  </head>
+  <body>
+    <h1>Invoice</h1>
+    <img src="{{logo_uri}}" />
+    <dl id="informations">
+      <dt>Number</dt><dd>{{inv.header.number|e}}</dd>
+      <dt>date</dt><dd>{{inv.header.date|e}}</dd>
+      <dt>seller</dt><dd>{{inv.header.seller|e}}</dd>
+      <dt>buyer</dt><dd>{{inv.header.buyer|e}}</dd>
+      <dt>currencycode</dt><dd>{{inv.header.currencycode|e}}</dd>
+  </dl>
+
+  <aside>
+	<sellername>{{inv.header.seller_name|e if inv.header.seller_name}}</sellername>
+    <address id="from">
+	<selleraddress1>{{inv.header.seller_address1|e if inv.header.seller_address1}}</selleraddress1>
+	<selleraddress2>{{inv.header.seller_address2|e if inv.header.seller_address2}}</selleraddress2>
+	<selleraddress3>{{inv.header.seller_address3|e if inv.header.seller_address3}}</selleraddress3>
+	<sellerbusinessregistrationnumber>{{inv.header.seller_business_registration_number|e if inv.header.seller_business_registration_number}}</sellerbusinessregistrationnumber>
+	<sellertaxregistrationnumber>{{inv.header.seller_tax_registration_number|e if inv.header.seller_tax_registration_number}}</sellertaxregistrationnumber>
+  </address>
+  <address id="to">
+    <customername>{{inv.header.customer_name|e if inv.header.customer_name}}</customername>
+	<customeraddress1>{{inv.header.customer_address1|e if inv.header.customer_address1}}</customeraddress1>
+	<customeraddress2>{{inv.header.customer_address2|e if inv.header.customer_address2}}</customeraddress2>
+	<customeraddress3>{{inv.header.customer_address3|e if inv.header.customer_address3}}</customeraddress3>
+	<customerbusinessregistrationnumber>{{inv.header.customer_business_registration_number|e if inv.header.customer_business_registration_number}}</customerbusinessregistrationnumber>
+	<customertaxregistrationnumber>{{inv.header.customer_tax_registration_number|e if inv.header.customer_tax_registration_number}}</customertaxregistrationnumber>
+  </address>
+  </aside>
+
+<table>
+  <thead>
+    <th>Quantity</th>
+    <th>Unit price</th>
+    <th>UoM</th>
+    <th>Code</th>
+    <th>Description</th>
+    <th>Net</th>
+    <th>Vatcode</th>
+    <th>Vat</th>
+    <th>Gross</th>
+  </thead>
+  <tbody>
+	{% for line in inv.lines %}
+	<tr>
+		<td>{{line.quantity|e}}</td>
+		<td>{{line.unitprice|e}}</td>
+		<td>{{line.unitofmeasure|e}}</td>
+		<td>{{line.itemcode|e}}</td>
+		<td>{{line.description|e}}</td>
+		<td>{{line.net|e}}</td>
+		<td>{{line.vatcode|e}}</td>
+		<td>{{line.vat|e}}</td>
+		<td>{{line.gross|e}}</td>
+	</tr>
+	{% endfor %}
+  </tbody>
+  </table>
+
+
+  <table id="total">
+    <thead>
+      <th></th>
+      <th>Amount</th>
+    </thead>
+    <tbody>
+      <tr><th>net</th><td>{{inv.header.net|e}}</td></tr>
+      <tr><th>vat</th><td>{{inv.header.vat|e}}</td></tr>
+      <tr><th>gross</th><td>{{inv.header.gross|e}}</td></tr>
+      </tbody>
+  </table>
+
+  </body>
+</html>

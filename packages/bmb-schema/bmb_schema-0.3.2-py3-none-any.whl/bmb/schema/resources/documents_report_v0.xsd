@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://accutum.co.uk/bmb"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  xmlns:bmb="http://accutum.co.uk/bmb"
+  >
+
+  <xs:simpleType name="type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="invoice"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="uuid">
+		<xs:restriction base="xs:string">
+			<xs:pattern
+				value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}">
+	  	</xs:pattern>
+    </xs:restriction>
+	</xs:simpleType>
+
+  <xs:simpleType name="state">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="delivered"/>
+			<xs:enumeration value="pending"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+  <xs:element name="documents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="document" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="type" type="bmb:type" />
+              <xs:element name="uuid" type="bmb:uuid" />
+              <xs:element name="state" type="bmb:state" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+</xs:schema>

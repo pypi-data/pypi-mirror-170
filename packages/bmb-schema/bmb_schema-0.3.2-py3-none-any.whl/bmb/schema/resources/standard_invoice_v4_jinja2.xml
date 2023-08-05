@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<invoice version="4">
+	<number>{{header.number}}</number>
+	<date>{{header.date}}</date>
+	<seller>{{header.seller_name}}</seller>
+	<receiver_basic>{{header.buyer_id}}</receiver_basic>
+	<sacors>{{header.sacors}}</sacors>
+	<buyer>{{header.buyer_name}}</buyer>
+	<currencycode>{{header.currency_code}}</currencycode>
+	<net>{{totals.net}}</net>
+	<vat>{{totals.vat}}</vat>
+	<gross>{{totals.gross}}</gross>
+	{% for line in body.lines %}
+	<line>
+		<quantity>{{line.quantity}}</quantity>
+		<unitprice>{{line.unit_price}}</unitprice>
+		<unitofmeasure>{{line.unit_of_measure}}</unitofmeasure>
+		<itemcode>{{line.item_code}}</itemcode>
+		<description>{{line.description}}</description>
+		<net>{{line.net}}</net>
+		<vatcode>{{line.vatcode}}</vatcode>
+		<vat>{{line.vat}}</vat>
+		<gross>{{line.gross}}</gross>
+	</line>
+	{% endfor %}
+</invoice>

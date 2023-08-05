@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <invoice>
+    <date>2017-09-25</date>
+    <seller>6602098</seller>
+    <buyer>BICY01</buyer>
+    <net>68.79</net>
+    <vat>13.76</vat>
+    <gross>999999999999.99</gross>
+    <line>
+      <quantity>1.00</quantity>
+      <unitprice>7.24</unitprice>
+      <unitofmeasure>per</unitofmeasure>
+      <itemcode>3363321</itemcode>
+      <description>exotic bicycle clips</description>
+      <net>9.99</net>
+      <vatcode>20.00</vatcode>
+      <vat>1.45</vat>
+      <gross>88.99</gross>
+    </line>
+    <line>
+      <quantity>1.0000</quantity>
+      <unitprice>61.5500</unitprice>
+      <unitofmeasure>per</unitofmeasure>
+      <itemcode>3363323</itemcode>
+      <description>best brass sprockets</description>
+      <net>9999999999999.99</net>
+      <vatcode>20.00</vatcode>
+      <vat>12.3100</vat>
+      <gross>999999999999.99</gross>
+    </line>
+  </invoice>
