@@ -1,0 +1,2 @@
+[console_scripts]
+landscape-api = landscape_api.__main__:cli
