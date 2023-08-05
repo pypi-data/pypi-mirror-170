@@ -1,0 +1,4 @@
+[console_scripts]
+GuaijiWanglingshu = GuaijiWanglingshu.__main__:main
+guaiji-wanglingshu = GuaijiWanglingshu.__main__:main
+
