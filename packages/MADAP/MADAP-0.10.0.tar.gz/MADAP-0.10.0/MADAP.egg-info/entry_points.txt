@@ -1,0 +1,3 @@
+[console_scripts]
+cli = src.madap_cli:main
+gui = src.madap_gui:main
