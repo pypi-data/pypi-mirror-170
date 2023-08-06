@@ -1,0 +1,4 @@
+include a_pandas_ex_string_to_dtypes/requirements.txt
+include a_pandas_ex_string_to_dtypes/thirdparty.json
+include a_pandas_ex_string_to_dtypes/README.MD
+include a_pandas_ex_string_to_dtypes/LICENSE
