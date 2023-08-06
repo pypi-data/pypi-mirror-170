@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ShopFilteringToolInect
+Version: 0.0.1
+Summary: A tool to filter contents of shop using simple language of filter creation
+Author: Mikołaj Marsy
+Author-email: mikolaj.marsy@gmail.com
+Requires-Python: >=3.7, <4
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: bs4
+Requires-Dist: requests
+Requires-Dist: xmltodict
+
