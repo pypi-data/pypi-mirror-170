@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: WannierOwl
+Version: 0.0.0
+Summary: Add Spin-orbit Coupling to Wannier Hamiltonian
+Home-page: https://github.com/adrybakov/WannierOwl
+Download-URL: https://github.com/adrybakov/WannierOwl.git
+Author: Andrey Rybakov
+Author-email: rybakov.ad@icloud.com
+License: MIT license
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+WannierOwl
+==========
+Package for adding spin-orbit coupling to tight-binding Hamiltonian.
+
+Initially intendent for Wannier Hamiltonian.
+
+Installation
+------------
+
+First make sure that you have python3 and pip installed.
+Then execute the following in your terminal:
+
+.. code-block:: console
+
+   pip install wannierowl
