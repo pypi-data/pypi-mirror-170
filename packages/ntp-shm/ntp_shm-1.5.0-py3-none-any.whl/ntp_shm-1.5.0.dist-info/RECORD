@@ -1,0 +1,13 @@
+ntp_shm/__init__.py,sha256=8EGIwcpYPf83HnxUG4FNsiY0yiGF8nOe4MUhBAA90b4,76
+ntp_shm/__main__.py,sha256=SHsn_Z4Hnw8O6I9roGLT-gxrv1mUGzDfwtXVrSzEfOU,63
+ntp_shm/data.py,sha256=qgWpDcRPWXwe58X0VGhM4z0Ci9hBz9vI5VqyC-m6hJU,2313
+ntp_shm/main.py,sha256=kyTLaYawxxrh0e7MFeRUsSgToVd2bcUZOSoPAWlSkSQ,2912
+ntp_shm/memory.py,sha256=gophM0H5_tpecOmdKpkJqxLA0rZVDZRRgtOfBkOmCaE,4276
+ntp_shm/nmea.py,sha256=9TJqmM-t_rokUingAN8fz6MWzoV8dgp2Gkc9qjlyYKM,4357
+ntp_shm/util.py,sha256=_LEKFLildQRvLXjLbdVaulP-yFu8Sz3qhtyWfNzDehk,1534
+ntp_shm-1.5.0.data/scripts/ntp-shm,sha256=FEn3seIhy2T2r6CorKT9okaY0lAKLcpD6fUqkw85iHI,50
+ntp_shm-1.5.0.dist-info/LICENSE,sha256=V2MlHP1F1685bSns_zSgeHtOrpMFha1gGIZAjSmdFXA,1074
+ntp_shm-1.5.0.dist-info/METADATA,sha256=rKI_ZlOIkmryyFAnWViYAH0cfVnss6181QrtwoHJfAI,4862
+ntp_shm-1.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ntp_shm-1.5.0.dist-info/top_level.txt,sha256=VQH6gF8dkZVwtqI6Yrna7M8aptPQaAndESrHkrX9hxw,8
+ntp_shm-1.5.0.dist-info/RECORD,,
