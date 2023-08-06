@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: python-reload
+Version: 0.1
+Summary: A module that allows you to make changes to a running python script and reload it
+Home-page: https://github.com/febdaynik/PyReload
+Author: Feb
+Author-email: drons_dron@mail.ru
+License: MIT
+Description: PyReload
+        =====
+        
+        Р‘РёР±Р»РёРѕС‚РµРєР° РґР»СЏ Р±С‹СЃС‚СЂРѕРіРѕ РІР·Р°РёРјРѕРґРµР№СЃС‚РІРёСЏ СЃ РєРѕРґРѕРј РІ С„Р°Р№Р»Рµ.
+        PyReload - РїРѕР·РІРѕР»СЏРµС‚ РѕР±РЅРѕРІР»СЏС‚СЊ РєРѕРґ РІ СЂРµР°Р»СЊРЅРѕРј РІСЂРµРјРµРЅРё
+        
+        РљРѕРЅС„РёРіСѓСЂР°С†РёСЏ
+        ====
+        
+        Р§С‚РѕР±С‹ РЅРµ СЃР»РµРґРёС‚СЊ Р·Р° РІСЃРµРјРё С„Р°Р№Р»Р°РјРё РёС… РјРѕР¶РЅРѕ РїРѕРјРµСЃС‚РёС‚СЊ РІ С„Р°Р№Р» РёРіРЅРѕСЂРёСЂРѕРІР°РЅРёСЏ, РїРѕ СЃС‚Р°РЅРґР°СЂС‚Сѓ РѕРЅ '._ingore'. Р”Р»СЏ СЌС‚РѕРіРѕ РІР°Рј РїРѕРЅР°РґРѕР±РёС‚СЃСЏ:
+        ```
+        1. РЎРѕР·РґР°С‚СЊ С„Р°Р№Р» РёРіРЅРѕСЂРёСЂРѕРІР°РЅРёСЏ
+        2. Р”РѕР±Р°РІРёС‚СЊ РёРіРЅРѕСЂРёСЂСѓРµРјС‹Рµ С„Р°Р№Р»С‹
+        3. Р—Р°РїСѓСЃС‚РёС‚СЊ СЃРєСЂРёРїС‚ (РµСЃР»Рё С„Р°Р№Р» РЅР°Р·С‹РІР°РµС‚СЃСЏ РёРЅР°С‡Рµ, С‚Рѕ РїРµСЂРµРґР°Р№С‚Рµ РµРіРѕ РЅР°Р·РІР°РЅРёРµ С‡РµСЂРµР· РїР°СЂР°РјРµС‚СЂ 'ignore_file')
+        
+        ps: РЎРѕР·РґР°РЅРёРµ С„Р°Р№Р» РЅРµ СЏРІР»СЏРµС‚СЃСЏ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹Рј
+        
+        ```
+        ```python
+        # Example ignore file
+        pr = PyReload(ignore_file = 'custom_name_ignore_file.txt')
+        ```
+        
+        РџСЂРёРјРµСЂС‹
+        ====
+        
+        ## Р”Р»СЏ aiogram
+        
+        ```python
+        # update code in framework aiogram
+        import os
+        from pyreload import PyReload
+        
+        ...
+        
+        async def pyreload_task():
+        	while 1:
+        		await pr.update_file.hash().async_run()
+        		await asyncio.sleep(1)
+        
+        async def on_startup(_):
+        	logging.info("Bot started")
+        
+        	logging.info("Started waiting reload")
+        	asyncio.create_task(pyreload_task())
+        
+        if __name__ == '__main__':
+        	pr = PyReload(path=os.listdir())
+        	executor.start_polling(dp, skip_updates=True, on_startup=on_startup)   
+        ```
+        
+        ## Р”Р»СЏ vkbottle
+        
+        ```python
+        # update code in framework aiogram
+        import os
+        from pyreload import PyReload
+        
+        ...
+        
+        @bot.loop_wrapper.interval(seconds=1)
+        async def pyreload_task():
+        	await pr.update_file.hash().async_run()
+        
+        if __name__ == '__main__':
+        	pr = PyReload(path = os.listdir())
+        	bot.run_forever()
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
