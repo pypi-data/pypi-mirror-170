@@ -1,0 +1,10 @@
+pybasicdtw/__init__.py,sha256=75YbGnHZMegnI7HXFDXzw0GyO1-kfwGcS48qWeG2oV4,147
+pybasicdtw/core.py,sha256=1Ekzqe2pJqw50aUieN9HIhIiEdiTcaVDZNn69twHobA,10237
+pybasicdtw/dtw.py,sha256=9x3BJfKwsnkDGhN-y7qmNdJdMtcDyiz7mWMMN_6OFwg,1011
+pybasicdtw/plotting.py,sha256=IyVNm4fj_yCdWS5xXSNag0hI3wMBquMG9RzCUhZ3kYU,369
+pybasicdtw/sdtw.py,sha256=IIz4GC9SV7_fIhj6NzNIGujQ_6FxE4G7aUT92oxlRNI,6455
+pybasicdtw-0.0.9.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+pybasicdtw-0.0.9.dist-info/METADATA,sha256=Hw_9GT5RA0oU_pGvtJf1tiYGFMk5nE62obqDVf3jpg0,9562
+pybasicdtw-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pybasicdtw-0.0.9.dist-info/top_level.txt,sha256=_nTpO6xduNMdjx3t1dXMxq-WR0kmTggt0WojpYikdgs,11
+pybasicdtw-0.0.9.dist-info/RECORD,,
