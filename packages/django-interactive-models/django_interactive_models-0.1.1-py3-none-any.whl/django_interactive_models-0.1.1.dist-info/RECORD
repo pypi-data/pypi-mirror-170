@@ -1,0 +1,12 @@
+interactive_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+interactive_models/apps.py,sha256=F5XHU_38aO1O3KLVgkN0kjYsYq8MoE0-zOy-hLRRlds,110
+interactive_models/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+interactive_models/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+interactive_models/management/commands/_parse_fields.py,sha256=VeLUWacAQJOWbtPNrMVMp3mJ14OQZU4DcXQFhibIypg,618
+interactive_models/management/commands/_render_model.py,sha256=puR___Guj83KDi204NbBtDJ22_-9TtFHI4YVrF01Ez8,497
+interactive_models/management/commands/models.py,sha256=JeUz7N1ThVH1DECkew4tXcsDF122dxs1530whekMcAo,1957
+django_interactive_models-0.1.1.dist-info/LICENSE,sha256=OeGxXjD3-x5pdeTifSfhYxeRENA_nIFD49cXbCYxdLs,1070
+django_interactive_models-0.1.1.dist-info/METADATA,sha256=dpKUKCJCIf1DknN_P2v_H_0akHcL8_zToLfz8_x1ozE,3486
+django_interactive_models-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_interactive_models-0.1.1.dist-info/top_level.txt,sha256=mfEpY0trKvwmJtcCg_xcsVunjKt5WoWDi5ZvGr1mI2o,19
+django_interactive_models-0.1.1.dist-info/RECORD,,
