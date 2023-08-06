@@ -1,0 +1,8 @@
+ml_python_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml_python_package/train/__init__.py,sha256=i1OQ6vV5Z4TwIouuw2Siv2AZw0ikTiyN3zxlAqlOebM,128
+ml_python_package/train/train_model.py,sha256=emv3E45kEFJgg3tnnu82cVBPut-esXomZA0xfxqfdCM,692
+ml_python_package-0.1.5.dist-info/LICENSE,sha256=m5liRZs13iYqmxzTW5oew-Ll9O8vkuROXGOAPLY_Nyo,1068
+ml_python_package-0.1.5.dist-info/METADATA,sha256=Z9rhOUUnlMYIlOjWEzt0T8chefR1lKBdunzOY1kstNk,218
+ml_python_package-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ml_python_package-0.1.5.dist-info/top_level.txt,sha256=KtM0_YCgLZ2pZYvXTzG7mUe_fmOs27c-QaN7FKlqqj8,18
+ml_python_package-0.1.5.dist-info/RECORD,,
