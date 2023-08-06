@@ -1,0 +1,4 @@
+[console_scripts]
+FunengliangdeXiyinliFaze = FunengliangdeXiyinliFaze.__main__:main
+funengliangde-xiyinli-faze = FunengliangdeXiyinliFaze.__main__:main
+
