@@ -1,0 +1,7 @@
+betainc/__init__.py,sha256=Iu19rEOv-mh73yhejzl_3nT8DtszrgCKS4cMBFW1yb0,50
+betainc/betainc.c,sha256=dSFNg3S_dz4CQFM8hcUBowHQzkKLoB5mDu_r3t-sR6g,266618
+betainc/betainc.cpython-39-x86_64-linux-gnu.so,sha256=pjEGue5oBfMHkDmT-jCv14iebw8G6mL48MJ2fjHjo_o,157144
+betainc/betainc.pyx,sha256=1Elq5T6btRQIkluNgPmM5-kkAzbGw45jGv1xL-V8tNk,1761
+betainc-0.1.3.dist-info/WHEEL,sha256=Lkbl6a49AMWfKBWCWOmVyLahYc2dahXm39fTLDWZ0wo,108
+betainc-0.1.3.dist-info/METADATA,sha256=DTJ0sJGMtLTwSw9prT7p93W-x65IXjUG1jIvBDgKaBE,367
+betainc-0.1.3.dist-info/RECORD,,
