@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+commands.sh
+setup.py
+test_left_pad.py
+src/left_pad.py
+src/test_deploy_left_pad.egg-info/PKG-INFO
+src/test_deploy_left_pad.egg-info/SOURCES.txt
+src/test_deploy_left_pad.egg-info/dependency_links.txt
+src/test_deploy_left_pad.egg-info/requires.txt
+src/test_deploy_left_pad.egg-info/top_level.txt

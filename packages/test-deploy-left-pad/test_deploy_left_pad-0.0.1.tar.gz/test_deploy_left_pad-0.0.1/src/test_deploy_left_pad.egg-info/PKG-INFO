@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: test-deploy-left-pad
+Version: 0.0.1
+Summary: just add left padding to the text.
+Home-page: https://ninja-bag.devmhmd.com
+Author: Mhmd
+Author-email: d3v.mhmd@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# Left Pad
+
+just add left padding to the text.
+
+## Installation
+
+Run the following to install:
+
+```python
+pip install left-pad
+```
+
+## Usage
+
+```python
+
+from left_pad import left_pad
+
+left_pad('This is awesome string', length=40, character='*')
+
+# ********This is awesome string
+
+```
+
+
+
+
