@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+woc/__init__.py
+woc/bitcoin_rpc_class.py
+woc/dialog.ui
+woc/main.py
+woc/write.py
+writeonchain.egg-info/PKG-INFO
+writeonchain.egg-info/SOURCES.txt
+writeonchain.egg-info/dependency_links.txt
+writeonchain.egg-info/entry_points.txt
+writeonchain.egg-info/requires.txt
+writeonchain.egg-info/top_level.txt

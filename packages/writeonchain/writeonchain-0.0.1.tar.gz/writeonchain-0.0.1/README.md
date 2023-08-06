@@ -1,0 +1,63 @@
+# WriteOnChain
+Write your messages on public blockchain (BTC, LTC, Liquid) with a QT GUI.
+![screenshot](https://gitlab.com/valerio-vaccaro/writeonchain/raw/5210cd8b0ab4a3ffd84907d8ba121bfb215b4e15/screenshot.png)
+
+## Install
+Install using pip.
+
+```
+pip install writeonchain
+```
+
+## Configuration
+The configuration file is available in your home folder in the file `.woc/main.conf` and has the following format.
+
+```
+[BTC]
+host:
+port: 8332
+username:
+password:
+wallet: wallet.dat
+passphrase:
+
+[LTC]
+host:
+port: 9332
+username:
+password:
+wallet: wallet.dat
+passphrase:
+
+[tBTC]
+host:
+port: 18332
+username:
+password:
+wallet: wallet.dat
+passphrase:
+
+[tLTC]
+host:
+port: 19332
+username:
+password:
+wallet: wallet.dat
+passphrase:
+
+[LIQUID]
+host:
+port: 7041
+username:
+password:
+wallet: wallet.dat
+passphrase:
+```
+
+You can configure the content of the file directy from the config tab in the app.
+
+## Usage
+You can easily start the app using the `woc` command.
+
+## Modify the GUI
+Using the designer for QT5 you can modify the dialog.ui that contain all the graphical structure of the app.
