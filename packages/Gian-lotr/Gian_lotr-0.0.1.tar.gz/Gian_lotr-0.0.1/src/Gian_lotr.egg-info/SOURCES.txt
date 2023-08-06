@@ -1,0 +1,14 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/Gian_lotr/__init__.py
+src/Gian_lotr/main.py
+src/Gian_lotr.egg-info/PKG-INFO
+src/Gian_lotr.egg-info/SOURCES.txt
+src/Gian_lotr.egg-info/dependency_links.txt
+src/Gian_lotr.egg-info/top_level.txt
+src/Gian_lotr/rest/__init__.py
+src/Gian_lotr/rest/book/__init__.py
+src/Gian_lotr/rest/character/__init__.py
+src/Gian_lotr/rest/movie/__init__.py
+src/Gian_lotr/rest/quote/__init__.py
