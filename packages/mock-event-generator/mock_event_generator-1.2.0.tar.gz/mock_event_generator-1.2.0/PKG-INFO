@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: mock_event_generator
+Version: 1.2.0
+Summary: Generates events by re-using existing ones.
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Provides-Extra: tests

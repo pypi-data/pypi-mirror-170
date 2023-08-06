@@ -1,0 +1,141 @@
+variables:
+  PIP_CACHE_DIR: "${CI_PROJECT_DIR}/.cache/pip"
+  CONTAINER_TEST_IMAGE: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+  CONTAINER_RELEASE_IMAGE: $CI_REGISTRY_IMAGE:latest
+
+cache:
+  key: "${CI_JOB_NAME}"
+  paths:
+  - .cache/pip
+
+stages:
+- build
+- test
+- release
+
+
+pre-commits:
+  stage: test
+  needs: []
+  image: python:3.9
+  interruptible: true
+  before_script:
+  - pip install pre-commit
+  - pre-commit install
+  - echo "machine git.ligo.org login gitlab-ci-token password $CI_JOB_TOKEN" > ~/.netrc
+  - chmod 600 ~/.netrc
+  script:
+  - pre-commit run --all-files
+
+
+.unit-test-template: &unit-test
+  stage: test
+  needs: []
+  interruptible: true
+  before_script:
+  - echo "machine git.ligo.org login gitlab-ci-token password $CI_JOB_TOKEN" > ~/.netrc
+  - chmod 600 ~/.netrc
+  - pip install --extra-index-url ${CI_API_V4_URL}/projects/11906/packages/pypi/simple .[tests]
+  script:
+  - pytest
+
+unit-tests/3.9:
+  image: python:3.9
+  <<: *unit-test
+  coverage: '/^TOTAL.+?(\d+\%)$/'
+
+unit-tests/3.10:
+  image: python:3.10
+  <<: *unit-test
+
+
+build package:
+  stage: build
+  image: python:3.9
+  interruptible: true
+  before_script:
+  - pip install twine build setuptools_scm
+  script:
+  - python -m build
+  - export PACKAGE_VERSION=$(python3 -msetuptools_scm)
+  - echo "PACKAGE_VERSION=${PACKAGE_VERSION}" >> build.env
+  # Don't fail only if the package has already been uploaded.
+  - set +e; TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/* &> output.log;
+    exit_status=$?;
+    cat output.log;
+    if [ $exit_status -ne 0 ];
+    then
+      grep "400 Bad Request" output.log > /dev/null;
+    fi
+  artifacts:
+    reports:
+      dotenv: build.env
+
+
+.docker-image-template: &docker-image
+  image: docker:latest
+  tags:
+  - cit
+  interruptible: true
+  before_script:
+  - docker info
+  - echo ${CI_JOB_TOKEN} | docker login -u "${CI_REGISTRY_USER}" --password-stdin "${CI_REGISTRY}"
+
+build image:
+  stage: build
+  needs:
+  - job: build package
+    artifacts: true
+  <<: *docker-image
+  script:
+  - echo "machine git.ligo.org login gitlab-ci-token password $CI_JOB_TOKEN" > ~/.netrc
+  - chmod 600 ~/.netrc
+  - chmod 600 $LIGO_CERTIFICATE_PATH
+  - ./build-prod.sh
+  - docker push $CONTAINER_TEST_IMAGE
+
+e2e-tests:
+  stage: test
+  variables:
+    GIT_STRATEGY: none
+  <<: *docker-image
+  script:
+  - docker pull $CONTAINER_TEST_IMAGE
+  - docker run $CONTAINER_TEST_IMAGE meg cache list |
+    grep "├── G587369"
+
+
+e2e-tests/cnaf:
+  stage: test
+  allow_failure: true
+  <<: *docker-image
+  services:
+  - name: docker:dind
+    entrypoint: ["dockerd-entrypoint.sh", "--tls=false"]
+  variables:
+    DOCKER_DRIVER: overlay2
+    DOCKER_HOST: tcp://localhost:2375
+    DOCKER_TLS_CERTDIR: ""
+    GIT_STRATEGY: none
+  tags:
+  - k8s-cnaf-pchanial
+  script:
+  - docker pull $CONTAINER_TEST_IMAGE
+  - docker run --rm $CONTAINER_TEST_IMAGE meg cache list |
+    grep "├── G587369"
+  - docker run --rm -v $LIGO_CERTIFICATE_PATH:/tmp/x509up_u1000 $CONTAINER_TEST_IMAGE
+    meg create G587367 --target cnaf 2>&1 |
+    grep "Created G587367 ->"
+
+
+release-image:
+  stage: release
+  variables:
+    GIT_STRATEGY: none
+  <<: *docker-image
+  script:
+  - docker pull $CONTAINER_TEST_IMAGE
+  - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_IMAGE
+  - docker push $CONTAINER_RELEASE_IMAGE
+  only:
+  - main
