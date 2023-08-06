@@ -1,0 +1,4 @@
+[console_scripts]
+LiurenGushiShizhanJiemi = LiurenGushiShizhanJiemi.__main__:main
+liuren-gushi-shizhan-jiemi = LiurenGushiShizhanJiemi.__main__:main
+
