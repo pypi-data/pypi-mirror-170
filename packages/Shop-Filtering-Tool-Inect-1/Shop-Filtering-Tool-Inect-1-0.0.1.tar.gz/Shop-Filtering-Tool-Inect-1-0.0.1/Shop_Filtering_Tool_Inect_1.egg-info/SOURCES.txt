@@ -1,0 +1,15 @@
+LICENSE.txt
+setup.py
+Shop_Filtering_Tool_Inect_1.egg-info/PKG-INFO
+Shop_Filtering_Tool_Inect_1.egg-info/SOURCES.txt
+Shop_Filtering_Tool_Inect_1.egg-info/dependency_links.txt
+Shop_Filtering_Tool_Inect_1.egg-info/requires.txt
+Shop_Filtering_Tool_Inect_1.egg-info/top_level.txt
+shop/BinaryTree.py
+shop/Filter.py
+shop/Infix_to_Polish.py
+shop/Parsers.py
+shop/Query.py
+shop/Record.py
+shop/Shop.py
+shop/__init__.py
