@@ -1,0 +1,6 @@
+
+[:platform_system != "Windows"]
+python-magic==0.4.27
+
+[:platform_system == "Windows"]
+python-magic-bin==0.4.14
