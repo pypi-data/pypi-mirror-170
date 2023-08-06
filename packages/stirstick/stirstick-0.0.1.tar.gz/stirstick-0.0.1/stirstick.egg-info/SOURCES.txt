@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+stirstick/__init__.py
+stirstick/mixing.py
+stirstick/plotting.py
+stirstick.egg-info/PKG-INFO
+stirstick.egg-info/SOURCES.txt
+stirstick.egg-info/dependency_links.txt
+stirstick.egg-info/top_level.txt
