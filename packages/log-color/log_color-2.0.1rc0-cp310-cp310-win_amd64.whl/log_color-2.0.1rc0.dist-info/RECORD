@@ -1,0 +1,14 @@
+950f013fa5d8a4b2a533__mypyc.cp310-win_amd64.pyd,sha256=lPPLHcToVZm8SMmYHfnb1C9g5fcYkRt3yQv6yX2wsJg,56320
+log_color/__init__.py,sha256=xCyx0SGdxdjnkHsgQ4eb-7a62AAn-vvL2gjWuW3XfaQ,113
+log_color/colors.py,sha256=Fh3spv7hTYjT5Ju0iEvDpaXFIXINkWbxkw97Nxd6WEc,1436
+log_color/formatters.cp310-win_amd64.pyd,sha256=SttSMIx-lXLblTtEJxTLX4TVcTQiW3pUOk4yTfhXk8E,10752
+log_color/formatters.py,sha256=ixQpEtTVhAVRcK3eFWp-NYyXY6erCifrT4jsObGOGPo,2046
+log_color/lib.cp310-win_amd64.pyd,sha256=y9PceoIv2-9C686ypq3-KkpBLGPnHQZAYecnZIRg9wQ,10752
+log_color/lib.py,sha256=RzsqcuqnTc4VUn49VGb2rqSnTUZHm1HPxS6N48HLsUo,3388
+log_color/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+log_color/regex.py,sha256=j8KpdJzGg5UBSJ8QC3YTVRb8przHM9AsP982MuyeASs,82
+log_color-2.0.1rc0.dist-info/LICENSE,sha256=MeqkoKwC7JdNdVRNRx8R2eZNQrUQ-3n03TuuYw3kaH0,541
+log_color-2.0.1rc0.dist-info/METADATA,sha256=cTYRTAKftArN0T8Oi4vEQqX46DRoflM-y18rsmYeMMQ,3404
+log_color-2.0.1rc0.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+log_color-2.0.1rc0.dist-info/top_level.txt,sha256=3CWoLY-6f1B8LyMxyPWC22we8UpKEki2F6tnG2qWZbo,38
+log_color-2.0.1rc0.dist-info/RECORD,,
