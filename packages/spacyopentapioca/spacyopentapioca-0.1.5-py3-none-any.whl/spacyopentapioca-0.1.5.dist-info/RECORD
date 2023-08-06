@@ -1,0 +1,10 @@
+spacyopentapioca/__init__.py,sha256=q4GpHNe2fJJJW5fx0hMDOn1hGTd0eINVX3Q7CqoAMeQ,68
+spacyopentapioca/entity_linker.py,sha256=1VOzisw1or2Re0aEfPpo4XZ9cRirVeDcm76q3jXvK_k,5486
+tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/test_opentapioca.py,sha256=Ds4zE0d_K5zD88rdGGNzuM1fQdBXoPkyBTdf5mVveH8,1039
+spacyopentapioca-0.1.5.dist-info/LICENSE,sha256=b33exVg14mms8myM5IIeI0tyFQysJGStwSkiHtFcHQo,1072
+spacyopentapioca-0.1.5.dist-info/METADATA,sha256=1Th3cNkqCx7Ph5b9iHVPwDKV_lgObMVupIDmWaZKh_4,6113
+spacyopentapioca-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+spacyopentapioca-0.1.5.dist-info/entry_points.txt,sha256=gzJU5LfuZyGnbU0Uk2IHoMvmLGSqQ8IGctwIO3ghthM,76
+spacyopentapioca-0.1.5.dist-info/top_level.txt,sha256=tmPwfRlodbPP_MW2IyqnDvR_y1w_P04XqI3tT9Nx8rU,23
+spacyopentapioca-0.1.5.dist-info/RECORD,,
