@@ -1,0 +1,4 @@
+[console_scripts]
+LingjixianAluoha = LingjixianAluoha.__main__:main
+lingjixian-aluoha = LingjixianAluoha.__main__:main
+
