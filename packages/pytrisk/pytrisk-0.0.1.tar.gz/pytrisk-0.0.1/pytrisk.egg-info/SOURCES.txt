@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pytrisk/__init__.py
+pytrisk/config.py
+pytrisk.egg-info/PKG-INFO
+pytrisk.egg-info/SOURCES.txt
+pytrisk.egg-info/dependency_links.txt
+pytrisk.egg-info/top_level.txt
