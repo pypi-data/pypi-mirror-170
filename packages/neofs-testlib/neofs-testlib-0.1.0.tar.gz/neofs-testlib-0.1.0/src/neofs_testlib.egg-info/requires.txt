@@ -1,0 +1,12 @@
+allure-python-commons>=2.9.45
+paramiko>=2.10.3
+pexpect>=4.8.0
+
+[:python_version < "3.10"]
+importlib_metadata>=5.0
+
+[dev]
+black
+bumpver
+isort
+pre-commit

@@ -1,0 +1,2 @@
+[neofs.testlib.reporter]
+allure = neofs_testlib.reporter.allure_handler:AllureHandler
