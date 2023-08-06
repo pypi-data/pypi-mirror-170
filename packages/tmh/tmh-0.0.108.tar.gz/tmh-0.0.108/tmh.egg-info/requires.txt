@@ -1,0 +1,17 @@
+transformers
+diffusers
+torch
+torchaudio
+speechbrain
+librosa
+noisereduce
+numpy
+scipy
+unidecode
+inflect
+librosa
+python-dotenv
+deep-phonemizer
+argparse
+pydub
+pyctcdecode
