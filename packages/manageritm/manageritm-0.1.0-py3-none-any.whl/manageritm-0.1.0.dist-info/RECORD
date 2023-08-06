@@ -1,0 +1,13 @@
+manageritm/__init__.py,sha256=TqC_bImF6EGFVG22NZso67zjCe_df8Kb_w9bjg_gjTU,65
+manageritm/app.py,sha256=pxfvWBzChbO7C7TF1pl45-QOMOvBJYsXPqTJHS1ocO0,806
+manageritm/client/__init__.py,sha256=JrOmkdUSUkfxCMWvLzsHP58yYujCjIHuNnow6_LwJTA,75
+manageritm/client/manageritm_client.py,sha256=JhsZxK4vob2LjPdhtfW0wPORsYJ8335K5TrzFRErBqY,2298
+manageritm/server/__init__.py,sha256=mhA2vfQ6N_zV6ybbFINyj3Fs2_lqCnLptHYNE5gnZxo,561
+manageritm/server/process_minder.py,sha256=rmmt99QdCjnbWhHuASEzan1dACU1flZTZbXlUMQ_SmE,2233
+manageritm/server/routes.py,sha256=OAI-FjifSEoiUqfPrlYfqPiAfRwfUL7ZCqWosjnb4yM,5252
+manageritm/server/scripts/har_dump.py,sha256=mwkcPYmeEdWEH5A7eNikeMyyOzX6LrSBcO-0HRGadO8,7369
+manageritm-0.1.0.dist-info/entry_points.txt,sha256=0T9UDZaBh33A3IS29XVkax-HrFB4st8iC5wZsATMdrE,49
+manageritm-0.1.0.dist-info/LICENSE,sha256=4u6YxpOE62uvQo2F_b0JCbEapO-z0o8L02X1eLP7Wig,1072
+manageritm-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+manageritm-0.1.0.dist-info/METADATA,sha256=iewZUm9Sy9NIIFCSeTEoPYB5umUffAoJfPZadydSWwM,2902
+manageritm-0.1.0.dist-info/RECORD,,
