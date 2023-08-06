@@ -1,0 +1,17 @@
+matplotlib
+numpy>=1.21.0
+pandas
+plotly
+pymatgen
+scikit-learn
+scipy
+
+[:python_version < "3.8"]
+typing_extensions
+
+[data_src]
+matminer
+
+[test]
+pytest
+pytest-cov
