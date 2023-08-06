@@ -1,0 +1,119 @@
+{
+ "140434524903488": {
+  "strategy": "list",
+  "kind": "builtins.list",
+  "comparable": false,
+  "items": [
+   "140434526437616",
+   "140434526437648",
+   "140434526437680",
+   "140434525643776",
+   "140434537614912",
+   "140434524535440"
+  ]
+ },
+ "140434526437616": {
+  "strategy": "repr",
+  "kind": "builtins.int",
+  "comparable": true,
+  "value": "1"
+ },
+ "140434526437648": {
+  "strategy": "repr",
+  "kind": "builtins.int",
+  "comparable": true,
+  "value": "2"
+ },
+ "140434526437680": {
+  "strategy": "repr",
+  "kind": "builtins.int",
+  "comparable": true,
+  "value": "3"
+ },
+ "140434525643776": {
+  "strategy": "dict",
+  "kind": "builtins.dict",
+  "comparable": true,
+  "items": {
+   "140434526437616": "140434526437616"
+  }
+ },
+ "140434537614912": {
+  "strategy": "repr",
+  "kind": "types.NoneType",
+  "comparable": true,
+  "value": "None"
+ },
+ "140434523319104": {
+  "strategy": "list",
+  "kind": "builtins.tuple",
+  "comparable": true,
+  "items": [
+   "94619179206000",
+   "140434537607776",
+   "140434537614912"
+  ]
+ },
+ "94619179206000": {
+  "strategy": "repr",
+  "kind": "builtins.type",
+  "comparable": true,
+  "value": "<class '__main__.B'>"
+ },
+ "140434537607776": {
+  "strategy": "repr",
+  "kind": "builtins.type",
+  "comparable": true,
+  "value": "<class 'object'>"
+ },
+ "140434524535440": {
+  "strategy": "reduce",
+  "kind": "__main__.B",
+  "comparable": false,
+  "constructor": "copyreg._reconstructor",
+  "args": "140434523319104",
+  "state": "140434524929920",
+  "listitems": "140434523929728",
+  "dictitems": "140434523929856"
+ },
+ "140434524929920": {
+  "strategy": "dict",
+  "kind": "builtins.dict",
+  "comparable": true,
+  "items": {
+   "140434525690992": "140434526437616",
+   "140434525690544": "140434526437648",
+   "140434525690672": "140434526437680"
+  }
+ },
+ "140434525690992": {
+  "strategy": "repr",
+  "kind": "builtins.str",
+  "comparable": true,
+  "value": "'b1'"
+ },
+ "140434525690544": {
+  "strategy": "repr",
+  "kind": "builtins.str",
+  "comparable": true,
+  "value": "'b2'"
+ },
+ "140434525690672": {
+  "strategy": "repr",
+  "kind": "builtins.str",
+  "comparable": true,
+  "value": "'b3'"
+ },
+ "140434523929728": {
+  "strategy": "list",
+  "kind": "builtins.list",
+  "comparable": true,
+  "items": []
+ },
+ "140434523929856": {
+  "strategy": "dict",
+  "kind": "builtins.dict",
+  "comparable": true,
+  "items": {}
+ }
+}
