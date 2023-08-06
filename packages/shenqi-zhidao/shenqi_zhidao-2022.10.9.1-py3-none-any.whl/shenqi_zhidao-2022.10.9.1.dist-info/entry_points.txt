@@ -1,0 +1,4 @@
+[console_scripts]
+ShenqiZhidao = ShenqiZhidao.__main__:main
+shenqi-zhidao = ShenqiZhidao.__main__:main
+
