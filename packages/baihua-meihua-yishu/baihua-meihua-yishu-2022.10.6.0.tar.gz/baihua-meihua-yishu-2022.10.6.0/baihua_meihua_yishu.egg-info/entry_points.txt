@@ -1,0 +1,4 @@
+[console_scripts]
+BaihuaMeihuaYishu = BaihuaMeihuaYishu.__main__:main
+baihua-meihua-yishu = BaihuaMeihuaYishu.__main__:main
+
