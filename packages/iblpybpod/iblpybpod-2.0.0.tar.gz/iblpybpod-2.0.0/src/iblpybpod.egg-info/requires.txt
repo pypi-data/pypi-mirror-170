@@ -1,0 +1,17 @@
+aenum
+AnyQt
+confapp
+markdown2
+matplotlib
+numpy
+opencv-python==4.3.0.36
+pandas
+PyOpenGL
+PyQt5
+PyQtWebEngine
+pyserial
+pyusb
+PyYAML
+QScintilla
+scipy
+visvis
