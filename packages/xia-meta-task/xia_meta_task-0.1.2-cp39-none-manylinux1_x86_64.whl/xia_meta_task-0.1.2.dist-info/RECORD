@@ -1,0 +1,9 @@
+xia_meta_task/__init__.py,sha256=wYsFUsaGI86vG4phgwf4C395XJRR7nYSpMKPUtLp9rU,162
+xia_meta_task/base.cpython-39-x86_64-linux-gnu.so,sha256=PO4-74NhDs9fheScJjq7c0OWXZo79AtzZk2ZOL5MPHQ,747912
+xia_meta_task/log.cpython-39-x86_64-linux-gnu.so,sha256=A5Y9L2ujC8_EXmhdjnV8vntJRiRLt15givsmpceyp8M,747912
+xia_meta_task/task.cpython-39-x86_64-linux-gnu.so,sha256=kTSkXP_IwaNROAwIbOjbxkpVgWrb6RCXzChLjphQuGI,801192
+xia_meta_task-0.1.2.dist-info/LICENSE.txt,sha256=s8Y3QvYp13RfTIzQG1U67Z1gbQXYMWx4mw-q2tUa5X8,154
+xia_meta_task-0.1.2.dist-info/METADATA,sha256=p6ARTVxcJiC57EJqtZldVY_q9EM6DkqYEEwCDSsrvvM,777
+xia_meta_task-0.1.2.dist-info/WHEEL,sha256=qkSVf_2y_meuNtxjbahKGy4LKa5aE9SY7z8YZA90byg,107
+xia_meta_task-0.1.2.dist-info/top_level.txt,sha256=AqjvYT1oRbY6s6dP5-MEXTSpezegGtQlLDCHtHzq22c,14
+xia_meta_task-0.1.2.dist-info/RECORD,,
