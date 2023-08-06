@@ -1,0 +1,13 @@
+sw_service_lib/__init__.py,sha256=y1lC8XHSYP7rro0s-ZMWXsof0SWdelXQtQDzVAJ3-do,87
+sw_service_lib/billing.py,sha256=68Qal1J2dyDhOGjhGehoCa7lS2BbNm9SLuhmydSLwUs,3878
+sw_service_lib/client.py,sha256=N-u8h-_9y4Co8UgpT3XMMPlc62visBXPL5JdhnPrBAA,23523
+sw_service_lib/error.py,sha256=j5iJ0oVx3D8llqHxzZIaLkNPnTvuRHEw2VQrr_Z0N_8,2077
+sw_service_lib/fast.py,sha256=3QdjDn24KO-0fcnJSrbWvcLjRNuZCzimHRK3JDCHN80,231
+sw_service_lib/job.py,sha256=iYqNET8pOi24VIkMEwf3f7rDDIxM-G9P8EYlKPbOQ_c,7494
+sw_service_lib/platform.py,sha256=ys0zB2D4E7W8-bVcyvWR-ikqlsnmTsb_dR0iIbZwasg,3383
+sw_service_lib/resource.py,sha256=pYrWq_N6B9IoeUuX16TvE0lsSkqTBKcCh3TJu_de_N0,8392
+sw_service_lib/service.py,sha256=5MmPA47di1sXdn9gG5W4bvtk3fC8NIGzC7yrUxoJTa8,6523
+sw_service_lib/transport.py,sha256=eCJJHt6jCnjUAdNimh7eTI-_Vns5x43i0c2uKt6UVRc,3879
+sw_service_lib-0.1.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+sw_service_lib-0.1.1.dist-info/METADATA,sha256=J_nelcQoulrYIFGTKjfT_knIOGtDZzSwDSK4YNlKmwM,781
+sw_service_lib-0.1.1.dist-info/RECORD,,
