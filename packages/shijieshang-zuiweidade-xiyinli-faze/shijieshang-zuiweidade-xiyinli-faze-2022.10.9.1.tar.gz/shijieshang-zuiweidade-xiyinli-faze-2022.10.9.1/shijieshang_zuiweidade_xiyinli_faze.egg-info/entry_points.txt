@@ -1,0 +1,4 @@
+[console_scripts]
+ShijieshangZuiweidadeXiyinliFaze = ShijieshangZuiweidadeXiyinliFaze.__main__:main
+shijieshang-zuiweidade-xiyinli-faze = ShijieshangZuiweidadeXiyinliFaze.__main__:main
+
