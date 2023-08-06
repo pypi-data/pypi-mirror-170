@@ -1,0 +1,15 @@
+detacache/__init__.py,sha256=LvVIBSBXnztBpokX33cQuTRzI6ZjSmrbFjaNhKaFFiA,211
+detacache/coder.py,sha256=To8c4WZCMV-ttQzqINuozkpXtD_ccbtAViaUA0Sas4c,155
+detacache/decorators.py,sha256=G-CIOGZehHeOgTImVNZf1cIPW3XrrOIIaCy5Ty_ZUAk,176
+detacache/key.py,sha256=iSe38udSQqr-XqzyYPQWXdGR-1QLPeE_Xb2hgisZV8M,122
+detacache/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+detacache/core/_coder.py,sha256=mQThQm70tkZhHfHsRlMZ3397Tn2MmX98ONyZGn_Q0_w,2613
+detacache/core/_decorators.py,sha256=rRjmZYMxEFz0-BuyYmUSwhePQwSgpt4KD6jb8UgxPEM,3676
+detacache/core/_detaBase.py,sha256=rLSK5SdgKAZz9W9NL_kydl1ykicw4GEt4VsYh3Z8yUU,2326
+detacache/core/_helpers.py,sha256=GAdOzGYNWNN7zFIVX3mmxpTdqDgXZlo0e6IvA88qdjw,315
+detacache/core/_key.py,sha256=axjD5-ScsKq3P-rWHGNZX0Jl5E7piXrQxBt7JM1Hp1c,2416
+detacache-0.1.2.dist-info/LICENSE.txt,sha256=ZtVb0C8W7lfq0fqJq-_mEEpyT_FZRypevtUz2lTfA3g,1067
+detacache-0.1.2.dist-info/METADATA,sha256=JRv90PYRY6mG8yWHrLvhD2-5G8dh5OaW-6zGjg0nr10,10393
+detacache-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+detacache-0.1.2.dist-info/top_level.txt,sha256=AepoygfHmtKgXauOO9kHbCyDYbC2ajcQny58I8pXXjI,10
+detacache-0.1.2.dist-info/RECORD,,
