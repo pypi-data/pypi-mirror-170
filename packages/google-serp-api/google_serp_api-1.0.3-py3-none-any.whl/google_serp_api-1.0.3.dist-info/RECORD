@@ -1,0 +1,9 @@
+google_serp_api/__init__.py,sha256=OPncQR32Fucy8-lU-aC6SkVmk1rsIS8iApKp-9DwCNA,90
+google_serp_api/__version__.py,sha256=qKK4BMzdt84HiCorJPWqgEfa_DbJeuGx_bIPrDui2vc,22
+google_serp_api/client.py,sha256=RasMQuZwzemwDbU_tTvcqCVfTHAlYouYUNXtjwdWpNI,566
+google_serp_api/default_headers.py,sha256=D_D6nWdLfrlzR1xMijCv-qfLw3AaDQQvrAviqY9r2HU,143
+google_serp_api-1.0.3.dist-info/LICENSE,sha256=iLsO0jt3UF0oAY9BelUrdKHHv78A5PT5ipLiJc2_50c,1071
+google_serp_api-1.0.3.dist-info/METADATA,sha256=ogIteJZMcu4z187zUZnlAC9KJ-31PjgVBZYVgDGDhsA,9348
+google_serp_api-1.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+google_serp_api-1.0.3.dist-info/top_level.txt,sha256=opVXcug8Ip2fum6_9a7g4xogR9lzQ4parMwDFjJyW_A,16
+google_serp_api-1.0.3.dist-info/RECORD,,
