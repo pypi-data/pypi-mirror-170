@@ -1,0 +1,10 @@
+setup.py
+shaq_distributions/Binomialdistribution.py
+shaq_distributions/Gaussiandistribution.py
+shaq_distributions/Generaldistribution.py
+shaq_distributions/__init__.py
+shaq_distributions.egg-info/PKG-INFO
+shaq_distributions.egg-info/SOURCES.txt
+shaq_distributions.egg-info/dependency_links.txt
+shaq_distributions.egg-info/not-zip-safe
+shaq_distributions.egg-info/top_level.txt
