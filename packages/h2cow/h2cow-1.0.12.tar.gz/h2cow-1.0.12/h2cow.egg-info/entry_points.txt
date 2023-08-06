@@ -1,0 +1,2 @@
+[console_scripts]
+h2cow = h2cow.cli:main
