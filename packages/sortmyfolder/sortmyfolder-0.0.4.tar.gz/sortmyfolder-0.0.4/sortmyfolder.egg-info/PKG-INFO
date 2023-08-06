@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sortmyfolder
+Version: 0.0.4
+Summary: Auto sorting tool to allow you organise any file or folder in a directory using the file extensions
+Author: Emmanuel Agyapong
+Author-email: emmanuelagyapong070@gmail.com
+Keywords: python,automation,sorting
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENCE
