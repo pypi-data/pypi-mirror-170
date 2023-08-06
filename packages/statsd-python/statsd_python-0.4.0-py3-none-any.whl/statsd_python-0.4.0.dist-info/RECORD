@@ -1,0 +1,14 @@
+statsd/__init__.py,sha256=08qnQuDN353gsbfEFGcdrGqlnmCjx53DppycKDrF5cM,364
+statsd/client.py,sha256=Pkd6-vFtEmNt1syWKoLJi6m4hWaSPRN82528DCWCVok,18336
+statsd/formats.py,sha256=A0ZRenti2IQVFJl7CC8LR5tIv0GB5IYrqgreErU5AlE,6019
+statsd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+statsd/version.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+statsd/__pycache__/__init__.cpython-39.pyc,sha256=I39PS0s71CT4yoooap4GvF2bS9Gg_QS1QSe01A4-xsI,459
+statsd/__pycache__/client.cpython-39.pyc,sha256=_sRcLNLXFnWGAaxsWqrFZXpcGrBAu0IF3fqDQXl6AKM,16348
+statsd/__pycache__/formats.cpython-39.pyc,sha256=a1-LLm4G_qCu1iWNJgm6j_32l6_fOzYyKt5rD_JrsIw,6099
+statsd/__pycache__/version.cpython-39.pyc,sha256=Hf-MiyO-v-3W2PyUq8RaAYG6842aSX9ez3KChZA_SnY,192
+statsd_python-0.4.0.dist-info/LICENSE,sha256=pgFckKupVSJnXQAg-NSrBwqhfeWkmrI41opWmql2pxs,1071
+statsd_python-0.4.0.dist-info/METADATA,sha256=H8f0QOKFKoiTMClwgRNQVIHX7jZwXBmM3DyhLqTgjEg,2938
+statsd_python-0.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+statsd_python-0.4.0.dist-info/top_level.txt,sha256=IQE1P6N4N8m2iJv6igS3tHrrwGpGvpylkpbIafNNkiU,7
+statsd_python-0.4.0.dist-info/RECORD,,
