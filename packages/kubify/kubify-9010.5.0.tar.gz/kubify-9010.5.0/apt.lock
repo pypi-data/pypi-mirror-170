@@ -1,0 +1,8 @@
+docker-compose
+python3-pip
+python3-bandit
+make
+git
+curl
+unzip
+jq

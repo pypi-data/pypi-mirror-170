@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  kubify:
+    build:
+      network: host
+    working_dir: /src/kubify
+    network_mode: host
+    volumes:
+      - $PWD/:/src/kubify:cached
+    privileged: true
+    command: ./docker-compose.sh
