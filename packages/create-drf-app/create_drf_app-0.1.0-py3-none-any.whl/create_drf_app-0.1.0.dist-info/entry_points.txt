@@ -1,0 +1,3 @@
+[console_scripts]
+create-drf-app=create_drf_app.main:app
+
