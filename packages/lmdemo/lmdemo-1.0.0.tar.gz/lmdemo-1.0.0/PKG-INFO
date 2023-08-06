@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: lmdemo
+Version: 1.0.0
+Summary: 
+Author: chase mateusiak
+Author-email: chase.mateusiak@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.23.3,<2.0.0)
