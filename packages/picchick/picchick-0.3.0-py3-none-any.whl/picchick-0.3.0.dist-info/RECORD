@@ -1,0 +1,11 @@
+picchick/__init__.py,sha256=bNYqK-1lTMz5wljIT9KbFYrUzdFtnLxJK9jjZFsxHbs,51
+picchick/__main__.py,sha256=wGiwmgtbcPDvplaWAwg6SAVzP91lAz9lTnTqL0VEc8o,59
+picchick/cli.py,sha256=WW9NuVUHrvGoFwU-O-KYU63cNMOkcercR_d5F_9FyB0,8422
+picchick/devices.py,sha256=OkFe76J1_JTOVM8l19b-4tFmxFsUceJZviqw4anmSTM,8539
+picchick/hexfile.py,sha256=jUwPn1YuOY1KiGxbRB4RCTIowHq9swgLRsOX0kYn1-0,10419
+picchick-0.3.0.dist-info/LICENSE,sha256=-6Scv7QYuzZVYG4gKy5g5JcR1bJfdUAUhIavBGcUju0,1637
+picchick-0.3.0.dist-info/METADATA,sha256=E3Mtztb6WwrpjobHwUZYgWZquyw0_2RQp4PJo6nYgnM,7235
+picchick-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+picchick-0.3.0.dist-info/entry_points.txt,sha256=NjJHT-5epQiMejAY8uS3pZTuwJaIEW7-_349Q4sYorQ,44
+picchick-0.3.0.dist-info/top_level.txt,sha256=EoQcfwRKi-l9Wq-IhbJIj30ArzXyhb30YeH04Yz_RjE,9
+picchick-0.3.0.dist-info/RECORD,,
