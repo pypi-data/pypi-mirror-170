@@ -1,0 +1,4 @@
+[run]
+include = effect_form_validators/effect_*/*
+omit = effect_form_validators/tests/*
+branch = 1
