@@ -1,0 +1,8 @@
+scikit-learn
+matplotlib
+numpy
+PyWavelets
+statsmodels
+pydub
+simpleaudio
+opecv-python
