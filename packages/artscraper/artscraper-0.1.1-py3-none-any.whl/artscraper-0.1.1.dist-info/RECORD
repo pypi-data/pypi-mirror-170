@@ -1,0 +1,9 @@
+artscraper/__init__.py,sha256=7satj9jIhmZgd6EJK0Nm-v89oFz2SxUnFK4FA8Vf64A,213
+artscraper/base.py,sha256=WBbohzpPy9pl8-SyYR3Y-X3xuHdWiU_TTCtvPGLoKXw,5374
+artscraper/googleart.py,sha256=EB_FW32hUynjM0ewcTzSzPzOiBVMcPUJftb_mKHppfY,6645
+artscraper/wikiart.py,sha256=OEKQL3G9S0D292W6QKBzRB0UBnVX8uykceW_LkuwwMw,7634
+artscraper-0.1.1.dist-info/LICENSE,sha256=F0fPQwRvb0mR1WGJ0J-D1IJIlq_KodaunhVNsLuIOkQ,1061
+artscraper-0.1.1.dist-info/METADATA,sha256=kOQkr8xGjeoXzuWjv6SbkzsdBRAPQsDHXx8UrmnU_v8,464
+artscraper-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+artscraper-0.1.1.dist-info/top_level.txt,sha256=lB_IDrTHtE-zzg-oQKVLQ9ffD1xiwwYUBB4s3XJCT1Y,11
+artscraper-0.1.1.dist-info/RECORD,,
