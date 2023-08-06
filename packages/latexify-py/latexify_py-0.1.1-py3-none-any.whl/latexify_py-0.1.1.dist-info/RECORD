@@ -1,0 +1,8 @@
+latexify/__init__.py,sha256=1qs6cvhttMg2CH-5tNbPZ9TF6KElgw8euxW0rp1P6tY,691
+latexify/constants.py,sha256=Tm6c2GXMoj8wOx_6XORDs8rDEuCIhMVqqkKiaDzRLG8,2925
+latexify/core.py,sha256=PZE28W1ho1pMXk5EuSvhuEnZU1E7wiF6kvopvhJyX38,11912
+latexify/node_visitor_base.py,sha256=1XgfvG2_SIYWAoJsrLCLTAkvBYSRPPxsHrgxnfDiLFY,2761
+latexify_py-0.1.1.dist-info/METADATA,sha256=oW5hsijtKzB31KgvpsfgMfAdsYOqm9uC_0WB9eMq_a8,1931
+latexify_py-0.1.1.dist-info/WHEEL,sha256=dX1WPp444jXDT0mMZWrdU6ZHm7Cfu0jldiLCQOk_Kmg,87
+latexify_py-0.1.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+latexify_py-0.1.1.dist-info/RECORD,,
