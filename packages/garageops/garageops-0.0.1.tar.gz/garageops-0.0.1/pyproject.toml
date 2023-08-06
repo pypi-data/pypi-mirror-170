@@ -1,0 +1,75 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "garageops"
+authors = [
+  { name = "Chris Wilson", email = "christopher.david.wilson@gmail.com" },
+]
+license = "MIT"
+description = "Garage Ops"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "typer[all]"
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://github.com/garageops/garageops"
+"Issues" = "https://github.com/garageops/garageops/issues"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+# [project.entry-points.console_scripts]
+# garageops = "garageops.__main__:main"
+
+# https://hatch.pypa.io/latest/config/metadata/#cli
+[project.scripts]
+garageops = "garageops.__main__:main"
+
+[tool.hatch.version]
+path = "src/garageops/__about__.py"
+
+[tool.isort]
+# https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html#isort
+profile = "black"
+
+[tool.pylint.format]
+# https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html#pylint
+max-line-length = "88"
+
+# https://docformatter.readthedocs.io/en/latest/configuration.html
+[tool.docformatter]
+black = true
+
+[tool.interrogate]
+ignore-init-method = true
+ignore-init-module = true
+ignore-magic = true
+ignore-semiprivate = true
+ignore-private = true
+ignore-property-decorators = true
+ignore-module = true
+ignore-nested-functions = false
+ignore-nested-classes = true
+ignore-setters = false
+fail-under = 100
+exclude = []
+ignore-regex = []
+verbose = 2
+quiet = false
+whitelist-regex = []
+color = true
+omit-covered-files = false
+
+[tool.pydocstyle]
+# https://www.pydocstyle.org/en/stable/error_codes.html
+ignore = "D100,D103,D104"

@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: garageops
+Upstream-Contact: Chris Wilson <christopher.david.wilson@gmail.com>
+Source: https://github.com/garageops/garageops
+
+Files: *
+Copyright: 2022 Chris Wilson <christopher.david.wilson@gmail.com>
+License: MIT

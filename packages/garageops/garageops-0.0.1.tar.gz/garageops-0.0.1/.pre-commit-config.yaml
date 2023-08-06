@@ -1,0 +1,68 @@
+# SPDX-FileCopyrightText: 2022 Flying Camp Design <https://flyingcamp.design>
+#
+# SPDX-License-Identifier: MIT
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+      - id: check-toml
+      - id: check-yaml
+      - id: debug-statements
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+        args:
+          - --markdown-linebreak-ext=md
+  - repo: https://github.com/fsfe/reuse-tool
+    rev: v1.0.0
+    hooks:
+      - id: reuse
+  - repo: https://github.com/psf/black
+    rev: "22.10.0"
+    hooks:
+      - id: black
+        # It is recommended to specify the latest version of Python
+        # supported by your project here, or alternatively use
+        # pre-commit's default_language_version, see
+        # https://pre-commit.com/#top_level-default_language_version
+        # language_version: python3.10
+  - repo: https://github.com/pycqa/isort
+    rev: "5.10.1"
+    hooks:
+      - id: isort
+        additional_dependencies:
+          - toml
+  # https://flake8.pycqa.org/en/latest/user/using-hooks.html
+  - repo: https://github.com/pycqa/flake8
+    rev: "5.0.4"
+    hooks:
+      - id: flake8
+        additional_dependencies:
+          - flake8-bugbear
+          - flake8-docstrings
+  - repo: https://github.com/PyCQA/docformatter
+    rev: v1.5.0
+    hooks:
+      - id: docformatter
+        args:
+          - --in-place
+  # https://hynek.me/articles/document-your-tests/
+  - repo: https://github.com/econchick/interrogate
+    rev: 1.5.0
+    hooks:
+      - id: interrogate
+        args: [tests]
+        pass_filenames: false
+  - repo: https://github.com/pycqa/pydocstyle
+    rev: 6.1.1
+    hooks:
+      - id: pydocstyle
+        additional_dependencies:
+          - toml
+  # - repo: local
+  #   hooks:
+  #     - id: pylint
+  #       name: pylint
+  #       entry: pylint
+  #       language: system
+  #       types: [python]

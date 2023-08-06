@@ -1,0 +1,8 @@
+# SPDX-FileCopyrightText: 2022 Chris Wilson <christopher.david.wilson@gmail.com>
+#
+# SPDX-License-Identifier: MIT
+
+# https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html#flake8
+[flake8]
+max-line-length = 88
+extend-ignore = E203, D100, D103, D104
