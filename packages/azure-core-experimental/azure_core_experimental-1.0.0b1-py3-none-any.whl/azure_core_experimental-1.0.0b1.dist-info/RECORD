@@ -1,0 +1,10 @@
+azure/core/experimental/__init__.py,sha256=NCkVf7CbZ91MvXW6LfF7XzOZr_sN77x5FP5eBkxPDE4,1356
+azure/core/experimental/_version.py,sha256=4fIzgmpmly_8TrZUp42eonNm9Q_5lvKxGgN1Nc1kCGU,172
+azure/core/experimental/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azure/core/experimental/transport/__init__.py,sha256=PUt6-Tkufl6A4TJeqFcXHDLA9MQfpWn6uxrI1QUnTzQ,1862
+azure/core/experimental/transport/_pyodide.py,sha256=hUZzVz9t0dAw_Gx69usgF4-JKdr06TJRJIGooEJBWH4,6431
+azure_core_experimental-1.0.0b1.dist-info/LICENSE,sha256=_VMkgdgo4ToLE8y1mOAjOKNhd0BnWoYu5r3BVBto6T0,1073
+azure_core_experimental-1.0.0b1.dist-info/METADATA,sha256=S7eOcaNzs5XwEeve8CnJCiDRRZ8WRCxzFWV_tRy3S7k,2653
+azure_core_experimental-1.0.0b1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+azure_core_experimental-1.0.0b1.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
+azure_core_experimental-1.0.0b1.dist-info/RECORD,,
