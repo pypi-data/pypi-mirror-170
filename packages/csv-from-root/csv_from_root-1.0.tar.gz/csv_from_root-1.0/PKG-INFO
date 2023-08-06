@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: csv_from_root
+Version: 1.0
+Summary: From a given root directory will generate a csv file containing the files present in each subdir with respect to a given main_dir
+Home-page: UNKNOWN
+Author: Jack Geraghty
+Author-email: jgeraghty049@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

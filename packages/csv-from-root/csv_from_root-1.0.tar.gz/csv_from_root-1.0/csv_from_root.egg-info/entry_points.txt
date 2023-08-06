@@ -1,0 +1,3 @@
+[console_scripts]
+csv_from_root = csv_from_root.csv_from_root:main
+
