@@ -1,0 +1,4 @@
+[console_scripts]
+ZiweiTanyuan = ZiweiTanyuan.__main__:main
+ziwei-tanyuan = ZiweiTanyuan.__main__:main
+
