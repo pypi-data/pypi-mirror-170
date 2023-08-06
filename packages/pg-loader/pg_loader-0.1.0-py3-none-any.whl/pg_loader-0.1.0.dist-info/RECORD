@@ -1,0 +1,9 @@
+pg_loader/__init__.py,sha256=4o1Ovbusb3bhNt9jFeSwc5BmPloRzJLAEl4leVZ_dXc,164
+pg_loader/compare.py,sha256=k2-sa4rxQmWuuzdxE4HhkUAXs5ujLgvU8-hXmhFt9FY,9283
+pg_loader/create.py,sha256=v3AVDyoccMBHpk_LwQzN61OG3TeuJozoDgYReOhEMRs,4023
+pg_loader/load.py,sha256=h17tLVml1QRMdr-E__hygmbnt783aE7ROwVn83trzUs,19855
+pg_loader/types.py,sha256=tjvu555SF-ku9462qRuBwZwbx47ZvXyP99Xfmxzbxmc,951
+pg_loader/utils.py,sha256=Q3apKRXQRCCKss6tX74l_BwX8_LC-LtahCcwQDAbUuc,8321
+pg_loader-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pg_loader-0.1.0.dist-info/METADATA,sha256=c_v3JSB8eJLS57ys7lMPCwv1KG0J5J9_2JZjLfGwFbs,615
+pg_loader-0.1.0.dist-info/RECORD,,
