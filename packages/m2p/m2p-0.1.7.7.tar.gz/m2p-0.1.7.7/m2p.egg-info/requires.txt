@@ -1,0 +1,7 @@
+pandas
+tqdm
+numpy
+casadi
+
+[test]
+pytest
