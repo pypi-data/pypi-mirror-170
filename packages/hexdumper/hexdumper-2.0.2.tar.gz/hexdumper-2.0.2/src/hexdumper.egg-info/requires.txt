@@ -1,0 +1,2 @@
+hash_calc==1.1.0
+hexlib==2.0.3
