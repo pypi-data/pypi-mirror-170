@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/gradient_descent_the_ultimate_optimizer/__init__.py
+src/gradient_descent_the_ultimate_optimizer/gdtuo.py
+src/gradient_descent_the_ultimate_optimizer.egg-info/PKG-INFO
+src/gradient_descent_the_ultimate_optimizer.egg-info/SOURCES.txt
+src/gradient_descent_the_ultimate_optimizer.egg-info/dependency_links.txt
+src/gradient_descent_the_ultimate_optimizer.egg-info/top_level.txt
