@@ -1,0 +1,16 @@
+cmtt/__init__.py,sha256=_wIDapZtMYLoXLxsfnPGVY3MXbjSetUxtMkGCQra7rM,215
+cmtt/data/__init__.py,sha256=dtiBz0NtCZbLCcrr-eBK_GU0nuGbs58tDeUJHcWkdmw,5263
+cmtt/data/data.json,sha256=DpipVP24WUSLcPqP36_Q0gWmBwykKr8Ldhpj9T_D18E,1545
+cmtt/data/downloader.py,sha256=7j3yBuCcfLdRg0GDNNr9sREW7NhqpwLJaWKBbK50l9E,8135
+cmtt/preprocessing/__init__.py,sha256=eXzTh2_rTWNAgfcR3xTQutPC9ErbwYnmLrpVhlugl5g,108
+cmtt/preprocessing/search.py,sha256=YVc3KiaGWeB0Y9TNyGFV6UoBxxBiqfszaWdnIfe_wcs,1340
+cmtt/preprocessing/tokenizer/__init__.py,sha256=eHE0JbnqvjUYKxmf8gQrfrYCDcXImA44XZBhqLsnBFA,6593
+cmtt/preprocessing/tokenizer/vocab.txt,sha256=MpWQOhMZ-Ui4tqyiwGenrqd4nkbrntggD412tXI-GGg,835235
+cmtt-0.3.0.data/data/cmtt/data/data.json,sha256=DpipVP24WUSLcPqP36_Q0gWmBwykKr8Ldhpj9T_D18E,1545
+cmtt-0.3.0.data/data/cmtt/preprocessing/tokenizer/vocab.txt,sha256=MpWQOhMZ-Ui4tqyiwGenrqd4nkbrntggD412tXI-GGg,835235
+tests/__init__.py,sha256=KEs-Rd1dwA3Aaenj8ex1vDHv5vAxQ2FvnwoOdnZUzNM,56
+tests/cmtt_tests.py,sha256=qqavN0mUZ4KsB4j6U08gUj1LOttR9_Ucxfh4qbIo1Mo,2148
+cmtt-0.3.0.dist-info/METADATA,sha256=MD09gqb5zoa3pMZwRN7chMdZByNBg6QA1jJftQn-Iy4,3539
+cmtt-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cmtt-0.3.0.dist-info/top_level.txt,sha256=2f1HGe1bldcTUISy5wqnfTDsld3sKajvOS3JfI1DizQ,11
+cmtt-0.3.0.dist-info/RECORD,,
