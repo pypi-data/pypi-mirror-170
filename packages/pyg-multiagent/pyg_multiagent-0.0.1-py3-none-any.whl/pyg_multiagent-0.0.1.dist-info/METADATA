@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyg-multiagent
+Version: 0.0.1
+Summary: Python Package for Multi-Agent Learning
+Author-email: Chenning Yu <rainorangelemon@gmail.com>
+Project-URL: Homepage, https://github.com/rainorangelemon/pygma
+Project-URL: Bug Tracker, https://github.com/rainorangelemon/pygma/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyTorch Geometric Multi-Agent
+
+[Documentation](https://pytorch-geometric-multiagent.readthedocs.io/en/latest/)
+
+-----------------------
+The official repo for the CoRL 2022 paper 'Learning Control Admissibility Models with Graph Neural Networks for Multi-Agent Navigation' ([project page](https://rainorangelemon.github.io/CoRL2022/))
+
+The current repo only includes GNN for control. For planning methods such as CBS and SIPP, please stay tuned.
+
+The current repo is actively under maintenance. The ultimate goal is to provide a benchmark and a handy tool for GNN researchers to conduct evaluations properly and fairly for multi-agent tasks.
