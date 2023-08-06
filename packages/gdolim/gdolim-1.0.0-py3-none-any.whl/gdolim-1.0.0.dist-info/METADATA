@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gdolim
+Version: 1.0.0
+Summary: Google Spreadsheets Client
+Home-page: https://github.com/jossef/gdolim
+Author: jossef
+Author-email: jossef12@gmail.com
+License: Apache v2
+Keywords: google,spreadsheets
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: google-api-python-client (==2.60.0)
+Requires-Dist: google-auth-httplib2 (==0.1.0)
+Requires-Dist: google-auth-oauthlib (==0.5.2)
+Requires-Dist: oauth2client (==3.0.0)
+Requires-Dist: XlsxWriter (==3.0.3)
+
+# gdolim
+Google Spreadsheet Client
+
+
