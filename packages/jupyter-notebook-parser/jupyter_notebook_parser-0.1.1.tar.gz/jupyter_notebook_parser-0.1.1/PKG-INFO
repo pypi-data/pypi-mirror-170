@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: jupyter_notebook_parser
+Version: 0.1.1
+Summary: A Python library that parses Jupyter notebook cells
+Home-page: https://github.com/cyyc1/jupyter-notebook-parser
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# jupyter-notebook-parser
+ A Python library to parse cell contents from Jupyter notebooks
