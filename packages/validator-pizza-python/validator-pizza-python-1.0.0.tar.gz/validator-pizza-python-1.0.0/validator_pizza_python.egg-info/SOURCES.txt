@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+validator_pizza_python/__init__.py
+validator_pizza_python/client.py
+validator_pizza_python.egg-info/PKG-INFO
+validator_pizza_python.egg-info/SOURCES.txt
+validator_pizza_python.egg-info/dependency_links.txt
+validator_pizza_python.egg-info/requires.txt
+validator_pizza_python.egg-info/top_level.txt
+validator_pizza_python/models/__init__.py
+validator_pizza_python/models/email_status.py
