@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-filament-annotator = napari_filament_annotator:napari.yaml
