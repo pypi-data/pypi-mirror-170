@@ -1,0 +1,17 @@
+eth-ape
+ape-etherscan
+ape-alchemy
+backoff
+black
+bump2version
+coverage
+datamodel-code-generator[http]
+flake8
+flake8-length
+isort
+MoralisSDK
+pytest
+pytest-datadir
+python-box
+ratelimit
+tox
