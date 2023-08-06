@@ -1,0 +1,4 @@
+[console_scripts]
+LinghunXiangyuVol1 = LinghunXiangyuVol1.__main__:main
+linghun-xiangyu-vol1 = LinghunXiangyuVol1.__main__:main
+
