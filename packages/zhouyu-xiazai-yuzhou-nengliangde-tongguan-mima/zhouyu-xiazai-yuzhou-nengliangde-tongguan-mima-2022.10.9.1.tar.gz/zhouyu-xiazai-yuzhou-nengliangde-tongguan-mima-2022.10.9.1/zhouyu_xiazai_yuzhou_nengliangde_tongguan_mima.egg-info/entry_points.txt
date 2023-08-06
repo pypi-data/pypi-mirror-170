@@ -1,0 +1,4 @@
+[console_scripts]
+ZhouyuXiazaiYuzhouNengliangdeTongguanMima = ZhouyuXiazaiYuzhouNengliangdeTongguanMima.__main__:main
+zhouyu-xiazai-yuzhou-nengliangde-tongguan-mima = ZhouyuXiazaiYuzhouNengliangdeTongguanMima.__main__:main
+
