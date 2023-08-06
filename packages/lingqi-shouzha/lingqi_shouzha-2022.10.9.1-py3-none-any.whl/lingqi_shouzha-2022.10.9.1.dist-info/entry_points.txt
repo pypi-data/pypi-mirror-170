@@ -1,0 +1,4 @@
+[console_scripts]
+LingqiShouzha = LingqiShouzha.__main__:main
+lingqi-shouzha = LingqiShouzha.__main__:main
+
