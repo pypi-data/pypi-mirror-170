@@ -1,0 +1,10 @@
+perivale/__init__.py,sha256=JtHhqN0FKWXCyCnwMQKUJrWQc_BxoJO3xxMhny1CUUA,168
+perivale/buffer.py,sha256=cfdY1SmqtQ-w7cTbcVCRQqPat7t_tgSOGKowDpGpRSM,9073
+perivale/errors.py,sha256=IpNw0bN-e6I_gi8K6FUiEIREhZQzwBCwqI-xxBuuKuM,539
+perivale/excerpt.py,sha256=VCUPQRfX8pLtWhnc2iLBu-2rDCm28ucEv5uunwJloAI,2571
+perivale/position.py,sha256=7nF0zesMW2ZKJJwx3L_QWruMryAVhpo3rBSQsB5NseE,965
+perivale-1.1.6.dist-info/LICENSE,sha256=qtLyrXsl817ltxI0csgwDD7nvifJuQkRQdtnsjVOxyQ,1056
+perivale-1.1.6.dist-info/METADATA,sha256=7L3vcHkibn6CHVgiLu1BkZGJy4__FY4NyA2ryQenJtU,2363
+perivale-1.1.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+perivale-1.1.6.dist-info/top_level.txt,sha256=nuzkK3RuU50Cq6Ppg7q-k006u1O_JaaLhyLGa0netVk,9
+perivale-1.1.6.dist-info/RECORD,,
