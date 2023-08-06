@@ -1,0 +1,6 @@
+pandas
+tkinter
+unittest
+os
+av
+pillow

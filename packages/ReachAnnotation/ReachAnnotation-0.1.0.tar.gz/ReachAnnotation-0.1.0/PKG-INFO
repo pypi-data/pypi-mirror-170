@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: ReachAnnotation
+Version: 0.1.0
+Summary: A library intended to generate a GUI to annotate / label video files for the ReachMaster experimental paradigm.Install on python using pip install ReachAnnotate -- Current published version is 0.1.0
+Home-page: https://github.com/throneofshadow/ReachAnnotation
+Author: Brett Nelson, Nicholas Chin
+Author-email: bnelson@lbl.gov
+License: BSD-3-Clause-LBNL
+Description: # ReachAnnotation
+        GUI-based annotation tool-tip designed to be used for data collected using the ReachMaster experimental paradigm. Built 
+        using tKinter video player (credit to https://github.com/PaulleDemon/tkVideoPlayer).
+        ### ReachAnnotation Example
+        ![alt text](https://github.com/throneofshadow/ReachAnnotation/blob/main/reachannotate_example.png?raw=True)
+        
+        
+        Use this annotation software to label your experimental data from the ReachProcess ETL pipeline! 
+        ## Features
+        - ability to annotate behavioral phenotypes
+        - ability to add descriptions to trial-based behavioral phenotypes
+        - quantify when behaviors start, what kind of behaviors they are
+        - customizable entries, including field notes
+        
+        ## Dependencies
+        
+        - requires AV and Pillow libraries, ffmpeg installed
+        - pandas for file i/o
+        - video and template data from ReachProcess ETL pipeline (found at https://github.com/throneofshadow/ReachProcess)
+        
+        
+        
+        
+Keywords: tkinter,video,player,video player,tkvideoplayer,play video in tkinter,custom annotation
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
