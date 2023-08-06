@@ -1,0 +1,10 @@
+boto3
+click
+matplotlib
+numpy
+pandas
+plotext
+pytest
+scipy
+tqdm
+unlzw@ git+https://github.com/bmatv/python-unlzw.git
