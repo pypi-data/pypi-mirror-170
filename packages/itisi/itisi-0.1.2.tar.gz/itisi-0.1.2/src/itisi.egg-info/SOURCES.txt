@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/itisi/__init__.py
+src/itisi.egg-info/PKG-INFO
+src/itisi.egg-info/SOURCES.txt
+src/itisi.egg-info/dependency_links.txt
+src/itisi.egg-info/entry_points.txt
+src/itisi.egg-info/requires.txt
+src/itisi.egg-info/top_level.txt
