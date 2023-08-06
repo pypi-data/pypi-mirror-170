@@ -1,0 +1,15 @@
+trojsdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trojsdk/client.py,sha256=3W-Jv_03kkKccIAjnge-hNUT7XRTs2sVZZ4vgm7Dj5M,6087
+trojsdk/cmd.py,sha256=21QXuh-uOqBT9ZG1rkkphSifvJ8eE_iQKHwbitosJXg,2043
+trojsdk/config.py,sha256=3frqxVlhdE1BU8lGsfRaxRmdBRkedDjaGqlAW0PmGsQ,4918
+trojsdk/setup.py,sha256=AEiHnZoZjFJL-vr5-J2c1cXRWaepc76blQVCjJ8raaU,964
+trojsdk/test_sdk.py,sha256=9KCITCxM39zXs-g9d2ZA8gYf_uB7MUt0AwvZAFSyBAE,1535
+trojsdk/core/TrojError.py,sha256=nCLpfI6ORBlRQKaPg3Py39FtSblrGPfWplEuf0CgnXI,1370
+trojsdk/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trojsdk/core/client_utils.py,sha256=FJ4tav_qtDmC4JWfieXnwdm83NMaBL3rrvFjlt0qIWM,4022
+trojsdk/core/data_utils.py,sha256=fWhXxalLu9bGl5EX39NCM0z2a5x0ufJ02L9042pVv_o,4284
+trojai_sdk-0.1.3.dist-info/METADATA,sha256=JG_wJJm3am2lfgT1-33diGB7qkP7YjURlsv32O_JqCU,6897
+trojai_sdk-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+trojai_sdk-0.1.3.dist-info/entry_points.txt,sha256=jO7UVplS9qXjpULgbenbeemxfnHZ56Q_y6AhIlXIh3A,48
+trojai_sdk-0.1.3.dist-info/top_level.txt,sha256=7-eL9U9bHhEPiP7SgL-fm7y2lnU15hSZBygqYgCftXc,8
+trojai_sdk-0.1.3.dist-info/RECORD,,
