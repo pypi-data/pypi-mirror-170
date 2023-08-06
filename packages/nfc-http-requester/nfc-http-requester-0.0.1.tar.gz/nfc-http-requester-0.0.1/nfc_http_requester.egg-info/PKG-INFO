@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: nfc-http-requester
+Version: 0.0.1
+Summary: Send HTTP request when NFC tag is touched.
+Home-page: https://github.com/ytyng/nfc-http-requester.git
+Author: ytyng
+Author-email: ytyng@live.jp
+License: BSD
+Keywords: NFC,RC-S380,PaSoRi
+License-File: LICENSE

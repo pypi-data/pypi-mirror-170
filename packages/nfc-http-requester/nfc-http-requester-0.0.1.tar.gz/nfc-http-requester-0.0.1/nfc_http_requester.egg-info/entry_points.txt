@@ -1,0 +1,2 @@
+[console_scripts]
+nfc-http-requester = nfc_http_requester.nfc_http_requester:main
