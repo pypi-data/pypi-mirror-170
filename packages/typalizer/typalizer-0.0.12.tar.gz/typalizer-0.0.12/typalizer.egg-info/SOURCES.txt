@@ -1,0 +1,8 @@
+setup.py
+TypeAnalyzer/__init__.py
+TypeAnalyzer/typalizer.py
+typalizer.egg-info/PKG-INFO
+typalizer.egg-info/SOURCES.txt
+typalizer.egg-info/dependency_links.txt
+typalizer.egg-info/requires.txt
+typalizer.egg-info/top_level.txt
