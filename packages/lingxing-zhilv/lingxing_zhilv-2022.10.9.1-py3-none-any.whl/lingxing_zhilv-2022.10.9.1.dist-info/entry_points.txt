@@ -1,0 +1,4 @@
+[console_scripts]
+LingxingZhilv = LingxingZhilv.__main__:main
+lingxing-zhilv = LingxingZhilv.__main__:main
+
