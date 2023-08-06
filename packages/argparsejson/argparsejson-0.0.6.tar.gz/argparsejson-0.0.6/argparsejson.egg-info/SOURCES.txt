@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+argparsejson/__init__.py
+argparsejson/argparsejson.py
+argparsejson/schema.json
+argparsejson.egg-info/PKG-INFO
+argparsejson.egg-info/SOURCES.txt
+argparsejson.egg-info/dependency_links.txt
+argparsejson.egg-info/requires.txt
+argparsejson.egg-info/top_level.txt
