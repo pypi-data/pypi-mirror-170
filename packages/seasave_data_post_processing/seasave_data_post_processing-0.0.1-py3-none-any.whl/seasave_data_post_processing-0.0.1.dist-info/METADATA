@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: seasave_data_post_processing
+Version: 0.0.1
+Summary: Converts ctd data (*.hex) to cnv file. Also to create a batch file to automate cnv data post-processing (Bin average, Window filter and etc)
+Author-email: Raja sekar <shanthakumar.rajasekar@gmail.com>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: Microsoft :: Windows
+
+# seasave_data_post_processing
