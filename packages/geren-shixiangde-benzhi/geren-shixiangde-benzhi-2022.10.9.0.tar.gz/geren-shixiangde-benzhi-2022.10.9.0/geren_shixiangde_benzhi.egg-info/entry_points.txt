@@ -1,0 +1,4 @@
+[console_scripts]
+GerenShixiangdeBenzhi = GerenShixiangdeBenzhi.__main__:main
+geren-shixiangde-benzhi = GerenShixiangdeBenzhi.__main__:main
+
