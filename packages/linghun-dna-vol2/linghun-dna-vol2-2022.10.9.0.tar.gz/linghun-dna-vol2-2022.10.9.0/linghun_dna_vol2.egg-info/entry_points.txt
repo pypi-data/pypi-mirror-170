@@ -1,0 +1,4 @@
+[console_scripts]
+LinghunDnaVol2 = LinghunDnaVol2.__main__:main
+linghun-dna-vol2 = LinghunDnaVol2.__main__:main
+
