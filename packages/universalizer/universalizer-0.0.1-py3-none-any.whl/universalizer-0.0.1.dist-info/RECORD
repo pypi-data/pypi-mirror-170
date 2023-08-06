@@ -1,0 +1,9 @@
+LICENSE,sha256=Q2BALc84isaPQbaZMVtVv08gN_k9PIvbPefpSC2GmK4,1527
+universalizer/__init__.py,sha256=VOU99TObB2ORBqD8dObU8igtTsNZBAfw3vFUOFFQcFA,21
+universalizer/cli.py,sha256=6s0SWFuVMbDN3rLa9kCctk5OtX75xXJJSt8X2GTFyQA,1411
+universalizer/norm.py,sha256=6anDd6FZhSqP4Gcays7rF-5lszmqWAjr9BXg9TjPtI0,10836
+universalizer-0.0.1.dist-info/entry_points.txt,sha256=XzaWigo5rAacRBDzyD8KT6G7FLTAwXVYJJarJow9NDQ,55
+universalizer-0.0.1.dist-info/LICENSE,sha256=Q2BALc84isaPQbaZMVtVv08gN_k9PIvbPefpSC2GmK4,1527
+universalizer-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+universalizer-0.0.1.dist-info/METADATA,sha256=aEj_GhQaSCJhvqVSetWPbIfx_6vIU0tf7jtirhrdVWc,2131
+universalizer-0.0.1.dist-info/RECORD,,
