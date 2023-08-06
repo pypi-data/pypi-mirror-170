@@ -1,0 +1,3 @@
+[console_scripts]
+moto_nl = moto_nl:main
+moto_tar = moto_tar:main
