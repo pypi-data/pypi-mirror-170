@@ -1,0 +1,11 @@
+cexpl/__init__.py,sha256=PhE4Qhqm_dVRSpOGnpSdw5PZwMRZhxa6sF3xBdwfzH0,102
+cexpl/__main__.py,sha256=-KA4AzwzlZB5uYMUTggJ7mAXxIAOXZAN0TBnB7zcLjM,382
+cexpl/cli.py,sha256=HTbC3oQd9NkQoFpapcTOkendzIRGSr5C40fZnsDukD0,9401
+cexpl/lib.py,sha256=ICKPzE1arFwHRLNRYQwQGDr7tzTJhAfPhPNlPQLR8f0,4626
+cexpl-0.1.0.data/data/share/man/man1/cexpl.1,sha256=1-px6m47zC5-XKZ4grST4dZpdowef2gLejqNLHEfrQI,1848
+cexpl-0.1.0.dist-info/LICENSE,sha256=-W3nHezM9F-N1vgnMUAxi3ouLS93RejA7mLVf8C_Z5k,1070
+cexpl-0.1.0.dist-info/METADATA,sha256=CfMLlB2B9KDBxLBZd4-It97u4DV4A0gSTmWuf_NV6RA,4174
+cexpl-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cexpl-0.1.0.dist-info/entry_points.txt,sha256=oSRHy3App28L7QCaNu5wtJpKQe2vNgipcNs_Jla8zts,46
+cexpl-0.1.0.dist-info/top_level.txt,sha256=Nsea3kwhH8ejQWxVKovsIUaEIZ4bGO78944gJqcGHpA,6
+cexpl-0.1.0.dist-info/RECORD,,
