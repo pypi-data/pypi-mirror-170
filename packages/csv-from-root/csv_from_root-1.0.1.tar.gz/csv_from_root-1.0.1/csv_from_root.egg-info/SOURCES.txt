@@ -1,0 +1,11 @@
+README.md
+setup.py
+csv_from_root/__init__.py
+csv_from_root/csv_from_root.py
+csv_from_root.egg-info/PKG-INFO
+csv_from_root.egg-info/SOURCES.txt
+csv_from_root.egg-info/dependency_links.txt
+csv_from_root.egg-info/entry_points.txt
+csv_from_root.egg-info/not-zip-safe
+csv_from_root.egg-info/requires.txt
+csv_from_root.egg-info/top_level.txt
