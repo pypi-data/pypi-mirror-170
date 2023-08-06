@@ -1,0 +1,13 @@
+odoo/addons/event_badge_design/README.rst,sha256=EM3elZ-R8_5VjWnOwqB6bQc7bHaz-s2rLAB69Dd1W2U,2964
+odoo/addons/event_badge_design/__init__.py,sha256=FNlMPDojEQpwvHZlf1L1FiQCxOYOu7R3lMKD6aozhvU,65
+odoo/addons/event_badge_design/__manifest__.py,sha256=A4OtEd11xb8ZaprV_k8SsZ7cTcEqb9n2yEM9rj7qF9Q,535
+odoo/addons/event_badge_design/i18n/event_badge_design.pot,sha256=E0OWQFHaVoMw3FBnJd_KDg6o55h4Lj_nx2NSjW8yIWE,1022
+odoo/addons/event_badge_design/readme/CONTRIBUTORS.rst,sha256=LfpZXdFyf-JW7tYqh16QaIiCkFKyUBc4JmpOQrt1cVk,76
+odoo/addons/event_badge_design/readme/DESCRIPTION.rst,sha256=Yiy9ly0O_MwDGluct2CAmPlryIH3p_AzSIpcnzHEmSI,121
+odoo/addons/event_badge_design/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/event_badge_design/static/description/index.html,sha256=18izyz3qM2T25YoJQfaeXeFc1zLrz7l1l7XzLdOWDI8,12274
+odoo/addons/event_badge_design/views/event_event.xml,sha256=MMcOuoMs5wIYD6ZF7r9ShjBD16mWUHOERQ9SobXpq4Y,1079
+odoo14_addon_event_badge_design-14.0.1.0.1.dist-info/METADATA,sha256=gQAwgc2ikfsU30pt51USzvVuUF-PdbxSPvxSHqQAIGI,3564
+odoo14_addon_event_badge_design-14.0.1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo14_addon_event_badge_design-14.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_event_badge_design-14.0.1.0.1.dist-info/RECORD,,
