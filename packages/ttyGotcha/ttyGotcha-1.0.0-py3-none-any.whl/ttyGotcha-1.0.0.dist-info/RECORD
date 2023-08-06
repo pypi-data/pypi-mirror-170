@@ -1,0 +1,11 @@
+gotcha/__init___.py,sha256=TrJkQFF2V4oBh17r_G7uL7GfTHuGmEKf1eAHku3HwIU,52
+gotcha/__main__.py,sha256=teS5doCC7Q-X0Ugqd81-3QG6VPwPCym2KA7U6-1IYsU,3961
+gotcha/__version__.py,sha256=mh6Loc77DLp9pQydtJsj9XRYnoh_rNn2LlfSY2MGYv4,1136
+gotcha/ascii.py,sha256=RjuKWE4KLzsqF_F0Pp5-2FAc4uBNPXM4IymUa8Sv_5o,13623
+gotcha/gotcha_tty.py,sha256=VGF8CiLvT2HkDJtWD9duTzRQoZc5YHPRd1TU_f3Qquo,14731
+ttyGotcha-1.0.0.dist-info/LICENSE,sha256=d6xCeMyOTWszZGEbbYrcO1RHYbQHD71WGEvv2VnxrWI,1095
+ttyGotcha-1.0.0.dist-info/METADATA,sha256=HyJKcYUdVsNV3ObsizHNm0xQGEKPrCGiWQqmSOgR1f8,3213
+ttyGotcha-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ttyGotcha-1.0.0.dist-info/entry_points.txt,sha256=gqti64DVMeLk4b2w1Qljlan-Fz0SyEh_sDEYRmRAjFk,48
+ttyGotcha-1.0.0.dist-info/top_level.txt,sha256=zgMgszuix2vad9KrlN3aF-wdA2y3TaQPXAlAVOqV4q8,7
+ttyGotcha-1.0.0.dist-info/RECORD,,
