@@ -1,0 +1,10 @@
+sci_clone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sci_clone/config.py,sha256=sViWM6A_nKr1rRSlvVCUwBu07yCosi5I2S4w5Khl7pU,638
+sci_clone/main.py,sha256=fnJ2oFlZ6YofT9Obmit4O-RKYyvxMoNByUrrWD8ePKo,1796
+sci_clone/util.py,sha256=FnmM4Tiao9uF_1kwjzOKRcmzVYianRFPSRjCWoi3u00,8588
+sci_clone-0.4.3.dist-info/LICENSE,sha256=E4Qg0JTlLj0LV-otSQbf9L1m1G0WfXfVwQYbpWV72os,1237
+sci_clone-0.4.3.dist-info/METADATA,sha256=9YzrzPuUbb-LLEF1ioiHALvQ7qxvew1QHksflp5pWx0,3144
+sci_clone-0.4.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sci_clone-0.4.3.dist-info/entry_points.txt,sha256=MTgSbO88CQIhebogySQtiZtP6AWpLAKns-vAizXC6K8,49
+sci_clone-0.4.3.dist-info/top_level.txt,sha256=gOUmLembCFOov3uA5fSjwo1un1jLYWX_vUPQ4FArLjo,10
+sci_clone-0.4.3.dist-info/RECORD,,
