@@ -1,0 +1,13 @@
+client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client/add_contact.py,sha256=2hE032tgkR8C1kWmvvxwQ9Yf82H-aPWHtsFxRM2hHzM,3611
+client/client.py,sha256=w3CPucqwnjEFCz6yxnkrGEYH1wc9UmOjwTQ83pFm580,3494
+client/database.py,sha256=fnkOP3YvLquasZM8bE0XmY4Jg_O_4bt5AyMUVezAZqk,7896
+client/del_contact.py,sha256=4_Wk0gP6c6L2e4L90mDrLo2lNKIWcc-go_kr_8_ZanM,1741
+client/main_window.py,sha256=5DZG8Afmwo9RB8ckOSiJV85n5mBUwtEq56f1DHvmgY4,19062
+client/main_window_conv.py,sha256=mBVHbzz4yNem1_9MmeJScJeSQ0OQHf7erPGNl2p6s_0,5576
+client/start_dialog.py,sha256=IQwdbp5y2uixJOEZImBG58-gnyNudRDPSWUW6SBUsPg,1769
+client/transport.py,sha256=nOtxJHcrscu4xFv4gx71EkkdQ3pWVO4kBFXuY44CP7Q,14438
+client_chat_pyqt_motr-0.1.dist-info/METADATA,sha256=kM5o2XGLCEh-gmCQr4Q4cz-j_AnzroCXdA8eMbb_too,180
+client_chat_pyqt_motr-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+client_chat_pyqt_motr-0.1.dist-info/top_level.txt,sha256=DJiuN0ty6vOMYewH87cxtQ0LWVaJpE0bZ1Blm0e3RCE,7
+client_chat_pyqt_motr-0.1.dist-info/RECORD,,
