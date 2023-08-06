@@ -1,0 +1,17 @@
+syngenta_digital_uoms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syngenta_digital_uoms/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syngenta_digital_uoms/common/adapt_uoms.xlsx,sha256=XNUwgTFFkei2eMosnKoGLl4g1tdlI1-vzJrGeFHdz3k,32509
+syngenta_digital_uoms/common/vocabulary.py,sha256=pV55L4lEU906ze9-Vrs78IOQU6SfXcPGQ2LvW8sreOY,1636
+syngenta_digital_uoms/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syngenta_digital_uoms/util/converter.py,sha256=ZraIJA7qlzA0_FqQVokQWPc3LRqZvZCiCMOITt_OGkY,2069
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/syngenta_digital_uoms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/syngenta_digital_uoms/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/syngenta_digital_uoms/common/test_vocabulary.py,sha256=UvlK4gc8kZrejcwwakaomxhbopBX8L0_hxruQpnNsEE,2569
+tests/syngenta_digital_uoms/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/syngenta_digital_uoms/util/test_converter.py,sha256=asLu92AlvfuMPzHtk1rRwM1ZQD8ovU2xsyCwa6VGFwQ,546
+syngenta_digital_uoms-0.0.3.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+syngenta_digital_uoms-0.0.3.dist-info/METADATA,sha256=qG4t1iWydY5-PSHluvrTlS82sejv0OQZCI9LO9mU3Ek,3620
+syngenta_digital_uoms-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+syngenta_digital_uoms-0.0.3.dist-info/top_level.txt,sha256=A07McF_gzx71j04Wk6bD-FV0iAxP5kMbGYMwYTAi38A,28
+syngenta_digital_uoms-0.0.3.dist-info/RECORD,,

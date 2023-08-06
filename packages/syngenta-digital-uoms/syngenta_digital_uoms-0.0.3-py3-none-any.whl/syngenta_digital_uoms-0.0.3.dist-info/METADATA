@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: syngenta-digital-uoms
+Version: 0.0.3
+Summary: Standardized hub for unit of measure conversions across systems and dimensions.
+Home-page: https://github.com/syngenta-digital/package-python-uoms.git
+Author: Jeff Payne, Syngenta Digital
+Author-email: jeffrey.payne@syngenta.com
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+
+# Syngenta Digital Units of Measure
+Centralized source of canonical unit of measures for lookup and conversion
+
+## Definitions
+  * Unit of measure code (“UoM Code”): A small string/token that forms part of a controlled vocabulary (e.g., ADAPT, UN Rec 20, UCUM, QUDT) and represents a unit of measure (e.g., “meter”) 
+  * Input Code Vocabulary (“UoM Voc”): A small string/token that represents the controlled vocabulary that a unit of measure code belongs to (e.g., “ADAPT”, “UCUM”).
+  * Dimension: a label for a family of units of measure that represent the same phenomenon. For example, “DISTANCE” represents a phenomenon represented by “meter”, “mile”, “inch”, “millimeter”, etc. We have a controlled vocabulary of these dimensions.
+  * Unit of measure System: A family of units of measure (cutting across all dimensions) that have a common cultural origin or organizing principles (e.g., “METRIC”, “IMPERIAL”).
+
+## Features
+
+#### Retrieve the dimension of a given unit of measure
+```python
+from syngenta_digital_uoms.common.vocabulary import Vocabulary
+
+def retrieve_dimension_from_uom():
+    vocabulary = Vocabulary()
+    return vocabulary.get_dimension('min') # Returns 'TIME'
+```
+
+#### Retrieve list of unique dimensions from respective vocabulary
+```python
+from syngenta_digital_uoms.common.vocabulary import Vocabulary
+
+def retrieve_dimensions():
+    vocabulary = Vocabulary(vocab_type='adapt') # 'adapt' is the default vocabulary type
+    return vocabulary.list_dimensions()
+```
+
+#### Retrieve list of all units of measure from a given dimension
+```python
+from syngenta_digital_uoms.common.vocabulary import Vocabulary
+
+def retrieve_uoms_from_dimension():
+    vocabulary = Vocabulary()
+    return vocabulary.list_dimension_uoms('DISTANCE')
+```
+
+#### Retrieve canonical unit of measure from given dimension
+```python
+from syngenta_digital_uoms.common.vocabulary import Vocabulary
+
+def retrieve_uoms_from_dimension():
+    vocabulary = Vocabulary()
+    return vocabulary.get_canonical_uom('DISTANCE') # Returns 'm', as meter is the canonical unit of the DISTANCE dimension.
+```
+
+  
+#### Retrieve the canonical unit of measure from a given unit's dimension
+```python
+from syngenta_digital_uoms.util.converter import Converter
+
+def convert_uom_to_canonical():
+    converter = Converter()
+    return converter.convert_uom('ft') # Returns 'm', as meter is the canonical unit of the DISTANCE dimension.
+```
+
+#### Convert a given value across units of measure
+```python
+from syngenta_digital_uoms.util.converter import Converter
+
+def convert_value_across_uoms():
+    converter = Converter()
+    return converter.convert_value(input_uom_code='ft',
+                                   input_value=100,
+                                   output_uom_code='km') # Returns 0.03048, as 100 feet is equivalent to 0.03048 kilometers.
+```
+
