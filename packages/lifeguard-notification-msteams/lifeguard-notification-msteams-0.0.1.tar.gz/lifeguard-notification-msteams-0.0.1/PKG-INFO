@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lifeguard-notification-msteams
+Version: 0.0.1
+Summary: Lifeguard integration with MS Teams
+Home-page: https://github.com/LifeguardSystem/lifeguard-notification-msteams
+Author: Diego Rubin
+Author-email: contact@diegorubin.dev
+License: GPL2
+Classifier: Development Status :: 3 - Alpha
