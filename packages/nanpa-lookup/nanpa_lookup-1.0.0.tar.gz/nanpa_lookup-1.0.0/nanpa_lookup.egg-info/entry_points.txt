@@ -1,0 +1,3 @@
+[console_scripts]
+nanpa_lookup = nanpa_lookup.lookup:main
+
