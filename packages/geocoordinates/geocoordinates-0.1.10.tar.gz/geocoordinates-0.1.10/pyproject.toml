@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "geocoordinates"
+version = "0.1.10"
+description = ""
+authors = ["kathesch <katherinegruenewald@gmail.com>"]
+readme = "README.md"
+packages = [{include = "geocoordinates"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.23.3"
+pandas = "^1.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
