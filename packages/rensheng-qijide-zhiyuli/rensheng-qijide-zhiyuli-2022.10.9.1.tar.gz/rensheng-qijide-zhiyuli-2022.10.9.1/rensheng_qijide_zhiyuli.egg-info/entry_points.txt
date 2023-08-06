@@ -1,0 +1,4 @@
+[console_scripts]
+RenshengQijideZhiyuli = RenshengQijideZhiyuli.__main__:main
+rensheng-qijide-zhiyuli = RenshengQijideZhiyuli.__main__:main
+
