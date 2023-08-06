@@ -1,0 +1,12 @@
+README.md
+setup.py
+MofaXuetuVol8/README.md
+MofaXuetuVol8/__init__.py
+MofaXuetuVol8/__main__.py
+MofaXuetuVol8/file.pdf
+MofaXuetuVol8/index.html
+mofa_xuetu_vol8.egg-info/PKG-INFO
+mofa_xuetu_vol8.egg-info/SOURCES.txt
+mofa_xuetu_vol8.egg-info/dependency_links.txt
+mofa_xuetu_vol8.egg-info/entry_points.txt
+mofa_xuetu_vol8.egg-info/top_level.txt
