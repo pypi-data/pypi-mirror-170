@@ -1,0 +1,4 @@
+[console_scripts]
+TianshiNengliangPaidufa = TianshiNengliangPaidufa.__main__:main
+tianshi-nengliang-paidufa = TianshiNengliangPaidufa.__main__:main
+
