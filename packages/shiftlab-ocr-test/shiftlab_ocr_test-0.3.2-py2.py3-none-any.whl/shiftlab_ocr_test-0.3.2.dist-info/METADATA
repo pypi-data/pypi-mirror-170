@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: shiftlab-ocr-test
+Version: 0.3.2
+Summary: A library for handwriting text recognition tasks. For more information: https://github.com/konverner/shiftlab_ocr
+Home-page: https://github.com/konverner/shiftlab_ocr
+Author: Konstantin Verner
+Author-email: konst.verner@gmail.com
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: opencv-python
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: tqdm
+Requires-Dist: Pillow
+Requires-Dist: PyYAML
+Requires-Dist: pandas
+
+UNKNOWN
+
