@@ -1,0 +1,14 @@
+pystackreg.libs/libstdc++-a9383cce.so.6.0.28,sha256=AQF8xpA7y538aY2feICyHGJkLWgDpwHYribC_iWn8Bw,2447392
+pystackreg.libs/libgcc_s-a04fdf82.so.1,sha256=E2_sw1FhiQZsCQiywTDdBDMlSUsazp7QUYpklMz_w_s,81256
+pystackreg-0.2.7.dist-info/top_level.txt,sha256=qoYoHJMwck_foa97p1OZ--g0IdqGo7AFRQOsJmblwLY,11
+pystackreg-0.2.7.dist-info/LICENSE.txt,sha256=krxPdzz7Jq9yg9IjsW_rKYvaW5f_GO-VBuBf4zlzJUk,1793
+pystackreg-0.2.7.dist-info/METADATA,sha256=l6EasolRXXWxQ50kNti9IHDUafxeJZSQc8WyNkNd0Ng,12080
+pystackreg-0.2.7.dist-info/RECORD,,
+pystackreg-0.2.7.dist-info/WHEEL,sha256=3ltB5TaRdhkt3YYqx2XrZvyTyaxp5dXZb3HWw510bG0,113
+pystackreg-0.2.7.dist-info/AUTHORS.rst,sha256=ZHn3Q1pwnIJAtUSo6nsZlc8JR_8iFKCRHlnE0tj6r8Q,291
+pystackreg/version.py,sha256=XHypfHSPdgXFKmOdoewn7czU670gt8InhHhzlP5j_aA,22
+pystackreg/turboreg.cpython-310-x86_64-linux-gnu.so,sha256=pK0arYTy0WG8JpRUI4PLksnIZxFBuZia2jKvjGo74DQ,3441368
+pystackreg/__init__.py,sha256=5J3C1ouoj-JQti6AvXiR3O2q9a_hLRRaiyqVkoE9r8c,90
+pystackreg/conftest.py,sha256=uxY9sruCWV4u38fOkiKUZbkXMJIgueCgH9-9o2psJTA,94
+pystackreg/pystackreg.py,sha256=XiJyEa_gmP8JRKmDakpCSVlMYeH0GkQNFIVw1ZN7wJU,16083
+pystackreg/util/__init__.py,sha256=b7UOT7K0oCdnergxA0bQGsIJKjvJ3WZ2k5uU86SaHjk,3203
