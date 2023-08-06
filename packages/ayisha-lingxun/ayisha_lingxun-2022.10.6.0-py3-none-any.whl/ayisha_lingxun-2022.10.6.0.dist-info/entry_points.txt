@@ -1,0 +1,4 @@
+[console_scripts]
+AyishaLingxun = AyishaLingxun.__main__:main
+ayisha-lingxun = AyishaLingxun.__main__:main
+
