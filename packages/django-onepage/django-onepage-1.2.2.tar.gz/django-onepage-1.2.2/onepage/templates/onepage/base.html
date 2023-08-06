@@ -1,0 +1,32 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
+        <meta name="author" content="Bdtask">
+        <title>{% block title %}Onepage - Model Management In Onepage{% endblock title %}</title>
+        {% include 'onepage/onepage-css.html' %}
+    </head>
+    <body class="{% block body_class %}hold-transition sidebar-mini{% endblock body_class %}">
+        <div class="wrapper ">
+            {% include 'onepage/sidebar.html' %}
+            <div class="content-wrapper">
+                <div id="ajaxTwoActHandlerUpdate"></div>
+                <div id="bodyContent" class="body-content px-3 py-3">
+                    {% block content %}
+                    {% if html_body %}
+                    {{ html_body|safe }}
+                    {% endif %}
+                    {% endblock %}
+                </div>
+                {% block footer %}{% endblock footer %}
+                <div class="overlay"></div>
+            </div>
+        </div>
+        {% include 'onepage/onepage-js.html' %}
+        {% block staticjs %}{% endblock staticjs %}
+    </body>
+</html>

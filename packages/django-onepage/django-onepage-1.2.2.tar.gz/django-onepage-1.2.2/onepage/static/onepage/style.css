@@ -1,0 +1,12 @@
+.custom-table th {
+    background-color: #6c757d;
+    color: white
+}
+
+.custom-table thead tr th.Id {
+    display: none;
+}
+
+.custom-table tbody tr td.id {
+    display: none;
+}
