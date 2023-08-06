@@ -1,0 +1,11 @@
+skyler_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skyler_cli/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skyler_cli/cli/main.py,sha256=fTJkoAjw5gR76s_TvOG5ObQSfBm-yEHJjRIcKDHZy7E,296
+skyler_cli/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skyler_cli/core/bootstrap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skyler_cli/core/bootstrap/system.py,sha256=wXmcOWUrUr3FIGYVPkS3024HUTNvhtKEoKr-7tYYJuA,4133
+skyler_cli/core/bootstrap/system_template/.bashrc,sha256=0ErneeDYlpWclIr8Jh8TLTLi0-dejXwJ1Tm1bryfRgE,868
+skyler_cli-0.1.0.dist-info/entry_points.txt,sha256=8tspQ0VyieENKrxJjDS2frs_gvS7fQGlE6mozlszBeY,46
+skyler_cli-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+skyler_cli-0.1.0.dist-info/METADATA,sha256=KXv1v0uWVK3WtwAnlGpN_GCr_N6Fqx8zwe1pgMoVQRs,740
+skyler_cli-0.1.0.dist-info/RECORD,,
