@@ -1,0 +1,4 @@
+[console_scripts]
+MingxiangZhengnianShouce = MingxiangZhengnianShouce.__main__:main
+mingxiang-zhengnian-shouce = MingxiangZhengnianShouce.__main__:main
+
