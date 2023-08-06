@@ -1,0 +1,2 @@
+[console_scripts]
+planet_basemap = pbasemap.planet_basemap:main
