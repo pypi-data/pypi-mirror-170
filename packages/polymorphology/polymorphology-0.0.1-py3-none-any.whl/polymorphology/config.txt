@@ -1,0 +1,2 @@
+[repo]
+url = https://github.com/heads-up-org/heads-up
