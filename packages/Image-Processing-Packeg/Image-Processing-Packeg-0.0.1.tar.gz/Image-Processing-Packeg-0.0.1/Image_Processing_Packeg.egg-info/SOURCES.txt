@@ -1,0 +1,14 @@
+README.md
+setup.py
+Image_Processing_Packeg.egg-info/PKG-INFO
+Image_Processing_Packeg.egg-info/SOURCES.txt
+Image_Processing_Packeg.egg-info/dependency_links.txt
+Image_Processing_Packeg.egg-info/requires.txt
+Image_Processing_Packeg.egg-info/top_level.txt
+processador_de_Imagens/__init__.py
+processador_de_Imagens/processando/__init__.py
+processador_de_Imagens/processando/combinacao.py
+processador_de_Imagens/processando/transformacao.py
+processador_de_Imagens/util/__init__.py
+processador_de_Imagens/util/io.py
+processador_de_Imagens/util/plot.py
