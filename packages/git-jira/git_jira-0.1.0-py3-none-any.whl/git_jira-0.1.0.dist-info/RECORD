@@ -1,0 +1,16 @@
+git_jira/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_jira/cli.py,sha256=opnQu8VQB4iBKumJ9uv7uWPyLXzDkv9CjBnd6p_v5LQ,266
+git_jira/config.py,sha256=C3aYBFH1vzVw3vHSWguH_lnaf8OxghdxGtlI9uDEDX0,1292
+git_jira/git.py,sha256=VvUX91qMzQkUTgBtRECJ_faG8XnUKpfe6zzC4Lv9btc,357
+git_jira/jira.py,sha256=it_RlIHvv1KGkjHe1VdRQvsoz4mQV1LDXtDUzmvdKDA,2981
+git_jira/utils.py,sha256=Uv11ScW-Rssr8lZXJspq_LFtmDEuYnl5Rh8FeCkaKfQ,230
+git_jira/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_jira/commands/branch.py,sha256=W9fa7zOJgJt7xxCxwtLv7zuOOpkfGFh15KXwRZbgHic,1891
+git_jira/commands/configure.py,sha256=ZiwDwwDe3O2xLcnRRNR3bAm1VLyLWc8q6HQxvjSuFik,902
+git_jira/commands/status.py,sha256=Ff27YSE57zdF4MsIA9QbpG6CHlD_W6Y-CdOWF52hCRI,414
+git_jira-0.1.0.dist-info/LICENSE.txt,sha256=bvQ2t55-ihmnXZbWOqbZi5y7tj4UiyIQ0Xs0F2ALUL4,1075
+git_jira-0.1.0.dist-info/METADATA,sha256=lHRSC38Znfejg5pc8w-LV8p0YoPkQG_NIj32nUhueq0,2548
+git_jira-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+git_jira-0.1.0.dist-info/entry_points.txt,sha256=zPUHihlgF-3MuFv_oW7JxCf3AopBvz1cahF7U2XIXmA,46
+git_jira-0.1.0.dist-info/top_level.txt,sha256=PyfFoSX5tpDfUFJs6A1q3sUKlCrVkMrvoqjyLuxDiI0,9
+git_jira-0.1.0.dist-info/RECORD,,
