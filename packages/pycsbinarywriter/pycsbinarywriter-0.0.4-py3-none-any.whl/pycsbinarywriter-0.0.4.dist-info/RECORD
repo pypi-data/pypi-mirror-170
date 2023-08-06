@@ -1,0 +1,16 @@
+pycsbinarywriter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycsbinarywriter/consts.py,sha256=5GpnJI90QiZl6ZC_K0_x-2DtbCeSDp4AOICA8GIPJQQ,129
+pycsbinarywriter/csharpserializable.py,sha256=EMybLvjIpovQjlMNAwOiEkxSGKq0bzczFWxvyD5ASr4,2800
+pycsbinarywriter/cstypes/__init__.py,sha256=5uSlMEQW83peGBVi-PpG_CROzrfAUoeoSylk96zgngA,106
+pycsbinarywriter/cstypes/cstype.py,sha256=S_P_GuRJmPU_rIe3C24Tc1UpDUYOseh6XbdFBi_WT1Q,1352
+pycsbinarywriter/cstypes/decimal.py,sha256=ZO8_kMtAbfgjiCt6JCaTQKkV07KAKzga3neE4xAmHwA,6960
+pycsbinarywriter/cstypes/seven_bit_int.py,sha256=an8stS9V7BGpDF8K2jRQ4z9spyUMpDXbOfMUrLp2Ps0,1514
+pycsbinarywriter/cstypes/simple.py,sha256=0mwzftCxEV0Mh1q9MY_bnngb5CVYto3xy2ZIZwfVRF0,1614
+pycsbinarywriter/cstypes/strings.py,sha256=1jlLclMZ77-x8wFlnr_LdcNGCwSBzMwHr9iaLc62M-8,3003
+pycsbinarywriter/test/__init__.py,sha256=JyF0fGFVSUw_fLhAXHXEbDgjO2XPmoqa6w_RLUb3GfM,148
+pycsbinarywriter/test/simple.py,sha256=N-_O9kJtvG9cOdJvyHFFshm55zLEHYhNYuyKWT4rOoA,5402
+pycsbinarywriter/test/strings.py,sha256=zyVhBJv4zDc_6PlqGFabhHgJn6ZQf_zHYSko-slbKR0,1565
+pycsbinarywriter-0.0.4.dist-info/LICENSE,sha256=RpYUO4zyC2BVWOdAa_K1Q0gsaJpeTr6ZyUj5IMCmLWo,1072
+pycsbinarywriter-0.0.4.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pycsbinarywriter-0.0.4.dist-info/METADATA,sha256=ToU8L6JsM2-lCRxY3uQ3zzfImgxkyamgVO53jNpWVsY,1247
+pycsbinarywriter-0.0.4.dist-info/RECORD,,
