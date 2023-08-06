@@ -1,0 +1,15 @@
+contextualise_ssh_server/__init__.py,sha256=TFMKf2HH2RuSODM0blyXhSnd8T8pyI-ocOU3P-82Fws,189
+contextualise_ssh_server/cli.py,sha256=AJSAiC6Rsl9XyxhiHoIZMuSmC7v4Y92Fc9BteEldBDw,4322
+contextualise_ssh_server/config.py,sha256=5jtXbYOAtYvoSUpzcgH2S4Al-oCuLyWv3mwgmM7x9mk,2217
+contextualise_ssh_server/contextualise_ssh_server.conf,sha256=96b_xe2yIaiEF-kUqRAh6E29B103yqiLC4a2-XOErQo,751
+contextualise_ssh_server/feudal_adapter.template.conf,sha256=fQN9FUt2JUh2o9xcvtNhznHr1Dqz8SSHUJ91ZDDeDOY,7529
+contextualise_ssh_server/logsetup.py,sha256=jc34Jw4nW70Qs4K1B3i2CABSbYrVUatlbPUzdpQvV5E,1790
+contextualise_ssh_server/motley_cue.template.conf,sha256=VYaj9EKYn8VUURGhVgi_YUbvGqIvfeytu8WSBU_qWtQ,4376
+contextualise_ssh_server/parse_args.py,sha256=v8s30xctsJ4N8gsrC79XCVeNgkwwZzzuJqAI2RWEJu4,1711
+contextualise_ssh_server-0.2.0.dist-info/LICENSE,sha256=Z5Mid9tCobuQ6HntUe6uJw8OJInIU7qKAOPY9HtXNYo,1071
+contextualise_ssh_server-0.2.0.dist-info/METADATA,sha256=HXwOl1_D1moy0qsiAMWVHJaZRe7rWU7bXFkdeEd53sg,2456
+contextualise_ssh_server-0.2.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+contextualise_ssh_server-0.2.0.dist-info/entry_points.txt,sha256=64KI-PmLpMSVuRIgG0slE6I0iE7s7tATUsya9uN0FRs,79
+contextualise_ssh_server-0.2.0.dist-info/pbr.json,sha256=ncbaoKP8cXR-Nt9MjRLimt6qRtQHAx8QEeg9SPxKE4Q,47
+contextualise_ssh_server-0.2.0.dist-info/top_level.txt,sha256=a1TJKmsGgcw5R8r0AR2D18Rk5Dh953qUpzoPlAn42h0,25
+contextualise_ssh_server-0.2.0.dist-info/RECORD,,
