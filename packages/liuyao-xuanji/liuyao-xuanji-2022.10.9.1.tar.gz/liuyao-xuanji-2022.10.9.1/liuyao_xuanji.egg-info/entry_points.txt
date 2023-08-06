@@ -1,0 +1,4 @@
+[console_scripts]
+LiuyaoXuanji = LiuyaoXuanji.__main__:main
+liuyao-xuanji = LiuyaoXuanji.__main__:main
+
