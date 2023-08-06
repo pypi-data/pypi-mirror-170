@@ -1,0 +1,4 @@
+[console_scripts]
+LiurenKaiwulu = LiurenKaiwulu.__main__:main
+liuren-kaiwulu = LiurenKaiwulu.__main__:main
+
