@@ -1,0 +1,7 @@
+iopatent/__init__.py,sha256=XBFZN60DrGtXs0X_Zo33Mx9_E5eo8MBXV3lNLbgrtKw,104
+iopatent/csv_manager.py,sha256=7elTtR6ZAwg9ku4Ajmh-gxSIRjA5HXw-CIQIYZvSE-c,660
+iopatent/exceptions.py,sha256=L0Lu_7RfldzVlwSnihpyhWZ9VWZCU22Kmu4WlWqJGlM,187
+iopatent/json_manager.py,sha256=YnH7ijkRbgHvjMrdwsEP1buICFpUgEap6-6hO0m0S1M,851
+iopatent-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+iopatent-0.1.0.dist-info/METADATA,sha256=UiLXKxDw4QnR9c_5uPixXqe8ROIIKa0tEYJZiGcPuis,423
+iopatent-0.1.0.dist-info/RECORD,,
