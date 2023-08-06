@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: my-first-package-project-dio
+Version: 0.0.1
+Summary: Pacote com algoritmo simples para testar empacotamento
+Home-page: https://github.com/leodeola/my_first_package_project_dio
+Author: Leone
+Author-email: leonedeola@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# first_package
+
+O pacote fmy_first_package_project_DIO Ã© um experimento de um projeto. Ã‰ usado para:
+ - Aplicar conhecimento de aula do bootcamp GeraÃ§Ã£o Tech - Unimed/BH da DIO.
+
+   
+
+
+## Autor
+Leone
+
+
