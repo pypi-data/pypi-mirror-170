@@ -1,0 +1,4 @@
+[console_scripts]
+LingqiXinshijie = LingqiXinshijie.__main__:main
+lingqi-xinshijie = LingqiXinshijie.__main__:main
+
