@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ascii-geometry
+Version: 0.1.0
+Summary: Ascii library
+Home-page: https://ascii-geometry.readthedocs.io/
+Author: Hoxu
+Author-email: danu.hoxuan@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Ascii Geometry
+A simple library for drawing geometrical shapes using ascii characters
+
+### Installation
+```
+pip install ascii_geometry
+```
+
+### Quick Demo
+```
+from ascii_geometry import AsciiContext
+
+if __name__ == '__main__':
+    #Create context object
+    ctx = AsciiContext('0')
+    
+    #print a triangle of length 10
+    print(ctx.get_triangle(10))
+
+```

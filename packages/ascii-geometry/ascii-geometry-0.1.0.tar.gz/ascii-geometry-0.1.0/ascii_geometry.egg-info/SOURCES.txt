@@ -1,0 +1,8 @@
+README.md
+setup.py
+ascii_geometry/__init__.py
+ascii_geometry/context.py
+ascii_geometry.egg-info/PKG-INFO
+ascii_geometry.egg-info/SOURCES.txt
+ascii_geometry.egg-info/dependency_links.txt
+ascii_geometry.egg-info/top_level.txt
