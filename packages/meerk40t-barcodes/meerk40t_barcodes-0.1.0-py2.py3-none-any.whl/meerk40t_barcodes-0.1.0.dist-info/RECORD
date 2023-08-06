@@ -1,0 +1,11 @@
+barcodes/__init__.py,sha256=HiWm9KefEL1U5kmJLPzsBKUmy0VexxeYG_U-kkJgjo8,19
+barcodes/main.py,sha256=-PT4qGvz5os8Pj1iXjP5pczRfuDO8OQTnYpimWi8Lpg,51479
+barcodes/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+barcodes/tools/icons.py,sha256=fM1DWc4szYtB32p5MEJ-gkrTHEDu4WDb1skmL9_bCJw,11818
+meerk40t_barcodes-0.1.0.dist-info/LICENSE,sha256=y3IvJ9jqvRxhAJc-56Vq-tDDyf-NvjwoaEKkFbt15fE,1086
+meerk40t_barcodes-0.1.0.dist-info/METADATA,sha256=Mkpyn8ZYKnzP7CCY10UdUHmxiM85isUgL8Vx5knxEQw,2746
+meerk40t_barcodes-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+meerk40t_barcodes-0.1.0.dist-info/entry_points.txt,sha256=y93Q-MlCbit0nLoj2AfXL67ruKtH7Y7GGpITHvQwx5E,53
+meerk40t_barcodes-0.1.0.dist-info/top_level.txt,sha256=m1ztH4hCBo9bWiREP22ZSlTaVtwn49vm_pzcj130dZw,9
+meerk40t_barcodes-0.1.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+meerk40t_barcodes-0.1.0.dist-info/RECORD,,
