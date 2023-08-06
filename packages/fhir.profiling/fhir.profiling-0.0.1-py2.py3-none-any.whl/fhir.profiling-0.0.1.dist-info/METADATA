@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: fhir.profiling
+Version: 0.0.1
+Summary: FHIR profile validator.
+Home-page: https://github.com/nazrulworld/fhir.profiling
+Author: Md Nazrul Islam
+Author-email: email2nazrul@gmail.com
+License: BSD license
+Project-URL: CI: Travis, https://travis-ci.org/github/nazrulworld/fhir.profiling
+Project-URL: Coverage: codecov, https://codecov.io/gh/nazrulworld/fhir.profiling
+Project-URL: GitHub: issues, https://github.com/nazrulworld/fhir.profiling/issues
+Project-URL: GitHub: repo, https://github.com/nazrulworld/fhir.profiling
+Keywords: fhir,profiling,python,hl7,health IT,healthcare
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: antlr4-python3-runtime (==4.9.3)
+Requires-Dist: pydantic (>=1.7.2)
+Provides-Extra: dev
+Requires-Dist: fhir.resources ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 (==3.8.3) ; extra == 'dev'
+Requires-Dist: flake8-isort (==3.0.0) ; extra == 'dev'
+Requires-Dist: flake8-bugbear (==20.1.4) ; extra == 'dev'
+Requires-Dist: isort (==4.3.21) ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy (==0.812) ; extra == 'dev'
+Requires-Dist: Jinja2 (==2.11.1) ; extra == 'dev'
+Requires-Dist: MarkupSafe (==1.1.1) ; extra == 'dev'
+Requires-Dist: colorlog (==2.10.0) ; extra == 'dev'
+Requires-Dist: certifi ; extra == 'dev'
+Requires-Dist: zest-releaser[recommended] ; extra == 'dev'
+Requires-Dist: pytest-runner ; extra == 'dev'
+Requires-Dist: pytest (>5.4.0) ; (python_version >= "3.6") and extra == 'dev'
+Requires-Dist: pytest-cov (>=2.10.0) ; (python_version >= "3.6") and extra == 'dev'
+Provides-Extra: test
+Requires-Dist: fhir.resources ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: flake8 (==3.8.3) ; extra == 'test'
+Requires-Dist: flake8-isort (==3.0.0) ; extra == 'test'
+Requires-Dist: flake8-bugbear (==20.1.4) ; extra == 'test'
+Requires-Dist: isort (==4.3.21) ; extra == 'test'
+Requires-Dist: black ; extra == 'test'
+Requires-Dist: mypy (==0.812) ; extra == 'test'
+Requires-Dist: pytest-runner ; extra == 'test'
+Requires-Dist: pytest (>5.4.0) ; (python_version >= "3.6") and extra == 'test'
+Requires-Dist: pytest-cov (>=2.10.0) ; (python_version >= "3.6") and extra == 'test'
+
+=======================
+FHIR® profile validator
+=======================
+
+.. image:: https://img.shields.io/pypi/v/fhir.profiling.svg
+        :target: https://pypi.python.org/pypi/fhir.profiling
+
+.. image:: https://img.shields.io/pypi/pyversions/fhir.profiling.svg
+        :target: https://pypi.python.org/pypi/fhir.profiling
+        :alt: Supported Python Versions
+
+.. image:: https://img.shields.io/travis/com/nazrulworld/fhir.profiling.svg
+        :target: https://app.travis-ci.com/github/nazrulworld/fhir.profiling
+
+.. image:: https://ci.appveyor.com/api/projects/status/0qu5vyue1jwxb4km?svg=true
+        :target: https://ci.appveyor.com/project/nazrulworld/fhir-profiling
+        :alt: Windows Build
+
+.. image:: https://codecov.io/gh/nazrulworld/fhir.profiling/branch/main/graph/badge.svg?token=IQMTGF8II2
+        :target: https://codecov.io/gh/nazrulworld/fhir.profiling
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+
+.. image:: https://static.pepy.tech/personalized-badge/fhir-profiling?period=total&units=international_system&left_color=black&right_color=green&left_text=Downloads
+    :target: https://pepy.tech/project/fhir-profiling
+    :alt: Downloads
+
+.. image:: https://www.hl7.org/fhir/assets/images/fhir-logo-www.png
+        :target: https://www.hl7.org/implement/standards/product_brief.cfm?product_id=449
+        :alt: HL7® FHIR®
+
+
+Don't use this release! This release has been uploaded purly package registration purpose.
+------------------------------------------------------------------------------------------
+**But working release is coming soon, we are working hard to make it happen. If you have any question, suggestion, you are welcome to contact at email2nazrul@gmail.com**
+
+
+Python implementation for FHIR profile constraint validator.
+* Free software: BSD license
+
+
+
+Installation
+------------
+
+Just a simple ``pip install fhir.profiling`` or ``easy_install fhir.profiling`` is enough. But if you want development
+version, just clone from https://github.com/nazrulworld/fhir.profiling and ``pip install -e .[dev]``.
+
+Copyright Disclaimer
+--------------------
+
+HL7® logo, FHIR® logo and the flaming fire are registered trademarks
+owned by `Health Level Seven International <https://www.hl7.org/legal/trademarks.cfm?ref=https://pypi.org/project/fhir.profiling/>`_
+
+
+=======
+History
+=======
+
+0.0.1 (2022-10-06)
+------------------
+
+- Initial release for package registration purpose.
