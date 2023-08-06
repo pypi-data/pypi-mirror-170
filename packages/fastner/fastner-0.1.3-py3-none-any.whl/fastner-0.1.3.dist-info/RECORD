@@ -1,0 +1,9 @@
+fastner/__init__.py,sha256=vsx4UXYOZEdXeYu-0nveh7gqIGlMiYUC_QMt3r11uZw,39
+fastner/dataset.py,sha256=eutMHHJYssA1z60dGtHA-LTTfRwYkeipSDfLfX7e8rQ,1872
+fastner/trainer.py,sha256=0fBZ9tn4tYHjI0dJhF0Tqoxtn4qO6qC_eOetHwqHUko,788
+fastner/training.py,sha256=M72AQzeXKb0pt6aOkmfyo0kxTCi6hmcqw7628S72SSA,5948
+fastner-0.1.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fastner-0.1.3.dist-info/METADATA,sha256=ueRHr91s4lVVZVQzfGhM_bRWbvpkBHnSX9649KzjpmU,4856
+fastner-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fastner-0.1.3.dist-info/top_level.txt,sha256=c7kNEedvcCXbg54P7luRNHad-BpOkLZLN1fOPIKUkF0,8
+fastner-0.1.3.dist-info/RECORD,,
