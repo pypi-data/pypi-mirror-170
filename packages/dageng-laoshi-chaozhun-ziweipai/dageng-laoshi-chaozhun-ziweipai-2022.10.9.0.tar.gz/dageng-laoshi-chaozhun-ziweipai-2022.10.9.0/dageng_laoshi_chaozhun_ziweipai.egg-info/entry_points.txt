@@ -1,0 +1,4 @@
+[console_scripts]
+DagengLaoshiChaozhunZiweipai = DagengLaoshiChaozhunZiweipai.__main__:main
+dageng-laoshi-chaozhun-ziweipai = DagengLaoshiChaozhunZiweipai.__main__:main
+
