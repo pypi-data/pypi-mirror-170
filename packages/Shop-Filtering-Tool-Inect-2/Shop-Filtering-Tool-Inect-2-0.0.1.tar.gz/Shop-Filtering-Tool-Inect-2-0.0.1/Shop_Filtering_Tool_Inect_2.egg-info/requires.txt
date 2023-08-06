@@ -1,0 +1,6 @@
+pandas
+csv
+bs4
+unicodedata
+requests
+xmltodict
