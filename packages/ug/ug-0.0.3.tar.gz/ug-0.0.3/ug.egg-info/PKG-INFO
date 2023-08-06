@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ug
+Version: 0.0.3
+Summary: Utils to work with pickles
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/pickling.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# ug
+Utils to work with pickles
+
+
+To install:	```pip install ug```
+
+
