@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: unique_character
+Version: 0.0.2
+Summary: Package count unique chars in file or string
+Author-email: Botvinko Dmitro <dmitrobottvinko@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Python module for counting unique symbol
+
+Module get nuber of uniq chars in text file, string or function
+
+## Options:
+```
+unique_character.cli_unique_character [-h] 
+```
+```
+unique_character.cli_unique_character [--file FILE] 
+```
+```
+unique_character.cli_unique_character [--string STRING]
+```
+```
+from unique_character.count_unique_character import count_letter
+assert count_letter('1234') == 4
+
+
+```
+## Examples:
+
+#### Command:
+```bash
+python3.8 -m unique_character.cli_unique_character --string aaabbcc123
+```
+#### Return:
+```bash
+3
+```
+
+#### Command:
+```bash
+python3.8 -m unique_character.cli_unique_character --file text_file.txt
+```
+#### Return:
+```bash
+100
+```
