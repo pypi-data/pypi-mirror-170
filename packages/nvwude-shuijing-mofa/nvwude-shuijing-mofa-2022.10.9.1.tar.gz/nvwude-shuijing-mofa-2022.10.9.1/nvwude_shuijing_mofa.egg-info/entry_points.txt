@@ -1,0 +1,4 @@
+[console_scripts]
+NvwudeShuijingMofa = NvwudeShuijingMofa.__main__:main
+nvwude-shuijing-mofa = NvwudeShuijingMofa.__main__:main
+
