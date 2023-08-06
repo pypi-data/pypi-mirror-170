@@ -1,0 +1,16 @@
+avrzero/__init__.py,sha256=9fJ6XBgbzklON3aKp2T9tes85vMQMl0zhiAOtpRvjVw,157
+avrzero/__main__.py,sha256=cnYyk3Z7bNjg8trDlCFsz2nLwHWwevA6Jfk-50WSkBU,426
+avrzero/assembler.py,sha256=MoybllYVtUYkfyXBYW5hMchZzmnL_bVVX8-bhIwM9lo,1225
+avrzero/error.py,sha256=r0aRi_F5NM0XaluFe5CU-r4CBH6Zd4D9aklqhooZw80,341
+avrzero/formatter.py,sha256=SZxJ47SBXLIdRYKRsVoOd-mbFZfW0AR8rIL3Pd6_lEQ,1341
+avrzero/gui.py,sha256=R3AdlrvuVUj9xmLmatbURRVpzp-KO5JSLaFYUUP0rLQ,11136
+avrzero/instruction.py,sha256=ssFDeQ5Lhltaz6KLB6kLXNQDVI8GP9z35ziq8EPxbVw,14226
+avrzero/machine.py,sha256=ASy5yuq-1DsQ6GaETS0o2e0MtdtVGLvUwTAuQwmot_w,3543
+avrzero/register.py,sha256=tKctWxddPe8nM97RxECXaC35ku19FCIsCp_uDa2DQcs,3534
+avrzero/variable.py,sha256=-QwoncxskqYEnEfFWoR8xdKi3QtHtbWQjgESaGseSpk,361
+avrzero/example/hello_world.asm,sha256=__tyMBxlNri0JAowNvdOYbv0yBMjZWFjYvXYH0xI06w,178
+avrzero/example/times_two.asm,sha256=VyKesrxNNWp30RsBo2gctclqzpO1vk0PCAjIHOGLC5w,230
+avrzero-0.1.dev1.dist-info/METADATA,sha256=0oCZf-lhI_gAMJVVlg0XUtOCx_g_20EewsgfkYrUS60,1393
+avrzero-0.1.dev1.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+avrzero-0.1.dev1.dist-info/licenses/LICENSE,sha256=v8Vh2NUIr2I_20QQs1_3m-CF4cvKCtx0XeDgfefd4l8,1066
+avrzero-0.1.dev1.dist-info/RECORD,,
