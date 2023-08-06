@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Gubs_Text_Extractor.egg-info/PKG-INFO
+src/Gubs_Text_Extractor.egg-info/SOURCES.txt
+src/Gubs_Text_Extractor.egg-info/dependency_links.txt
+src/Gubs_Text_Extractor.egg-info/top_level.txt
+src/InvoiceOcrGubs/__init__.py
+src/InvoiceOcrGubs/script.py
