@@ -1,0 +1,4 @@
+[console_scripts]
+KuaileXueziwei = KuaileXueziwei.__main__:main
+kuaile-xueziwei = KuaileXueziwei.__main__:main
+
