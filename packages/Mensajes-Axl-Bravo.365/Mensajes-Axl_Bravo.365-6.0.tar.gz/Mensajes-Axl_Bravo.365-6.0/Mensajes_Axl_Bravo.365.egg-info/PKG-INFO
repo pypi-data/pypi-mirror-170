@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Mensajes-Axl-Bravo.365
+Version: 6.0
+Summary: Un paquete para saludar y despedir
+Home-page: 
+Author: Axl Bravo
+Author-email: axl@hmail.com
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+
+# Mensajes
+
+El paquete de mensajerÃ­a para pruenas de Axel BravoS
