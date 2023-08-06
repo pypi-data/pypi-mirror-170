@@ -1,0 +1,4 @@
+include flatten_any_dict_iterable_or_whatsoever/requirements.txt
+include flatten_any_dict_iterable_or_whatsoever/thirdparty.json
+include flatten_any_dict_iterable_or_whatsoever/README.MD
+include flatten_any_dict_iterable_or_whatsoever/LICENSE
