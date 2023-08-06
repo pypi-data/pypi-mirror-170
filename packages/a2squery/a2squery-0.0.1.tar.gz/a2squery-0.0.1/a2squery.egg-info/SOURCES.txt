@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+a2squery/__init__.py
+a2squery/data.py
+a2squery/enums.py
+a2squery/exceptions.py
+a2squery/parser.py
+a2squery/query.py
+a2squery.egg-info/PKG-INFO
+a2squery.egg-info/SOURCES.txt
+a2squery.egg-info/dependency_links.txt
+a2squery.egg-info/top_level.txt
