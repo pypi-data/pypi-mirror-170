@@ -1,0 +1,11 @@
+.gitignore
+NOTE.md
+README.md
+pyproject.toml
+sopel_modules/__init__.py
+sopel_modules.genius_answer.egg-info/PKG-INFO
+sopel_modules.genius_answer.egg-info/SOURCES.txt
+sopel_modules.genius_answer.egg-info/dependency_links.txt
+sopel_modules.genius_answer.egg-info/requires.txt
+sopel_modules.genius_answer.egg-info/top_level.txt
+sopel_modules/genius-answer/__init__.py
