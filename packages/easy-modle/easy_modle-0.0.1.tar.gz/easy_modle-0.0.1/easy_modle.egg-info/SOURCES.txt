@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+setup.py
+easy_modle.egg-info/PKG-INFO
+easy_modle.egg-info/SOURCES.txt
+easy_modle.egg-info/dependency_links.txt
+easy_modle.egg-info/top_level.txt
