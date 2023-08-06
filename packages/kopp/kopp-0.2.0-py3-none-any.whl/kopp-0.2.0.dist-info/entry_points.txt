@@ -1,0 +1,3 @@
+[console_scripts]
+kopp=kopp.__main__:cli
+
