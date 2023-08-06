@@ -1,0 +1,259 @@
+
+        sharedata, sharetable, readSharedMemory, openSharedMemory, close, writeToPipe = require ("madl_mmap").sharedata, require ("madl_mmap").sharetable, require ("madl_mmap").readSharedMemory, require ("madl_mmap").openSharedMemory, require ("madl_mmap").close, require ("madl_mmap").writeToPipe
+
+        local openPipe in require("madl_mmap")
+        openPipe("/home/joshua/Documents/MADpy/examples/ex-ps-twiss/pipedb3_bk8f")
+        local tostring = tostring
+writeToPipe('pyCommand:self._import("MAD", "elements", "'.. tostring(MAD.elements) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "sequence", "'.. tostring(MAD.sequence) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "mtable", "'.. tostring(MAD.mtable) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "twiss", "'.. tostring(MAD.twiss) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "beta0", "'.. tostring(MAD.beta0) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "beam", "'.. tostring(MAD.beam) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "survey", "'.. tostring(MAD.survey) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "object", "'.. tostring(MAD.object) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "track", "'.. tostring(MAD.track) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "match", "'.. tostring(MAD.match) .. '", True)\n')
+
+writeToPipe('finished\n')
+elements = MAD.elements
+
+writeToPipe('finished\n')
+sequence = MAD.sequence
+
+writeToPipe('finished\n')
+mtable = MAD.mtable
+
+writeToPipe('finished\n')
+twiss = MAD.twiss
+
+writeToPipe('finished\n')
+beta0 = MAD.beta0
+
+writeToPipe('finished\n')
+beam = MAD.beam
+
+writeToPipe('finished\n')
+survey = MAD.survey
+
+writeToPipe('finished\n')
+object = MAD.object
+
+writeToPipe('finished\n')
+track = MAD.track
+
+writeToPipe('finished\n')
+match = MAD.match
+
+writeToPipe('finished\n')
+local tostring = tostring
+
+                       function getModName(modname, mod)
+                           writeToPipe('pyCommand:self._import("MAD.element", "'..tostring(modname)..'", "'..tostring(mod)..'", True)\n')
+
+                       end
+                       for modname, mod in pairs(MAD.element) do pcall(getModName, modname, mod); end writeToPipe("\n")
+writeToPipe('finished\n')
+rfmultipole = MAD.element.rfmultipole
+
+writeToPipe('finished\n')
+nllens = MAD.element.nllens
+
+writeToPipe('finished\n')
+beambeam = MAD.element.beambeam
+
+writeToPipe('finished\n')
+multipole = MAD.element.multipole
+
+writeToPipe('finished\n')
+genmap = MAD.element.genmap
+
+writeToPipe('finished\n')
+changedir = MAD.element.changedir
+
+writeToPipe('finished\n')
+changeref = MAD.element.changeref
+
+writeToPipe('finished\n')
+rfcavity = MAD.element.rfcavity
+
+writeToPipe('finished\n')
+yrotation = MAD.element.yrotation
+
+writeToPipe('finished\n')
+xrotation = MAD.element.xrotation
+
+writeToPipe('finished\n')
+elseparator = MAD.element.elseparator
+
+writeToPipe('finished\n')
+wiggler = MAD.element.wiggler
+
+writeToPipe('finished\n')
+tkicker = MAD.element.tkicker
+
+writeToPipe('finished\n')
+solenoid = MAD.element.solenoid
+
+writeToPipe('finished\n')
+dodecapole = MAD.element.dodecapole
+
+writeToPipe('finished\n')
+decapole = MAD.element.decapole
+
+writeToPipe('finished\n')
+octupole = MAD.element.octupole
+
+writeToPipe('finished\n')
+sextupole = MAD.element.sextupole
+
+writeToPipe('finished\n')
+rbend = MAD.element.rbend
+
+writeToPipe('finished\n')
+bline = MAD.element.bline
+
+writeToPipe('finished\n')
+placeholder = MAD.element.placeholder
+
+writeToPipe('finished\n')
+instrument = MAD.element.instrument
+
+writeToPipe('finished\n')
+collimator = MAD.element.collimator
+
+writeToPipe('finished\n')
+drift = MAD.element.drift
+
+writeToPipe('finished\n')
+vkicker = MAD.element.vkicker
+
+writeToPipe('finished\n')
+slink = MAD.element.slink
+
+writeToPipe('finished\n')
+hkicker = MAD.element.hkicker
+
+writeToPipe('finished\n')
+marker = MAD.element.marker
+
+writeToPipe('finished\n')
+assembly = MAD.element.assembly
+
+writeToPipe('finished\n')
+quadrupole = MAD.element.quadrupole
+
+writeToPipe('finished\n')
+specl_element = MAD.element.specl_element
+
+writeToPipe('finished\n')
+changenrj = MAD.element.changenrj
+
+writeToPipe('finished\n')
+extrn_element = MAD.element.extrn_element
+
+writeToPipe('finished\n')
+translate = MAD.element.translate
+
+writeToPipe('finished\n')
+patch_element = MAD.element.patch_element
+
+writeToPipe('finished\n')
+srotation = MAD.element.srotation
+
+writeToPipe('finished\n')
+thick_element = MAD.element.thick_element
+
+writeToPipe('finished\n')
+sbend = MAD.element.sbend
+
+writeToPipe('finished\n')
+drift_element = MAD.element.drift_element
+
+writeToPipe('finished\n')
+kicker = MAD.element.kicker
+
+writeToPipe('finished\n')
+vmonitor = MAD.element.vmonitor
+
+writeToPipe('finished\n')
+hmonitor = MAD.element.hmonitor
+
+writeToPipe('finished\n')
+thin_element = MAD.element.thin_element
+
+writeToPipe('finished\n')
+flags = MAD.element.flags
+
+writeToPipe('finished\n')
+element = MAD.element.element
+
+writeToPipe('finished\n')
+sequence = MAD.element.sequence
+
+writeToPipe('finished\n')
+monitor = MAD.element.monitor
+
+writeToPipe('finished\n')
+crabcavity = MAD.element.crabcavity
+
+writeToPipe('finished\n')
+
+    psbeam = beam 'psbeam' { particle = 'proton', pc = 2.794987,   } 
+                
+writeToPipe('finished\n')
+MADX.BEAM = psbeam
+
+writeToPipe('finished\n')
+
+            openSharedMemory("psm_ba4a81fc", true)
+            local offset = sharedata({psbeam.brho, })                  --This mmaps to shared memory
+            close()
+                
+writeToPipe('finished\n')
+MADX:load('/home/joshua/Documents/MADpy/examples/ex-ps-twiss/ps_unset_vars.mad', nil)
+
+writeToPipe('finished\n')
+MADX:load('/home/joshua/Documents/MADpy/examples/ex-ps-twiss/ps_mu.seq', '/home/joshua/Documents/MADpy/examples/ex-ps-twiss/ps_mu.mad', nil)
+
+writeToPipe('finished\n')
+MADX:load('/home/joshua/Documents/MADpy/examples/ex-ps-twiss/ps_ss.seq', '/home/joshua/Documents/MADpy/examples/ex-ps-twiss/ps_ss.mad', nil)
+
+writeToPipe('finished\n')
+MADX:load('/home/joshua/Documents/MADpy/examples/ex-ps-twiss/ps_fb_lhc.str', '/home/joshua/Documents/MADpy/examples/ex-ps-twiss/ps_fb_lhc_str.mad', nil)
+
+writeToPipe('finished\n')
+local tostring = tostring
+writeToPipe('pyCommand:self._import("MADX", "ps", "'.. tostring(MADX.ps) .. '", False)\n')
+
+writeToPipe('finished\n')
+ps = MADX.ps
+
+writeToPipe('finished\n')
+ps.beam = psbeam
+
+writeToPipe('finished\n')
+
+    srv = survey 'srv' { sequence = ps,   } 
+                
+writeToPipe('finished\n')
+srv:write('PS_survey_py.tfs', {'name', 'kind', 's', 'l', 'angle', 'x', 'y', 'z', 'theta', })
+
+writeToPipe('finished\n')
+
+    tws = twiss 'tws' { sequence = ps, method = 6, nslice = 3, chrom = true,   } 
+                
+writeToPipe('finished\n')
+local tostring = tostring
+writeToPipe('pyCommand:self._import("MAD.gphys", "melmcol", "'.. tostring(MAD.gphys.melmcol) .. '", True)\n')
+
+writeToPipe('finished\n')
+melmcol = MAD.gphys.melmcol
+
+writeToPipe('finished\n')
+melmcol(tws, {'angle', 'tilt', 'k0l', 'k1l', 'k2l', 'k3l', 'k4l', 'k5l', 'k6l', 'k0sl', 'k1sl', 'k2sl', 'k3sl', 'k4sl', 'k5sl', 'k6sl', 'ksl', 'hkick', 'vkick', })
+
+writeToPipe('finished\n')
+tws:write('PS_twiss_py.tfs', {'name', 'kind', 's', 'x', 'px', 'beta11', 'alfa11', 'beta22', 'alfa22', 'dx', 'dpx', 'mu1', 'mu2', 'l', 'angle', 'k0l', 'k1l', 'k2l', 'k3l', 'hkick', 'vkick', })
+
+writeToPipe('finished\n')

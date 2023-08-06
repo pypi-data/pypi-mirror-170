@@ -1,0 +1,311 @@
+
+        sharedata, sharetable, readSharedMemory, openSharedMemory, close, writeToPipe = require ("madl_mmap").sharedata, require ("madl_mmap").sharetable, require ("madl_mmap").readSharedMemory, require ("madl_mmap").openSharedMemory, require ("madl_mmap").close, require ("madl_mmap").writeToPipe
+
+        local openPipe in require("madl_mmap")
+        openPipe("/home/joshua/Documents/MADpy/examples/ex-lhc-couplingLocal/pipe7j6fpupp")
+        local tostring = tostring
+writeToPipe('pyCommand:self._import("MAD", "elements", "'.. tostring(MAD.elements) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "sequence", "'.. tostring(MAD.sequence) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "mtable", "'.. tostring(MAD.mtable) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "twiss", "'.. tostring(MAD.twiss) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "beta0", "'.. tostring(MAD.beta0) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "beam", "'.. tostring(MAD.beam) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "survey", "'.. tostring(MAD.survey) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "object", "'.. tostring(MAD.object) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "track", "'.. tostring(MAD.track) .. '", True)\n')
+writeToPipe('pyCommand:self._import("MAD", "match", "'.. tostring(MAD.match) .. '", True)\n')
+
+writeToPipe('finished\n')
+elements = MAD.elements
+
+writeToPipe('finished\n')
+sequence = MAD.sequence
+
+writeToPipe('finished\n')
+mtable = MAD.mtable
+
+writeToPipe('finished\n')
+twiss = MAD.twiss
+
+writeToPipe('finished\n')
+beta0 = MAD.beta0
+
+writeToPipe('finished\n')
+beam = MAD.beam
+
+writeToPipe('finished\n')
+survey = MAD.survey
+
+writeToPipe('finished\n')
+object = MAD.object
+
+writeToPipe('finished\n')
+track = MAD.track
+
+writeToPipe('finished\n')
+match = MAD.match
+
+writeToPipe('finished\n')
+local tostring = tostring
+
+                       function getModName(modname, mod)
+                           writeToPipe('pyCommand:self._import("MAD.element", "'..tostring(modname)..'", "'..tostring(mod)..'", True)\n')
+
+                       end
+                       for modname, mod in pairs(MAD.element) do pcall(getModName, modname, mod); end writeToPipe("\n")
+writeToPipe('finished\n')
+beambeam = MAD.element.beambeam
+
+writeToPipe('finished\n')
+multipole = MAD.element.multipole
+
+writeToPipe('finished\n')
+genmap = MAD.element.genmap
+
+writeToPipe('finished\n')
+flags = MAD.element.flags
+
+writeToPipe('finished\n')
+rfcavity = MAD.element.rfcavity
+
+writeToPipe('finished\n')
+elseparator = MAD.element.elseparator
+
+writeToPipe('finished\n')
+wiggler = MAD.element.wiggler
+
+writeToPipe('finished\n')
+tkicker = MAD.element.tkicker
+
+writeToPipe('finished\n')
+solenoid = MAD.element.solenoid
+
+writeToPipe('finished\n')
+translate = MAD.element.translate
+
+writeToPipe('finished\n')
+dodecapole = MAD.element.dodecapole
+
+writeToPipe('finished\n')
+decapole = MAD.element.decapole
+
+writeToPipe('finished\n')
+octupole = MAD.element.octupole
+
+writeToPipe('finished\n')
+sextupole = MAD.element.sextupole
+
+writeToPipe('finished\n')
+changenrj = MAD.element.changenrj
+
+writeToPipe('finished\n')
+quadrupole = MAD.element.quadrupole
+
+writeToPipe('finished\n')
+bline = MAD.element.bline
+
+writeToPipe('finished\n')
+rbend = MAD.element.rbend
+
+writeToPipe('finished\n')
+sbend = MAD.element.sbend
+
+writeToPipe('finished\n')
+placeholder = MAD.element.placeholder
+
+writeToPipe('finished\n')
+instrument = MAD.element.instrument
+
+writeToPipe('finished\n')
+collimator = MAD.element.collimator
+
+writeToPipe('finished\n')
+drift = MAD.element.drift
+
+writeToPipe('finished\n')
+slink = MAD.element.slink
+
+writeToPipe('finished\n')
+marker = MAD.element.marker
+
+writeToPipe('finished\n')
+assembly = MAD.element.assembly
+
+writeToPipe('finished\n')
+specl_element = MAD.element.specl_element
+
+writeToPipe('finished\n')
+extrn_element = MAD.element.extrn_element
+
+writeToPipe('finished\n')
+vkicker = MAD.element.vkicker
+
+writeToPipe('finished\n')
+patch_element = MAD.element.patch_element
+
+writeToPipe('finished\n')
+hkicker = MAD.element.hkicker
+
+writeToPipe('finished\n')
+thick_element = MAD.element.thick_element
+
+writeToPipe('finished\n')
+kicker = MAD.element.kicker
+
+writeToPipe('finished\n')
+drift_element = MAD.element.drift_element
+
+writeToPipe('finished\n')
+hmonitor = MAD.element.hmonitor
+
+writeToPipe('finished\n')
+vmonitor = MAD.element.vmonitor
+
+writeToPipe('finished\n')
+xrotation = MAD.element.xrotation
+
+writeToPipe('finished\n')
+thin_element = MAD.element.thin_element
+
+writeToPipe('finished\n')
+changedir = MAD.element.changedir
+
+writeToPipe('finished\n')
+monitor = MAD.element.monitor
+
+writeToPipe('finished\n')
+crabcavity = MAD.element.crabcavity
+
+writeToPipe('finished\n')
+changeref = MAD.element.changeref
+
+writeToPipe('finished\n')
+sequence = MAD.element.sequence
+
+writeToPipe('finished\n')
+srotation = MAD.element.srotation
+
+writeToPipe('finished\n')
+yrotation = MAD.element.yrotation
+
+writeToPipe('finished\n')
+rfmultipole = MAD.element.rfmultipole
+
+writeToPipe('finished\n')
+element = MAD.element.element
+
+writeToPipe('finished\n')
+nllens = MAD.element.nllens
+
+writeToPipe('finished\n')
+local tostring = tostring
+writeToPipe('pyCommand:self._import("MAD.element.flags", "observed", "'.. tostring(MAD.element.flags.observed) .. '", False)\n')
+
+writeToPipe('finished\n')
+observed = MAD.element.flags.observed
+
+writeToPipe('finished\n')
+local tostring = tostring
+writeToPipe('pyCommand:self._import("MAD.utility", "assertf", "'.. tostring(MAD.utility.assertf) .. '", False)\n')
+writeToPipe('pyCommand:self._import("MAD.utility", "printf", "'.. tostring(MAD.utility.printf) .. '", False)\n')
+
+writeToPipe('finished\n')
+assertf = MAD.utility.assertf
+
+writeToPipe('finished\n')
+printf = MAD.utility.printf
+
+writeToPipe('finished\n')
+local tostring = tostring
+writeToPipe('pyCommand:self._import("MAD.gphys", "mchklost", "'.. tostring(MAD.gphys.mchklost) .. '", False)\n')
+
+writeToPipe('finished\n')
+mchklost = MAD.gphys.mchklost
+
+writeToPipe('finished\n')
+MADX:load('/home/joshua/Documents/MADpy/examples/ex-lhc-couplingLocal/lhc_as-built.seq', '/home/joshua/Documents/MADpy/examples/ex-lhc-couplingLocal/lhc_as-built.mad')
+
+writeToPipe('finished\n')
+MADX:load('/home/joshua/Documents/MADpy/examples/ex-lhc-couplingLocal/opticsfile.21', '/home/joshua/Documents/MADpy/examples/ex-lhc-couplingLocal/opticsfile.21.mad')
+
+writeToPipe('finished\n')
+MADX:load('/home/joshua/Documents/MADpy/examples/ex-lhc-couplingLocal/lhc_unset_vars.mad')
+
+writeToPipe('finished\n')
+local tostring = tostring
+writeToPipe('pyCommand:self._import("MADX", "lhcb1", "'.. tostring(MADX.lhcb1) .. '", False)\n')
+writeToPipe('pyCommand:self._import("MADX", "nrj", "'.. tostring(MADX.nrj) .. '", False)\n')
+
+writeToPipe('finished\n')
+lhcb1 = MADX.lhcb1
+
+writeToPipe('finished\n')
+nrj = MADX.nrj
+
+writeToPipe('finished\n')
+assertf(#lhcb1 == 6694, 'invalid number of elements %d in LHCB1 (6694 expected)', #lhcb1)
+
+writeToPipe('finished\n')
+
+    lhcb1beam = beam 'lhcb1beam' { particle = 'proton', energy = nrj,   } 
+                
+writeToPipe('finished\n')
+lhcb1.beam = lhcb1beam
+
+writeToPipe('finished\n')
+
+    MADX:open_env()
+    ktqx1_r2 = -ktqx1_l2 ! remove the link between these 2 vars
+    kqsx3_l2 = -0.0015
+    kqsx3_r2 = +0.0015
+    MADX:close_env()
+    
+writeToPipe('finished\n')
+
+    tbl = twiss 'tbl' { sequence = lhcb1, method = 4, chrom = true,   } 
+                
+writeToPipe('finished\n')
+tbl:write('before_tune_correction_n')
+
+writeToPipe('finished\n')
+
+            openSharedMemory("psm_7251e3b2", true)
+            local offset = sharedata({MADX.dqx_b1, })                  --This mmaps to shared memory
+            close()
+                
+writeToPipe('finished\n')
+
+            openSharedMemory("psm_7251e3b2", true)
+            local offset = sharedata({MADX.dqy_b1, })                  --This mmaps to shared memory
+            close()
+                
+writeToPipe('finished\n')
+
+    status, fmin, ncall = match { objective = {fmin = 0.001, }, maxcall = 100, info = 2,  command := mchklost(twiss {sequence:=lhcb1, method:=4, observe:=1}), variables = { rtol = 1e-06,  { var = 'MADX.dqx_b1', name = 'dQx.b1',   } , { var = 'MADX.dqy_b1', name = 'dQy.b1',   }  } , equalities = { tol = 0.001,  { name = 'q1',  expr = \t, s -> t.q1 - 62.30980 } , { name = 'q2',  expr = \t, s -> t.q2 - 60.32154 }  }  }
+                
+writeToPipe('finished\n')
+
+            openSharedMemory("psm_7251e3b2", true)
+            local offset = sharedata({status, fmin, ncall, })                  --This mmaps to shared memory
+            close()
+                
+writeToPipe('finished\n')
+
+            openSharedMemory("psm_7251e3b2", true)
+            local offset = sharedata({MADX.dqx_b1, })                  --This mmaps to shared memory
+            close()
+                
+writeToPipe('finished\n')
+
+            openSharedMemory("psm_7251e3b2", true)
+            local offset = sharedata({MADX.dqy_b1, })                  --This mmaps to shared memory
+            close()
+                
+writeToPipe('finished\n')
+
+    tbl = twiss 'tbl' { sequence = lhcb1, method = 4, chrom = true,   } 
+                
+writeToPipe('finished\n')
+tbl:write('after_tune_correction_n')
+
+writeToPipe('finished\n')

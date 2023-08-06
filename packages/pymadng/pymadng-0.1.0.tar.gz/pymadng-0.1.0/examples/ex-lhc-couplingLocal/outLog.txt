@@ -1,0 +1,74 @@
+> > result	9	MAD|MAD;
+result	14	elements|nil;
+result	46	sequence|sequence: 'sequence' 0x7f63645059e8;
+result	40	mtable|object: 'mtable' 0x7f63644b2500;
+result	38	twiss|object: 'twiss' 0x7f63644a6430;
+result	38	beta0|object: 'beta0' 0x7f636452ce58;
+result	36	beam|object: 'beam' 0x7f63645296a0;
+result	40	survey|object: 'survey' 0x7f63644c3840;
+result	40	object|object: 'object' 0x7f6364518f20;
+result	38	track|object: 'track' 0x7f6364498210;
+result	38	match|object: 'match' 0x7f6364480560;
+> > result	52	dodecapole|dodecapole: 'dodecapole' 0x7f6364507148;
+result	46	decapole|decapole: 'decapole' 0x7f6364506fb8;
+result	46	octupole|octupole: 'octupole' 0x7f6364506e28;
+result	49	sextupole|sextupole: 'sextupole' 0x7f6364506c98;
+result	52	quadrupole|quadrupole: 'quadrupole' 0x7f6364506a78;
+result	37	rbend|rbend: 'rbend' 0x7f6364506828;
+result	37	sbend|sbend: 'sbend' 0x7f63645065d8;
+result	55	placeholder|placeholder: 'placeholder' 0x7f6364506480;
+result	52	instrument|instrument: 'instrument' 0x7f6364506328;
+result	52	collimator|collimator: 'collimator' 0x7f63645061d0;
+result	37	drift|drift: 'drift' 0x7f6364506078;
+result	37	slink|slink: 'slink' 0x7f6364505ee8;
+result	40	marker|marker: 'marker' 0x7f6364505d90;
+result	46	assembly|assembly: 'assembly' 0x7f6364505ba8;
+result	46	sequence|sequence: 'sequence' 0x7f63645059e8;
+result	61	extrn_element|extrn_element: 'extrn_element' 0x7f63645054d0;
+result	61	patch_element|patch_element: 'patch_element' 0x7f6364505240;
+result	43	vkicker|vkicker: 'vkicker' 0x7f6364509c40;
+result	61	thick_element|thick_element: 'thick_element' 0x7f6364504bc0;
+result	40	kicker|kicker: 'kicker' 0x7f6364509928;
+result	61	drift_element|drift_element: 'drift_element' 0x7f6364504670;
+result	46	hmonitor|hmonitor: 'hmonitor' 0x7f6364509610;
+result	43	hkicker|hkicker: 'hkicker' 0x7f6364509a80;
+result	46	vmonitor|vmonitor: 'vmonitor' 0x7f63645097d0;
+result	58	thin_element|thin_element: 'thin_element' 0x7f6364504100;
+result	49	srotation|srotation: 'srotation' 0x7f6364508860;
+result	43	monitor|monitor: 'monitor' 0x7f63645094b8;
+result	52	crabcavity|crabcavity: 'crabcavity' 0x7f63645092f8;
+result	49	changenrj|changenrj: 'changenrj' 0x7f6364508ef0;
+result	61	specl_element|specl_element: 'specl_element' 0x7f6364505728;
+result	49	changeref|changeref: 'changeref' 0x7f6364508b10;
+result	49	translate|translate: 'translate' 0x7f63645089b8;
+result	55	rfmultipole|rfmultipole: 'rfmultipole' 0x7f6364509048;
+result	43	element|element: 'element' 0x7f6364502f50;
+result	40	nllens|nllens: 'nllens' 0x7f63645083f0;
+result	46	beambeam|beambeam: 'beambeam' 0x7f63645081d0;
+result	49	multipole|multipole: 'multipole' 0x7f6364507d50;
+result	40	genmap|genmap: 'genmap' 0x7f6364507b20;
+result	49	changedir|changedir: 'changedir' 0x7f6364508d98;
+result	29	flags|table: 0x7f6364503398;
+result	46	rfcavity|rfcavity: 'rfcavity' 0x7f6364507860;
+result	49	yrotation|yrotation: 'yrotation' 0x7f6364508708;
+result	49	xrotation|xrotation: 'xrotation' 0x7f6364508548;
+result	55	elseparator|elseparator: 'elseparator' 0x7f6364507708;
+result	43	wiggler|wiggler: 'wiggler' 0x7f63645075f8;
+result	43	tkicker|tkicker: 'tkicker' 0x7f6364507468;
+result	46	solenoid|solenoid: 'solenoid' 0x7f63645072d8;
+result	37	bline|bline: 'bline' 0x7f6364505c38;
+result	2	
+
+> > result	41	MADX|object: '? <: MADX' 0x7f636443ee00;
+> > result	12	observed|4;
+> > result	34	assertf|function: 0x7f63645b3f50;
+result	33	printf|function: 0x7f63645b3ea8;
+> > result	35	mchklost|function: 0x7f63645419e0;
+> > > > > result	40	lhcb1|sequence: 'LHCB1' 0x7f6363c9ce30;
+result	10	nrj|6370;
+> > > hellow
+1665061526
+result	27	pyCommand:"None"
+finished
+
+> 
