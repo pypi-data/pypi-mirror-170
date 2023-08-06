@@ -1,0 +1,16 @@
+{
+    "name": "test[lint stdout with no errors  ansible-navigator lint /tests/fixtures/integration/actions/lint/no_errors --ee True --ll debug --mode stdout]",
+    "index": 1,
+    "comment": "lint stdout with no errors",
+    "additional_information": {
+        "present": [],
+        "absent": [
+            ".yml:"
+        ],
+        "compared_fixture": false
+    },
+    "output": [
+        "(venv) bash-5.1$ ansible-navigator lint /home/bthornto/github/ansible-navigator/tests/fixtures/integration/actions/lint/no_errors --ee True --ll debug --mode stdout",
+        "(venv) bash-5.1$"
+    ]
+}

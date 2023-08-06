@@ -1,0 +1,34 @@
+{
+    "name": "test[10-:3-goto Python information]",
+    "index": 10,
+    "comment": "goto Python information",
+    "additional_information": {
+        "present": [
+            "ansible-runner"
+        ],
+        "absent": [],
+        "compared_fixture": false
+    },
+    "output": [
+        "    Name           Version    Summary",
+        "  0│ansible-compat 2.2.1      Ansible compatibility goodies                                                                                                                                            ▒",
+        "  1│ansible-core   2.13.4     Radically simple IT automation                                                                                                                                           ▒",
+        "  2│ansible-lint   6.8.0b3    Checks playbooks for practices and behavior that could potentially be improved                                                                                           ▒",
+        "  3│ansible-runner 2.1.4.dev2 \"Consistent Ansible Python API and CLI with container and process isolation runtime capabilities                                                                         ▒",
+        "  4│arrow          1.2.3      Better dates & times for Python",
+        "  5│asn1crypto     1.2.0      Fast ASN.1 parser and serializer with definitions for private keys, public keys, certificates, CRL, OCSP, CMS, PKCS#3, PKCS#7, PKCS#8, PKCS#12, PKCS#5, X.509 and TSP",
+        "  6│attrs          22.1.0     Classes Without Boilerplate",
+        "  7│awxkit         21.7.0     The official command line interface for Ansible AWX",
+        "  8│Babel          2.7.0      Internationalization utilities",
+        "  9│bcrypt         3.2.0      Modern password hashing for your software and your servers",
+        " 10│binaryornot    0.4.4      Ultra-lightweight pure Python package to check if a file is binary or text.",
+        " 11│black          22.8.0     The uncompromising code formatter.",
+        " 12│bracex         2.3.post1  Bash style brace expander.",
+        " 13│cachetools     5.2.0      Extensible memoizing collections and decorators",
+        " 14│Cerberus       1.3.2      Lightweight, extensible schema and data validation tool for Python dictionaries.",
+        " 15│certifi        2022.9.24  Python package for providing Mozilla's CA Bundle.",
+        " 16│cffi           1.15.1     Foreign Function Interface for Python calling C code.",
+        " 17│chardet        5.0.0      Universal encoding detector for Python 3",
+        "^b/PgUp page up                     ^f/PgDn page down                     ↑↓ scroll                     esc back                     [0-9] goto                     :help help"
+    ]
+}
