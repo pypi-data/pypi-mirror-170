@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: recnetpy
+Version: 0.1
+Summary: RecPy is an API wrapper built in Python for pulling data from RecNet.
+Home-page: https://github.com/RecNetBot-Development/RecPy/
+License: MIT
+License-File: LICENSE
