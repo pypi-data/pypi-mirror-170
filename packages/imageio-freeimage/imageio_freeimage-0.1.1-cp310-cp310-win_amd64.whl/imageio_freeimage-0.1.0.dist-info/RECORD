@@ -1,0 +1,10 @@
+FIPL LICENSE,sha256=pC7WhB7uYa4xBrcZ7WfkXLsmZeUlRz4Nsu7Avgzl7SI,17584
+imageio_freeimage/__init__.py,sha256=jkleMJQfEcpRt5FfZ4GlgU8ubM_MQ51NtkJFWY-Idfw,7384
+imageio_freeimage/_freeimage.py,sha256=LvtDXhR1vcbSHfWBAO3K5e_t_jOAFyKSjMETi0jw3s0,49669
+imageio_freeimage/freeimage.py,sha256=dHk5crr2WDeXh5D2xmE_UX_8hx0c66pog6sMIaqzUnA,15033
+imageio_freeimage/freeimagemulti.py,sha256=WKbUpdZXtZ8wWvW0mi0AS_nczdpIpGE8NCmXuDsm7_k,11748
+LICENSE,sha256=8YYoePIqV-kSXbd7aloTg7G8zUcXDiui4lxMsGfZLQA,662
+imageio_freeimage-0.1.0.dist-info/LICENSE,sha256=8YYoePIqV-kSXbd7aloTg7G8zUcXDiui4lxMsGfZLQA,662
+imageio_freeimage-0.1.0.dist-info/WHEEL,sha256=f5cdyiVT98Og53II9Co3aUwEMu_D1qb4f3AlxETMYMc,98
+imageio_freeimage-0.1.0.dist-info/METADATA,sha256=tOFvW8t6I1ZxP3VE7hDOOT2-mRpMGW-j3YgW8yUvorU,2903
+imageio_freeimage-0.1.0.dist-info/RECORD,,
