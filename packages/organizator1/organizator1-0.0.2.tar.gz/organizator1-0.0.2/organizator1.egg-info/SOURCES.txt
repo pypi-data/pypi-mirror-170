@@ -1,0 +1,9 @@
+MANIFEST.in
+Readme.md
+setup.py
+organizator1.egg-info/PKG-INFO
+organizator1.egg-info/SOURCES.txt
+organizator1.egg-info/dependency_links.txt
+organizator1.egg-info/top_level.txt
+package_organizator/__init__.py
+package_organizator/doer.py
