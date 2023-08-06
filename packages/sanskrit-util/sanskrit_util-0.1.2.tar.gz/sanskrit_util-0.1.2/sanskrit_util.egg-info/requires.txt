@@ -1,0 +1,8 @@
+sqlalchemy>=1.4
+six
+
+[dev]
+pytest
+
+[test]
+pytest
