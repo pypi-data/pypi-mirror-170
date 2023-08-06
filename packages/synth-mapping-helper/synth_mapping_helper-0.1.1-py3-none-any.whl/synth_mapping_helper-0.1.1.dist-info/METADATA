@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: synth-mapping-helper
+Version: 0.1.1
+Summary: Toolbox for manipulating the JSON-Format used by Synth Riders Beatmap Editor in the clipboard
+Home-page: https://github.com/adosikas/synth_mapping_helper
+Author: adosikas
+Author-email: 
+Project-URL: Documentation, https://github.com/adosikas/synth_mapping_helper
+Project-URL: Bug Reports, https://github.com/adosikas/synth_mapping_helper
+Project-URL: Source Code, https://github.com/adosikas/synth_mapping_helper
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Games/Entertainment
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pyperclip
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+
+# Synth Mapping Helper
+
+Toolbox for manipulating the JSON-Format used by *Synth Riders Beatmap Editor* in the clipboard.
+
+## Features
+
+* Movement in XY and Time:
+    * Translation
+    * Rotation
+    * Scaling / Mirroring
+* Pattern generation:
+    * Spirals/Zigzags
+    * Spike/Buzz-Rails
+* Rail manipulation
+    * Merging
+    * Splitting
+    * Interpolation
+* Cross-Platform (Windows, Linux)
+* Imports directly from clipboard, and export to it
+* Uses an internal format that is easy to work with:
+    * Position in editor grid coordinates (+x=right, +y=up)
+    * Time in measures (starting from start of selection)
+    * Angles in degrees (positive=counterclockwise)
+    * Notes/Rails seperated by color and as `n x 3` numpy-arrays
+
+### Planned Features
+* Support for walls
+* Tiling/Stacking operations
+* Command line interface
+
+### Maybe
+* GUI
+* Smoothing
+* Momentum analysis
+
+## How to Install
+
+Linux / TL;DR: `pip3 install synth_mapping_helper`, requires python 3.9 or higher
+
+### Windows
+* Install Python 3.10 via the store: https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5
+* Open a command prompt and run `pip3 install synth_mapping_helper`
