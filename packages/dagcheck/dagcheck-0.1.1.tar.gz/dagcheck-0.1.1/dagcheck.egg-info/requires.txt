@@ -1,0 +1,7 @@
+apache-airflow
+
+[test]
+pytest
+pytest-nunit
+pytest-cov
+parameterized
