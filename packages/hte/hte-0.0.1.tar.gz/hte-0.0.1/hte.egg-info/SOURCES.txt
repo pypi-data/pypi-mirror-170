@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+hte/__init__.py
+hte/digitize.py
+hte.egg-info/PKG-INFO
+hte.egg-info/SOURCES.txt
+hte.egg-info/dependency_links.txt
+hte.egg-info/requires.txt
+hte.egg-info/top_level.txt
