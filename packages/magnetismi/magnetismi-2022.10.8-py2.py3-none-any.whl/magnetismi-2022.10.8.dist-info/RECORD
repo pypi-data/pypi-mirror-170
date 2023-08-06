@@ -1,0 +1,15 @@
+magnetismi/__init__.py,sha256=NB77n5OlJa4SXXn9eKm78ZpCrKJ_5icxfF6Tnh5DJLk,3214
+magnetismi/__main__.py,sha256=wpTw5g4jXl9nmQHGOZqjya7Kx-C8ab2fqgZId2PwupI,125
+magnetismi/cli.py,sha256=0QT9ZrMcu1_k3DNlblfZ9dskQenaRmPQENElEY3-D84,4299
+magnetismi/magnetismi.py,sha256=ESruNoV7oPgewSDD1x0FDKXGajFJEGDsKGVas-KsPVM,7688
+magnetismi/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magnetismi/model/cof.py,sha256=PaC677oimr08zt5LGl8gWnb-u-5vDB3JeHzvzGlNuJc,4173
+magnetismi/model/wmm-2020.txt,sha256=5lRTt9LtNK4w9vc2Gq7EA-EDwqv1nuRjk71MT4gMT6g,4557
+magnetismi/model/wmm-2020.txt.sha256,sha256=tzEdHky1T57OuhpnOS7R96HgohH-QUXX_tJS9gZKIIM,79
+magnetismi/model/wmm-2020.txt.sha512,sha256=XIXQdQnE_0YbUwvxdGELVIBluRiKdxc-WRlWR1O006E,143
+magnetismi-2022.10.8.dist-info/LICENSE,sha256=7xgn1qW4kKTaB163LiE9nqy5u7ddEv-GDesuxK-SW58,1069
+magnetismi-2022.10.8.dist-info/METADATA,sha256=6ENpEUzPlzp1iidNbZmSzrRnFragFwe0StSofcz4smM,6731
+magnetismi-2022.10.8.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+magnetismi-2022.10.8.dist-info/entry_points.txt,sha256=q2w3QY0UannE_lM0qF4f5orSEH4rJHF924QSU3v-e24,51
+magnetismi-2022.10.8.dist-info/top_level.txt,sha256=KNScOJaTP_kAFbnWTXLpoJpj7PfaIZ1GLD369urSQIw,11
+magnetismi-2022.10.8.dist-info/RECORD,,
