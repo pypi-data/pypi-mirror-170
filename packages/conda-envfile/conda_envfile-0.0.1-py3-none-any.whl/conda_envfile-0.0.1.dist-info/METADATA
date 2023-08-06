@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: conda-envfile
+Version: 0.0.1
+Summary: Inspect/combine conda YAML environment files
+Home-page: https://github.com/tdegeus/conda_envfile
+Author: Tom de Geus
+Author-email: tom@geus.me
+License: MIT
+Keywords: conda,YAML
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: pyyaml
+
+# conda_merge_envfile
+Merge conda environment yaml files
