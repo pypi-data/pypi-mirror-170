@@ -1,0 +1,1 @@
+This module saves data so you dont have to redefine variables after restarting you rpython script
