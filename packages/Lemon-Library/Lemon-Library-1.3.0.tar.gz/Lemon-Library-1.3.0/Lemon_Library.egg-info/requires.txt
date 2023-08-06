@@ -1,0 +1,7 @@
+parse
+waitress
+WebOb
+whitenoise
+requests
+pytest
+requests-wsgi-adapter
