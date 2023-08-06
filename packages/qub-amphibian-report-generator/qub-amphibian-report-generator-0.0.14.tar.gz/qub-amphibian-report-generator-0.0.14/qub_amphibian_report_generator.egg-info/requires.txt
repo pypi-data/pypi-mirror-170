@@ -1,0 +1,10 @@
+docopt>=0.6.2
+pyQt5>=0.1
+pandas>=1.4.1
+openpyxl>=0.1
+loguru>=0.1
+fpdf2>=0.1
+pymupdf>=0.1
+pyyaml>=0.1
+requests>=0.1
+tqdm>=0.1
