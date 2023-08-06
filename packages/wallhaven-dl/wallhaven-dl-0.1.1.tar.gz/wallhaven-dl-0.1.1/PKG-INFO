@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: wallhaven-dl
+Version: 0.1.1
+Summary: Download wallpaper from wallahaven.cc
+Home-page: https://github.com/liuyaanng/wallhaven-dl
+Author: GeekOcean
+Author-email: liuyaanng@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# wallhaven-dl
+
+Download wallpaper from wallhaven.cc
+
+## Installation
+
+```bash
+pip install wallhaven-dl
+```
+
+## Usage
+
+```bash
+wallhaven_dl -h
+```
+
+![](https://s1.vika.cn/space/2022/10/07/52c247f16fa54cf0819ca889feab0562)
