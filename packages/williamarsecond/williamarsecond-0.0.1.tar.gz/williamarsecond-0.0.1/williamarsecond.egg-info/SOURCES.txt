@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+williamarsecond/__init__.py
+williamarsecond/hello.py
+williamarsecond.egg-info/PKG-INFO
+williamarsecond.egg-info/SOURCES.txt
+williamarsecond.egg-info/dependency_links.txt
+williamarsecond.egg-info/top_level.txt
