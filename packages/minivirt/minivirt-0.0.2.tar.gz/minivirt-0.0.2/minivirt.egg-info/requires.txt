@@ -1,0 +1,8 @@
+boto3
+click
+pyyaml
+
+[githubactions]
+pygithub
+pyngrok
+waitress
