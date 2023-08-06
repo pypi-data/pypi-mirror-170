@@ -1,0 +1,16 @@
+goodmap/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+goodmap/core.py,sha256=3xJOrOKdPs-wXVcB7qKcz6zqOvrxW_fZmgtNY9oK-9c,560
+goodmap/core_api.py,sha256=y_cXxKmW0zfg_vqTAgHG_a3VbXzBu1w5wwbtPDQQ2fw,1403
+goodmap/db/__init__.py,sha256=LDUIv759QLYvCqjaAGAfR9Zs0jPSKgvPTb8euku4XPY,34
+goodmap/db/db_base.py,sha256=9bPk95szIJPqmcwnKJdITxhEj47kDpVtnY2f1VgkiQk,184
+goodmap/db/db_dispatcher.py,sha256=ooZJDTf_AKO_Xw4tMRqpciSwalBNtZFdFbx9rduO43o,298
+goodmap/db/google_json_db.py,sha256=Pq-UJJxLPyUH2khjlq7SvLWZx4MglIBt9wX5LOTq-cg,702
+goodmap/db/local_json_db.py,sha256=eTNvIMc51f1p2p9lV4K4oimDxVPq5tAyb9P1eWDziIM,474
+goodmap/formatter.py,sha256=YpcuQANcJUSfmmB_3RYOAvjqpiDJkJLOMo3QqSQc8NA,489
+goodmap/goodmap.py,sha256=ZANkJuZnxTcPxnsp8Ao_L4dutzR1JGi5KB52HwgWSnU,1246
+goodmap/static/map.css,sha256=eoQr4XUJxi2hF58i03B9-i0vuw68a-7cG3mjqVRptjY,37
+goodmap/templates/admin.html,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goodmap/templates/map.html,sha256=fI1zRx1dLSxZXCsR_TXNjDa1w888yQFkvONi5klv5y4,2673
+goodmap-0.1.6.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+goodmap-0.1.6.dist-info/METADATA,sha256=0zD2xHJIh9P6m1nBndDWQLLho8rSMMvjdEWBlSF0Ctg,3120
+goodmap-0.1.6.dist-info/RECORD,,
