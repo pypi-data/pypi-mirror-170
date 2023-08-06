@@ -1,0 +1,8 @@
+msgpack>=0.5.2
+
+[compression]
+lz4
+zstandard
+
+[elastic]
+elasticsearch
