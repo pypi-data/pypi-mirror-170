@@ -1,0 +1,1 @@
+This package saves variable so you dont have to re-define them every time you restart your scripts

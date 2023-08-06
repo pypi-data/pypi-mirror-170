@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: memkeep
+Version: 0.1.8
+Summary: This package save variables
+Author-email: Stratus <devindunnc@gmail.com>
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Project-URL: Bug Tracker, https://github.com/st-stratus/memkeep/issues
+Project-URL: Homepage, https://github.com/st-stratus/memkeep
+Description-Content-Type: text/markdown
+
+This package saves variable so you dont have to re-define them every time you restart your scripts
