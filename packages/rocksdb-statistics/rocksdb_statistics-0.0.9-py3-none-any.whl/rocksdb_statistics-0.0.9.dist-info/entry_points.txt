@@ -1,0 +1,3 @@
+[console_scripts]
+rocksdb-statistics=rocksdb_statistics.rocksdb_statistics:main
+
