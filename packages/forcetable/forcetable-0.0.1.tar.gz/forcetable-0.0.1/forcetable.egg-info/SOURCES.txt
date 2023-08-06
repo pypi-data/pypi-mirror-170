@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+forcetable/__init__.py
+forcetable.egg-info/PKG-INFO
+forcetable.egg-info/SOURCES.txt
+forcetable.egg-info/dependency_links.txt
+forcetable.egg-info/requires.txt
+forcetable.egg-info/top_level.txt
