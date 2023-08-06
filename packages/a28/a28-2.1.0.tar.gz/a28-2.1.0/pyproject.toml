@@ -1,0 +1,67 @@
+[project]
+name = "a28"
+dynamic = []
+description = "A set of resources and tools to help developers create packages for the Area28 application."
+authors = [
+    { name = "Area28 Technologies", email = "dev@area28.io" },
+]
+requires-python = ">=3.7"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Environment :: Console :: Curses",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "requests>=2.27.1",
+    "certifi>=2022.5.18.1",
+    "coloredlogs>=15.0.1",
+]
+version = "2.1.0"
+
+[project.license]
+text = "SEE LICENSE IN LICENSE"
+
+[project.urls]
+homepage = "https://github.com/area28technologies/devkit"
+documentation = "https://area28technologies.github.io/devkit/"
+repository = "https://github.com/area28technologies/devkit"
+changelog = "https://github.com/area28technologies/devkit/blob/main/CHANGELOG.md"
+
+[project.scripts]
+a28 = "a28.cli:main"
+
+[tool.coverage.run]
+source = [
+    "src",
+]
+
+[tool.pdm.version]
+from = "src/a28/__version__.py"
+
+[tool.pdm.scripts.lint]
+cmd = "black --check ."
+
+[tool.pdm.scripts.test]
+cmd = "pytest tests"
+
+[tool.pdm.scripts.coverage]
+cmd = "pytest tests --cov"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=22.6.0",
+    "pytest>=7.1.2",
+    "pytest-cov>=3.0.0",
+    "pytest-httpserver>=1.0.4",
+]
+
+[build-system]
+requires = [
+    "pdm-pep517>=0.12.0",
+]
+build-backend = "pdm.pep517.api"
