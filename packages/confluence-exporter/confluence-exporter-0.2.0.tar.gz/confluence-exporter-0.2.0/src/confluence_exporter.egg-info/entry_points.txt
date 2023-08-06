@@ -1,0 +1,2 @@
+[console_scripts]
+confluence-export = confluenceexport.cli:main
