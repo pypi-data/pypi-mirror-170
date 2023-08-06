@@ -1,0 +1,12 @@
+ppgee/__init__.py,sha256=9RrhknouSjHwf3Eyv7oUm4oZX6f6wDA7QHEUO3_iADM,49
+ppgee/__main__.py,sha256=Eqo1mG4u13WBeHXatWRf2Yxvth-KVB6SqNwUpuUzJ1Y,872
+ppgee/client.py,sha256=KkYx_hZhpWNEJC6XP06nDGDwNh3QCpvD6VLzdU4y8gg,1832
+ppgee/errors.py,sha256=T0_x4PH__-fCDW6UG8bSArrYosqkxZ9fl4JyrYZ4Low,43
+ppgee/http.py,sha256=Tlk8mV7nEuG_1pJt1oER-LDa4YJOGYPiTOYbzTXiW7U,1478
+ppgee/pages/__init__.py,sha256=cqunzQOCFKwh2ocqLnlYUhmHMhyki1Nll5SFPmBA0CQ,37
+ppgee/pages/frequency.py,sha256=KggZtq3xmj1FMcOMuOo_AaUMSuXZplcEoitP2y87S7o,1356
+ppgee/parser.py,sha256=GwjNygm9FSJM4fYAJshMHzv-rbJoeIcKBLmfn9mWbDM,1191
+ppgee-0.1.1.dist-info/entry_points.txt,sha256=LtlrY8ti4_RC8COZZnaRjwfc56c-W4eHBdSJMEYXnqw,45
+ppgee-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+ppgee-0.1.1.dist-info/METADATA,sha256=zD78a_Osd3VdWmL9mgWNND69WoGmu5X0b2plfu70_bQ,325
+ppgee-0.1.1.dist-info/RECORD,,
