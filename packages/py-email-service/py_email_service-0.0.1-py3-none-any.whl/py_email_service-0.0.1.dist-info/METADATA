@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: py-email-service
+Version: 0.0.1
+Summary: Email Service
+Home-page: https://github.com/nymann/email-service
+Maintainer: Kristian Nymann Jakobsen
+Maintainer-email: kristian@nymann.dev
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic (>=1.10.2)
+Requires-Dist: kafka-python (>=2.0.2)
+Provides-Extra: all
+Requires-Dist: add-trailing-comma ; extra == 'all'
+Requires-Dist: black ; extra == 'all'
+Requires-Dist: devtools[pygmentz] ; extra == 'all'
+Requires-Dist: faker ; extra == 'all'
+Requires-Dist: isort ; extra == 'all'
+Requires-Dist: mypy ; extra == 'all'
+Requires-Dist: nitpick ; extra == 'all'
+Requires-Dist: typer ; extra == 'all'
+Requires-Dist: uvicorn ; extra == 'all'
+Requires-Dist: wemake-python-styleguide ; extra == 'all'
+Requires-Dist: python-dotenv ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: pytest-mock ; extra == 'all'
+Requires-Dist: pytest-asyncio ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: add-trailing-comma ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: devtools[pygmentz] ; extra == 'dev'
+Requires-Dist: faker ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: nitpick ; extra == 'dev'
+Requires-Dist: typer ; extra == 'dev'
+Requires-Dist: uvicorn ; extra == 'dev'
+Requires-Dist: wemake-python-styleguide ; extra == 'dev'
+Provides-Extra: package
+Requires-Dist: twine ; extra == 'package'
+Requires-Dist: wheel ; extra == 'package'
+Provides-Extra: tests
+Requires-Dist: python-dotenv ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-mock ; extra == 'tests'
+Requires-Dist: pytest-asyncio ; extra == 'tests'
+
+# Email Service
+
+_Send emails via Kafka messaging._
+
+## WIP: Features
+
+- [x] Publish/Consumer
+- [x] Send emails
+- [ ] Template support
+- [x] Attachment support
+- [x] CC Support
+- [x] BCC Support
+
+### Usage
+See [example_publisher](example_publisher)
+
+### Notes
+
+How to implement configurable templates?
+
+## Development
+
+For help getting started developing check [DEVELOPMENT.md](DEVELOPMENT.md)
