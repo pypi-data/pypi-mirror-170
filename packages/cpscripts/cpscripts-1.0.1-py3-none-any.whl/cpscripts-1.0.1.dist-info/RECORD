@@ -1,0 +1,7 @@
+cpscripts/__init__.py,sha256=ChIcNtzvF4L53HpYC66uud9gRSvAPkDqJabs3wY5F50,92
+cpscripts/cellpose_predict.py,sha256=pkaGu7Y8XdMIInaJSQ0Jpw2Q-X7a6AwB1xRvn8l_lZM,2653
+cpscripts-1.0.1.dist-info/METADATA,sha256=kYpzEA-nBhgKNoa8RT8nZILpdGtSFh4Xnh1n1iPgve8,518
+cpscripts-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cpscripts-1.0.1.dist-info/entry_points.txt,sha256=tCDftux1-4o_E_WMDBhgYUPOctY5yp4FeF1VYOgEQzM,70
+cpscripts-1.0.1.dist-info/top_level.txt,sha256=dvXgcbKPhUqpZSJg5cZfP6RJndgS9sR71A16K1CODYY,10
+cpscripts-1.0.1.dist-info/RECORD,,
