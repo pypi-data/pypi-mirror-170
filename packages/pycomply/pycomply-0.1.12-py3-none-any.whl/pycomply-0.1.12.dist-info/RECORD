@@ -1,0 +1,7 @@
+pycomply/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+pycomply/connection.py,sha256=KvmqL8qnYSeVBdcHd2cCNC1zkuvjgjglUVPeNOxJLEM,20980
+pycomply/constants.py,sha256=0MKVL2arY4ojG4UaDGilabCo8gLqAShP7BJB2cL2py0,1589
+pycomply/errors.py,sha256=RGOgphwaYozz_7JWzpuoFhf29lB1pVPhNyxCOy0mI1w,429
+pycomply-0.1.12.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pycomply-0.1.12.dist-info/METADATA,sha256=YlY_v6E82rVMrF2aIftgEjVK270ewIciyEUnOmefV1g,490
+pycomply-0.1.12.dist-info/RECORD,,
