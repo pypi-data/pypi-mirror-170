@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: zodiaco
+Version: 0.0.1
+Summary: Determina seu signo com base na sua data de nascimento
+Home-page: https://github.com/jcbdoliveira/pacotes-python-DIO-Bootcamp-Unimed-BH
+Author: Julio Cesar Bueno de Oliveira
+Author-email: jcboliveira@gmail.com	
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Zodiaco
+
+
+Com este pacote voÃ§Ãª pode descobrir o signo de qualquer pessoa com base na sua data de nascimento.
+MÃ©todos disponiveis:
+
+	- getSigno()
+	- getCor()
+	- getNumeroSorte()
+
+## InstalaÃ§Ã£o
+
+Use o gerenciador de instalaÃ§Ã£o de pacotes [pip](https://pip.pypa.io/en/stable/) para instalar zodiaco
+
+```bash
+pip install zodiaco
+```
+
+## Exemplo de uso
+
+```python
+from zodiaco.signos import getSignos
+signo = getSignos.getSigno('1980-04-27')
+print(signo)
+print(getSignos.getCor(signo))
+print(getSignos.getNumeroSorte(signo))
+```
+
+## Author
+Julio Cesar Bueno de Oliveira
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
