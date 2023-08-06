@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ha
+Version: 0.0.3
+Summary: joke tools
+Home-page: https://github.com/thorwhalen/laugh
+Author: Thor Whalen
+License: mit
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyjokes
+Requires-Dist: laugh
+
+
+# ha
+A medley of (my own and other people's) joke tools I gathered.
+
+
+To install:	```pip install ha```
+
+
