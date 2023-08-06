@@ -1,0 +1,12 @@
+m2p/__init__.py,sha256=6Lo-nt7y5_1sHAvnbroG1M36D0nUKK125ixZZoymYXQ,178
+m2p/_version.py,sha256=NX3OiyWw_6n56sTGAj14NO2bRy0LTK7DGYNHmSqwO6o,500
+m2p/monomers.py,sha256=wT3tNQZAPMJUoLVfUDYmIsQ4QtwKNL6rY_rFFO0zI6g,5651
+m2p/polyestimator.py,sha256=z8N-BbzpK35iWnOho8IILrwQxsCCfypNxBpzvvFyYCo,10030
+m2p/polymaker.py,sha256=3ZC8dhZKhJybnzl6BqC2YWQXKfYb_C7h6pGjBdUhyBw,70478
+m2p/stereo_reactions.py,sha256=axZlQZvnDkxe_I0pX9ANRffptu1IgbZk0A9xmYz8RQw,9410
+m2p/utils.py,sha256=RWeGkI0GGvKnBZjmaJEQSIfHf21ghszKs3Qd41o6oz8,8071
+m2p-0.1.7.8.dist-info/LICENSE,sha256=DXXAMDQgCHOiLZCYD18L54dkfCbGiZrplINSMuu6eOY,1535
+m2p-0.1.7.8.dist-info/METADATA,sha256=fc1zpG4TJrshThq6pYD8J9Pzev7WxyLb6CO02B9kJHk,2297
+m2p-0.1.7.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+m2p-0.1.7.8.dist-info/top_level.txt,sha256=vuVhEwx0OHPcVxiNc62MBvWiEux5Rb3YZX5J4Ojokbg,4
+m2p-0.1.7.8.dist-info/RECORD,,
