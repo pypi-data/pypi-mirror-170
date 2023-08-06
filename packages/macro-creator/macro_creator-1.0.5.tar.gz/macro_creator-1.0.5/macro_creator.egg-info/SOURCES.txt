@@ -1,0 +1,9 @@
+README.md
+setup.py
+macro_creator/__init__.py
+macro_creator/thread.py
+macro_creator.egg-info/PKG-INFO
+macro_creator.egg-info/SOURCES.txt
+macro_creator.egg-info/dependency_links.txt
+macro_creator.egg-info/requires.txt
+macro_creator.egg-info/top_level.txt
