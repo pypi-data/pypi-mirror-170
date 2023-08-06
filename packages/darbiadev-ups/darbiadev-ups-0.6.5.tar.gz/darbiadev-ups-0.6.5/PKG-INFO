@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: darbiadev-ups
+Version: 0.6.5
+Summary: A wrapper for UPS' API
+Author-email: Bradley Reynolds <bradley.reynolds@darbia.dev>
+License: MIT
+Project-URL: repository, https://github.com/darbiadev/darbiadev-ups/
+Project-URL: documentation, https://darbia.dev/darbiadev-ups/
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: tests
+Provides-Extra: docs
+License-File: LICENSE
+
+# darbiadev-ups
+
+This package provides a wrapper for UPS' API.
+
+### Example usage
+
+```python
+from darbiadev_ups import UPSServices
+
+client = UPSServices(
+    base_url="https://onlinetools.ups.com/",
+    username="username",
+    password="password",
+    access_license_number="access_license_number",
+)
+
+print(client.track("1Z12345E1305277940"))
+```
