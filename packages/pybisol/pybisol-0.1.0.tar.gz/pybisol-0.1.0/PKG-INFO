@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pybisol
+Version: 0.1.0
+Summary: Python wrapper module for a c++ implementation of superconducting coil field solver
+Author: Eniz Museljic
+Author-email: eniz.m@outlook.com
+Keywords: team22,solenoid,solver
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE

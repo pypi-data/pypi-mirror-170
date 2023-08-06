@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+bisol.cpp
+bisol.hpp
+cppbisol.pxd
+pybisol.cpp
+pybisol.pyx
+pyproject.toml
+setup.py
+pybisol.egg-info/PKG-INFO
+pybisol.egg-info/SOURCES.txt
+pybisol.egg-info/dependency_links.txt
+pybisol.egg-info/not-zip-safe
+pybisol.egg-info/requires.txt
+pybisol.egg-info/top_level.txt

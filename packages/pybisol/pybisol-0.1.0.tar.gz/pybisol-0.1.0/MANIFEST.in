@@ -1,0 +1,5 @@
+include bisol.cpp
+include bisol.hpp
+include pybisol.pyx
+include cppbisol.pxd
+include LICENSE
