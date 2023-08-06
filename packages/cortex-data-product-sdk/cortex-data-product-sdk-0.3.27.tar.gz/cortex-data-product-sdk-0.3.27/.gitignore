@@ -1,0 +1,11 @@
+# MacOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# Virtual Environment
+venv/
+
+# Visual Studio Code
+.vscode/
