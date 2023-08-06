@@ -1,0 +1,13 @@
+ssb_project_cli/__init__.py,sha256=9EtUsJADcn3BDVVdhpBJshwnQiOTZlvF8UlEsY_MOVo,23
+ssb_project_cli/__main__.py,sha256=Rq7umNoHJ3WQyHvBtKfBQtdvB3ArdtzrftRj_LpzE_Y,220
+ssb_project_cli/create_github_repo/__init__.py,sha256=F308StaFX2JixmF2zLPtkql3ykcqTJD2sCT2zzfheOM,70
+ssb_project_cli/create_github_repo/create-github-repo.py,sha256=cSkfphiC8q7NMxfcw0hutJjMiRZHp4SOTDTME-ksVqg,3460
+ssb_project_cli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssb_project_cli/ssb_project/__init__.py,sha256=SwTvZjK4v-KwV12CMMxHeThQE4v6ja1nWxwAnfj7siY,19
+ssb_project_cli/ssb_project/app.py,sha256=i53hMOvryWFOjDYTCX3S4xteAAmzJebCs9uNsr66F9U,17479
+ssb_project_cli/ssb_project/build_cmds.md,sha256=XttGOPxfVDvr5uF8O0yKfEaxqYiBYjFpWztGuiOXzaU,69
+ssb_project_cli-1.0.2.dist-info/entry_points.txt,sha256=Ovh1qxLjYiKCS-feRhE3JCzb-aiZ5iP39zz_0r2sPNo,61
+ssb_project_cli-1.0.2.dist-info/LICENSE,sha256=JEslg3zzDwJvCy9RnysKNTtLh-rSFRN1F8t0brtcu60,1073
+ssb_project_cli-1.0.2.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+ssb_project_cli-1.0.2.dist-info/METADATA,sha256=TDufL_yIN52g7S4LH-q2p6LV3mKt-yVRqvwxF6wNItc,3852
+ssb_project_cli-1.0.2.dist-info/RECORD,,
