@@ -1,0 +1,4 @@
+[console_scripts]
+YinjiaLinghunFuyuanLiaofa = YinjiaLinghunFuyuanLiaofa.__main__:main
+yinjia-linghun-fuyuan-liaofa = YinjiaLinghunFuyuanLiaofa.__main__:main
+
