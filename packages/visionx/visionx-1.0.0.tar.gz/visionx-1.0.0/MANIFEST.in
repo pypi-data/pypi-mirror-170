@@ -1,0 +1,2 @@
+recursive-include visions/dbnet_crnn/modelv1.1 *
+recursive-include visions/dbnet_crnn/ppocr/utils *.txt
