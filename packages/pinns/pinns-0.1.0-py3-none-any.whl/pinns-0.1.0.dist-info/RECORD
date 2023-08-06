@@ -1,0 +1,10 @@
+pinns/__init__.py,sha256=ZJ2Ncuf9kDKa9wHK5QRBmq5mi2EXpF9HoXX9LjWT-bM,659
+pinns/differentiation.py,sha256=QC6RfZJDqDtDK5yjwhkbc88OFzgUqBqq2PHPHa2oxMo,7278
+pinns/geometry.py,sha256=g8s4gaDPvgzbDmGaUT9YfrOw7gNufOPPXNaqKuM_U7o,3560
+pinns/initial_conditions.py,sha256=-JdaaZBPtW_4mn-XV59nZi4hwp9ym5ZbKaH2WZulVEY,5999
+pinns/training.py,sha256=xqYU0WRUiooBpvL97SHLX5ItaPTqHyy8kLj0r9CuiFM,7631
+pinns-0.1.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+pinns-0.1.0.dist-info/METADATA,sha256=CWQG2ml4XUmGNNBQk-831qYJrX3nc1UrHNJHvExhsHc,20440
+pinns-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pinns-0.1.0.dist-info/top_level.txt,sha256=wZCNBd0Q8AAOm1RK73L9epu7M8MckSkrSlHINW1Uppw,6
+pinns-0.1.0.dist-info/RECORD,,
