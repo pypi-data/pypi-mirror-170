@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tensossht
+Version: 0.7.0
+Summary: Fast and exact spherical transform for Tensorflow
+Home-page: https://tensossht.readthedocs.io/en/main/
+License: Apache-2.0
+Author: Kagenova
+Author-email: support@kagenova.com
+Requires-Python: >=3.8,<3.11
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Provides-Extra: docs
+Requires-Dist: Sybil (>=3,<4); extra == "docs"
+Requires-Dist: groundwork-sphinx-theme (>=1,<2); extra == "docs"
+Requires-Dist: mypy-extensions (>=0.4.3,<0.5.0)
+Requires-Dist: numpy (>=1.22,<2.0)
+Requires-Dist: scipy (>=1.4.1,<2.0.0)
+Requires-Dist: sphinx (>=5,<6); extra == "docs"
+Requires-Dist: tensorflow (>=2)
