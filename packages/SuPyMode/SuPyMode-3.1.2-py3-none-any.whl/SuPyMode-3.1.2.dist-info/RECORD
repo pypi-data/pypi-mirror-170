@@ -1,0 +1,16 @@
+Materials.py,sha256=ODk0OzH17zJzYa7Puit6ocb3XwRfR0EqjIdfSSSslUc,327
+Solver.py,sha256=e8c36AjgbLBgPKpcFEhY8y6K85VIOT-gHgFDadfMHOc,4048
+SuperMode.py,sha256=tyJmNFQfweTKXTnOP52WDvZ5oOLFlwoKCM4BiAxHrLQ,9199
+SuperPosition.py,sha256=XQRmXXRmvtYtpTOL3z7w1nUXAK_6iRsVLP8fOIF09mg,6824
+SuperSet.py,sha256=rxG8RIWNFd8EHPh3n6NhHk6EPEDd6TQVKYSW7QsP2mw,10422
+__init__.py,sha256=n3ZffSklf3iZgWXEBRAlXEmJOKDv8nnAMb0Npbr9uyg,19
+fibers.py,sha256=SDXNjiYuxJ9DxqsJR28ECeFv3_e_rE_wMtWN59OTUG4,4870
+Tools/Directories.py,sha256=gfdETV-uCLqYQSJOR9NihynsWYMWXKcA-qek14f_flI,251
+Tools/Plots.py,sha256=PpHGCqIP_qG7hbOGX-EtStVjeaay2j5spCTEYwy-F5o,8347
+Tools/Special.py,sha256=OcZ7i7s1kti0dxKj72AtSEBYy4hwoYgErOF6x9Nibhk,4875
+Tools/utils.py,sha256=IeJNgAhvZzrYx9ESjJKH159FfqPV1XB9oGlxbfBibQQ,1015
+SuPyMode-3.1.2.dist-info/LICENSE,sha256=U6YG4UEW9XJzHa53oijR0qw6JNN_SZ38WOBmYn3NPd0,1072
+SuPyMode-3.1.2.dist-info/METADATA,sha256=CeHJwzg91DEIfwCJBArtqwubiUDpmPKTiElvFOSyQPE,3156
+SuPyMode-3.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+SuPyMode-3.1.2.dist-info/top_level.txt,sha256=qbVXtaJBuRVe9iC_4pfuV1_c2LXyn3TK-RZVVuHqabk,83
+SuPyMode-3.1.2.dist-info/RECORD,,
