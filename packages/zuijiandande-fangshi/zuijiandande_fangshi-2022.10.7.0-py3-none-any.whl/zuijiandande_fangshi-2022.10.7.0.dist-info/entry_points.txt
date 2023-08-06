@@ -1,0 +1,4 @@
+[console_scripts]
+ZuijiandandeFangshi = ZuijiandandeFangshi.__main__:main
+zuijiandande-fangshi = ZuijiandandeFangshi.__main__:main
+
