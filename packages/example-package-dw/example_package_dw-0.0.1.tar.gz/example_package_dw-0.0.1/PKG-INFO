@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: example_package_dw
+Version: 0.0.1
+Summary: Example package from DW
+Home-page: http://packages.python.org/example_package_dw
+Author: DW Shin
+Author-email: dongwookshin@hotmail.com
+License: UNKNOWN
+Description: Example package using setuptools
+        
+Keywords: example python package
+Platform: UNKNOWN
