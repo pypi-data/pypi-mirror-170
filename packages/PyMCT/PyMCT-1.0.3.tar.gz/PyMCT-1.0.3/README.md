@@ -1,0 +1,54 @@
+# PyMCT
+This is a simple implement for Manto Carlo Tree Search algorithm.
+
+## Example
+
+    from cmath import inf
+    from random import randint, random
+    from PyMCT.MCT import MCTNode, MCTS
+    from typing import Union, List
+    from anytree import RenderTree
+
+create a implement of MCTS class that has unique reward function, expand function and terminate condition.
+
+    class testMCTS(MCTS):
+
+        def __init__(self, root: MCTNode, c: Union[int, float], max_iter: int, debug=False) -> None:
+            super().__init__(root, c, max_iter, debug)
+
+        def get_reward(self, node: MCTNode):
+            node._reward = node.state
+
+        def expand(self, node: MCTNode) -> List[MCTNode]:
+            continue_chance = random()
+            if continue_chance <1:
+                for i in range(1,randint(1,5)):
+                    new_node = MCTNode(state=(self.root.depth+1)*i,parent=node)
+            return node.children
+
+        def terminate(self) -> bool:
+            for node in self.root.descendants:
+                if node.uct == inf:
+                    return False
+            if self.root.height >= 3:
+                return True
+            else:
+                return False
+
+pass the root
+
+    test_mcts = testMCTS(root=root, c=2, debug=True, max_iter=100)
+      
+ start the seacrh
+ 
+    test_mcts.iterate()
+      
+ render the tree
+ 
+    print(RenderTree(test_mcts.root))
+      
+ print the optimal path
+ 
+    test_mcts.find_optimal_path()
+    print(test_mcts.optimal_path)
+    
