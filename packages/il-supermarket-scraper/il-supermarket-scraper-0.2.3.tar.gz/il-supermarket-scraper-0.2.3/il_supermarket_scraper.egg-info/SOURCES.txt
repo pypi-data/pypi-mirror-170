@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+il_supermarket_scarper/__init__.py
+il_supermarket_scarper/main.py
+il_supermarket_scarper/scrapper_runner.py
+il_supermarket_scarper/scrappers_factory.py
+il_supermarket_scraper.egg-info/PKG-INFO
+il_supermarket_scraper.egg-info/SOURCES.txt
+il_supermarket_scraper.egg-info/dependency_links.txt
+il_supermarket_scraper.egg-info/requires.txt
+il_supermarket_scraper.egg-info/top_level.txt
