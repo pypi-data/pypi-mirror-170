@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hf
+Version: 0.0.3
+Summary: Includes functions to diagnose duplicates in dataframes.
+Home-page: https://github.com/thorwhalen/ut/tree/master/daf/dup_diag.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# hf
+Includes functions to diagnose duplicates in dataframes.
+
+
+To install:	```pip install hf```
+
+
