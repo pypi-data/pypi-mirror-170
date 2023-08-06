@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: windoz
+Version: 0.0.4
+Summary: Logic Controlling tool
+Project-URL: Homepage, https://github.com/Llama-studio/Windoz
+Author-email: isaac yan <yaner@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Windoz
+
+## Frame controlling tool
