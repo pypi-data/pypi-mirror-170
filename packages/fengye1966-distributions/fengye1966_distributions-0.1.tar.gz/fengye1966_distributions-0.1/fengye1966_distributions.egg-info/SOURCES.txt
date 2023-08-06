@@ -1,0 +1,10 @@
+setup.py
+fengye1966_distributions/Binomialdistribution.py
+fengye1966_distributions/Gaussiandistribution.py
+fengye1966_distributions/Generaldistribution.py
+fengye1966_distributions/__init__.py
+fengye1966_distributions.egg-info/PKG-INFO
+fengye1966_distributions.egg-info/SOURCES.txt
+fengye1966_distributions.egg-info/dependency_links.txt
+fengye1966_distributions.egg-info/not-zip-safe
+fengye1966_distributions.egg-info/top_level.txt
