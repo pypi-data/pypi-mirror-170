@@ -1,0 +1,45 @@
+image: python:3.10
+
+pipelines:
+  default:
+    - parallel:
+        - step:
+            name: Test
+            caches:
+              - pip
+            script:
+              # install the current package
+              - pip install -e .
+              - python -m unittest
+        - step:
+            name: Lint code
+            script:
+              # Enforce style consistency across Python projects https://flake8.pycqa.org/en/latest/manpage.html
+              - pip install flake8
+              - flake8 . --extend-exclude=dist,build --show-source --statistics
+  branches:
+    master:
+      - parallel:
+        - step:
+            name: Test
+            caches:
+              - pip
+            script:
+              # install the current package
+              - pip install -e .
+              - python -m unittest
+        - step:
+            name: Security Scan
+            script:
+              # Run a security scan for sensitive data.
+              # See more security tools at https://bitbucket.org/product/features/pipelines/integrations?&category=security
+              - pipe: atlassian/git-secrets-scan:0.5.1
+      - step:
+          name: Build Package and Publish
+          caches:
+            - pip
+          script:
+            - pip install --upgrade build twine
+            - python -m build
+            - python -m twine check dist/*
+            - python -m twine upload -u $PYPI_USERNAME -p $PYPI_PASSWORD dist/*

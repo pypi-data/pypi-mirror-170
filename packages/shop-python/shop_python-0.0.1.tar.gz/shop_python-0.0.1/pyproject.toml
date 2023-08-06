@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "shop_python"
+version = "0.0.1"
+authors = [
+  { name="Abdul Qoyyuum Bin Haji Abdul Kadir", email="abdul.qoyyuum@gmail.com" },
+]
+description = "A Shopping Python Framework"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://bitbucket.org/Qoyyuum/shoppy"
+"Bug Tracker" = "https://bitbucket.org/Qoyyuum/shoppy/jira"
