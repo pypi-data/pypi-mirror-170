@@ -1,0 +1,11 @@
+QimenQiwu/Dockerfile,sha256=EL9KrzZTOAXlF3pgAqKipIvt77gtFsypZ63EkDm0fDg,54
+QimenQiwu/README.md,sha256=WWk9VGtEInK2zLYZuXoewJtPqJLcXJp3yUFNYv9fVNU,415
+QimenQiwu/__init__.py,sha256=naQg6tQQKpZWM_pGqNk361-CW8ndtsGDqWmcrSyZUG8,228
+QimenQiwu/__main__.py,sha256=StlRO3acXK2KUuyxyIo8iCn-lrgHJJFtHFGn0N6XCCM,635
+QimenQiwu/file.pdf,sha256=KLll0_Buotdw6BR2mejXLKDcnZS0x5JRFmPDDy-EnH4,9614103
+QimenQiwu/index.html,sha256=_MGK6QxkE2rVGIG7ZaJ4ecKGzeeH4FZjepNV-U7xoO4,150
+qimen_qiwu-2022.10.7.0.dist-info/METADATA,sha256=y1qfyv3Xdim8dr2msriH0W6LDgJY0vE-w8TFIKx4dJ8,1486
+qimen_qiwu-2022.10.7.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+qimen_qiwu-2022.10.7.0.dist-info/entry_points.txt,sha256=1aP8a0iP-QCn2Emb7Bjd7HKv9GW89-OrrCvfmTC4VRo,92
+qimen_qiwu-2022.10.7.0.dist-info/top_level.txt,sha256=2Ji6qzTBvaTYCJZXClOsvKAN8i-bbEJ9F7A62m9cL5w,10
+qimen_qiwu-2022.10.7.0.dist-info/RECORD,,
