@@ -1,0 +1,4 @@
+[console_scripts]
+ZiweiGonglueVol1 = ZiweiGonglueVol1.__main__:main
+ziwei-gonglue-vol1 = ZiweiGonglueVol1.__main__:main
+
