@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: running-tools
+Version: 0.0.1
+Summary: A set of helpful tools for runners
+Home-page: https://github.com/tukanuk/running-tools
+License: MIT
+Keywords: running,pace
+Author: Ben Davidson
+Author-email: benjamin@idavidson.ca
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Project-URL: Repository, https://github.com/tukanuk/running-tools
+Description-Content-Type: text/markdown
+
+# Running Tools
+
+A collection of tools for runners.
+
+## Pace Tool
