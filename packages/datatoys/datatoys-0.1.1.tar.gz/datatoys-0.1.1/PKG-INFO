@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: datatoys
+Version: 0.1.1
+Summary: Let's play with data! We prepared toy data for data newbies.
+License: MIT
+Author: Dongook Son
+Author-email: 60206749+donny-son@users.noreply.github.com
+Requires-Python: >3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: lxml (>=4.9.1,<5.0.0)
+Requires-Dist: numpy (>=1.23.3,<2.0.0)
+Requires-Dist: pandas (>=1.5.0,<2.0.0)
+Requires-Dist: pyreadr (>=0.4.7,<0.5.0)
