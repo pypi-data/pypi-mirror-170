@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: django-echo-tester
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: https://devmhmd.com
+Author: Mhmd
+Author-email: d3v.mhmd@gmail.com
+License: MIT
+Keywords: django demo
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EchoTester
+
+## How to use & installation
+
+pip install xxx
+add to django requirements
+
+python manage.py runecho
+
+## Features && How to use them
+## Settings and how to customize them
+
+
