@@ -1,0 +1,9 @@
+validator_pizza_python/__init__.py,sha256=hjr5IDfGKhq4CaKOv9QJ3UW1k8W8L4DhTWBSgJfDwxw,146
+validator_pizza_python/client.py,sha256=er-VUPZLCIglnEcjuLwsUpCcg5EGsnnEJNZPqQ4PMdg,1802
+validator_pizza_python/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+validator_pizza_python/models/email_status.py,sha256=CHewFvyNBEMCq6toctwDPBgh0b10ohgJfTOWyDsQnp0,274
+validator_pizza_python-1.0.0.dist-info/LICENSE,sha256=1K6wAJUCPPQzyoGXo2ULrD4M32VESHnk6wgAov2amqo,1081
+validator_pizza_python-1.0.0.dist-info/METADATA,sha256=W6j90iPhUTuE_WP2Y2XJASAauhTt7BgmP1f24ALGFG0,2698
+validator_pizza_python-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+validator_pizza_python-1.0.0.dist-info/top_level.txt,sha256=9UXP4NMgZ_wUeTsf5M0wVUPfV0Fjz0TtE5Kelyaua34,23
+validator_pizza_python-1.0.0.dist-info/RECORD,,
