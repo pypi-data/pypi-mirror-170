@@ -1,0 +1,12 @@
+Gian_lotr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Gian_lotr/main.py,sha256=hKJKche-qtUyvAZ7iUYQ3tasYEOli2qso8uJOaRkRRc,21
+Gian_lotr/rest/__init__.py,sha256=r42TyBhYx1FNiksNNtKInEFZfxk4McaMQZxmOxH2Wkg,4368
+Gian_lotr/rest/book/__init__.py,sha256=7FfCA0xI5ghFAXdBvk4xitpNQ5U7x2bpP4c8Qh0w4kk,795
+Gian_lotr/rest/character/__init__.py,sha256=ygc4mngh6aaHbVerzuEQKrwyxy730pTQCY7AAamp0rw,784
+Gian_lotr/rest/movie/__init__.py,sha256=AobN3hiGUYlMevQlaqK9SyKPHcp6wsVZYAwhRTYCoyQ,809
+Gian_lotr/rest/quote/__init__.py,sha256=HZCqjUt_Ep24ZQ7ebo0kQjXZyacFiNXZ9uPXJtipvgA,737
+Gian_lotr-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Gian_lotr-0.0.1.dist-info/METADATA,sha256=j6hCRcC9t-rWF-2U0Gu0Iu1hbGJzGJW57Yjap6C9jtY,494
+Gian_lotr-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Gian_lotr-0.0.1.dist-info/top_level.txt,sha256=6opawG4bNaCje-leWW7kdruUJvvnoCwlcemSF38NyRQ,10
+Gian_lotr-0.0.1.dist-info/RECORD,,
