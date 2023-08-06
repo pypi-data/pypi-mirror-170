@@ -1,0 +1,7 @@
+version: 2
+formats: all
+python:
+  install:
+    - requirements: doc/mkdocs/requirements.txt
+mkdocs:
+  configuration: doc/mkdocs/mkdocs.yml
