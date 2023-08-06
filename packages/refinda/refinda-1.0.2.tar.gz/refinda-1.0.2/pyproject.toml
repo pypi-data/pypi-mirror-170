@@ -1,0 +1,56 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "refinda"
+version = "1.0.2"
+description = "Reproducible Finance Data: Standardized datasets for finance research tasks."
+readme = "README.md"
+authors = [{ name = "Garvin Kruthof"}]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["finance", "machine learning", "trading", "portfolio management"]
+dependencies = [
+    "numpy>=1.21.*",
+    "pandas>=1.2.*",
+    "wrds==3.1.1",
+    "tqdm==4.62.3",
+    "ta==0.9.0"
+]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://kruthof.github.io/projects/refinda/"
+
+[project.scripts]
+refinda = "refinda.__main__:main"
+
+[tool.bumpver]
+current_version = "1.0.2"
+version_pattern = "YYYY.BUILD[-TAG]"
+commit_message = "1.0 Release"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+]
+"setup.py" = [
+    "{version}",
+    "{pep440_version}",
+]
+"README.md" = [
+    "{version}",
+    "{pep440_version}",
+]
+
