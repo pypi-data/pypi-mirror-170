@@ -1,0 +1,3 @@
+[console_scripts]
+mime_parser = mime_parser.entrypoint:main
+
