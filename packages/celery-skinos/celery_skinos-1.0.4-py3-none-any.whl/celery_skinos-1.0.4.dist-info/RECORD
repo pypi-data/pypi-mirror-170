@@ -1,0 +1,5 @@
+skinos/__init__.py,sha256=5hOUM0E4dig8ST0RcopUkRtkty5wHeKWg0JTfwOI0VI,41
+skinos/custom_consumer.py,sha256=SOnqaKCSEIpPa6SZjIQEog5gsiV5ITkrnlYgrOPSVNo,9540
+celery_skinos-1.0.4.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+celery_skinos-1.0.4.dist-info/METADATA,sha256=MPXA5wPMmvv2E0KPB6q7i_wppRMj5IUAXQJdoE5c82Q,2161
+celery_skinos-1.0.4.dist-info/RECORD,,
