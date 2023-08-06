@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+phonetic_manipulation/__init__.py
+phonetic_manipulation/phonetic_manipulation.py
+phonetic_manipulation.egg-info/PKG-INFO
+phonetic_manipulation.egg-info/SOURCES.txt
+phonetic_manipulation.egg-info/dependency_links.txt
+phonetic_manipulation.egg-info/requires.txt
+phonetic_manipulation.egg-info/top_level.txt
