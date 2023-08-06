@@ -1,0 +1,6 @@
+README.md
+setup.py
+easy_flask_swagger.egg-info/PKG-INFO
+easy_flask_swagger.egg-info/SOURCES.txt
+easy_flask_swagger.egg-info/dependency_links.txt
+easy_flask_swagger.egg-info/top_level.txt
