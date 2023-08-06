@@ -1,0 +1,14 @@
+gdscript2rest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gdscript2rest/__main__.py,sha256=tmQhYKNHN38fi5mtnYG8kzojCFmhYj7QOCHxhsnGyxo,2845
+gdscript2rest/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gdscript2rest/src/command_line.py,sha256=8UKLczBELrNLHcIjocuT5c17WRDqHzFdTE0tj3SXiJY,1524
+gdscript2rest/src/config.py,sha256=NaO2ZRcSSh3fFWkyt1KOPJi9s5UErdcPg3gR1QIPWw4,164
+gdscript2rest/src/convert_to_restructured.py,sha256=YApRv6mJTiS_KTgOiYtGUT0IFRcVDjUIiEGab7AXnrA,8201
+gdscript2rest/src/gdscript_objects.py,sha256=F1kG2LncaPwxbM6jxbrRG9VsCPt0-eCi5A0rpAuoniY,13468
+gdscript2rest/src/make_restructured.py,sha256=8qLt3GSv_b1oVM8LCKEEZmL0WsFJW3PYdTbTccsajNM,16677
+gdscript2rest/src/utils.py,sha256=5SbaRBE9Lcdje87GyQl4F_wjG1J_fu08W9o5HPfAki8,554
+gdscript2rest-0.5.0.dist-info/LICENSE,sha256=Bk48ro5MSMYvX-RE5vivOD6r2IAjkow-RydvqK9WumM,1062
+gdscript2rest-0.5.0.dist-info/METADATA,sha256=Kb9Ff06uL8SSUCdYigzb96GZLPYBroB9XAL_fiXb2go,2869
+gdscript2rest-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gdscript2rest-0.5.0.dist-info/top_level.txt,sha256=1-9NqnpSBlbOP8A-x4qX371UQIerwSa4qRl08P536xM,14
+gdscript2rest-0.5.0.dist-info/RECORD,,
