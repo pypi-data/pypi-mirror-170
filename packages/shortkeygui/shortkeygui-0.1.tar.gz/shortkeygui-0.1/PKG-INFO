@@ -1,0 +1,158 @@
+Metadata-Version: 2.1
+Name: shortkeygui
+Version: 0.1
+Summary: ShortkeyGUI is an easy-to-use tool that can press a shortcut key. For Windows, macOS, and Linux, on Python 3 and 2.
+Home-page: https://sribalaji.rf.gd
+Author: Balaji Santhanam
+Author-email: sribalaji2112@gmail.com
+License: MIT
+Keywords: ShortkeyPresser Created by SriBalaji shortcut key GUI
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Environment :: MacOS X
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Shortkeygui GUI is an easy-to-use tool that can press a shortcut key. For Windows, macOS, and Linux, on Python 3 and 2.
+
+pip install shortkeygui
+
+Source code available at https://github.com/SriBalajiSMVEC/ShortkeyGUI/
+
+If you need help installing Python, visit https://installpython3.com/
+
+If you have any problem ---> pls contact :
+                             Website : http://sribalaji.rf.gd
+                             Ph.no : 9043138093
+
+
+Welcome to ShortcutKeyGUI documentation!
+=====================================
+
+shortkeygui is an easy-to-use tool that can press a shortcut key. For Windows, macOS, and Linux, on Python 3 and 2.
+
+To install with pip, run ``pip install shortkeygui``. See the :doc:`install` page for more details.
+
+The source code is available on: https://github.com/SriBalajiSMVEC/shortkeygui/
+
+shortkeygui has several features:
+
+* Presses shortcut keys when you call a function name --> Like: ('copy', 'cut')
+* It have all application shortcut key --> Like:('MS Excel', 'MS Word', 'MS Office', etc...,)
+* shortkeygui will Press a Shortcut Keys Directly.
+
+Here's `a YouTube video of a shortkeygui <https://www.youtube.com/watch?v=lfk_T6VKhTE>`_.
+
+.. code:: python
+
+    >>> from shortkeygui import mainShotcut as key
+    
+        >>> key.copy()  # It presses shortcut key for Copy ( ctrl+c )
+        // It presses shortcut key for Copy ( ctrl + c )
+    
+        >>> key.cut()
+        // It presses shortcut key for cut ( ctrl + x )
+    
+        >>> key.delete_permanently()
+        // It presses shortcut key for delete permanently ( shift + delete )
+    
+        >>> key.delete()
+        // It presses shortcut key for delete ( del )
+    
+        >>> key.end()
+        // It presses shortcut key for Go to the end of the current line. ( end )
+    
+        >>> key.file_menu()
+        // It presses shortcut key for File menu options in the current program. ( alt + f )
+    
+        // It has many more shortcut key like this...
+
+    >>> key.copy()  # It presses shortcut key for Copy ( ctrl+c )
+    // It presses shortcut key for Copy ( ctrl + c )
+
+    >>> key.cut()
+    // It presses shortcut key for cut ( ctrl + x )
+
+    >>> key.delete_permanently()
+    // It presses shortcut key for delete permanently ( shift + delete )
+
+    >>> key.delete()
+    // It presses shortcut key for delete ( del )
+
+    >>> key.end()
+    // It presses shortcut key for Go to the end of the current line. ( end )
+
+    >>> key.file_menu()
+    // It presses shortcut key for File menu options in the current program. ( alt + f )
+
+    // It has many more shortcut key like this...
+
+
+Requirement modul
+=================
+
+shortkeygui install the modules it depends on, including uiaction.
+
+<-- thank you !!! -->
+==========
+
+.. _SriBalaji: https://github.com/SriBalajiSMVEC
+
+.. default-role:: code
+
+============
+Installation
+============
+
+To install shortkeygui, install the `shortkeygui` package from PyPI by running `pip install shortkeygui` (on Windows) or `pip3 install shortkeygui` (on macOS and Linux). (On macOS and Linux, `pip` refers to Python 2's pip tool.)
+
+OS-specific instructions are below.
+
+Windows
+-------
+
+On Windows, you can use the ``py.exe`` program to run the latest version of Python:
+
+    ``py -m pip install shortkeygui``
+
+If you have multiple versions of Python installed, you can select which one with a command line argument to ``py``. For example, for Python 3.8, run:
+
+    ``py -3.8 -m pip install shortkeygui``
+
+(This is the same as running ``pip install shortkeygui``.)
+
+macOS
+-----
+
+On macOS and Linux, you need to run ``python3``:
+
+    ``python3 -m pip install shortkeygui``
+
+If you are running El Capitan and have problems installing pyobjc try:
+
+    ``MACOSX_DEPLOYMENT_TARGET=10.11 pip install pyobjc``
+
+Linux
+-----
+
+On macOS and Linux, you need to run ``python3``:
+
+    ``python3 -m pip install shortkeygui``
+
+On Linux, additionally you need to install the ``scrot`` application, as well as Tkinter:
+
+    ``sudo apt-get install scrot``
+
+    ``sudo apt-get install python3-tk``
+
+    ``sudo apt-get install python3-dev``
+
+shortkeygui install the modules it depends on, including uiaction.
+
+
+.. _SriBalaji: https://github.com/SriBalajiSMVEC

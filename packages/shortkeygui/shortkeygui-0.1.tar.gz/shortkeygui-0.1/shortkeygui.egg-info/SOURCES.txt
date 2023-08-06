@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+documentation/index.rst
+documentation/install.rst
+documentation/tests.rst
+shortkeygui/__init__.py
+shortkeygui/main.py
+shortkeygui.egg-info/PKG-INFO
+shortkeygui.egg-info/SOURCES.txt
+shortkeygui.egg-info/dependency_links.txt
+shortkeygui.egg-info/requires.txt
+shortkeygui.egg-info/top_level.txt
