@@ -1,0 +1,11 @@
+setup.py
+distributions_saurav/Binomialdistribution.py
+distributions_saurav/Gaussiandistribution.py
+distributions_saurav/Generaldistribution.py
+distributions_saurav/__init__.py
+distributions_saurav/example_code.py
+distributions_saurav.egg-info/PKG-INFO
+distributions_saurav.egg-info/SOURCES.txt
+distributions_saurav.egg-info/dependency_links.txt
+distributions_saurav.egg-info/not-zip-safe
+distributions_saurav.egg-info/top_level.txt
