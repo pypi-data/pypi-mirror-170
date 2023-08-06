@@ -1,0 +1,2 @@
+[console_scripts]
+email_service = email_service.main:main
