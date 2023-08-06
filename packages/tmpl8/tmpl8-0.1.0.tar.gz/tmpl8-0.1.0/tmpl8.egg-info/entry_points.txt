@@ -1,0 +1,3 @@
+[console_scripts]
+tmpl8 = tmpl8.cli:main
+

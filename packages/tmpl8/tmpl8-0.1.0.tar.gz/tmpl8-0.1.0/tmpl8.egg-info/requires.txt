@@ -1,0 +1,7 @@
+pyyaml
+jinja2
+
+[dev]
+pytest
+flake8
+pre-commit
