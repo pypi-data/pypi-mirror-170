@@ -1,0 +1,9 @@
+src/txtad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/txtad/load_json.py,sha256=1ynGxrqYbBs8x6IaOyxPyC8wCtFMOcoqWJ73yDXgOzI,489
+src/txtad/room_example.py,sha256=SC3Udxo6QrgFhUcDRJOp-Pv-L7Xdy5nfHGJkJc4t53Q,397
+src/txtad/run.py,sha256=yM8XBdhHxDONxX3kZb8cJo87SpaABttPEamf6M1pYOE,1228
+src/txtad/structures.py,sha256=Wf7wmVgpFFZGlfc-XTHNSjdHQgclZcKOlshoKBGBt54,2045
+structured_text_adventure_engine-0.0.1.dist-info/METADATA,sha256=4hmeXmZ2c6sX1z4LY2PdfVo0LXll8Y37ir6idRj6DHM,655
+structured_text_adventure_engine-0.0.1.dist-info/WHEEL,sha256=dX1WPp444jXDT0mMZWrdU6ZHm7Cfu0jldiLCQOk_Kmg,87
+structured_text_adventure_engine-0.0.1.dist-info/licenses/LICENCE,sha256=A8SOBjtXDRD0vTMmuemTMK9oSk2GRl-ocVdQmDZhnvQ,1069
+structured_text_adventure_engine-0.0.1.dist-info/RECORD,,
