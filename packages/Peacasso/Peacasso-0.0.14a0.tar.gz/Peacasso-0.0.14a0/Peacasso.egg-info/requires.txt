@@ -1,0 +1,9 @@
+transformers
+scipy
+ftfy
+diffusers==0.3.0
+torch
+pydantic
+uvicorn
+typer
+fastapi
