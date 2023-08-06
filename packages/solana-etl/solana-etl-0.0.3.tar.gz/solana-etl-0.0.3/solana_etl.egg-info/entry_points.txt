@@ -1,0 +1,2 @@
+[console_scripts]
+solanaetl = solanaetl.cli:cli
