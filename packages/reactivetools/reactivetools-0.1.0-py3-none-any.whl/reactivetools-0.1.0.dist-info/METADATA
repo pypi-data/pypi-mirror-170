@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: reactivetools
+Version: 0.1.0
+Summary: Typesafe, reactive tooling in Python with data descriptions
+Author: Sam Roeca
+Author-email: samuel.roeca@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# Reactive Tools
+
+This Pure-Python, no-dependency library brings reactivity to native Python.
+
+## Example
+
+To see a working example, please refer to the tests.
+
