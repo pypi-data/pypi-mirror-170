@@ -1,0 +1,2 @@
+cosima_core
+tests
