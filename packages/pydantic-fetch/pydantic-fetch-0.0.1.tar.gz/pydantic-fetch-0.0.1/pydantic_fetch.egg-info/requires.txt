@@ -1,0 +1,8 @@
+pydantic
+
+[httpx]
+httpx
+
+[tests]
+mock
+pytest
