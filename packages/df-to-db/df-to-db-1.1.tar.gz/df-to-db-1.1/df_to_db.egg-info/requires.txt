@@ -1,0 +1,16 @@
+pandas
+pymysql
+pytest
+cryptography
+pymongo
+sqlalchemy
+mysqlclient
+coverage
+sphinx
+sphinx-rtd-theme
+psycopg2-binary
+sqlalchemy-utils
+dnspython
+pymssql
+tox
+tox-gh-actions
