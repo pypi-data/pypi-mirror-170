@@ -1,0 +1,26 @@
+{% extends 'layouts/base.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+{% block main %}
+
+    <div class="grid-wrapper">
+        <div class="view">
+            <div class="row">
+                <div class="col s12 m3">
+                    {{ clickableCard(route=url_for('admin.settings') ,text="Settings") }}
+                </div>
+                <div class="col s12 m3">
+                    {{ clickableCard(url_for('admin.config'), text="Config") }}
+                </div>
+                <div class="col s12 m3">
+                    {{ clickableCard(url_for('admin.user.get_list'), text="Users") }}
+                </div>
+                <div class="col s12 m3">
+                    {{ clickableCard(url_for('admin.sales'), text="Sales") }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
