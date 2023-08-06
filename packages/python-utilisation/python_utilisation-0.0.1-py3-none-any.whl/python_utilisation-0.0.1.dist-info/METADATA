@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-utilisation
+Version: 0.0.1
+Summary: Useful tools Python Utilisation
+Home-page: https://github.com/Djeevs-Jean/
+Author: Jen-Yves Badette
+Author-email: jeanyvesbadette@gmail.com
+License: MIT
+Keywords: python-utilisation,python-utils,python,utilisation
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# python-utilisation
