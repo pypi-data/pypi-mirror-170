@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+fucking_music/__init__.py
+fucking_music.egg-info/PKG-INFO
+fucking_music.egg-info/SOURCES.txt
+fucking_music.egg-info/dependency_links.txt
+fucking_music.egg-info/not-zip-safe
+fucking_music.egg-info/top_level.txt
