@@ -1,0 +1,2 @@
+[console_scripts]
+nqdc = nqdc._commands:nqdc_command
