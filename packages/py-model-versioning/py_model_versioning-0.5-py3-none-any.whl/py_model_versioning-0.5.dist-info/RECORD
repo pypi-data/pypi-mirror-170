@@ -1,0 +1,10 @@
+py_model_versioning/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_model_versioning/main.py,sha256=9mg3vKtD4ZTIHozUIEKBxL2y3bo9662Ut-NKHVjtIV4,3843
+py_model_versioning/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_model_versioning/classes/func.py,sha256=BJD0AOqebNNg-291aQk56S7P7tMqE8TlDsFX1xrZUUI,7303
+py_model_versioning/classes/google_storage.py,sha256=WfH3r6tpY_gP1H_yx-wWQx9nmNpdpxzmZ-lw2X6IcdI,6680
+py_model_versioning-0.5.dist-info/METADATA,sha256=mLeFV37V7DtG817s-Qp1jnVUZfSXF2rOw-cS2ZoMgVA,1330
+py_model_versioning-0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+py_model_versioning-0.5.dist-info/entry_points.txt,sha256=3dY8WB-3_mshN58f0BwRi5wMNC6YNs0QQep6Rbx228M,62
+py_model_versioning-0.5.dist-info/top_level.txt,sha256=G4i-KaYQIX6cQrctYQH0EDzIlhmurQoLbmq3OjWUJ2Q,20
+py_model_versioning-0.5.dist-info/RECORD,,
