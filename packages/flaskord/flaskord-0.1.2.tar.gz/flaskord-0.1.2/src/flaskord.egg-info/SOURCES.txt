@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/flaskord.egg-info/PKG-INFO
+src/flaskord.egg-info/SOURCES.txt
+src/flaskord.egg-info/dependency_links.txt
+src/flaskord.egg-info/top_level.txt
