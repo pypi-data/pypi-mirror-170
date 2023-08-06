@@ -1,0 +1,184 @@
+h1:introduction Introduction
+h2:main-objective Main objective
+h2:outline-of-this-monograph Outline of this monograph
+h2:references References
+h1:brief-overview-of-methods-of-machine-learning Brief overview of methods of machine learning
+h2:a-framework-for-machine-learning A framework for machine learning
+h3:prediction-machine-for-supervisedunsupervised-learning Prediction machine for supervised/unsupervised learning
+tab:eval Main parameters for machine learning
+h3:techniques-of-supervised-learning Techniques of supervised learning
+h3:techniques-of-unsupervised-learning Techniques of unsupervised learning
+h2:exploratory-data-analysis Exploratory data analysis
+fig:label Kernel density estimator
+fig:label Scatter plot
+fig:label Correlation matrix
+fig:label Summary plot
+h2:performance-indicators-for-machine-learning Performance indicators for machine learning
+h3:distances-and-divergences Distances and divergences
+h3:indicators-for-supervised-learning Indicators for supervised learning
+h3:indicators-for-unsupervised-learning Indicators for unsupervised learning
+h2:general-specification-of-tests General specification of tests
+h3:preliminaries Preliminaries
+tab:label scenario list
+h3:extrapolation-in-one-dimension Extrapolation in one dimension
+fig:label Periodic kernel:CodPy, the RBF kernel: SciPy, SVR: Scikit, Neural Network: TensorFlow, Decision tree: Scikit, Adaboost: Scikit, XGBoost, Random Forest: Scikit
+fig:label RMSE, MMD and execution time
+h3:extrapolation-in-two-dimensions Extrapolation in two dimensions
+fig:label RBF (the first and the second), a periodic Gaussian kernel (the third and the forth)
+fig:results A periodic Gaussian kernel vs RBF kernel
+h3:clustering Clustering
+fig:label Scatter plots of k-means and MMD minimization algorithms
+fig:label Confusion matrices of k-means and MMD minimization algorithms
+fig:label benchmark of various performance indicators for clustering.
+h2:bibliography Bibliography
+h2:appendix-to-chapter-2 Appendix to chapter 2
+tab:label Supervised algorithms performance indicators
+tab:label Supervised algorithms performance indicators
+tab:label Unsupervised algorithms performance indicators (Clustering)
+h1:reproducing-kernel-methods-for-machine-learning Reproducing-kernel methods for machine learning
+h2:purpose-of-this-chapter Purpose of this chapter
+tab:label A choice of dimensions for data projection
+h2:fundamental-notions-for-supervised-learning Fundamental notions for supervised learning
+h3:preliminaries-1 Preliminaries
+eq:Gaussian
+Let us consider the kernel to be  (discussed below) and let us refer to Section @ref(brief-overview-of-methods-of-machine-learning) for the description of the relevant parameters in our algorithm. We then display some typical values of the kernel matrix, in Table @ref(tab:450),, which are computed using our function  in CodPy.tab:label First four rows and columns of the kernel matrix $K(X,Y)$
+tab:label First four rows and columns of an inverted kernel matrix $K(X,Y)^{-1}$
+tab:label First four rows and columns of a kernel-based distance matrix $D(X,Y)$
+h3:methodology-of-the-codpy-algorithms Methodology of the CodPy algorithms
+h3:transportation-maps Transportation maps
+h3:extrapolation-interpolation-and-projection Extrapolation, interpolation, and projection
+h3:functional-spaces-and-kolmogorov-decomposition Functional spaces and Kolmogorov decomposition
+h3:error-estimates-based-on-the-generalized-maximum-mean-discrepancy Error estimates based on the generalized maximum mean discrepancy
+h2:dealing-with-kernels Dealing with kernels
+h3:maps-and-kernels Maps and kernels
+h3:illustration-of-different-kernels-predictions Illustration of different kernels predictions
+h2:discrete-differential-operators Discrete differential operators
+h3:coefficient-operator Coefficient operator
+h3:partition-of-unity Partition of unity
+h3:gradient-operator Gradient operator
+h3:divergence-operator Divergence operator
+h3:laplace-operator Laplace operator
+h3:inverse-laplace-operator Inverse Laplace operator
+h3:integral-operator---inverse-gradient-operator Integral operator - inverse gradient operator
+h3:integral-operator---inverse-divergence-operator Integral operator - inverse divergence operator
+h3:leray-orthogonal-operator Leray-orthogonal operator
+h3:leray-operator-and-helmholtz-hodge-decomposition Leray operator and Helmholtz-Hodge decomposition
+h2:kernel-engineering Kernel engineering
+h3:manipulating-kernels Manipulating kernels
+h3:adding-kernels Adding kernels
+h3:multiplicating-kernels Multiplicating kernels
+h3:convoluting-kernels Convoluting kernels
+h3:piped-kernels Piped kernels
+h3:piping-scalar-product-kernels-an-example-with-a-polynomial-regression Piping scalar product kernels: an example with a polynomial regression
+h3:neural-networks-viewed-as-kernel-methods Neural networks viewed as kernel methods
+h2:a-first-application-a-clustering-algorithm A first application: a clustering algorithm
+h3:distance-based-unsupervised-learning-machines Distance-based unsupervised learning machines
+h3:sharp-discrepancy-sequences Sharp discrepancy sequences
+h3:python-functions Python functions
+h3:impact-of-sharp-discrepancy-sequences-on-discrepancy-errors Impact of sharp discrepancy sequences on discrepancy errors
+fig:label benchmark of discrepancy errors and inertia
+h3:a-study-of-the-discrepancy-functional A study of the discrepancy functional
+fig:results Distance functional for the Gaussian kernel
+fig:results Distance functional for the norm kernel
+fig:results Distance functional for the Matern kernel
+fig:results Distance functional for the Gaussian, the Matern and the RELU kernels (1D)
+fig:results Distance functional for the Gaussian, the Matern and the RELU kernels (3D)
+h2:bibliography-1 Bibliography
+h2:appendix-to-chapter-3 Appendix to Chapter 3
+h3:maps-and-kernels-1 Maps and kernels
+h1:kernel-methods-for-optimal-transport Kernel methods for optimal transport
+h2:a-brief-overview-of-discrete-optimal-transport A brief overview of discrete optimal transport
+h2:linear-sum-assignment-problems-lsap Linear Sum Assignment Problems (LSAP)
+tab:label a 4x4 random matrix
+tab:results Total cost before permutation
+tab:results Permutation
+tab:results Total cost after ordering
+tab:label Distance matrix before ordering
+tab:results Permutation before ordering
+tab:label Cost
+tab:label Distance matrix after ordering
+tab:label Permutation
+tab:label Total cost after ordering
+fig:label LSAP with different input sizes
+h3:lsap-extensions LSAP extensions
+fig:label LSAP with different input sizes
+h2:conditional-expectation-algorithm Conditional expectation algorithm
+h2:the-sampler-function-and-discrete-polar-factorization The sampler function and discrete polar factorization
+h3:examples Examples
+fig:label Histograms of Bi-modal Gaussian vs sampled (left) and Student
+fig:label 2D Gaussian vs sampled (left) and 2D Student
+h2:bibliography-2 Bibliography
+h2:appendix-to-chapter-4 Appendix to Chapter 4
+tab:label Stats
+tab:label Summary statistics
+h1:application-to-supervised-machine-learning Application to supervised machine learning
+h2:aims-of-this-chapter Aims of this chapter
+h2:regression-problem-housing-price-prediction Regression problem: housing price prediction
+tab:label scenario list
+fig:label MMD and execution time
+h2:classification-problem-handwritten-digits Classification problem: handwritten digits
+tab:label Scenario list
+fig:label MMD and execution time
+h2:reconstruction-problems-learning-from-sub-sampled-signals-in-tomography. Reconstruction problems : learning from sub-sampled signals in tomography.
+fig:label high resolution sinogram (middle),  low resolution (right), reconstructed image (left)
+fig:label Example of reconstruction original (left), sub-sampled SART (middle), kernel extrapolation (right)
+h2:appendix Appendix
+tab:results Performance indicators for housing prices database
+tab:results Performance indicators for MNIST database
+h1:applications-to-unsupervised-machine-learning Applications to unsupervised machine learning
+h2:aims-of-this-chapter-1 Aims of this chapter
+h2:classification-problem-handwritten-digits-1 Classification problem: handwritten digits
+tab:label scenario list
+h2:german-credit-risk German credit risk
+tab:label scenario list
+h2:credit-card-marketing-strategy Credit card marketing strategy
+tab:label scenario list
+h2:credit-card-fraud-detection Credit card fraud detection
+tab:label scenario list
+h2:portfolio-of-stock-clustering Portfolio of stock clustering
+h2:appendix-1 Appendix
+tab:results Performance indicators for MNIST dataset
+tab:results Performance indicators for German credit database
+tab:results Performance indicators for credit card marketing database
+tab:results Performance indicators for credit card fraud database
+tab:results Performance indicators for stock price
+h1:generative-models-with-kernels Generative models with kernels
+h2:aim-of-this-section Aim of this section
+h3:settings Settings
+h3:kernel-review Kernel review
+h3:kernel-based-transport-maps Kernel-based transport maps
+h3:time-series-forecasting Time series forecasting
+h3:recurrent-methods-for-time-series-predictions Recurrent methods for time series predictions
+h2:numerical-illustration Numerical illustration
+h3:one-dimensional-distributions One dimensional distributions
+tab:results Statistics of IID-generated distributions
+tab:results Statistics of SDS-generated distributions
+h3:time-series-forecasting-illustration Time series forecasting illustration
+tab:results Summary statistics for Apple, Amazon and Google
+tab:results Correlation matrix of historical data
+tab:results Correlation matrix of generated data
+h3:recurrent-kernels-illustration Recurrent kernels illustration
+h2:monte-carlo-pricing Monte Carlo pricing
+h3:experiment-settings Experiment settings
+h4:reproducing-a-bivariate-gaussian Reproducing a Bivariate Gaussian
+tab:results \\label{statgbm}Stats for BGM
+h4:basket-option-pricing Basket option pricing
+h2:pl-explanation P&L explanation
+h3:experiment-settings-1 Experiment settings
+h3:training-set Training set
+fig:results \\label{plot10} Training and test set
+h3:pl-explanation-of-sp-500-options P&L explanation of S&P 500 options
+tab:results PnL error in percentage 
+h2:the-bachelier-problem The Bachelier problem
+h3:methodology-and-inputoutput-data Methodology and input/output data
+h3:four-methods-to-tackle-the-bachelier-problem Four methods to tackle the Bachelier problem
+h3:concluding-remarks Concluding remarks
+h1:application-to-partial-differential-equations Application to partial differential equations
+h2:automatic-algorithmic-differentiation. Automatic algorithmic differentiation.
+fig:label A cubic function, exact AAD first order and second order derivatives
+h2:differential-machines-benchmarks Differential machines benchmarks
+fig:label A benchmark of one-dimensional differential machines
+fig:label A benchmark of two-dimensional differential machines
+h2:taylor-expansions-using-differential-learning-machines Taylor expansions using differential learning machines
+fig:label A benchmark of one-dimensional learning machine second-order Taylor expansion
+
