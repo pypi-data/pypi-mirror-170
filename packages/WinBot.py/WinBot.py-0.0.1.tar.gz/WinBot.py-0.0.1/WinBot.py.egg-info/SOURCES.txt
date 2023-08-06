@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+WinBot/__init__.py
+WinBot/__version__.py
+WinBot/loguru_format.py
+WinBot/main.py
+WinBot/main_.py
+WinBot.py.egg-info/PKG-INFO
+WinBot.py.egg-info/SOURCES.txt
+WinBot.py.egg-info/dependency_links.txt
+WinBot.py.egg-info/requires.txt
+WinBot.py.egg-info/top_level.txt
+test/test.py
