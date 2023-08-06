@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+primeiropacotepypi_10_22/primeiropacotepypi_10_22.py
+primeiropacotepypi_10_22.egg-info/PKG-INFO
+primeiropacotepypi_10_22.egg-info/SOURCES.txt
+primeiropacotepypi_10_22.egg-info/dependency_links.txt
+primeiropacotepypi_10_22.egg-info/requires.txt
+primeiropacotepypi_10_22.egg-info/top_level.txt
