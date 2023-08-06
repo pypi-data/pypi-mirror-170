@@ -1,0 +1,4 @@
+[console_scripts]
+ShushuShang = ShushuShang.__main__:main
+shushu-shang = ShushuShang.__main__:main
+
