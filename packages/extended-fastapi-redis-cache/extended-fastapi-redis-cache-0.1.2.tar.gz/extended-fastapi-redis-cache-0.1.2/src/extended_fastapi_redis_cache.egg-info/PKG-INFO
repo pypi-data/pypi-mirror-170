@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: extended-fastapi-redis-cache
+Version: 0.1.2
+Summary: Fork of fastapi-redis-cache which adds support for Pydantic models, fixes bugs and adds new features such as manually expire and option to not set cache headers.
+Home-page: https://github.com/petar-varga/Extended-FastAPI-Redis-Cache
+Author: Petar Varga
+Author-email: petarvarga128@gmail.com
+Maintainer: Petar Varga
+Maintainer-email: petarvarga128@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/petar-varga/Extended-FastAPI-Redis-Cache/issues
+Project-URL: Source Code, https://github.com/petar-varga/Extended-FastAPI-Redis-Cache
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+## Extended-FastAPI-Redis-Cache <!-- omit in toc -->
+
+## Installation
+
+`pip install extended-fastapi-redis-cache`
