@@ -1,0 +1,3 @@
+[console_scripts]
+chromedriver-path = chromium_binary_lambda:download_chromium
+
