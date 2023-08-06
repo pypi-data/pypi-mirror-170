@@ -1,0 +1,13 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools", "cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="TrezorCryptoTestRc"
+version="0.0.16"
+description="Cython wrapper around trezor-crypto library"
+
+
+[tool.setuptools]
+py-modules = []

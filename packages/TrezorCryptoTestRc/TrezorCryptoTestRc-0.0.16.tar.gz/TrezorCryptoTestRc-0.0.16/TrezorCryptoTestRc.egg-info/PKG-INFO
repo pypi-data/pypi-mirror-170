@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: TrezorCryptoTestRc
+Version: 0.0.16
+Summary: Cython wrapper around trezor-crypto library
+Home-page: https://github.com/trezor/trezor-crypto
+License-File: LICENSE
+License-File: AUTHORS
