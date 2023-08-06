@@ -1,0 +1,9 @@
+xia_fields/__init__.py,sha256=uWtn9y35s5eK4NT8PeeCkP2ZOTJKOnneoCSFE52Qiw4,1039
+xia_fields/base.cpython-39-x86_64-linux-gnu.so,sha256=84OcMe_rh-bk66Mgq-eL3CWS4NZ8jT9-pt9rlg0K2Kw,817576
+xia_fields/fields.cpython-39-x86_64-linux-gnu.so,sha256=vmg2aydcZEunrhz5Bj16I4cdPMuDqox9sAJXcRRsGw8,854472
+xia_fields/fields_ext.cpython-39-x86_64-linux-gnu.so,sha256=TfEJ2OTJb043UPGFJ5MXEPHy4gLadEakjmSFgA371OU,805320
+xia_fields-0.2.0.dist-info/LICENSE.txt,sha256=s8Y3QvYp13RfTIzQG1U67Z1gbQXYMWx4mw-q2tUa5X8,154
+xia_fields-0.2.0.dist-info/METADATA,sha256=NyxQ3AXGWHSb8crtF-rH5S45qlg5-c5dDgDysBI6h7A,3308
+xia_fields-0.2.0.dist-info/WHEEL,sha256=qkSVf_2y_meuNtxjbahKGy4LKa5aE9SY7z8YZA90byg,107
+xia_fields-0.2.0.dist-info/top_level.txt,sha256=pXvwXCVXR-n1PTScNVgqx5GAlG0H2tIpu7XuuswUrng,11
+xia_fields-0.2.0.dist-info/RECORD,,
