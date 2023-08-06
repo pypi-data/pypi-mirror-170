@@ -1,0 +1,1 @@
+This library can add, substract, multiply, divide, square and mod on the given numbers and return the result.

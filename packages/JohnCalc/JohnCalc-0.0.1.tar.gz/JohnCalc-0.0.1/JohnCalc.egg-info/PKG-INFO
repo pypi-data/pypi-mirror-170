@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: JohnCalc
+Version: 0.0.1
+Summary: A basic calculation function
+Home-page: UNKNOWN
+Author: Paul John Maddala
+Author-email: maddalapauljohn@gmail.com
+License: MIT
+Keywords: Calculations
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This library can add, substract, multiply, divide, square and mod on the given numbers and return the result.
+
+Change LOG
+===================
+
+0.0.1(05/10/22)
+--------------------
+-First Release
+

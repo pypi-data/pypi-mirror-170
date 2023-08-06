@@ -1,0 +1,10 @@
+ChangeLOG.txt
+JohnCalc.py
+LICENSE.txt
+MANIFEST.in
+ReadMe.txt
+setup.py
+JohnCalc.egg-info/PKG-INFO
+JohnCalc.egg-info/SOURCES.txt
+JohnCalc.egg-info/dependency_links.txt
+JohnCalc.egg-info/top_level.txt
