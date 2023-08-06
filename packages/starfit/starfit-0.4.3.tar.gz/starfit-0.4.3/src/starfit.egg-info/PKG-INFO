@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: starfit
+Version: 0.4.3
+Summary: A stellar abundance matching code
+Home-page: https://github.com/conradtchan/StarFit
+Author: Conrad Chan
+Author-email: ctchan@swin.edu.au
+License: MIT
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE
+
+# StarFit
+Match stellar abundance measurements against a database of stellar models.
+
+# Installation
+## From PyPI
+```
+pip install starfit
+```
+
+## From git repo
+Download data files before installing from the repo
+```
+./download-data.sh
+pip install .
+```
+
+# Usage
+`starfit.Single` fits an abundance pattern to a single model from the database.
+
+Optional arguments:
+- `z_max`: highest element charge number to fit
+- `z_exclude`: element charge numbers to exclude from fit
+- `z_lolim`: elements that are *model* lower limits (effectively the same as *observational* upper limits)
+
+```
+import starfit
+
+s = starfit.Single(
+    filename = 'HE1327-2326.dat',
+    db = 'znuc2012.S4.star.el.y.stardb.gz',
+    z_max = 30,
+    z_exclude = [3, 24, 30],
+    z_lolim = [21, 29],
+
+)
+
+print(s)
+```
+
+The **database indices** of the best fitting models (sorted from best to worst) are given by:
+```
+s.sorted_stars['index']
+```
+
+The corresponding **reduced chi^2** values are:
+```
+s.sorted_fitness
+```
+
+The physical properties of the models corresponding to these indices can be accessed using the database:
+```
+i_bestfit = s.sorted_stars['index'][0]
+s.db.fielddata[i_bestfit]
+```
+
+The chemical yield of the models (and the respective element names) are:
+```
+list( zip(s.list_db, s.full_abudata[:,i_bestfit]) )
+```
+
+To make the same plots as the web version:
+```
+s.plot()
+```
