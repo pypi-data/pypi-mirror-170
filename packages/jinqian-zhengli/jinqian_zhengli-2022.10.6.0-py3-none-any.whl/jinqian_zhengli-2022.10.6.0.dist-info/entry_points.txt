@@ -1,0 +1,4 @@
+[console_scripts]
+JinqianZhengli = JinqianZhengli.__main__:main
+jinqian-zhengli = JinqianZhengli.__main__:main
+
