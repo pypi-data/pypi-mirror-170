@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: minivirt
+Version: 0.0.2
+Summary: lightweight virtual machine manager
+Home-page: https://github.com/mgax/minivirt
+Author: Alex Morega
+Author-email: alex@grep.ro
+Project-URL: Bug Tracker, https://github.com/mgax/minivirt/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: click
+Requires-Dist: pyyaml
+Provides-Extra: githubactions
+Requires-Dist: pygithub ; extra == 'githubactions'
+Requires-Dist: pyngrok ; extra == 'githubactions'
+Requires-Dist: waitress ; extra == 'githubactions'
+
