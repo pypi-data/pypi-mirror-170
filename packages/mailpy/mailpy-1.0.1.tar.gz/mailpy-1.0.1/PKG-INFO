@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mailpy
+Version: 1.0.1
+Summary: Python IMAP and SMTP Wrapper
+Home-page: http://github.com/Y4hL/mailpy
+Author: https://github.com/Y4hL
+License: GNU GPLv3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Communications :: Email :: Email Clients (MUA)
+Requires-Python: >=3.5.0
+License-File: LICENSE

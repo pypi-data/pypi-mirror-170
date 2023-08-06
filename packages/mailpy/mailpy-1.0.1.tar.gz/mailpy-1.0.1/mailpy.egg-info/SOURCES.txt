@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mailpy/__init__.py
+mailpy/__main__.py
+mailpy/exceptions.py
+mailpy/mail.py
+mailpy.egg-info/PKG-INFO
+mailpy.egg-info/SOURCES.txt
+mailpy.egg-info/dependency_links.txt
+mailpy.egg-info/top_level.txt
