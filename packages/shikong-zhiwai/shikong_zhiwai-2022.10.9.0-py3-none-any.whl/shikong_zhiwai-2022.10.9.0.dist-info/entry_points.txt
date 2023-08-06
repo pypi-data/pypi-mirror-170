@@ -1,0 +1,4 @@
+[console_scripts]
+ShikongZhiwai = ShikongZhiwai.__main__:main
+shikong-zhiwai = ShikongZhiwai.__main__:main
+
