@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+MisskeyAPI.egg-info/PKG-INFO
+MisskeyAPI.egg-info/SOURCES.txt
+MisskeyAPI.egg-info/dependency_links.txt
+MisskeyAPI.egg-info/requires.txt
+MisskeyAPI.egg-info/top_level.txt
+misskey/__init__.py
+misskey/misskeyapi.py
