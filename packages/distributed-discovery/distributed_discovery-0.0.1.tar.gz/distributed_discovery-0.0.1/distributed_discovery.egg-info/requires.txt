@@ -1,0 +1,12 @@
+graphviz
+lxml
+pm4py==2.2.29
+
+[dev]
+check-manifest
+black
+
+[test]
+coverage
+flake8
+pylint
