@@ -1,0 +1,12 @@
+toisto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toisto/__main__.py,sha256=nRBXykwgz-Y0Xw8gy_vJMcZjXykBCOcKJ4WMnT97yug,86
+toisto/app.py,sha256=Tt68zL29cXbFTrHnurH3ghJisFLZvonNabyJOVgLkMk,4004
+toisto/decks/counting.json,sha256=GwYsl-xGqqcas9AWdyXrYrTj4i7evlS4Hd96gd2mmHk,1635
+toisto/decks/greetings.json,sha256=RNLZcWPheF_gyf5u0L4OWEa2Yr-d-DBv0TLctT4jnAU,79
+toisto/decks/time.json,sha256=VtvrmNYkGS8QqdkcpDpdF6rabsGE8Y5VubWfCwOZoE0,1467
+Toisto-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+Toisto-0.0.1.dist-info/METADATA,sha256=7rpToieAPo7qZfmWbiwcrK5t0gmNuow5y3PsqaS-cbs,2226
+Toisto-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Toisto-0.0.1.dist-info/entry_points.txt,sha256=iOc9fkCC__VfSur2TESv1ulhoHA26I2-41mF55YNZ3A,43
+Toisto-0.0.1.dist-info/top_level.txt,sha256=SaIAuORPqr9LEfw-6Wdu6QiziJqk0zxcEiXqeIvooX0,7
+Toisto-0.0.1.dist-info/RECORD,,
