@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+cancel_scope/__init__.py
+cancel_scope.egg-info/PKG-INFO
+cancel_scope.egg-info/SOURCES.txt
+cancel_scope.egg-info/dependency_links.txt
+cancel_scope.egg-info/top_level.txt
