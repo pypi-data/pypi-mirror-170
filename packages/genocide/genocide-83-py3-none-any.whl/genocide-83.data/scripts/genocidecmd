@@ -1,0 +1,47 @@
+#!python
+# pylint: disable=E1101,E0611,C0116,C0115,C0413,R0903
+# This file is placed in the Public Domain.
+
+
+"command"
+
+
+import sys
+
+
+from genocide import Client, Wd, parse, scan
+from genocide.run import docmd
+from genocide.irc import Config
+
+
+Config.nick = "genocide"
+Config.channel = "#genocide"
+Config.realname = "Prosecutor. Court. Reconsider OTP-CR-117/19."
+Config.username = "genocide"
+
+
+Wd.workdir = "/var/lib/genocide/"
+
+
+from genocide import cmd, irc, rss
+
+
+scan(cmd)
+scan(irc)
+scan(rss)
+
+
+class CLI(Client):
+
+    @staticmethod
+    def raw(txt):
+        print(txt)
+
+
+def main():
+    cfg = parse(" ".join(sys.argv[1:]))
+    cli = CLI()
+    docmd(cli, cfg.otxt)
+
+
+main()

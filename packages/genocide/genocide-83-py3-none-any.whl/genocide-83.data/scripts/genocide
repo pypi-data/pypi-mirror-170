@@ -1,0 +1,115 @@
+#!python
+# This file is placed in the Public Domain.
+# pylint: disable=E1101,E0611,C0116,C0413,C0411,W0406
+
+
+"shell"
+
+
+import os
+import readline
+import sys
+import termios
+import time
+
+
+sys.path.insert(0, os.getcwd())
+
+
+from genocide import Wd, printable
+from genocide import Client, Event, parse, scan
+from genocide.run import docmd
+from genocide.irc import IRC
+from genocide.rss import Fetcher
+
+
+from genocide import cmd, irc, mdl, rss
+from genocide.irc import Config
+
+
+Config.nick = "genocide"
+Config.channel = "#genocide"
+Config.realname = "Prosecutor. Court. Reconsider OTP-CR-117/19."
+Config.username = "genocide"
+
+
+Wd.workdir = os.path.expanduser("~/.genocide")
+
+
+scan(cmd)
+scan(irc)
+scan(mdl)
+scan(rss)
+
+
+class CLI(Client):
+
+    @staticmethod
+    def raw(txt):
+        print(txt)
+
+
+class Console(CLI):
+
+    @staticmethod
+    def announce(txt):
+        pass
+
+    @staticmethod
+    def handle(event):
+        Client.handle(event)
+        event.wait()
+
+    def poll(self):
+        event = Event()
+        event.txt = input("> ")
+        event.orig = repr(self)
+        return event
+
+
+def banner(cfg):
+    print(
+          "GENOCIDE started at %s %s" % (
+                                     time.ctime(time.time()).replace("  ", " "),
+                                     printable(cfg, "debug,verbose")
+                                    )
+         )
+
+
+def wrap(func):
+    fds = sys.stdin.fileno()
+    gotterm = True
+    try:
+        old = termios.tcgetattr(fds)
+    except termios.error:
+        gotterm = False
+    readline.redisplay()
+    try:
+        func()
+    except (EOFError, KeyboardInterrupt):
+        print("")
+    finally:
+        if gotterm:
+            termios.tcsetattr(fds, termios.TCSADRAIN, old)
+
+
+def main():
+    txt = ' '.join(sys.argv[1:])
+    cfg = parse(txt)
+    if cfg.txt:
+        cli = CLI()
+        docmd(cli, cfg.otxt)
+    elif "c" in cfg.opts:
+        banner(cfg)
+        bot = IRC()
+        bot.start()
+        print(printable(bot.cfg, "nick,channel,server,port,sasl"))
+        fetcher = Fetcher()
+        fetcher.start()
+        mdl.init()
+        csl = Console()
+        csl.start()
+        csl.forever()
+
+
+wrap(main)
