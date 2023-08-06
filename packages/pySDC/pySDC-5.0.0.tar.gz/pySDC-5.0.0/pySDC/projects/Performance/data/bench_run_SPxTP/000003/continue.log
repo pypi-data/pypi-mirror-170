@@ -1,0 +1,1748 @@
+[2019-08-15 10:42:16,696]:INFO: ######################################################################
+[2019-08-15 10:42:16,697]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:16,697]:INFO: #
+[2019-08-15 10:42:16,697]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:16,697]:INFO: ######################################################################
+[2019-08-15 10:42:16,697]:DEBUG: ----- sub_step ( iter:0 | id:0 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:16,698]:DEBUG:   available parameter:
+[2019-08-15 10:42:16,698]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:16,698]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:16,698]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:16,698]:DEBUG:          i                     | 0                                       
+[2019-08-15 10:42:16,698]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,698]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:16,698]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:16,698]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:16,698]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:16,698]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,698]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:16,698]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:16,699]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:16,699]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:16,699]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:16,699]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:16,699]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,699]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:16,699]:DEBUG:                                | TP/000003/000000_sub_step/work          
+[2019-08-15 10:42:16,699]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:16,699]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:16,699]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:16,699]:DEBUG:          jube_wp_id            | 0                                       
+[2019-08-15 10:42:16,699]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:16,699]:DEBUG:          jube_wp_padid         | 000000                                  
+[2019-08-15 10:42:16,699]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000000_sub_step/w
+[2019-08-15 10:42:16,699]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:16,699]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:16,699]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:16,699]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:16,699]:DEBUG:          ntasks                | 12                                      
+[2019-08-15 10:42:16,699]:DEBUG:          space_size            | 12                                      
+[2019-08-15 10:42:16,700]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:16,703]:DEBUG: ----- sub_step ( iter:0 | id:1 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:16,704]:DEBUG:   available parameter:
+[2019-08-15 10:42:16,704]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:16,704]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:16,704]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:16,705]:DEBUG:          i                     | 1                                       
+[2019-08-15 10:42:16,705]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,705]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:16,705]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:16,705]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:16,705]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:16,705]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,705]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:16,705]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:16,705]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:16,705]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:16,705]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:16,705]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:16,705]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,705]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:16,705]:DEBUG:                                | TP/000003/000001_sub_step/work          
+[2019-08-15 10:42:16,705]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:16,705]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:16,705]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:16,705]:DEBUG:          jube_wp_id            | 1                                       
+[2019-08-15 10:42:16,705]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:16,706]:DEBUG:          jube_wp_padid         | 000001                                  
+[2019-08-15 10:42:16,706]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000001_sub_step/w
+[2019-08-15 10:42:16,706]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:16,706]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:16,706]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:16,706]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:16,706]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:16,706]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:16,706]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:16,706]:DEBUG: ----- sub_step ( iter:0 | id:2 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:16,707]:DEBUG:   available parameter:
+[2019-08-15 10:42:16,707]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:16,707]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:16,708]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:16,708]:DEBUG:          i                     | 2                                       
+[2019-08-15 10:42:16,708]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,708]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:16,708]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:16,708]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:16,708]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:16,708]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,708]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:16,708]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:16,708]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:16,708]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:16,708]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:16,708]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:16,708]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,708]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:16,708]:DEBUG:                                | TP/000003/000002_sub_step/work          
+[2019-08-15 10:42:16,708]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:16,708]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:16,708]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:16,709]:DEBUG:          jube_wp_id            | 2                                       
+[2019-08-15 10:42:16,709]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:16,709]:DEBUG:          jube_wp_padid         | 000002                                  
+[2019-08-15 10:42:16,709]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000002_sub_step/w
+[2019-08-15 10:42:16,709]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:16,709]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:16,709]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:16,709]:DEBUG:          nnodes                | 2                                       
+[2019-08-15 10:42:16,709]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:16,709]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:16,709]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:16,709]:DEBUG: ----- sub_step ( iter:0 | id:3 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:16,710]:DEBUG:   available parameter:
+[2019-08-15 10:42:16,710]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:16,711]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:16,711]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:16,711]:DEBUG:          i                     | 3                                       
+[2019-08-15 10:42:16,711]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,711]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:16,711]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:16,711]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:16,711]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:16,711]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,711]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:16,711]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:16,711]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:16,711]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:16,711]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:16,711]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:16,711]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,711]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:16,711]:DEBUG:                                | TP/000003/000003_sub_step/work          
+[2019-08-15 10:42:16,711]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:16,711]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:16,712]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:16,712]:DEBUG:          jube_wp_id            | 3                                       
+[2019-08-15 10:42:16,712]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:16,712]:DEBUG:          jube_wp_padid         | 000003                                  
+[2019-08-15 10:42:16,712]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000003_sub_step/w
+[2019-08-15 10:42:16,712]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:16,712]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:16,712]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:16,712]:DEBUG:          nnodes                | 4                                       
+[2019-08-15 10:42:16,712]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:16,712]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:16,712]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:16,713]:DEBUG: ----- sub_step ( iter:0 | id:4 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:16,714]:DEBUG:   available parameter:
+[2019-08-15 10:42:16,714]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:16,714]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:16,714]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:16,714]:DEBUG:          i                     | 4                                       
+[2019-08-15 10:42:16,714]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,714]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:16,714]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:16,714]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:16,714]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:16,714]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,714]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:16,714]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:16,714]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:16,714]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:16,715]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:16,715]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:16,715]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:16,715]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:16,715]:DEBUG:                                | TP/000003/000004_sub_step/work          
+[2019-08-15 10:42:16,715]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:16,715]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:16,715]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:16,715]:DEBUG:          jube_wp_id            | 4                                       
+[2019-08-15 10:42:16,715]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:16,715]:DEBUG:          jube_wp_padid         | 000004                                  
+[2019-08-15 10:42:16,715]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000004_sub_step/w
+[2019-08-15 10:42:16,715]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:16,715]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:16,715]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:16,715]:DEBUG:          nnodes                | 6                                       
+[2019-08-15 10:42:16,715]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:16,715]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:16,716]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:16,729]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:16,729]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:16,729]:INFO:   sub_step |   5 |    0 |    5 |     0 |    0
+[2019-08-15 10:42:16,729]:INFO: 
+[2019-08-15 10:42:16,729]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:16,729]:INFO: >>>>       id: 3
+[2019-08-15 10:42:16,729]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:16,729]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:16,729]:INFO: >>>> continue: jube continue bench_run_SPxTP --id 3
+[2019-08-15 10:42:16,729]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:16,730]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:16,730]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:16,730]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:16,730]:INFO: ######################################################################
+[2019-08-15 10:42:19,063]:INFO: ######################################################################
+[2019-08-15 10:42:19,063]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:19,063]:INFO: #
+[2019-08-15 10:42:19,064]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:19,064]:INFO: ######################################################################
+[2019-08-15 10:42:19,064]:DEBUG: ----- sub_step ( iter:0 | id:0 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:19,065]:DEBUG:   available parameter:
+[2019-08-15 10:42:19,065]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:19,065]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:19,065]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:19,065]:DEBUG:          i                     | 0                                       
+[2019-08-15 10:42:19,065]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,065]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:19,065]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:19,065]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:19,065]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:19,065]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,065]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:19,065]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:19,065]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:19,065]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:19,065]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:19,065]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:19,065]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,066]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:19,066]:DEBUG:                                | TP/000003/000000_sub_step/work          
+[2019-08-15 10:42:19,066]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:19,066]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:19,066]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:19,066]:DEBUG:          jube_wp_id            | 0                                       
+[2019-08-15 10:42:19,066]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:19,066]:DEBUG:          jube_wp_padid         | 000000                                  
+[2019-08-15 10:42:19,066]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000000_sub_step/w
+[2019-08-15 10:42:19,066]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:19,066]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:19,066]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:19,066]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:19,066]:DEBUG:          ntasks                | 12                                      
+[2019-08-15 10:42:19,066]:DEBUG:          space_size            | 12                                      
+[2019-08-15 10:42:19,066]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:19,067]:DEBUG: ----- sub_step ( iter:0 | id:1 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:19,068]:DEBUG:   available parameter:
+[2019-08-15 10:42:19,068]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:19,068]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:19,068]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:19,068]:DEBUG:          i                     | 1                                       
+[2019-08-15 10:42:19,068]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,068]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:19,068]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:19,068]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:19,068]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:19,068]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,068]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:19,068]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:19,068]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:19,068]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:19,068]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:19,069]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:19,069]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,069]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:19,069]:DEBUG:                                | TP/000003/000001_sub_step/work          
+[2019-08-15 10:42:19,069]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:19,069]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:19,069]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:19,069]:DEBUG:          jube_wp_id            | 1                                       
+[2019-08-15 10:42:19,069]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:19,069]:DEBUG:          jube_wp_padid         | 000001                                  
+[2019-08-15 10:42:19,069]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000001_sub_step/w
+[2019-08-15 10:42:19,069]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:19,069]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:19,069]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:19,069]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:19,069]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:19,069]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:19,069]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:19,070]:DEBUG: ----- sub_step ( iter:0 | id:2 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:19,071]:DEBUG:   available parameter:
+[2019-08-15 10:42:19,071]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:19,071]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:19,071]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:19,071]:DEBUG:          i                     | 2                                       
+[2019-08-15 10:42:19,071]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,071]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:19,071]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:19,071]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:19,071]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:19,071]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,071]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:19,071]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:19,071]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:19,071]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:19,071]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:19,071]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:19,072]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,072]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:19,072]:DEBUG:                                | TP/000003/000002_sub_step/work          
+[2019-08-15 10:42:19,072]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:19,072]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:19,072]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:19,072]:DEBUG:          jube_wp_id            | 2                                       
+[2019-08-15 10:42:19,072]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:19,072]:DEBUG:          jube_wp_padid         | 000002                                  
+[2019-08-15 10:42:19,072]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000002_sub_step/w
+[2019-08-15 10:42:19,072]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:19,072]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:19,072]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:19,072]:DEBUG:          nnodes                | 2                                       
+[2019-08-15 10:42:19,072]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:19,072]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:19,072]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:19,073]:DEBUG: ----- sub_step ( iter:0 | id:3 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:19,074]:DEBUG:   available parameter:
+[2019-08-15 10:42:19,074]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:19,074]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:19,074]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:19,074]:DEBUG:          i                     | 3                                       
+[2019-08-15 10:42:19,074]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,074]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:19,074]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:19,074]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:19,074]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:19,074]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,074]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:19,074]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:19,074]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:19,074]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:19,074]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:19,074]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:19,075]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,079]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:19,079]:DEBUG:                                | TP/000003/000003_sub_step/work          
+[2019-08-15 10:42:19,079]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:19,079]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:19,079]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:19,079]:DEBUG:          jube_wp_id            | 3                                       
+[2019-08-15 10:42:19,079]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:19,079]:DEBUG:          jube_wp_padid         | 000003                                  
+[2019-08-15 10:42:19,079]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000003_sub_step/w
+[2019-08-15 10:42:19,079]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:19,079]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:19,079]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:19,080]:DEBUG:          nnodes                | 4                                       
+[2019-08-15 10:42:19,080]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:19,080]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:19,080]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:19,080]:DEBUG: ----- sub_step ( iter:0 | id:4 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:19,081]:DEBUG:   available parameter:
+[2019-08-15 10:42:19,081]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:19,081]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:19,081]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:19,081]:DEBUG:          i                     | 4                                       
+[2019-08-15 10:42:19,081]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,082]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:19,082]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:19,082]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:19,082]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:19,082]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,082]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:19,082]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:19,082]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:19,082]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:19,082]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:19,082]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:19,082]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:19,082]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:19,082]:DEBUG:                                | TP/000003/000004_sub_step/work          
+[2019-08-15 10:42:19,082]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:19,082]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:19,082]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:19,082]:DEBUG:          jube_wp_id            | 4                                       
+[2019-08-15 10:42:19,082]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:19,082]:DEBUG:          jube_wp_padid         | 000004                                  
+[2019-08-15 10:42:19,083]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000004_sub_step/w
+[2019-08-15 10:42:19,083]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:19,083]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:19,083]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:19,083]:DEBUG:          nnodes                | 6                                       
+[2019-08-15 10:42:19,083]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:19,083]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:19,083]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:19,094]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:19,094]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:19,094]:INFO:   sub_step |   5 |    0 |    5 |     0 |    0
+[2019-08-15 10:42:19,094]:INFO: 
+[2019-08-15 10:42:19,094]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:19,095]:INFO: >>>>       id: 3
+[2019-08-15 10:42:19,095]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:19,095]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:19,095]:INFO: >>>> continue: jube continue bench_run_SPxTP --id 3
+[2019-08-15 10:42:19,095]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:19,095]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:19,095]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:19,095]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:19,095]:INFO: ######################################################################
+[2019-08-15 10:42:21,417]:INFO: ######################################################################
+[2019-08-15 10:42:21,417]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:21,417]:INFO: #
+[2019-08-15 10:42:21,418]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:21,418]:INFO: ######################################################################
+[2019-08-15 10:42:21,418]:DEBUG: ----- sub_step ( iter:0 | id:0 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:21,419]:DEBUG:   available parameter:
+[2019-08-15 10:42:21,419]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:21,419]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:21,419]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:21,419]:DEBUG:          i                     | 0                                       
+[2019-08-15 10:42:21,419]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,419]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:21,419]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:21,419]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:21,419]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:21,419]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,419]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:21,419]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:21,419]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:21,419]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:21,419]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:21,419]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:21,419]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,420]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:21,420]:DEBUG:                                | TP/000003/000000_sub_step/work          
+[2019-08-15 10:42:21,420]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:21,420]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:21,420]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:21,420]:DEBUG:          jube_wp_id            | 0                                       
+[2019-08-15 10:42:21,420]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:21,420]:DEBUG:          jube_wp_padid         | 000000                                  
+[2019-08-15 10:42:21,420]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000000_sub_step/w
+[2019-08-15 10:42:21,420]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:21,420]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:21,420]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:21,420]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:21,420]:DEBUG:          ntasks                | 12                                      
+[2019-08-15 10:42:21,420]:DEBUG:          space_size            | 12                                      
+[2019-08-15 10:42:21,420]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:21,421]:DEBUG: ----- sub_step ( iter:0 | id:1 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:21,422]:DEBUG:   available parameter:
+[2019-08-15 10:42:21,422]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:21,422]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:21,422]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:21,422]:DEBUG:          i                     | 1                                       
+[2019-08-15 10:42:21,422]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,422]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:21,422]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:21,422]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:21,422]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:21,422]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,422]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:21,422]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:21,422]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:21,422]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:21,422]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:21,422]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:21,422]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,423]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:21,423]:DEBUG:                                | TP/000003/000001_sub_step/work          
+[2019-08-15 10:42:21,423]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:21,423]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:21,423]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:21,423]:DEBUG:          jube_wp_id            | 1                                       
+[2019-08-15 10:42:21,423]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:21,423]:DEBUG:          jube_wp_padid         | 000001                                  
+[2019-08-15 10:42:21,423]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000001_sub_step/w
+[2019-08-15 10:42:21,423]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:21,423]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:21,423]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:21,423]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:21,423]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:21,423]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:21,423]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:21,424]:DEBUG: ----- sub_step ( iter:0 | id:2 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:21,425]:DEBUG:   available parameter:
+[2019-08-15 10:42:21,425]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:21,425]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:21,425]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:21,425]:DEBUG:          i                     | 2                                       
+[2019-08-15 10:42:21,425]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,425]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:21,425]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:21,425]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:21,425]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:21,425]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,425]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:21,425]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:21,425]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:21,425]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:21,425]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:21,425]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:21,425]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,425]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:21,425]:DEBUG:                                | TP/000003/000002_sub_step/work          
+[2019-08-15 10:42:21,426]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:21,426]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:21,430]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:21,430]:DEBUG:          jube_wp_id            | 2                                       
+[2019-08-15 10:42:21,430]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:21,430]:DEBUG:          jube_wp_padid         | 000002                                  
+[2019-08-15 10:42:21,430]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000002_sub_step/w
+[2019-08-15 10:42:21,430]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:21,430]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:21,430]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:21,430]:DEBUG:          nnodes                | 2                                       
+[2019-08-15 10:42:21,430]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:21,430]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:21,430]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:21,431]:DEBUG: ----- sub_step ( iter:0 | id:3 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:21,432]:DEBUG:   available parameter:
+[2019-08-15 10:42:21,432]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:21,432]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:21,432]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:21,432]:DEBUG:          i                     | 3                                       
+[2019-08-15 10:42:21,432]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,432]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:21,432]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:21,432]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:21,432]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:21,432]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,432]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:21,432]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:21,432]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:21,432]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:21,432]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:21,432]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:21,432]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,432]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:21,433]:DEBUG:                                | TP/000003/000003_sub_step/work          
+[2019-08-15 10:42:21,433]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:21,433]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:21,433]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:21,433]:DEBUG:          jube_wp_id            | 3                                       
+[2019-08-15 10:42:21,433]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:21,433]:DEBUG:          jube_wp_padid         | 000003                                  
+[2019-08-15 10:42:21,433]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000003_sub_step/w
+[2019-08-15 10:42:21,433]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:21,433]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:21,433]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:21,433]:DEBUG:          nnodes                | 4                                       
+[2019-08-15 10:42:21,433]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:21,433]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:21,438]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:21,438]:DEBUG: ----- sub_step ( iter:0 | id:4 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:21,439]:DEBUG:   available parameter:
+[2019-08-15 10:42:21,439]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:21,440]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:21,440]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:21,440]:DEBUG:          i                     | 4                                       
+[2019-08-15 10:42:21,440]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,440]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:21,440]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:21,440]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:21,440]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:21,440]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,440]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:21,440]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:21,440]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:21,440]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:21,440]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:21,440]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:21,440]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:21,440]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:21,440]:DEBUG:                                | TP/000003/000004_sub_step/work          
+[2019-08-15 10:42:21,440]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:21,440]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:21,440]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:21,441]:DEBUG:          jube_wp_id            | 4                                       
+[2019-08-15 10:42:21,441]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:21,441]:DEBUG:          jube_wp_padid         | 000004                                  
+[2019-08-15 10:42:21,441]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000004_sub_step/w
+[2019-08-15 10:42:21,441]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:21,441]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:21,441]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:21,441]:DEBUG:          nnodes                | 6                                       
+[2019-08-15 10:42:21,441]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:21,441]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:21,446]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:21,458]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:21,459]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:21,459]:INFO:   sub_step |   5 |    0 |    5 |     0 |    0
+[2019-08-15 10:42:21,459]:INFO: 
+[2019-08-15 10:42:21,459]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:21,459]:INFO: >>>>       id: 3
+[2019-08-15 10:42:21,459]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:21,459]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:21,459]:INFO: >>>> continue: jube continue bench_run_SPxTP --id 3
+[2019-08-15 10:42:21,459]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:21,459]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:21,459]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:21,460]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:21,460]:INFO: ######################################################################
+[2019-08-15 10:42:23,787]:INFO: ######################################################################
+[2019-08-15 10:42:23,787]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:23,787]:INFO: #
+[2019-08-15 10:42:23,788]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:23,788]:INFO: ######################################################################
+[2019-08-15 10:42:23,788]:DEBUG: ----- sub_step ( iter:0 | id:0 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:23,789]:DEBUG:   available parameter:
+[2019-08-15 10:42:23,789]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:23,789]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:23,789]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:23,789]:DEBUG:          i                     | 0                                       
+[2019-08-15 10:42:23,789]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,789]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:23,789]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:23,789]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:23,789]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:23,789]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,789]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:23,789]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:23,789]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:23,789]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:23,789]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:23,789]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:23,789]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,790]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:23,790]:DEBUG:                                | TP/000003/000000_sub_step/work          
+[2019-08-15 10:42:23,790]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:23,790]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:23,790]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:23,790]:DEBUG:          jube_wp_id            | 0                                       
+[2019-08-15 10:42:23,790]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:23,790]:DEBUG:          jube_wp_padid         | 000000                                  
+[2019-08-15 10:42:23,790]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000000_sub_step/w
+[2019-08-15 10:42:23,790]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:23,790]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:23,790]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:23,790]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:23,790]:DEBUG:          ntasks                | 12                                      
+[2019-08-15 10:42:23,790]:DEBUG:          space_size            | 12                                      
+[2019-08-15 10:42:23,795]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:23,795]:DEBUG: ----- sub_step ( iter:0 | id:1 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:23,796]:DEBUG:   available parameter:
+[2019-08-15 10:42:23,796]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:23,796]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:23,796]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:23,796]:DEBUG:          i                     | 1                                       
+[2019-08-15 10:42:23,796]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,797]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:23,797]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:23,797]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:23,797]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:23,797]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,797]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:23,797]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:23,797]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:23,797]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:23,797]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:23,797]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:23,797]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,797]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:23,797]:DEBUG:                                | TP/000003/000001_sub_step/work          
+[2019-08-15 10:42:23,797]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:23,797]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:23,797]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:23,797]:DEBUG:          jube_wp_id            | 1                                       
+[2019-08-15 10:42:23,797]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:23,797]:DEBUG:          jube_wp_padid         | 000001                                  
+[2019-08-15 10:42:23,800]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000001_sub_step/w
+[2019-08-15 10:42:23,800]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:23,800]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:23,800]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:23,800]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:23,800]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:23,800]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:23,804]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:23,804]:DEBUG: ----- sub_step ( iter:0 | id:2 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:23,805]:DEBUG:   available parameter:
+[2019-08-15 10:42:23,805]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:23,805]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:23,805]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:23,805]:DEBUG:          i                     | 2                                       
+[2019-08-15 10:42:23,805]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,805]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:23,805]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:23,805]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:23,805]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:23,805]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,806]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:23,806]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:23,806]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:23,806]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:23,806]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:23,806]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:23,806]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,806]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:23,806]:DEBUG:                                | TP/000003/000002_sub_step/work          
+[2019-08-15 10:42:23,806]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:23,806]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:23,806]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:23,806]:DEBUG:          jube_wp_id            | 2                                       
+[2019-08-15 10:42:23,806]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:23,806]:DEBUG:          jube_wp_padid         | 000002                                  
+[2019-08-15 10:42:23,806]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000002_sub_step/w
+[2019-08-15 10:42:23,806]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:23,806]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:23,806]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:23,806]:DEBUG:          nnodes                | 2                                       
+[2019-08-15 10:42:23,806]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:23,807]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:23,808]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:23,808]:DEBUG: ----- sub_step ( iter:0 | id:3 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:23,809]:DEBUG:   available parameter:
+[2019-08-15 10:42:23,810]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:23,810]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:23,810]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:23,810]:DEBUG:          i                     | 3                                       
+[2019-08-15 10:42:23,810]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,810]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:23,810]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:23,810]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:23,810]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:23,810]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,810]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:23,810]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:23,810]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:23,810]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:23,810]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:23,810]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:23,810]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,810]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:23,810]:DEBUG:                                | TP/000003/000003_sub_step/work          
+[2019-08-15 10:42:23,810]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:23,810]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:23,811]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:23,811]:DEBUG:          jube_wp_id            | 3                                       
+[2019-08-15 10:42:23,811]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:23,811]:DEBUG:          jube_wp_padid         | 000003                                  
+[2019-08-15 10:42:23,811]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000003_sub_step/w
+[2019-08-15 10:42:23,811]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:23,811]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:23,811]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:23,811]:DEBUG:          nnodes                | 4                                       
+[2019-08-15 10:42:23,811]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:23,811]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:23,811]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:23,811]:DEBUG: ----- sub_step ( iter:0 | id:4 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:23,812]:DEBUG:   available parameter:
+[2019-08-15 10:42:23,813]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:23,813]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:23,813]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:23,813]:DEBUG:          i                     | 4                                       
+[2019-08-15 10:42:23,813]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,813]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:23,813]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:23,813]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:23,813]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:23,813]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,813]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:23,813]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:23,813]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:23,813]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:23,813]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:23,813]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:23,813]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:23,813]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:23,813]:DEBUG:                                | TP/000003/000004_sub_step/work          
+[2019-08-15 10:42:23,813]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:23,813]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:23,814]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:23,814]:DEBUG:          jube_wp_id            | 4                                       
+[2019-08-15 10:42:23,814]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:23,814]:DEBUG:          jube_wp_padid         | 000004                                  
+[2019-08-15 10:42:23,814]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000004_sub_step/w
+[2019-08-15 10:42:23,814]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:23,814]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:23,814]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:23,814]:DEBUG:          nnodes                | 6                                       
+[2019-08-15 10:42:23,814]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:23,814]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:23,814]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:23,825]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:23,825]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:23,825]:INFO:   sub_step |   5 |    0 |    5 |     0 |    0
+[2019-08-15 10:42:23,825]:INFO: 
+[2019-08-15 10:42:23,825]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:23,825]:INFO: >>>>       id: 3
+[2019-08-15 10:42:23,825]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:23,825]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:23,826]:INFO: >>>> continue: jube continue bench_run_SPxTP --id 3
+[2019-08-15 10:42:23,826]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:23,826]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:23,826]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:23,826]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:23,826]:INFO: ######################################################################
+[2019-08-15 10:42:26,157]:INFO: ######################################################################
+[2019-08-15 10:42:26,157]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:26,157]:INFO: #
+[2019-08-15 10:42:26,157]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:26,157]:INFO: ######################################################################
+[2019-08-15 10:42:26,157]:DEBUG: ----- sub_step ( iter:0 | id:0 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:26,158]:DEBUG:   available parameter:
+[2019-08-15 10:42:26,158]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:26,158]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:26,158]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:26,158]:DEBUG:          i                     | 0                                       
+[2019-08-15 10:42:26,158]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,158]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:26,158]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:26,158]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:26,158]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:26,158]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,159]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:26,159]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:26,159]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:26,159]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:26,159]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:26,159]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:26,159]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,159]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:26,159]:DEBUG:                                | TP/000003/000000_sub_step/work          
+[2019-08-15 10:42:26,159]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:26,159]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:26,159]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:26,159]:DEBUG:          jube_wp_id            | 0                                       
+[2019-08-15 10:42:26,159]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:26,159]:DEBUG:          jube_wp_padid         | 000000                                  
+[2019-08-15 10:42:26,159]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000000_sub_step/w
+[2019-08-15 10:42:26,159]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:26,159]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:26,159]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:26,163]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:26,163]:DEBUG:          ntasks                | 12                                      
+[2019-08-15 10:42:26,163]:DEBUG:          space_size            | 12                                      
+[2019-08-15 10:42:26,163]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:26,164]:DEBUG: ----- sub_step ( iter:0 | id:1 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:26,165]:DEBUG:   available parameter:
+[2019-08-15 10:42:26,165]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:26,165]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:26,165]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:26,165]:DEBUG:          i                     | 1                                       
+[2019-08-15 10:42:26,165]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,165]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:26,165]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:26,165]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:26,165]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:26,165]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,165]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:26,165]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:26,165]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:26,165]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:26,165]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:26,165]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:26,166]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,166]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:26,166]:DEBUG:                                | TP/000003/000001_sub_step/work          
+[2019-08-15 10:42:26,166]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:26,166]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:26,166]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:26,166]:DEBUG:          jube_wp_id            | 1                                       
+[2019-08-15 10:42:26,166]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:26,166]:DEBUG:          jube_wp_padid         | 000001                                  
+[2019-08-15 10:42:26,166]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000001_sub_step/w
+[2019-08-15 10:42:26,166]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:26,166]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:26,166]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:26,166]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:26,166]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:26,166]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:26,166]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:26,167]:DEBUG: ----- sub_step ( iter:0 | id:2 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:26,168]:DEBUG:   available parameter:
+[2019-08-15 10:42:26,168]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:26,168]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:26,168]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:26,168]:DEBUG:          i                     | 2                                       
+[2019-08-15 10:42:26,168]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,168]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:26,168]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:26,168]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:26,168]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:26,168]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,168]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:26,168]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:26,168]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:26,168]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:26,168]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:26,169]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:26,169]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,169]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:26,169]:DEBUG:                                | TP/000003/000002_sub_step/work          
+[2019-08-15 10:42:26,169]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:26,169]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:26,169]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:26,169]:DEBUG:          jube_wp_id            | 2                                       
+[2019-08-15 10:42:26,169]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:26,169]:DEBUG:          jube_wp_padid         | 000002                                  
+[2019-08-15 10:42:26,169]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000002_sub_step/w
+[2019-08-15 10:42:26,169]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:26,169]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:26,169]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:26,169]:DEBUG:          nnodes                | 2                                       
+[2019-08-15 10:42:26,169]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:26,169]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:26,170]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:26,170]:DEBUG: ----- sub_step ( iter:0 | id:3 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:26,171]:DEBUG:   available parameter:
+[2019-08-15 10:42:26,171]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:26,171]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:26,171]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:26,171]:DEBUG:          i                     | 3                                       
+[2019-08-15 10:42:26,171]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,171]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:26,171]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:26,171]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:26,171]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:26,171]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,171]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:26,171]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:26,171]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:26,172]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:26,172]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:26,172]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:26,172]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,172]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:26,172]:DEBUG:                                | TP/000003/000003_sub_step/work          
+[2019-08-15 10:42:26,172]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:26,172]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:26,172]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:26,172]:DEBUG:          jube_wp_id            | 3                                       
+[2019-08-15 10:42:26,172]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:26,172]:DEBUG:          jube_wp_padid         | 000003                                  
+[2019-08-15 10:42:26,172]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000003_sub_step/w
+[2019-08-15 10:42:26,172]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:26,172]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:26,172]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:26,172]:DEBUG:          nnodes                | 4                                       
+[2019-08-15 10:42:26,172]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:26,172]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:26,173]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:26,173]:DEBUG: ----- sub_step ( iter:0 | id:4 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:26,174]:DEBUG:   available parameter:
+[2019-08-15 10:42:26,174]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:26,174]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:26,174]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:26,174]:DEBUG:          i                     | 4                                       
+[2019-08-15 10:42:26,174]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,174]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:26,174]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:26,174]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:26,174]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:26,174]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,174]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:26,174]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:26,175]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:26,175]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:26,175]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:26,175]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:26,175]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:26,175]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:26,175]:DEBUG:                                | TP/000003/000004_sub_step/work          
+[2019-08-15 10:42:26,175]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:26,175]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:26,175]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:26,175]:DEBUG:          jube_wp_id            | 4                                       
+[2019-08-15 10:42:26,175]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:26,175]:DEBUG:          jube_wp_padid         | 000004                                  
+[2019-08-15 10:42:26,175]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000004_sub_step/w
+[2019-08-15 10:42:26,175]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:26,175]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:26,175]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:26,175]:DEBUG:          nnodes                | 6                                       
+[2019-08-15 10:42:26,175]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:26,175]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:26,176]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:26,189]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:26,189]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:26,189]:INFO:   sub_step |   5 |    0 |    5 |     0 |    0
+[2019-08-15 10:42:26,189]:INFO: 
+[2019-08-15 10:42:26,189]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:26,189]:INFO: >>>>       id: 3
+[2019-08-15 10:42:26,189]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:26,189]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:26,189]:INFO: >>>> continue: jube continue bench_run_SPxTP --id 3
+[2019-08-15 10:42:26,190]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:26,190]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:26,190]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:26,190]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:26,190]:INFO: ######################################################################
+[2019-08-15 10:42:28,518]:INFO: ######################################################################
+[2019-08-15 10:42:28,518]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:28,518]:INFO: #
+[2019-08-15 10:42:28,518]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:28,518]:INFO: ######################################################################
+[2019-08-15 10:42:28,522]:DEBUG: ----- sub_step ( iter:0 | id:0 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:28,523]:DEBUG:   available parameter:
+[2019-08-15 10:42:28,523]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:28,523]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:28,523]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:28,523]:DEBUG:          i                     | 0                                       
+[2019-08-15 10:42:28,523]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,523]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:28,523]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:28,523]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:28,523]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:28,523]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,523]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:28,523]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:28,523]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:28,523]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:28,523]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:28,523]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:28,523]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,523]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:28,524]:DEBUG:                                | TP/000003/000000_sub_step/work          
+[2019-08-15 10:42:28,524]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:28,524]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:28,524]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:28,524]:DEBUG:          jube_wp_id            | 0                                       
+[2019-08-15 10:42:28,524]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:28,524]:DEBUG:          jube_wp_padid         | 000000                                  
+[2019-08-15 10:42:28,524]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000000_sub_step/w
+[2019-08-15 10:42:28,524]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:28,524]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:28,524]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:28,524]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:28,524]:DEBUG:          ntasks                | 12                                      
+[2019-08-15 10:42:28,524]:DEBUG:          space_size            | 12                                      
+[2019-08-15 10:42:28,524]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:28,525]:DEBUG: ----- sub_step ( iter:0 | id:1 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:28,526]:DEBUG:   available parameter:
+[2019-08-15 10:42:28,526]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:28,526]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:28,526]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:28,526]:DEBUG:          i                     | 1                                       
+[2019-08-15 10:42:28,526]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,526]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:28,526]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:28,526]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:28,526]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:28,526]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,526]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:28,526]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:28,526]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:28,526]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:28,526]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:28,526]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:28,526]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,527]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:28,527]:DEBUG:                                | TP/000003/000001_sub_step/work          
+[2019-08-15 10:42:28,527]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:28,527]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:28,527]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:28,527]:DEBUG:          jube_wp_id            | 1                                       
+[2019-08-15 10:42:28,527]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:28,527]:DEBUG:          jube_wp_padid         | 000001                                  
+[2019-08-15 10:42:28,527]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000001_sub_step/w
+[2019-08-15 10:42:28,527]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:28,527]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:28,527]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:28,527]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:28,527]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:28,527]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:28,527]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:28,528]:DEBUG: ----- sub_step ( iter:0 | id:2 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:28,529]:DEBUG:   available parameter:
+[2019-08-15 10:42:28,529]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:28,529]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:28,529]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:28,529]:DEBUG:          i                     | 2                                       
+[2019-08-15 10:42:28,529]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,529]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:28,529]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:28,529]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:28,529]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:28,529]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,529]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:28,529]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:28,529]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:28,529]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:28,529]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:28,529]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:28,530]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,530]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:28,530]:DEBUG:                                | TP/000003/000002_sub_step/work          
+[2019-08-15 10:42:28,530]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:28,530]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:28,530]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:28,530]:DEBUG:          jube_wp_id            | 2                                       
+[2019-08-15 10:42:28,530]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:28,530]:DEBUG:          jube_wp_padid         | 000002                                  
+[2019-08-15 10:42:28,530]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000002_sub_step/w
+[2019-08-15 10:42:28,530]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:28,530]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:28,530]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:28,530]:DEBUG:          nnodes                | 2                                       
+[2019-08-15 10:42:28,530]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:28,530]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:28,530]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:28,531]:DEBUG: ----- sub_step ( iter:0 | id:3 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:28,532]:DEBUG:   available parameter:
+[2019-08-15 10:42:28,532]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:28,532]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:28,532]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:28,532]:DEBUG:          i                     | 3                                       
+[2019-08-15 10:42:28,532]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,532]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:28,532]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:28,532]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:28,532]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:28,532]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,532]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:28,532]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:28,532]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:28,532]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:28,532]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:28,532]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:28,533]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,533]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:28,533]:DEBUG:                                | TP/000003/000003_sub_step/work          
+[2019-08-15 10:42:28,533]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:28,533]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:28,533]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:28,533]:DEBUG:          jube_wp_id            | 3                                       
+[2019-08-15 10:42:28,533]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:28,533]:DEBUG:          jube_wp_padid         | 000003                                  
+[2019-08-15 10:42:28,533]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000003_sub_step/w
+[2019-08-15 10:42:28,533]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:28,533]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:28,533]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:28,533]:DEBUG:          nnodes                | 4                                       
+[2019-08-15 10:42:28,533]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:28,533]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:28,545]:DEBUG: Create new workpackages for workpackage sub_step(3)
+[2019-08-15 10:42:28,545]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:28,545]:DEBUG: ----- sub_step ( iter:0 | id:4 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:28,546]:DEBUG:   available parameter:
+[2019-08-15 10:42:28,546]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:28,546]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:28,546]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:28,546]:DEBUG:          i                     | 4                                       
+[2019-08-15 10:42:28,546]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,546]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:28,546]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:28,546]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:28,546]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:28,546]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,547]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:28,547]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:28,547]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:28,547]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:28,547]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:28,547]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:28,547]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:28,547]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:28,547]:DEBUG:                                | TP/000003/000004_sub_step/work          
+[2019-08-15 10:42:28,547]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:28,547]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:28,547]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:28,547]:DEBUG:          jube_wp_id            | 4                                       
+[2019-08-15 10:42:28,547]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:28,547]:DEBUG:          jube_wp_padid         | 000004                                  
+[2019-08-15 10:42:28,547]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000004_sub_step/w
+[2019-08-15 10:42:28,547]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:28,547]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:28,547]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:28,547]:DEBUG:          nnodes                | 6                                       
+[2019-08-15 10:42:28,547]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:28,547]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:28,548]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:28,558]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:28,558]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:28,558]:INFO:   sub_step |   5 |    0 |    4 |     0 |    1
+[2019-08-15 10:42:28,558]:INFO: 
+[2019-08-15 10:42:28,558]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:28,558]:INFO: >>>>       id: 3
+[2019-08-15 10:42:28,558]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:28,558]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:28,558]:INFO: >>>> continue: jube continue bench_run_SPxTP --id 3
+[2019-08-15 10:42:28,559]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:28,559]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:28,559]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:28,559]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:28,559]:INFO: ######################################################################
+[2019-08-15 10:42:30,893]:INFO: ######################################################################
+[2019-08-15 10:42:30,893]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:30,893]:INFO: #
+[2019-08-15 10:42:30,893]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:30,893]:INFO: ######################################################################
+[2019-08-15 10:42:30,893]:DEBUG: ----- sub_step ( iter:0 | id:0 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:30,894]:DEBUG:   available parameter:
+[2019-08-15 10:42:30,894]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:30,894]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:30,894]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:30,894]:DEBUG:          i                     | 0                                       
+[2019-08-15 10:42:30,894]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:30,894]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:30,894]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:30,894]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:30,894]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:30,894]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:30,894]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:30,894]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:30,894]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:30,895]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:30,895]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:30,895]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:30,895]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:30,895]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:30,895]:DEBUG:                                | TP/000003/000000_sub_step/work          
+[2019-08-15 10:42:30,895]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:30,895]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:30,895]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:30,895]:DEBUG:          jube_wp_id            | 0                                       
+[2019-08-15 10:42:30,895]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:30,895]:DEBUG:          jube_wp_padid         | 000000                                  
+[2019-08-15 10:42:30,895]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000000_sub_step/w
+[2019-08-15 10:42:30,895]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:30,895]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:30,895]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:30,895]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:30,895]:DEBUG:          ntasks                | 12                                      
+[2019-08-15 10:42:30,895]:DEBUG:          space_size            | 12                                      
+[2019-08-15 10:42:30,896]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:30,896]:DEBUG: ----- sub_step ( iter:0 | id:1 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:30,897]:DEBUG:   available parameter:
+[2019-08-15 10:42:30,897]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:30,897]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:30,897]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:30,897]:DEBUG:          i                     | 1                                       
+[2019-08-15 10:42:30,897]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:30,897]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:30,897]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:30,897]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:30,897]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:30,897]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:30,897]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:30,897]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:30,897]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:30,898]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:30,898]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:30,898]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:30,898]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:30,898]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:30,898]:DEBUG:                                | TP/000003/000001_sub_step/work          
+[2019-08-15 10:42:30,898]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:30,898]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:30,898]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:30,898]:DEBUG:          jube_wp_id            | 1                                       
+[2019-08-15 10:42:30,898]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:30,898]:DEBUG:          jube_wp_padid         | 000001                                  
+[2019-08-15 10:42:30,898]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000001_sub_step/w
+[2019-08-15 10:42:30,898]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:30,898]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:30,898]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:30,898]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:30,898]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:30,898]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:30,898]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:30,899]:DEBUG: ----- sub_step ( iter:0 | id:2 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:30,900]:DEBUG:   available parameter:
+[2019-08-15 10:42:30,900]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:30,900]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:30,900]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:30,900]:DEBUG:          i                     | 2                                       
+[2019-08-15 10:42:30,900]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:30,900]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:30,900]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:30,900]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:30,900]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:30,900]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:30,900]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:30,900]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:30,900]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:30,900]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:30,900]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:30,901]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:30,901]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:30,901]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:30,901]:DEBUG:                                | TP/000003/000002_sub_step/work          
+[2019-08-15 10:42:30,901]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:30,901]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:30,901]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:30,901]:DEBUG:          jube_wp_id            | 2                                       
+[2019-08-15 10:42:30,901]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:30,901]:DEBUG:          jube_wp_padid         | 000002                                  
+[2019-08-15 10:42:30,901]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000002_sub_step/w
+[2019-08-15 10:42:30,901]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:30,901]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:30,901]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:30,901]:DEBUG:          nnodes                | 2                                       
+[2019-08-15 10:42:30,901]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:30,901]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:30,901]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:30,902]:DEBUG: Create new workpackages for workpackage sub_step(3)
+[2019-08-15 10:42:30,902]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:30,902]:DEBUG: ----- sub_step ( iter:0 | id:4 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:30,903]:DEBUG:   available parameter:
+[2019-08-15 10:42:30,903]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:30,903]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:30,903]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:30,903]:DEBUG:          i                     | 4                                       
+[2019-08-15 10:42:30,903]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:30,903]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:30,903]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:30,903]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:30,903]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:30,903]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:30,903]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:30,903]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:30,904]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:30,904]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:30,904]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:30,904]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:30,904]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:30,904]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:30,907]:DEBUG:                                | TP/000003/000004_sub_step/work          
+[2019-08-15 10:42:30,907]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:30,907]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:30,907]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:30,907]:DEBUG:          jube_wp_id            | 4                                       
+[2019-08-15 10:42:30,908]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:30,908]:DEBUG:          jube_wp_padid         | 000004                                  
+[2019-08-15 10:42:30,908]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000004_sub_step/w
+[2019-08-15 10:42:30,908]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:30,908]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:30,908]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:30,908]:DEBUG:          nnodes                | 6                                       
+[2019-08-15 10:42:30,908]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:30,908]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:30,908]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:30,921]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:30,921]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:30,921]:INFO:   sub_step |   5 |    0 |    4 |     0 |    1
+[2019-08-15 10:42:30,921]:INFO: 
+[2019-08-15 10:42:30,921]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:30,921]:INFO: >>>>       id: 3
+[2019-08-15 10:42:30,921]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:30,922]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:30,922]:INFO: >>>> continue: jube continue bench_run_SPxTP --id 3
+[2019-08-15 10:42:30,922]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:30,922]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:30,922]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:30,922]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:30,922]:INFO: ######################################################################
+[2019-08-15 10:42:33,257]:INFO: ######################################################################
+[2019-08-15 10:42:33,257]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:33,257]:INFO: #
+[2019-08-15 10:42:33,257]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:33,257]:INFO: ######################################################################
+[2019-08-15 10:42:33,257]:DEBUG: ----- sub_step ( iter:0 | id:0 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:33,258]:DEBUG:   available parameter:
+[2019-08-15 10:42:33,258]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:33,258]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:33,258]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:33,258]:DEBUG:          i                     | 0                                       
+[2019-08-15 10:42:33,258]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:33,258]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:33,259]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:33,259]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:33,259]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:33,259]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:33,259]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:33,259]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:33,259]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:33,259]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:33,259]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:33,259]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:33,259]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:33,259]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:33,259]:DEBUG:                                | TP/000003/000000_sub_step/work          
+[2019-08-15 10:42:33,259]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:33,259]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:33,259]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:33,259]:DEBUG:          jube_wp_id            | 0                                       
+[2019-08-15 10:42:33,259]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:33,259]:DEBUG:          jube_wp_padid         | 000000                                  
+[2019-08-15 10:42:33,259]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000000_sub_step/w
+[2019-08-15 10:42:33,259]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:33,259]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:33,259]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:33,260]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:33,260]:DEBUG:          ntasks                | 12                                      
+[2019-08-15 10:42:33,260]:DEBUG:          space_size            | 12                                      
+[2019-08-15 10:42:33,270]:DEBUG: Create new workpackages for workpackage sub_step(0)
+[2019-08-15 10:42:33,270]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:33,270]:DEBUG: ----- sub_step ( iter:0 | id:1 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:33,271]:DEBUG:   available parameter:
+[2019-08-15 10:42:33,271]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:33,271]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:33,271]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:33,271]:DEBUG:          i                     | 1                                       
+[2019-08-15 10:42:33,271]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:33,271]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:33,271]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:33,271]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:33,271]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:33,271]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:33,271]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:33,271]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:33,272]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:33,272]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:33,272]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:33,272]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:33,272]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:33,272]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:33,272]:DEBUG:                                | TP/000003/000001_sub_step/work          
+[2019-08-15 10:42:33,272]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:33,272]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:33,272]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:33,272]:DEBUG:          jube_wp_id            | 1                                       
+[2019-08-15 10:42:33,272]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:33,272]:DEBUG:          jube_wp_padid         | 000001                                  
+[2019-08-15 10:42:33,272]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000001_sub_step/w
+[2019-08-15 10:42:33,272]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:33,272]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:33,272]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:33,272]:DEBUG:          nnodes                | 1                                       
+[2019-08-15 10:42:33,272]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:33,272]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:33,282]:DEBUG: Create new workpackages for workpackage sub_step(1)
+[2019-08-15 10:42:33,282]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:33,283]:DEBUG: ----- sub_step ( iter:0 | id:2 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:33,284]:DEBUG:   available parameter:
+[2019-08-15 10:42:33,284]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:33,284]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:33,284]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:33,284]:DEBUG:          i                     | 2                                       
+[2019-08-15 10:42:33,284]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:33,284]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:33,284]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:33,284]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:33,284]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:33,284]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:33,284]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:33,284]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:33,284]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:33,284]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:33,284]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:33,284]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:33,284]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:33,284]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:33,284]:DEBUG:                                | TP/000003/000002_sub_step/work          
+[2019-08-15 10:42:33,285]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:33,285]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:33,285]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:33,285]:DEBUG:          jube_wp_id            | 2                                       
+[2019-08-15 10:42:33,285]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:33,285]:DEBUG:          jube_wp_padid         | 000002                                  
+[2019-08-15 10:42:33,285]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000002_sub_step/w
+[2019-08-15 10:42:33,285]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:33,285]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:33,285]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:33,285]:DEBUG:          nnodes                | 2                                       
+[2019-08-15 10:42:33,285]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:33,285]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:33,285]:DEBUG: Waiting for file "ready" ...
+[2019-08-15 10:42:33,285]:DEBUG: Create new workpackages for workpackage sub_step(3)
+[2019-08-15 10:42:33,286]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:33,286]:DEBUG: ----- sub_step ( iter:0 | id:4 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:33,287]:DEBUG:   available parameter:
+[2019-08-15 10:42:33,287]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:33,287]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:33,287]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:33,287]:DEBUG:          i                     | 4                                       
+[2019-08-15 10:42:33,287]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:33,287]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:33,287]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:33,287]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:33,287]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:33,287]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:33,287]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:33,287]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:33,287]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:33,287]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:33,287]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:33,287]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:33,287]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:33,287]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:33,288]:DEBUG:                                | TP/000003/000004_sub_step/work          
+[2019-08-15 10:42:33,292]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:33,292]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:33,292]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:33,292]:DEBUG:          jube_wp_id            | 4                                       
+[2019-08-15 10:42:33,292]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:33,292]:DEBUG:          jube_wp_padid         | 000004                                  
+[2019-08-15 10:42:33,292]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000004_sub_step/w
+[2019-08-15 10:42:33,292]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:33,292]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:33,292]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:33,293]:DEBUG:          nnodes                | 6                                       
+[2019-08-15 10:42:33,293]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:33,293]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:33,303]:DEBUG: Create new workpackages for workpackage sub_step(4)
+[2019-08-15 10:42:33,303]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:33,313]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:33,313]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:33,313]:INFO:   sub_step |   5 |    0 |    1 |     0 |    4
+[2019-08-15 10:42:33,313]:INFO: 
+[2019-08-15 10:42:33,313]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:33,313]:INFO: >>>>       id: 3
+[2019-08-15 10:42:33,313]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:33,313]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:33,313]:INFO: >>>> continue: jube continue bench_run_SPxTP --id 3
+[2019-08-15 10:42:33,313]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:33,314]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:33,314]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:33,314]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:33,314]:INFO: ######################################################################
+[2019-08-15 10:42:35,647]:INFO: ######################################################################
+[2019-08-15 10:42:35,647]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:35,647]:INFO: #
+[2019-08-15 10:42:35,647]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:35,648]:INFO: ######################################################################
+[2019-08-15 10:42:35,648]:DEBUG: Create new workpackages for workpackage sub_step(0)
+[2019-08-15 10:42:35,648]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:35,648]:DEBUG: Create new workpackages for workpackage sub_step(1)
+[2019-08-15 10:42:35,648]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:35,648]:DEBUG: ----- sub_step ( iter:0 | id:2 | parents: | cycle:0 ) -----
+[2019-08-15 10:42:35,649]:DEBUG:   available parameter:
+[2019-08-15 10:42:35,649]:DEBUG:          parameter             | value                                   
+[2019-08-15 10:42:35,649]:DEBUG:          ----------------------+-----------------------------------------
+[2019-08-15 10:42:35,649]:DEBUG:          flag                  | --cpu_bind=sockets                      
+[2019-08-15 10:42:35,649]:DEBUG:          i                     | 2                                       
+[2019-08-15 10:42:35,649]:DEBUG:          jube_benchmark_home   | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:35,649]:DEBUG:                                | pySDC/projects/Performance              
+[2019-08-15 10:42:35,649]:DEBUG:          jube_benchmark_id     | 3                                       
+[2019-08-15 10:42:35,649]:DEBUG:          jube_benchmark_name   | pySDC AC scaling test                   
+[2019-08-15 10:42:35,649]:DEBUG:          jube_benchmark_padid  | 000003                                  
+[2019-08-15 10:42:35,649]:DEBUG:          jube_benchmark_rundir | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:35,650]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:35,650]:DEBUG:                                | TP/000003                               
+[2019-08-15 10:42:35,650]:DEBUG:          jube_benchmark_start  | 2019-08-15T10:42:11                     
+[2019-08-15 10:42:35,650]:DEBUG:          jube_step_cycles      | 1                                       
+[2019-08-15 10:42:35,650]:DEBUG:          jube_step_iterations  | 1                                       
+[2019-08-15 10:42:35,650]:DEBUG:          jube_step_name        | sub_step                                
+[2019-08-15 10:42:35,650]:DEBUG:          jube_wp_abspath       | /p/project/ccstma/cstma000/pySDC_deploy/
+[2019-08-15 10:42:35,650]:DEBUG:                                | pySDC/projects/Performance/bench_run_SPx
+[2019-08-15 10:42:35,650]:DEBUG:                                | TP/000003/000002_sub_step/work          
+[2019-08-15 10:42:35,650]:DEBUG:          jube_wp_cycle         | 0                                       
+[2019-08-15 10:42:35,650]:DEBUG:          jube_wp_envlist       |                                         
+[2019-08-15 10:42:35,650]:DEBUG:          jube_wp_envstr        |                                         
+[2019-08-15 10:42:35,650]:DEBUG:          jube_wp_id            | 2                                       
+[2019-08-15 10:42:35,650]:DEBUG:          jube_wp_iteration     | 0                                       
+[2019-08-15 10:42:35,650]:DEBUG:          jube_wp_padid         | 000002                                  
+[2019-08-15 10:42:35,650]:DEBUG:          jube_wp_relpath       | bench_run_SPxTP/000003/000002_sub_step/w
+[2019-08-15 10:42:35,650]:DEBUG:                                | ork                                     
+[2019-08-15 10:42:35,650]:DEBUG:          mpi                   | intel                                   
+[2019-08-15 10:42:35,650]:DEBUG:          ncpus                 | 1                                       
+[2019-08-15 10:42:35,650]:DEBUG:          nnodes                | 2                                       
+[2019-08-15 10:42:35,650]:DEBUG:          ntasks                | 24                                      
+[2019-08-15 10:42:35,650]:DEBUG:          space_size            | 24                                      
+[2019-08-15 10:42:35,676]:DEBUG: Create new workpackages for workpackage sub_step(2)
+[2019-08-15 10:42:35,676]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:35,676]:DEBUG: Create new workpackages for workpackage sub_step(3)
+[2019-08-15 10:42:35,677]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:35,677]:DEBUG: Create new workpackages for workpackage sub_step(4)
+[2019-08-15 10:42:35,677]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:35,692]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:35,692]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:35,692]:INFO:   sub_step |   5 |    0 |    0 |     0 |    5
+[2019-08-15 10:42:35,692]:INFO: 
+[2019-08-15 10:42:35,692]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:35,692]:INFO: >>>>       id: 3
+[2019-08-15 10:42:35,692]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:35,693]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:35,693]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:35,693]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:35,693]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:35,693]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:35,693]:INFO: ######################################################################
+[2019-08-15 10:42:38,024]:INFO: ######################################################################
+[2019-08-15 10:42:38,024]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:38,024]:INFO: #
+[2019-08-15 10:42:38,024]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:38,024]:INFO: ######################################################################
+[2019-08-15 10:42:38,024]:DEBUG: Create new workpackages for workpackage sub_step(0)
+[2019-08-15 10:42:38,024]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:38,024]:DEBUG: Create new workpackages for workpackage sub_step(1)
+[2019-08-15 10:42:38,024]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:38,024]:DEBUG: Create new workpackages for workpackage sub_step(2)
+[2019-08-15 10:42:38,024]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:38,025]:DEBUG: Create new workpackages for workpackage sub_step(3)
+[2019-08-15 10:42:38,025]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:38,025]:DEBUG: Create new workpackages for workpackage sub_step(4)
+[2019-08-15 10:42:38,025]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:38,035]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:38,035]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:38,035]:INFO:   sub_step |   5 |    0 |    0 |     0 |    5
+[2019-08-15 10:42:38,035]:INFO: 
+[2019-08-15 10:42:38,035]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:38,035]:INFO: >>>>       id: 3
+[2019-08-15 10:42:38,035]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:38,035]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:38,035]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:38,035]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:38,035]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:38,035]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:38,035]:INFO: ######################################################################
+[2019-08-15 10:42:40,363]:INFO: ######################################################################
+[2019-08-15 10:42:40,363]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:40,363]:INFO: #
+[2019-08-15 10:42:40,363]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:40,364]:INFO: ######################################################################
+[2019-08-15 10:42:40,364]:DEBUG: Create new workpackages for workpackage sub_step(0)
+[2019-08-15 10:42:40,364]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:40,364]:DEBUG: Create new workpackages for workpackage sub_step(1)
+[2019-08-15 10:42:40,364]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:40,364]:DEBUG: Create new workpackages for workpackage sub_step(2)
+[2019-08-15 10:42:40,364]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:40,364]:DEBUG: Create new workpackages for workpackage sub_step(3)
+[2019-08-15 10:42:40,364]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:40,364]:DEBUG: Create new workpackages for workpackage sub_step(4)
+[2019-08-15 10:42:40,364]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:40,374]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:40,374]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:40,374]:INFO:   sub_step |   5 |    0 |    0 |     0 |    5
+[2019-08-15 10:42:40,375]:INFO: 
+[2019-08-15 10:42:40,375]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:40,375]:INFO: >>>>       id: 3
+[2019-08-15 10:42:40,375]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:40,375]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:40,375]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:40,375]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:40,375]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:40,375]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:40,375]:INFO: ######################################################################
+[2019-08-15 10:42:42,707]:INFO: ######################################################################
+[2019-08-15 10:42:42,707]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:42,707]:INFO: #
+[2019-08-15 10:42:42,707]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:42,707]:INFO: ######################################################################
+[2019-08-15 10:42:42,708]:DEBUG: Create new workpackages for workpackage sub_step(0)
+[2019-08-15 10:42:42,708]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:42,708]:DEBUG: Create new workpackages for workpackage sub_step(1)
+[2019-08-15 10:42:42,708]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:42,708]:DEBUG: Create new workpackages for workpackage sub_step(2)
+[2019-08-15 10:42:42,708]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:42,708]:DEBUG: Create new workpackages for workpackage sub_step(3)
+[2019-08-15 10:42:42,708]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:42,708]:DEBUG: Create new workpackages for workpackage sub_step(4)
+[2019-08-15 10:42:42,708]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:42,720]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:42,720]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:42,720]:INFO:   sub_step |   5 |    0 |    0 |     0 |    5
+[2019-08-15 10:42:42,720]:INFO: 
+[2019-08-15 10:42:42,721]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:42,721]:INFO: >>>>       id: 3
+[2019-08-15 10:42:42,721]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:42,721]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:42,721]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:42,721]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:42,721]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:42,721]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:42,721]:INFO: ######################################################################
+[2019-08-15 10:42:45,051]:INFO: ######################################################################
+[2019-08-15 10:42:45,052]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:45,052]:INFO: #
+[2019-08-15 10:42:45,052]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:45,052]:INFO: ######################################################################
+[2019-08-15 10:42:45,052]:DEBUG: Create new workpackages for workpackage sub_step(0)
+[2019-08-15 10:42:45,052]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:45,052]:DEBUG: Create new workpackages for workpackage sub_step(1)
+[2019-08-15 10:42:45,052]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:45,052]:DEBUG: Create new workpackages for workpackage sub_step(2)
+[2019-08-15 10:42:45,052]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:45,052]:DEBUG: Create new workpackages for workpackage sub_step(3)
+[2019-08-15 10:42:45,052]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:45,052]:DEBUG: Create new workpackages for workpackage sub_step(4)
+[2019-08-15 10:42:45,053]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:45,062]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:45,062]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:45,062]:INFO:   sub_step |   5 |    0 |    0 |     0 |    5
+[2019-08-15 10:42:45,062]:INFO: 
+[2019-08-15 10:42:45,062]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:45,063]:INFO: >>>>       id: 3
+[2019-08-15 10:42:45,063]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:45,063]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:45,063]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:45,063]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:45,063]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:45,063]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:45,065]:INFO: ######################################################################
+[2019-08-15 10:42:47,397]:INFO: ######################################################################
+[2019-08-15 10:42:47,397]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:47,397]:INFO: #
+[2019-08-15 10:42:47,397]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:47,397]:INFO: ######################################################################
+[2019-08-15 10:42:47,397]:DEBUG: Create new workpackages for workpackage sub_step(0)
+[2019-08-15 10:42:47,397]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:47,397]:DEBUG: Create new workpackages for workpackage sub_step(1)
+[2019-08-15 10:42:47,397]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:47,397]:DEBUG: Create new workpackages for workpackage sub_step(2)
+[2019-08-15 10:42:47,397]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:47,397]:DEBUG: Create new workpackages for workpackage sub_step(3)
+[2019-08-15 10:42:47,398]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:47,398]:DEBUG: Create new workpackages for workpackage sub_step(4)
+[2019-08-15 10:42:47,398]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:47,414]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:47,415]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:47,415]:INFO:   sub_step |   5 |    0 |    0 |     0 |    5
+[2019-08-15 10:42:47,415]:INFO: 
+[2019-08-15 10:42:47,415]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:47,415]:INFO: >>>>       id: 3
+[2019-08-15 10:42:47,415]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:47,415]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:47,415]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:47,415]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:47,415]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:47,415]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:47,415]:INFO: ######################################################################
+[2019-08-15 10:42:49,748]:INFO: ######################################################################
+[2019-08-15 10:42:49,749]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:49,749]:INFO: #
+[2019-08-15 10:42:49,749]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:49,749]:INFO: ######################################################################
+[2019-08-15 10:42:49,749]:DEBUG: Create new workpackages for workpackage sub_step(0)
+[2019-08-15 10:42:49,750]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:49,750]:DEBUG: Create new workpackages for workpackage sub_step(1)
+[2019-08-15 10:42:49,750]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:49,750]:DEBUG: Create new workpackages for workpackage sub_step(2)
+[2019-08-15 10:42:49,750]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:49,750]:DEBUG: Create new workpackages for workpackage sub_step(3)
+[2019-08-15 10:42:49,750]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:49,750]:DEBUG: Create new workpackages for workpackage sub_step(4)
+[2019-08-15 10:42:49,750]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:49,764]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:49,764]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:49,764]:INFO:   sub_step |   5 |    0 |    0 |     0 |    5
+[2019-08-15 10:42:49,764]:INFO: 
+[2019-08-15 10:42:49,764]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:49,764]:INFO: >>>>       id: 3
+[2019-08-15 10:42:49,764]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:49,764]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:49,764]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:49,764]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:49,764]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:49,764]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:49,765]:INFO: ######################################################################
+[2019-08-15 10:42:52,152]:INFO: ######################################################################
+[2019-08-15 10:42:52,153]:INFO: # benchmark: pySDC AC scaling test
+[2019-08-15 10:42:52,153]:INFO: #
+[2019-08-15 10:42:52,153]:INFO: # Scaling test with pySDC
+[2019-08-15 10:42:52,153]:INFO: ######################################################################
+[2019-08-15 10:42:52,153]:DEBUG: Create new workpackages for workpackage sub_step(0)
+[2019-08-15 10:42:52,153]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:52,153]:DEBUG: Create new workpackages for workpackage sub_step(1)
+[2019-08-15 10:42:52,153]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:52,153]:DEBUG: Create new workpackages for workpackage sub_step(2)
+[2019-08-15 10:42:52,153]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:52,153]:DEBUG: Create new workpackages for workpackage sub_step(3)
+[2019-08-15 10:42:52,154]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:52,154]:DEBUG: Create new workpackages for workpackage sub_step(4)
+[2019-08-15 10:42:52,154]:DEBUG:   0 new workpackages created
+[2019-08-15 10:42:52,166]:INFO:   stepname | all | open | wait | error | done
+[2019-08-15 10:42:52,166]:INFO:   ---------+-----+------+------+-------+-----
+[2019-08-15 10:42:52,166]:INFO:   sub_step |   5 |    0 |    0 |     0 |    5
+[2019-08-15 10:42:52,166]:INFO: 
+[2019-08-15 10:42:52,166]:INFO: >>>> Benchmark information and further useful commands:
+[2019-08-15 10:42:52,166]:INFO: >>>>       id: 3
+[2019-08-15 10:42:52,166]:INFO: >>>>   handle: bench_run_SPxTP
+[2019-08-15 10:42:52,166]:INFO: >>>>      dir: bench_run_SPxTP/000003
+[2019-08-15 10:42:52,166]:INFO: >>>>  analyse: jube analyse bench_run_SPxTP --id 3
+[2019-08-15 10:42:52,166]:INFO: >>>>   result: jube result bench_run_SPxTP --id 3
+[2019-08-15 10:42:52,167]:INFO: >>>>     info: jube info bench_run_SPxTP --id 3
+[2019-08-15 10:42:52,167]:INFO: >>>>      log: jube log bench_run_SPxTP --id 3
+[2019-08-15 10:42:52,167]:INFO: ######################################################################

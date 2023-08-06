@@ -1,0 +1,350 @@
+Running diffusion in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 5.75
+   Errors after step   0.1250 with 5 iterations: 1.7804e-08 / 3.0331e-13
+   Errors after step   0.2500 with 5 iterations: 4.9618e-08 / 2.1083e-13
+   Errors after step   0.3750 with 6 iterations: 4.2300e-08 / 4.4564e-13
+   Errors after step   0.5000 with 6 iterations: 3.8684e-08 / 5.1825e-13
+   Errors after step   0.6250 with 6 iterations: 3.7128e-08 / 3.0131e-13
+   Errors after step   0.7500 with 6 iterations: 3.6619e-08 / 5.1120e-13
+   Errors after step   0.8750 with 6 iterations: 3.6530e-08 / 3.5591e-13
+   Errors after step   1.0000 with 6 iterations: 3.6478e-08 / 2.5863e-13
+
+...done, took 0.45952324599784333 seconds!
+-----------------------------------------------------------------------------
+Running diffusion in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 3.00
+   Errors after step   0.1250 with 3 iterations: 9.8191e-09 / 3.3307e-13
+   Errors after step   0.2500 with 3 iterations: 1.7174e-08 / 3.3729e-13
+   Errors after step   0.3750 with 3 iterations: 2.2850e-08 / 3.7385e-13
+   Errors after step   0.5000 with 3 iterations: 2.7307e-08 / 2.7200e-13
+   Errors after step   0.6250 with 3 iterations: 3.0813e-08 / 3.4506e-13
+   Errors after step   0.7500 with 3 iterations: 3.3517e-08 / 3.7402e-13
+   Errors after step   0.8750 with 3 iterations: 3.5501e-08 / 2.4086e-13
+   Errors after step   1.0000 with 3 iterations: 3.6812e-08 / 2.0123e-13
+
+...done, took 0.864218748989515 seconds!
+-----------------------------------------------------------------------------
+Running advection in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 4.00
+   Errors after step   0.1250 with 4 iterations: 3.6459e-09 / 5.5511e-16
+   Errors after step   0.2500 with 4 iterations: 7.2907e-09 / 6.6613e-16
+   Errors after step   0.3750 with 4 iterations: 1.0930e-08 / 3.3307e-16
+   Errors after step   0.5000 with 4 iterations: 1.4571e-08 / 5.5511e-16
+   Errors after step   0.6250 with 4 iterations: 1.8225e-08 / 4.4409e-16
+   Errors after step   0.7500 with 4 iterations: 2.1875e-08 / 4.4409e-16
+   Errors after step   0.8750 with 4 iterations: 2.5517e-08 / 5.5511e-16
+   Errors after step   1.0000 with 4 iterations: 2.9147e-08 / 6.6613e-16
+
+...done, took 0.20564617399941199 seconds!
+-----------------------------------------------------------------------------
+Running advection in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 2.00
+   Errors after step   0.1250 with 2 iterations: 3.7050e-09 / 3.1852e-13
+   Errors after step   0.2500 with 2 iterations: 7.4360e-09 / 3.1863e-13
+   Errors after step   0.3750 with 2 iterations: 1.1141e-08 / 3.1830e-13
+   Errors after step   0.5000 with 2 iterations: 1.4836e-08 / 3.1886e-13
+   Errors after step   0.6250 with 2 iterations: 1.8580e-08 / 3.1852e-13
+   Errors after step   0.7500 with 2 iterations: 2.2256e-08 / 3.1808e-13
+   Errors after step   0.8750 with 2 iterations: 2.5987e-08 / 3.1863e-13
+   Errors after step   1.0000 with 2 iterations: 2.9666e-08 / 3.1797e-13
+
+...done, took 0.6093705739913275 seconds!
+-----------------------------------------------------------------------------
+Running auzinger in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 5.62
+   Errors after step   0.1250 with 5 iterations: 4.6598e-09 / 0.0000e+00
+   Errors after step   0.2500 with 5 iterations: 8.0010e-09 / 0.0000e+00
+   Errors after step   0.3750 with 5 iterations: 1.4700e-08 / 0.0000e+00
+   Errors after step   0.5000 with 6 iterations: 1.5583e-08 / 0.0000e+00
+   Errors after step   0.6250 with 6 iterations: 2.1829e-08 / 0.0000e+00
+   Errors after step   0.7500 with 6 iterations: 2.6153e-08 / 0.0000e+00
+   Errors after step   0.8750 with 6 iterations: 2.8266e-08 / 0.0000e+00
+   Errors after step   1.0000 with 6 iterations: 2.8338e-08 / 0.0000e+00
+
+...done, took 0.1262547380028991 seconds!
+-----------------------------------------------------------------------------
+Running auzinger in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 3.62
+   Errors after step   0.1250 with 3 iterations: 4.2389e-09 / 0.0000e+00
+   Errors after step   0.2500 with 3 iterations: 8.4469e-09 / 0.0000e+00
+   Errors after step   0.3750 with 3 iterations: 1.1763e-08 / 0.0000e+00
+   Errors after step   0.5000 with 4 iterations: 1.7832e-08 / 0.0000e+00
+   Errors after step   0.6250 with 4 iterations: 2.3399e-08 / 0.0000e+00
+   Errors after step   0.7500 with 4 iterations: 2.8017e-08 / 0.0000e+00
+   Errors after step   0.8750 with 4 iterations: 3.1486e-08 / 0.0000e+00
+   Errors after step   1.0000 with 4 iterations: 3.3802e-08 / 0.0000e+00
+
+...done, took 0.16390964400488883 seconds!
+-----------------------------------------------------------------------------
+Running diffusion in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 5.75
+   Errors after step   0.1250 with 5 iterations: 1.7804e-08 / 3.0331e-13
+   Errors after step   0.2500 with 5 iterations: 4.9618e-08 / 2.1083e-13
+   Errors after step   0.3750 with 6 iterations: 4.2300e-08 / 4.4564e-13
+   Errors after step   0.5000 with 6 iterations: 3.8684e-08 / 5.1825e-13
+   Errors after step   0.6250 with 6 iterations: 3.7128e-08 / 3.0131e-13
+   Errors after step   0.7500 with 6 iterations: 3.6619e-08 / 5.1120e-13
+   Errors after step   0.8750 with 6 iterations: 3.6530e-08 / 3.5591e-13
+   Errors after step   1.0000 with 6 iterations: 3.6478e-08 / 2.5863e-13
+
+...done, took 0.38495051600330044 seconds!
+-----------------------------------------------------------------------------
+Running diffusion in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 3.00
+   Errors after step   0.1250 with 3 iterations: 9.8191e-09 / 3.3307e-13
+   Errors after step   0.2500 with 3 iterations: 1.7174e-08 / 3.3729e-13
+   Errors after step   0.3750 with 3 iterations: 2.2850e-08 / 3.7385e-13
+   Errors after step   0.5000 with 3 iterations: 2.7307e-08 / 2.7200e-13
+   Errors after step   0.6250 with 3 iterations: 3.0813e-08 / 3.4506e-13
+   Errors after step   0.7500 with 3 iterations: 3.3517e-08 / 3.7402e-13
+   Errors after step   0.8750 with 3 iterations: 3.5501e-08 / 2.4086e-13
+   Errors after step   1.0000 with 3 iterations: 3.6812e-08 / 2.0123e-13
+
+...done, took 1.0488969569996698 seconds!
+-----------------------------------------------------------------------------
+Running advection in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 4.00
+   Errors after step   0.1250 with 4 iterations: 3.6459e-09 / 5.5511e-16
+   Errors after step   0.2500 with 4 iterations: 7.2907e-09 / 6.6613e-16
+   Errors after step   0.3750 with 4 iterations: 1.0930e-08 / 3.3307e-16
+   Errors after step   0.5000 with 4 iterations: 1.4571e-08 / 5.5511e-16
+   Errors after step   0.6250 with 4 iterations: 1.8225e-08 / 4.4409e-16
+   Errors after step   0.7500 with 4 iterations: 2.1875e-08 / 4.4409e-16
+   Errors after step   0.8750 with 4 iterations: 2.5517e-08 / 5.5511e-16
+   Errors after step   1.0000 with 4 iterations: 2.9147e-08 / 6.6613e-16
+
+...done, took 0.22043722799571697 seconds!
+-----------------------------------------------------------------------------
+Running advection in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 2.00
+   Errors after step   0.1250 with 2 iterations: 3.7050e-09 / 3.1852e-13
+   Errors after step   0.2500 with 2 iterations: 7.4360e-09 / 3.1863e-13
+   Errors after step   0.3750 with 2 iterations: 1.1141e-08 / 3.1830e-13
+   Errors after step   0.5000 with 2 iterations: 1.4836e-08 / 3.1886e-13
+   Errors after step   0.6250 with 2 iterations: 1.8580e-08 / 3.1852e-13
+   Errors after step   0.7500 with 2 iterations: 2.2256e-08 / 3.1808e-13
+   Errors after step   0.8750 with 2 iterations: 2.5987e-08 / 3.1863e-13
+   Errors after step   1.0000 with 2 iterations: 2.9666e-08 / 3.1797e-13
+
+...done, took 0.6925808630039683 seconds!
+-----------------------------------------------------------------------------
+Running auzinger in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 5.62
+   Errors after step   0.1250 with 5 iterations: 4.6598e-09 / 0.0000e+00
+   Errors after step   0.2500 with 5 iterations: 8.0010e-09 / 0.0000e+00
+   Errors after step   0.3750 with 5 iterations: 1.4700e-08 / 0.0000e+00
+   Errors after step   0.5000 with 6 iterations: 1.5583e-08 / 0.0000e+00
+   Errors after step   0.6250 with 6 iterations: 2.1829e-08 / 0.0000e+00
+   Errors after step   0.7500 with 6 iterations: 2.6153e-08 / 0.0000e+00
+   Errors after step   0.8750 with 6 iterations: 2.8266e-08 / 0.0000e+00
+   Errors after step   1.0000 with 6 iterations: 2.8338e-08 / 0.0000e+00
+
+...done, took 0.15531681399443187 seconds!
+-----------------------------------------------------------------------------
+Running auzinger in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 3.62
+   Errors after step   0.1250 with 3 iterations: 4.2389e-09 / 0.0000e+00
+   Errors after step   0.2500 with 3 iterations: 8.4469e-09 / 0.0000e+00
+   Errors after step   0.3750 with 3 iterations: 1.1763e-08 / 0.0000e+00
+   Errors after step   0.5000 with 4 iterations: 1.7832e-08 / 0.0000e+00
+   Errors after step   0.6250 with 4 iterations: 2.3399e-08 / 0.0000e+00
+   Errors after step   0.7500 with 4 iterations: 2.8017e-08 / 0.0000e+00
+   Errors after step   0.8750 with 4 iterations: 3.1486e-08 / 0.0000e+00
+   Errors after step   1.0000 with 4 iterations: 3.3802e-08 / 0.0000e+00
+
+...done, took 0.21047626300423872 seconds!
+-----------------------------------------------------------------------------
+Running diffusion in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 5.75
+   Errors after step   0.1250 with 5 iterations: 1.7804e-08 / 3.0331e-13
+   Errors after step   0.2500 with 5 iterations: 4.9618e-08 / 2.1083e-13
+   Errors after step   0.3750 with 6 iterations: 4.2300e-08 / 4.4564e-13
+   Errors after step   0.5000 with 6 iterations: 3.8684e-08 / 5.1825e-13
+   Errors after step   0.6250 with 6 iterations: 3.7128e-08 / 3.0131e-13
+   Errors after step   0.7500 with 6 iterations: 3.6619e-08 / 5.1120e-13
+   Errors after step   0.8750 with 6 iterations: 3.6530e-08 / 3.5591e-13
+   Errors after step   1.0000 with 6 iterations: 3.6478e-08 / 2.5863e-13
+
+...done, took 0.3530361629964318 seconds!
+-----------------------------------------------------------------------------
+Running diffusion in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 3.00
+   Errors after step   0.1250 with 3 iterations: 9.8191e-09 / 3.3307e-13
+   Errors after step   0.2500 with 3 iterations: 1.7174e-08 / 3.3729e-13
+   Errors after step   0.3750 with 3 iterations: 2.2850e-08 / 3.7385e-13
+   Errors after step   0.5000 with 3 iterations: 2.7307e-08 / 2.7200e-13
+   Errors after step   0.6250 with 3 iterations: 3.0813e-08 / 3.4506e-13
+   Errors after step   0.7500 with 3 iterations: 3.3517e-08 / 3.7402e-13
+   Errors after step   0.8750 with 3 iterations: 3.5501e-08 / 2.4086e-13
+   Errors after step   1.0000 with 3 iterations: 3.6812e-08 / 2.0123e-13
+
+...done, took 0.8181738629937172 seconds!
+-----------------------------------------------------------------------------
+Running advection in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 4.00
+   Errors after step   0.1250 with 4 iterations: 3.6459e-09 / 5.5511e-16
+   Errors after step   0.2500 with 4 iterations: 7.2907e-09 / 6.6613e-16
+   Errors after step   0.3750 with 4 iterations: 1.0930e-08 / 3.3307e-16
+   Errors after step   0.5000 with 4 iterations: 1.4571e-08 / 5.5511e-16
+   Errors after step   0.6250 with 4 iterations: 1.8225e-08 / 4.4409e-16
+   Errors after step   0.7500 with 4 iterations: 2.1875e-08 / 4.4409e-16
+   Errors after step   0.8750 with 4 iterations: 2.5517e-08 / 5.5511e-16
+   Errors after step   1.0000 with 4 iterations: 2.9147e-08 / 6.6613e-16
+
+...done, took 0.18910105399845634 seconds!
+-----------------------------------------------------------------------------
+Running advection in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 2.00
+   Errors after step   0.1250 with 2 iterations: 3.7050e-09 / 3.1852e-13
+   Errors after step   0.2500 with 2 iterations: 7.4360e-09 / 3.1863e-13
+   Errors after step   0.3750 with 2 iterations: 1.1141e-08 / 3.1830e-13
+   Errors after step   0.5000 with 2 iterations: 1.4836e-08 / 3.1886e-13
+   Errors after step   0.6250 with 2 iterations: 1.8580e-08 / 3.1852e-13
+   Errors after step   0.7500 with 2 iterations: 2.2256e-08 / 3.1808e-13
+   Errors after step   0.8750 with 2 iterations: 2.5987e-08 / 3.1863e-13
+   Errors after step   1.0000 with 2 iterations: 2.9666e-08 / 3.1797e-13
+
+...done, took 0.6015086909901584 seconds!
+-----------------------------------------------------------------------------
+Running auzinger in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 5.62
+   Errors after step   0.1250 with 5 iterations: 4.6598e-09 / 0.0000e+00
+   Errors after step   0.2500 with 5 iterations: 8.0010e-09 / 0.0000e+00
+   Errors after step   0.3750 with 5 iterations: 1.4700e-08 / 0.0000e+00
+   Errors after step   0.5000 with 6 iterations: 1.5583e-08 / 0.0000e+00
+   Errors after step   0.6250 with 6 iterations: 2.1829e-08 / 0.0000e+00
+   Errors after step   0.7500 with 6 iterations: 2.6153e-08 / 0.0000e+00
+   Errors after step   0.8750 with 6 iterations: 2.8266e-08 / 0.0000e+00
+   Errors after step   1.0000 with 6 iterations: 2.8338e-08 / 0.0000e+00
+
+...done, took 0.1290163920057239 seconds!
+-----------------------------------------------------------------------------
+Running auzinger in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 3.62
+   Errors after step   0.1250 with 3 iterations: 4.2389e-09 / 0.0000e+00
+   Errors after step   0.2500 with 3 iterations: 8.4469e-09 / 0.0000e+00
+   Errors after step   0.3750 with 3 iterations: 1.1763e-08 / 0.0000e+00
+   Errors after step   0.5000 with 4 iterations: 1.7832e-08 / 0.0000e+00
+   Errors after step   0.6250 with 4 iterations: 2.3399e-08 / 0.0000e+00
+   Errors after step   0.7500 with 4 iterations: 2.8017e-08 / 0.0000e+00
+   Errors after step   0.8750 with 4 iterations: 3.1486e-08 / 0.0000e+00
+   Errors after step   1.0000 with 4 iterations: 3.3802e-08 / 0.0000e+00
+
+...done, took 0.17452212100033648 seconds!
+-----------------------------------------------------------------------------
+Running diffusion in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 5.75
+   Errors after step   0.1250 with 5 iterations: 1.7804e-08 / 3.0331e-13
+   Errors after step   0.2500 with 5 iterations: 4.9618e-08 / 2.1083e-13
+   Errors after step   0.3750 with 6 iterations: 4.2300e-08 / 4.4564e-13
+   Errors after step   0.5000 with 6 iterations: 3.8684e-08 / 5.1825e-13
+   Errors after step   0.6250 with 6 iterations: 3.7128e-08 / 3.0131e-13
+   Errors after step   0.7500 with 6 iterations: 3.6619e-08 / 5.1120e-13
+   Errors after step   0.8750 with 6 iterations: 3.6530e-08 / 3.5591e-13
+   Errors after step   1.0000 with 6 iterations: 3.6478e-08 / 2.5863e-13
+
+...done, took 0.32076953700743616 seconds!
+-----------------------------------------------------------------------------
+Running diffusion in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 3.00
+   Errors after step   0.1250 with 3 iterations: 9.8191e-09 / 3.3307e-13
+   Errors after step   0.2500 with 3 iterations: 1.7174e-08 / 3.3729e-13
+   Errors after step   0.3750 with 3 iterations: 2.2850e-08 / 3.7385e-13
+   Errors after step   0.5000 with 3 iterations: 2.7307e-08 / 2.7200e-13
+   Errors after step   0.6250 with 3 iterations: 3.0813e-08 / 3.4506e-13
+   Errors after step   0.7500 with 3 iterations: 3.3517e-08 / 3.7402e-13
+   Errors after step   0.8750 with 3 iterations: 3.5501e-08 / 2.4086e-13
+   Errors after step   1.0000 with 3 iterations: 3.6812e-08 / 2.0123e-13
+
+...done, took 0.7643610259983689 seconds!
+-----------------------------------------------------------------------------
+Running advection in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 4.00
+   Errors after step   0.1250 with 4 iterations: 3.6459e-09 / 5.5511e-16
+   Errors after step   0.2500 with 4 iterations: 7.2907e-09 / 6.6613e-16
+   Errors after step   0.3750 with 4 iterations: 1.0930e-08 / 3.3307e-16
+   Errors after step   0.5000 with 4 iterations: 1.4571e-08 / 5.5511e-16
+   Errors after step   0.6250 with 4 iterations: 1.8225e-08 / 4.4409e-16
+   Errors after step   0.7500 with 4 iterations: 2.1875e-08 / 4.4409e-16
+   Errors after step   0.8750 with 4 iterations: 2.5517e-08 / 5.5511e-16
+   Errors after step   1.0000 with 4 iterations: 2.9147e-08 / 6.6613e-16
+
+...done, took 0.20018727000569925 seconds!
+-----------------------------------------------------------------------------
+Running advection in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 2.00
+   Errors after step   0.1250 with 2 iterations: 3.7050e-09 / 3.1852e-13
+   Errors after step   0.2500 with 2 iterations: 7.4360e-09 / 3.1863e-13
+   Errors after step   0.3750 with 2 iterations: 1.1141e-08 / 3.1830e-13
+   Errors after step   0.5000 with 2 iterations: 1.4836e-08 / 3.1886e-13
+   Errors after step   0.6250 with 2 iterations: 1.8580e-08 / 3.1852e-13
+   Errors after step   0.7500 with 2 iterations: 2.2256e-08 / 3.1808e-13
+   Errors after step   0.8750 with 2 iterations: 2.5987e-08 / 3.1863e-13
+   Errors after step   1.0000 with 2 iterations: 2.9666e-08 / 3.1797e-13
+
+...done, took 0.6085319909907412 seconds!
+-----------------------------------------------------------------------------
+Running auzinger in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 5.62
+   Errors after step   0.1250 with 5 iterations: 4.6598e-09 / 0.0000e+00
+   Errors after step   0.2500 with 5 iterations: 8.0010e-09 / 0.0000e+00
+   Errors after step   0.3750 with 5 iterations: 1.4700e-08 / 0.0000e+00
+   Errors after step   0.5000 with 6 iterations: 1.5583e-08 / 0.0000e+00
+   Errors after step   0.6250 with 6 iterations: 2.1829e-08 / 0.0000e+00
+   Errors after step   0.7500 with 6 iterations: 2.6153e-08 / 0.0000e+00
+   Errors after step   0.8750 with 6 iterations: 2.8266e-08 / 0.0000e+00
+   Errors after step   1.0000 with 6 iterations: 2.8338e-08 / 0.0000e+00
+
+...done, took 0.1279397979960777 seconds!
+-----------------------------------------------------------------------------
+Running auzinger in 1 dimensions with time-step size 0.125...
+
+   Mean number of iterations: 3.62
+   Errors after step   0.1250 with 3 iterations: 4.2389e-09 / 0.0000e+00
+   Errors after step   0.2500 with 3 iterations: 8.4469e-09 / 0.0000e+00
+   Errors after step   0.3750 with 3 iterations: 1.1763e-08 / 0.0000e+00
+   Errors after step   0.5000 with 4 iterations: 1.7832e-08 / 0.0000e+00
+   Errors after step   0.6250 with 4 iterations: 2.3399e-08 / 0.0000e+00
+   Errors after step   0.7500 with 4 iterations: 2.8017e-08 / 0.0000e+00
+   Errors after step   0.8750 with 4 iterations: 3.1486e-08 / 0.0000e+00
+   Errors after step   1.0000 with 4 iterations: 3.3802e-08 / 0.0000e+00
+
+...done, took 0.17613918299321085 seconds!
+-----------------------------------------------------------------------------
+Running diffusion in 1 dimensions with time-step size 0.125...
+
+Running diffusion in 2 dimensions with time-step size 0.125...
+
+Running diffusion in 2 dimensions with time-step size 0.125...
+
+Running diffusion in 2 dimensions with time-step size 0.125...
+
+Running diffusion in 2 dimensions with time-step size 0.125...
+
+Running diffusion in 2 dimensions with time-step size 0.125...
+
+Running diffusion in 2 dimensions with time-step size 0.125...
+
