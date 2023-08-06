@@ -1,0 +1,4 @@
+[console_scripts]
+JiankangZhidao = JiankangZhidao.__main__:main
+jiankang-zhidao = JiankangZhidao.__main__:main
+
