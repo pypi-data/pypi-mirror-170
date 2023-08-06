@@ -1,0 +1,12 @@
+LICENSE.rst
+README.md
+setup.py
+pyghdet/__init__.py
+pyghdet/pytorn.py
+pyghdet.egg-info/PKG-INFO
+pyghdet.egg-info/SOURCES.txt
+pyghdet.egg-info/dependency_links.txt
+pyghdet.egg-info/not-zip-safe
+pyghdet.egg-info/top_level.txt
+scripts/hdet_indiv.py
+scripts/hdet_species.py
