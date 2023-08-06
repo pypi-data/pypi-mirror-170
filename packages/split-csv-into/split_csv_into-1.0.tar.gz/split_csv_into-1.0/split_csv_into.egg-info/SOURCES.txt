@@ -1,0 +1,10 @@
+setup.py
+split_csv/__init__.py
+split_csv/split_csv.py
+split_csv_into.egg-info/PKG-INFO
+split_csv_into.egg-info/SOURCES.txt
+split_csv_into.egg-info/dependency_links.txt
+split_csv_into.egg-info/entry_points.txt
+split_csv_into.egg-info/not-zip-safe
+split_csv_into.egg-info/requires.txt
+split_csv_into.egg-info/top_level.txt

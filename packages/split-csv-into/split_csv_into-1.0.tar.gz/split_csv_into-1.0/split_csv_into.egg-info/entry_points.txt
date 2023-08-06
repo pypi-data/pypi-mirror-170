@@ -1,0 +1,3 @@
+[console_scripts]
+split_csv = split_csv.split_csv:main
+

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: split-csv-into
+Version: 1.0
+Summary: Given a path to a csv file will split the csv into three subsets containing specified percentages of the full csv
+Home-page: UNKNOWN
+Author: Jack Geraghty
+Author-email: jgeraghty049@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+UNKNOWN
+
