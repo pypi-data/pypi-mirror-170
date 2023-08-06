@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cv-playground
+Version: 0.0.1
+Summary: Various Deep Learning Models (tensorflow)
+Home-page: https://github.com/Shivam-21-11/Tf-Model-Packages
+Author: Shivam Singh
+Author-email: Shivamsingh2111@gmail.com
+License: MIT
+Keywords: Machine Learning,Computer Vision,Generative adversarial networks,Deep Learning
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Tf-Model-Packages
