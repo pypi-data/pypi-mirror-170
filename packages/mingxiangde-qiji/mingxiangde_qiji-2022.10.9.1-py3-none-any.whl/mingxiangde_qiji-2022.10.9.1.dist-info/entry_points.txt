@@ -1,0 +1,4 @@
+[console_scripts]
+MingxiangdeQiji = MingxiangdeQiji.__main__:main
+mingxiangde-qiji = MingxiangdeQiji.__main__:main
+
