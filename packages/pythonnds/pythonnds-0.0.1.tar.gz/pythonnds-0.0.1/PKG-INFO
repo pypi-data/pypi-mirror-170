@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pythonnds
+Version: 0.0.1
+Summary: A package to help you while learning datastructures.
+Home-page: http://py-ds-docs.vercel.app/
+Author: Manish Tiwari
+Author-email: manishsit13@gmail.com
+License: MIT
+Keywords: data structures
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is a library created to cater Data Structure needs in Python!
+Contains the following data structures: binary search tree, linked list, stack, queue, circular list,deque, heap, trie, graph, doubly linked list
+Read the documentation on website https://py-ds-docs.vercel.app/
+
+Change Log
+==========
+
+0.0.1 (05/10/2022)
+-------------------
+- First Release
+
