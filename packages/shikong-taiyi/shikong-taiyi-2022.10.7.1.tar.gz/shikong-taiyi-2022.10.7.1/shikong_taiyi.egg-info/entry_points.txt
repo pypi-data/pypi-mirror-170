@@ -1,0 +1,4 @@
+[console_scripts]
+ShikongTaiyi = ShikongTaiyi.__main__:main
+shikong-taiyi = ShikongTaiyi.__main__:main
+
