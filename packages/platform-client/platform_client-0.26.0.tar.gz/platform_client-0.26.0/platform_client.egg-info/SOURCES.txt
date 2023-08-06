@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+setup.py
+platform_client/__init__.py
+platform_client/authentication.py
+platform_client/configuration.py
+platform_client/entity_engine.py
+platform_client.egg-info/PKG-INFO
+platform_client.egg-info/SOURCES.txt
+platform_client.egg-info/dependency_links.txt
+platform_client.egg-info/requires.txt
+platform_client.egg-info/top_level.txt
