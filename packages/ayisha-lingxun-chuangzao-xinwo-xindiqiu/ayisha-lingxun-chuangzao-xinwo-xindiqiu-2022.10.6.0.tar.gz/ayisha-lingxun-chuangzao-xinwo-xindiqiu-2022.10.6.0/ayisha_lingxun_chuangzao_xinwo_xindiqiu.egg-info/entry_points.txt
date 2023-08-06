@@ -1,0 +1,4 @@
+[console_scripts]
+AyishaLingxunChuangzaoXinwoXindiqiu = AyishaLingxunChuangzaoXinwoXindiqiu.__main__:main
+ayisha-lingxun-chuangzao-xinwo-xindiqiu = AyishaLingxunChuangzaoXinwoXindiqiu.__main__:main
+
