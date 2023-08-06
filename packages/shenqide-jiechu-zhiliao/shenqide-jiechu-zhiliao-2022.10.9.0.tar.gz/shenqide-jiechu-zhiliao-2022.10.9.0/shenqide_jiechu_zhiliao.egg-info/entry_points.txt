@@ -1,0 +1,4 @@
+[console_scripts]
+ShenqideJiechuZhiliao = ShenqideJiechuZhiliao.__main__:main
+shenqide-jiechu-zhiliao = ShenqideJiechuZhiliao.__main__:main
+
