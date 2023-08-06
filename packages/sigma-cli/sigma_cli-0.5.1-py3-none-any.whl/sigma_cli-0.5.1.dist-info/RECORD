@@ -1,0 +1,11 @@
+sigma/cli/backends.py,sha256=iV9--g5RoYmoKtTIOUniZeW4aN13S2QMM0pON5gTfE4,1723
+sigma/cli/check.py,sha256=ySjJ6TSuG91e51Kq5gvcNKqr8k9YnJ95WsocCvmHmdY,5367
+sigma/cli/convert.py,sha256=inT_a4iao00vhqn3bGCa3ljpeOcGyfTPdKDdHcq0aV0,6527
+sigma/cli/list.py,sha256=ziSJbHTccvAHPTidP1pouw7w0iwJpPvP27qXBl7sw94,2362
+sigma/cli/main.py,sha256=6lvreHlwEtyVir_q_Cg5CcBYSvHtcpzg8nrZvMekFns,294
+sigma/cli/pipelines.py,sha256=fF6fHL43XlukuQlR_J6OcLIaE4Y1vhfAPfM6VeRZxO4,1564
+sigma/cli/rules.py,sha256=upkh_k10LidYocM_DSLBiEp5XCHI17XCfy8UM_5q6ZI,473
+sigma_cli-0.5.1.dist-info/entry_points.txt,sha256=fL_kango_RlVu3xYbxj9a9Lh5EKKNkq_pYF9_9wkg-k,45
+sigma_cli-0.5.1.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+sigma_cli-0.5.1.dist-info/METADATA,sha256=Wsma6J6zUTos5O9ONgBO-P7isjFwtBuCZn-jjDz0n0o,4821
+sigma_cli-0.5.1.dist-info/RECORD,,
