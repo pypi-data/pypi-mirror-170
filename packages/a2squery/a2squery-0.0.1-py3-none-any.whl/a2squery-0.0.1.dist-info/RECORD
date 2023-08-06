@@ -1,0 +1,11 @@
+a2squery/__init__.py,sha256=iAgYt8nTh-N1OIhpJrCF0jQ2X5KC7obB50q2u-4ut6g,229
+a2squery/data.py,sha256=H2jfKj3xdAquUYpOMGkKl5dzBeOcwqTQYrv1KQtS_CI,8262
+a2squery/enums.py,sha256=xOvtUw7kzbWTCrnfSRy60VBYDlzWCkUx037IUQrS-ko,969
+a2squery/exceptions.py,sha256=lA-nP8q2SuKFX0cxza4ocXBHu47HIEqGdC5jolUiQfI,229
+a2squery/parser.py,sha256=yaRVxp9BcFvxDduISKVyG9z3bG85b5aDxV7wFynflKY,6750
+a2squery/query.py,sha256=1ZohUN5wv4gEvmgf-FD5byif7p9yRXmcIpqylKwHc6k,4892
+a2squery-0.0.1.dist-info/LICENSE.txt,sha256=f1Ry6iji-eqG8fNRJtHAwm1MlUbnmZWvG_SvSGCUl1s,1081
+a2squery-0.0.1.dist-info/METADATA,sha256=2f3s7teooEhz4Fkzd40Vsd_8lA8iKC7btynArzQq6CU,6214
+a2squery-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+a2squery-0.0.1.dist-info/top_level.txt,sha256=rPsd8jYBkYaHK6xOjFRfIaAfOTgPifqA9ITvbrsqcac,9
+a2squery-0.0.1.dist-info/RECORD,,
