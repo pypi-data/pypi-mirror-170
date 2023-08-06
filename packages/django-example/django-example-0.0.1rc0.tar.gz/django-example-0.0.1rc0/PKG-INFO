@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: django-example
+Version: 0.0.1rc0
+Summary: Demo YunoHost Application to demonstrate the integration of a Django project under YunoHost.
+Home-page: https://github.com/jedie/django-example
+License: GPL
+Author: JensDiemer
+Author-email: git@jensdiemer.de
+Requires-Python: >=3.9,<4.0.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: django-tools
+Requires-Dist: django_yunohost_integration (>=0.5.0rc1)
+Project-URL: Bug Tracker, https://github.com/jedie/django-example/issues
+Description-Content-Type: text/markdown
+
+# django-example
+Example Django Project for: https://github.com/YunoHost-Apps/django_example_ynh
+
