@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/yapigo_CANTINBELLEMARE/__init__.py
+src/yapigo_CANTINBELLEMARE/utils.py
+src/yapigo_CANTINBELLEMARE.egg-info/PKG-INFO
+src/yapigo_CANTINBELLEMARE.egg-info/SOURCES.txt
+src/yapigo_CANTINBELLEMARE.egg-info/dependency_links.txt
+src/yapigo_CANTINBELLEMARE.egg-info/top_level.txt
