@@ -1,0 +1,5 @@
+
+    [yafowil.plugin]
+    register = yafowil.widget.array:register
+    example = yafowil.widget.array.example:get_example
+    
