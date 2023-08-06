@@ -1,0 +1,13 @@
+hooking/__init__.py,sha256=g5AoIhm7IxnwlDjXeXfcKZNY_he2iamPYjdk0tOrRbY,9277
+hooking/__main__.py,sha256=i31lS_pzhoRmSDi-FIl3aXHT0ZpSZpoBWoruzbCWKfQ,133
+hooking/dto/__init__.py,sha256=L6NSlMC7cuJ8mt0vj1YpUIAWByMy-cLV_e_lPNdjVNA,227
+hooking/error/__init__.py,sha256=fK43BLSpZXaajvKTXGbNEG7tnOrcktECETx6iGltM0M,52
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_h.py,sha256=sw3pc9438k7GaqhaCJV_4J0wjEvpiJz_15CbrMA_VtI,5212
+tests/util.py,sha256=bqD29dEADW0PFn5VTBayCowd7JXNL4mbwNRLc1MYHIk,3922
+hooking-0.0.4.dist-info/LICENSE,sha256=eJ5o4QtkPcdyDtBv1kDvhYjNnp-4wOzyZwiVvgkyhMA,1076
+hooking-0.0.4.dist-info/METADATA,sha256=5MwaJ0_sTQp56z7nB1flxQl3kV_2jJZsVhEDr4L2cLw,11083
+hooking-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hooking-0.0.4.dist-info/entry_points.txt,sha256=p5xdFXFsWa3xgjeq70L8Qh_QaWSC9XaLX4jHk54ElrQ,51
+hooking-0.0.4.dist-info/top_level.txt,sha256=ekkBxE8FARb4Yzn3MGvOx6VXTCL_t05qD9LagwhHd_o,14
+hooking-0.0.4.dist-info/RECORD,,
