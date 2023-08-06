@@ -1,0 +1,3 @@
+[console_scripts]
+acss = atcoder_submit_status.main:main
+
