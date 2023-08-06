@@ -1,0 +1,4 @@
+[console_scripts]
+MimiRuheGaibianleWodeShenghuo = MimiRuheGaibianleWodeShenghuo.__main__:main
+mimi-ruhe-gaibianle-wode-shenghuo = MimiRuheGaibianleWodeShenghuo.__main__:main
+
