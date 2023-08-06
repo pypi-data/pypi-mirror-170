@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: umidstrela
+Version: 0.0.1
+Summary: Convert csv to txt
+Home-page: UNKNOWN
+Author: Umidyor Asomov
+Author-email: actualnew001@gmail.com
+License: MIT
+Keywords: coverted_data
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+Bu kutubxona yordamida CSV fayllardagi datani TXT holatiga o'tkazib beradi.TXT data kelgan faylni esa, CSV
+fayliga o'zgartirib beradi.O'zgarayotgan faylga istagan nomni berishingiz mumkin.
+
+Uning uchun:
+masalan;
+
+pip install umidstrela    #->pip qilinishi kerak bo'lgan kutubxona.
+
+from umidstrela import csv_txt #-> Ba'zi xollarda bu shart emas!
+
+csv_txt('data.csv', 'data.txt')
+
+from umidstrela import txt_csv
+
+txt_csv('data.txt', 'data.csv')
+
+
+
+
+CHANGE Log
+==========
+
+0.0.1 (04/10/2022)
+------------------
+-First Release
+
