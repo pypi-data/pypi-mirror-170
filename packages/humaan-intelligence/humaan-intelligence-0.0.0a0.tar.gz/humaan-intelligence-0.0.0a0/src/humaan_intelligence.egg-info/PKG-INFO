@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: humaan-intelligence
+Version: 0.0.0a0
+Summary: Humaan Intelligence Client Library for Python
+Author-email: Humaan <support@humaan.ai>
+License: Apache License 2.0
+Project-URL: Homepage, https://github.com/humaan-ai/intelligence-python-sdk
+Project-URL: Documentation, https://developer.humaan.ai/docs/intelligence
+Project-URL: Bug Tracker, https://github.com/humaan-ai/intelligence-python-sdk/issues
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Humaan Intelligence SDK for Python
+[![Lincense](https://img.shields.io/badge/License-Apache_2.0-green)](https://opensource.org/licenses/Apache-2.0)
+
+## Overview
+[Humaan Intelligence](https://humaan.ai/intelligence) provides human-like capabilities in language, vision, speech, and sound that let developers and businesses quickly create intelligence applications and services. The Human Intelligence Python SDK enables the integration of intelligence with your existing Python application.
+
+## Installation
+
+To install Humaan Intelligence Python SDK, simply execute the following command in a terminal
+
+```bash
+$ pip install humaan-intelligence
+```

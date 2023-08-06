@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=65.4.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "humaan-intelligence"
+version = "0.0.0-alpha.0"
+description = "Humaan Intelligence Client Library for Python"
+readme = "README.md"
+authors = [{ name = "Humaan", email = "support@humaan.ai" }]
+license = { "text" = "Apache License 2.0"}
+requires-python = ">=3.7.0"
+classifiers=[
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+
+[project.urls]
+Homepage = "https://github.com/humaan-ai/intelligence-python-sdk"
+Documentation = "https://developer.humaan.ai/docs/intelligence"
+"Bug Tracker" = "https://github.com/humaan-ai/intelligence-python-sdk/issues"

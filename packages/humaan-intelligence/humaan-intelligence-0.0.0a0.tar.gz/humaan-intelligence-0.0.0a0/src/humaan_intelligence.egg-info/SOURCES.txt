@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/humaan_intelligence.egg-info/PKG-INFO
+src/humaan_intelligence.egg-info/SOURCES.txt
+src/humaan_intelligence.egg-info/dependency_links.txt
+src/humaan_intelligence.egg-info/top_level.txt
+src/intelligence/__init__.py
+src/intelligence/language/__init__.py
+src/intelligence/language/__main__.py
+src/intelligence/sound/__init__.py
+src/intelligence/speech/__init__.py
+src/intelligence/vision/__init__.py
