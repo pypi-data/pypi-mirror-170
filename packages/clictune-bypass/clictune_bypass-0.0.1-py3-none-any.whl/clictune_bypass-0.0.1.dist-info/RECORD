@@ -1,0 +1,12 @@
+clictune_bypass/__init__.py,sha256=DfPNH-PrLfEISPZk-nm2FQDcK5Jo4hryc-a_XVEP6Pc,41
+clictune_bypass/link.py,sha256=fltnjlxgOFnWOtIxl-q5ZCRbGAijfiNqSNt4KoWvc8U,652
+clictune_bypass/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clictune_bypass/version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+clictune_bypass/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clictune_bypass/tests/conftest.py,sha256=clUc8VYkzKO1UXdxxL0adkkZ7h9AVFavyOY2TzTUmz4,832
+clictune_bypass/tests/link_test.py,sha256=2sAiJ1_43sSuFUq-UyV-zJH_teMqnrZ5eoDdmz-w5Q4,725
+clictune_bypass-0.0.1.dist-info/LICENSE,sha256=hQuyyEy2qnpy10GmWTu9oslyjFTKEEvSGl-C4n868lk,1071
+clictune_bypass-0.0.1.dist-info/METADATA,sha256=FPCqyhj_ql-86y9u8T74ZR-uaSZxlXDwYm037nt9tJg,1182
+clictune_bypass-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+clictune_bypass-0.0.1.dist-info/top_level.txt,sha256=vhSzyI2N7mbeRl5aoOND-0I49gpPGxKAbCJtiiRTPuQ,16
+clictune_bypass-0.0.1.dist-info/RECORD,,
