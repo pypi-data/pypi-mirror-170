@@ -1,0 +1,4 @@
+[console_scripts]
+YinduNadiye = YinduNadiye.__main__:main
+yindu-nadiye = YinduNadiye.__main__:main
+
