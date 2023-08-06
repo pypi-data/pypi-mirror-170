@@ -1,0 +1,4 @@
+[console_scripts]
+YushenHuijia = YushenHuijia.__main__:main
+yushen-huijia = YushenHuijia.__main__:main
+
