@@ -1,0 +1,4 @@
+[console_scripts]
+ShengmingZhishu = ShengmingZhishu.__main__:main
+shengming-zhishu = ShengmingZhishu.__main__:main
+
