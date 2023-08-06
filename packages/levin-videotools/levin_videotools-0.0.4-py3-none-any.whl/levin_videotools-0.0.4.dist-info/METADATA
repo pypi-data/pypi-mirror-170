@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: levin-videotools
+Version: 0.0.4
+Summary: 视频工具
+Home-page: https://codeup.aliyun.com/levin/levinspace/video-tools
+Author: dinglevin
+Author-email: dinglevin@foxmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: ffmpeg
+Requires-Dist: moviepy
+Requires-Dist: opencv-python
+Requires-Dist: PyYAML
+
