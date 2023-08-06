@@ -1,0 +1,9 @@
+pyhanja/__init__.py,sha256=hNPp8PPK3tiSe90_garR91vSNRahlbsk1aDZif_CU5Q,359
+pyhanja/_pyhanja.cpython-311-x86_64-linux-gnu.so,sha256=c_B-ygHJP7pyW-Q-fD7W-Idw2iNYoS-xk0NiJp5IKbg,286888
+pyhanja/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyhanja/data/hanja.txt,sha256=aT09SlS3P98JJZuaxB3qjSTcjUl012I53yyAdrglCHI,6451221
+pyhanja-0.0.1a0.dist-info/LICENSE,sha256=hQirUJmvdCUz3IPYiO71luOcLFOH8J0_CTDCX_ANI2Y,1069
+pyhanja-0.0.1a0.dist-info/METADATA,sha256=Bc5vATT57v7abjU4ayEy0mpMYKvNWVa2kf3XmccCcBw,246
+pyhanja-0.0.1a0.dist-info/WHEEL,sha256=7BUcZvCmPNElfPlo0SSl7U_FCusufTHd-14RJ_8tdg0,146
+pyhanja-0.0.1a0.dist-info/top_level.txt,sha256=_dmpPR_qBz0KUJ89rUwlkSCI5cVF5ZetIaFp8gJPMgQ,8
+pyhanja-0.0.1a0.dist-info/RECORD,,
