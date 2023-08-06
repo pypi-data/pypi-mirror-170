@@ -1,0 +1,67 @@
+name: filter
+tags:
+  - row
+  - data_cleaning
+  - conditional
+description: |
+  Filter the dataset. Supports two types of filters:
+    1. Comparison filters, which compare the values in a column with a value
+    2. Advanced filters, which support full SQL strings for custom filtering logic
+arguments:
+  items:
+    type: filter_list
+    description: list of dictionaries representing filters
+example_code: |
+  ds = rasgo.get.dataset(74)
+  # Each filter item must have:
+  # - condition: The logical operator 'AND' or 'OR'
+  # - type: 'sql' if the value is a sql filter statement as a string, 'object' if it
+  #          is an object made up of 'columnName', 'operator', and 'comparisonValue' fields
+  #          or 'group' if it is list of filters which will be nested
+  # - value: The value of the filter (sql string, object, or list of filters)
+  ds3 = ds.filter(items=[
+            {
+                'condition': 'AND',
+                'type': 'sql',
+                'value': 'SALESTERRITORYKEY IN (1, 2, 3)'
+            },
+            {
+                'condition': 'AND',
+                'type': 'object',
+                'value': {
+                    'columnName': 'CLASS',
+                    'operator': '=',
+                    'comparisonValue': "'H'"
+                }
+            },
+            {
+                'condition': 'OR',
+                'type': 'group',
+                'value': [
+                    {
+                        'condition': 'OR',
+                        'type': 'object',
+                        'value': {
+                            'columnName': 'COLOR',
+                            'operator': '=',
+                            'comparisonValue': "'Black'"
+                        }
+                    },
+                    {
+                        'condition': 'OR',
+                        'type': 'object',
+                        'value': {
+                            'columnName': 'COLOR',
+                            'operator': '=',
+                            'comparisonValue': "'Multi'"
+                        }
+                    },
+                    {
+                        'condition': 'OR',
+                        'type': 'sql',
+                        'value': "PRODUCTDESCRIPTION ilike '%adventure%'"
+                    }
+                ]
+            },
+        ])
+  ds3.preview()
