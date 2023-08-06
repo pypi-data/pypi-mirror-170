@@ -1,0 +1,4 @@
+include any_iter_to_html_table/requirements.txt
+include any_iter_to_html_table/thirdparty.json
+include any_iter_to_html_table/README.MD
+include any_iter_to_html_table/LICENSE

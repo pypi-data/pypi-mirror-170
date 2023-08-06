@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+any_iter_to_html_table/LICENSE
+any_iter_to_html_table/README.MD
+any_iter_to_html_table/__init__.py
+any_iter_to_html_table/requirements.txt
+any_iter_to_html_table/thirdparty.json
+any_iter_to_html_table.egg-info/PKG-INFO
+any_iter_to_html_table.egg-info/SOURCES.txt
+any_iter_to_html_table.egg-info/dependency_links.txt
+any_iter_to_html_table.egg-info/requires.txt
+any_iter_to_html_table.egg-info/top_level.txt
