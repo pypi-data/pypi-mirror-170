@@ -1,0 +1,8 @@
+slidingpuzzle/__init__.py,sha256=u5soUUlqDOHlwdx0-7oFO_ZK1SqsjXwzs6nW2uoMFOw,1802
+slidingpuzzle/heuristics.py,sha256=BwbuON1U3cl3MB0A_UZO3eranrhZgpAuFkx8Ss_Myxc,1939
+slidingpuzzle/slidingpuzzle.py,sha256=TdgFMSvYFaAJfbsfp7qdRxdMwLEvl7BAPbYGUVqLGIQ,11696
+slidingpuzzle/state.py,sha256=WiXETgrz6kykuILs2fTnWvRRff6itL1l5cGRbuHtE64,2209
+slidingpuzzle-0.0.2.dist-info/METADATA,sha256=DXSfRqUEq7AW2fnK6aVZy2CucXIoXjQBCKkTC_fwQgY,4132
+slidingpuzzle-0.0.2.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+slidingpuzzle-0.0.2.dist-info/licenses/LICENSE,sha256=lLkiRGL_3TH7GEiXwubGnfyfA_Zn2OKkWO1XswLfRoQ,10316
+slidingpuzzle-0.0.2.dist-info/RECORD,,
