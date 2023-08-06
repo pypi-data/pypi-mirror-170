@@ -1,0 +1,12 @@
+docgetter/__init__.py,sha256=eUmoBcl4NEbt6AqfJuF3y7uOef79--tEvNDWMIjwJSk,107
+docgetter/main.py,sha256=GNYQ9QUOukrebu5K6pm6bIwkcjSOFSnr4yWFLFfHRaY,1326
+docgetter/parser.py,sha256=dFCaOfWqVkbkCOh0zLWXN8NYwp0oMJ5xWn3KLace5ro,1792
+lib/docgetter/__init__.py,sha256=eUmoBcl4NEbt6AqfJuF3y7uOef79--tEvNDWMIjwJSk,107
+lib/docgetter/main.py,sha256=GNYQ9QUOukrebu5K6pm6bIwkcjSOFSnr4yWFLFfHRaY,1326
+lib/docgetter/parser.py,sha256=dFCaOfWqVkbkCOh0zLWXN8NYwp0oMJ5xWn3KLace5ro,1792
+docgetter-0.1.2.dist-info/LICENSE,sha256=8uJHKVE5c78cxloLUf1RYbvnyblF3yXlmyoTYQBNvvU,1089
+docgetter-0.1.2.dist-info/METADATA,sha256=gniX3fcUzV9VL7eurN7by2Kgpo9yu8GnAOOrkxX1X4c,4068
+docgetter-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+docgetter-0.1.2.dist-info/entry_points.txt,sha256=XCslfmwdPNHRI-B5QlTsaWABNY02T8y86Ne_SB3Q9JE,46
+docgetter-0.1.2.dist-info/top_level.txt,sha256=vKXFpeGVlfpXbF3_mKkjJQ07Ww1VtW0G3yimyUTRgJM,10
+docgetter-0.1.2.dist-info/RECORD,,
