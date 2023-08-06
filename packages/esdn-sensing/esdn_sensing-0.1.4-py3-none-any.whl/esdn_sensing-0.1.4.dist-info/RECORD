@@ -1,0 +1,11 @@
+esdn_sensing/__init__.py,sha256=drd4nTyeNjbQthb-sqzmqdRilugDRDlt88npL3Nwv1o,111
+esdn_sensing/hydros.py,sha256=YYjsyg-CFWHjPoePmrQ1zhBfYey_nk1PgHwJb7_G2lg,5306
+esdn_sensing/opc.py,sha256=HsRtDIbqRUiUlpK2x_1IQf88RfPixWWSPUT0FajgsIM,5824
+esdn_sensing/pm25.py,sha256=xI2ZMIjNWq14TR51tqlb4Vy1FrubcH-l8cC3PkVXvv4,6852
+esdn_sensing/sen5x.py,sha256=bzBzikjAlD3Pp62lfYCQvQQentdBI76dgNMNKAXsm34,6697
+esdn_sensing/stemma_soil.py,sha256=xA1GtSwLl7DvDgfhFHqjRWajXiHsPEBY24Yft4LWXGA,852
+esdn_sensing-0.1.4.dist-info/LICENSE,sha256=ojGmAS89kQfIUmQhKqLXMFASqtjk2wL19AgKkHmJ5og,1116
+esdn_sensing-0.1.4.dist-info/METADATA,sha256=qg_Jhe-ugbAQIa3Py1UEkUxcWa8cN2mHRcqUFa0m-ss,1011
+esdn_sensing-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+esdn_sensing-0.1.4.dist-info/top_level.txt,sha256=7OLzIUUkAmlzGfqAIMDBfJ4Z3lmxu4-9eGk5OKTEp2U,13
+esdn_sensing-0.1.4.dist-info/RECORD,,
