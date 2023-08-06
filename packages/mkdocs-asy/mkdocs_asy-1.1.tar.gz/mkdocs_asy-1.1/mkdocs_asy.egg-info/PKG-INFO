@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mkdocs-asy
+Version: 1.1
+Summary: Render Asymptote graphs in Mkdocs, as inline SVGs and PNGs, directly from your Markdown (python3 version)
+Home-page: https://gitlab.com/rod2ik/mkdocs-asy.git
+Author: Rodrigo Schwencke
+Author-email: rod2ik.dev@gmail.com
+License: GPLv3+
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Documentation
+Classifier: Topic :: Text Processing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Inspired by
+
+* [rod2ik/mkdocs-graphviz](https://gitlab.com/rod2ik/mkdocs-graphviz)
