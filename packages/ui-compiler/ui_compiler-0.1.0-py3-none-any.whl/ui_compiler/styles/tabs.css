@@ -1,0 +1,24 @@
+.tab {
+    overflow: hidden;
+    border-radius: 0px;
+    background-color: Gainsboro;
+}
+
+.tablinks {
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 0.25em 0.33em;
+    transition: 0.3s;
+    font-size: 1em;
+    border-radius: 0px;
+    float: left;
+    outline: none;
+    overflow: hidden;
+}
+
+.tabcontent {
+    display: none;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    padding: 1em 5em;
+}
