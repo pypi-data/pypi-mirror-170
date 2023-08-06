@@ -1,0 +1,11 @@
+README.md
+setup.py
+junkie/__init__.py
+junkie/_junkie.py
+junkie.egg-info/PKG-INFO
+junkie.egg-info/SOURCES.txt
+junkie.egg-info/dependency_links.txt
+junkie.egg-info/top_level.txt
+test/__init__.py
+test/test_junkie.py
+test/test_readme.py
