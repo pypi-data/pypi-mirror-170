@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: mock-event-generator
+Version: 1.3.0
+Summary: Generates events by re-using existing ones.
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: apischema
+Requires-Dist: astropy
+Requires-Dist: certifi
+Requires-Dist: cryptography
+Requires-Dist: ligo-gracedb (<2.8.0)
+Requires-Dist: ligo-skymap
+Requires-Dist: lxml
+Requires-Dist: python-ligo-lw
+Requires-Dist: requests
+Requires-Dist: trio
+Requires-Dist: typer[all]
+Provides-Extra: tests
+Requires-Dist: lalsuite ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-gracedb (>=0.7.2) ; extra == 'tests'
+Requires-Dist: pytest-mock ; extra == 'tests'
+Requires-Dist: pytest-socket ; extra == 'tests'
+Requires-Dist: pytest-trio ; extra == 'tests'
+Requires-Dist: pytest-freezegun ; extra == 'tests'
+Requires-Dist: responses ; extra == 'tests'
+Requires-Dist: setuptools-scm[toml] ; extra == 'tests'
+
