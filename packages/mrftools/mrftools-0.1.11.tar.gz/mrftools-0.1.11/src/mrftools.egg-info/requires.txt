@@ -1,0 +1,4 @@
+numba
+scipy
+h5py
+matplotlib
