@@ -1,0 +1,10 @@
+shpg/__init__.py,sha256=4eOyYEE5Zl3vUXzwXsc8QEEOq_xon2pcirQDM5Vbdf4,63
+shpg/_version.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+shpg/html.py,sha256=-jX7GZ8LhNQugiFbmB4c4hu54EFDdeXtBdWQbryJKos,11839
+shpg/page.py,sha256=NzTYOiZpluPxgIUtQOVx4XYHzsepDMqH_Hitq-IpaZ4,12164
+shpg/simple.py,sha256=aBoNh_jAknMxVuE25MFg6uIoSCJy9a6aiLaZDjoM4Zs,3930
+shpg-0.0.1.dist-info/LICENCE,sha256=hmB2GKHQ2X5AyFCRDR1pgc25Rf3rz_v1AoHef8Xi_eg,1518
+shpg-0.0.1.dist-info/METADATA,sha256=g78AAjoJ4LGeWWwDbw5Gf_ar7mJxXQSlLu2FI2uFpsA,1607
+shpg-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shpg-0.0.1.dist-info/top_level.txt,sha256=uE-CPs7NLmTLGKHV185J7dk6MYyxags4AxZ--C3c07U,5
+shpg-0.0.1.dist-info/RECORD,,
