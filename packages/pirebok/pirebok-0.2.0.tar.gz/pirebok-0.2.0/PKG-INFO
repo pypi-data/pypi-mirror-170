@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: pirebok
+Version: 0.2.0
+Summary: a guided adversarial fuzzer
+Home-page: https://github.com/dogancanbakir/pirebok
+License: MIT
+Author: Doğan Can Bakır
+Author-email: dogancanbakir@protonmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+Requires-Dist: black (>=22.8.0,<23.0.0); extra == "test"
+Requires-Dist: bump2version (>=1.0.1,<2.0.0); extra == "dev"
+Requires-Dist: click (==8.0.1)
+Requires-Dist: flake8 (>=5.0.4,<6.0.0); extra == "test"
+Requires-Dist: flake8-docstrings (>=1.6.0,<2.0.0); extra == "test"
+Requires-Dist: isort (>=5.10.1,<6.0.0); extra == "test"
+Requires-Dist: metamaska (>=0.2.0,<0.3.0)
+Requires-Dist: mkdocs (>=1.3.1,<2.0.0); extra == "doc"
+Requires-Dist: mkdocs-autorefs (>=0.4.1,<0.5.0); extra == "doc"
+Requires-Dist: mkdocs-include-markdown-plugin (>=3.8.1,<4.0.0); extra == "doc"
+Requires-Dist: mkdocs-material (>=8.5.2,<9.0.0); extra == "doc"
+Requires-Dist: mkdocs-material-extensions (>=1.0.3,<2.0.0)
+Requires-Dist: mkdocstrings-python (>=0.7.1,<0.8.0); extra == "doc"
+Requires-Dist: mypy (>=0.971,<0.972); extra == "test"
+Requires-Dist: pip (>=22.2.2,<23.0.0); extra == "dev"
+Requires-Dist: pre-commit (>=2.20.0,<3.0.0); extra == "dev"
+Requires-Dist: pytest (>=7.1.3,<8.0.0); extra == "test"
+Requires-Dist: pytest-cov (>=3.0.0,<4.0.0); extra == "test"
+Requires-Dist: toml (>=0.10.2,<0.11.0); extra == "dev"
+Requires-Dist: tox (>=3.26.0,<4.0.0); extra == "dev"
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Requires-Dist: twine (>=4.0.1,<5.0.0); extra == "dev"
+Requires-Dist: virtualenv (>=20.16.5,<21.0.0); extra == "dev"
+Description-Content-Type: text/markdown
+
+# pîrebok (from Kurdish "witch") - a guided adversarial fuzzer
+
+
+[![pypi](https://img.shields.io/pypi/v/pirebok.svg)](https://pypi.org/project/pirebok/)
+[![python](https://img.shields.io/pypi/pyversions/pirebok.svg)](https://pypi.org/project/pirebok/)
+[![Build Status](https://github.com/dogancanbakir/pirebok/actions/workflows/dev.yml/badge.svg)](https://github.com/dogancanbakir/pirebok/actions/workflows/dev.yml)
+[![codecov](https://codecov.io/gh/dogancanbakir/pirebok/branch/main/graphs/badge.svg)](https://codecov.io/github/dogancanbakir/pirebok)
+
+
+
+* Documentation: <https://dogancanbakir.github.io/pirebok>
+* GitHub: <https://github.com/dogancanbakir/pirebok>
+* PyPI: <https://pypi.org/project/pirebok/>
+* Free software: MIT
+
+
+## Features
+- Random generic fuzzer w/ multiple transformers
+- Random sql fuzzer w/ multiple transformers
+- Guided random sql fuzzer w/ multiple transformers and [metamaska](https://github.com/dogancanbakir/metamaska)
+
+## Credits
+- [Cookiecutter](https://github.com/audreyr/cookiecutter)
+- [waynerv/cookiecutter-pypackage](https://github.com/waynerv/cookiecutter-pypackage)
+- [ML-based-WAF](https://github.com/vladan-stojnic/ML-based-WAF)
+- [WAF-A-MoLE](https://github.com/AvalZ/WAF-A-MoLE)
+
