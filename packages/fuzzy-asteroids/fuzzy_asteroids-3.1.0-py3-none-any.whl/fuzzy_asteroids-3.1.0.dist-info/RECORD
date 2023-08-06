@@ -1,0 +1,15 @@
+fuzzy_asteroids/__init__.py,sha256=cHGD5RRG72AXkHWXzPBgxIIe2SycHClaI5o-0gt8a8M,23
+fuzzy_asteroids/dashboard.py,sha256=qfeBNZ5piC1hxE_YtvOYMMCP5gJ76OVMNEsQ-K6l98U,5897
+fuzzy_asteroids/fuzzy_asteroids.py,sha256=HAR66jobdH4JuDulCjc_-2BPAsCSF9RNpT7Gpb7DqM4,15825
+fuzzy_asteroids/fuzzy_controller.py,sha256=jeOmNInrJltJmYZhtBJqePeEtslJhF89rdvxdPhMiJQ,5491
+fuzzy_asteroids/game.py,sha256=OoX45z9XvCWoyVLKgwGPM7aiI5TjT_t6ECIkSKEiSO0,21830
+fuzzy_asteroids/runner.py,sha256=6jQrbBk5kKJtg-vFksgM7RiPwM2kmjANTICA-nXw7io,6395
+fuzzy_asteroids/settings.py,sha256=yQkZOPreHTVd3zdXs0cNgSIFzb3MQhC6EzI1tN57nrc,684
+fuzzy_asteroids/sprites.py,sha256=9urIDCT0pokZ7PUQfvNEYdPB1qH5X8U20OuAca_g_kY,14081
+fuzzy_asteroids/util.py,sha256=16HDbDSFMlJWfZPmAeCuNGV4Hu_GkCP-j2NoeR1hr1Y,10646
+fuzzy_asteroids-3.1.0.dist-info/LICENSE,sha256=o43H1m-wtZUYR7-qq8HSVqdp8eJrdqEOlwMeJCJWyfA,1100
+fuzzy_asteroids-3.1.0.dist-info/METADATA,sha256=ky4hQdCf3DHaGJV2OLMteTIwutXTEJKRcf-1okNiu4s,1587
+fuzzy_asteroids-3.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fuzzy_asteroids-3.1.0.dist-info/top_level.txt,sha256=hw-u7-ARX4qjZKK8rSZvAIMewHTkYFsnbD61GsSmzPs,16
+fuzzy_asteroids-3.1.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+fuzzy_asteroids-3.1.0.dist-info/RECORD,,
