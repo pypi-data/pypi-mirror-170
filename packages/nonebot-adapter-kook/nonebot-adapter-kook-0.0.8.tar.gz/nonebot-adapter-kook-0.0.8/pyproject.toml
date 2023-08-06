@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "nonebot-adapter-kook"
+version = "0.0.8"
+description = "Kook adapter for nonebot2"
+authors = ["Krysztal <suibing112233@outlook.com>","Tian-que <1605206150@qq.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/SUIBING112233/nonebot-adapter-kook"
+keywords = ["bot", "khl", "kook", "khlbot"]
+
+packages = [
+  { include = "nonebot" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.7.3"
+nonebot2 = "^2.0.0-beta.1"
+aiohttp = "^3.8.1"
+deprecated = "^1.2.13"
+
+# [[tool.poetry.source]]
+# name = "aliyun"
+# url = "https://mirrors.aliyun.com/pypi/simple/"
+# default = true
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
