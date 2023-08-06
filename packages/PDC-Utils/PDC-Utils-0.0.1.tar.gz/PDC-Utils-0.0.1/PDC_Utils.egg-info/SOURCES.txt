@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+PDC_Utils/__init__.py
+PDC_Utils/_modidx.py
+PDC_Utils/core.py
+PDC_Utils/pdc.py
+PDC_Utils.egg-info/PKG-INFO
+PDC_Utils.egg-info/SOURCES.txt
+PDC_Utils.egg-info/dependency_links.txt
+PDC_Utils.egg-info/entry_points.txt
+PDC_Utils.egg-info/not-zip-safe
+PDC_Utils.egg-info/requires.txt
+PDC_Utils.egg-info/top_level.txt
