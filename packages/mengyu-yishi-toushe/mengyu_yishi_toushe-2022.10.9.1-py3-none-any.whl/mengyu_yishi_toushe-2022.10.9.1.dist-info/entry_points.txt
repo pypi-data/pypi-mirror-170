@@ -1,0 +1,4 @@
+[console_scripts]
+MengyuYishiToushe = MengyuYishiToushe.__main__:main
+mengyu-yishi-toushe = MengyuYishiToushe.__main__:main
+
