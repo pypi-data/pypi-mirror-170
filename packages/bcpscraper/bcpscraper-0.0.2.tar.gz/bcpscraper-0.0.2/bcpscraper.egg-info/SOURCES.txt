@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+bcpscraper.egg-info/.gitignore
+bcpscraper.egg-info/PKG-INFO
+bcpscraper.egg-info/SOURCES.txt
+bcpscraper.egg-info/dependency_links.txt
+bcpscraper.egg-info/requires.txt
+bcpscraper.egg-info/top_level.txt
+bcpscrapper/__init__.py
