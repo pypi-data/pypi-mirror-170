@@ -1,0 +1,8 @@
+psycopg2-binary>=2.9.3
+configparser>=5.3.0
+azure-storage-file-datalake>=12.8.0
+azure-core>=1.24.0
+
+[dev]
+pytest>=3.7
+twine>=3.4.2
