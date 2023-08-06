@@ -1,0 +1,4 @@
+[console_scripts]
+RenzhiYixueJiqiLiaoyuFangfa = RenzhiYixueJiqiLiaoyuFangfa.__main__:main
+renzhi-yixue-jiqi-liaoyu-fangfa = RenzhiYixueJiqiLiaoyuFangfa.__main__:main
+
