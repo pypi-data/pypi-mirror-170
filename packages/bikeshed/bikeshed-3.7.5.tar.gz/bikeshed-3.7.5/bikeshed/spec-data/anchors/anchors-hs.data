@@ -1,0 +1,20 @@
+hsts-safe origin
+dfn
+upgrade-insecure-requests-1
+upgrade-insecure-requests
+1
+snapshot
+http://www.w3.org/TR/upgrade-insecure-requests/#hsts-safe-origin
+1
+1
+-
+hsts-safe origin
+dfn
+upgrade-insecure-requests-1
+upgrade-insecure-requests
+1
+current
+https://w3c.github.io/webappsec-upgrade-insecure-requests/#hsts-safe-origin
+1
+1
+-

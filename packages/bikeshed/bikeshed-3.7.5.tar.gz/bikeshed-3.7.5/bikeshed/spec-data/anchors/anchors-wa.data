@@ -1,0 +1,95 @@
+wait for all
+dfn
+webidl
+webidl
+1
+snapshot
+https://webidl.spec.whatwg.org/#wait-for-all
+1
+1
+-
+wait to respond flag
+dfn
+service-workers
+service-workers
+1
+snapshot
+https://www.w3.org/TR/service-workers-1/#fetchevent-wait-to-respond-flag
+
+1
+FetchEvent
+-
+wait to respond flag
+dfn
+service-workers
+service-workers
+1
+current
+https://w3c.github.io/ServiceWorker/#fetchevent-wait-to-respond-flag
+
+1
+FetchEvent
+-
+waiting
+dfn
+web-background-sync-1
+web-background-sync
+1
+current
+https://wicg.github.io/background-sync/spec/#waiting
+
+1
+-
+waiting for all
+dfn
+webidl
+webidl
+1
+snapshot
+https://webidl.spec.whatwg.org/#wait-for-all
+1
+1
+-
+waiting worker
+dfn
+service-workers
+service-workers
+1
+snapshot
+https://www.w3.org/TR/service-workers-1/#dfn-waiting-worker
+1
+1
+service worker registration
+-
+waiting worker
+dfn
+service-workers
+service-workers
+1
+current
+https://w3c.github.io/ServiceWorker/#dfn-waiting-worker
+1
+1
+service worker registration
+-
+was already erroring
+dfn
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#pending-abort-request-was-already-erroring
+
+1
+pending abort request
+-
+watch advertisements manager
+dfn
+web-bluetooth-1
+web-bluetooth
+1
+snapshot
+https://webbluetoothcg.github.io/web-bluetooth/#watch-advertisements-manager
+
+1
+-
