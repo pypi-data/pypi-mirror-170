@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: flake8-plone-hasattr
+Version: 1.0.0
+Summary: Checks for hasattr, which is considered harmful in Plone projects.
+Home-page: https://github.com/gforcada/flake8-plone-hasattr
+Author: Gil Forcada
+Author-email: gil.gnome@gmail.com
+License: GPL version 2
+Keywords: pep8 flake8 python plone
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: Flake8
+Classifier: Framework :: Plone
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.7
+License-File: LICENSE
+
+
+.. -*- coding: utf-8 -*-
+
+.. image:: https://github.com/gforcada/flake8-plone-hasattr/actions/workflows/testing.yml/badge.svg?branch=master
+   :target: https://github.com/gforcada/flake8-plone-hasattr/actions/workflows/testing.yml
+
+.. image:: https://coveralls.io/repos/gforcada/flake8-plone-hasattr/badge.svg?branch=master
+   :target: https://coveralls.io/github/gforcada/flake8-plone-hasattr?branch=master
+
+Flake8 Plone hasattr plugin
+===========================
+Python standard ``hasattr`` is considered harmful (within Plone projects).
+
+The (hidden) problem with ``hasattr`` is that it swallows exceptions,
+which in your normal business logic you really don't want to.
+
+Specially in Plone context that could mean swallowing a database error,
+or a permission exception, etc.
+
+Take, for instance, the following code:
+
+.. code-block:: python
+
+    >>> class Foo(object):
+    ...     @property
+    ...     def my_attr(self):
+    ...         raise ValueError('nope, nope, nope')
+    ...
+    >>> bar = Foo()
+    >>> bar.my_attr
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      File "<stdin>", line 4, in my_attr
+    ValueError: nope, nope, nope
+    >>> hasattr(Foo, 'my_attr')
+    True
+    >>> hasattr(bar, 'my_attr')
+    False
+    >>> getattr(bar, 'my_attr', None)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      File "<stdin>", line 4, in my_attr
+    ValueError: nope, nope, nope
+
+This plugin is based on a python checker that was in `plone.recipe.codeanalysis`_.
+
+Install
+-------
+Install with pip:
+
+.. code-block:: console
+
+    $ pip install flake8-plone-hasattr
+
+Requirements
+------------
+- Python 3.7, 3.8, 3.9, 3.10 and pypy3
+- flake8
+
+License
+-------
+GPL 2.0
+
+.. _`plone.recipe.codeanalysis`: https://pypi.python.org/pypi/plone.recipe.codeanalysis
+
+.. -*- coding: utf-8 -*-
+
+Changelog
+=========
+
+1.0.0 (2022-10-09)
+------------------
+
+- Pin dependencies. [gforcada]
+
+- Test/QA with GitHub actions. [gforcada]
+
+- Overhaul testing. [gforcada]
+
+0.2.post0 (2017-05-31)
+----------------------
+- Release universal wheels
+  [gforcada]
+
+0.2 (2017-05-31)
+----------------
+- Added support for sublimetext (stdin/filename handling)
+  [iham]
+
+0.1 (2015-09-15)
+----------------
+- Initial release
+  [gforcada]
+
+- Create the flake8 plugin per se.
+  [gforcada]
+
+
+
+

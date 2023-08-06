@@ -1,0 +1,15 @@
+CHANGES.rst
+LICENSE
+README.rst
+flake8_plone_hasattr.py
+requirements.txt
+run_tests.py
+setup.cfg
+setup.py
+flake8_plone_hasattr.egg-info/PKG-INFO
+flake8_plone_hasattr.egg-info/SOURCES.txt
+flake8_plone_hasattr.egg-info/dependency_links.txt
+flake8_plone_hasattr.egg-info/entry_points.txt
+flake8_plone_hasattr.egg-info/not-zip-safe
+flake8_plone_hasattr.egg-info/requires.txt
+flake8_plone_hasattr.egg-info/top_level.txt
