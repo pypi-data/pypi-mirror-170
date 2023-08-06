@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pipim.py
+pyproject.toml
+setup.cfg
+.github/workflows/python-publish-test.yml
+.github/workflows/python-publish.yml
+pipim.egg-info/PKG-INFO
+pipim.egg-info/SOURCES.txt
+pipim.egg-info/dependency_links.txt
+pipim.egg-info/entry_points.txt
+pipim.egg-info/top_level.txt
