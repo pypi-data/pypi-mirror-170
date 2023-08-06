@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - develop
+    tags:
+      - '*'
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@master
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade --requirement tests_requirements.txt
+        python -m pip install --upgrade .
+    - name: Run tox
+      run: tox
+    - name: Build a package tarball
+      run: python -m build -n
+    - name: Publish package to TestPyPI
+      uses: pypa/gh-action-pypi-publish@master
+      if: >-
+        github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags')
+      with:
+        user: __token__
+        password: ${{ secrets.test_pypi_password }}
+        repository_url: https://test.pypi.org/legacy/
+    - name: Publish package to PyPI
+      uses: pypa/gh-action-pypi-publish@master
+      if: >-
+        github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags')
+      with:
+        user: __token__
+        password: ${{ secrets.pypi_password }}

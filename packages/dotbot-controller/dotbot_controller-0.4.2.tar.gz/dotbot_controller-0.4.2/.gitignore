@@ -1,0 +1,10 @@
+*.xml
+*.iml
+*.json
+.idea/
+*.pyc
+*.gz
+*.whl
+*.egg-info/
+.coverage
+.tox/
