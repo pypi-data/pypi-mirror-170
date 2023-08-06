@@ -1,0 +1,12 @@
+sparrow/loader/__init__.py,sha256=sbAa1ajN0vK_j05XB431GRMzW4-oeSEZ07pdVrEbun4,1627
+sparrow/loader/converter.py,sha256=6wjx7vkuYF2bDdIjq6e7udSUiPLqRJJM7F0T8oqGPv0,10108
+sparrow/loader/display.py,sha256=nS7o3Lh4IRM7bIlPQDxVuR3v1Yu8B7lm230ElIUvliU,4317
+sparrow/loader/fields.py,sha256=trBdEswNstYfvO7qiN7CqeiyTsq-CqYF3ZcYwulIpmM,5926
+sparrow/loader/interface.py,sha256=C34GJ7miw-dibvTGyhoJU8dLz8yE09L_9c6bpWG9W3k,1622
+sparrow/loader/schema.py,sha256=HUxcdv9jLHpxxef8sp5FKS3dOIjG06qsBgwbJNU1i4E,12933
+sparrow/loader/schema_checking.py,sha256=EHuTnVzMKT0SmsxOXifjRODcKd-G_oWEjov4TXbd-cc,1392
+sparrow/loader/sparrow-db-models.pickle,sha256=Xw4wRiHjjKk7JHa6AqOwC_ex-kwnoPaFhY3mDXX4Wus,136624
+sparrow/loader/util.py,sha256=2j-pJzglRF8YQxcHzukY4RsGmSglcUXDw-Kyr_VcwpI,1675
+sparrow_loader-1.0.1.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+sparrow_loader-1.0.1.dist-info/METADATA,sha256=XhbEbHt8KrgkGk5ZeGn0T5TDDnuEXy06hgRPUnYrEb4,1474
+sparrow_loader-1.0.1.dist-info/RECORD,,
