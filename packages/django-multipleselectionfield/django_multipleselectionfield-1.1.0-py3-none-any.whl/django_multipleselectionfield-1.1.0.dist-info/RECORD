@@ -1,0 +1,12 @@
+multipleselectionfield/__init__.py,sha256=v-DR8iuXhvdKt8aOw-Ixn-OW99wW_MWw-NpLupl0spo,143
+multipleselectionfield/utils.py,sha256=1n2GkcVJKz3rKPXBVzbdyGBJK6ZDEtb2qSWfEYvN8H0,410
+multipleselectionfield/validators.py,sha256=82CbvibzoE_TBW6jHM7rx3qAr-SHj0YJVb3edM3RIz0,423
+multipleselectionfield/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multipleselectionfield/db/fields.py,sha256=4-7kYuwpKL_mL-wumzQBH4PvKClKffHFFy8kjRJHzJI,4337
+multipleselectionfield/forms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multipleselectionfield/forms/fields.py,sha256=C2ORb9fzLZBl5amjWbkGibOvRoM8d_c2saH5yZ1ebnI,761
+django_multipleselectionfield-1.1.0.dist-info/COPYING.LGPLv3,sha256=WBshugkCJIQ4hLVF6xPlOot8udVLcqHonCLO157gays,7633
+django_multipleselectionfield-1.1.0.dist-info/METADATA,sha256=80yAk8GgL1QdGEiV5f1m_YrSl1713PKJAnWT3_11ok8,3569
+django_multipleselectionfield-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_multipleselectionfield-1.1.0.dist-info/top_level.txt,sha256=RCblG6JYqBMyjsYL30Y627Cg37FVGGBPkAmVJBQfq28,23
+django_multipleselectionfield-1.1.0.dist-info/RECORD,,
