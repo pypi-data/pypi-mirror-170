@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: RingsPy
+Version: 0.2.0
+Summary: A geometric generation tool for prismatic cellular solids
+Home-page: https://github.com/kingyin3613/RingsPy/
+Author: Hao Yin
+Author-email: haoyin2022@u.northwestern.edu
+License: GPL-3.0
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests (>=2)
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib (>=3.2.2)
+Requires-Dist: hexalattice
+Requires-Dist: vtk
+Provides-Extra: testing
+Requires-Dist: pytest (>=6.0) ; extra == 'testing'
+Requires-Dist: pytest-cov (>=2.0) ; extra == 'testing'
+Requires-Dist: tox (>=3.24) ; extra == 'testing'
+
+README.md
+
