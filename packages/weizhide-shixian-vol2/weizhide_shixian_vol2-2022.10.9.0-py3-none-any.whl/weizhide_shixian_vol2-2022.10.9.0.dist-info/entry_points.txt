@@ -1,0 +1,4 @@
+[console_scripts]
+WeizhideShixianVol2 = WeizhideShixianVol2.__main__:main
+weizhide-shixian-vol2 = WeizhideShixianVol2.__main__:main
+
