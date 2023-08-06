@@ -1,0 +1,37 @@
+[project]
+name = "netifaces2"
+version = "0.0.3"
+requires-python = ">=3.5"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+authors = [
+{email = "samuelyvon9@gmail.com"},
+{name = "Samuel Yvon"}
+]
+maintainers = [
+{name = "Samuel Yvon", email = "samuelyvon9@gmail.com"}
+]
+
+[build-system]
+requires = ["maturin>=0.13,<0.14"]
+build-backend = "maturin"
+
+[tool.isort]
+profile = "black"
+
+[tool.maturin]
+bindings = "pyo3"
+# Control the platform tag on linux
+# compatibility = "manylinux2014"
+
+[project.optional-dependencies]
+dev = [
+    "black >= 22.10.0",
+    "isort >= 5.10.1"
+]
+
+
+
