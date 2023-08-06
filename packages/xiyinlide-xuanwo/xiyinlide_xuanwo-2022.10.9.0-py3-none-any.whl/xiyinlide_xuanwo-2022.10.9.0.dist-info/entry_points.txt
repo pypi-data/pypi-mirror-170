@@ -1,0 +1,4 @@
+[console_scripts]
+XiyinlideXuanwo = XiyinlideXuanwo.__main__:main
+xiyinlide-xuanwo = XiyinlideXuanwo.__main__:main
+
