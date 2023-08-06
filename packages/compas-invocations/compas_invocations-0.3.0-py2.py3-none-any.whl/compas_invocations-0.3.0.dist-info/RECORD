@@ -1,0 +1,12 @@
+compas_invocations/__init__.py,sha256=gYcf9pvc5RHxXBYX4uPdLjXu7q-4Jo1Nhy3mt4cKkB0,143
+compas_invocations/build.py,sha256=7t5dBxKyZ81Ds1HLWJXANyiIS86JzJRvkMNQ03eqW6c,4775
+compas_invocations/console.py,sha256=cIlfywOjTmsk6BCbILYpATFe8jFvb8--zs7yQRJ2uCY,2245
+compas_invocations/docs.py,sha256=ZF1J0yKcpEtSkMg-e70aInU93bF_m5lYoVXS8DJdzrM,1234
+compas_invocations/style.py,sha256=LXkZL8jjJXJuQ8RoqK0Dlca01d4JHyR_Z3jhvMftNwo,823
+compas_invocations/tests.py,sha256=PWiAIIhjO9dt1yscZrNGRmF6xWAkGenGPg6hxq48o-Q,610
+compas_invocations-0.3.0.dist-info/AUTHORS.md,sha256=yAu5bJMzyS9OrEUvvkBwJF3gPHqZsBTq0h675jGxS4Q,99
+compas_invocations-0.3.0.dist-info/LICENSE,sha256=uce-Jqr1wwXEwzIVLhEGLQvgFCNYKdbyxkUeeyGXONk,1048
+compas_invocations-0.3.0.dist-info/METADATA,sha256=1uYOoCsz_CUllzWnbulDbMzg5vHbqHUuQCkAfemxC4Y,1801
+compas_invocations-0.3.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+compas_invocations-0.3.0.dist-info/top_level.txt,sha256=LKPKsHmRlbHeXBSdnNDju6auK-4_XnmPSqhMVYeFjlo,19
+compas_invocations-0.3.0.dist-info/RECORD,,
