@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+RFM69Serial/__init__.py
+RFM69Serial/device.py
+RFM69Serial/packet.py
+rfm69_serial.egg-info/PKG-INFO
+rfm69_serial.egg-info/SOURCES.txt
+rfm69_serial.egg-info/dependency_links.txt
+rfm69_serial.egg-info/requires.txt
+rfm69_serial.egg-info/top_level.txt
