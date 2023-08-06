@@ -1,0 +1,8 @@
+custom_operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+custom_operators/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+custom_operators/operators/true_division.py,sha256=f5-AuOPqhe2n_Kc7KXaxOmoXeXG5l81te8H__YpPexs,919
+custom_operators_ChrisPrein-1.0.0.dist-info/LICENSE,sha256=FFVgpCVC3mMjcRIHBKyRfdJHqHOL4DSRjI-ogLTjXYI,1088
+custom_operators_ChrisPrein-1.0.0.dist-info/METADATA,sha256=5tXFoLExvyNzmqNP6vvFsfdIhO1ZQ2OjCR2KVXS6V0c,553
+custom_operators_ChrisPrein-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+custom_operators_ChrisPrein-1.0.0.dist-info/top_level.txt,sha256=isg2ii3mSX2X7TM43bnsrC9tT-Vx1Eb2Hu3HGbIfdVE,17
+custom_operators_ChrisPrein-1.0.0.dist-info/RECORD,,
