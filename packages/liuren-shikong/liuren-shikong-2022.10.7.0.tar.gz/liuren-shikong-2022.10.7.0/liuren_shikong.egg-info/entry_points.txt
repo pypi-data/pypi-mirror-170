@@ -1,0 +1,4 @@
+[console_scripts]
+LiurenShikong = LiurenShikong.__main__:main
+liuren-shikong = LiurenShikong.__main__:main
+
