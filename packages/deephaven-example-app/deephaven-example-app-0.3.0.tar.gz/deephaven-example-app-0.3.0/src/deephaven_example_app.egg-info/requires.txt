@@ -1,0 +1,2 @@
+deephaven-server>=0.17.0
+websocket-client
