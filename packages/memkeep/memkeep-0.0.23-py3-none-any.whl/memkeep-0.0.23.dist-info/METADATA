@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: memkeep
+Version: 0.0.23
+Summary: Saves variable and lists
+Author-email: Stratus <devindunnc@gmail.com>
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Project-URL: Bug Tracker, https://github.com/st-stratus/memkeep/issues
+Project-URL: Homepage, https://github.com/st-stratus/memkeep
+Description-Content-Type: text/markdown
+
+Saves data so you dont have to re-define variables or lists after your script restarts
