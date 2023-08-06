@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tv-audio-extractor
+Version: 0.1.1
+Summary: Extracts audio from tv shows and tags them appropriately
+Author: David Padbury
+Author-email: david@davidpadbury.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: parse-torrent-title (>=2.4,<3.0)
+Requires-Dist: rich (>=12.6.0,<13.0.0)
+Requires-Dist: typer (>=0.6.1,<0.7.0)
