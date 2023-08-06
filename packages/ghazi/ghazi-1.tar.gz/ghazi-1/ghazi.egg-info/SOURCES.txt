@@ -1,0 +1,6 @@
+setup.py
+ghazi/__init__.py
+ghazi.egg-info/PKG-INFO
+ghazi.egg-info/SOURCES.txt
+ghazi.egg-info/dependency_links.txt
+ghazi.egg-info/top_level.txt

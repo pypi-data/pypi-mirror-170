@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ghazi
+Version: 1
+Summary: Ghazi library
+Home-page: UNKNOWN
+Author: Ghazi
+Author-email: Ghazi123@mej.com
+License: UNKNOWN
+Keywords: python,ghazi
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Ghazi library
+
