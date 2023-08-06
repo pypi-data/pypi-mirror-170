@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ola-mundo-pack
+Version: 0.0.1
+Summary: Criar uma aplicação e empacotar
+Home-page: https://github.com/JeffersonMarioto/ola-mundo-pack.git
+Author: Jefferson
+Author-email: jefferson772@hotmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# ola-mundo-pack
+
+Description. 
+The package ola-mundo-pack is used to:
+	- discar / retorna OlÃ¡ mundo
+	
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install ola-mundo-pack
+
+```bash
+pip install ola-mundo-pack
+```
+
+## Author
+Jefferson
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
