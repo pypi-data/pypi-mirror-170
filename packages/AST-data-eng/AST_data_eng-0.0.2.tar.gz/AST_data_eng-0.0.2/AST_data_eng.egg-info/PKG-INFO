@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: AST-data-eng
+Version: 0.0.2
+Summary: Data engineering for large scale geospatial datasets
+Home-page: http://github.com/celinerobi/
+Author: Celine Robinson
+Author-email: <cscrobi@gmail.com>
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+License-File: LICENSE
+
+BLAH BLAH BLAH Do later
