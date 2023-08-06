@@ -1,0 +1,18 @@
+[project]
+name = "torrent2magnet"
+version = "0.0.1"
+authors = [
+  { name="MiNG TSE", email="m@ming.club" },
+]
+description = "分析 btbtt.com 網址，批量轉成 magnet。"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tsmhome"
+"Bug Tracker" = "https://github.com/tsmhome/torrent2magnet"

@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/torrent2magnet/__init__.py
+src/torrent2magnet/example.py
+src/torrent2magnet.egg-info/PKG-INFO
+src/torrent2magnet.egg-info/SOURCES.txt
+src/torrent2magnet.egg-info/dependency_links.txt
+src/torrent2magnet.egg-info/top_level.txt
