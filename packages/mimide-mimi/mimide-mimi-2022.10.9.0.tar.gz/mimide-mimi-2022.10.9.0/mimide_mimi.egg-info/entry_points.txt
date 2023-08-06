@@ -1,0 +1,4 @@
+[console_scripts]
+MimideMimi = MimideMimi.__main__:main
+mimide-mimi = MimideMimi.__main__:main
+
