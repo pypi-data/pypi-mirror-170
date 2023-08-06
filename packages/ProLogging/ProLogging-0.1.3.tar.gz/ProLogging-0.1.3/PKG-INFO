@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ProLogging
+Version: 0.1.3
+Summary: A simple logger for python
+Home-page: https://github.com/bbenouarets/prologging
+Author: Björn Benouarets
+Author-email: contact@benouarets.net
+License: MIT license
+Project-URL: Documentation, https://github.com/bbenouarets/prologging
+Project-URL: Source, https://github.com/bbenouarets/prologging
+Project-URL: Download, https://github.com/bbenouarets/prologging
+Description-Content-Type: text/markdown; charset=UTF-8
+
+# pyPrettyLog
