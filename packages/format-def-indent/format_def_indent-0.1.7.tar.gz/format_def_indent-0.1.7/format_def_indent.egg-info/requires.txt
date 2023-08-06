@@ -1,0 +1,2 @@
+jupyter-notebook-parser>=0.1.4
+tokenize-rt>=3.0.1
