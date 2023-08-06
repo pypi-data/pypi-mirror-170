@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+williamarsfirst/__init__.py
+williamarsfirst/hello.py
+williamarsfirst.egg-info/PKG-INFO
+williamarsfirst.egg-info/SOURCES.txt
+williamarsfirst.egg-info/dependency_links.txt
+williamarsfirst.egg-info/top_level.txt
