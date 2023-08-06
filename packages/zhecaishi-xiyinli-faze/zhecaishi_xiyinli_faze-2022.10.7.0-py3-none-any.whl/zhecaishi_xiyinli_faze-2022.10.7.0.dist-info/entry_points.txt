@@ -1,0 +1,4 @@
+[console_scripts]
+ZhecaishiXiyinliFaze = ZhecaishiXiyinliFaze.__main__:main
+zhecaishi-xiyinli-faze = ZhecaishiXiyinliFaze.__main__:main
+
