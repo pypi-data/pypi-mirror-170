@@ -1,0 +1,4 @@
+[console_scripts]
+SohamTushouNengliangLiaoyu = SohamTushouNengliangLiaoyu.__main__:main
+soham-tushou-nengliang-liaoyu = SohamTushouNengliangLiaoyu.__main__:main
+
