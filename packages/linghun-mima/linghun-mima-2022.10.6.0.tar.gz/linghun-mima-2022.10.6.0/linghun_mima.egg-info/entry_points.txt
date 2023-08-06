@@ -1,0 +1,4 @@
+[console_scripts]
+LinghunMima = LinghunMima.__main__:main
+linghun-mima = LinghunMima.__main__:main
+
