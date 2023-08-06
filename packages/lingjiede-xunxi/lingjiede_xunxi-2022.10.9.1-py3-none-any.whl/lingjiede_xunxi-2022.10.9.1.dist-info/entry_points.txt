@@ -1,0 +1,4 @@
+[console_scripts]
+LingjiedeXunxi = LingjiedeXunxi.__main__:main
+lingjiede-xunxi = LingjiedeXunxi.__main__:main
+
