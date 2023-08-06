@@ -1,0 +1,9 @@
+phonetic_manipulation/__init__.py,sha256=pgj01SZpDx3Jlp6p4Vf3bezTbH2PxaPJyi6eTXPndEA,81
+phonetic_manipulation/phonetic_manipulation.py,sha256=foQSk2AedJoI689M9giGMuCdJwZBjovn-TlUPA8D0SA,16048
+phonetic_manipulation/data/diacritic_mappings.csv,sha256=ydjbHhxz3s9pomX7HLtTneoGiCevYW7y3-NprBY9qfY,818
+phonetic_manipulation/data/phoneset_mapping.csv,sha256=V6e8he0mDj8PIm0v8fN75AT3YwHw0goukyPM7n7yP5w,11097
+phonetic_manipulation-0.0.13.dist-info/LICENSE,sha256=b2PJHScHT1kPGyOdDwUWZ1vfrKb3aoPgrOoSu3OUp_U,1068
+phonetic_manipulation-0.0.13.dist-info/METADATA,sha256=4tKM_HSW9EucAEYILju4ryNp6vtZPRt3gNtr39SwI9U,695
+phonetic_manipulation-0.0.13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+phonetic_manipulation-0.0.13.dist-info/top_level.txt,sha256=RE1XvrvGg6L1aPytzmA012sojcqrc4DtRbQUsjxRJ0w,22
+phonetic_manipulation-0.0.13.dist-info/RECORD,,

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: phonetic-manipulation
+Version: 0.0.13
+Summary: A package for manipulating phonetic transcriptions
+Home-page: UNKNOWN
+Author: Denny O'Shea
+Author-email: denjaminpip@gmail.com
+License: UNKNOWN
+Keywords: python,phonetics,phonology,computational linguistics,IPA conversion
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pandas
+
+This package is mainly serves the function of taking phonetic transcriptions and converting it to IPA from X-SAMPA or SAMPA and vice versa.
+You can provide your own list of phones for the language you're working with in order to condense the data. No matter what, it will provide you all phones organized
+by their feature categories.
+
