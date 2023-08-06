@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Light-Pipe
+Version: 0.1
+Home-page: https://github.com/rcorrero/light-pipe
+Author: Richard Correro
+Author-email: rcorrero@stanford.edu
+License: BSD 3-Clause
+License-File: LICENSE
+Requires-Dist: gdal (>=3.5.1)
+
+
+    A open source library that facilitates the development of highly-efficient,
+    massively-scalable geospatial data pipelines for use in machine-learning 
+    applications.
+    
