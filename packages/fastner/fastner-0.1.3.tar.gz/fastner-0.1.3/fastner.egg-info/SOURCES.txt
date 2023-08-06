@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+fastner/__init__.py
+fastner/dataset.py
+fastner/trainer.py
+fastner/training.py
+fastner.egg-info/PKG-INFO
+fastner.egg-info/SOURCES.txt
+fastner.egg-info/dependency_links.txt
+fastner.egg-info/requires.txt
+fastner.egg-info/top_level.txt
