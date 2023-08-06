@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: repogen
+Version: 0.0.0
+Home-page: 
+Author: 
+Author-email: 
+License: Proprietary
+Project-URL: Documentation, https://docs.rootski.io
+Project-URL: Source, https://github.com
+Keywords: <Add keywords here>
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6.*
+Description-Content-Type: text/markdown; charset=UTF-8
+Requires-Dist: pulumi (<4.0.0,>=3.0.0)
+Requires-Dist: pulumi-github
+Requires-Dist: pynacl
+Requires-Dist: GitPython
+Requires-Dist: python-dotenv
+Requires-Dist: phitoduck-projen
+Requires-Dist: typer
+Requires-Dist: rich
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: all
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: pytest-xdist ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+
+# 📣 Welcome to `repogen`!
+
+------------
+
+> ⚠️ Warning
+>
+> This project is in rapid development. Expect breaking API changes.
+
+The goal of this project is to automate the creation and configuration of GitHub repositories.
+
+The idea is that any team working with Python could use this repository as a reference implemetation
+and customize their own platform in a way that fits their team's opinions.
+
+There are two components to this platform:
+
+1. [`phitoduck-projen`](https://github.com/phitoduck/phito-projen), a library of Python-based `projen` "Components" (building blocks) for generating scaffolded Python projects
+2. `repogen`, a CLI tool for creating configured GitHub repositories with boilerplate projects
+
+## Quick Start
+
+```bash
+brew install nodejs # for phitoduck-projen
+pip install -e .
+
+# create a repository with a scaffolded python project, save the state 
+GITHUB_TOKEN="ghp_xxxx" \
+PULUMI_ACCESS_TOKEN="pul-xxxx" \
+    repogen create-repo <name>
+
+# clean up the repository
+GITHUB_TOKEN="ghp_xxxx" \
+PULUMI_ACCESS_TOKEN="pul-xxxx" \
+    repogen destroy-repo <name>
+```
+

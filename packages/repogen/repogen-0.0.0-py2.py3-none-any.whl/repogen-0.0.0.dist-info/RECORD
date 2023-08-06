@@ -1,0 +1,16 @@
+repogen/__init__.py,sha256=GE3kdZc6-C4iuIxolgOhU5WJ0CLYyRgBkB12BcPmLnM,27
+repogen/cli.py,sha256=o5RJS0_1TTDhswFxvxFhroU9HZExuATBgpweJ1j-1Bo,454
+repogen/repo_program.py,sha256=u66VueQ1xx0hxpUpnTszLBLPlpEwhC68a6Cx2UNRiU0,3205
+repogen/custom_resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repogen/custom_resources/github_action_environment_secret/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repogen/custom_resources/github_action_environment_secret/errors.py,sha256=ARosUfjWRBbinl8o6yetgm5DZsSXH3MK2qQqszP4EVg,512
+repogen/custom_resources/github_action_environment_secret/resource.py,sha256=Oy8XxeOh3DvlcEaBqWwdGVddPYhCsB0ur06L8-wPh30,2803
+repogen/custom_resources/github_action_environment_secret/secrets_utils.py,sha256=qr1IP7n2vZns0RIsalQht_2dOPLXWDOx2xWOUB_mCqY,4168
+repogen/custom_resources/scaffolded_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repogen/custom_resources/scaffolded_project/github_repo.py,sha256=7J4uYc4QZuslhDi9b6xZbgNDPnbfv_AaKsjiiO6J82M,3147
+repogen/custom_resources/scaffolded_project/resource.py,sha256=dhVvbENZmvkQm5nD9YDzR_ujp-5m51W62Gve9y1PCOo,2071
+repogen-0.0.0.dist-info/METADATA,sha256=9PjyCrV-wPyJa9fuMKT4B5I9wXlDHoJ0z9KABgOm_7c,2325
+repogen-0.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+repogen-0.0.0.dist-info/entry_points.txt,sha256=5i1_8f3eaJrTd_mH2oDQro0bXVwygorzFhhERntV12Y,44
+repogen-0.0.0.dist-info/top_level.txt,sha256=xQTMHflCOp7YORXog9Q6UzfoGyLnQEpqgLvSw4K0x1c,8
+repogen-0.0.0.dist-info/RECORD,,

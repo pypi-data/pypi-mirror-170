@@ -1,0 +1,2 @@
+[console_scripts]
+repogen = repogen.cli:run
