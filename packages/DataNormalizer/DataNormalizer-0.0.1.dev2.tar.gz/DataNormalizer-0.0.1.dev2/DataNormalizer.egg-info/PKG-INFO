@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: DataNormalizer
+Version: 0.0.1.dev2
+Summary: Package to help with normalizing data needed for the platform!
+Author: Realstats
+Author-email: hello@realstats.com
+License: MIT
+Keywords: data DataNormalizer
+License-File: LICENSE
+
+Library for data scientists to normalize datasets on modules
