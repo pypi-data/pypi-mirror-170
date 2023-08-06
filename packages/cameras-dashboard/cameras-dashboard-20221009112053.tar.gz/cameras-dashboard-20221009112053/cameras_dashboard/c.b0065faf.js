@@ -1,0 +1,1 @@
+import{ar as a,am as t,ao as o,an as e,av as s,ap as i}from"./c.fc0bbf07.js";import{a as c}from"./c.ebfe053a.js";const m=["relative","total","date","time","datetime"],n=a([t({entity:o(),name:e(o()),icon:e(o()),image:e(o()),secondary_info:e(o()),format:e(s(m)),state_color:e(i()),tap_action:e(c),hold_action:e(c),double_tap_action:e(c)}),o()]);export{m as T,n as e};
