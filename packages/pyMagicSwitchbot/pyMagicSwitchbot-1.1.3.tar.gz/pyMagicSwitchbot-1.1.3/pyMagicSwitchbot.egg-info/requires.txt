@@ -1,0 +1,3 @@
+pycryptodome
+bleak
+bleak-retry-connector>=1.5.0
