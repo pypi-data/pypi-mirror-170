@@ -1,0 +1,5 @@
+setup.py
+clipped.egg-info/PKG-INFO
+clipped.egg-info/SOURCES.txt
+clipped.egg-info/dependency_links.txt
+clipped.egg-info/top_level.txt
