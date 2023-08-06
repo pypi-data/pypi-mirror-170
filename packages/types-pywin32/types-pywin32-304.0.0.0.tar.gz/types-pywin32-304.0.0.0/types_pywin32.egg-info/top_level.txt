@@ -1,0 +1,5 @@
+_win32typing-stubs
+pythoncom-stubs
+pythonwin-stubs
+win32-stubs
+win32comext-stubs
