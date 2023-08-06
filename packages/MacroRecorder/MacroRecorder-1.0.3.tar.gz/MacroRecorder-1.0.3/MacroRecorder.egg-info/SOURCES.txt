@@ -1,0 +1,9 @@
+README.md
+setup.py
+MacroRecorder.egg-info/PKG-INFO
+MacroRecorder.egg-info/SOURCES.txt
+MacroRecorder.egg-info/dependency_links.txt
+MacroRecorder.egg-info/requires.txt
+MacroRecorder.egg-info/top_level.txt
+macro_recorder/__init__.py
+macro_recorder/thread.py
