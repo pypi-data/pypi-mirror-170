@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/CliArgTools.egg-info/PKG-INFO
+src/CliArgTools.egg-info/SOURCES.txt
+src/CliArgTools.egg-info/dependency_links.txt
+src/CliArgTools.egg-info/top_level.txt
+src/cliargtools/__init__.py
+src/cliargtools/module.py
