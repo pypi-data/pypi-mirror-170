@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+noklam/__init__.py
+noklam/_modidx.py
+noklam/core.py
+noklam.egg-info/PKG-INFO
+noklam.egg-info/SOURCES.txt
+noklam.egg-info/dependency_links.txt
+noklam.egg-info/entry_points.txt
+noklam.egg-info/not-zip-safe
+noklam.egg-info/requires.txt
+noklam.egg-info/top_level.txt
