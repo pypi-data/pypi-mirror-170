@@ -1,0 +1,12 @@
+README.rst
+setup.py
+azure_alerts/VERSION
+azure_alerts/__init__.py
+azure_alerts/__main__.py
+azure_alerts/azure_alerts_check.py
+azure_alerts_plugin.egg-info/PKG-INFO
+azure_alerts_plugin.egg-info/SOURCES.txt
+azure_alerts_plugin.egg-info/dependency_links.txt
+azure_alerts_plugin.egg-info/entry_points.txt
+azure_alerts_plugin.egg-info/not-zip-safe
+azure_alerts_plugin.egg-info/top_level.txt
