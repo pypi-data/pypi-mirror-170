@@ -1,0 +1,52 @@
+version = 1
+
+[development]
+LOGGING_FILE = false
+LOGGING_FILENAME = "log.log"
+LOGGING_LEVEL = "DEBUG"
+SENTRY = false
+SENTRY_DSN = "https://5c65c5ee7b0b4f99bc64934848b66efd@sentry.spdigital.sg/128"
+SENTRY_LOG_LEVEL = "INFO"
+SENTRY_EVENT_LEVEL = "WARNING"
+METRIC_SYSTEM = "NA"
+NEPTUNE_PROJECT = "chansinhui/testinghandler"
+MLFLOW_EXPERIMENT_NAME = "mlflow_test"
+MLFLOW_TRACKING_URI = "http://localhost:1234"
+
+[formatters]
+    [formatters.standardFormatter]
+    format="%(asctime)s %(levelname)s %(filename)s:%(lineno)d %(message)s"
+
+[handlers]
+    [handlers.StreamHandler]
+    class="logging.StreamHandler"
+    level="DEBUG"
+    formatter="standardFormatter"
+    stream="ext://sys.stdout"
+
+    [handlers.fileHandler]
+    class="logging.FileHandler"
+    level="DEBUG"
+    formatter="standardFormatter"
+    filename="log.log"
+    mode="a"
+
+    [handlers.sentry]
+    class="sentry_sdk.integrations.logging.EventHandler"
+    level="DEBUG"
+
+[loggers]
+    [loggers.root]
+    level="INFO"
+    handlers=["StreamHandler"]
+    propagate=0
+
+    [loggers.file]
+    level="INFO"
+    handlers=["StreamHandler","fileHandler"]
+    qualname="file"
+    propagate=0
+
+
+
+

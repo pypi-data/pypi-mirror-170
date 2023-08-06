@@ -1,0 +1,4 @@
+[development]
+LOGGING_FILE = true
+LOGGING_FILENAME = "log.log"
+METRIC_SYSTEM = "MLFLOW"

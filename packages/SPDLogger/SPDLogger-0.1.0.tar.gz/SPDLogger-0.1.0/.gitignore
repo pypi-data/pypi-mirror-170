@@ -1,0 +1,14 @@
+dist
+.pytest_cache
+mlflow.db
+.DS_Store
+*.egg-info
+__pycache__
+*.log
+mlruns/
+.neptune/
+*dist
+linear_model
+*.pkl
+*.diff
+*.eggs

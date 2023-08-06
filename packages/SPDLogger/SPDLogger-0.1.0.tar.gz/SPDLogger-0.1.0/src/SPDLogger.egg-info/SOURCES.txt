@@ -1,0 +1,39 @@
+.gitignore
+Dockerfile
+README.md
+pyproject.toml
+setup.py
+examples/app.py
+examples/conf.toml
+examples/example.ipynb
+examples/images/mlflow file.png
+examples/images/mlflow metrics charts.png
+examples/images/mlflow metrics metadata.png
+examples/images/mlflow metrics.png
+examples/images/mlflow model.png
+examples/images/mlflow params dict.png
+examples/images/mlflow params.png
+examples/images/mlflow params2.png
+examples/images/mlflow registered model.png
+examples/images/neptune file.png
+examples/images/neptune metrics charts.png
+examples/images/neptune metrics metadata.png
+examples/images/neptune metrics.png
+examples/images/neptune model.png
+examples/images/neptune params dict.png
+examples/images/neptune params.png
+examples/images/neptune params2.png
+examples/images/neptune registered model.png
+src/SPDLogger.egg-info/PKG-INFO
+src/SPDLogger.egg-info/SOURCES.txt
+src/SPDLogger.egg-info/dependency_links.txt
+src/SPDLogger.egg-info/requires.txt
+src/SPDLogger.egg-info/top_level.txt
+src/spdlogger/__init__.py
+src/spdlogger/config.py
+src/spdlogger/logger.py
+src/spdlogger/version.py
+src/spdlogger/config/.env
+src/spdlogger/config/.secrets.toml
+src/spdlogger/config/settings.toml
+tests/test_import.py
