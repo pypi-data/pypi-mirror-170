@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+decouple.py
+setup.cfg
+setup.py
+python_decouple_x.egg-info/PKG-INFO
+python_decouple_x.egg-info/SOURCES.txt
+python_decouple_x.egg-info/dependency_links.txt
+python_decouple_x.egg-info/not-zip-safe
+python_decouple_x.egg-info/requires.txt
+python_decouple_x.egg-info/top_level.txt
