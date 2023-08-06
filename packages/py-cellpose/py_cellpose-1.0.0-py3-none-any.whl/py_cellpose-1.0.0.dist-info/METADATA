@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: py-cellpose
+Version: 1.0.0
+Summary: Python cellpose.
+Home-page: https://git.embl.de/grp-cba/embryo-3D-chromatin-tracing-workflow/-/tree/main/code/python/py-cellpose
+Author: Arif Khan
+Author-email: arif.khan@embl.com
+License: MIT
+Keywords: cellpose python package
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Python package for using cellpose scripts
