@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: LANDrop
+Version: 0.4.0a1
+Summary: LANDrop is a cross-platform tool that you can use to conveniently transfer photos, videos, and other types of files to other devices on the same local network.
+Home-page: https://github.com/heiheiyoyo/PyLANDrop
+Author: heiheiyoyo
+Author-email: 543425864@qq.com
+License: BSD-3
+License-File: LICENSE
+License-File: LICENSE.icon
