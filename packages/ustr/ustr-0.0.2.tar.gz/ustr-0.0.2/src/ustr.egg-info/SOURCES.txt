@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/ustr.py
+src/ustr.egg-info/PKG-INFO
+src/ustr.egg-info/SOURCES.txt
+src/ustr.egg-info/dependency_links.txt
+src/ustr.egg-info/top_level.txt
