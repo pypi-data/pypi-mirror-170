@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: troncos
+Version: 0.0.14
+Summary: Observability tools and boilerplate for use in Oda python apps
+Author: Karl Fredrik Haugland
+Author-email: karlfredrik.haugland@oda.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: backoff (>=1.0,<2.0)
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc (>=1.12.0,<2.0.0)
+Requires-Dist: opentelemetry-propagator-b3 (>=1.12.0,<2.0.0)
+Requires-Dist: opentelemetry-propagator-jaeger (>=1.12.0,<2.0.0)
