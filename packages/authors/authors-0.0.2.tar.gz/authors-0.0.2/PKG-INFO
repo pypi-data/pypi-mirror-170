@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: authors
+Version: 0.0.2
+Summary:  Authors of your next scientific article
+Home-page: https://github.com/j-faria/authors
+Author: João Faria
+Author-email: joao.faria@astro.up.pt
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align="center">
+
+![](authors/crowd.png)
+
+</div>
+
+```python
+>>> from authors import Authors
+>>> Authors('list.txt').AandA()
+\author{
+  J. P. Faria \inst{\ref{ia-porto}, \ref{fcup}} 
+}
+\institute{
+  Instituto de Astrofísica e Ciências do Espaço Universidade do Porto, CAUP, Rua das Estrelas, 4150-762 Porto, Portugal \label{ia-porto} \and
+  Departamento de Física e Astronomia, Faculdade de Ciências, Universidade do Porto, Rua Campo Alegre, 4169-007 Porto, Portugal \label{fcup}
+}
+```
+
+
