@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+jupyter_notebook_parser/__init__.py
+jupyter_notebook_parser/parser.py
+jupyter_notebook_parser/rewriter.py
+jupyter_notebook_parser.egg-info/PKG-INFO
+jupyter_notebook_parser.egg-info/SOURCES.txt
+jupyter_notebook_parser.egg-info/dependency_links.txt
+jupyter_notebook_parser.egg-info/top_level.txt
