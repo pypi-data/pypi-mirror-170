@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: beencrypted
+Version: 0.0.2
+Summary: Encrypt strings to the Bee Movie script and back
+Home-page: UNKNOWN
+Author: Agent-Kwabbel (Fabe Stuffken)
+License: UNKNOWN
+Keywords: python,bee,movie,bee movie,encryption,decryption,meme
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+If you want to encrypt your strings and want to have the Bee Movie script in your code than this is the Python package for you! With this package you can encrypt strings to the first part of the Bee Movie scipt and decrypt it back. Go to https://github.com/Agent-Kwabbel/Beecrypted for more information.
+

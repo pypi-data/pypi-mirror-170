@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+beencrypted/__init__.py
+beencrypted/decrypt.py
+beencrypted/encrypt.py
+beencrypted.egg-info/PKG-INFO
+beencrypted.egg-info/SOURCES.txt
+beencrypted.egg-info/dependency_links.txt
+beencrypted.egg-info/top_level.txt
