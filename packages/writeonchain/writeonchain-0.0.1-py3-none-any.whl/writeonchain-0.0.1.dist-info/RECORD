@@ -1,0 +1,11 @@
+woc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+woc/bitcoin_rpc_class.py,sha256=SQZ6VlwIErwGaqY8S2a991Yl3NP9dxJ9nQZf_heKD1Y,2617
+woc/dialog.ui,sha256=dFP9Iw2Vhn_g4CBPb7FDuINHypt1ACFBUcBHgKAiZzM,17522
+woc/main.py,sha256=is06EpHW_FEZt0IibEmWzTErflZ5INU_f3Qf6GRwuM0,6693
+woc/write.py,sha256=yEqdxRHVEqvXgCg5NiDStw57zvfCLsguqMAUxQlUmsI,5804
+writeonchain-0.0.1.dist-info/LICENSE,sha256=4Qy4kXJkti0FI8GA4rd04WjMIzqU9H9_Qis8PtoK-LY,1072
+writeonchain-0.0.1.dist-info/METADATA,sha256=jW5W17WfPGx-kmvcMcSxUDtb25vaKo03TLD0rgkMvfk,1774
+writeonchain-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+writeonchain-0.0.1.dist-info/entry_points.txt,sha256=_0fgbsrJKnUdaQerNISgH7hFINsb4Rhtufxk4nyWKHA,38
+writeonchain-0.0.1.dist-info/top_level.txt,sha256=5by2sp4HfDUtWLd3YQ8hkUlmeLoD5PQkHBYYtY1hpKc,4
+writeonchain-0.0.1.dist-info/RECORD,,
