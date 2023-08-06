@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pybmtools
+Version: 0.1.1
+Summary: A package for accessing binaMeth/bm files using libBMtools
+Home-page: https://github.com/ZhouQiangwei/pybmtools.git
+Author: momocoding
+Author-email: 
+License: UNKNOWN
+Keywords: bioinformatics,binaMeth,BM,bmtools
+Platform: UNKNOWN
+Provides-Extra: numpy input
+License-File: LICENSE.txt
+
+UNKNOWN
+
