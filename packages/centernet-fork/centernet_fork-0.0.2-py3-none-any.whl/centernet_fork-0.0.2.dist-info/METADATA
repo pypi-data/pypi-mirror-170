@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: centernet-fork
+Version: 0.0.2
+Summary: Fork of https://github.com/xingyizhou/CenterNet2
+Home-page: https://github.com/nateagr/CenterNet2
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: opencv-python
+
+UNKNOWN
+
+
