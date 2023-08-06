@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/tsm_core_models/__init__.py
+src/tsm_core_models/models.py
+src/tsm_core_models.egg-info/PKG-INFO
+src/tsm_core_models.egg-info/SOURCES.txt
+src/tsm_core_models.egg-info/dependency_links.txt
+src/tsm_core_models.egg-info/requires.txt
+src/tsm_core_models.egg-info/top_level.txt
