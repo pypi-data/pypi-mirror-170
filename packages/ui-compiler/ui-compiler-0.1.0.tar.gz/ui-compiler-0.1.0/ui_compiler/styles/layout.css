@@ -1,0 +1,74 @@
+/* horizontally center everything in a central vertical column. */
+.y-axis-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+.flex-center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #1ae8bf;
+}
+
+
+.flex-center>div {
+    background-color: #ffffff;
+    margin: 5px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+/*@media (max-width: 800px) {
+    .flex-center {
+      flex-direction: column;
+    }
+  }*/
+
+
+/*evenly horizontally space all 1st children of each 1st child */
+.space-around-rows>* {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 20px;
+}
+
+
+/* evenly horizontally space all 1st children of each 1st child and also add a vertical gap between 1st children. */
+.space-around-spaced-rows>* {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /*16:9 Aspect Ratio (divide 9 by 16 = 0.5625)*/
+    padding-top: 56.25%;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}

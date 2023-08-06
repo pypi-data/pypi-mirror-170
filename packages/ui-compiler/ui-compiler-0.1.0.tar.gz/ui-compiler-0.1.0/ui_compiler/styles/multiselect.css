@@ -1,0 +1,26 @@
+.ms-container {
+    border: 1px solid var(--purple);
+    /*
+    padding: 0.125em;
+    max-width: 17%;
+    resize: both;
+    overflow: auto;
+    */
+}
+
+
+.ms-selections {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.ms-option {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: var(--purple);
+    background-color: var(--blue);
+    color: var(--off-black);
+    padding: 0.2em;
+    cursor: pointer;
+}

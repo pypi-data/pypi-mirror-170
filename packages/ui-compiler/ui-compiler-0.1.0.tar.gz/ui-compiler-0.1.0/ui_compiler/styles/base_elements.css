@@ -1,0 +1,125 @@
+:root {
+    --off-black: #212121;
+    --blue: #0062FF;
+    --blue-clicked: #83EEFF;
+    --yellow: #F2EA02;
+    --red: #FF3300;
+    --green: #00FF66;
+    --pink: #FF0099;
+    --purple: #6E0DD0;
+}
+
+body {
+    background: var(--off-black);
+    background-image: linear-gradient(to right var(--off-black) charcoal var(--off-black));
+    font-family: Poppins sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--blue);
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    background-color: var(--blue);
+    height: 1px;
+}
+
+label {
+    color: var(--blue);
+}
+
+select {
+    background-color: WhiteSmoke;
+    color: var(--off-black);
+    font-size: 1.125em;
+}
+
+button input[type=submit] input[type=reset] {
+    background-color: var(--blue);
+    color: var(--off-black);
+    border-radius: 5px;
+    border: 2px solid var(--light-grey);
+    transition-duration: 0.2s;
+    cursor: pointer;
+    padding: 0.5em 1.33em;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--blue);
+}
+
+button.active {
+    background-color: var(--blue);
+}
+
+table,
+th,
+td {
+    border-left: 1px solid var(--blue);
+    border-right: 1px solid var(--blue);
+    text-align: center;
+}
+
+table {
+    display: table;
+    border-collapse: collapse;
+    width: 80%;
+    border-bottom: 2px solid var(--blue);
+}
+
+thead {
+    background: var(--blue);
+}
+
+tbody tr:nth-child(odd) {
+    background: WhiteSmoke;
+}
+
+tbody tr:nth-child(even) {
+    background: white;
+}
+
+
+.top-label {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0px;
+    /*
+    background-color: #8ebf42;
+    text-align: center;
+    */
+}
+
+.centered-top-label {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+}
+
+.close-btn {
+    width: 1%;
+    height: 1%;
+    position: absolute;
+    right: -1px;
+    z-index: 1000;
+    float: right;
+    top: 1px;
+}
+
+.vega-grid {
+    display: grid;
+    grid-gap: 1px;
+    place-items: center;
+    /* update number of repeats with JS */
+    grid-template-columns: repeat(2, 1fr);
+}
