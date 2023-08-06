@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: netbox-acls
+Version: 1.0.1
+Summary: A NetBox plugin for Access List management
+Home-page: https://github.com/ryanmerolle/netbox-acls
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
