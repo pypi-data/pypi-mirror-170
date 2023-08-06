@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: qrwifi
+Version: 0.1.0
+Summary: 
+Author: Louis Abraham
+Author-email: louis.abraham@yahoo.fr
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: qrcode (>=7.3.1,<8.0.0)
+Description-Content-Type: text/markdown
+
+# qrwifi
+
+Display a QR code for your wifi in the terminal.
+
+Currently only supports macOS. Create an issue if you want me to support your OS.
+
+## Installation
+
+```
+pip install qrwifi
+```
+
+## Usage
+
+```
+qrwifi
+```

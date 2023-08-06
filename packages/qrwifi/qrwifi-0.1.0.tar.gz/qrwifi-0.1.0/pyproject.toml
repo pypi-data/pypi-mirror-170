@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "qrwifi"
+version = "0.1.0"
+description = ""
+authors = ["Louis Abraham <louis.abraham@yahoo.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+qrcode = "^7.3.1"
+
+[tool.poetry.scripts]
+qrwifi = 'qrwifi.__main__:main'
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.16.0"
+flake8 = "^5.0.4"
+black = {version = "^22.8.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
