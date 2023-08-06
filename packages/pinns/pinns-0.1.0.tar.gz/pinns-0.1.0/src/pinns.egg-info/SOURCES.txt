@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/pinns/__init__.py
+src/pinns/differentiation.py
+src/pinns/geometry.py
+src/pinns/initial_conditions.py
+src/pinns/training.py
+src/pinns.egg-info/PKG-INFO
+src/pinns.egg-info/SOURCES.txt
+src/pinns.egg-info/dependency_links.txt
+src/pinns.egg-info/requires.txt
+src/pinns.egg-info/top_level.txt
