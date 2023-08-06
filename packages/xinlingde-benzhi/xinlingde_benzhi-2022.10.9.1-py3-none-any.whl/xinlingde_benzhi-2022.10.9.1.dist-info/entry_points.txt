@@ -1,0 +1,4 @@
+[console_scripts]
+XinlingdeBenzhi = XinlingdeBenzhi.__main__:main
+xinlingde-benzhi = XinlingdeBenzhi.__main__:main
+
