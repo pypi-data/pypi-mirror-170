@@ -1,0 +1,6 @@
+[papermill.engine]
+noteable=papermill_origami.engine:NoteableEngine
+
+[papermill.io]
+noteable://=papermill_origami.iorw:NoteableHandler
+
