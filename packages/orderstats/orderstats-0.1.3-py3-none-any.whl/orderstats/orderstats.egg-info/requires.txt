@@ -1,0 +1,9 @@
+dataclass_array
+matplotlib
+numpy
+scipy
+
+[dev]
+pytest>=3.4
+pylint>=2.6.0
+yapf
