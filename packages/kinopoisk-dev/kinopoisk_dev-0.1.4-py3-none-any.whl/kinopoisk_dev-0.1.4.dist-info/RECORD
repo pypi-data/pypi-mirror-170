@@ -1,0 +1,14 @@
+kinopoisk_dev/__init__.py,sha256=MFXTiyxoWj73Kx_vwUBr7F4KCvbbw8eB225-CVOVQbU,100
+kinopoisk_dev/exception.py,sha256=eTKv9oFOGgQM8NKbN3bI5C44Ma792OPoYKJ1Xti1MhA,588
+kinopoisk_dev/field.py,sha256=k_vq7H3X4QiI5eo5rJU9XmZ7IoriZkA8YCWQmGKTW00,289
+kinopoisk_dev/kinopoisk_dev.py,sha256=UU3Frax-Wlinbu-SBg6MRpqD9h3sxzGfzsuCLcEWo9s,1973
+kinopoisk_dev/models/__init__.py,sha256=fIesc0PfyuXE-XLc5CMapcLjH0lYOERwudokR4Xdfm4,72
+kinopoisk_dev/models/movie.py,sha256=2etjGQvkS08uZzfnDKDt64ZQHgTgEXt5Tl2Bb2QcX2Q,4308
+kinopoisk_dev/models/page.py,sha256=2P012H-ayjmZgEGjK0NiTiJBSQqO8jS_X6bE__iOzZs,123
+kinopoisk_dev/models/person.py,sha256=8ubS3iOpx8cxunSJK7EtlLHVolnfABwrW-85ZD2yRPY,821
+kinopoisk_dev/params/__init__.py,sha256=b0cXuC_XrGplVqCtQnuOdI6hP1coRDm_Ya_K5TyGdM8,39
+kinopoisk_dev/params/movie_params.py,sha256=athzL829VMpyWdIKUq2ns8-RkUti8892TB0qeoZvHNk,985
+kinopoisk_dev/request.py,sha256=8HP13BnKW15JJiZoLmdnIwK_3wnh5smY4QpJKMJYq6c,714
+kinopoisk_dev-0.1.4.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+kinopoisk_dev-0.1.4.dist-info/METADATA,sha256=yynFpDe9EdcZZvMShCPolPHMCTf8DTcwWrBPW8rWoG0,4652
+kinopoisk_dev-0.1.4.dist-info/RECORD,,
