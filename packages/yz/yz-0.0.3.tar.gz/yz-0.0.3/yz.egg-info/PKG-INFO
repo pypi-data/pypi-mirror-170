@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: yz
+Version: 0.0.3
+Summary: Includes various adwords elements diagnosis functions
+Home-page: https://github.com/thorwhalen/ut/tree/master/daf/diagnosis.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# yz
+Includes various adwords elements diagnosis functions
+
+
+To install:	```pip install yz```
+
+
