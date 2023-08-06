@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: numpydoc-tools
+Version: 0.1.0
+Summary: 
+Author: Sam Hedin
+Author-email: sam.hedin@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpydoc (>=1.4.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+
