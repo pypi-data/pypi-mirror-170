@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: shooker
+Version: 1.0.3
+Summary: Tool for C-code injections in already compiled bins
+Project-URL: Homepage, https://github.com/ReKreker/shooker
+Project-URL: Bug Tracker, https://github.com/ReKreker/shooker/issues
+Author: ReKreker
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Requires-Dist: capstone~=4.0.2
+Requires-Dist: lief~=0.12.1
+Description-Content-Type: text/markdown
+
+# Shooker
+Tool for C-code injections in already compiled bins.
+
+## Usage
+Write hook config as described in the [instruction](https://github.com/ReKreker/shooker/blob/master/docs/hooks%20xml.md).
+
+```shooker --xml config.xml target_dir/ output_dir/```
