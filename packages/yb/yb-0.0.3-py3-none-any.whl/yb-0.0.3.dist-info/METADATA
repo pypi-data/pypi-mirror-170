@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: yb
+Version: 0.0.3
+Summary: AWS s3 access
+Home-page: https://github.com/thorwhalen/ut/tree/master/serialize/s3.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# yb
+AWS s3 access
+
+
+To install:	```pip install yb```
+
+
