@@ -1,0 +1,15 @@
+.cargo/
+/.vscode
+/.idea
+**/target
+**/*.rs.bk
+**/*~
+**/*.glade~
+
+# python
+**/__pycache__/*
+venv/
+**/dist/*
+
+# c++
+*-build/
