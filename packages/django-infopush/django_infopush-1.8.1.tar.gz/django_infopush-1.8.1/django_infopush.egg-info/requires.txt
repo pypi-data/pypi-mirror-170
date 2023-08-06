@@ -1,0 +1,5 @@
+Django<4.2,>=3.2
+Pillow>=4.3.0
+django-commonstuff>=0.9.2
+pytz>=2022.4
+pywebpush>=1.9.3
