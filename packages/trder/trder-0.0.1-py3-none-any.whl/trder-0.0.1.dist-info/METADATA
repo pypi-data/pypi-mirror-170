@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: trder
+Version: 0.0.1
+Summary: trder
+Project-URL: Homepage, https://github.com/trder/trder
+Project-URL: Bug Tracker, https://github.com/trder/trder
+Author-email: trder <boristown@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# trder v0.0.1
+
+Initial release for [trder project](https://github.com/trder/trder).
+
+这是[trder量化平台](https://github.com/trder/trder)的初始化发布。
