@@ -1,0 +1,14 @@
+950f013fa5d8a4b2a533__mypyc.cp38-win_amd64.pyd,sha256=0dDQi0C8rZjW3anY_FQU6Mqyzxi_AsaHW2xP2MgHR5s,55808
+log_color/__init__.py,sha256=xCyx0SGdxdjnkHsgQ4eb-7a62AAn-vvL2gjWuW3XfaQ,113
+log_color/colors.py,sha256=Fh3spv7hTYjT5Ju0iEvDpaXFIXINkWbxkw97Nxd6WEc,1436
+log_color/formatters.cp38-win_amd64.pyd,sha256=eAAqZixrI1n2hbTkQ2xTDez60QUsrEou-KS6v0xFA4s,10752
+log_color/formatters.py,sha256=ixQpEtTVhAVRcK3eFWp-NYyXY6erCifrT4jsObGOGPo,2046
+log_color/lib.cp38-win_amd64.pyd,sha256=g38p4axI62T4Ik_H3c0nRZT8BIrqjR8XQCacBKSwTco,10752
+log_color/lib.py,sha256=RzsqcuqnTc4VUn49VGb2rqSnTUZHm1HPxS6N48HLsUo,3388
+log_color/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+log_color/regex.py,sha256=j8KpdJzGg5UBSJ8QC3YTVRb8przHM9AsP982MuyeASs,82
+log_color-2.0.1rc0.dist-info/LICENSE,sha256=MeqkoKwC7JdNdVRNRx8R2eZNQrUQ-3n03TuuYw3kaH0,541
+log_color-2.0.1rc0.dist-info/METADATA,sha256=cTYRTAKftArN0T8Oi4vEQqX46DRoflM-y18rsmYeMMQ,3404
+log_color-2.0.1rc0.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+log_color-2.0.1rc0.dist-info/top_level.txt,sha256=3CWoLY-6f1B8LyMxyPWC22we8UpKEki2F6tnG2qWZbo,38
+log_color-2.0.1rc0.dist-info/RECORD,,
