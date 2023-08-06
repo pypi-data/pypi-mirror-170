@@ -1,0 +1,4 @@
+[console_scripts]
+LiaoyuChuliaoHaojiandan = LiaoyuChuliaoHaojiandan.__main__:main
+liaoyu-chuliao-haojiandan = LiaoyuChuliaoHaojiandan.__main__:main
+
