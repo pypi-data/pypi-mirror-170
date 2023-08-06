@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: debmutate
+Version: 0.57
+Summary: manipulation of Debian package control files
+Home-page: https://salsa.debian.org/jelmer/debmutate
+Author: Jelmer Vernooĳ
+Author-email: jelmer@debian.org
+Project-URL: Repository, https://salsa.debian.org/jelmer/debmutate.git
+Provides-Extra: debcargo
+License-File: LICENSE
+License-File: AUTHORS
