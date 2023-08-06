@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mitmweb-client
+Version: 0.0.1
+Summary: 
+Home-page: http://github.com/dskard/mitmweb-client
+License: MIT
+Author: dskard
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Project-URL: Repository, http://github.com/dskard/mitmweb-client
+Description-Content-Type: text/markdown
+
+# mitmweb-client
+http client for mitmweb server
+
