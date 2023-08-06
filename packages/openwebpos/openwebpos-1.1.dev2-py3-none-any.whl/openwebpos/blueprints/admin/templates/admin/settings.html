@@ -1,0 +1,29 @@
+{% extends 'layouts/base.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+{% block main %}
+
+    <div class="grid-wrapper">
+        <div class="view">
+            <div class="row mb0">
+                <div class="col s6 m3 waves-effect waves-light">
+                    {{ clickableCard(url_for('admin.menu.list_all'), 'Menus') }}
+                </div>
+                <div class="col s6 m3 waves-effect waves-light">
+                    {{ clickableCard(url_for('admin.pagers'), 'Pagers') }}
+                </div>
+                <div class="col s6 m3 waves-effect waves-light">
+                    {{ clickableCard(url_for('admin.order_types'), 'Order Types') }}
+                </div>
+                <div class="col s6 m3 waves-effect waves-light">
+                    {{ clickableCard(url_for('admin.transaction_types'), 'Payment Types') }}
+                </div>
+                <div class="col s6 m3 waves-effect waves-light">
+                    {{ clickableCard(url_for('admin.ingredients'), 'Ingredients') }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
