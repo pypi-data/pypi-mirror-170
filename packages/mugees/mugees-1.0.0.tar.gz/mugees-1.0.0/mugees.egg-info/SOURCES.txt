@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+mugees/__init__.py
+mugees/depression.py
+mugees.egg-info/PKG-INFO
+mugees.egg-info/SOURCES.txt
+mugees.egg-info/dependency_links.txt
+mugees.egg-info/requires.txt
+mugees.egg-info/top_level.txt
