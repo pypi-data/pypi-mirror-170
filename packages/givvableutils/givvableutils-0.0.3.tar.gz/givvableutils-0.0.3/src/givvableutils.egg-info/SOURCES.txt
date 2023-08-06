@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/blob.py
+src/db.py
+src/givvableutils.egg-info/PKG-INFO
+src/givvableutils.egg-info/SOURCES.txt
+src/givvableutils.egg-info/dependency_links.txt
+src/givvableutils.egg-info/requires.txt
+src/givvableutils.egg-info/top_level.txt
+tests/test_db.py
