@@ -1,0 +1,3 @@
+[console_scripts]
+spinx-autopyproject-build=sphinx_autopyproject.__main__:main
+
