@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mofapy2
+Version: 0.6.7
+Summary: Multi-Omics Factor Analysis, a statistical framework for the integration of multi-omics data
+Home-page: http://github.com/bioFAM/mofapy2
+Author: Ricard Argelaguet
+Author-email: ricard.argelaguet@gmail.com
+License: LGPL-3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+MOFA is a factor analysis model that provides a general framework for the unsupervised integration of multi-omic data sets.
+This package contains the Python library to train MOFA and MEFISTO models. 
+
+- For the downstream analysis in Python please check the mofax package: https://github.com/bioFAM/mofax
+- For the downstream analysis in R please check the MOFA2 package: https://github.com/bioFAM/MOFA2
