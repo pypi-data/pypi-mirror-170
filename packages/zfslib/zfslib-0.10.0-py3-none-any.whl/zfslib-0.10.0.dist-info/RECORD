@@ -1,0 +1,7 @@
+zfslib/__init__.py,sha256=QBFCE0SI-hDjYy6YFHnGyVtMGaaBteJ3zJKFmhIZVg0,21
+zfslib/_zpool_props.tsv,sha256=oqiOE8vgPCLcSlLX1cYHyfHODyR3bOKQbVwkkHeUu0o,741
+zfslib/zfslib.py,sha256=Au5szdYf3iOMUR0yhhmdx9cKC_b1kf2-2VNOY_wqv_M,37853
+zfslib-0.10.0.dist-info/LICENSE,sha256=bNescRfHJtavUfpfFouFlUpqM267m3QV0JgvKUMoKWQ,1109
+zfslib-0.10.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+zfslib-0.10.0.dist-info/METADATA,sha256=pnmhW1k63wgYsURGyj258l-DX_y_W0s3OaYp4TjSD6o,6349
+zfslib-0.10.0.dist-info/RECORD,,
