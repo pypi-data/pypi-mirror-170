@@ -1,0 +1,3 @@
+[console_scripts]
+cursive = idscheck.idscheck.cmd:ids
+
