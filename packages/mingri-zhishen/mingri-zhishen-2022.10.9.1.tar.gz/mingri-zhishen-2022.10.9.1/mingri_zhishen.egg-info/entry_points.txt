@@ -1,0 +1,4 @@
+[console_scripts]
+MingriZhishen = MingriZhishen.__main__:main
+mingri-zhishen = MingriZhishen.__main__:main
+
