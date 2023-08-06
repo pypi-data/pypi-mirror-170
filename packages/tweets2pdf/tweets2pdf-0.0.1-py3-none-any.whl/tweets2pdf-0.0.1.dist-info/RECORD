@@ -1,0 +1,9 @@
+tweets2pdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tweets2pdf/__main__.py,sha256=6nM1iQ5wylB6rZixlaHTUymH0fR_mORwYgdUZOUV2Uc,3464
+tweets2pdf/pdf.py,sha256=x5-W1S-WSlBPVGm4RkfHkIZADzp9uFfX-rpMwDkHKlc,2929
+tweets2pdf/twitter.py,sha256=RXpkX76EHThV7tkTgDde_upERbwTw2wkzOVPiynjlkU,2226
+tweets2pdf-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tweets2pdf-0.0.1.dist-info/METADATA,sha256=Q74vE0VnI9R-tCRD3_c8S-5jV7nivAKS44BjxSpUPnE,1725
+tweets2pdf-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tweets2pdf-0.0.1.dist-info/top_level.txt,sha256=rIAlq1nvsQ-GJGqRaTPVEMaRbENX1dPgGe3ZYQLQS0Q,11
+tweets2pdf-0.0.1.dist-info/RECORD,,
