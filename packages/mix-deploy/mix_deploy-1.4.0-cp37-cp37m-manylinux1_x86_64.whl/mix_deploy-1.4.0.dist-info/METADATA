@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mix-deploy
+Version: 1.4.0
+Summary: streamcomputing tb benchmark
+Home-page: https://streamcomputing.com/
+Download-URL: http://code.streamcomputing.com/nn-compiler/benchmark
+Author: Stream Computing Inc.
+Author-email: kaixuan.zhang@streamcomputing.com
+License: Apache 2.0
+Project-URL: Sources, http://code.streamcomputing.com/nn-compiler/benchmark
+Keywords: 79052d31f40e25c5e585e4d5914a66de1a91e7a3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: pybind11 (>=2.9.1)
+
+UNKNOWN
+
