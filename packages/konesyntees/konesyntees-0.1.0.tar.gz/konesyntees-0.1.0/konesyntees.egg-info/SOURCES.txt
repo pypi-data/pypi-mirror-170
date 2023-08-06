@@ -1,0 +1,16 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+konesyntees/__init__.py
+konesyntees/konesyntees.py
+konesyntees.egg-info/PKG-INFO
+konesyntees.egg-info/SOURCES.txt
+konesyntees.egg-info/dependency_links.txt
+konesyntees.egg-info/not-zip-safe
+konesyntees.egg-info/requires.txt
+konesyntees.egg-info/top_level.txt
+tests/__init__.py
+tests/test_konesyntees.py

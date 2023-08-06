@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: konesyntees
+Version: 0.1.0
+Summary: Python client for the voice synthesis service by the Institute of the Estonian Language.
+Home-page: https://github.com/madeline-bot/konesyntees.py
+Author: Dennys Matthew
+Author-email: git@gnztmpz.eu.org
+License: MIT license
+Keywords: konesyntees
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+
+==============
+konesyntees.py
+==============
+
+
+.. image:: https://img.shields.io/pypi/v/konesyntees.svg
+        :target: https://pypi.python.org/pypi/konesyntees
+
+Python client for the voice synthesis service by the Institute of the Estonian Language.
+
+
+* Free software: MIT license
+* Documentation: coming soon.
+
+
+Features
+--------
+
+* TODO
+
+
+=======
+History
+=======
+
+0.1.0 (2022-10-08)
+------------------
+
+* First release on PyPI.
