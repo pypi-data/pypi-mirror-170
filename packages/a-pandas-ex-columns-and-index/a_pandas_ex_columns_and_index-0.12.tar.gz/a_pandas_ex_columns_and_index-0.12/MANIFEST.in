@@ -1,0 +1,4 @@
+include a_pandas_ex_columns_and_index/requirements.txt
+include a_pandas_ex_columns_and_index/thirdparty.json
+include a_pandas_ex_columns_and_index/README.MD
+include a_pandas_ex_columns_and_index/LICENSE
