@@ -1,0 +1,4 @@
+[console_scripts]
+XingfuXiaoyuzhou = XingfuXiaoyuzhou.__main__:main
+xingfu-xiaoyuzhou = XingfuXiaoyuzhou.__main__:main
+
