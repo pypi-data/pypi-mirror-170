@@ -1,0 +1,4 @@
+[console_scripts]
+TujieMeihuaYishu = TujieMeihuaYishu.__main__:main
+tujie-meihua-yishu = TujieMeihuaYishu.__main__:main
+
