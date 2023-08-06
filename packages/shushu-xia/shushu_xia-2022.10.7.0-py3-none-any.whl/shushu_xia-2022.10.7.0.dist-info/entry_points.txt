@@ -1,0 +1,4 @@
+[console_scripts]
+ShushuXia = ShushuXia.__main__:main
+shushu-xia = ShushuXia.__main__:main
+
