@@ -1,0 +1,7 @@
+query_blocker/__init__.py,sha256=ylzx_NhV6cl__L41w_cKWz35ZG-AsdghOVaRdNVbU6g,46
+query_blocker/query_blocker.py,sha256=iB79im83Zt1tmUnLQl3CoVktIqimOMWjanXi8LwzhC4,1336
+django_query_blocker-0.0.1.dist-info/LICENSE,sha256=oAd01G7dCzy_XYVuNu_OawlxYPN827DLo0afHDRpxJA,1067
+django_query_blocker-0.0.1.dist-info/METADATA,sha256=BDxOksZjCQj1IoblChutLfFBgoFWPdnKC2pti378EA0,2007
+django_query_blocker-0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+django_query_blocker-0.0.1.dist-info/top_level.txt,sha256=tcQJYYOmFPv-Is9jDrgmbntHYFo51fhPCxqal0N52uc,14
+django_query_blocker-0.0.1.dist-info/RECORD,,
