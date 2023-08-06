@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: feagi_agent
+Version: 0.0.12
+Summary: Feagi agent to work with general and simulation robots
+Home-page: https://github.com/feagi/feagi/tree/feature-refactor-vision/agent
+Author: Neuraville LLC
+Author-email: info@neuraville.com
+Project-URL: Bug Tracker, https://github.com/feagi/feagi/issues
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# WIP
