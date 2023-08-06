@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+a_pandas_ex_regex_enhancements/LICENSE
+a_pandas_ex_regex_enhancements/README.MD
+a_pandas_ex_regex_enhancements/__init__.py
+a_pandas_ex_regex_enhancements/requirements.txt
+a_pandas_ex_regex_enhancements/thirdparty.json
+a_pandas_ex_regex_enhancements.egg-info/PKG-INFO
+a_pandas_ex_regex_enhancements.egg-info/SOURCES.txt
+a_pandas_ex_regex_enhancements.egg-info/dependency_links.txt
+a_pandas_ex_regex_enhancements.egg-info/requires.txt
+a_pandas_ex_regex_enhancements.egg-info/top_level.txt
