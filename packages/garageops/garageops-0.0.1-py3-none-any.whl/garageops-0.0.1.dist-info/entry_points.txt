@@ -1,0 +1,2 @@
+[console_scripts]
+garageops = garageops.__main__:main
