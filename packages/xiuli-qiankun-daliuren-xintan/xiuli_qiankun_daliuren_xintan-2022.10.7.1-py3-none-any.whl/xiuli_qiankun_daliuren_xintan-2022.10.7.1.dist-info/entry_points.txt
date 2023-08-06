@@ -1,0 +1,4 @@
+[console_scripts]
+XiuliQiankunDaliurenXintan = XiuliQiankunDaliurenXintan.__main__:main
+xiuli-qiankun-daliuren-xintan = XiuliQiankunDaliurenXintan.__main__:main
+
