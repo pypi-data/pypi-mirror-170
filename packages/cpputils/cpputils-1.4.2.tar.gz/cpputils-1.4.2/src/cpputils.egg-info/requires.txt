@@ -1,0 +1,6 @@
+Brotli~=1.0.9
+cryptography~=37.0.4
+keyring~=23.7.0
+
+[test]
+pytest>=6.0
