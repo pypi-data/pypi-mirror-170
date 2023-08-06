@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: SentralTimetable
+Version: 0.2
+Summary: A tool to get your timetable from Sentral.
+Home-page: https://github.com/J-J-B-J/get-sentral
+Author: SuperHarmony910 and J-J-B-J
+Keywords: Sentral school timetable python scraper
+Platform: Windows
+Platform: MacOS
+Platform: Unix
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
