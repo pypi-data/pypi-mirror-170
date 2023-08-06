@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+df_to_db.egg-info/PKG-INFO
+df_to_db.egg-info/SOURCES.txt
+df_to_db.egg-info/dependency_links.txt
+df_to_db.egg-info/requires.txt
+df_to_db.egg-info/top_level.txt
+tests/__init__.py
+tests/test_nosql_writer.py
+tests/test_sql_writer.py
+write_df/__init__.py
+write_df/common.py
+write_df/nosql_writer.py
+write_df/sql_writer.py
