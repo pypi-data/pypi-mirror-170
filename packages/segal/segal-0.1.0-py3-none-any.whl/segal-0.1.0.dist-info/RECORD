@@ -1,0 +1,12 @@
+segal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+segal/datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+segal/datasets/camvid.py,sha256=paQ5efvpBUCvCxrcCzOFpqittJc3OAGaSGZo280e8xo,4173
+segal/strategies/__init__.py,sha256=WvCrOCjAt9r0zTSMjTepZ_1Bp6kZOV5hOVpfL5Kdbg0,223
+segal/strategies/entropy_sampling.py,sha256=dv-M-bWu4MjZYRJTe2o3YSVv1z_hrDXubEmlHciCuXo,1473
+segal/strategies/least_confidence.py,sha256=fn2zTNHqW5UWo_6ybMdWbqavLphAD4rk5rdEom_93Ak,1548
+segal/strategies/margin_sampling.py,sha256=MpeDI_CkDe-V1vBVY9b-3xoBvryFA9O7ft626qtCSjI,1781
+segal/strategies/strategy.py,sha256=VWYNntgd0-KjOPT3ipy9teR_DrVaN5sKuMSTe2HEO_E,6637
+segal/utils.py,sha256=oGEy46PMEbr40SKkjgopacpAI4AOrVr4FqllNAWMRRQ,889
+segal-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+segal-0.1.0.dist-info/METADATA,sha256=nOjhReyMxVIOLmZDQdWBNIQG5PylvsBKuJI_2iPJ0Do,1643
+segal-0.1.0.dist-info/RECORD,,
