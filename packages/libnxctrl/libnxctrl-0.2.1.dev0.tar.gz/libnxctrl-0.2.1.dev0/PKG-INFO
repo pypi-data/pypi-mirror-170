@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: libnxctrl
+Version: 0.2.1.dev0
+Summary: Python Library Emulating Nintendo Switch Controllers
+Home-page: https://github.com/Victrid/libnxctrl
+Author: Weihao Jiang
+Author-email: weihau.chiang@gmail.com
+License: GPLv3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: nxbt
+Provides-Extra: joycontrol
+Provides-Extra: usb
+License-File: LICENSE
+
+# libnxctrl
+
+Python Library Emulating Nintendo Switch Controllers
+
+## Installation
+
+There are multiple backends: nxbt and splatplost USB. The nxbt backend can only be used on Linux, while the splatplost
+USB backend can be used on Linux and Windows.
+
+```bash
+pip install libnxctrl[nxbt]
+pip install libnxctrl[usb]
+```
+
+## Usage
+
+If running libnxctrl as a linux bluetooth daemon, for example, on a raspberry Pi which doesn't have a GUI interface, you
+can run with the following command:
+
+```bash
+libnxctrl --host 0.0.0.0 --port 15973
+```
+
+Use splatplost and select Remote Backend to connect to the daemon. For example, if you access your raspberry Pi
+from `192.168.1.123` and set the port to `12345`, fill the `Remote Server` field with `http://192.168.1.123:12345`.
