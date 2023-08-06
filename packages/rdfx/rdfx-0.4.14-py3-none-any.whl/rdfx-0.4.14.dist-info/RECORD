@@ -1,0 +1,9 @@
+rdfx/__init__.py,sha256=kBEbn8dkCFa3vKochkZqeCl78cbsUbutSFlOYZrn__w,23
+rdfx/clean_ttl.py,sha256=ImFC1Zf9MDeqpIZW_rbKMZxZ5zc5nTKqHFy9_wyWW_0,161
+rdfx/persistence_systems.py,sha256=CeeTLAZMLapC_rhNFC0r3JRsE698nK1o42jOMka5RgI,36248
+rdfx/rdfx_cli.py,sha256=SJsY68zEae84U1-2qZgp6Rv75mKsbgDP-Lv3patHQFU,6542
+rdfx-0.4.14.dist-info/LICENSE,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+rdfx-0.4.14.dist-info/METADATA,sha256=FhtxA-FQ57cFCZivt2ahuauCUgolP8Vb4K1RyNhajEE,7077
+rdfx-0.4.14.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rdfx-0.4.14.dist-info/top_level.txt,sha256=JPH9BshYjn9mTh8lCtQVx3k4GeHGQBLsO0WsluWZRn0,5
+rdfx-0.4.14.dist-info/RECORD,,
