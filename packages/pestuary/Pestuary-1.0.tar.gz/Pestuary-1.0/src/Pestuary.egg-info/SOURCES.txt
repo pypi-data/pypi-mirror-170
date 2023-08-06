@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/Pestuary.egg-info/PKG-INFO
+src/Pestuary.egg-info/SOURCES.txt
+src/Pestuary.egg-info/dependency_links.txt
+src/Pestuary.egg-info/entry_points.txt
+src/Pestuary.egg-info/requires.txt
+src/Pestuary.egg-info/top_level.txt
