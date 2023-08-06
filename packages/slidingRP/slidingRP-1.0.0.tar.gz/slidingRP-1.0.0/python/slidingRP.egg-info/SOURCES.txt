@@ -1,0 +1,16 @@
+README.md
+setup.py
+python/slidingRP/__init__.py
+python/slidingRP/computeEstimatedRPs.py
+python/slidingRP/exampleScriptIBL.py
+python/slidingRP/metrics.py
+python/slidingRP/plotEstimatedRPs.py
+python/slidingRP/scratch_ampFrACGFit.py
+python/slidingRP/scriptTestingSimulations.py
+python/slidingRP/script_testSlidingRP.py
+python/slidingRP/simulations.py
+python/slidingRP.egg-info/PKG-INFO
+python/slidingRP.egg-info/SOURCES.txt
+python/slidingRP.egg-info/dependency_links.txt
+python/slidingRP.egg-info/requires.txt
+python/slidingRP.egg-info/top_level.txt
