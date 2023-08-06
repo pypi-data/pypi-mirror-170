@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tu
+Version: 0.0.3
+Summary: Utils to work with iterables
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/uiter.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# tu
+Utils to work with iterables
+
+
+To install:	```pip install tu```
+
+
