@@ -1,0 +1,4 @@
+[console_scripts]
+XiyinliFazeXinban = XiyinliFazeXinban.__main__:main
+xiyinli-faze-xinban = XiyinliFazeXinban.__main__:main
+
