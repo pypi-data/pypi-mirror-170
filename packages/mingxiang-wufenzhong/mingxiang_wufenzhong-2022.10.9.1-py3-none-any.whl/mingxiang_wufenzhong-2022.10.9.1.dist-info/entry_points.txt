@@ -1,0 +1,4 @@
+[console_scripts]
+MingxiangWufenzhong = MingxiangWufenzhong.__main__:main
+mingxiang-wufenzhong = MingxiangWufenzhong.__main__:main
+
