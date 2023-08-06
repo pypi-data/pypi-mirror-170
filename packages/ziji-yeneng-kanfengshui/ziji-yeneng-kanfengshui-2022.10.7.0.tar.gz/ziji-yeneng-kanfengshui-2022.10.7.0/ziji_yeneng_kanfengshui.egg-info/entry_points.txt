@@ -1,0 +1,4 @@
+[console_scripts]
+ZijiYenengKanfengshui = ZijiYenengKanfengshui.__main__:main
+ziji-yeneng-kanfengshui = ZijiYenengKanfengshui.__main__:main
+
