@@ -1,0 +1,4 @@
+[console_scripts]
+QimenYusizhu = QimenYusizhu.__main__:main
+qimen-yusizhu = QimenYusizhu.__main__:main
+
