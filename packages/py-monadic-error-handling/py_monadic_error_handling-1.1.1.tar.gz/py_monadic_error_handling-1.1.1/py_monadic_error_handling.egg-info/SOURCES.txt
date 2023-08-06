@@ -1,0 +1,8 @@
+setup.py
+py_monadic_error_handling/__init__.py
+py_monadic_error_handling/main.py
+py_monadic_error_handling.egg-info/PKG-INFO
+py_monadic_error_handling.egg-info/SOURCES.txt
+py_monadic_error_handling.egg-info/dependency_links.txt
+py_monadic_error_handling.egg-info/not-zip-safe
+py_monadic_error_handling.egg-info/top_level.txt
