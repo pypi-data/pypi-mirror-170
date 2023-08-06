@@ -1,0 +1,10 @@
+magicswitchbot/__init__.py,sha256=sHdlCL46rsjyxHX82WRXUz02bqPlFdd4lWlJAu6HcmQ,3198
+magicswitchbot/consts.py,sha256=GRdSYq6eEY0gGWRPQ2BaeMjTkPecRfu5Zmtp3TCWmzI,1651
+magicswitchbot/device.py,sha256=P93OuQeGxlLRXJNuzy19zBj3ehB0sU_yUULUHoTeJiE,23875
+magicswitchbot/discovery.py,sha256=Mu6g3VLVD2WnbYOJZTKHR2BIyjG2KtdBA5P1trf5e8g,5400
+magicswitchbot/models.py,sha256=DZCnT2kWWi1clQbtZWzNQsNf-nH6gtDkbRoVDEEJo-Q,251
+pyMagicSwitchbot-1.1.4.dist-info/LICENSE.txt,sha256=3d4m7RIEfDK_lQKB9BGyMf309I2ufIKM8LJhZFOuIlU,1067
+pyMagicSwitchbot-1.1.4.dist-info/METADATA,sha256=CC9P4p5CWdZxvbfScr4r5wcXr9CP7Uo_t4rvnof5OO8,8226
+pyMagicSwitchbot-1.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyMagicSwitchbot-1.1.4.dist-info/top_level.txt,sha256=Z7EvksxQHvdjwqB5PrIGHaEpvXwW7lmPo7QXPpi5RPs,15
+pyMagicSwitchbot-1.1.4.dist-info/RECORD,,
