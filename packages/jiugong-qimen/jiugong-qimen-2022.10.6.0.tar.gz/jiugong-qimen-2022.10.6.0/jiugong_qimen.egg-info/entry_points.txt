@@ -1,0 +1,4 @@
+[console_scripts]
+JiugongQimen = JiugongQimen.__main__:main
+jiugong-qimen = JiugongQimen.__main__:main
+
