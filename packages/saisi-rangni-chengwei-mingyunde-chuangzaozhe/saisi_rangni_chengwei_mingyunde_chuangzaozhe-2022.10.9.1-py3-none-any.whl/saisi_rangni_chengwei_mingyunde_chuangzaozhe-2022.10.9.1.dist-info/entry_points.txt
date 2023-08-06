@@ -1,0 +1,4 @@
+[console_scripts]
+SaisiRangniChengweiMingyundeChuangzaozhe = SaisiRangniChengweiMingyundeChuangzaozhe.__main__:main
+saisi-rangni-chengwei-mingyunde-chuangzaozhe = SaisiRangniChengweiMingyundeChuangzaozhe.__main__:main
+
