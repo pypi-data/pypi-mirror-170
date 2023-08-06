@@ -1,0 +1,4 @@
+[console_scripts]
+LaiziYabolahandeMimi = LaiziYabolahandeMimi.__main__:main
+laizi-yabolahande-mimi = LaiziYabolahandeMimi.__main__:main
+
