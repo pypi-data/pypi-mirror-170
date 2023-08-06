@@ -1,0 +1,8 @@
+airflow_sops/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+airflow_sops/helpers.py,sha256=QHA9A9vBgcHa4XEGFlk1ge7UhvuKl6UNuATluCpX6h0,10044
+airflow_sops/secrets_backend.py,sha256=qNSpGRQxVONvHNqBTqMr9_zrLgmTPR1DLDGCf3t4a5A,6280
+airflow_sops_secrets_backend-0.0.1.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+airflow_sops_secrets_backend-0.0.1.dist-info/METADATA,sha256=yMgX9b-4I4Tv_UbdJs_lum6ZUUhBqkHv9IFlYoqqpJM,4720
+airflow_sops_secrets_backend-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+airflow_sops_secrets_backend-0.0.1.dist-info/top_level.txt,sha256=WKhF_GHk9bq-TzXivMbEAR6u9pcpWkjTBY8UQ7QfMq4,13
+airflow_sops_secrets_backend-0.0.1.dist-info/RECORD,,
