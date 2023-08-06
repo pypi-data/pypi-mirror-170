@@ -1,0 +1,9 @@
+LICENSE,sha256=6giBxJ-CfIr6i_s-4_6KqyNRi9n6NslS2qODTwShMtA,1062
+diffalarm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diffalarm/__main__.py,sha256=PEVSLNJaYFtSY0IQkjtBhXLcHEFRAvYCeo1iKGwArjM,1888
+diffalarm/beep.py,sha256=kew2iDKq3eKfg2qEwaB96TdFB_8YiQi0EpsU1GL8QAs,308
+diffalarm-0.1.0.dist-info/entry_points.txt,sha256=AbpQNIB1ggBlrDbNOcOeBtyS16t1V-b_U4Wh7Qyapj0,51
+diffalarm-0.1.0.dist-info/LICENSE,sha256=6giBxJ-CfIr6i_s-4_6KqyNRi9n6NslS2qODTwShMtA,1062
+diffalarm-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+diffalarm-0.1.0.dist-info/METADATA,sha256=lFTUYdi5G4X-LenUIEb9U5V6y4xaQbLmsUJxoxAfdBM,690
+diffalarm-0.1.0.dist-info/RECORD,,
