@@ -1,0 +1,6 @@
+dependency-injector   4.39.1
+dynaconf              3.1.7
+marshmallow           3.15.0
+marshmallow-dataclass 8.5.3
+numpy                 1.21.6
+opencv-python         4.5.5.64

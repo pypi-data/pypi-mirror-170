@@ -1,0 +1,8 @@
+{
+   "time_of_day": "day",
+   "behaviour": "driver_standard_driving_two_hands",
+   "domain": "in_cabin",
+   "behaviour_permutation": "in_cabin-9b77fdfe-ecc2-439c",
+   "frame_number": 3,
+   "fps": 1
+}
