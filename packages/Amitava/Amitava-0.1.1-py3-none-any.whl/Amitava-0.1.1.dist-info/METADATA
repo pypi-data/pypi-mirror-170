@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Amitava
+Version: 0.1.1
+Summary: This package is for learning purpose only.
+Home-page: https://github.com/supratim531
+Author: Supratim Majumder
+Author-email: supratimm531@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: pyttsx3
+
+This is a useless package and it is made for practice and fun.
+
+
