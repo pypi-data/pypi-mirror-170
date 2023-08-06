@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/autharmor_sdk/__init__.py
+src/autharmor_sdk/autharmor_sdk.py
+src/autharmor_sdk/config.py
+src/autharmor_sdk.egg-info/PKG-INFO
+src/autharmor_sdk.egg-info/SOURCES.txt
+src/autharmor_sdk.egg-info/dependency_links.txt
+src/autharmor_sdk.egg-info/requires.txt
+src/autharmor_sdk.egg-info/top_level.txt
+tests/test_module1.py
