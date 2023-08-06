@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: clictune-bypass
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://gitlab.com/florentclarret/clictune-bypass
+Author: Florent Clarret
+Author-email: florent.clarret@gmail.com
+License: MIT
+Project-URL: Changelog, https://github.com/FlorentClarret/clictune-bypass/blob/main/CHANGELOG.md
+Description: # Clictune bypass
+        
+        clictune_bypass is a very simple open-source Python library to get links protected by [clictune](https://www.clictune.com/)
+        
+        ## Install
+        
+        ``` shell
+        pip install clictune_bypass
+        ```
+        
+        ## Usage
+        
+        ```python
+        from clictune_bypass import get_url
+        
+        link = get_url("https://www.mylink1.biz/bypass")
+        
+        print(link)
+        ```
+        
+        # Contributing guide
+        
+        Glad you want to help! To do so, you can read our [Contributing guide](CONTRIBUTING.md).
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
