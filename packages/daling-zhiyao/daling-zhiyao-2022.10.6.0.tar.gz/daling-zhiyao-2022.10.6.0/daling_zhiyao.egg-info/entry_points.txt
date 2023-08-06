@@ -1,0 +1,4 @@
+[console_scripts]
+DalingZhiyao = DalingZhiyao.__main__:main
+daling-zhiyao = DalingZhiyao.__main__:main
+
