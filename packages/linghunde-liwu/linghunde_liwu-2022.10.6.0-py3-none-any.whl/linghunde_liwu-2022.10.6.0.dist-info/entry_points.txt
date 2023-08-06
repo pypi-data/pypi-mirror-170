@@ -1,0 +1,4 @@
+[console_scripts]
+LinghundeLiwu = LinghundeLiwu.__main__:main
+linghunde-liwu = LinghundeLiwu.__main__:main
+
