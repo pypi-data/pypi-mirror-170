@@ -1,0 +1,7 @@
+setup.py
+whatapackage/__init__.py
+whatapackage/hey.py
+whatapackage.egg-info/PKG-INFO
+whatapackage.egg-info/SOURCES.txt
+whatapackage.egg-info/dependency_links.txt
+whatapackage.egg-info/top_level.txt
