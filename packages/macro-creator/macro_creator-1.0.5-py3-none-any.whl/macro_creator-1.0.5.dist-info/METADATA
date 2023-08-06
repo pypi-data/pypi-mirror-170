@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: macro-creator
+Version: 1.0.5
+Summary: The best and most accurate macro recorder for Windows. Easy to use and open source.
+Home-page: UNKNOWN
+Author: Eshqol Development
+Author-email: support@eshqol.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: keyboard
+Requires-Dist: mouse
+
+# Macro Recorder
+
+The best and most accurate macro recorder for Windows.\
+Easy to use and open source.
+
+### Record
+```python
+from macro_creator import Recorder
+
+my_recorder = Recorder()
+my_recorder.record()
+
+my_recorder.save("my_macro.json")
+```
+
+### Run
+```python
+from macro_creator import Recorder
+
+my_recorder = Recorder()
+my_recorder.load("my_macro.json")
+
+my_recorder.play(speed_factor=1.5, only_essential_moves=False)
+```
+
