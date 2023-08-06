@@ -1,0 +1,4 @@
+[console_scripts]
+ToushiLinghunKanrensheng = ToushiLinghunKanrensheng.__main__:main
+toushi-linghun-kanrensheng = ToushiLinghunKanrensheng.__main__:main
+
