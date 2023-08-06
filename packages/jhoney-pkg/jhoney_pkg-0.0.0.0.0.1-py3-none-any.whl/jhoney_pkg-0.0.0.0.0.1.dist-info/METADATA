@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: jhoney-pkg
+Version: 0.0.0.0.0.1
+Summary: J-Honey's Python Common Library Package - AWS and other functions are summarized.
+Home-page: https://github.com/kimjh9434
+Author: J-Honey
+Author-email: kimjh@gmail.com
+License: MIT
+Requires-Python: >=3.6
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: comtypes
+Requires-Dist: idna
+Requires-Dist: jmespath
+Requires-Dist: lxml
+Requires-Dist: Pillow
+Requires-Dist: python-dateutil
+Requires-Dist: python-pptx
+Requires-Dist: PyYAML
+Requires-Dist: requests
+Requires-Dist: s3transfer
+Requires-Dist: si-prefix
+Requires-Dist: six
+Requires-Dist: urllib3
+Requires-Dist: XlsxWriter
+
