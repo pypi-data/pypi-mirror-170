@@ -1,0 +1,2686 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>meanas</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="pdoc_templates/pdoc.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">meanas</h1>
+</header>
+<hr />
+<h1 id="meanas">Module <code>meanas</code></h1>
+<p>Electromagnetic simulation tools</p>
+<p>See the readme or <code>import meanas; help(meanas)</code> for more info.</p>
+<h2 id="sub-modules">Sub-modules</h2>
+<ul>
+<li><a href="#meanas.VERSION">meanas.VERSION</a></li>
+<li><a href="#meanas.eigensolvers">meanas.eigensolvers</a></li>
+<li><a href="#meanas.fdfd">meanas.fdfd</a></li>
+<li><a href="#meanas.fdmath">meanas.fdmath</a></li>
+<li><a href="#meanas.fdtd">meanas.fdtd</a></li>
+<li><a href="#meanas.test">meanas.test</a></li>
+</ul>
+<hr />
+<h1 id="meanas.VERSION">Module <code>meanas.VERSION</code></h1>
+<p>VERSION defintion. THIS FILE IS MANUALLY PARSED BY setup.py and REQUIRES A SPECIFIC FORMAT</p>
+<hr />
+<h1 id="meanas.eigensolvers">Module <code>meanas.eigensolvers</code></h1>
+<p>Solvers for eigenvalue / eigenvector problems</p>
+<h2 id="functions">Functions</h2>
+<h3 id="meanas.eigensolvers.power_iteration">Function <code>power_iteration</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def power_iteration(operator: scipy.sparse.base.spmatrix, guess_vector: Optional[numpy.ndarray] = None, iterations: int = 20) -&gt; Tuple[complex, numpy.ndarray]</code></p>
+</blockquote>
+<p>Use power iteration to estimate the dominant eigenvector of a matrix.</p>
+<p>Args —–= <strong><code>operator</code></strong> : Matrix to analyze.</p>
+<dl>
+<dt><strong><code>guess_vector</code></strong></dt>
+<dd>Starting point for the eigenvector. Default is a randomly chosen vector.
+</dd>
+<dt><strong><code>iterations</code></strong></dt>
+<dd>Number of iterations to perform. Default 20.
+</dd>
+</dl>
+<p>Returns —–= (Largest-magnitude eigenvalue, Corresponding eigenvector estimate)</p>
+<h3 id="meanas.eigensolvers.rayleigh_quotient_iteration">Function <code>rayleigh_quotient_iteration</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def rayleigh_quotient_iteration(operator: Union[scipy.sparse.base.spmatrix, scipy.sparse.linalg.interface.LinearOperator], guess_vector: numpy.ndarray, iterations: int = 40, tolerance: float = 1e-13, solver: Optional[Callable[..., numpy.ndarray]] = None) -&gt; Tuple[complex, numpy.ndarray]</code></p>
+</blockquote>
+<p>Use Rayleigh quotient iteration to refine an eigenvector guess.</p>
+<p>Args —–= <strong><code>operator</code></strong> : Matrix to analyze.</p>
+<dl>
+<dt><strong><code>guess_vector</code></strong></dt>
+<dd>Eigenvector to refine.
+</dd>
+<dt><strong><code>iterations</code></strong></dt>
+<dd>Maximum number of iterations to perform. Default 40.
+</dd>
+<dt><strong><code>tolerance</code></strong></dt>
+<dd>Stop iteration if <code>(A - I*eigenvalue) @ v &lt; num_vectors * tolerance</code>, Default 1e-13.
+</dd>
+<dt><strong><code>solver</code></strong></dt>
+<dd>Solver function of the form <code>x = solver(A, b)</code>. By default, use scipy.sparse.spsolve for sparse matrices and scipy.sparse.bicgstab for general LinearOperator instances.
+</dd>
+</dl>
+<p>Returns —–= (eigenvalues, eigenvectors)</p>
+<h3 id="meanas.eigensolvers.signed_eigensolve">Function <code>signed_eigensolve</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def signed_eigensolve(operator: Union[scipy.sparse.base.spmatrix, scipy.sparse.linalg.interface.LinearOperator], how_many: int, negative: bool = False) -&gt; Tuple[numpy.ndarray, numpy.ndarray]</code></p>
+</blockquote>
+<p>Find the largest-magnitude positive-only (or negative-only) eigenvalues and eigenvectors of the provided matrix.</p>
+<p>Args —–= <strong><code>operator</code></strong> : Matrix to analyze.</p>
+<dl>
+<dt><strong><code>how_many</code></strong></dt>
+<dd>How many eigenvalues to find.
+</dd>
+<dt><strong><code>negative</code></strong></dt>
+<dd>Whether to find negative-only eigenvalues. Default False (positive only).
+</dd>
+</dl>
+<p>Returns —–= (sorted list of eigenvalues, 2D ndarray of corresponding eigenvectors) <code>eigenvectors[:, k]</code> corresponds to the k-th eigenvalue</p>
+<hr />
+<h1 id="meanas.fdfd">Module <code>meanas.fdfd</code></h1>
+<p>Tools for finite difference frequency-domain (FDFD) simulations and calculations.</p>
+<p>These mostly involve picking a single frequency, then setting up and solving a matrix equation (Ax=b) or eigenvalue problem.</p>
+<p>Submodules:</p>
+<ul>
+<li><code><a href="#meanas.fdfd.operators">meanas.fdfd.operators</a></code>, <code><a href="#meanas.fdfd.functional">meanas.fdfd.functional</a></code>: General FDFD problem setup.</li>
+<li><code><a href="#meanas.fdfd.solvers">meanas.fdfd.solvers</a></code>: Solver interface and reference implementation.</li>
+<li><code><a href="#meanas.fdfd.scpml">meanas.fdfd.scpml</a></code>: Stretched-coordinate perfectly matched layer (scpml) boundary conditions</li>
+<li><code><a href="#meanas.fdfd.waveguide_2d">meanas.fdfd.waveguide_2d</a></code>: Operators and mode-solver for waveguides with constant cross-section.</li>
+<li><code><a href="#meanas.fdfd.waveguide_3d">meanas.fdfd.waveguide_3d</a></code>: Functions for transforming <code><a href="#meanas.fdfd.waveguide_2d">meanas.fdfd.waveguide_2d</a></code> results into 3D.</li>
+</ul>
+<p>================================================================</p>
+<p>From the “Frequency domain” section of <code><a href="#meanas.fdmath">meanas.fdmath</a></code>, we have</p>
+<p><eq env="displaymath">
+ \begin{aligned}
+ \tilde{E}_{l, \vec{r}} &amp;= \tilde{E}_{\vec{r}} e^{-\imath \omega l \Delta_t} \\
+ \tilde{J}_{l, \vec{r}} &amp;= \tilde{J}_{\vec{r}} e^{-\imath \omega (l - \frac{1}{2}) \Delta_t} \\
+ \hat{\nabla} \times (\mu^{-1}_{\vec{r} + \frac{1}{2}} \cdot \tilde{\nabla} \times \tilde{E}_{\vec{r}})
+    -\Omega^2 \epsilon_{\vec{r}} \cdot \tilde{E}_{\vec{r}} &amp;= \imath \Omega \tilde{J}_{\vec{r}} \\
+ \Omega &amp;= 2 \sin(\omega \Delta_t / 2) / \Delta_t
+ \end{aligned}
+</eq></p>
+<h1 id="todo-fdfd">TODO FDFD?</h1>
+<h1 id="todo-pml">TODO PML</h1>
+<h2 id="sub-modules-1">Sub-modules</h2>
+<ul>
+<li><a href="#meanas.fdfd.bloch">meanas.fdfd.bloch</a></li>
+<li><a href="#meanas.fdfd.farfield">meanas.fdfd.farfield</a></li>
+<li><a href="#meanas.fdfd.functional">meanas.fdfd.functional</a></li>
+<li><a href="#meanas.fdfd.operators">meanas.fdfd.operators</a></li>
+<li><a href="#meanas.fdfd.scpml">meanas.fdfd.scpml</a></li>
+<li><a href="#meanas.fdfd.solvers">meanas.fdfd.solvers</a></li>
+<li><a href="#meanas.fdfd.waveguide_2d">meanas.fdfd.waveguide_2d</a></li>
+<li><a href="#meanas.fdfd.waveguide_3d">meanas.fdfd.waveguide_3d</a></li>
+<li><a href="#meanas.fdfd.waveguide_cyl">meanas.fdfd.waveguide_cyl</a></li>
+</ul>
+<hr />
+<h1 id="meanas.fdfd.bloch">Module <code>meanas.fdfd.bloch</code></h1>
+<p>Bloch eigenmode solver/operators</p>
+<p>This module contains functions for generating and solving the 3D Bloch eigenproblem. The approach is to transform the problem into the (spatial) fourier domain, transforming the equation</p>
+<pre><code>1/mu * curl(1/eps * curl(H)) = (w/c)^2 H</code></pre>
+<p>into</p>
+<pre><code>conv(1/mu_k, ik x conv(1/eps_k, ik x H_k)) = (w/c)^2 H_k</code></pre>
+<p>where:</p>
+<ul>
+<li>the <code>_k</code> subscript denotes a 3D fourier transformed field</li>
+<li>each component of <code>H_k</code> corresponds to a plane wave with wavevector <code>k</code></li>
+<li><code>x</code> is the cross product</li>
+<li><code>conv()</code> denotes convolution</li>
+</ul>
+<p>Since <code>k</code> and <code>H</code> are orthogonal for each plane wave, we can use each <code>k</code> to create an orthogonal basis (k, m, n), with <code>k x m = n</code>, and <code>|m| = |n| = 1</code>. The cross products are then simplified with</p>
+<pre><code>k @ h = kx hx + ky hy + kz hz = 0 = hk
+h = hk + hm + hn = hm + hn
+k = kk + km + kn = kk = |k|
+
+k x h = (ky hz - kz hy,
+         kz hx - kx hz,
+         kx hy - ky hx)
+      = ((k x h) @ k, (k x h) @ m, (k x h) @ n)_kmn
+      = (0, (m x k) @ h, (n x k) @ h)_kmn         # triple product ordering
+      = (0, kk (-n @ h), kk (m @ h))_kmn          # (m x k) = -|k| n, etc.
+      = |k| (0, -h @ n, h @ m)_kmn
+
+k x h = (km hn - kn hm,
+         kn hk - kk hn,
+         kk hm - km hk)_kmn
+      = (0, -kk hn, kk hm)_kmn
+      = (-kk hn)(mx, my, mz) + (kk hm)(nx, ny, nz)
+      = |k| (hm * (nx, ny, nz) - hn * (mx, my, mz))</code></pre>
+<p>where <code>h</code> is shorthand for <code>H_k</code>, <code>(…)_kmn</code> deontes the <code>(k, m, n)</code> basis, and e.g. <code>hm</code> is the component of <code>h</code> in the <code>m</code> direction.</p>
+<p>We can also simplify <code>conv(X_k, Y_k)</code> as <code>fftn(X * ifftn(Y_k))</code>.</p>
+<p>Using these results and storing <code>H_k</code> as <code>h = (hm, hn)</code>, we have</p>
+<pre><code>e_xyz = fftn(1/eps * ifftn(|k| (hm * n - hn * m)))
+b_mn = |k| (-e_xyz @ n, e_xyz @ m)
+h_mn = fftn(1/mu * ifftn(b_m * m + b_n * n))</code></pre>
+<p>which forms the operator from the left side of the equation.</p>
+<p>We can then use a preconditioned block Rayleigh iteration algorithm, as in SG Johnson and JD Joannopoulos, Block-iterative frequency-domain methods for Maxwell’s equations in a planewave basis, Optics Express 8, 3, 173-190 (2001) (similar to that used in MPB) to find the eigenvectors for this operator.</p>
+<p>===</p>
+<p>Typically you will want to do something like</p>
+<pre><code>recip_lattice = numpy.diag(1/numpy.array(epsilon[0].shape * dx))
+n, v = bloch.eigsolve(5, k0, recip_lattice, epsilon)
+f = numpy.sqrt(-numpy.real(n[0]))
+n_eff = norm(recip_lattice @ k0) / f
+
+v2e = bloch.hmn_2_exyz(k0, recip_lattice, epsilon)
+e_field = v2e(v[0])
+
+k, f = find_k(frequency=1/1550,
+              tolerance=(1/1550 - 1/1551),
+              direction=[1, 0, 0],
+              G_matrix=recip_lattice,
+              epsilon=epsilon,
+              band=0)</code></pre>
+<h2 id="functions-1">Functions</h2>
+<h3 id="meanas.fdfd.bloch.eigsolve">Function <code>eigsolve</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def eigsolve(num_modes: int, k0: numpy.ndarray, G_matrix: numpy.ndarray, epsilon: meanas.fdmath.types.fdfield_t, mu: meanas.fdmath.types.fdfield_t = None, tolerance: float = 1e-20, max_iters: int = 10000, reset_iters: int = 100) -&gt; Tuple[numpy.ndarray, numpy.ndarray]</code></p>
+</blockquote>
+<p>Find the first (lowest-frequency) num_modes eigenmodes with Bloch wavevector k0 of the specified structure.</p>
+<p>Args —–= <strong><code>k0</code></strong> : Bloch wavevector, <code>[k0x, k0y, k0z]</code>.</p>
+<dl>
+<dt><strong><code>G_matrix</code></strong></dt>
+<dd>3x3 matrix, with reciprocal lattice vectors as columns.
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Dielectric constant distribution for the simulation. All fields are sampled at cell centers (i.e., NOT Yee-gridded)
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permability distribution for the simulation. Default <code>None</code> (1 everywhere).
+</dd>
+<dt><strong><code>tolerance</code></strong></dt>
+<dd>Solver stops when fractional change in the objective <code>trace(Z.H @ A @ Z @ inv(Z Z.H))</code> is smaller than the tolerance
+</dd>
+</dl>
+<p>Returns —–= <code>(eigenvalues, eigenvectors)</code> where <code>eigenvalues[i]</code> corresponds to the vector <code>eigenvectors[i, :]</code></p>
+<h3 id="meanas.fdfd.bloch.fftn">Function <code>fftn</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def fftn(*args: Any, **kwargs: Any) -&gt; numpy.ndarray</code></p>
+</blockquote>
+<h3 id="meanas.fdfd.bloch.find_k">Function <code>find_k</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def find_k(frequency: float, tolerance: float, direction: numpy.ndarray, G_matrix: numpy.ndarray, epsilon: meanas.fdmath.types.fdfield_t, mu: meanas.fdmath.types.fdfield_t = None, band: int = 0, k_min: float = 0, k_max: float = 0.5, solve_callback: Callable = None) -&gt; Tuple[numpy.ndarray, float]</code></p>
+</blockquote>
+<p>Search for a bloch vector that has a given frequency.</p>
+<p>Args —–= <strong><code>frequency</code></strong> : Target frequency.</p>
+<dl>
+<dt><strong><code>tolerance</code></strong></dt>
+<dd>Target frequency tolerance.
+</dd>
+<dt><strong><code>direction</code></strong></dt>
+<dd>k-vector direction to search along.
+</dd>
+<dt><strong><code>G_matrix</code></strong></dt>
+<dd>3x3 matrix, with reciprocal lattice vectors as columns.
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Dielectric constant distribution for the simulation. All fields are sampled at cell centers (i.e., NOT Yee-gridded)
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permability distribution for the simulation. Default None (1 everywhere).
+</dd>
+<dt><strong><code>band</code></strong></dt>
+<dd>Which band to search in. Default 0 (lowest frequency).
+</dd>
+</dl>
+<p>Returns —–= <code>(k, actual_frequency)</code> The found k-vector and its frequency.</p>
+<h3 id="meanas.fdfd.bloch.generate_kmn">Function <code>generate_kmn</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def generate_kmn(k0: numpy.ndarray, G_matrix: numpy.ndarray, shape: numpy.ndarray) -&gt; Tuple[numpy.ndarray, numpy.ndarray, numpy.ndarray]</code></p>
+</blockquote>
+<p>Generate a (k, m, n) orthogonal basis for each k-vector in the simulation grid.</p>
+<p>Args —–= <strong><code>k0</code></strong> : [k0x, k0y, k0z], Bloch wavevector, in G basis.</p>
+<dl>
+<dt><strong><code>G_matrix</code></strong></dt>
+<dd>3x3 matrix, with reciprocal lattice vectors as columns.
+</dd>
+<dt><strong><code>shape</code></strong></dt>
+<dd>[nx, ny, nz] shape of the simulation grid.
+</dd>
+</dl>
+<p>Returns —–= <code>(|k|, m, n)</code> where <code>|k|</code> has shape <code>tuple(shape) + (1,)</code> and <code>m</code>, <code>n</code> have shape <code>tuple(shape) + (3,)</code>. All are given in the xyz basis (e.g. <code>|k|[0,0,0] = norm(G_matrix @ k0)</code>).</p>
+<h3 id="meanas.fdfd.bloch.hmn_2_exyz">Function <code>hmn_2_exyz</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def hmn_2_exyz(k0: numpy.ndarray, G_matrix: numpy.ndarray, epsilon: meanas.fdmath.types.fdfield_t) -&gt; Callable[[numpy.ndarray], meanas.fdmath.types.fdfield_t]</code></p>
+</blockquote>
+<p>Generate an operator which converts a vectorized spatial-frequency-space <code>h_mn</code> into an E-field distribution, i.e.</p>
+<pre><code>ifft(conv(1/eps_k, ik x h_mn))</code></pre>
+<p>The operator is a function that acts on a vector <code>h_mn</code> of size <code>2 * epsilon[0].size</code>.</p>
+<p>See the <code><a href="#meanas.fdfd.bloch">meanas.fdfd.bloch</a></code> docstring for more information.</p>
+<p>Args —–= <strong><code>k0</code></strong> : Bloch wavevector, <code>[k0x, k0y, k0z]</code>.</p>
+<dl>
+<dt><strong><code>G_matrix</code></strong></dt>
+<dd>3x3 matrix, with reciprocal lattice vectors as columns.
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Dielectric constant distribution for the simulation. All fields are sampled at cell centers (i.e., NOT Yee-gridded)
+</dd>
+</dl>
+<p>Returns —–= Function for converting <code>h_mn</code> into <code>E_xyz</code></p>
+<h3 id="meanas.fdfd.bloch.hmn_2_hxyz">Function <code>hmn_2_hxyz</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def hmn_2_hxyz(k0: numpy.ndarray, G_matrix: numpy.ndarray, epsilon: meanas.fdmath.types.fdfield_t) -&gt; Callable[[numpy.ndarray], meanas.fdmath.types.fdfield_t]</code></p>
+</blockquote>
+<p>Generate an operator which converts a vectorized spatial-frequency-space <code>h_mn</code> into an H-field distribution, i.e.</p>
+<pre><code>ifft(h_mn)</code></pre>
+<p>The operator is a function that acts on a vector <code>h_mn</code> of size <code>2 * epsilon[0].size</code>.</p>
+<p>See the <code><a href="#meanas.fdfd.bloch">meanas.fdfd.bloch</a></code> docstring for more information.</p>
+<p>Args —–= <strong><code>k0</code></strong> : Bloch wavevector, <code>[k0x, k0y, k0z]</code>.</p>
+<dl>
+<dt><strong><code>G_matrix</code></strong></dt>
+<dd>3x3 matrix, with reciprocal lattice vectors as columns.
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Dielectric constant distribution for the simulation. Only <code>epsilon[0].shape</code> is used.
+</dd>
+</dl>
+<p>Returns —–= Function for converting <code>h_mn</code> into <code>H_xyz</code></p>
+<h3 id="meanas.fdfd.bloch.ifftn">Function <code>ifftn</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def ifftn(*args: Any, **kwargs: Any) -&gt; numpy.ndarray</code></p>
+</blockquote>
+<h3 id="meanas.fdfd.bloch.inverse_maxwell_operator_approx">Function <code>inverse_maxwell_operator_approx</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def inverse_maxwell_operator_approx(k0: numpy.ndarray, G_matrix: numpy.ndarray, epsilon: meanas.fdmath.types.fdfield_t, mu: meanas.fdmath.types.fdfield_t = None) -&gt; Callable[[numpy.ndarray], numpy.ndarray]</code></p>
+</blockquote>
+<p>Generate an approximate inverse of the Maxwell operator,</p>
+<pre><code>ik x conv(eps_k, ik x conv(mu_k, ___))</code></pre>
+<p>which can be used to improve the speed of ARPACK in shift-invert mode.</p>
+<p>See the <code><a href="#meanas.fdfd.bloch">meanas.fdfd.bloch</a></code> docstring for more information.</p>
+<p>Args —–= <strong><code>k0</code></strong> : Bloch wavevector, <code>[k0x, k0y, k0z]</code>.</p>
+<dl>
+<dt><strong><code>G_matrix</code></strong></dt>
+<dd>3x3 matrix, with reciprocal lattice vectors as columns.
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Dielectric constant distribution for the simulation. All fields are sampled at cell centers (i.e., NOT Yee-gridded)
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permability distribution for the simulation. Default None (1 everywhere).
+</dd>
+</dl>
+<p>Returns —–= Function which applies the approximate inverse of the maxwell operator to <code>h_mn</code>.</p>
+<h3 id="meanas.fdfd.bloch.maxwell_operator">Function <code>maxwell_operator</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def maxwell_operator(k0: numpy.ndarray, G_matrix: numpy.ndarray, epsilon: meanas.fdmath.types.fdfield_t, mu: meanas.fdmath.types.fdfield_t = None) -&gt; Callable[[numpy.ndarray], numpy.ndarray]</code></p>
+</blockquote>
+<p>Generate the Maxwell operator</p>
+<pre><code>conv(1/mu_k, ik x conv(1/eps_k, ik x ___))</code></pre>
+<p>which is the spatial-frequency-space representation of</p>
+<pre><code>1/mu * curl(1/eps * curl(___))</code></pre>
+<p>The operator is a function that acts on a vector h_mn of size <code>2 * epsilon[0].size</code></p>
+<p>See the <code><a href="#meanas.fdfd.bloch">meanas.fdfd.bloch</a></code> docstring for more information.</p>
+<p>Args —–= <strong><code>k0</code></strong> : Bloch wavevector, <code>[k0x, k0y, k0z]</code>.</p>
+<dl>
+<dt><strong><code>G_matrix</code></strong></dt>
+<dd>3x3 matrix, with reciprocal lattice vectors as columns.
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Dielectric constant distribution for the simulation. All fields are sampled at cell centers (i.e., NOT Yee-gridded)
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permability distribution for the simulation. Default None (1 everywhere).
+</dd>
+</dl>
+<p>Returns —–= Function which applies the maxwell operator to h_mn.</p>
+<hr />
+<h1 id="meanas.fdfd.farfield">Module <code>meanas.fdfd.farfield</code></h1>
+<p>Functions for performing near-to-farfield transformation (and the reverse).</p>
+<h2 id="functions-2">Functions</h2>
+<h3 id="meanas.fdfd.farfield.far_to_nearfield">Function <code>far_to_nearfield</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def far_to_nearfield(E_far: meanas.fdmath.types.fdfield_t, H_far: meanas.fdmath.types.fdfield_t, dkx: float, dky: float, padded_size: List[int] = None) -&gt; Dict[str, Any]</code></p>
+</blockquote>
+<p>Compute the farfield, i.e. the distribution of the fields after propagation through several wavelengths of uniform medium.</p>
+<p>The input fields should be complex phasors.</p>
+<p>Args —–= <strong><code>E_far</code></strong> : List of 2 ndarrays containing the 2D phasor field slices for the transverse E fields (e.g. [Ex, Ey] for calculating the nearfield toward the z-direction). Fields should be normalized so that E_far = E_far_actual / (i k exp(-i k r) / (4 pi r))</p>
+<dl>
+<dt><strong><code>H_far</code></strong></dt>
+<dd>List of 2 ndarrays containing the 2D phasor field slices for the transverse H fields (e.g. [Hx, hy] for calculating the nearfield toward the z-direction). Fields should be normalized so that H_far = H_far_actual / (i k exp(-i k r) / (4 pi r))
+</dd>
+<dt><strong><code>dkx</code></strong></dt>
+<dd>kx discretization, in units of wavelength.
+</dd>
+<dt><strong><code>dky</code></strong></dt>
+<dd>ky discretization, in units of wavelength.
+</dd>
+<dt><strong><code>padded_size</code></strong></dt>
+<dd>Shape of the output. A single integer <code>n</code> will be expanded to <code>(n, n)</code>. Powers of 2 are most efficient for FFT computation. Default is the smallest power of 2 larger than the input, for each axis.
+</dd>
+</dl>
+<p>Returns —–= Dict with keys</p>
+<ul>
+<li><code>E</code>: E-field nearfield</li>
+<li><code>H</code>: H-field nearfield</li>
+<li><code>dx</code>, <code>dy</code>: spatial discretization, normalized to wavelength (dimensionless)</li>
+</ul>
+<h3 id="meanas.fdfd.farfield.near_to_farfield">Function <code>near_to_farfield</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def near_to_farfield(E_near: meanas.fdmath.types.fdfield_t, H_near: meanas.fdmath.types.fdfield_t, dx: float, dy: float, padded_size: List[int] = None) -&gt; Dict[str, Any]</code></p>
+</blockquote>
+<p>Compute the farfield, i.e. the distribution of the fields after propagation through several wavelengths of uniform medium.</p>
+<p>The input fields should be complex phasors.</p>
+<p>Args —–= <strong><code>E_near</code></strong> : List of 2 ndarrays containing the 2D phasor field slices for the transverse E fields (e.g. [Ex, Ey] for calculating the farfield toward the z-direction).</p>
+<dl>
+<dt><strong><code>H_near</code></strong></dt>
+<dd>List of 2 ndarrays containing the 2D phasor field slices for the transverse H fields (e.g. [Hx, hy] for calculating the farfield towrad the z-direction).
+</dd>
+<dt><strong><code>dx</code></strong></dt>
+<dd>Cell size along x-dimension, in units of wavelength.
+</dd>
+<dt><strong><code>dy</code></strong></dt>
+<dd>Cell size along y-dimension, in units of wavelength.
+</dd>
+<dt><strong><code>padded_size</code></strong></dt>
+<dd>Shape of the output. A single integer <code>n</code> will be expanded to <code>(n, n)</code>. Powers of 2 are most efficient for FFT computation. Default is the smallest power of 2 larger than the input, for each axis.
+</dd>
+</dl>
+<p>Returns —–= Dict with keys</p>
+<ul>
+<li><code>E_far</code>: Normalized E-field farfield; multiply by (i k exp(-i k r) / (4 pi r)) to get the actual field value.</li>
+<li><code>H_far</code>: Normalized H-field farfield; multiply by (i k exp(-i k r) / (4 pi r)) to get the actual field value.</li>
+<li><code>kx</code>, <code>ky</code>: Wavevector values corresponding to the x- and y- axes in E_far and H_far, normalized to wavelength (dimensionless).</li>
+<li><code>dkx</code>, <code>dky</code>: step size for kx and ky, normalized to wavelength.</li>
+<li><code>theta</code>: arctan2(ky, kx) corresponding to each (kx, ky). This is the angle in the x-y plane, counterclockwise from above, starting from +x.</li>
+<li><code>phi</code>: arccos(kz / k) corresponding to each (kx, ky). This is the angle away from +z.</li>
+</ul>
+<hr />
+<h1 id="meanas.fdfd.functional">Module <code>meanas.fdfd.functional</code></h1>
+<p>Functional versions of many FDFD operators. These can be useful for performing FDFD calculations without needing to construct large matrices in memory.</p>
+<p>The functions generated here expect <code>fdfield_t</code> inputs with shape (3, X, Y, Z), e.g. E = [E_x, E_y, E_z] where each component has shape (X, Y, Z)</p>
+<h2 id="functions-3">Functions</h2>
+<h3 id="meanas.fdfd.functional.e2h">Function <code>e2h</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def e2h(omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], mu: meanas.fdmath.types.fdfield_t = None) -&gt; Callable[..., meanas.fdmath.types.fdfield_t]</code></p>
+</blockquote>
+<p>Utility operator for converting the <code>E</code> field into the <code>H</code> field. For use with <code><a href="#meanas.fdfd.functional.e_full">e_full()</a></code> – assumes that there is no magnetic current <code>M</code>.</p>
+<p>Args —–= <strong><code>omega</code></strong> : Angular frequency of the simulation</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permeability (default 1 everywhere)
+</dd>
+</dl>
+<p>Return —–= Function <code>f</code> for converting <code>E</code> to <code>H</code>, <code>f(E)</code> -&gt; <code>H</code></p>
+<h3 id="meanas.fdfd.functional.e_full">Function <code>e_full</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def e_full(omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.fdfield_t, mu: meanas.fdmath.types.fdfield_t = None) -&gt; Callable[..., meanas.fdmath.types.fdfield_t]</code></p>
+</blockquote>
+<p>Wave operator for use with E-field. See <code>operators.e_full</code> for details.</p>
+<p>Args —–= <strong><code>omega</code></strong> : Angular frequency of the simulation</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Dielectric constant
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permeability (default 1 everywhere)
+</dd>
+</dl>
+<p>Return —–= Function <code>f</code> implementing the wave operator <code>f(E)</code> -&gt; <code>-i * omega * J</code></p>
+<h3 id="meanas.fdfd.functional.e_tfsf_source">Function <code>e_tfsf_source</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def e_tfsf_source(TF_region: meanas.fdmath.types.fdfield_t, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.fdfield_t, mu: meanas.fdmath.types.fdfield_t = None) -&gt; Callable[..., meanas.fdmath.types.fdfield_t]</code></p>
+</blockquote>
+<p>Operator that turns an E-field distribution into a total-field/scattered-field (TFSF) source.</p>
+<p>Args —–= <strong><code>TF_region</code></strong> : mask which is set to 1 in the total-field region, and 0 elsewhere (i.e. in the scattered-field region). Should have the same shape as the simulation grid, e.g. <code>epsilon[0].shape</code>.</p>
+<dl>
+<dt><strong><code>omega</code></strong></dt>
+<dd>Angular frequency of the simulation
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Dielectric constant distribution
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permeability (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= Function <code>f</code> which takes an E field and returns a current distribution, <code>f(E)</code> -&gt; <code>J</code></p>
+<h3 id="meanas.fdfd.functional.eh_full">Function <code>eh_full</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def eh_full(omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.fdfield_t, mu: meanas.fdmath.types.fdfield_t = None) -&gt; Callable[[meanas.fdmath.types.fdfield_t, meanas.fdmath.types.fdfield_t], Tuple[meanas.fdmath.types.fdfield_t, meanas.fdmath.types.fdfield_t]]</code></p>
+</blockquote>
+<p>Wave operator for full (both E and H) field representation. See <code>operators.eh_full</code>.</p>
+<p>Args —–= <strong><code>omega</code></strong> : Angular frequency of the simulation</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Dielectric constant
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permeability (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= Function <code>f</code> implementing the wave operator <code>f(E, H)</code> -&gt; <code>(J, -M)</code></p>
+<h3 id="meanas.fdfd.functional.m2j">Function <code>m2j</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def m2j(omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], mu: meanas.fdmath.types.fdfield_t = None) -&gt; Callable[..., meanas.fdmath.types.fdfield_t]</code></p>
+</blockquote>
+<p>Utility operator for converting magnetic current <code>M</code> distribution into equivalent electric current distribution <code>J</code>. For use with e.g. <code><a href="#meanas.fdfd.functional.e_full">e_full()</a></code>.</p>
+<p>Args —–= <strong><code>omega</code></strong> : Angular frequency of the simulation</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permeability (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= Function <code>f</code> for converting <code>M</code> to <code>J</code>, <code>f(M)</code> -&gt; <code>J</code></p>
+<h3 id="meanas.fdfd.functional.poynting_e_cross_h">Function <code>poynting_e_cross_h</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def poynting_e_cross_h(dxes: Sequence[Sequence[numpy.ndarray]]) -&gt; Callable[[meanas.fdmath.types.fdfield_t, meanas.fdmath.types.fdfield_t], meanas.fdmath.types.fdfield_t]</code></p>
+</blockquote>
+<p>Generates a function that takes the single-frequency <code>E</code> and <code>H</code> fields and calculates the cross product <code>E</code> x <code>H</code> = <eq env="math">E \times H</eq> as required for the Poynting vector, <eq env="math">S = E \times H</eq></p>
+<p>Note —–= This function also shifts the input <code>E</code> field by one cell as required for computing the Poynting cross product (see <code><a href="#meanas.fdfd">meanas.fdfd</a></code> module docs).</p>
+<p>Note —–= If <code>E</code> and <code>H</code> are peak amplitudes as assumed elsewhere in this code, the time-average of the poynting vector is <code>&lt;S&gt; = Re(S)/2 = Re(E x H) / 2</code>. The factor of <code>1/2</code> can be omitted if root-mean-square quantities are used instead.</p>
+<p>Args —–= <strong><code>dxes</code></strong> : Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code></p>
+<p>Returns —–= Function <code>f</code> that returns E x H as required for the poynting vector.</p>
+<hr />
+<h1 id="meanas.fdfd.operators">Module <code>meanas.fdfd.operators</code></h1>
+<p>Sparse matrix operators for use with electromagnetic wave equations.</p>
+<p>These functions return sparse-matrix (<code>scipy.sparse.spmatrix</code>) representations of a variety of operators, intended for use with E and H fields vectorized using the <code>meanas.vec()</code> and <code>meanas.unvec()</code> functions.</p>
+<p>E- and H-field values are defined on a Yee cell; <code>epsilon</code> values should be calculated for cells centered at each E component (<code>mu</code> at each H component).</p>
+<p>Many of these functions require a <code>dxes</code> parameter, of type <code>dx_lists_t</code>; see the <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> submodule for details.</p>
+<p>The following operators are included:</p>
+<ul>
+<li>E-only wave operator</li>
+<li>H-only wave operator</li>
+<li>EH wave operator</li>
+<li>Curl for use with E, H fields</li>
+<li>E to H conversion</li>
+<li>M to J conversion</li>
+<li>Poynting cross products</li>
+<li>Circular shifts</li>
+<li>Discrete derivatives</li>
+<li>Averaging operators</li>
+<li>Cross product matrices</li>
+</ul>
+<h2 id="functions-4">Functions</h2>
+<h3 id="meanas.fdfd.operators.e2h">Function <code>e2h</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def e2h(omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], mu: Optional[meanas.fdmath.types.vfdfield_t] = None, pmc: Optional[meanas.fdmath.types.vfdfield_t] = None) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Utility operator for converting the E field into the H field. For use with <code><a href="#meanas.fdfd.operators.e_full">e_full()</a></code> – assumes that there is no magnetic current M.</p>
+<p>Args —–= <strong><code>omega</code></strong> : Angular frequency of the simulation</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability (default 1 everywhere)
+</dd>
+<dt><strong><code>pmc</code></strong></dt>
+<dd>Vectorized mask specifying PMC cells. Any cells where <code>pmc != 0</code> are interpreted as containing a perfect magnetic conductor (PMC). The PMC is applied per-field-component (i.e. <code>pmc.size == epsilon.size</code>)
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix for converting E to H.</p>
+<h3 id="meanas.fdfd.operators.e_boundary_source">Function <code>e_boundary_source</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def e_boundary_source(mask: meanas.fdmath.types.vfdfield_t, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: Optional[meanas.fdmath.types.vfdfield_t] = None, periodic_mask_edges: bool = False) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Operator that turns an E-field distrubtion into a current (J) distribution along the edges (external and internal) of the provided mask. This is just an <code><a href="#meanas.fdfd.operators.e_tfsf_source">e_tfsf_source()</a></code> with an additional masking step.</p>
+<p>Args —–= <strong><code>mask</code></strong> : The current distribution is generated at the edges of the mask, i.e. any points where shifting the mask by one cell in any direction would change its value.</p>
+<dl>
+<dt><strong><code>omega</code></strong></dt>
+<dd>Angular frequency of the simulation
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability (default 1 everywhere).
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix that turns an E-field into a current (J) distribution.</p>
+<h3 id="meanas.fdfd.operators.e_full">Function <code>e_full</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def e_full(omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: Optional[meanas.fdmath.types.vfdfield_t] = None, pec: Optional[meanas.fdmath.types.vfdfield_t] = None, pmc: Optional[meanas.fdmath.types.vfdfield_t] = None) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Wave operator <eq env="displaymath"> \nabla \times (\frac{1}{\mu} \nabla \times) - \Omega^2 \epsilon </eq></p>
+<pre><code>del x (1/mu * del x) - omega**2 * epsilon</code></pre>
+<p>for use with the E-field, with wave equation <eq env="displaymath"> (\nabla \times (\frac{1}{\mu} \nabla \times) - \Omega^2 \epsilon) E = -\imath \omega J </eq></p>
+<pre><code>(del x (1/mu * del x) - omega**2 * epsilon) E = -i * omega * J</code></pre>
+<p>To make this matrix symmetric, use the preconditioners from <code><a href="#meanas.fdfd.operators.e_full_preconditioners">e_full_preconditioners()</a></code>.</p>
+<p>Args —–= <strong><code>omega</code></strong> : Angular frequency of the simulation</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability (default 1 everywhere).
+</dd>
+<dt><strong><code>pec</code></strong></dt>
+<dd>Vectorized mask specifying PEC cells. Any cells where <code>pec != 0</code> are interpreted as containing a perfect electrical conductor (PEC). The PEC is applied per-field-component (i.e. <code>pec.size == epsilon.size</code>)
+</dd>
+<dt><strong><code>pmc</code></strong></dt>
+<dd>Vectorized mask specifying PMC cells. Any cells where <code>pmc != 0</code> are interpreted as containing a perfect magnetic conductor (PMC). The PMC is applied per-field-component (i.e. <code>pmc.size == epsilon.size</code>)
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix containing the wave operator.</p>
+<h3 id="meanas.fdfd.operators.e_full_preconditioners">Function <code>e_full_preconditioners</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def e_full_preconditioners(dxes: Sequence[Sequence[numpy.ndarray]]) -&gt; Tuple[scipy.sparse.base.spmatrix, scipy.sparse.base.spmatrix]</code></p>
+</blockquote>
+<p>Left and right preconditioners <code>(Pl, Pr)</code> for symmetrizing the <code><a href="#meanas.fdfd.operators.e_full">e_full()</a></code> wave operator.</p>
+<p>The preconditioned matrix <code>A_symm = (Pl @ A @ Pr)</code> is complex-symmetric (non-Hermitian unless there is no loss or PMLs).</p>
+<p>The preconditioner matrices are diagonal and complex, with <code>Pr = 1 / Pl</code></p>
+<p>Args —–= <strong><code>dxes</code></strong> : Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code></p>
+<p>Returns —–= Preconditioner matrices <code>(Pl, Pr)</code>.</p>
+<h3 id="meanas.fdfd.operators.e_tfsf_source">Function <code>e_tfsf_source</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def e_tfsf_source(TF_region: meanas.fdmath.types.vfdfield_t, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: Optional[meanas.fdmath.types.vfdfield_t] = None) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Operator that turns a desired E-field distribution into a total-field/scattered-field (TFSF) source.</p>
+<p>TODO: Reference Rumpf paper</p>
+<p>Args —–= <strong><code>TF_region</code></strong> : Mask, which is set to 1 inside the total-field region and 0 in the scattered-field region</p>
+<dl>
+<dt><strong><code>omega</code></strong></dt>
+<dd>Angular frequency of the simulation
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability (default 1 everywhere).
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix that turns an E-field into a current (J) distribution.</p>
+<h3 id="meanas.fdfd.operators.eh_full">Function <code>eh_full</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def eh_full(omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: Optional[meanas.fdmath.types.vfdfield_t] = None, pec: Optional[meanas.fdmath.types.vfdfield_t] = None, pmc: Optional[meanas.fdmath.types.vfdfield_t] = None) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Wave operator for <code>[E, H]</code> field representation. This operator implements Maxwell’s equations without cancelling out either E or H. The operator is <eq env="displaymath">  \begin{bmatrix}
+    -\imath \omega \epsilon  &amp;  \nabla \times      \\
+    \nabla \times             &amp;  \imath \omega \mu
+    \end{bmatrix} </eq></p>
+<pre><code>[[-i * omega * epsilon,  del x         ],
+ [del x,                 i * omega * mu]]</code></pre>
+<p>for use with a field vector of the form <code>cat(vec(E), vec(H))</code>: <eq env="displaymath">  \begin{bmatrix}
+    -\imath \omega \epsilon  &amp;  \nabla \times      \\
+    \nabla \times             &amp;  \imath \omega \mu
+    \end{bmatrix}
+    \begin{bmatrix} E \\
+                     H
+    \end{bmatrix}
+    = \begin{bmatrix} J \\
+                      -M
+      \end{bmatrix} </eq></p>
+<p>Args —–= <strong><code>omega</code></strong> : Angular frequency of the simulation</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability (default 1 everywhere)
+</dd>
+<dt><strong><code>pec</code></strong></dt>
+<dd>Vectorized mask specifying PEC cells. Any cells where <code>pec != 0</code> are interpreted as containing a perfect electrical conductor (PEC). The PEC is applied per-field-component (i.e. <code>pec.size == epsilon.size</code>)
+</dd>
+<dt><strong><code>pmc</code></strong></dt>
+<dd>Vectorized mask specifying PMC cells. Any cells where <code>pmc != 0</code> are interpreted as containing a perfect magnetic conductor (PMC). The PMC is applied per-field-component (i.e. <code>pmc.size == epsilon.size</code>)
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix containing the wave operator.</p>
+<h3 id="meanas.fdfd.operators.h_full">Function <code>h_full</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def h_full(omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: Optional[meanas.fdmath.types.vfdfield_t] = None, pec: Optional[meanas.fdmath.types.vfdfield_t] = None, pmc: Optional[meanas.fdmath.types.vfdfield_t] = None) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Wave operator <eq env="displaymath"> \nabla \times (\frac{1}{\epsilon} \nabla \times) - \omega^2 \mu </eq></p>
+<pre><code>del x (1/epsilon * del x) - omega**2 * mu</code></pre>
+<p>for use with the H-field, with wave equation <eq env="displaymath"> (\nabla \times (\frac{1}{\epsilon} \nabla \times) - \omega^2 \mu) E = \imath \omega M </eq></p>
+<pre><code>(del x (1/epsilon * del x) - omega**2 * mu) E = i * omega * M</code></pre>
+<p>Args —–= <strong><code>omega</code></strong> : Angular frequency of the simulation</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability (default 1 everywhere)
+</dd>
+<dt><strong><code>pec</code></strong></dt>
+<dd>Vectorized mask specifying PEC cells. Any cells where <code>pec != 0</code> are interpreted as containing a perfect electrical conductor (PEC). The PEC is applied per-field-component (i.e. <code>pec.size == epsilon.size</code>)
+</dd>
+<dt><strong><code>pmc</code></strong></dt>
+<dd>Vectorized mask specifying PMC cells. Any cells where <code>pmc != 0</code> are interpreted as containing a perfect magnetic conductor (PMC). The PMC is applied per-field-component (i.e. <code>pmc.size == epsilon.size</code>)
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix containing the wave operator.</p>
+<h3 id="meanas.fdfd.operators.m2j">Function <code>m2j</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def m2j(omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], mu: Optional[meanas.fdmath.types.vfdfield_t] = None) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Operator for converting a magnetic current M into an electric current J. For use with eg. <code><a href="#meanas.fdfd.operators.e_full">e_full()</a></code>.</p>
+<p>Args —–= <strong><code>omega</code></strong> : Angular frequency of the simulation</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix for converting M to J.</p>
+<h3 id="meanas.fdfd.operators.poynting_e_cross">Function <code>poynting_e_cross</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def poynting_e_cross(e: meanas.fdmath.types.vfdfield_t, dxes: Sequence[Sequence[numpy.ndarray]]) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Operator for computing the Poynting vector, containing the (E x) portion of the Poynting vector.</p>
+<p>Args —–= <strong><code>e</code></strong> : Vectorized E-field for the ExH cross product</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix containing (E x) portion of Poynting cross product.</p>
+<h3 id="meanas.fdfd.operators.poynting_h_cross">Function <code>poynting_h_cross</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def poynting_h_cross(h: meanas.fdmath.types.vfdfield_t, dxes: Sequence[Sequence[numpy.ndarray]]) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Operator for computing the Poynting vector, containing the (H x) portion of the Poynting vector.</p>
+<p>Args —–= <strong><code>h</code></strong> : Vectorized H-field for the HxE cross product</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix containing (H x) portion of Poynting cross product.</p>
+<hr />
+<h1 id="meanas.fdfd.scpml">Module <code>meanas.fdfd.scpml</code></h1>
+<p>Functions for creating stretched coordinate perfectly matched layer (PML) absorbers.</p>
+<h2 id="variables">Variables</h2>
+<h3 id="meanas.fdfd.scpml.s_function_t">Variable <code>s_function_t</code></h3>
+<p>Typedef for s-functions, see <code><a href="#meanas.fdfd.scpml.prepare_s_function">prepare_s_function()</a></code></p>
+<h2 id="functions-5">Functions</h2>
+<h3 id="meanas.fdfd.scpml.prepare_s_function">Function <code>prepare_s_function</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def prepare_s_function(ln_R: float = -16, m: float = 4) -&gt; Callable[[float], float]</code></p>
+</blockquote>
+<p>Create an s_function to pass to the SCPML functions. This is used when you would like to customize the PML parameters.</p>
+<p>Args —–= <strong><code>ln_R</code></strong> : Natural logarithm of the desired reflectance</p>
+<dl>
+<dt><strong><code>m</code></strong></dt>
+<dd>Polynomial order for the PML (imaginary part increases as distance ** m)
+</dd>
+</dl>
+<p>Returns —–= An s_function, which takes an ndarray (distances) and returns an ndarray (complex part of the cell width; needs to be divided by <code>sqrt(epilon_effective) * real(omega))</code> before use.</p>
+<h3 id="meanas.fdfd.scpml.stretch_with_scpml">Function <code>stretch_with_scpml</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def stretch_with_scpml(dxes: List[List[numpy.ndarray]], axis: int, polarity: int, omega: float, epsilon_effective: float = 1.0, thickness: int = 10, s_function: Optional[Callable[[float], float]] = None) -&gt; List[List[numpy.ndarray]]</code></p>
+</blockquote>
+<p>Stretch dxes to contain a stretched-coordinate PML (SCPML) in one direction along one axis.</p>
+<p>Args —–= <strong><code>dxes</code></strong> : Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code></p>
+<dl>
+<dt><strong><code>axis</code></strong></dt>
+<dd>axis to stretch (0=x, 1=y, 2=z)
+</dd>
+<dt><strong><code>polarity</code></strong></dt>
+<dd>direction to stretch (-1 for -ve, +1 for +ve)
+</dd>
+<dt><strong><code>omega</code></strong></dt>
+<dd>Angular frequency for the simulation
+</dd>
+<dt><strong><code>epsilon_effective</code></strong></dt>
+<dd>Effective epsilon of the PML. Match this to the material at the edge of your grid. Default 1.
+</dd>
+<dt><strong><code>thickness</code></strong></dt>
+<dd>number of cells to use for pml (default 10)
+</dd>
+<dt><strong><code>s_function</code></strong></dt>
+<dd>Created by <code><a href="#meanas.fdfd.scpml.prepare_s_function">prepare_s_function()</a>(…)</code>, allowing customization of pml parameters. Default uses <code><a href="#meanas.fdfd.scpml.prepare_s_function">prepare_s_function()</a></code> with no parameters.
+</dd>
+</dl>
+<p>Returns —–= Complex cell widths (dx_lists_mut) as discussed in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>. Multiple calls to this function may be necessary if multiple absorpbing boundaries are needed.</p>
+<h3 id="meanas.fdfd.scpml.uniform_grid_scpml">Function <code>uniform_grid_scpml</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def uniform_grid_scpml(shape: Union[numpy.ndarray, Sequence[int]], thicknesses: Union[numpy.ndarray, Sequence[int]], omega: float, epsilon_effective: float = 1.0, s_function: Optional[Callable[[float], float]] = None) -&gt; List[List[numpy.ndarray]]</code></p>
+</blockquote>
+<p>Create dx arrays for a uniform grid with a cell width of 1 and a pml.</p>
+<p>If you want something more fine-grained, check out <code><a href="#meanas.fdfd.scpml.stretch_with_scpml">stretch_with_scpml()</a>(…)</code>.</p>
+<p>Args —–= <strong><code>shape</code></strong> : Shape of the grid, including the PMLs (which are 2*thicknesses thick)</p>
+<dl>
+<dt><strong><code>thicknesses</code></strong></dt>
+<dd><code>[th_x, th_y, th_z]</code> Thickness of the PML in each direction. Both polarities are added. Each th_ of pml is applied twice, once on each edge of the grid along the given axis. <code>th_*</code> may be zero, in which case no pml is added.
+</dd>
+<dt><strong><code>omega</code></strong></dt>
+<dd>Angular frequency for the simulation
+</dd>
+<dt><strong><code>epsilon_effective</code></strong></dt>
+<dd>Effective epsilon of the PML. Match this to the material at the edge of your grid. Default 1.
+</dd>
+<dt><strong><code>s_function</code></strong></dt>
+<dd>created by <code><a href="#meanas.fdfd.scpml.prepare_s_function">prepare_s_function()</a>(…)</code>, allowing customization of pml parameters. Default uses <code><a href="#meanas.fdfd.scpml.prepare_s_function">prepare_s_function()</a></code> with no parameters.
+</dd>
+</dl>
+<p>Returns —–= Complex cell widths (dx_lists_mut) as discussed in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>.</p>
+<hr />
+<h1 id="meanas.fdfd.solvers">Module <code>meanas.fdfd.solvers</code></h1>
+<p>Solvers and solver interface for FDFD problems.</p>
+<h2 id="functions-6">Functions</h2>
+<h3 id="meanas.fdfd.solvers.generic">Function <code>generic</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def generic(omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], J: meanas.fdmath.types.vfdfield_t, epsilon: meanas.fdmath.types.vfdfield_t, mu: meanas.fdmath.types.vfdfield_t = None, pec: meanas.fdmath.types.vfdfield_t = None, pmc: meanas.fdmath.types.vfdfield_t = None, adjoint: bool = False, matrix_solver: Callable[..., numpy.ndarray] = &lt;function _scipy_qmr&gt;, matrix_solver_opts: Dict[str, Any] = None) -&gt; meanas.fdmath.types.vfdfield_t</code></p>
+</blockquote>
+<p>Conjugate gradient FDFD solver using CSR sparse matrices.</p>
+<p>All ndarray arguments should be 1D arrays, as returned by <code>meanas.vec()</code>.</p>
+<p>Args —–= <strong><code>omega</code></strong> : Complex frequency to solve at.</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd><code>[[dx_e, dy_e, dz_e], [dx_h, dy_h, dz_h]]</code> (complex cell sizes) as discussed in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>J</code></strong></dt>
+<dd>Electric current distribution (at E-field locations)
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Dielectric constant distribution (at E-field locations)
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permeability distribution (at H-field locations)
+</dd>
+<dt><strong><code>pec</code></strong></dt>
+<dd>Perfect electric conductor distribution (at E-field locations; non-zero value indicates PEC is present)
+</dd>
+<dt><strong><code>pmc</code></strong></dt>
+<dd>Perfect magnetic conductor distribution (at H-field locations; non-zero value indicates PMC is present)
+</dd>
+<dt><strong><code>adjoint</code></strong></dt>
+<dd>If true, solves the adjoint problem.
+</dd>
+<dt><strong><code>matrix_solver</code></strong></dt>
+<dd>Called as <code>matrix_solver(A, b, **matrix_solver_opts) -&gt; x</code>, where <code>A</code>: <code>scipy.sparse.csr_matrix</code>; <code>b</code>: <code>numpy.ndarray</code>; <code>x</code>: <code>numpy.ndarray</code>; Default is a wrapped version of <code>scipy.sparse.linalg.qmr()</code> which doesn’t return convergence info and logs the residual every 100 iterations.
+</dd>
+<dt><strong><code>matrix_solver_opts</code></strong></dt>
+<dd>Passed as kwargs to <code>matrix_solver(…)</code>
+</dd>
+</dl>
+<p>Returns —–= E-field which solves the system.</p>
+<hr />
+<h1 id="meanas.fdfd.waveguide_2d">Module <code>meanas.fdfd.waveguide_2d</code></h1>
+<p>Operators and helper functions for waveguides with unchanging cross-section.</p>
+<p>The propagation direction is chosen to be along the z axis, and all fields are given an implicit z-dependence of the form <code>exp(-1 * wavenumber * z)</code>.</p>
+<p>As the z-dependence is known, all the functions in this file assume a 2D grid (i.e. <code>dxes = [[[dx_e[0], dx_e[1], ...], [dy_e[0], ...]], [[dx_h[0], ...], [dy_h[0], ...]]]</code>).</p>
+<p>===============</p>
+<p>Consider Maxwell’s equations in continuous space, in the frequency domain. Assuming a structure with some (x, y) cross-section extending uniformly into the z dimension, with a diagonal <eq env="math">\epsilon</eq> tensor, we have</p>
+<p><eq env="displaymath">
+\begin{aligned}
+\nabla \times \vec{E}(x, y, z) &amp;= -\imath \omega \mu \vec{H} \\
+\nabla \times \vec{H}(x, y, z) &amp;=  \imath \omega \epsilon \vec{E} \\
+\vec{E}(x,y,z) = (\vec{E}_t(x, y) + E_z(x, y)\vec{z}) e^{-\gamma z} \\
+\vec{H}(x,y,z) = (\vec{H}_t(x, y) + H_z(x, y)\vec{z}) e^{-\gamma z} \\
+\end{aligned}
+</eq></p>
+<p>Expanding the first two equations into vector components, we get</p>
+<p><eq env="displaymath">
+\begin{aligned}
+-\imath \omega \mu_{xx} H_x &amp;= \partial_y E_z - \partial_z E_y \\
+-\imath \omega \mu_{yy} H_y &amp;= \partial_z E_x - \partial_x E_z \\
+-\imath \omega \mu_{zz} H_z &amp;= \partial_x E_y - \partial_y E_x \\
+\imath \omega \epsilon_{xx} E_x &amp;= \partial_y H_z - \partial_z H_y \\
+\imath \omega \epsilon_{yy} E_y &amp;= \partial_z H_x - \partial_x H_z \\
+\imath \omega \epsilon_{zz} E_z &amp;= \partial_x H_y - \partial_y H_x \\
+\end{aligned}
+</eq></p>
+<p>Substituting in our expressions for <eq env="math">\vec{E}</eq>, <eq env="math">\vec{H}</eq> and discretizing:</p>
+<p><eq env="displaymath">
+\begin{aligned}
+-\imath \omega \mu_{xx} H_x &amp;= \tilde{\partial}_y E_z + \gamma E_y \\
+-\imath \omega \mu_{yy} H_y &amp;= -\gamma E_x - \tilde{\partial}_x E_z \\
+-\imath \omega \mu_{zz} H_z &amp;= \tilde{\partial}_x E_y - \tilde{\partial}_y E_x \\
+\imath \omega \epsilon_{xx} E_x &amp;= \hat{\partial}_y H_z + \gamma H_y \\
+\imath \omega \epsilon_{yy} E_y &amp;= -\gamma H_x - \hat{\partial}_x H_z \\
+\imath \omega \epsilon_{zz} E_z &amp;= \hat{\partial}_x H_y - \hat{\partial}_y H_x \\
+\end{aligned}
+</eq></p>
+<p>Rewrite the last three equations as <eq env="displaymath">
+\begin{aligned}
+\gamma H_y &amp;=  \imath \omega \epsilon_{xx} E_x - \hat{\partial}_y H_z \\
+\gamma H_x &amp;= -\imath \omega \epsilon_{yy} E_y - \hat{\partial}_x H_z \\
+\imath \omega E_z &amp;= \frac{1}{\epsilon_{zz}} \hat{\partial}_x H_y - \frac{1}{\epsilon_{zz}} \hat{\partial}_y H_x \\
+\end{aligned}
+</eq></p>
+<p>Now apply <eq env="math">\gamma \tilde{\partial}_x</eq> to the last equation, then substitute in for <eq env="math">\gamma H_x</eq> and <eq env="math">\gamma H_y</eq>:</p>
+<p><eq env="displaymath">
+\begin{aligned}
+\gamma \tilde{\partial}_x \imath \omega E_z &amp;= \gamma \tilde{\partial}_x \frac{1}{\epsilon_{zz}} \hat{\partial}_x H_y
+                                                - \gamma \tilde{\partial}_x \frac{1}{\epsilon_{zz}} \hat{\partial}_y H_x \\
+        &amp;= \tilde{\partial}_x \frac{1}{\epsilon_{zz}} \hat{\partial}_x ( \imath \omega \epsilon_{xx} E_x - \hat{\partial}_y H_z)
+         - \tilde{\partial}_x \frac{1}{\epsilon_{zz}} \hat{\partial}_y (-\imath \omega \epsilon_{yy} E_y - \hat{\partial}_x H_z)  \\
+        &amp;= \tilde{\partial}_x \frac{1}{\epsilon_{zz}} \hat{\partial}_x ( \imath \omega \epsilon_{xx} E_x)
+         - \tilde{\partial}_x \frac{1}{\epsilon_{zz}} \hat{\partial}_y (-\imath \omega \epsilon_{yy} E_y)  \\
+\gamma \tilde{\partial}_x E_z &amp;= \tilde{\partial}_x \frac{1}{\epsilon_zz} \hat{\partial}_x (\epsilon_{xx} E_x)
+                                    \tilde{\partial}_x \frac{1}{\epsilon_zz} \hat{\partial}_y (\epsilon_{yy} E_y) \\
+\end{aligned}
+</eq></p>
+<p>With a similar approach (but using <eq env="math">\gamma \tilde{\partial}_y</eq> instead), we can get</p>
+<p><eq env="displaymath">
+\begin{aligned}
+\gamma \tilde{\partial}_y E_z &amp;= \tilde{\partial}_y \frac{1}{\epsilon_zz} \hat{\partial}_x (\epsilon_{xx} E_x)
+                                    \tilde{\partial}_y \frac{1}{\epsilon_zz} \hat{\partial}_y (\epsilon_{yy} E_y) \\
+\end{aligned}
+</eq></p>
+<p>We can combine this equation for <eq env="math">\gamma \tilde{\partial}_y E_z</eq> with the unused <eq env="math">\imath \omega \mu_{xx} H_z</eq> and <eq env="math">\imath \omega \mu_{yy} H_y</eq> equations to get</p>
+<p><eq env="displaymath">
+\begin{aligned}
+-\imath \omega \mu_{xx} \gamma H_x &amp;=  \gamma^2 E_y + \tilde{\partial}_y (
+                                      \tilde{\partial}_x \frac{1}{\epsilon_zz} \hat{\partial}_x (\epsilon_{xx} E_x)
+                                    + \tilde{\partial}_x \frac{1}{\epsilon_zz} \hat{\partial}_y (\epsilon_{yy} E_y)
+                                    ) \\
+-\imath \omega \mu_{yy} \gamma H_y &amp;= -\gamma^2 E_x - \tilde{\partial}_x (
+                                      \tilde{\partial}_y \frac{1}{\epsilon_zz} \hat{\partial}_x (\epsilon_{xx} E_x)
+                                    + \tilde{\partial}_y \frac{1}{\epsilon_zz} \hat{\partial}_y (\epsilon_{yy} E_y)
+                                    )\\
+\end{aligned}
+</eq></p>
+<p>However, based on our rewritten equation for <eq env="math">\gamma H_x</eq> and the so-far unused equation for <eq env="math">\imath \omega \mu_{zz} H_z</eq> we can also write</p>
+<p><eq env="displaymath">
+\begin{aligned}
+-\imath \omega \mu_{xx} (\gamma H_x) &amp;= -\imath \omega \mu_{xx} (-\imath \omega \epsilon_{yy} E_y - \hat{\partial}_x H_z) \\
+                                         &amp;= -\omega^2 \mu_{xx} \epsilon_{yy} E_y
+                                            -\imath \omega \mu_{xx} \hat{\partial}_x (
+                                                \frac{1}{-\imath \omega \mu_{zz}} (\tilde{\partial}_x E_y - \tilde{\partial}_y E_x)) \\
+                                         &amp;= -\omega^2 \mu_{xx} \epsilon_{yy} E_y
+                                            +\mu_{xx} \hat{\partial}_x \frac{1}{\mu_{zz}} (\tilde{\partial}_x E_y - \tilde{\partial}_y E_x) \\
+\end{aligned}
+</eq></p>
+<p>and, similarly,</p>
+<p><eq env="displaymath">
+\begin{aligned}
+-\imath \omega \mu_{yy} (\gamma H_y) &amp;= -\omega^2 \mu_{yy} \epsilon_{xx} E_x
+                                            +\mu_{yy} \hat{\partial}_y \frac{1}{\mu_{zz}} (\tilde{\partial}_x E_y - \tilde{\partial}_y E_x) \\
+\end{aligned}
+</eq></p>
+<p>Using these, we can construct the eigenvalue problem <eq env="displaymath"> \beta^2 \begin{bmatrix} E_x \\
+                             E_y \end{bmatrix} =
+    (\omega^2 \begin{bmatrix} \mu_{yy} \epsilon_{xx} &amp; 0 \\
+                                                       0 &amp; \mu_{xx} \epsilon_{yy} \end{bmatrix} +
+                 \begin{bmatrix} -\mu_{yy} \hat{\partial}_y \\
+                                   \mu_{xx} \hat{\partial}_x \end{bmatrix} \mu_{zz}^{-1}
+                 \begin{bmatrix} -\tilde{\partial}_y &amp; \tilde{\partial}_x \end{bmatrix} +
+      \begin{bmatrix} \tilde{\partial}_x \\
+                       \tilde{\partial}_y \end{bmatrix} \epsilon_{zz}^{-1}
+                 \begin{bmatrix} \hat{\partial}_x \epsilon_{xx} &amp; \hat{\partial}_y \epsilon_{yy} \end{bmatrix})
+    \begin{bmatrix} E_x \\
+                     E_y \end{bmatrix}
+</eq></p>
+<p>An equivalent eigenvalue problem can be formed using the <eq env="math">H_x</eq> and <eq env="math">H_y</eq> fields, if those are more convenient.</p>
+<p>Note that <eq env="math">E_z</eq> was never discretized, so <eq env="math">\gamma</eq> and <eq env="math">\beta</eq> will need adjustment to account for numerical dispersion if the result is introduced into a space with a discretized z-axis.</p>
+<h2 id="functions-7">Functions</h2>
+<h3 id="meanas.fdfd.waveguide_2d.curl_e">Function <code>curl_e</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def curl_e(wavenumber: complex, dxes: Sequence[Sequence[numpy.ndarray]]) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Discretized curl operator for use with the waveguide E field.</p>
+<p>Args —–= <strong><code>wavenumber</code></strong> : Wavenumber assuming fields have z-dependence of <code>exp(-i * wavenumber * z)</code></p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+</dl>
+<p>Return —–= Sparse matrix representation of the operator.</p>
+<h3 id="meanas.fdfd.waveguide_2d.curl_h">Function <code>curl_h</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def curl_h(wavenumber: complex, dxes: Sequence[Sequence[numpy.ndarray]]) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Discretized curl operator for use with the waveguide H field.</p>
+<p>Args —–= <strong><code>wavenumber</code></strong> : Wavenumber assuming fields have z-dependence of <code>exp(-i * wavenumber * z)</code></p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+</dl>
+<p>Return —–= Sparse matrix representation of the operator.</p>
+<h3 id="meanas.fdfd.waveguide_2d.e2h">Function <code>e2h</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def e2h(wavenumber: complex, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], mu: Optional[meanas.fdmath.types.vfdfield_t] = None) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Returns an operator which, when applied to a vectorized E eigenfield, produces the vectorized H eigenfield.</p>
+<p>Args —–= <strong><code>wavenumber</code></strong> : Wavenumber assuming fields have z-dependence of <code>exp(-i * wavenumber * z)</code></p>
+<dl>
+<dt><strong><code>omega</code></strong></dt>
+<dd>The angular frequency of the system
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability grid (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix representation of the operator.</p>
+<h3 id="meanas.fdfd.waveguide_2d.e_err">Function <code>e_err</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def e_err(e: meanas.fdmath.types.vfdfield_t, wavenumber: complex, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: meanas.fdmath.types.vfdfield_t = None) -&gt; float</code></p>
+</blockquote>
+<p>Calculates the relative error in the E field</p>
+<p>Args —–= <strong><code>e</code></strong> : Vectorized E field</p>
+<dl>
+<dt><strong><code>wavenumber</code></strong></dt>
+<dd>Wavenumber assuming fields have z-dependence of <code>exp(-i * wavenumber * z)</code>
+</dd>
+<dt><strong><code>omega</code></strong></dt>
+<dd>The angular frequency of the system
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant grid
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability grid (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= Relative error <code>norm(A_e @ e) / norm(e)</code>.</p>
+<h3 id="meanas.fdfd.waveguide_2d.exy2e">Function <code>exy2e</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def exy2e(wavenumber: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Operator which transforms the vector <code>e_xy</code> containing the vectorized E_x and E_y fields, into a vectorized E containing all three E components</p>
+<p>Args —–= <strong><code>wavenumber</code></strong> : Wavenumber assuming fields have z-dependence of <code>exp(-i * wavenumber * z)</code> It should satisfy <code>operator_e() @ e_xy == wavenumber**2 * e_xy</code></p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant grid
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix representing the operator.</p>
+<h3 id="meanas.fdfd.waveguide_2d.exy2h">Function <code>exy2h</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def exy2h(wavenumber: complex, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: Optional[meanas.fdmath.types.vfdfield_t] = None) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Operator which transforms the vector <code>e_xy</code> containing the vectorized E_x and E_y fields, into a vectorized H containing all three H components</p>
+<p>Args —–= <strong><code>wavenumber</code></strong> : Wavenumber assuming fields have z-dependence of <code>exp(-i * wavenumber * z)</code>. It should satisfy <code>operator_e() @ e_xy == wavenumber**2 * e_xy</code></p>
+<dl>
+<dt><strong><code>omega</code></strong></dt>
+<dd>The angular frequency of the system
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant grid
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability grid (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix representing the operator.</p>
+<h3 id="meanas.fdfd.waveguide_2d.h2e">Function <code>h2e</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def h2e(wavenumber: complex, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Returns an operator which, when applied to a vectorized H eigenfield, produces the vectorized E eigenfield.</p>
+<p>Args —–= <strong><code>wavenumber</code></strong> : Wavenumber assuming fields have z-dependence of <code>exp(-i * wavenumber * z)</code></p>
+<dl>
+<dt><strong><code>omega</code></strong></dt>
+<dd>The angular frequency of the system
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant grid
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix representation of the operator.</p>
+<h3 id="meanas.fdfd.waveguide_2d.h_err">Function <code>h_err</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def h_err(h: meanas.fdmath.types.vfdfield_t, wavenumber: complex, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: meanas.fdmath.types.vfdfield_t = None) -&gt; float</code></p>
+</blockquote>
+<p>Calculates the relative error in the H field</p>
+<p>Args —–= <strong><code>h</code></strong> : Vectorized H field</p>
+<dl>
+<dt><strong><code>wavenumber</code></strong></dt>
+<dd>Wavenumber assuming fields have z-dependence of <code>exp(-i * wavenumber * z)</code>
+</dd>
+<dt><strong><code>omega</code></strong></dt>
+<dd>The angular frequency of the system
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant grid
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability grid (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= Relative error <code>norm(A_h @ h) / norm(h)</code>.</p>
+<h3 id="meanas.fdfd.waveguide_2d.hxy2e">Function <code>hxy2e</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def hxy2e(wavenumber: complex, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: Optional[meanas.fdmath.types.vfdfield_t] = None) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Operator which transforms the vector <code>h_xy</code> containing the vectorized H_x and H_y fields, into a vectorized E containing all three E components</p>
+<p>Args —–= <strong><code>wavenumber</code></strong> : Wavenumber assuming fields have z-dependence of <code>exp(-i * wavenumber * z)</code>. It should satisfy <code>operator_h() @ h_xy == wavenumber**2 * h_xy</code></p>
+<dl>
+<dt><strong><code>omega</code></strong></dt>
+<dd>The angular frequency of the system
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant grid
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability grid (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix representing the operator.</p>
+<h3 id="meanas.fdfd.waveguide_2d.hxy2h">Function <code>hxy2h</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def hxy2h(wavenumber: complex, dxes: Sequence[Sequence[numpy.ndarray]], mu: Optional[meanas.fdmath.types.vfdfield_t] = None) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Operator which transforms the vector <code>h_xy</code> containing the vectorized H_x and H_y fields, into a vectorized H containing all three H components</p>
+<p>Args —–= <strong><code>wavenumber</code></strong> : Wavenumber assuming fields have z-dependence of <code>exp(-i * wavenumber * z)</code>. It should satisfy <code>operator_h() @ h_xy == wavenumber**2 * h_xy</code></p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability grid (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix representing the operator.</p>
+<h3 id="meanas.fdfd.waveguide_2d.normalized_fields_e">Function <code>normalized_fields_e</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def normalized_fields_e(e_xy: numpy.ndarray, wavenumber: complex, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: Optional[meanas.fdmath.types.vfdfield_t] = None, prop_phase: float = 0) -&gt; Tuple[meanas.fdmath.types.vfdfield_t, meanas.fdmath.types.vfdfield_t]</code></p>
+</blockquote>
+<p>Given a vector <code>e_xy</code> containing the vectorized E_x and E_y fields, returns normalized, vectorized E and H fields for the system.</p>
+<p>Args —–= <strong><code>e_xy</code></strong> : Vector containing E_x and E_y fields</p>
+<dl>
+<dt><strong><code>wavenumber</code></strong></dt>
+<dd>Wavenumber assuming fields have z-dependence of <code>exp(-i * wavenumber * z)</code>. It should satisfy <code>operator_e() @ e_xy == wavenumber**2 * e_xy</code>
+</dd>
+<dt><strong><code>omega</code></strong></dt>
+<dd>The angular frequency of the system
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant grid
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability grid (default 1 everywhere)
+</dd>
+<dt><strong><code>prop_phase</code></strong></dt>
+<dd>Phase shift <code>(dz * corrected_wavenumber)</code> over 1 cell in propagation direction. Default 0 (continuous propagation direction, i.e. dz-&gt;0).
+</dd>
+</dl>
+<p>Returns —–= <code>(e, h)</code>, where each field is vectorized, normalized, and contains all three vector components.</p>
+<h3 id="meanas.fdfd.waveguide_2d.normalized_fields_h">Function <code>normalized_fields_h</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def normalized_fields_h(h_xy: numpy.ndarray, wavenumber: complex, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: Optional[meanas.fdmath.types.vfdfield_t] = None, prop_phase: float = 0) -&gt; Tuple[meanas.fdmath.types.vfdfield_t, meanas.fdmath.types.vfdfield_t]</code></p>
+</blockquote>
+<p>Given a vector <code>h_xy</code> containing the vectorized H_x and H_y fields, returns normalized, vectorized E and H fields for the system.</p>
+<p>Args —–= <strong><code>h_xy</code></strong> : Vector containing H_x and H_y fields</p>
+<dl>
+<dt><strong><code>wavenumber</code></strong></dt>
+<dd>Wavenumber assuming fields have z-dependence of <code>exp(-i * wavenumber * z)</code>. It should satisfy <code>operator_h() @ h_xy == wavenumber**2 * h_xy</code>
+</dd>
+<dt><strong><code>omega</code></strong></dt>
+<dd>The angular frequency of the system
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant grid
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability grid (default 1 everywhere)
+</dd>
+<dt><strong><code>prop_phase</code></strong></dt>
+<dd>Phase shift <code>(dz * corrected_wavenumber)</code> over 1 cell in propagation direction. Default 0 (continuous propagation direction, i.e. dz-&gt;0).
+</dd>
+</dl>
+<p>Returns —–= <code>(e, h)</code>, where each field is vectorized, normalized, and contains all three vector components.</p>
+<h3 id="meanas.fdfd.waveguide_2d.operator_e">Function <code>operator_e</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def operator_e(omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: Optional[meanas.fdmath.types.vfdfield_t] = None) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Waveguide operator of the form</p>
+<pre><code>omega**2 * mu * epsilon +
+mu * [[-Dy], [Dx]] / mu * [-Dy, Dx] +
+[[Dx], [Dy]] / epsilon * [Dx, Dy] * epsilon</code></pre>
+<p>for use with a field vector of the form <code>cat([E_x, E_y])</code>.</p>
+<p>More precisely, the operator is</p>
+<p><eq env="displaymath">
+\omega^2 \begin{bmatrix} \mu_{yy} \epsilon_{xx} &amp; 0 \\
+                                                   0 &amp; \mu_{xx} \epsilon_{yy} \end{bmatrix} +
+             \begin{bmatrix} -\mu_{yy} \hat{\partial}_y \\
+                               \mu_{xx} \hat{\partial}_x \end{bmatrix} \mu_{zz}^{-1}
+             \begin{bmatrix} -\tilde{\partial}_y &amp; \tilde{\partial}_x \end{bmatrix} +
+  \begin{bmatrix} \tilde{\partial}_x \\
+                   \tilde{\partial}_y \end{bmatrix} \epsilon_{zz}^{-1}
+             \begin{bmatrix} \hat{\partial}_x \epsilon_{xx} &amp; \hat{\partial}_y \epsilon_{yy} \end{bmatrix}
+</eq></p>
+<p><eq env="math">\tilde{\partial}_x</eq> and <eq env="math">\hat{\partial}_x</eq> are the forward and backward derivatives along x, and each <eq env="math">\epsilon_{xx}</eq>, <eq env="math">\mu_{yy}</eq>, etc. is a diagonal matrix containing the vectorized material property distribution.</p>
+<p>This operator can be used to form an eigenvalue problem of the form <code>operator_e(...) @ [E_x, E_y] = wavenumber**2 * [E_x, E_y]</code></p>
+<p>which can then be solved for the eigenmodes of the system (an <code>exp(-i * wavenumber * z)</code> z-dependence is assumed for the fields).</p>
+<p>Args —–= <strong><code>omega</code></strong> : The angular frequency of the system.</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant grid
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability grid (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix representation of the operator.</p>
+<h3 id="meanas.fdfd.waveguide_2d.operator_h">Function <code>operator_h</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def operator_h(omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: Optional[meanas.fdmath.types.vfdfield_t] = None) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Waveguide operator of the form</p>
+<pre><code>omega**2 * epsilon * mu +
+epsilon * [[-Dy], [Dx]] / epsilon * [-Dy, Dx] +
+[[Dx], [Dy]] / mu * [Dx, Dy] * mu</code></pre>
+<p>for use with a field vector of the form <code>cat([H_x, H_y])</code>.</p>
+<p>More precisely, the operator is</p>
+<p><eq env="displaymath">
+\omega^2 \begin{bmatrix} \epsilon_{yy} \mu_{xx} &amp; 0 \\
+                                                  0 &amp; \epsilon_{xx} \mu_{yy} \end{bmatrix} +
+             \begin{bmatrix} -\epsilon_{yy} \tilde{\partial}_y \\
+                               \epsilon_{xx} \tilde{\partial}_x \end{bmatrix} \epsilon_{zz}^{-1}
+             \begin{bmatrix} -\hat{\partial}_y &amp; \hat{\partial}_x \end{bmatrix} +
+  \begin{bmatrix} \hat{\partial}_x \\
+                   \hat{\partial}_y \end{bmatrix} \mu_{zz}^{-1}
+             \begin{bmatrix} \tilde{\partial}_x \mu_{xx} &amp; \tilde{\partial}_y \mu_{yy} \end{bmatrix}
+</eq></p>
+<p><eq env="math">\tilde{\partial}_x</eq> and <eq env="math">\hat{\partial}_x</eq> are the forward and backward derivatives along x, and each <eq env="math">\epsilon_{xx}</eq>, <eq env="math">\mu_{yy}</eq>, etc. is a diagonal matrix containing the vectorized material property distribution.</p>
+<p>This operator can be used to form an eigenvalue problem of the form <code>operator_h(...) @ [H_x, H_y] = wavenumber**2 * [H_x, H_y]</code></p>
+<p>which can then be solved for the eigenmodes of the system (an <code>exp(-i * wavenumber * z)</code> z-dependence is assumed for the fields).</p>
+<p>Args —–= <strong><code>omega</code></strong> : The angular frequency of the system.</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant grid
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Vectorized magnetic permeability grid (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix representation of the operator.</p>
+<h3 id="meanas.fdfd.waveguide_2d.solve_mode">Function <code>solve_mode</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def solve_mode(mode_number: int, *args: Any, **kwargs: Any) -&gt; Tuple[meanas.fdmath.types.vfdfield_t, complex]</code></p>
+</blockquote>
+<p>Wrapper around <code><a href="#meanas.fdfd.waveguide_2d.solve_modes">solve_modes()</a></code> that solves for a single mode.</p>
+<p>Args —–= <strong><code>mode_number</code></strong> : 0-indexed mode number to solve for</p>
+<dl>
+<dt><strong><code>*args</code></strong></dt>
+<dd>passed to <code><a href="#meanas.fdfd.waveguide_2d.solve_modes">solve_modes()</a></code>
+</dd>
+<dt><strong><code>**kwargs</code></strong></dt>
+<dd>passed to <code><a href="#meanas.fdfd.waveguide_2d.solve_modes">solve_modes()</a></code>
+</dd>
+</dl>
+<p>Returns —–= (e_xy, wavenumber)</p>
+<h3 id="meanas.fdfd.waveguide_2d.solve_modes">Function <code>solve_modes</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def solve_modes(mode_numbers: List[int], omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, mu: meanas.fdmath.types.vfdfield_t = None, mode_margin: int = 2) -&gt; Tuple[numpy.ndarray, List[complex]]</code></p>
+</blockquote>
+<p>Given a 2D region, attempts to solve for the eigenmode with the specified mode numbers.</p>
+<p>Args —–= <strong><code>mode_numbers</code></strong> : List of 0-indexed mode numbers to solve for</p>
+<dl>
+<dt><strong><code>omega</code></strong></dt>
+<dd>Angular frequency of the simulation
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Dielectric constant
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permeability (default 1 everywhere)
+</dd>
+<dt><strong><code>mode_margin</code></strong></dt>
+<dd>The eigensolver will actually solve for <code>(max(mode_number) + mode_margin)</code> modes, but only return the target mode. Increasing this value can improve the solver’s ability to find the correct mode. Default 2.
+</dd>
+</dl>
+<p>Returns —–= <code>e_xys</code> : list of vfdfield_t specifying fields</p>
+<dl>
+<dt><code>wavenumbers</code></dt>
+<dd>list of wavenumbers
+</dd>
+</dl>
+<hr />
+<h1 id="meanas.fdfd.waveguide_3d">Module <code>meanas.fdfd.waveguide_3d</code></h1>
+<p>Tools for working with waveguide modes in 3D domains.</p>
+<p>This module relies heavily on <code>waveguide_2d</code> and mostly just transforms its parameters into 2D equivalents and expands the results back into 3D.</p>
+<h2 id="functions-8">Functions</h2>
+<h3 id="meanas.fdfd.waveguide_3d.compute_overlap_e">Function <code>compute_overlap_e</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def compute_overlap_e(E: meanas.fdmath.types.fdfield_t, wavenumber: complex, dxes: Sequence[Sequence[numpy.ndarray]], axis: int, polarity: int, slices: Sequence[slice]) -&gt; meanas.fdmath.types.fdfield_t</code></p>
+</blockquote>
+<p>Given an eigenmode obtained by <code><a href="#meanas.fdfd.waveguide_3d.solve_mode">solve_mode()</a></code>, calculates an overlap_e for the mode orthogonality relation Integrate(((E x H_mode) + (E_mode x H)) dot dn) [assumes reflection symmetry].</p>
+<p>Args —–= <strong><code>E</code></strong> : E-field of the mode</p>
+<dl>
+<dt><strong><code>H</code></strong></dt>
+<dd>H-field of the mode (advanced by half of a Yee cell from E)
+</dd>
+<dt><strong><code>wavenumber</code></strong></dt>
+<dd>Wavenumber of the mode
+</dd>
+<dt><strong><code>omega</code></strong></dt>
+<dd>Angular frequency of the simulation
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>axis</code></strong></dt>
+<dd>Propagation axis (0=x, 1=y, 2=z)
+</dd>
+<dt><strong><code>polarity</code></strong></dt>
+<dd>Propagation direction (+1 for +ve, -1 for -ve)
+</dd>
+<dt><strong><code>slices</code></strong></dt>
+<dd><code>epsilon[tuple(slices)]</code> is used to select the portion of the grid to use as the waveguide cross-section. slices[axis] should select only one item.
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permeability (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= overlap_e such that <code>numpy.sum(overlap_e * other_e)</code> computes the overlap integral</p>
+<h3 id="meanas.fdfd.waveguide_3d.compute_source">Function <code>compute_source</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def compute_source(E: meanas.fdmath.types.fdfield_t, wavenumber: complex, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], axis: int, polarity: int, slices: Sequence[slice], epsilon: meanas.fdmath.types.fdfield_t, mu: Optional[meanas.fdmath.types.fdfield_t] = None) -&gt; meanas.fdmath.types.fdfield_t</code></p>
+</blockquote>
+<p>Given an eigenmode obtained by <code><a href="#meanas.fdfd.waveguide_3d.solve_mode">solve_mode()</a></code>, returns the current source distribution necessary to position a unidirectional source at the slice location.</p>
+<p>Args —–= <strong><code>E</code></strong> : E-field of the mode</p>
+<dl>
+<dt><strong><code>wavenumber</code></strong></dt>
+<dd>Wavenumber of the mode
+</dd>
+<dt><strong><code>omega</code></strong></dt>
+<dd>Angular frequency of the simulation
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>axis</code></strong></dt>
+<dd>Propagation axis (0=x, 1=y, 2=z)
+</dd>
+<dt><strong><code>polarity</code></strong></dt>
+<dd>Propagation direction (+1 for +ve, -1 for -ve)
+</dd>
+<dt><strong><code>slices</code></strong></dt>
+<dd><code>epsilon[tuple(slices)]</code> is used to select the portion of the grid to use as the waveguide cross-section. <code>slices[axis]</code> should select only one item.
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permeability (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= J distribution for the unidirectional source</p>
+<h3 id="meanas.fdfd.waveguide_3d.expand_e">Function <code>expand_e</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def expand_e(E: meanas.fdmath.types.fdfield_t, wavenumber: complex, dxes: Sequence[Sequence[numpy.ndarray]], axis: int, polarity: int, slices: Sequence[slice]) -&gt; meanas.fdmath.types.fdfield_t</code></p>
+</blockquote>
+<p>Given an eigenmode obtained by <code><a href="#meanas.fdfd.waveguide_3d.solve_mode">solve_mode()</a></code>, expands the E-field from the 2D slice where the mode was calculated to the entire domain (along the propagation axis). This assumes the epsilon cross-section remains constant throughout the entire domain; it is up to the caller to truncate the expansion to any regions where it is valid.</p>
+<p>Args —–= <strong><code>E</code></strong> : E-field of the mode</p>
+<dl>
+<dt><strong><code>wavenumber</code></strong></dt>
+<dd>Wavenumber of the mode
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>axis</code></strong></dt>
+<dd>Propagation axis (0=x, 1=y, 2=z)
+</dd>
+<dt><strong><code>polarity</code></strong></dt>
+<dd>Propagation direction (+1 for +ve, -1 for -ve)
+</dd>
+<dt><strong><code>slices</code></strong></dt>
+<dd><code>epsilon[tuple(slices)]</code> is used to select the portion of the grid to use as the waveguide cross-section. slices[axis] should select only one item.
+</dd>
+</dl>
+<p>Returns —–= <code>E</code>, with the original field expanded along the specified <code>axis</code>.</p>
+<h3 id="meanas.fdfd.waveguide_3d.solve_mode">Function <code>solve_mode</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def solve_mode(mode_number: int, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], axis: int, polarity: int, slices: Sequence[slice], epsilon: meanas.fdmath.types.fdfield_t, mu: Optional[meanas.fdmath.types.fdfield_t] = None) -&gt; Dict[str, Union[complex, numpy.ndarray]]</code></p>
+</blockquote>
+<p>Given a 3D grid, selects a slice from the grid and attempts to solve for an eigenmode propagating through that slice.</p>
+<p>Args —–= <strong><code>mode_number</code></strong> : Number of the mode, 0-indexed</p>
+<dl>
+<dt><strong><code>omega</code></strong></dt>
+<dd>Angular frequency of the simulation
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code>
+</dd>
+<dt><strong><code>axis</code></strong></dt>
+<dd>Propagation axis (0=x, 1=y, 2=z)
+</dd>
+<dt><strong><code>polarity</code></strong></dt>
+<dd>Propagation direction (+1 for +ve, -1 for -ve)
+</dd>
+<dt><strong><code>slices</code></strong></dt>
+<dd><code>epsilon[tuple(slices)]</code> is used to select the portion of the grid to use as the waveguide cross-section. <code>slices[axis]</code> should select only one item.
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Dielectric constant
+</dd>
+<dt><strong><code>mu</code></strong></dt>
+<dd>Magnetic permeability (default 1 everywhere)
+</dd>
+</dl>
+<p>Returns —–= <code>{'E': List[numpy.ndarray], 'H': List[numpy.ndarray], 'wavenumber': complex}</code></p>
+<hr />
+<h1 id="meanas.fdfd.waveguide_cyl">Module <code>meanas.fdfd.waveguide_cyl</code></h1>
+<p>Operators and helper functions for cylindrical waveguides with unchanging cross-section.</p>
+<p>WORK IN PROGRESS, CURRENTLY BROKEN</p>
+<p>As the z-dependence is known, all the functions in this file assume a 2D grid (i.e. <code>dxes = [[[dr_e_0, dx_e_1, ...], [dy_e_0, ...]], [[dr_h_0, ...], [dy_h_0, ...]]]</code>).</p>
+<h2 id="functions-9">Functions</h2>
+<h3 id="meanas.fdfd.waveguide_cyl.cylindrical_operator">Function <code>cylindrical_operator</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def cylindrical_operator(omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, r0: float) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Cylindrical coordinate waveguide operator of the form</p>
+<p>TODO</p>
+<p>for use with a field vector of the form <code>[E_r, E_y]</code>.</p>
+<p>This operator can be used to form an eigenvalue problem of the form A @ [E_r, E_y] = wavenumber**2 * [E_r, E_y]</p>
+<p>which can then be solved for the eigenmodes of the system (an <code>exp(-i * wavenumber * theta)</code> theta-dependence is assumed for the fields).</p>
+<p>Args —–= <strong><code>omega</code></strong> : The angular frequency of the system</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters <code>[dx_e, dx_h]</code> as described in <code><a href="#meanas.fdmath.types">meanas.fdmath.types</a></code> (2D)
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Vectorized dielectric constant grid
+</dd>
+<dt><strong><code>r0</code></strong></dt>
+<dd>Radius of curvature for the simulation. This should be the minimum value of r within the simulation domain.
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix representation of the operator</p>
+<h3 id="meanas.fdfd.waveguide_cyl.solve_mode">Function <code>solve_mode</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def solve_mode(mode_number: int, omega: complex, dxes: Sequence[Sequence[numpy.ndarray]], epsilon: meanas.fdmath.types.vfdfield_t, r0: float) -&gt; Dict[str, Union[complex, meanas.fdmath.types.fdfield_t]]</code></p>
+</blockquote>
+<p>TODO: fixup Given a 2d (r, y) slice of epsilon, attempts to solve for the eigenmode of the bent waveguide with the specified mode number.</p>
+<p>Args —–= <strong><code>mode_number</code></strong> : Number of the mode, 0-indexed</p>
+<dl>
+<dt><strong><code>omega</code></strong></dt>
+<dd>Angular frequency of the simulation
+</dd>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid parameters [dx_e, dx_h] as described in meanas.fdmath.types. The first coordinate is assumed to be r, the second is y.
+</dd>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>Dielectric constant
+</dd>
+<dt><strong><code>r0</code></strong></dt>
+<dd>Radius of curvature for the simulation. This should be the minimum value of r within the simulation domain.
+</dd>
+</dl>
+<p>Returns —–= <code>{'E': List[numpy.ndarray], 'H': List[numpy.ndarray], 'wavenumber': complex}</code></p>
+<hr />
+<h1 id="meanas.fdmath">Module <code>meanas.fdmath</code></h1>
+<p>Basic discrete calculus for finite difference (fd) simulations.</p>
+<h1 id="fields-functions-and-operators">Fields, Functions, and Operators</h1>
+<p>Discrete fields are stored in one of two forms:</p>
+<ul>
+<li>The <code>fdfield_t</code> form is a multidimensional <code>numpy.ndarray</code>
+<ul>
+<li>For a scalar field, this is just <code>U[m, n, p]</code>, where <code>m</code>, <code>n</code>, and <code>p</code> are discrete indices referring to positions on the x, y, and z axes respectively.</li>
+<li>For a vector field, the first index specifies which vector component is accessed: <code>E[:, m, n, p] = [Ex[m, n, p], Ey[m, n, p], Ez[m, n, p]]</code>.</li>
+</ul></li>
+<li>The <code>vfdfield_t</code> form is simply a vectorzied (i.e. 1D) version of the <code>field_t</code>, as obtained by <code><a href="#meanas.fdmath.vectorization.vec">vec()</a></code> (effectively just <code>numpy.ravel</code>)</li>
+</ul>
+<p>Operators which act on fields also come in two forms: + Python functions, created by the functions in <code><a href="#meanas.fdmath.functional">meanas.fdmath.functional</a></code>. The generated functions act on fields in the <code>fdfield_t</code> form. + Linear operators, usually 2D sparse matrices using <code>scipy.sparse</code>, created by <code><a href="#meanas.fdmath.operators">meanas.fdmath.operators</a></code>. These operators act on vectorized fields in the <code>vfdfield_t</code> form.</p>
+<p>The operations performed should be equivalent: <code>functional.op(*args)(E)</code> should be equivalent to <code>unvec(operators.op(*args) @ vec(E), E.shape[1:])</code>.</p>
+<p>Generally speaking the <code>field_t</code> form is easier to work with, but can be harder or less efficient to compose (e.g. it is easy to generate a single matrix by multiplying a series of other matrices).</p>
+<h1 id="discrete-calculus">Discrete calculus</h1>
+<p>This documentation and approach is roughly based on W.C. Chew’s excellent “Electromagnetic Theory on a Lattice” (doi:10.1063/1.355770), which covers a superset of this material with similar notation and more detail.</p>
+<h2 id="scalar-derivatives-and-cell-shifts">Scalar Derivatives And Cell Shifts</h2>
+<p>Define the discrete forward derivative as <eq env="displaymath"> [\tilde{\partial}_x f]_{m + \frac{1}{2}} = \frac{1}{\Delta_{x, m}} (f_{m + 1} - f_m) </eq> where <eq env="math">f</eq> is a function defined at discrete locations on the x-axis (labeled using <eq env="math">m</eq>). The value at <eq env="math">m</eq> occupies a length <eq env="math">\Delta_{x, m}</eq> along the x-axis. Note that <eq env="math">m</eq> is an index along the x-axis, <em>not</em> necessarily an x-coordinate, since each length <eq env="math">\Delta_{x, m}, \Delta_{x, m+1}, ...</eq> is independently chosen.</p>
+<p>If we treat <code>f</code> as a 1D array of values, with the <code>i</code>-th value <code>f[i]</code> taking up a length <code>dx[i]</code> along the x-axis, the forward derivative is</p>
+<pre><code>deriv_forward(f)[i] = (f[i + 1] - f[i]) / dx[i]</code></pre>
+<p>Likewise, discrete reverse derivative is <eq env="displaymath"> [\hat{\partial}_x f ]_{m - \frac{1}{2}} = \frac{1}{\Delta_{x, m}} (f_{m} - f_{m - 1}) </eq> or</p>
+<pre><code>deriv_back(f)[i] = (f[i] - f[i - 1]) / dx[i]</code></pre>
+<p>The derivatives’ values are shifted by a half-cell relative to the original function, and will have different cell widths if all the <code>dx[i]</code> ( <eq env="math">\Delta_{x, m}</eq> ) are not identical:</p>
+<pre><code>[figure: derivatives and cell sizes]
+    dx0   dx1      dx2      dx3      cell sizes for function
+   ----- ----- ----------- -----
+   ______________________________
+        |     |           |     |
+     f0 |  f1 |     f2    |  f3 |    function
+   _____|_____|___________|_____|
+     |     |        |        |
+     | Df0 |   Df1  |   Df2  | Df3   forward derivative (periodic boundary)
+   __|_____|________|________|___
+
+ dx&#39;3] dx&#39;0   dx&#39;1     dx&#39;2  [dx&#39;3   cell sizes for forward derivative
+   -- ----- -------- -------- ---
+ dx&#39;0] dx&#39;1   dx&#39;2     dx&#39;3  [dx&#39;0   cell sizes for reverse derivative
+   ______________________________
+     |     |        |        |
+     | df1 |  df2   |   df3  | df0   reverse derivative (periodic boundary)
+   __|_____|________|________|___
+
+Periodic boundaries are used here and elsewhere unless otherwise noted.</code></pre>
+<p>In the above figure, <code>f0 =</code> <eq env="math">f_0</eq>, <code>f1 =</code> <eq env="math">f_1</eq> <code>Df0 =</code> <eq env="math">[\tilde{\partial}f]_{0 + \frac{1}{2}}</eq> <code>Df1 =</code> <eq env="math">[\tilde{\partial}f]_{1 + \frac{1}{2}}</eq> <code>df0 =</code> <eq env="math">[\hat{\partial}f]_{0 - \frac{1}{2}}</eq> etc.</p>
+<p>The fractional subscript <eq env="math">m + \frac{1}{2}</eq> is used to indicate values defined at shifted locations relative to the original <eq env="math">m</eq>, with corresponding lengths <eq env="displaymath"> \Delta_{x, m + \frac{1}{2}} = \frac{1}{2} * (\Delta_{x, m} + \Delta_{x, m + 1}) </eq></p>
+<p>Just as <eq env="math">m</eq> is not itself an x-coordinate, neither is <eq env="math">m + \frac{1}{2}</eq>; carefully note the positions of the various cells in the above figure vs their labels. If the positions labeled with <eq env="math">m</eq> are considered the “base” or “original” grid, the positions labeled with <eq env="math">m + \frac{1}{2}</eq> are said to lie on a “dual” or “derived” grid.</p>
+<p>For the remainder of the <code>Discrete calculus</code> section, all figures will show constant-length cells in order to focus on the vector derivatives themselves. See the <code>Grid description</code> section below for additional information on this topic and generalization to three dimensions.</p>
+<h2 id="gradients-and-fore-vectors">Gradients and fore-vectors</h2>
+<p>Expanding to three dimensions, we can define two gradients <eq env="displaymath"> [\tilde{\nabla} f]_{m,n,p} = \vec{x} [\tilde{\partial}_x f]_{m + \frac{1}{2},n,p} +
+                                    \vec{y} [\tilde{\partial}_y f]_{m,n + \frac{1}{2},p} +
+                                    \vec{z} [\tilde{\partial}_z f]_{m,n,p + \frac{1}{2}}  </eq> <eq env="displaymath"> [\hat{\nabla} f]_{m,n,p} = \vec{x} [\hat{\partial}_x f]_{m + \frac{1}{2},n,p} +
+                                  \vec{y} [\hat{\partial}_y f]_{m,n + \frac{1}{2},p} +
+                                  \vec{z} [\hat{\partial}_z f]_{m,n,p + \frac{1}{2}}  </eq></p>
+<p>or</p>
+<pre><code>[code: gradients]
+grad_forward(f)[i,j,k] = [Dx_forward(f)[i, j, k],
+                          Dy_forward(f)[i, j, k],
+                          Dz_forward(f)[i, j, k]]
+                       = [(f[i + 1, j, k] - f[i, j, k]) / dx[i],
+                          (f[i, j + 1, k] - f[i, j, k]) / dy[i],
+                          (f[i, j, k + 1] - f[i, j, k]) / dz[i]]
+
+grad_back(f)[i,j,k] = [Dx_back(f)[i, j, k],
+                       Dy_back(f)[i, j, k],
+                       Dz_back(f)[i, j, k]]
+                    = [(f[i, j, k] - f[i - 1, j, k]) / dx[i],
+                       (f[i, j, k] - f[i, j - 1, k]) / dy[i],
+                       (f[i, j, k] - f[i, j, k - 1]) / dz[i]]</code></pre>
+<p>The three derivatives in the gradient cause shifts in different directions, so the x/y/z components of the resulting “vector” are defined at different points: the x-component is shifted in the x-direction, y in y, and z in z.</p>
+<p>We call the resulting object a “fore-vector” or “back-vector”, depending on the direction of the shift. We write it as <eq env="displaymath"> \tilde{g}_{m,n,p} = \vec{x} g^x_{m + \frac{1}{2},n,p} +
+                          \vec{y} g^y_{m,n + \frac{1}{2},p} +
+                          \vec{z} g^z_{m,n,p + \frac{1}{2}} </eq> <eq env="displaymath"> \hat{g}_{m,n,p} = \vec{x} g^x_{m - \frac{1}{2},n,p} +
+                        \vec{y} g^y_{m,n - \frac{1}{2},p} +
+                        \vec{z} g^z_{m,n,p - \frac{1}{2}} </eq></p>
+<pre><code>[figure: gradient / fore-vector]
+   (m, n+1, p+1) ______________ (m+1, n+1, p+1)
+                /:            /|
+               / :           / |
+              /  :          /  |
+  (m, n, p+1)/_____________/   |     The forward derivatives are defined
+             |   :         |   |     at the Dx, Dy, Dz points,
+             |   :.........|...|     but the forward-gradient fore-vector
+ z y        Dz  /          |  /      is the set of all three
+ |/_x        | Dy          | /       and is said to be &quot;located&quot; at (m,n,p)
+             |/            |/
+    (m, n, p)|_____Dx______| (m+1, n, p)</code></pre>
+<h2 id="divergences">Divergences</h2>
+<p>There are also two divergences,</p>
+<p><eq env="displaymath"> d_{n,m,p} = [\tilde{\nabla} \cdot \hat{g}]_{n,m,p}
+               = [\tilde{\partial}_x g^x]_{m,n,p} +
+                 [\tilde{\partial}_y g^y]_{m,n,p} +
+                 [\tilde{\partial}_z g^z]_{m,n,p}   </eq></p>
+<p><eq env="displaymath"> d_{n,m,p} = [\hat{\nabla} \cdot \tilde{g}]_{n,m,p}
+               = [\hat{\partial}_x g^x]_{m,n,p} +
+                 [\hat{\partial}_y g^y]_{m,n,p} +
+                 [\hat{\partial}_z g^z]_{m,n,p}  </eq></p>
+<p>or</p>
+<pre><code>[code: divergences]
+div_forward(g)[i,j,k] = Dx_forward(gx)[i, j, k] +
+                        Dy_forward(gy)[i, j, k] +
+                        Dz_forward(gz)[i, j, k]
+                      = (gx[i + 1, j, k] - gx[i, j, k]) / dx[i] +
+                        (gy[i, j + 1, k] - gy[i, j, k]) / dy[i] +
+                        (gz[i, j, k + 1] - gz[i, j, k]) / dz[i]
+
+div_back(g)[i,j,k] = Dx_back(gx)[i, j, k] +
+                     Dy_back(gy)[i, j, k] +
+                     Dz_back(gz)[i, j, k]
+                   = (gx[i, j, k] - gx[i - 1, j, k]) / dx[i] +
+                     (gy[i, j, k] - gy[i, j - 1, k]) / dy[i] +
+                     (gz[i, j, k] - gz[i, j, k - 1]) / dz[i]</code></pre>
+<p>where <code>g = [gx, gy, gz]</code> is a fore- or back-vector field.</p>
+<p>Since we applied the forward divergence to the back-vector (and vice-versa), the resulting scalar value is defined at the back-vector’s (fore-vector’s) location <eq env="math">(m,n,p)</eq> and not at the locations of its components <eq env="math">(m \pm \frac{1}{2},n,p)</eq> etc.</p>
+<pre><code>[figure: divergence]
+                                ^^
+     (m-1/2, n+1/2, p+1/2) _____||_______ (m+1/2, n+1/2, p+1/2)
+                          /:    ||  ,,  /|
+                         / :    || //  / |      The divergence at (m, n, p) (the center
+                        /  :      //  /  |      of this cube) of a fore-vector field
+  (m-1/2, n-1/2, p+1/2)/_____________/   |      is the sum of the outward-pointing
+                       |   :         |   |      fore-vector components, which are
+     z y            &lt;==|== :.........|.====&gt;    located at the face centers.
+     |/_x              |  /          |  /
+                       | /    //     | /       Note that in a nonuniform grid, each
+                       |/    // ||   |/        dimension is normalized by the cell width.
+  (m-1/2, n-1/2, p-1/2)|____//_______| (m+1/2, n-1/2, p-1/2)
+                           &#39;&#39;   ||
+                                VV</code></pre>
+<h2 id="curls">Curls</h2>
+<p>The two curls are then</p>
+<p><eq env="displaymath"> \begin{aligned}
+     \hat{h}_{m + \frac{1}{2}, n + \frac{1}{2}, p + \frac{1}{2}} &amp;= \\
+     [\tilde{\nabla} \times \tilde{g}]_{m + \frac{1}{2}, n + \frac{1}{2}, p + \frac{1}{2}} &amp;=
+        \vec{x} (\tilde{\partial}_y g^z_{m,n,p + \frac{1}{2}} - \tilde{\partial}_z g^y_{m,n + \frac{1}{2},p}) \\
+     &amp;+ \vec{y} (\tilde{\partial}_z g^x_{m + \frac{1}{2},n,p} - \tilde{\partial}_x g^z_{m,n,p + \frac{1}{2}}) \\
+     &amp;+ \vec{z} (\tilde{\partial}_x g^y_{m,n + \frac{1}{2},p} - \tilde{\partial}_y g^z_{m + \frac{1}{2},n,p})
+     \end{aligned} </eq></p>
+<p>and</p>
+<p><eq env="displaymath"> \tilde{h}_{m - \frac{1}{2}, n - \frac{1}{2}, p - \frac{1}{2}} =
+     [\hat{\nabla} \times \hat{g}]_{m - \frac{1}{2}, n - \frac{1}{2}, p - \frac{1}{2}} </eq></p>
+<p>where <eq env="math">\hat{g}</eq> and <eq env="math">\tilde{g}</eq> are located at <eq env="math">(m,n,p)</eq> with components at <eq env="math">(m \pm \frac{1}{2},n,p)</eq> etc., while <eq env="math">\hat{h}</eq> and <eq env="math">\tilde{h}</eq> are located at <eq env="math">(m \pm \frac{1}{2}, n \pm \frac{1}{2}, p \pm \frac{1}{2})</eq> with components at <eq env="math">(m, n \pm \frac{1}{2}, p \pm \frac{1}{2})</eq> etc.</p>
+<pre><code>[code: curls]
+curl_forward(g)[i,j,k] = [Dy_forward(gz)[i, j, k] - Dz_forward(gy)[i, j, k],
+                          Dz_forward(gx)[i, j, k] - Dx_forward(gz)[i, j, k],
+                          Dx_forward(gy)[i, j, k] - Dy_forward(gx)[i, j, k]]
+
+curl_back(g)[i,j,k] = [Dy_back(gz)[i, j, k] - Dz_back(gy)[i, j, k],
+                       Dz_back(gx)[i, j, k] - Dx_back(gz)[i, j, k],
+                       Dx_back(gy)[i, j, k] - Dy_back(gx)[i, j, k]]</code></pre>
+<p>For example, consider the forward curl, at (m, n, p), of a back-vector field <code>g</code>, defined on a grid containing (m + 1/2, n + 1/2, p + 1/2). The curl will be a fore-vector, so its z-component will be defined at (m, n, p + 1/2). Take the nearest x- and y-components of <code>g</code> in the xy plane where the curl’s z-component is located; these are</p>
+<pre><code>[curl components]
+(m,       n + 1/2, p + 1/2) : x-component of back-vector at (m + 1/2, n + 1/2, p + 1/2)
+(m + 1,   n + 1/2, p + 1/2) : x-component of back-vector at (m + 3/2, n + 1/2, p + 1/2)
+(m + 1/2, n      , p + 1/2) : y-component of back-vector at (m + 1/2, n + 1/2, p + 1/2)
+(m + 1/2, n + 1  , p + 1/2) : y-component of back-vector at (m + 1/2, n + 3/2, p + 1/2)</code></pre>
+<p>These four xy-components can be used to form a loop around the curl’s z-component; its magnitude and sign is set by their loop-oriented sum (i.e. two have their signs flipped to complete the loop).</p>
+<pre><code>[figure: z-component of curl]
+                          :             |
+    z y                   :    ^^       |
+    |/_x                  :....||.&lt;.....|  (m+1, n+1, p+1/2)
+                          /    ||      /
+                       | v     ||   | ^
+                       |/           |/
+         (m, n, p+1/2) |_____&gt;______|  (m+1, n, p+1/2)</code></pre>
+<h1 id="maxwells-equations">Maxwell’s Equations</h1>
+<p>If we discretize both space (m,n,p) and time (l), Maxwell’s equations become</p>
+<p><eq env="displaymath"> \begin{aligned}
+  \tilde{\nabla} \times \tilde{E}_{l,\vec{r}} &amp;= -\tilde{\partial}_t \hat{B}_{l-\frac{1}{2}, \vec{r} + \frac{1}{2}}
+                                                                         - \hat{M}_{l, \vec{r} + \frac{1}{2}}  \\
+  \hat{\nabla} \times \hat{H}_{l-\frac{1}{2},\vec{r} + \frac{1}{2}} &amp;= \hat{\partial}_t \tilde{D}_{l, \vec{r}}
+                                                                             + \tilde{J}_{l-\frac{1}{2},\vec{r}} \\
+  \tilde{\nabla} \cdot \hat{B}_{l-\frac{1}{2}, \vec{r} + \frac{1}{2}} &amp;= 0 \\
+  \hat{\nabla} \cdot \tilde{D}_{l,\vec{r}} &amp;= \rho_{l,\vec{r}}
+ \end{aligned} </eq></p>
+<p>with</p>
+<p><eq env="displaymath"> \begin{aligned}
+  \hat{B}_{\vec{r}} &amp;= \mu_{\vec{r} + \frac{1}{2}} \cdot \hat{H}_{\vec{r} + \frac{1}{2}} \\
+  \tilde{D}_{\vec{r}} &amp;= \epsilon_{\vec{r}} \cdot \tilde{E}_{\vec{r}}
+ \end{aligned} </eq></p>
+<p>where the spatial subscripts are abbreviated as <eq env="math">\vec{r} = (m, n, p)</eq> and <eq env="math">\vec{r} + \frac{1}{2} = (m + \frac{1}{2}, n + \frac{1}{2}, p + \frac{1}{2})</eq>, <eq env="math">\tilde{E}</eq> and <eq env="math">\hat{H}</eq> are the electric and magnetic fields, <eq env="math">\tilde{J}</eq> and <eq env="math">\hat{M}</eq> are the electric and magnetic current distributions, and <eq env="math">\epsilon</eq> and <eq env="math">\mu</eq> are the dielectric permittivity and magnetic permeability.</p>
+<p>The above is Yee’s algorithm, written in a form analogous to Maxwell’s equations. The time derivatives can be expanded to form the update equations:</p>
+<pre><code>[code: Maxwell&#39;s equations updates]
+H[i, j, k] -= dt * (curl_forward(E)[i, j, k] + M[t, i, j, k]) /      mu[i, j, k]
+E[i, j, k] += dt * (curl_back(   H)[i, j, k] + J[t, i, j, k]) / epsilon[i, j, k]</code></pre>
+<p>Note that the E-field fore-vector and H-field back-vector are offset by a half-cell, resulting in distinct locations for all six E- and H-field components:</p>
+<pre><code>[figure: Field components]
+
+        (m - 1/2,=&gt; ____________Hx__________[H] &lt;= r + 1/2 = (m + 1/2,
+         n + 1/2,  /:           /:          /|                n + 1/2,
+   z y   p + 1/2) / :          / :         / |                p + 1/2)
+   |/_x          /  :         /  :        /  |
+                /   :       Ez__________Hy   |      Locations of the E- and
+               /    :        :   :      /|   |      H-field components for the
+ (m - 1/2,    /     :        :  Ey...../.|..Hz      [E] fore-vector at r = (m,n,p)
+  n - 1/2, =&gt;/________________________/  |  /|      (the large cube&#39;s center)
+  p + 1/2)   |      :        : /      |  | / |      and [H] back-vector at r + 1/2
+             |      :        :/       |  |/  |      (the top right corner)
+             |      :       [E].......|.Ex   |
+             |      :.................|......| &lt;= (m + 1/2, n + 1/2, p + 1/2)
+             |     /                  |     /
+             |    /                   |    /
+             |   /                    |   /         This is the Yee discretization
+             |  /                     |  /          scheme (&quot;Yee cell&quot;).
+r - 1/2 =    | /                      | /
+ (m - 1/2,   |/                       |/
+  n - 1/2,=&gt; |________________________| &lt;= (m + 1/2, n - 1/2, p - 1/2)
+  p - 1/2)</code></pre>
+<p>Each component forms its own grid, offset from the others:</p>
+<pre><code>[figure: E-fields for adjacent cells]
+
+              H1__________Hx0_________H0
+  z y        /:                       /|
+  |/_x      / :                      / |    This figure shows H back-vector locations
+           /  :                     /  |    H0, H1, etc. and their associated components
+         Hy1  :                   Hy0  |    H0 = (Hx0, Hy0, Hz0) etc.
+         /    :                   /    |
+        /    Hz1                 /     Hz0
+       H2___________Hx3_________H3     |    The equivalent drawing for E would have
+       |      :                 |      |    fore-vectors located at the cube&#39;s
+       |      :                 |      |    center (and the centers of adjacent cubes),
+       |      :                 |      |    with components on the cube&#39;s faces.
+       |      H5..........Hx4...|......H4
+       |     /                  |     /
+      Hz2   /                  Hz2   /
+       |   /                    |   /
+       | Hy6                    | Hy4
+       | /                      | /
+       |/                       |/
+       H6__________Hx7__________H7</code></pre>
+<p>The divergence equations can be derived by taking the divergence of the curl equations and combining them with charge continuity, <eq env="displaymath"> \hat{\nabla} \cdot \tilde{J} + \hat{\partial}_t \rho = 0 </eq> implying that the discrete Maxwell’s equations do not produce spurious charges.</p>
+<h2 id="wave-equation">Wave Equation</h2>
+<p>Taking the backward curl of the <eq env="math">\tilde{\nabla} \times \tilde{E}</eq> equation and replacing the resulting <eq env="math">\hat{\nabla} \times \hat{H}</eq> term using its respective equation, and setting <eq env="math">\hat{M}</eq> to zero, we can form the discrete wave equation:</p>
+<p><eq env="displaymath">
+  \begin{aligned}
+  \tilde{\nabla} \times \tilde{E}_{l,\vec{r}} &amp;=
+      -\tilde{\partial}_t \hat{B}_{l-\frac{1}{2}, \vec{r} + \frac{1}{2}}
+                          - \hat{M}_{l-1, \vec{r} + \frac{1}{2}}  \\
+  \mu^{-1}_{\vec{r} + \frac{1}{2}} \cdot \tilde{\nabla} \times \tilde{E}_{l,\vec{r}} &amp;=
+    -\tilde{\partial}_t \hat{H}_{l-\frac{1}{2}, \vec{r} + \frac{1}{2}}  \\
+  \hat{\nabla} \times (\mu^{-1}_{\vec{r} + \frac{1}{2}} \cdot \tilde{\nabla} \times \tilde{E}_{l,\vec{r}}) &amp;=
+    \hat{\nabla} \times (-\tilde{\partial}_t \hat{H}_{l-\frac{1}{2}, \vec{r} + \frac{1}{2}})  \\
+  \hat{\nabla} \times (\mu^{-1}_{\vec{r} + \frac{1}{2}} \cdot \tilde{\nabla} \times \tilde{E}_{l,\vec{r}}) &amp;=
+    -\tilde{\partial}_t \hat{\nabla} \times \hat{H}_{l-\frac{1}{2}, \vec{r} + \frac{1}{2}}  \\
+  \hat{\nabla} \times (\mu^{-1}_{\vec{r} + \frac{1}{2}} \cdot \tilde{\nabla} \times \tilde{E}_{l,\vec{r}}) &amp;=
+    -\tilde{\partial}_t \hat{\partial}_t \epsilon_{\vec{r}} \tilde{E}_{l, \vec{r}} + \hat{\partial}_t \tilde{J}_{l-\frac{1}{2},\vec{r}} \\
+  \hat{\nabla} \times (\mu^{-1}_{\vec{r} + \frac{1}{2}} \cdot \tilde{\nabla} \times \tilde{E}_{l,\vec{r}})
+            + \tilde{\partial}_t \hat{\partial}_t \epsilon_{\vec{r}} \cdot \tilde{E}_{l, \vec{r}}
+            &amp;= \tilde{\partial}_t \tilde{J}_{l - \frac{1}{2}, \vec{r}}
+  \end{aligned}
+</eq></p>
+<h2 id="frequency-domain">Frequency Domain</h2>
+<p>We can substitute in a time-harmonic fields</p>
+<p><eq env="displaymath">
+ \begin{aligned}
+ \tilde{E}_{l, \vec{r}} &amp;= \tilde{E}_{\vec{r}} e^{-\imath \omega l \Delta_t} \\
+ \tilde{J}_{l, \vec{r}} &amp;= \tilde{J}_{\vec{r}} e^{-\imath \omega (l - \frac{1}{2}) \Delta_t}
+ \end{aligned}
+</eq></p>
+<p>resulting in</p>
+<p><eq env="displaymath">
+ \begin{aligned}
+ \tilde{\partial}_t &amp;\Rightarrow (e^{ \imath \omega \Delta_t} - 1) / \Delta_t = \frac{-2 \imath}{\Delta_t} \sin(\omega \Delta_t / 2) e^{-\imath \omega \Delta_t / 2} = -\imath \Omega e^{-\imath \omega \Delta_t / 2}\\
+   \hat{\partial}_t &amp;\Rightarrow (1 - e^{-\imath \omega \Delta_t}) / \Delta_t = \frac{-2 \imath}{\Delta_t} \sin(\omega \Delta_t / 2) e^{ \imath \omega \Delta_t / 2} = -\imath \Omega e^{ \imath \omega \Delta_t / 2}\\
+ \Omega &amp;= 2 \sin(\omega \Delta_t / 2) / \Delta_t
+ \end{aligned}
+</eq></p>
+<p>This gives the frequency-domain wave equation,</p>
+<p><eq env="displaymath">
+ \hat{\nabla} \times (\mu^{-1}_{\vec{r} + \frac{1}{2}} \cdot \tilde{\nabla} \times \tilde{E}_{\vec{r}})
+    -\Omega^2 \epsilon_{\vec{r}} \cdot \tilde{E}_{\vec{r}} = \imath \Omega \tilde{J}_{\vec{r}}
+</eq></p>
+<h2 id="plane-waves-and-dispersion-relation">Plane Waves And Dispersion Relation</h2>
+<p>With uniform material distribution and no sources</p>
+<p><eq env="displaymath">
+ \begin{aligned}
+ \mu_{\vec{r} + \frac{1}{2}} &amp;= \mu \\
+ \epsilon_{\vec{r}} &amp;= \epsilon \\
+ \tilde{J}_{\vec{r}} &amp;= 0 \\
+ \end{aligned}
+</eq></p>
+<p>the frequency domain wave equation simplifies to</p>
+<p><eq env="displaymath"> \hat{\nabla} \times \tilde{\nabla} \times \tilde{E}_{\vec{r}} - \Omega^2 \epsilon \mu \tilde{E}_{\vec{r}} = 0 </eq></p>
+<p>Since <eq env="math">\hat{\nabla} \cdot \tilde{E}_{\vec{r}} = 0</eq>, we can simplify</p>
+<p><eq env="displaymath">
+ \begin{aligned}
+ \hat{\nabla} \times \tilde{\nabla} \times \tilde{E}_{\vec{r}}
+   &amp;= \tilde{\nabla}(\hat{\nabla} \cdot \tilde{E}_{\vec{r}}) - \hat{\nabla} \cdot \tilde{\nabla} \tilde{E}_{\vec{r}} \\
+   &amp;= - \hat{\nabla} \cdot \tilde{\nabla} \tilde{E}_{\vec{r}} \\
+   &amp;= - \tilde{\nabla}^2 \tilde{E}_{\vec{r}}
+ \end{aligned}
+</eq></p>
+<p>and we get</p>
+<p><eq env="displaymath">  \tilde{\nabla}^2 \tilde{E}_{\vec{r}} + \Omega^2 \epsilon \mu \tilde{E}_{\vec{r}} = 0 </eq></p>
+<p>We can convert this to three scalar-wave equations of the form</p>
+<p><eq env="displaymath"> (\tilde{\nabla}^2 + K^2) \phi_{\vec{r}} = 0 </eq></p>
+<p>with <eq env="math">K^2 = \Omega^2 \mu \epsilon</eq>. Now we let</p>
+<p><eq env="displaymath">  \phi_{\vec{r}} = A e^{\imath (k_x m \Delta_x + k_y n \Delta_y + k_z p \Delta_z)}  </eq></p>
+<p>resulting in</p>
+<p><eq env="displaymath">
+ \begin{aligned}
+ \tilde{\partial}_x &amp;\Rightarrow (e^{ \imath k_x \Delta_x} - 1) / \Delta_t = \frac{-2 \imath}{\Delta_x} \sin(k_x \Delta_x / 2) e^{ \imath k_x \Delta_x / 2} = \imath K_x e^{ \imath k_x \Delta_x / 2}\\
+   \hat{\partial}_x &amp;\Rightarrow (1 - e^{-\imath k_x \Delta_x}) / \Delta_t = \frac{-2 \imath}{\Delta_x} \sin(k_x \Delta_x / 2) e^{-\imath k_x \Delta_x / 2} = \imath K_x e^{-\imath k_x \Delta_x / 2}\\
+ K_x &amp;= 2 \sin(k_x \Delta_x / 2) / \Delta_x \\
+ \end{aligned}
+</eq></p>
+<p>with similar expressions for the y and z dimnsions (and <eq env="math">K_y, K_z</eq>).</p>
+<p>This implies</p>
+<p><eq env="displaymath">
+  \tilde{\nabla}^2 = -(K_x^2 + K_y^2 + K_z^2) \phi_{\vec{r}} \\
+  K_x^2 + K_y^2 + K_z^2 = \Omega^2 \mu \epsilon = \Omega^2 / c^2
+</eq></p>
+<p>where <eq env="math">c = \sqrt{\mu \epsilon}</eq>.</p>
+<p>Assuming real <eq env="math">(k_x, k_y, k_z), \omega</eq> will be real only if</p>
+<p><eq env="displaymath"> c^2 \Delta_t^2 = \frac{\Delta_t^2}{\mu \epsilon} &lt; 1/(\frac{1}{\Delta_x^2} + \frac{1}{\Delta_y^2} + \frac{1}{\Delta_z^2}) </eq></p>
+<p>If <eq env="math">\Delta_x = \Delta_y = \Delta_z</eq>, this simplifies to <eq env="math">c \Delta_t &lt; \Delta_x / \sqrt{3}</eq>. This last form can be interpreted as enforcing causality; the distance that light travels in one timestep (i.e., <eq env="math">c \Delta_t</eq>) must be less than the diagonal of the smallest cell ( <eq env="math">\Delta_x / \sqrt{3}</eq> when on a uniform cubic grid).</p>
+<h1 id="grid-description">Grid description</h1>
+<p>As described in the section on scalar discrete derivatives above, cell widths (<code>dx[i]</code>, <code>dy[j]</code>, <code>dz[k]</code>) along each axis can be arbitrary and independently defined. Moreover, all field components are actually defined at “derived” or “dual” positions, in-between the “base” grid points on one or more axes.</p>
+<p>To get a better sense of how this works, let’s start by drawing a grid with uniform <code>dy</code> and <code>dz</code> and nonuniform <code>dx</code>. We will only draw one cell in the y and z dimensions to make the illustration simpler; we need at least two cells in the x dimension to demonstrate how nonuniform <code>dx</code> affects the various components.</p>
+<p>Place the E fore-vectors at integer indices <eq env="math">r = (m, n, p)</eq> and the H back-vectors at fractional indices <eq env="math">r + \frac{1}{2} = (m + \frac{1}{2}, n + \frac{1}{2}, p + \frac{1}{2})</eq>. Remember that these are indices and not coordinates; they can correspond to arbitrary (monotonically increasing) coordinates depending on the cell widths.</p>
+<p>Draw lines to denote the planes on which the H components and back-vectors are defined. For simplicity, don’t draw the equivalent planes for the E components and fore-vectors, except as necessary to show their locations – it’s easiest to just connect them to their associated H-equivalents.</p>
+<p>The result looks something like this:</p>
+<pre><code>[figure: Component centers]
+                                                             p=
+          [H]__________Hx___________[H]_____Hx______[H]   __ +1/2
+  z y     /:           /:           /:      /:      /|     |      |
+  |/_x   / :          / :          / :     / :     / |     |      |
+        /  :         /  :         /  :    /  :    /  |     |      |
+      Hy   :       Ez...........Hy   :  Ez......Hy   |     |      |
+      /:   :        :   :       /:   :   :   :  /|   |     |      |
+     / :  Hz        :  Ey....../.:..Hz   :  Ey./.|..Hz    __ 0    | dz[0]
+    /  :  /:        :  /      /  :  /:   :  / /  |  /|     |      |
+   /_________________________/_______________/   | / |     |      |
+   |   :/  :        :/       |   :/  :   :/  |   |/  |     |      |
+   |  Ex   :       [E].......|..Ex   :  [E]..|..Ex   |     |      |
+   |       :                 |       :       |       |     |      |
+   |      [H]..........Hx....|......[H].....H|x.....[H]   __ --------- (n=+1/2, p=-1/2)
+   |      /                  |      /        |      /     /       /
+  Hz     /                  Hz     /        Hz     /     /       /
+   |    /                    |    /          |    /     /       /
+   |  Hy                     |  Hy           |  Hy    __ 0     / dy[0]
+   |  /                      |  /            |  /     /       /
+   | /                       | /             | /     /       /
+   |/                        |/              |/     /       /
+  [H]__________Hx___________[H]_____Hx______[H]   __ -1/2  /
+                                                       =n
+   |------------|------------|-------|-------|
+ -1/2           0          +1/2     +1     +3/2 = m
+
+    ------------------------- ----------------
+              dx[0]                  dx[1]
+
+  Part of a nonuniform &quot;base grid&quot;, with labels specifying
+  positions of the various field components. [E] fore-vectors
+  are at the cell centers, and [H] back-vectors are at the
+  vertices. H components along the near (-y) top (+z) edge
+  have been omitted to make the insides of the cubes easier
+  to visualize.</code></pre>
+<p>The above figure shows where all the components are located; however, it is also useful to show what volumes those components correspond to. Consider the Ex component at <code>m = +1/2</code>: it is shifted in the x-direction by a half-cell from the E fore-vector at <code>m = 0</code> (labeled <code>[E]</code> in the figure). It corresponds to a volume between <code>m = 0</code> and <code>m = +1</code> (the other dimensions are not shifted, i.e. they are still bounded by <code>n, p = +-1/2</code>). (See figure below). Since <code>m</code> is an index and not an x-coordinate, the Ex component is not necessarily at the center of the volume it represents, and the x-length of its volume is the derived quantity <code>dx'[0] = (dx[0] + dx[1]) / 2</code> rather than the base <code>dx</code>. (See also <code>Scalar derivatives and cell shifts</code>).</p>
+<pre><code>[figure: Ex volumes]
+                                                             p=
+           &lt;_________________________________________&gt;   __ +1/2
+  z y     &lt;&lt;           /:           /       /:      &gt;&gt;    |      |
+  |/_x   &lt; &lt;          / :          /       / :     &gt; &gt;    |      |
+        &lt;  &lt;         /  :         /       /  :    &gt;  &gt;    |      |
+       &lt;   &lt;        /   :        /       /   :   &gt;   &gt;    |      |
+      &lt;:   &lt;       /    :        :      /    :  &gt;:   &gt;    |      |
+     &lt; :   &lt;      /     :        :     /     : &gt; :   &gt;   __ 0    | dz[0]
+    &lt;  :   &lt;     /      :        :    /      :&gt;  :   &gt;    |      |
+   &lt;____________/____________________/_______&gt;   :   &gt;    |      |
+   &lt;   :   &lt;    |       :        :   |       &gt;   :   &gt;    |      |
+   &lt;  Ex   &lt;    |       :       Ex   |       &gt;  Ex   &gt;    |      |
+   &lt;   :   &lt;    |       :        :   |       &gt;   :   &gt;    |      |
+   &lt;   :   &lt;....|.......:........:...|.......&gt;...:...&gt;   __ --------- (n=+1/2, p=-1/2)
+   &lt;   :  &lt;     |      /         :  /|      /&gt;   :  &gt;    /       /
+   &lt;   : &lt;      |     /          : / |     / &gt;   : &gt;    /       /
+   &lt;   :&lt;       |    /           :/  |    /  &gt;   :&gt;    /       /
+   &lt;   &lt;        |   /            :   |   /   &gt;   &gt;    _ 0     / dy[0]
+   &lt;  &lt;         |  /                 |  /    &gt;  &gt;    /       /
+   &lt; &lt;          | /                  | /     &gt; &gt;    /       /
+   &lt;&lt;           |/                   |/      &gt;&gt;    /       /
+   &lt;____________|____________________|_______&gt;   __ -1/2  /
+                                                     =n
+   |------------|------------|-------|-------|
+ -1/2           0          +1/2      +1    +3/2 = m
+
+   ~------------ -------------------- -------~
+     dx&#39;[-1]          dx&#39;[0]           dx&#39;[1]
+
+ The Ex values are positioned on the x-faces of the base
+ grid. They represent the Ex field in volumes shifted by
+ a half-cell in the x-dimension, as shown here. Only the
+ center cell (with width dx&#39;[0]) is fully shown; the
+ other two are truncated (shown using &gt;&lt; markers).
+
+ Note that the Ex positions are the in the same positions
+ as the previous figure; only the cell boundaries have moved.
+ Also note that the points at which Ex is defined are not
+ necessarily centered in the volumes they represent; non-
+ uniform cell sizes result in off-center volumes like the
+ center cell here.</code></pre>
+<p>The next figure shows the volumes corresponding to the Hy components, which are shifted in two dimensions (x and z) compared to the base grid.</p>
+<pre><code>[figure: Hy volumes]
+                                                             p=
+  z y     mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm   __ +1/2  s
+  |/_x   &lt;&lt;           m:                    m:      &gt;&gt;    |       |
+        &lt; &lt;          m :                   m :     &gt; &gt;    |       | dz&#39;[1]
+       &lt;  &lt;         m  :                  m  :    &gt;  &gt;    |       |
+     Hy........... m........Hy...........m......Hy   &gt;    |       |
+     &lt;    &lt;       m    :                m    :  &gt;    &gt;    |       |
+    &lt;     ______ m_____:_______________m_____:_&gt;______   __ 0
+   &lt;      &lt;     m     /:              m     / &gt;      &gt;    |       |
+  mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm       &gt;    |       |
+  &lt;       &lt;    |    /  :             |    /  &gt;       &gt;    |       | dz&#39;[0]
+  &lt;       &lt;    |   /   :             |   /   &gt;       &gt;    |       |
+  &lt;       &lt;    |  /    :             |  /    &gt;       &gt;    |       |
+  &lt;       wwwww|w/wwwwwwwwwwwwwwwwwww|w/wwwww&gt;wwwwwwww   __       s
+  &lt;      &lt;     |/     w              |/     w&gt;      &gt;    /         /
+  _____________|_____________________|________     &gt;    /         /
+  &lt;    &lt;       |    w                |    w  &gt;    &gt;    /         /
+  &lt;  Hy........|...w........Hy.......|...w...&gt;..Hy    _ 0       / dy[0]
+  &lt; &lt;          |  w                  |  w    &gt;  &gt;    /         /
+  &lt;&lt;           | w                   | w     &gt; &gt;    /         /
+  &lt;            |w                    |w      &gt;&gt;    /         /
+  wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww   __ -1/2    /
+
+  |------------|------------|--------|-------|
+-1/2           0          +1/2      +1     +3/2 = m
+
+  ~------------ --------------------- -------~
+     dx&#39;[-1]            dx&#39;[0]         dx&#39;[1]
+
+ The Hy values are positioned on the y-edges of the base
+ grid. Again here, the &#39;Hy&#39; labels represent the same points
+ as in the basic grid figure above; the edges have shifted
+ by a half-cell along the x- and z-axes.
+
+ The grid lines _|:/ are edges of the area represented by
+ each Hy value, and the lines drawn using &lt;m&gt;.w represent
+ edges where a cell&#39;s faces extend beyond the drawn area
+ (i.e. where the drawing is truncated in the x- or z-
+ directions).</code></pre>
+<h2 id="datastructure-dx_lists_t">Datastructure: dx_lists_t</h2>
+<p>In this documentation, the E fore-vectors are placed on the base grid. An equivalent formulation could place the H back-vectors on the base grid instead. However, in the case of a non-uniform grid, the operation to get from the “base” cell widths to “derived” ones is not its own inverse.</p>
+<p>The base grid’s cell sizes could be fully described by a list of three 1D arrays, specifying the cell widths along all three axes:</p>
+<pre><code>[dx, dy, dz] = [[dx[0], dx[1], ...], [dy[0], ...], [dz[0], ...]]</code></pre>
+<p>Note that this is a list-of-arrays rather than a 2D array, as the simulation domain may have a different number of cells along each axis.</p>
+<p>Knowing the base grid’s cell widths and the boundary conditions (periodic unless otherwise noted) is enough information to calculate the cell widths <code>dx'</code>, <code>dy'</code>, and <code>dz'</code> for the derived grids.</p>
+<p>However, since most operations are trivially generalized to allow either E or H to be defined on the base grid, they are written to take the a full set of base and derived cell widths, distinguished by which field they apply to rather than their “base” or “derived” status. This removes the need for each function to generate the derived widths, and makes the “base” vs “derived” distinction unnecessary in the code.</p>
+<p>The resulting data structure containing all the cell widths takes the form of a list-of-lists-of-arrays. The first list-of-arrays provides the cell widths for the E-field fore-vectors, while the second list-of-arrays does the same for the H-field back-vectors:</p>
+<pre><code> [[[dx_e[0], dx_e[1], ...], [dy_e[0], ...], [dz_e[0], ...]],
+  [[dx_h[0], dx_h[1], ...], [dy_h[0], ...], [dz_h[0], ...]]]</code></pre>
+<p>where <code>dx_e[0]</code> is the x-width of the <code>m=0</code> cells, as used when calculating dE/dx, and <code>dy_h[0]</code> is the y-width of the <code>n=0</code> cells, as used when calculating dH/dy, etc.</p>
+<h1 id="permittivity-and-permeability">Permittivity and Permeability</h1>
+<p>Since each vector component of E and H is defined in a different location and represents a different volume, the value of the spatially-discrete <code>epsilon</code> and <code>mu</code> can also be different for all three field components, even when representing a simple planar interface between two isotropic materials.</p>
+<p>As a result, <code>epsilon</code> and <code>mu</code> are taken to have the same dimensions as the field, and composed of the three diagonal tensor components:</p>
+<pre><code>[equations: epsilon_and_mu]
+epsilon = [epsilon_xx, epsilon_yy, epsilon_zz]
+mu = [mu_xx, mu_yy, mu_zz]</code></pre>
+<p>or</p>
+<p><eq env="displaymath">
+ \epsilon = \begin{bmatrix} \epsilon_{xx} &amp; 0 &amp; 0 \\
+                              0 &amp; \epsilon_{yy} &amp; 0 \\
+                              0 &amp; 0 &amp; \epsilon_{zz} \end{bmatrix}
+</eq> <eq env="displaymath">
+ \mu = \begin{bmatrix} \mu_{xx} &amp; 0 &amp; 0 \\
+                         0 &amp; \mu_{yy} &amp; 0 \\
+                         0 &amp; 0 &amp; \mu_{zz} \end{bmatrix}
+</eq></p>
+<p>where the off-diagonal terms (e.g. <code>epsilon_xy</code>) are assumed to be zero.</p>
+<p>High-accuracy volumetric integration of shapes on multiple grids can be performed by the <a href="https://mpxd.net/code/jan/gridlock">gridlock</a> module.</p>
+<p>The values of the vacuum permittivity and permability effectively become scaling factors that appear in several locations (e.g. between the E and H fields). In order to limit floating-point inaccuracy and simplify calculations, they are often set to 1 and relative permittivities and permeabilities are used in their places; the true values can be multiplied back in after the simulation is complete if non- normalized results are needed.</p>
+<h2 id="sub-modules-2">Sub-modules</h2>
+<ul>
+<li><a href="#meanas.fdmath.functional">meanas.fdmath.functional</a></li>
+<li><a href="#meanas.fdmath.operators">meanas.fdmath.operators</a></li>
+<li><a href="#meanas.fdmath.types">meanas.fdmath.types</a></li>
+<li><a href="#meanas.fdmath.vectorization">meanas.fdmath.vectorization</a></li>
+</ul>
+<hr />
+<h1 id="meanas.fdmath.functional">Module <code>meanas.fdmath.functional</code></h1>
+<p>Math functions for finite difference simulations</p>
+<p>Basic discrete calculus etc.</p>
+<h2 id="functions-10">Functions</h2>
+<h3 id="meanas.fdmath.functional.curl_back">Function <code>curl_back</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def curl_back(dx_h: Optional[Sequence[numpy.ndarray]] = None) -&gt; Callable[..., meanas.fdmath.types.fdfield_t]</code></p>
+</blockquote>
+<p>Create a function which takes the backward curl of a field.</p>
+<p>Args —–= <strong><code>dx_h</code></strong> : Lists of cell sizes for all axes <code>[[dx_0, dx_1, …], [dy_0, dy_1, …], …]</code>.</p>
+<p>Returns —–= Function <code>f</code> for taking the discrete backward curl of a field, <code>f(H)</code> -&gt; curlH <eq env="math">= \nabla_b \times H</eq></p>
+<h3 id="meanas.fdmath.functional.curl_forward">Function <code>curl_forward</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def curl_forward(dx_e: Optional[Sequence[numpy.ndarray]] = None) -&gt; Callable[..., meanas.fdmath.types.fdfield_t]</code></p>
+</blockquote>
+<p>Curl operator for use with the E field.</p>
+<p>Args —–= <strong><code>dx_e</code></strong> : Lists of cell sizes for all axes <code>[[dx_0, dx_1, …], [dy_0, dy_1, …], …]</code>.</p>
+<p>Returns —–= Function <code>f</code> for taking the discrete forward curl of a field, <code>f(E)</code> -&gt; curlE <eq env="math">= \nabla_f \times E</eq></p>
+<h3 id="meanas.fdmath.functional.deriv_back">Function <code>deriv_back</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def deriv_back(dx_h: Optional[Sequence[numpy.ndarray]] = None) -&gt; Tuple[Callable[..., meanas.fdmath.types.fdfield_t], Callable[..., meanas.fdmath.types.fdfield_t], Callable[..., meanas.fdmath.types.fdfield_t]]</code></p>
+</blockquote>
+<p>Utility operators for taking discretized derivatives (forward variant).</p>
+<p>Args —–= <strong><code>dx_h</code></strong> : Lists of cell sizes for all axes <code>[[dx_0, dx_1, …], [dy_0, dy_1, …], …]</code>.</p>
+<p>Returns —–= List of functions for taking forward derivatives along each axis.</p>
+<h3 id="meanas.fdmath.functional.deriv_forward">Function <code>deriv_forward</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def deriv_forward(dx_e: Optional[Sequence[numpy.ndarray]] = None) -&gt; Tuple[Callable[..., meanas.fdmath.types.fdfield_t], Callable[..., meanas.fdmath.types.fdfield_t], Callable[..., meanas.fdmath.types.fdfield_t]]</code></p>
+</blockquote>
+<p>Utility operators for taking discretized derivatives (backward variant).</p>
+<p>Args —–= <strong><code>dx_e</code></strong> : Lists of cell sizes for all axes <code>[[dx_0, dx_1, …], [dy_0, dy_1, …], …]</code>.</p>
+<p>Returns —–= List of functions for taking forward derivatives along each axis.</p>
+<hr />
+<h1 id="meanas.fdmath.operators">Module <code>meanas.fdmath.operators</code></h1>
+<p>Matrix operators for finite difference simulations</p>
+<p>Basic discrete calculus etc.</p>
+<h2 id="functions-11">Functions</h2>
+<h3 id="meanas.fdmath.operators.avg_back">Function <code>avg_back</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def avg_back(axis: int, shape: Sequence[int]) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Backward average operator <code>(x4 = (x4 + x3) / 2)</code></p>
+<p>Args —–= <strong><code>axis</code></strong> : Axis to average along (x=0, y=1, z=2)</p>
+<dl>
+<dt><strong><code>shape</code></strong></dt>
+<dd>Shape of the grid to average
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix for backward average operation.</p>
+<h3 id="meanas.fdmath.operators.avg_forward">Function <code>avg_forward</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def avg_forward(axis: int, shape: Sequence[int]) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Forward average operator <code>(x4 = (x4 + x5) / 2)</code></p>
+<p>Args —–= <strong><code>axis</code></strong> : Axis to average along (x=0, y=1, z=2)</p>
+<dl>
+<dt><strong><code>shape</code></strong></dt>
+<dd>Shape of the grid to average
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix for forward average operation.</p>
+<h3 id="meanas.fdmath.operators.cross">Function <code>cross</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def cross(B: Sequence[scipy.sparse.base.spmatrix]) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Cross product operator</p>
+<p>Args —–= <strong><code>B</code></strong> : List <code>[Bx, By, Bz]</code> of sparse matrices corresponding to the x, y, z portions of the operator on the left side of the cross product.</p>
+<p>Returns —–= Sparse matrix corresponding to (B x), where x is the cross product.</p>
+<h3 id="meanas.fdmath.operators.curl_back">Function <code>curl_back</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def curl_back(dx_h: Sequence[numpy.ndarray]) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Curl operator for use with the H field.</p>
+<p>Args —–= <strong><code>dx_h</code></strong> : Lists of cell sizes for all axes <code>[[dx_0, dx_1, …], [dy_0, dy_1, …], …]</code>.</p>
+<p>Returns —–= Sparse matrix for taking the discretized curl of the H-field</p>
+<h3 id="meanas.fdmath.operators.curl_forward">Function <code>curl_forward</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def curl_forward(dx_e: Sequence[numpy.ndarray]) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Curl operator for use with the E field.</p>
+<p>Args —–= <strong><code>dx_e</code></strong> : Lists of cell sizes for all axes <code>[[dx_0, dx_1, …], [dy_0, dy_1, …], …]</code>.</p>
+<p>Returns —–= Sparse matrix for taking the discretized curl of the E-field</p>
+<h3 id="meanas.fdmath.operators.deriv_back">Function <code>deriv_back</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def deriv_back(dx_h: Sequence[numpy.ndarray]) -&gt; List[scipy.sparse.base.spmatrix]</code></p>
+</blockquote>
+<p>Utility operators for taking discretized derivatives (backward variant).</p>
+<p>Args —–= <strong><code>dx_h</code></strong> : Lists of cell sizes for all axes <code>[[dx_0, dx_1, …], [dy_0, dy_1, …], …]</code>.</p>
+<p>Returns —–= List of operators for taking forward derivatives along each axis.</p>
+<h3 id="meanas.fdmath.operators.deriv_forward">Function <code>deriv_forward</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def deriv_forward(dx_e: Sequence[numpy.ndarray]) -&gt; List[scipy.sparse.base.spmatrix]</code></p>
+</blockquote>
+<p>Utility operators for taking discretized derivatives (forward variant).</p>
+<p>Args —–= <strong><code>dx_e</code></strong> : Lists of cell sizes for all axes <code>[[dx_0, dx_1, …], [dy_0, dy_1, …], …]</code>.</p>
+<p>Returns —–= List of operators for taking forward derivatives along each axis.</p>
+<h3 id="meanas.fdmath.operators.rotation">Function <code>rotation</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def rotation(axis: int, shape: Sequence[int], shift_distance: int = 1) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Utility operator for performing a circular shift along a specified axis by a specified number of elements.</p>
+<p>Args —–= <strong><code>axis</code></strong> : Axis to shift along. x=0, y=1, z=2</p>
+<dl>
+<dt><strong><code>shape</code></strong></dt>
+<dd>Shape of the grid being shifted
+</dd>
+<dt><strong><code>shift_distance</code></strong></dt>
+<dd>Number of cells to shift by. May be negative. Default 1.
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix for performing the circular shift.</p>
+<h3 id="meanas.fdmath.operators.shift_with_mirror">Function <code>shift_with_mirror</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def shift_with_mirror(axis: int, shape: Sequence[int], shift_distance: int = 1) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Utility operator for performing an n-element shift along a specified axis, with mirror boundary conditions applied to the cells beyond the receding edge.</p>
+<p>Args —–= <strong><code>axis</code></strong> : Axis to shift along. x=0, y=1, z=2</p>
+<dl>
+<dt><strong><code>shape</code></strong></dt>
+<dd>Shape of the grid being shifted
+</dd>
+<dt><strong><code>shift_distance</code></strong></dt>
+<dd>Number of cells to shift by. May be negative. Default 1.
+</dd>
+</dl>
+<p>Returns —–= Sparse matrix for performing the shift-with-mirror.</p>
+<h3 id="meanas.fdmath.operators.vec_cross">Function <code>vec_cross</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def vec_cross(b: meanas.fdmath.types.vfdfield_t) -&gt; scipy.sparse.base.spmatrix</code></p>
+</blockquote>
+<p>Vector cross product operator</p>
+<p>Args —–= <strong><code>b</code></strong> : Vector on the left side of the cross product.</p>
+<p>Returns —–= Sparse matrix corresponding to (b x), where x is the cross product.</p>
+<hr />
+<h1 id="meanas.fdmath.types">Module <code>meanas.fdmath.types</code></h1>
+<p>Types shared across multiple submodules</p>
+<h2 id="variables-1">Variables</h2>
+<h3 id="meanas.fdmath.types.dx_lists_mut">Variable <code>dx_lists_mut</code></h3>
+<p>Mutable version of <code><a href="#meanas.fdmath.types.dx_lists_t">dx_lists_t</a></code></p>
+<h3 id="meanas.fdmath.types.dx_lists_t">Variable <code>dx_lists_t</code></h3>
+<p>‘dxes’ datastructure which contains grid cell width information in the following format:</p>
+<pre><code>[[[dx_e[0], dx_e[1], ...], [dy_e[0], ...], [dz_e[0], ...]],
+ [[dx_h[0], dx_h[1], ...], [dy_h[0], ...], [dz_h[0], ...]]]</code></pre>
+<p>where <code>dx_e[0]</code> is the x-width of the <code>x=0</code> cells, as used when calculating dE/dx, and <code>dy_h[0]</code> is the y-width of the <code>y=0</code> cells, as used when calculating dH/dy, etc.</p>
+<h3 id="meanas.fdmath.types.fdfield_updater_t">Variable <code>fdfield_updater_t</code></h3>
+<p>Convenience type for functions which take and return an fdfield_t</p>
+<h2 id="classes">Classes</h2>
+<h3 id="meanas.fdmath.types.fdfield_t">Class <code>fdfield_t</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>class fdfield_t(...)</code></p>
+</blockquote>
+<p>Vector field with shape (3, X, Y, Z) (e.g. <code>[E_x, E_y, E_z]</code>)</p>
+<p>This is actually is just an unaltered <code>numpy.ndarray</code></p>
+<h4 id="ancestors-in-mro">Ancestors (in MRO)</h4>
+<ul>
+<li><a href="#numpy.ndarray">numpy.ndarray</a></li>
+</ul>
+<h3 id="meanas.fdmath.types.vfdfield_t">Class <code>vfdfield_t</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>class vfdfield_t(...)</code></p>
+</blockquote>
+<p>Linearized vector field (single vector of length 3<em>X</em>Y*Z)</p>
+<p>This is actually just an unaltered <code>numpy.ndarray</code></p>
+<h4 id="ancestors-in-mro-1">Ancestors (in MRO)</h4>
+<ul>
+<li><a href="#numpy.ndarray">numpy.ndarray</a></li>
+</ul>
+<hr />
+<h1 id="meanas.fdmath.vectorization">Module <code>meanas.fdmath.vectorization</code></h1>
+<p>Functions for moving between a vector field (list of 3 ndarrays, <code>[f_x, f_y, f_z]</code>) and a 1D array representation of that field <code>[f_x0, f_x1, f_x2,… f_y0,… f_z0,…]</code>. Vectorized versions of the field use row-major (ie., C-style) ordering.</p>
+<h2 id="functions-12">Functions</h2>
+<h3 id="meanas.fdmath.vectorization.unvec">Function <code>unvec</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def unvec(v: Optional[meanas.fdmath.types.vfdfield_t], shape: numpy.ndarray) -&gt; Optional[meanas.fdmath.types.fdfield_t]</code></p>
+</blockquote>
+<p>Perform the inverse of vec(): take a 1D ndarray and output a 3D field of form <code>[f_x, f_y, f_z]</code> where each of <code>f_*</code> is a len(shape)-dimensional ndarray.</p>
+<p>Returns <code>None</code> if called with <code>v=None</code>.</p>
+<p>Args —–= <strong><code>v</code></strong> : 1D ndarray representing a 3D vector field of shape shape (or None)</p>
+<dl>
+<dt><strong><code>shape</code></strong></dt>
+<dd>shape of the vector field
+</dd>
+</dl>
+<p>Returns —–= <code>[f_x, f_y, f_z]</code> where each <code>f_</code> is a <code>len(shape)</code> dimensional ndarray (or <code>None</code>)</p>
+<h3 id="meanas.fdmath.vectorization.vec">Function <code>vec</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def vec(f: Union[meanas.fdmath.types.fdfield_t, List[numpy.ndarray], NoneType]) -&gt; Optional[meanas.fdmath.types.vfdfield_t]</code></p>
+</blockquote>
+<p>Create a 1D ndarray from a 3D vector field which spans a 1-3D region.</p>
+<p>Returns <code>None</code> if called with <code>f=None</code>.</p>
+<p>Args —–= <strong><code>f</code></strong> : A vector field, <code>[f_x, f_y, f_z]</code> where each <code>f_</code> component is a 1- to 3-D ndarray (<code>f_*</code> should all be the same size). Doesn’t fail with <code>f=None</code>.</p>
+<p>Returns —–= 1D ndarray containing the linearized field (or <code>None</code>)</p>
+<hr />
+<h1 id="meanas.fdtd">Module <code>meanas.fdtd</code></h1>
+<p>Utilities for running finite-difference time-domain (FDTD) simulations</p>
+<p>See the discussion of <code>Maxwell's Equations</code> in <code><a href="#meanas.fdmath">meanas.fdmath</a></code> for basic mathematical background.</p>
+<h1 id="timestep">Timestep</h1>
+<p>From the discussion of “Plane waves and the Dispersion relation” in <code><a href="#meanas.fdmath">meanas.fdmath</a></code>, we have</p>
+<p><eq env="displaymath"> c^2 \Delta_t^2 = \frac{\Delta_t^2}{\mu \epsilon} &lt; 1/(\frac{1}{\Delta_x^2} + \frac{1}{\Delta_y^2} + \frac{1}{\Delta_z^2}) </eq></p>
+<p>or, if <eq env="math">\Delta_x = \Delta_y = \Delta_z</eq>, then <eq env="math">c \Delta_t &lt; \frac{\Delta_x}{\sqrt{3}}</eq>.</p>
+<p>Based on this, we can set</p>
+<pre><code>dt = sqrt(mu.min() * epsilon.min()) / sqrt(1/dx_min**2 + 1/dy_min**2 + 1/dz_min**2)</code></pre>
+<p>The <code>dx_min</code>, <code>dy_min</code>, <code>dz_min</code> should be the minimum value across both the base and derived grids.</p>
+<h1 id="poynting-vector-and-energy-conservation">Poynting Vector and Energy Conservation</h1>
+<p>Let</p>
+<p><eq env="displaymath"> \begin{aligned}
+  \tilde{S}_{l, l', \vec{r}} &amp;=&amp; &amp;\tilde{E}_{l, \vec{r}} \otimes \hat{H}_{l', \vec{r} + \frac{1}{2}}  \\
+  &amp;=&amp;  &amp;\vec{x} (\tilde{E}^y_{l,m+1,n,p} \hat{H}^z_{l',\vec{r} + \frac{1}{2}} - \tilde{E}^z_{l,m+1,n,p} \hat{H}^y_{l', \vec{r} + \frac{1}{2}}) \\
+  &amp; &amp;+ &amp;\vec{y} (\tilde{E}^z_{l,m,n+1,p} \hat{H}^x_{l',\vec{r} + \frac{1}{2}} - \tilde{E}^x_{l,m,n+1,p} \hat{H}^z_{l', \vec{r} + \frac{1}{2}}) \\
+  &amp; &amp;+ &amp;\vec{z} (\tilde{E}^x_{l,m,n,p+1} \hat{H}^y_{l',\vec{r} + \frac{1}{2}} - \tilde{E}^y_{l,m,n,p+1} \hat{H}^z_{l', \vec{r} + \frac{1}{2}})
+   \end{aligned}
+</eq></p>
+<p>where <eq env="math">\vec{r} = (m, n, p)</eq> and <eq env="math">\otimes</eq> is a modified cross product in which the <eq env="math">\tilde{E}</eq> terms are shifted as indicated.</p>
+<p>By taking the divergence and rearranging terms, we can show that</p>
+<p><eq env="displaymath">
+  \begin{aligned}
+  \hat{\nabla} \cdot \tilde{S}_{l, l', \vec{r}}
+   &amp;= \hat{\nabla} \cdot (\tilde{E}_{l, \vec{r}} \otimes \hat{H}_{l', \vec{r} + \frac{1}{2}})  \\
+   &amp;= \hat{H}_{l', \vec{r} + \frac{1}{2}} \cdot \tilde{\nabla} \times \tilde{E}_{l, \vec{r}} -
+      \tilde{E}_{l, \vec{r}} \cdot \hat{\nabla} \times \hat{H}_{l', \vec{r} + \frac{1}{2}} \\
+   &amp;= \hat{H}_{l', \vec{r} + \frac{1}{2}} \cdot
+            (-\tilde{\partial}_t \mu_{\vec{r} + \frac{1}{2}} \hat{H}_{l - \frac{1}{2}, \vec{r} + \frac{1}{2}} -
+                \hat{M}_{l-1, \vec{r} + \frac{1}{2}}) -
+      \tilde{E}_{l, \vec{r}} \cdot (\hat{\partial}_t \tilde{\epsilon}_{\vec{r}} \tilde{E}_{l'+\frac{1}{2}, \vec{r}} +
+                \tilde{J}_{l', \vec{r}}) \\
+   &amp;= \hat{H}_{l'} \cdot (-\mu / \Delta_t)(\hat{H}_{l + \frac{1}{2}} - \hat{H}_{l - \frac{1}{2}}) -
+      \tilde{E}_l \cdot (\epsilon / \Delta_t )(\tilde{E}_{l'+\frac{1}{2}} - \tilde{E}_{l'-\frac{1}{2}})
+      - \hat{H}_{l'} \cdot \hat{M}_{l-1} - \tilde{E}_l \cdot \tilde{J}_{l'} \\
+  \end{aligned}
+</eq></p>
+<p>where in the last line the spatial subscripts have been dropped to emphasize the time subscripts <eq env="math">l, l'</eq>, i.e.</p>
+<p><eq env="displaymath">
+  \begin{aligned}
+  \tilde{E}_l &amp;= \tilde{E}_{l, \vec{r}} \\
+  \hat{H}_l &amp;= \tilde{H}_{l, \vec{r} + \frac{1}{2}}  \\
+  \tilde{\epsilon} &amp;= \tilde{\epsilon}_{\vec{r}}  \\
+  \end{aligned}
+</eq></p>
+<p>etc. For <eq env="math">l' = l + \frac{1}{2}</eq> we get</p>
+<p><eq env="displaymath">
+  \begin{aligned}
+  \hat{\nabla} \cdot \tilde{S}_{l, l + \frac{1}{2}}
+   &amp;= \hat{H}_{l + \frac{1}{2}} \cdot
+            (-\mu / \Delta_t)(\hat{H}_{l + \frac{1}{2}} - \hat{H}_{l - \frac{1}{2}}) -
+      \tilde{E}_l \cdot (\epsilon / \Delta_t)(\tilde{E}_{l+1} - \tilde{E}_l)
+      - \hat{H}_{l'} \cdot \hat{M}_l - \tilde{E}_l \cdot \tilde{J}_{l + \frac{1}{2}} \\
+   &amp;= (-\mu / \Delta_t)(\hat{H}^2_{l + \frac{1}{2}} - \hat{H}_{l + \frac{1}{2}} \cdot \hat{H}_{l - \frac{1}{2}}) -
+      (\epsilon / \Delta_t)(\tilde{E}_{l+1} \cdot \tilde{E}_l - \tilde{E}^2_l)
+      - \hat{H}_{l'} \cdot \hat{M}_l - \tilde{E}_l \cdot \tilde{J}_{l + \frac{1}{2}} \\
+   &amp;= -(\mu \hat{H}^2_{l + \frac{1}{2}}
+       +\epsilon \tilde{E}_{l+1} \cdot \tilde{E}_l) / \Delta_t \ \
+      +(\mu \hat{H}_{l + \frac{1}{2}} \cdot \hat{H}_{l - \frac{1}{2}}
+       +\epsilon \tilde{E}^2_l) / \Delta_t \ \
+      - \hat{H}_{l+\frac{1}{2}} \cdot \hat{M}_l \ \
+      - \tilde{E}_l \cdot \tilde{J}_{l+\frac{1}{2}} \\
+  \end{aligned}
+</eq></p>
+<p>and for <eq env="math">l' = l - \frac{1}{2}</eq>,</p>
+<p><eq env="displaymath">
+  \begin{aligned}
+  \hat{\nabla} \cdot \tilde{S}_{l, l - \frac{1}{2}}
+   &amp;=  (\mu \hat{H}^2_{l - \frac{1}{2}}
+       +\epsilon \tilde{E}_{l-1} \cdot \tilde{E}_l) / \Delta_t \ \
+      -(\mu \hat{H}_{l + \frac{1}{2}} \cdot \hat{H}_{l - \frac{1}{2}}
+       +\epsilon \tilde{E}^2_l) / \Delta_t \ \
+      - \hat{H}_{l-\frac{1}{2}} \cdot \hat{M}_l \ \
+      - \tilde{E}_l \cdot \tilde{J}_{l-\frac{1}{2}} \\
+  \end{aligned}
+</eq></p>
+<p>These two results form the discrete time-domain analogue to Poynting’s theorem. They hint at the expressions for the energy, which can be calculated at the same time-index as either the E or H field:</p>
+<p><eq env="displaymath">
+ \begin{aligned}
+ U_l &amp;= \epsilon \tilde{E}^2_l + \mu \hat{H}_{l + \frac{1}{2}} \cdot \hat{H}_{l - \frac{1}{2}} \\
+ U_{l + \frac{1}{2}} &amp;= \epsilon \tilde{E}_l \cdot \tilde{E}_{l + 1} + \mu \hat{H}^2_{l + \frac{1}{2}} \\
+ \end{aligned}
+</eq></p>
+<p>Rewriting the Poynting theorem in terms of the energy expressions,</p>
+<p><eq env="displaymath">
+  \begin{aligned}
+  (U_{l+\frac{1}{2}} - U_l) / \Delta_t
+   &amp;= -\hat{\nabla} \cdot \tilde{S}_{l, l + \frac{1}{2}} \ \
+      - \hat{H}_{l+\frac{1}{2}} \cdot \hat{M}_l \ \
+      - \tilde{E}_l \cdot \tilde{J}_{l+\frac{1}{2}} \\
+  (U_l - U_{l-\frac{1}{2}}) / \Delta_t
+   &amp;= -\hat{\nabla} \cdot \tilde{S}_{l, l - \frac{1}{2}} \ \
+      - \hat{H}_{l-\frac{1}{2}} \cdot \hat{M}_l \ \
+      - \tilde{E}_l \cdot \tilde{J}_{l-\frac{1}{2}} \\
+ \end{aligned}
+</eq></p>
+<p>This result is exact and should practically hold to within numerical precision. No time- or spatial-averaging is necessary.</p>
+<p>Note that each value of <eq env="math">J</eq> contributes to the energy twice (i.e. once per field update) despite only causing the value of <eq env="math">E</eq> to change once (same for <eq env="math">M</eq> and <eq env="math">H</eq>).</p>
+<h1 id="sources">Sources</h1>
+<p>It is often useful to excite the simulation with an arbitrary broadband pulse and then extract the frequency-domain response by performing an on-the-fly Fourier transform of the time-domain fields.</p>
+<p>The Ricker wavelet (normalized second derivative of a Gaussian) is commonly used for the pulse shape. It can be written</p>
+<p><eq env="displaymath"> f_r(t) = (1 - \frac{1}{2} (\omega (t - \tau))^2) e^{-(\frac{\omega (t - \tau)}{2})^2} </eq></p>
+<p>with <eq env="math">\tau &gt; \frac{2 * \pi}{\omega}</eq> as a minimum delay to avoid a discontinuity at t=0 (assuming the source is off for t&lt;0 this gives <eq env="math">\sim 10^{-3}</eq> error at t=0).</p>
+<h1 id="boundary-conditions">Boundary conditions</h1>
+<h1 id="todo-notes-about-boundaries-pmls">TODO notes about boundaries / PMLs</h1>
+<h2 id="sub-modules-3">Sub-modules</h2>
+<ul>
+<li><a href="#meanas.fdtd.base">meanas.fdtd.base</a></li>
+<li><a href="#meanas.fdtd.boundaries">meanas.fdtd.boundaries</a></li>
+<li><a href="#meanas.fdtd.energy">meanas.fdtd.energy</a></li>
+<li><a href="#meanas.fdtd.pml">meanas.fdtd.pml</a></li>
+</ul>
+<hr />
+<h1 id="meanas.fdtd.base">Module <code>meanas.fdtd.base</code></h1>
+<p>Basic FDTD field updates</p>
+<h2 id="functions-13">Functions</h2>
+<h3 id="meanas.fdtd.base.maxwell_e">Function <code>maxwell_e</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def maxwell_e(dt: float, dxes: Sequence[Sequence[numpy.ndarray]] = None) -&gt; Callable[..., meanas.fdmath.types.fdfield_t]</code></p>
+</blockquote>
+<p>Build a function which performs a portion the time-domain E-field update,</p>
+<pre><code>E += curl_back(H[t]) / epsilon</code></pre>
+<p>The full update should be</p>
+<pre><code>E += (curl_back(H[t]) + J) / epsilon</code></pre>
+<p>which requires an additional step of <code>E += J / epsilon</code> which is not performed by the generated function.</p>
+<p>See <code><a href="#meanas.fdmath">meanas.fdmath</a></code> for descriptions of</p>
+<ul>
+<li>This update step: “Maxwell’s equations” section</li>
+<li><code>dxes</code>: “Datastructure: dx_lists_t” section</li>
+<li><code>epsilon</code>: “Permittivity and Permeability” section</li>
+</ul>
+<p>Also see the “Timestep” section of <code><a href="#meanas.fdtd">meanas.fdtd</a></code> for a discussion of the <code>dt</code> parameter.</p>
+<p>Args —–= <strong><code>dt</code></strong> : Timestep. See <code><a href="#meanas.fdtd">meanas.fdtd</a></code> for details.</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid description; see <code><a href="#meanas.fdmath">meanas.fdmath</a></code>.
+</dd>
+</dl>
+<p>Returns —–= Function <code>f(E_old, H_old, epsilon) -&gt; E_new</code>.</p>
+<h3 id="meanas.fdtd.base.maxwell_h">Function <code>maxwell_h</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def maxwell_h(dt: float, dxes: Sequence[Sequence[numpy.ndarray]] = None) -&gt; Callable[..., meanas.fdmath.types.fdfield_t]</code></p>
+</blockquote>
+<p>Build a function which performs part of the time-domain H-field update,</p>
+<pre><code>H -= curl_forward(E[t]) / mu</code></pre>
+<p>The full update should be</p>
+<pre><code>H -= (curl_forward(E[t]) + M) / mu</code></pre>
+<p>which requires an additional step of <code>H -= M / mu</code> which is not performed by the generated function; this step can be omitted if there is no magnetic current <code>M</code>.</p>
+<p>See <code><a href="#meanas.fdmath">meanas.fdmath</a></code> for descriptions of</p>
+<ul>
+<li>This update step: “Maxwell’s equations” section</li>
+<li><code>dxes</code>: “Datastructure: dx_lists_t” section</li>
+<li><code>mu</code>: “Permittivity and Permeability” section</li>
+</ul>
+<p>Also see the “Timestep” section of <code><a href="#meanas.fdtd">meanas.fdtd</a></code> for a discussion of the <code>dt</code> parameter.</p>
+<p>Args —–= <strong><code>dt</code></strong> : Timestep. See <code><a href="#meanas.fdtd">meanas.fdtd</a></code> for details.</p>
+<dl>
+<dt><strong><code>dxes</code></strong></dt>
+<dd>Grid description; see <code><a href="#meanas.fdmath">meanas.fdmath</a></code>.
+</dd>
+</dl>
+<p>Returns —–= Function <code>f(E_old, H_old, epsilon) -&gt; E_new</code>.</p>
+<hr />
+<h1 id="meanas.fdtd.boundaries">Module <code>meanas.fdtd.boundaries</code></h1>
+<p>Boundary conditions</p>
+<p>#TODO conducting boundary documentation</p>
+<h2 id="functions-14">Functions</h2>
+<h3 id="meanas.fdtd.boundaries.conducting_boundary">Function <code>conducting_boundary</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def conducting_boundary(direction: int, polarity: int) -&gt; Tuple[Callable[..., meanas.fdmath.types.fdfield_t], Callable[..., meanas.fdmath.types.fdfield_t]]</code></p>
+</blockquote>
+<hr />
+<h1 id="meanas.fdtd.energy">Module <code>meanas.fdtd.energy</code></h1>
+<h2 id="functions-15">Functions</h2>
+<h3 id="meanas.fdtd.energy.delta_energy_e2h">Function <code>delta_energy_e2h</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def delta_energy_e2h(dt: float, h0: meanas.fdmath.types.fdfield_t, e1: meanas.fdmath.types.fdfield_t, h2: meanas.fdmath.types.fdfield_t, e3: meanas.fdmath.types.fdfield_t, epsilon: Optional[meanas.fdmath.types.fdfield_t] = None, mu: Optional[meanas.fdmath.types.fdfield_t] = None, dxes: Optional[Sequence[Sequence[numpy.ndarray]]] = None) -&gt; meanas.fdmath.types.fdfield_t</code></p>
+</blockquote>
+<p>This is just from (h2 * h2 + e3 * e1) - (e1 * e1 + h0 * h2)</p>
+<h3 id="meanas.fdtd.energy.delta_energy_h2e">Function <code>delta_energy_h2e</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def delta_energy_h2e(dt: float, e0: meanas.fdmath.types.fdfield_t, h1: meanas.fdmath.types.fdfield_t, e2: meanas.fdmath.types.fdfield_t, h3: meanas.fdmath.types.fdfield_t, epsilon: Optional[meanas.fdmath.types.fdfield_t] = None, mu: Optional[meanas.fdmath.types.fdfield_t] = None, dxes: Optional[Sequence[Sequence[numpy.ndarray]]] = None) -&gt; meanas.fdmath.types.fdfield_t</code></p>
+</blockquote>
+<p>This is just from (e2 * e2 + h3 * h1) - (h1 * h1 + e0 * e2)</p>
+<h3 id="meanas.fdtd.energy.delta_energy_j">Function <code>delta_energy_j</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def delta_energy_j(j0: meanas.fdmath.types.fdfield_t, e1: meanas.fdmath.types.fdfield_t, dxes: Optional[Sequence[Sequence[numpy.ndarray]]] = None) -&gt; meanas.fdmath.types.fdfield_t</code></p>
+</blockquote>
+<h3 id="meanas.fdtd.energy.dxmul">Function <code>dxmul</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def dxmul(ee: meanas.fdmath.types.fdfield_t, hh: meanas.fdmath.types.fdfield_t, epsilon: Union[meanas.fdmath.types.fdfield_t, float, NoneType] = None, mu: Union[meanas.fdmath.types.fdfield_t, float, NoneType] = None, dxes: Optional[Sequence[Sequence[numpy.ndarray]]] = None) -&gt; meanas.fdmath.types.fdfield_t</code></p>
+</blockquote>
+<h3 id="meanas.fdtd.energy.energy_estep">Function <code>energy_estep</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def energy_estep(h0: meanas.fdmath.types.fdfield_t, e1: meanas.fdmath.types.fdfield_t, h2: meanas.fdmath.types.fdfield_t, epsilon: Optional[meanas.fdmath.types.fdfield_t] = None, mu: Optional[meanas.fdmath.types.fdfield_t] = None, dxes: Optional[Sequence[Sequence[numpy.ndarray]]] = None) -&gt; meanas.fdmath.types.fdfield_t</code></p>
+</blockquote>
+<h3 id="meanas.fdtd.energy.energy_hstep">Function <code>energy_hstep</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def energy_hstep(e0: meanas.fdmath.types.fdfield_t, h1: meanas.fdmath.types.fdfield_t, e2: meanas.fdmath.types.fdfield_t, epsilon: Optional[meanas.fdmath.types.fdfield_t] = None, mu: Optional[meanas.fdmath.types.fdfield_t] = None, dxes: Optional[Sequence[Sequence[numpy.ndarray]]] = None) -&gt; meanas.fdmath.types.fdfield_t</code></p>
+</blockquote>
+<h3 id="meanas.fdtd.energy.poynting">Function <code>poynting</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def poynting(e: meanas.fdmath.types.fdfield_t, h: meanas.fdmath.types.fdfield_t, dxes: Optional[Sequence[Sequence[numpy.ndarray]]] = None) -&gt; meanas.fdmath.types.fdfield_t</code></p>
+</blockquote>
+<p>Calculate the poynting vector</p>
+<h3 id="meanas.fdtd.energy.poynting_divergence">Function <code>poynting_divergence</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def poynting_divergence(s: Optional[meanas.fdmath.types.fdfield_t] = None, *, e: Optional[meanas.fdmath.types.fdfield_t] = None, h: Optional[meanas.fdmath.types.fdfield_t] = None, dxes: Optional[Sequence[Sequence[numpy.ndarray]]] = None) -&gt; meanas.fdmath.types.fdfield_t</code></p>
+</blockquote>
+<p>Calculate the divergence of the poynting vector</p>
+<hr />
+<h1 id="meanas.fdtd.pml">Module <code>meanas.fdtd.pml</code></h1>
+<p>PML implementations</p>
+<p>#TODO discussion of PMLs #TODO cpml documentation</p>
+<h2 id="functions-16">Functions</h2>
+<h3 id="meanas.fdtd.pml.cpml">Function <code>cpml</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def cpml(direction: int, polarity: int, dt: float, epsilon: meanas.fdmath.types.fdfield_t, thickness: int = 8, ln_R_per_layer: float = -1.6, epsilon_eff: float = 1, mu_eff: float = 1, m: float = 3.5, ma: float = 1, cfs_alpha: float = 0, dtype: numpy.dtype = numpy.float32) -&gt; Tuple[Callable, Callable, Dict[str, meanas.fdmath.types.fdfield_t]]</code></p>
+</blockquote>
+<hr />
+<h1 id="meanas.test">Module <code>meanas.test</code></h1>
+<p>Tests (run with <code>python3 -m pytest -rxPXs | tee results.txt</code>)</p>
+<h2 id="sub-modules-4">Sub-modules</h2>
+<ul>
+<li><a href="#meanas.test.conftest">meanas.test.conftest</a></li>
+<li><a href="#meanas.test.test_fdfd">meanas.test.test_fdfd</a></li>
+<li><a href="#meanas.test.test_fdfd_pml">meanas.test.test_fdfd_pml</a></li>
+<li><a href="#meanas.test.test_fdtd">meanas.test.test_fdtd</a></li>
+<li><a href="#meanas.test.utils">meanas.test.utils</a></li>
+</ul>
+<hr />
+<h1 id="meanas.test.conftest">Module <code>meanas.test.conftest</code></h1>
+<p>Test fixtures</p>
+<h2 id="functions-17">Functions</h2>
+<h3 id="meanas.test.conftest.dx">Function <code>dx</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def dx(request: Any) -&gt; Iterable[float]</code></p>
+</blockquote>
+<h3 id="meanas.test.conftest.dxes">Function <code>dxes</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def dxes(request: Any, shape: Tuple[int, ...], dx: float) -&gt; Iterable[List[List[numpy.ndarray]]]</code></p>
+</blockquote>
+<h3 id="meanas.test.conftest.epsilon">Function <code>epsilon</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def epsilon(request: Any, shape: Tuple[int, ...], epsilon_bg: float, epsilon_fg: float) -&gt; Iterable[numpy.ndarray]</code></p>
+</blockquote>
+<h3 id="meanas.test.conftest.epsilon_bg">Function <code>epsilon_bg</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def epsilon_bg(request: Any) -&gt; Iterable[float]</code></p>
+</blockquote>
+<h3 id="meanas.test.conftest.epsilon_fg">Function <code>epsilon_fg</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def epsilon_fg(request: Any) -&gt; Iterable[float]</code></p>
+</blockquote>
+<h3 id="meanas.test.conftest.j_mag">Function <code>j_mag</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def j_mag(request: Any) -&gt; Iterable[float]</code></p>
+</blockquote>
+<h3 id="meanas.test.conftest.shape">Function <code>shape</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def shape(request: Any) -&gt; Iterable[Tuple[int, ...]]</code></p>
+</blockquote>
+<hr />
+<h1 id="meanas.test.test_fdfd">Module <code>meanas.test.test_fdfd</code></h1>
+<h2 id="functions-18">Functions</h2>
+<h3 id="meanas.test.test_fdfd.j_distribution">Function <code>j_distribution</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def j_distribution(request: Any, shape: Tuple[int, ...], j_mag: float) -&gt; Iterable[numpy.ndarray]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd.omega">Function <code>omega</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def omega(request: Any) -&gt; Iterable[float]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd.pec">Function <code>pec</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def pec(request: Any) -&gt; Iterable[Optional[numpy.ndarray]]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd.pmc">Function <code>pmc</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def pmc(request: Any) -&gt; Iterable[Optional[numpy.ndarray]]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd.sim">Function <code>sim</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def sim(request: Any, shape: Tuple[int, ...], epsilon: numpy.ndarray, dxes: List[List[numpy.ndarray]], j_distribution: numpy.ndarray, omega: float, pec: Optional[numpy.ndarray], pmc: Optional[numpy.ndarray]) -&gt; meanas.test.test_fdfd.FDResult</code></p>
+</blockquote>
+<p>Build simulation from parts</p>
+<h3 id="meanas.test.test_fdfd.test_poynting_planes">Function <code>test_poynting_planes</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def test_poynting_planes(sim: FDResult) -&gt; NoneType</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd.test_residual">Function <code>test_residual</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def test_residual(sim: FDResult) -&gt; NoneType</code></p>
+</blockquote>
+<h2 id="classes-1">Classes</h2>
+<h3 id="meanas.test.test_fdfd.FDResult">Class <code>FDResult</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>class FDResult(shape: Tuple[int, ...], dxes: List[List[numpy.ndarray]], epsilon: numpy.ndarray, omega: complex, j: numpy.ndarray, e: numpy.ndarray, pmc: numpy.ndarray, pec: numpy.ndarray)</code></p>
+</blockquote>
+<p>FDResult(shape: Tuple[int, …], dxes: List[List[numpy.ndarray]], epsilon: numpy.ndarray, omega: complex, j: numpy.ndarray, e: numpy.ndarray, pmc: numpy.ndarray, pec: numpy.ndarray)</p>
+<h4 id="class-variables">Class variables</h4>
+<h5 id="meanas.test.test_fdfd.FDResult.dxes">Variable <code>dxes</code></h5>
+<h5 id="meanas.test.test_fdfd.FDResult.e">Variable <code>e</code></h5>
+<h5 id="meanas.test.test_fdfd.FDResult.epsilon">Variable <code>epsilon</code></h5>
+<h5 id="meanas.test.test_fdfd.FDResult.j">Variable <code>j</code></h5>
+<h5 id="meanas.test.test_fdfd.FDResult.omega">Variable <code>omega</code></h5>
+<h5 id="meanas.test.test_fdfd.FDResult.pec">Variable <code>pec</code></h5>
+<h5 id="meanas.test.test_fdfd.FDResult.pmc">Variable <code>pmc</code></h5>
+<h5 id="meanas.test.test_fdfd.FDResult.shape">Variable <code>shape</code></h5>
+<hr />
+<h1 id="meanas.test.test_fdfd_pml">Module <code>meanas.test.test_fdfd_pml</code></h1>
+<h2 id="functions-19">Functions</h2>
+<h3 id="meanas.test.test_fdfd_pml.dxes">Function <code>dxes</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def dxes(request: Any, shape: Tuple[int, ...], dx: float, omega: float, epsilon_fg: float) -&gt; Iterable[List[List[numpy.ndarray]]]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd_pml.epsilon">Function <code>epsilon</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def epsilon(request: Any, shape: Tuple[int, ...], epsilon_bg: float, epsilon_fg: float) -&gt; Iterable[numpy.ndarray]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd_pml.j_distribution">Function <code>j_distribution</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def j_distribution(request: Any, shape: Tuple[int, ...], epsilon: numpy.ndarray, dxes: MutableSequence[MutableSequence[numpy.ndarray]], omega: float, src_polarity: int) -&gt; Iterable[numpy.ndarray]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd_pml.omega">Function <code>omega</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def omega(request: Any) -&gt; Iterable[float]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd_pml.pec">Function <code>pec</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def pec(request: Any) -&gt; Iterable[Optional[numpy.ndarray]]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd_pml.pmc">Function <code>pmc</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def pmc(request: Any) -&gt; Iterable[Optional[numpy.ndarray]]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd_pml.shape">Function <code>shape</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def shape(request: Any) -&gt; Iterable[Tuple[int, ...]]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd_pml.sim">Function <code>sim</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def sim(request: Any, shape: Tuple[int, ...], epsilon: numpy.ndarray, dxes: MutableSequence[MutableSequence[numpy.ndarray]], j_distribution: numpy.ndarray, omega: float, pec: Optional[numpy.ndarray], pmc: Optional[numpy.ndarray]) -&gt; meanas.test.test_fdfd.FDResult</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd_pml.src_polarity">Function <code>src_polarity</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def src_polarity(request: Any) -&gt; Iterable[int]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdfd_pml.test_pml">Function <code>test_pml</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def test_pml(sim: meanas.test.test_fdfd.FDResult, src_polarity: int) -&gt; NoneType</code></p>
+</blockquote>
+<hr />
+<h1 id="meanas.test.test_fdtd">Module <code>meanas.test.test_fdtd</code></h1>
+<h2 id="functions-20">Functions</h2>
+<h3 id="meanas.test.test_fdtd.dt">Function <code>dt</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def dt(request: Any) -&gt; Iterable[float]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdtd.j_distribution">Function <code>j_distribution</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def j_distribution(request: Any, shape: Tuple[int, ...], j_mag: float) -&gt; Iterable[numpy.ndarray]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdtd.j_steps">Function <code>j_steps</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def j_steps(request: Any) -&gt; Iterable[Tuple[int, ...]]</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdtd.sim">Function <code>sim</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def sim(request: Any, shape: Tuple[int, ...], epsilon: numpy.ndarray, dxes: List[List[numpy.ndarray]], dt: float, j_distribution: numpy.ndarray, j_steps: Tuple[int, ...]) -&gt; meanas.test.test_fdtd.TDResult</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdtd.test_energy_conservation">Function <code>test_energy_conservation</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def test_energy_conservation(sim: TDResult) -&gt; NoneType</code></p>
+</blockquote>
+<p>Assumes fields start at 0 before J0 is added</p>
+<h3 id="meanas.test.test_fdtd.test_initial_energy">Function <code>test_initial_energy</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def test_initial_energy(sim: TDResult) -&gt; NoneType</code></p>
+</blockquote>
+<p>Assumes fields start at 0 before J0 is added</p>
+<h3 id="meanas.test.test_fdtd.test_initial_fields">Function <code>test_initial_fields</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def test_initial_fields(sim: TDResult) -&gt; NoneType</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdtd.test_poynting_divergence">Function <code>test_poynting_divergence</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def test_poynting_divergence(sim: TDResult) -&gt; NoneType</code></p>
+</blockquote>
+<h3 id="meanas.test.test_fdtd.test_poynting_planes">Function <code>test_poynting_planes</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def test_poynting_planes(sim: TDResult) -&gt; NoneType</code></p>
+</blockquote>
+<h2 id="classes-2">Classes</h2>
+<h3 id="meanas.test.test_fdtd.TDResult">Class <code>TDResult</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>class TDResult(shape: Tuple[int, ...], dt: float, dxes: List[List[numpy.ndarray]], epsilon: numpy.ndarray, j_distribution: numpy.ndarray, j_steps: Tuple[int, ...], es: List[numpy.ndarray] = &lt;factory&gt;, hs: List[numpy.ndarray] = &lt;factory&gt;, js: List[numpy.ndarray] = &lt;factory&gt;)</code></p>
+</blockquote>
+<p>TDResult(shape: Tuple[int, …], dt: float, dxes: List[List[numpy.ndarray]], epsilon: numpy.ndarray, j_distribution: numpy.ndarray, j_steps: Tuple[int, …], es: List[numpy.ndarray] = <factory>, hs: List[numpy.ndarray] = <factory>, js: List[numpy.ndarray] = <factory>)</p>
+<h4 id="class-variables-1">Class variables</h4>
+<h5 id="meanas.test.test_fdtd.TDResult.dt">Variable <code>dt</code></h5>
+<h5 id="meanas.test.test_fdtd.TDResult.dxes">Variable <code>dxes</code></h5>
+<h5 id="meanas.test.test_fdtd.TDResult.epsilon">Variable <code>epsilon</code></h5>
+<h5 id="meanas.test.test_fdtd.TDResult.es">Variable <code>es</code></h5>
+<h5 id="meanas.test.test_fdtd.TDResult.hs">Variable <code>hs</code></h5>
+<h5 id="meanas.test.test_fdtd.TDResult.j_distribution">Variable <code>j_distribution</code></h5>
+<h5 id="meanas.test.test_fdtd.TDResult.j_steps">Variable <code>j_steps</code></h5>
+<h5 id="meanas.test.test_fdtd.TDResult.js">Variable <code>js</code></h5>
+<h5 id="meanas.test.test_fdtd.TDResult.shape">Variable <code>shape</code></h5>
+<hr />
+<h1 id="meanas.test.utils">Module <code>meanas.test.utils</code></h1>
+<h2 id="functions-21">Functions</h2>
+<h3 id="meanas.test.utils.assert_close">Function <code>assert_close</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def assert_close(x: numpy.ndarray, y: numpy.ndarray, *args: Any, **kwargs: Any) -&gt; NoneType</code></p>
+</blockquote>
+<h3 id="meanas.test.utils.assert_fields_close">Function <code>assert_fields_close</code></h3>
+<p><a href="None">[view code]</a></p>
+<blockquote>
+<p><code>def assert_fields_close(x: numpy.ndarray, y: numpy.ndarray, *args: Any, **kwargs: Any) -&gt; NoneType</code></p>
+</blockquote>
+<hr />
+<p>Generated by <em>pdoc</em> 0.9.2 (<a href="https://pdoc3.github.io" class="uri">https://pdoc3.github.io</a>).</p>
+</body>
+</html>
