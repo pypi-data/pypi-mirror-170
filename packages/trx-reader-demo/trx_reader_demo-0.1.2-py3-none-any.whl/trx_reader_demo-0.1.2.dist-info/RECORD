@@ -1,0 +1,9 @@
+src/.env,sha256=vQF-ueONaTATDfWXRJS5M4VGxMKzoWg1cuRoJwbAjY0,256
+src/__init__.py,sha256=6jUaNUJL20Vek8yOTEfv1sKRVQBYVPVnCoJvDwo1ufg,102
+src/email_process.py,sha256=aTtAoyARHr5iEzWYaLFTGkQuaKnadAME59nTRRuhY30,4015
+src/main.py,sha256=1wfhVSboNwfs4jzFtnzAx6cxtoJ4QyERWEQSDyex9vI,2586
+src/register.py,sha256=KTdPdw39WClHaQtZDyaqHMlPrJv4dCLgPr8rjhEpl_c,752
+src/trx_process.py,sha256=1QhdC8YsAMgiCXYBSO1gXGXa-XyfryyYOWsqLPUg5Cc,2789
+trx_reader_demo-0.1.2.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+trx_reader_demo-0.1.2.dist-info/METADATA,sha256=5ZAAbOgew4KruaXjgJm1zU8p1V-KIEuskZKcZ0HrdGI,1450
+trx_reader_demo-0.1.2.dist-info/RECORD,,
