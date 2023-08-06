@@ -1,0 +1,65 @@
+# BDNOTICE
+
+Generate Notice file from Blackduck in JSON, TEXT or HTML format
+
+## Description
+
+This is intended for generating Notice file from Blackduck in JSON, TEXT or HTML format
+
+## Getting Started
+
+### Dependencies
+
+- Blackduck
+- importlib-resources
+
+### Installing
+
+- pip install bdnotice
+
+### Executing program
+
+- How to run the program
+
+```
+<!-- on the folder it is running place this blackduck config file for blackduck library-->
+.restconfig.json
+{
+    <!-- make sure Blackduck_url should not end with slash -->
+  "baseurl": "Blackduck_url",
+  "api_token": "API_KEY",
+  "insecure": true,
+  "debug": false
+}
+
+pip install bdnotice
+ex:
+bdnotice PJ PV -f C:\DIR\Blackduck_report -r HTML -c
+bdnotice PJ PV -f C:\DIR\Blackduck_report -r TEXT -c
+```
+
+## Help
+
+Any advise for common problems or issues.
+
+```
+
+```
+
+## Authors
+
+Dinesh Ravi
+
+## Version History
+
+- 0.1.0
+  - Initial Release
+
+## License
+
+This project is licensed under the MIT License - see the [MIT](LICENSE) file for details
+
+## Acknowledgments
+
+- [Blackduck](https://pypi.org/project/blackduck/)
+- [importlib-resources](https://pypi.org/project/importlib-resources/)
