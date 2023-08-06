@@ -1,0 +1,4 @@
+[console_scripts]
+XingyuQiji = XingyuQiji.__main__:main
+xingyu-qiji = XingyuQiji.__main__:main
+
