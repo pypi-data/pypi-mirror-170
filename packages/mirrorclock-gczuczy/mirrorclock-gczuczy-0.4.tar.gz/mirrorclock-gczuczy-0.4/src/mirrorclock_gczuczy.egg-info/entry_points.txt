@@ -1,0 +1,3 @@
+[console_scripts]
+mirrorclock = mirrorclock.cli:main
+mirrorclock-wsgi = mirrorclock.wsgi:main
