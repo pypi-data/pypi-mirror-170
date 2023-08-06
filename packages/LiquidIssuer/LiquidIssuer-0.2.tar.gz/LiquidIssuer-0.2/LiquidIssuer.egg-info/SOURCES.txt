@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+LiquidIssuer.egg-info/PKG-INFO
+LiquidIssuer.egg-info/SOURCES.txt
+LiquidIssuer.egg-info/dependency_links.txt
+LiquidIssuer.egg-info/entry_points.txt
+LiquidIssuer.egg-info/requires.txt
+LiquidIssuer.egg-info/top_level.txt
+li/__init__.py
+li/bitcoin_rpc_class.py
+li/dialog.ui
+li/issue.py
+li/main.py
