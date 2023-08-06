@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cardano_py_tools
+Version: 0.1b0
+Summary: Cardano python tools
+Home-page: https://github.com/djessy-atta/cardano-py-tools
+Download-URL: https://github.com/attadje/cardano-py-tools/archive/refs/tags/0.1b0tar.gz
+Author: Atta Djessy
+Author-email: djessyatta@live.fr
+License: MIT
+Keywords: CARDANO,VIZUALISATION
+Classifier: Development Status :: 3 - Alpha
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
