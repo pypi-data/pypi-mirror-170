@@ -1,0 +1,13 @@
+fastapi_resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_resources/resources/__init__.py,sha256=Ur3_FHe8PtxAc9eGT8fiKjNbR2TNAU1VbBHy9JwL-bQ,39
+fastapi_resources/resources/base_resource.py,sha256=Ab-QO12OOYqKIymyQUS29jlrwPmk2Wk1fOiQAm-GDWE,3415
+fastapi_resources/resources/sqlmodel.py,sha256=sOX23pptrIxEF329J9zzj0qrnDmzKe7Msk8-sJgITbs,15677
+fastapi_resources/resources/types.py,sha256=4QAGBIULIHMvW7gmSvLeUVx30K-723TJZLVvS5VG22g,1224
+fastapi_resources/routers/__init__.py,sha256=AsWjXsRzgFF87pC2_WuWEezDhzmKUIf2vi-H2mzTpNk,91
+fastapi_resources/routers/base_router.py,sha256=Z0hRDjTOEd-TOk8gx0IKse3RzsOOT2hmdSQ6XJR3luQ,9855
+fastapi_resources/routers/decorators.py,sha256=FDnQcD_-Yd61ziCcrg1D9UjqoxAvdcT6ZUFjasvBVnE,687
+fastapi_resources/routers/json_api_router.py,sha256=JaIiuOHNyVxvKW3cV_7RzceED01Jr_TOG8r64llDVbY,15503
+fastapi_resources/types.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_resources-0.2.5.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+fastapi_resources-0.2.5.dist-info/METADATA,sha256=pugN7DVT534pJx7Rse6zjGklHncBY-jT20rtbAC_5HA,332
+fastapi_resources-0.2.5.dist-info/RECORD,,
