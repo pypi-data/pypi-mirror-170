@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "fabric-protos-python"
+version = "2.2"
+description = "Hyperledger Fabric gRPC and Protocol Buffer Bindings for python"
+authors = [
+    "Institute of Cryptography of the Faculty of Mathematics and Computer Science at University of Havana <kmilo.denis.glez@yandex.com>",
+    "Amalia Ibarra <amalianibarra@gmail.com>",
+    "Daniel Mena <danif-mena@yandex.com>",
+    "Kmilo Denis González <kmilo.denis.glez@yandex.com>",
+    "Luis Alejandro Lara <janesmith@example.org>",
+]
+maintainers = [
+    "Kmilo Denis González <kmilo.denis.glez@yandex.com>",
+    "Luis Alejandro Lara <janesmith@example.org>",
+]
+license = "Apache"
+readme = "README.md"
+homepage = "https://github.com/ic-matcom/fabric-protos-python"
+
+# the packages were defined explicitly because otherwise when the setup.py is
+# generated it only includes the common package.
+# ex:
+# packages = [{include = "*/*.py"},{include = "*/**/*.py"}]
+# -> It does not work well
+packages = [
+    {include = "fabric_protos_python"},
+]
+
+# include = ["CHANGELOG.md"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+grpclib = "^0.4.3"
+protobuf = "^4.21.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
