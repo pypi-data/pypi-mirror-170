@@ -1,0 +1,9 @@
+logiclayer/__init__.py,sha256=ogt3F78tf-pGgdeReFF2hc5l536sLp3GxPHbfmfRwl4,316
+logiclayer/decorators.py,sha256=KMR7dVwRRJDaJRdhPB5TWPhcZ3CpGxMjOHPHo6FT_jY,1549
+logiclayer/logiclayer.py,sha256=CvI3IpXKetbNHr1i848pVR8pmkcHlP-vxjY426hv8BA,4786
+logiclayer/module.py,sha256=6FViPlRX6CgZndNIHk9SPaIxzdv1pjQShidf07RyLks,3840
+logiclayer/poetry.lock,sha256=1mn3WGaN_f4noWcZ_ILAUobLoTc4vcHJ4D8XRk06bx4,88370
+logiclayer-0.2.1.dist-info/LICENSE,sha256=b6WJ8uksYJ2OWAbKDoPpxxoIlrB7c12q9uTH0ODuF3Q,1072
+logiclayer-0.2.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+logiclayer-0.2.1.dist-info/METADATA,sha256=qF3GK1Ge0X7SSrUlOuNFcV1GUnalL2HxWDuQADlwjHk,4361
+logiclayer-0.2.1.dist-info/RECORD,,
