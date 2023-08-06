@@ -1,0 +1,15 @@
+solarcurtailment/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+solarcurtailment/clear_sky_day.py,sha256=jLKVv1ib_DydBwzUVxozJ-gUt8VRuDLL2sl9_qJ1e44,5859
+solarcurtailment/data_visualization.py,sha256=HpkO3oMfdYTWLVS-0EljmAS-_Oqwwli1D1gpsr2ji58,4570
+solarcurtailment/energy_calculation.py,sha256=gi6ymLz1pgJALULB-A2Od1wNamhb9GSDF1myp7GQf9I,3764
+solarcurtailment/file_processing.py,sha256=2sKFKB3e-eJ5pJmMG7glnm_udbIIA7ep_-v3geoWqi8,9139
+solarcurtailment/polyfit.py,sha256=HdASEFpiA9Zu7-NRFWu6UgqQQy5CfSGYX4bEB0-PFiM,6878
+solarcurtailment/solarcurtailment.py,sha256=ufk8qV8R2V3TQ4ih67PN52occQ5fPpUE7k5nzSwz_K0,4237
+solarcurtailment/tripping_curt.py,sha256=XfrmzZlkmLX8YidHXt5AzXAnPgpXd32QU6Dgoz5Iy0Y,56355
+solarcurtailment/vvar_curt.py,sha256=M3RSj_PyQbykuH5BgtIJAHrGNlV3wBes2zX6X3AlmoE,9520
+solarcurtailment/vwatt_curt.py,sha256=GNZDC-gxsOw1RxScWw0sQ8hqYsBoPDBt26AJX_Qt8H0,60819
+trialsamhan2-8.0.0.dist-info/LICENSE.md,sha256=PlXV6LB3grDg-qPICXN3D17NzG5vExZyB1O4ID-eAro,1074
+trialsamhan2-8.0.0.dist-info/METADATA,sha256=s0IXPHsV04HHzuUkEH9lmqbowdKK_TsAg6nOrAceOhM,16673
+trialsamhan2-8.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+trialsamhan2-8.0.0.dist-info/top_level.txt,sha256=H6gl3ODYleLXi84A9Mid1hUyHLx4mbr49ixDfrGN7vs,17
+trialsamhan2-8.0.0.dist-info/RECORD,,
