@@ -1,0 +1,2 @@
+[spyder.plugins]
+spyder_vim = spyder_vim.spyder.plugin:SpyderVim

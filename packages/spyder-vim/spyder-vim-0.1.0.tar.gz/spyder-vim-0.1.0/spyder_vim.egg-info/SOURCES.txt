@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+spyder_vim/__init__.py
+spyder_vim.egg-info/PKG-INFO
+spyder_vim.egg-info/SOURCES.txt
+spyder_vim.egg-info/dependency_links.txt
+spyder_vim.egg-info/entry_points.txt
+spyder_vim.egg-info/requires.txt
+spyder_vim.egg-info/top_level.txt
+spyder_vim/spyder/__init__.py
+spyder_vim/spyder/api.py
+spyder_vim/spyder/confpage.py
+spyder_vim/spyder/container.py
+spyder_vim/spyder/plugin.py
+spyder_vim/spyder/widgets.py
