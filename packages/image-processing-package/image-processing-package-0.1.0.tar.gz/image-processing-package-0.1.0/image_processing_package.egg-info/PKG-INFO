@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: image-processing-package
+Version: 0.1.0
+Summary: Criação de pacotes de processamento de imagens em Python
+Home-page: https://github.com/Jucicarla/criacao_de_pacotes_processamento_imagens_Python
+Author: Jucicarla Pires
+Author-email: jucipires@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# package_name
+
+Description. 
+The package image_processing is used to:
+Processing
+	- Histogram matching
+	- Structural similarity
+Utils:
+	- Read Image
+	- Save Image
+	_ Plot image
+	- Plot result
+	- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install image-processing-package
+```
+S
+
+## Author
+Jucicaral Pires
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
