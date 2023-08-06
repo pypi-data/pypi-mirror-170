@@ -1,0 +1,63 @@
+<div align="center">
+
+#   Mugees
+##  Depression Comment Classification with Transformers
+
+</div>
+
+Dependencies:
+- For inference:
+  - Transformers
+  - Pytorch lightning
+- For training will also need:
+  - Kaggle API (to download data)
+
+
+# install mugees
+
+pip install mugees
+
+```
+python
+
+from mugees import Depression
+
+# each model takes in either a string or a list of strings
+
+results = Depression('original').predict('example text')
+
+results = Depression('unbiased').predict(['example text 1','example text 2'])
+
+results = Depression('multilingual').predict(['example text','exemple de texte','texto de ejemplo','testo di esempio','texto de exemplo','örnek metin','пример текста'])
+
+# to specify the device the model will be allocated on (defaults to cpu), accepts any torch.device input
+
+model = Depression('original', device='cuda')
+
+# optional to display results nicely (will need to pip install pandas)
+
+import pandas as pd
+
+print(pd.DataFrame(results, index=input_text).round(5))
+
+```
+
+Importing mugees in python:
+
+```
+python
+
+from mugees import Depression
+
+results = Depression('original').predict('some text')
+
+results = Depression('unbiased').predict(['example text 1','example text 2'])
+
+results = Depression('multilingual').predict(['example text','exemple de texte','texto de ejemplo','testo di esempio','texto de exemplo','örnek metin','пример текста'])
+
+# to display results nicely
+
+import pandas as pd
+
+print(pd.DataFrame(results,index=input_text).round(5))
+```
