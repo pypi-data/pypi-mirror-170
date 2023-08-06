@@ -1,0 +1,10 @@
+ppac/REQUIREMENTS,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+ppac/VERSION,sha256=axN4nkPlSFY0Uz3hamXYup00xMl1hYi2ZYBUNfgOsRU,5
+ppac/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ppac/item.py,sha256=2CG7ezPJcV2Ss-9BWAk0HqTeVz1rSoN2uVmhMqP1geM,1160
+ppac/utils.py,sha256=kAYhHx5_9i0_P6NnkFBIQSc22PBwHR-qq9gkr9blQIY,160
+ppac-0.0.1.dist-info/LICENSE,sha256=xpNheUtDosGM-dSzkXnK9dqXSlVsTOB13pNDak7TqpA,1071
+ppac-0.0.1.dist-info/METADATA,sha256=7zd1ekWWcS84zfGuA9RspRg4VSpc7Kh1qZE5wxWRPd4,252
+ppac-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ppac-0.0.1.dist-info/top_level.txt,sha256=Kg0wtxPWoUfex969gvmMsp2MDQWHHrBsjDaTDyaosr4,5
+ppac-0.0.1.dist-info/RECORD,,
