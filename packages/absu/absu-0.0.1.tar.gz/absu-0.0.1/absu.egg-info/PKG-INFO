@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: absu
+Version: 0.0.1
+Summary: This module helps updating a static website hosted by Azure Blob Storage.
+Author: Jonas C. Rabe aka Quisl
+License-File: LICENSE
