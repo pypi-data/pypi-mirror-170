@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/hiscovid_v2.py
+src/hiscovid_v2.egg-info/PKG-INFO
+src/hiscovid_v2.egg-info/SOURCES.txt
+src/hiscovid_v2.egg-info/dependency_links.txt
+src/hiscovid_v2.egg-info/entry_points.txt
+src/hiscovid_v2.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+hiscovid_v2 = hiscovid_v2:main
+
