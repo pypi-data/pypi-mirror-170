@@ -1,0 +1,8 @@
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+google-auth
+oauth2client
+robotframework>=5.0.0
+robotframework-pythonlibcore>=3.0.0
+html2text
