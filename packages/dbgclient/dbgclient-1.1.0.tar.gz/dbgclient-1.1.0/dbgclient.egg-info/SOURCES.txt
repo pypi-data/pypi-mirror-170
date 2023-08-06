@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+dbgclient.egg-info/PKG-INFO
+dbgclient.egg-info/SOURCES.txt
+dbgclient.egg-info/dependency_links.txt
+dbgclient.egg-info/not-zip-safe
+dbgclient.egg-info/requires.txt
+dbgclient.egg-info/top_level.txt
+dbgid/__init__.py
+dbgid/client.py
+dbgid/core/__init__.py
+dbgid/core/httpclient.py
+dbgid/utils/__init__.py
+dbgid/utils/datafake.py
+dbgid/utils/debug.py
+dbgid/utils/storage.py
