@@ -1,0 +1,12 @@
+hackcqooc/__init__.py,sha256=uGAzFBYYkoeHBV9CAL_H9J-wuOLfg8vefHKoJQPYNhc,113
+hackcqooc/api_url.py,sha256=lrLiHC3KPNwis8H0jvxof_t4Es2B74fYYSxNZTJDuP0,3459
+hackcqooc/core.py,sha256=qYBo16IYeJWEieUTjzIB0C-rw8SgUdkQTs_Hn9Ekvb8,9110
+hackcqooc/msg.py,sha256=PwM0fGGAuoHHT0wwvV46KVl_OuyCmy5J3-aPrd8ORn8,699
+hackcqooc/processor.py,sha256=sGRUisvOolfAyhvFwqgcLT8ca0GU-gdyWZrMc1RGBqA,2419
+hackcqooc/request.py,sha256=3zQ4PUYVkDsM1vIcahkbN1tlS5IsiU8rtNmQHMDc6qM,1938
+hackcqooc/test.py,sha256=eRauz3-Zf5v5a73ocAmpCRQhZq3JIA3f3z71894eZ5U,40828
+hackcqooc/user.py,sha256=Ab-KTx2BHEL0yftIK1RaiZ19mXWi0Hp_ZeS-yv7ZbS4,2824
+hackcqooc-0.0.5.dist-info/METADATA,sha256=22dxGFYByMv4ziyyc9SDHE9HEIrySS5MDh8n64budKQ,2238
+hackcqooc-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hackcqooc-0.0.5.dist-info/top_level.txt,sha256=5maceGIvacswHDK4rHVlx63NT2JH3cPwL3GtOAMFBWs,10
+hackcqooc-0.0.5.dist-info/RECORD,,
