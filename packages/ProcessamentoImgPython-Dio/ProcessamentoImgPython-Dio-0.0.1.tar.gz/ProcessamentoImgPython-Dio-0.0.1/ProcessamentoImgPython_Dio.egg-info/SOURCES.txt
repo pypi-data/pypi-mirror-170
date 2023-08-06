@@ -1,0 +1,6 @@
+README.md
+setup.py
+ProcessamentoImgPython_Dio.egg-info/PKG-INFO
+ProcessamentoImgPython_Dio.egg-info/SOURCES.txt
+ProcessamentoImgPython_Dio.egg-info/dependency_links.txt
+ProcessamentoImgPython_Dio.egg-info/top_level.txt
