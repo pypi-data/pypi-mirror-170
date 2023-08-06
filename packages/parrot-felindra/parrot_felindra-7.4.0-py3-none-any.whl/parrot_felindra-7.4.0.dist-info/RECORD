@@ -1,0 +1,15 @@
+felindra/__init__.py,sha256=4ZPEWZ5OXIuDeB76gnBfquw5B4lrbnDhB51ka6CTwBk,1724
+felindra/__main__.py,sha256=vwC-dpZqFiQANH3XpGvJY9O07GAbw3yiRQQX6D6PHg4,1608
+felindra/certificate.py,sha256=ptYLyK16HUJwWCXv-1gu_hD9spXhsl4is-0KJFccEmA,5758
+felindra/constants.py,sha256=GYyP3Kw8L5WRB4IyNHCBE-AoNhourAj6gTReKF2r5Mo,2323
+felindra/etc/share/ca-anafi-ai.pem,sha256=lxK_37oY9BW3LV72HkDeFBy3y7PuD-TEAl2bSdUIfgY,1017
+felindra/felindra_main.py,sha256=mOhuvFO9yMEZfGaUg_c1lAKHF1M7iY6FVDf8HQiJGLE,4738
+felindra/libfelindra.py,sha256=P3Dr0cHhEoHCJ1yjXWkUBLuUfagQf07TaF2VDRKov3Y,9773
+felindra/resource.py,sha256=xr5-ZeATfM_q1wM5ss7wXDk16IwbyFI84P_yB0k8ddk,4751
+felindra/tools.py,sha256=RKXP5H61k5M7Vf14SKUqEEOwKiXPVFCzPiP1t-GBrFM,5058
+felindra/webclient.py,sha256=ji26m79p1K1Pd3pQILtRGiNSnI3xp8O3FQUvWfJb-EM,6170
+parrot_felindra-7.4.0.dist-info/entry_points.txt,sha256=miIy9HZJO1Cn7rVCHk0NuIOxBAdNifrPQGgqtn-LU50,56
+parrot_felindra-7.4.0.dist-info/LICENSE.md,sha256=rKFWwl7jUj-AbVCMX2VFcbu0XWbhsSuZuQ6oKN7M640,1456
+parrot_felindra-7.4.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+parrot_felindra-7.4.0.dist-info/METADATA,sha256=9nS5XBbXETsuOLuCtMHWQYfgsuCVdoOzwm37lzOCDjw,1725
+parrot_felindra-7.4.0.dist-info/RECORD,,
