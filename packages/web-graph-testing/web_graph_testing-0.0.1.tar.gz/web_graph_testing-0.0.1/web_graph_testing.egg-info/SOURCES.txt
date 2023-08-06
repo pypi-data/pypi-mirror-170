@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+web_graph_testing.egg-info/PKG-INFO
+web_graph_testing.egg-info/SOURCES.txt
+web_graph_testing.egg-info/dependency_links.txt
+web_graph_testing.egg-info/requires.txt
+web_graph_testing.egg-info/top_level.txt
