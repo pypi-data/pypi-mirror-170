@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Fuzzy_Output_EVAMortus.egg-info/PKG-INFO
+Fuzzy_Output_EVAMortus.egg-info/SOURCES.txt
+Fuzzy_Output_EVAMortus.egg-info/dependency_links.txt
+Fuzzy_Output_EVAMortus.egg-info/top_level.txt
+Fuzzy_output/__init__.py
+Fuzzy_output/main.py
