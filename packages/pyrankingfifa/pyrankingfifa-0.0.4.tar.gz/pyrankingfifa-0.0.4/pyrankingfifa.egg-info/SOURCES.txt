@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pyrankingfifa/__init__.py
+pyrankingfifa/__main__.py
+pyrankingfifa/exceptions.py
+pyrankingfifa/parser.py
+pyrankingfifa/team.py
+pyrankingfifa/user_agents.py
+pyrankingfifa/utils.py
+pyrankingfifa.egg-info/PKG-INFO
+pyrankingfifa.egg-info/SOURCES.txt
+pyrankingfifa.egg-info/dependency_links.txt
+pyrankingfifa.egg-info/top_level.txt
