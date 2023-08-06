@@ -1,0 +1,8 @@
+torchmocks/__init__.py,sha256=jVqWw7LPWOc9BY8a4u9I71RFJZJIN3CyhO37nLTo7yY,103
+torchmocks/torchmocks.py,sha256=JOnUd52w9AkadgY3o2_Oee-uN2Z8rKUol-WRq7dtF7I,5765
+torchmocks/mocks/einops.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torchmocks/mocks/nn.py,sha256=H2uZK5NKgNSeWH6oQ0jvn7quTVnF8CQWYzurepk3gfg,5392
+torchmocks-0.0.3.dist-info/METADATA,sha256=hduOOTX-_CHZ3LFvOaOVlIyx10E4OETLcSB8pBDDjfI,1684
+torchmocks-0.0.3.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+torchmocks-0.0.3.dist-info/licenses/LICENSE,sha256=qQLE_uMWaNfBNDNIlkKxJ6lD_KghNgON3npg48TyGfo,1072
+torchmocks-0.0.3.dist-info/RECORD,,
