@@ -1,0 +1,4 @@
+[console_scripts]
+NvrenNengliangLiaoyuBaodian = NvrenNengliangLiaoyuBaodian.__main__:main
+nvren-nengliang-liaoyu-baodian = NvrenNengliangLiaoyuBaodian.__main__:main
+
