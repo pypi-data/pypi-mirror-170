@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: faag-cli
+Version: 0.0.1
+Summary: Flask/FastAPI Architecture Application Generator
+Home-page: https://github.com/pythonhubpy/FAAG
+License: MIT
+Keywords: FastAPI,Flask,Pydantic,SQLAlchemy,Poetry,Python,CLI
+Author: Vetrichelvan
+Author-email: pythonhub.py@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: black[d] (>=22.10.0,<23.0.0)
+Requires-Dist: typer[all] (>=0.6.1,<0.7.0)
+Project-URL: Repository, https://github.com/pythonhubpy/FAAG
+Description-Content-Type: text/markdown
+
+# Faag_CLI
+**FastAPI/Flask project generator with the best folder structure.** (Fast/Flask Architecture App Generator)
+
