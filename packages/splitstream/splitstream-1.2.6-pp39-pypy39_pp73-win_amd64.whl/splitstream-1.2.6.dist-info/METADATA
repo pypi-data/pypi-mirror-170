@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: splitstream
+Version: 1.2.6
+Summary: Splitting of (XML, JSON) objects from a continuous stream
+Home-page: https://github.com/rickardp/splitstream
+Author: Rickard Lyrenius
+Author-email: rickard@evolviq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+Splitting of (XML, JSON) objects from a continuous stream
+
