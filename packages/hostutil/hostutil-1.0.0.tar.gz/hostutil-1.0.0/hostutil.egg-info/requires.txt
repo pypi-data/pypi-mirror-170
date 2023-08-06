@@ -1,0 +1,2 @@
+netifaces
+python_hosts>=1.0.3

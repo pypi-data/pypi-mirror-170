@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hostutil
+Version: 1.0.0
+Summary: hostname/address parsers/validators/utils for handling user inputs which could be either.
+Home-page: https://github.com/ConnorSMaynes/hostutil
+Author: Connor Sherwood Maynes
+Author-email: connormaynes@gmail.com
+License: MIT
+Keywords: hostname,host,address,ip,networking,ipv4,ipv6
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Networking
+Requires-Python: >=3.6

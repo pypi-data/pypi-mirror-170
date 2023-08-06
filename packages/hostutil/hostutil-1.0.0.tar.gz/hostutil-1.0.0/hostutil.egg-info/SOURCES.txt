@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+hostutil/__init__.py
+hostutil.egg-info/PKG-INFO
+hostutil.egg-info/SOURCES.txt
+hostutil.egg-info/dependency_links.txt
+hostutil.egg-info/requires.txt
+hostutil.egg-info/top_level.txt
