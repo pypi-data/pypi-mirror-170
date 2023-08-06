@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: image_proccessing
+Version: 0.0.1
+Summary: Image Proccessing Package using Skimage
+Home-page: https://github.com/Guedes96/Image_Processing
+Author: Arthur guedes
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# package_name
+
+Description. 
+The package package_name is used to:
+	Procccessing:
+		- Histogram matching 
+		- Structural simmilarity
+		- Resize Image
+	Utils:
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install package_name
+```
+
+## Author
+Arthur Guedes
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
