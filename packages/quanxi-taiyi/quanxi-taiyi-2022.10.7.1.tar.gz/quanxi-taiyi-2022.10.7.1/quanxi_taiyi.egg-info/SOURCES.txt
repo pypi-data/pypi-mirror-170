@@ -1,0 +1,13 @@
+README.md
+setup.py
+QuanxiTaiyi/Dockerfile
+QuanxiTaiyi/README.md
+QuanxiTaiyi/__init__.py
+QuanxiTaiyi/__main__.py
+QuanxiTaiyi/file.pdf
+QuanxiTaiyi/index.html
+quanxi_taiyi.egg-info/PKG-INFO
+quanxi_taiyi.egg-info/SOURCES.txt
+quanxi_taiyi.egg-info/dependency_links.txt
+quanxi_taiyi.egg-info/entry_points.txt
+quanxi_taiyi.egg-info/top_level.txt

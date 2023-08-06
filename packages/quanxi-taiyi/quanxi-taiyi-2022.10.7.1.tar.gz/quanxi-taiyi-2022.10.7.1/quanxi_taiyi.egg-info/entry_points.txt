@@ -1,0 +1,4 @@
+[console_scripts]
+QuanxiTaiyi = QuanxiTaiyi.__main__:main
+quanxi-taiyi = QuanxiTaiyi.__main__:main
+
