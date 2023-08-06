@@ -1,0 +1,14 @@
+selectq/__init__.py,sha256=-FFAWyvyKNls7FUOAZrR16atU-3gPm60a0VcNx7r5Gk,1099
+selectq/browsers.py,sha256=4jL_RELFH_kj_Gxs7KJ469DYgNnS-R6bFsCfgSQB6LM,10490
+selectq/interactions.py,sha256=Vs9uLwfLe3mpIv41tJphYUISdusTOxvrWPciMNxbmIQ,7322
+selectq/predicates.py,sha256=nkRLT66wsrKs0mjKw2s487k_OaWZJdFWUDuF9iu52Cw,5413
+selectq/selectq.py,sha256=dj2FuntCWIap8kwGmHRz-sbpylf_RxV9CLLLJDt8yE4,9232
+selectq/shortcuts.py,sha256=HyUuwnDUdocP6r_Z5BGsEowxC6gNUiVnTURzBcdjuSg,4640
+selectq/gadgets/selectq.css,sha256=5JKizXJ44-I6xtvXENPL3RLSN-UmplQNQVdpE7fYkto,60
+selectq/gadgets/selectq.js,sha256=kQ_zr4ApdP47HxSrLEVbSHB0xLUUeYg4VsQVkbctFU8,2842
+selectq-0.0.7.data/data/LICENSE,sha256=rud9qFlsgo-gW9j1pdR4bSYs2vgkB_10JBYMOGOGlXE,35097
+selectq-0.0.7.dist-info/LICENSE,sha256=rud9qFlsgo-gW9j1pdR4bSYs2vgkB_10JBYMOGOGlXE,35097
+selectq-0.0.7.dist-info/METADATA,sha256=4EcaEVvRkow8ivvT7R8meq9k0IRxbHEBzwqzuonsSLI,961
+selectq-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+selectq-0.0.7.dist-info/top_level.txt,sha256=knQAsFuJRZPIkV0eILnhkLJ9dm-NBQ4lRfEqEU7DIz4,8
+selectq-0.0.7.dist-info/RECORD,,
