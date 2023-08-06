@@ -1,0 +1,2 @@
+[nbdev]
+colab_everything = colab_everything._modidx:d
