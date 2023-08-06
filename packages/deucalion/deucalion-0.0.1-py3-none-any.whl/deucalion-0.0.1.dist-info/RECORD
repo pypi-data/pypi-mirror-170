@@ -1,0 +1,14 @@
+deucalion/__init__.py,sha256=jFylU95c0S8QECpelW_lTFqr4cH1qUKrpqAgQmxk47A,88
+deucalion/observer.py,sha256=F8UKZkOTreky_cW1O15-nRkUTJjevgiX8p3qz1o1j4k,289
+deucalion/provisioner.py,sha256=A-2K-RAbSN6p_DClXRQW2CuJFYdwNA1mBEdDvLQ8dxI,5775
+deucalion/requirements.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deucalion/strategies/__init__.py,sha256=G3wSgdYSJLOuTy2H7g74Jw_6mdXICXrtleP5PS7r0Xs,196
+deucalion/strategies/demo.py,sha256=Dazwh2tO7W42FagjsV__FsAFZ3Wgqt0Eh4HybEHWSnA,1570
+deucalion/strategies/factory.py,sha256=QNzkPCH7_1HKWISggJlCCouIJ1fbcR3oGk_IQfC7DNw,936
+deucalion/strategies/federated.py,sha256=In5w-OJK4AQEZNtSDfXcxtG6y8nUQ02v2v_luQ71D2M,2593
+deucalion/strategies/sidecar.py,sha256=ys0Q7dITNUjDPGCY3KklWMOvk0WFAWo4S7WsR33AAak,2505
+deucalion/strategies/strategy.py,sha256=EHeyGuCEVdDC-cJEC80xQPGhfN6_uw0VasK0UnP9eVI,307
+deucalion-0.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+deucalion-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+deucalion-0.0.1.dist-info/METADATA,sha256=OP2ZTEeekjHy73Ueud70hXButjTIw34vJFdSGtJri0M,962
+deucalion-0.0.1.dist-info/RECORD,,
