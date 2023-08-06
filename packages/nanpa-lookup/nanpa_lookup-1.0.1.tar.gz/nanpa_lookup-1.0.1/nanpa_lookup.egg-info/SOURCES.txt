@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+Makefile
+README.md
+build_database.py
+setup.py
+nanpa_lookup/__init__.py
+nanpa_lookup/database.sqlite
+nanpa_lookup/lookup.py
+nanpa_lookup.egg-info/PKG-INFO
+nanpa_lookup.egg-info/SOURCES.txt
+nanpa_lookup.egg-info/dependency_links.txt
+nanpa_lookup.egg-info/entry_points.txt
+nanpa_lookup.egg-info/top_level.txt
