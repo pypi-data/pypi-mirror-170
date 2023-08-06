@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: gceni-testing
+Version: 0.0.1
+Summary: only for testing purpose
+Home-page: https://github.com/Err0rGCeni/DIOProject_Pacote_de_Processamento
+Author: GCeni
+Author-email: gceni10@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-image
+
+# gceni_testing (copy)
+
+Description. 
+Pacote para TESTAR criaÃ§Ã£o de pacotes:
+	- skimage - exposure
+	- skimage - filter
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install gceni_testing
+
+```bash
+pip install gceni_testing
+```
+
+## Usage
+
+```python
+from package_name import file1_name
+file1_name.my_function()
+```
+
+## Author
+GCeni
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+# AnotaÃ§Ãµes
+## Conceitos
++ **Pypi**: RepositÃ³rio pÃºblico oficial de pacotes.
++ **Wheel & Sdist**: Tipos de distribuiÃ§Ãµes.
++ **Setuptools**: pacote usdo em setup.py para gerar distribuiÃ§Ãµes.
++ **Twine**: Pacote usado para subir as distribuiÃ§Ãµes no repositÃ³rio Pypi.
+
+## Estruturas
+### Simples
++ Estrutura: 
+
+        project_name/
+            README.md
+            setup.py
+            requirements.txt
+            package_name/
+                __init__.py
+                file1_name.py
+                file2_name.py
++ ImportaÃ§Ãµes:
+
+        import package_name.file1_name
+    ou
+
+        from package_name import file1_name
+
+### VÃ¡rios MÃ³dulos
++ Estrutura:
+
+        project_name/
+            README.md
+            setup.py
+            requirements.txt
+            package_name/
+                __init__.py
+                module1/
+                    __init__.py
+                    file1_name.py
+                    file2_name.py
+                module2/
+                    __init__.py
+                    file1_name.py
+                    file2_name.py
++ ImportaÃ§Ãµes:
+
+        import package_name.module1_name.file1_name
+
+    ou
+
+        from package_name.module1_name import file1_name
+
