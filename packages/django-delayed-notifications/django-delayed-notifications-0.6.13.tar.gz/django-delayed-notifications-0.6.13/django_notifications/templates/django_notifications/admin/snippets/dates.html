@@ -1,0 +1,18 @@
+{% if debug %}<!-- django_notifications/templates/notifications/admin/snippets/dates.html -->{% endif %}
+{% load i18n %}
+<dl class="row">
+  <dt class="col-sm-3">{% trans "Created at" %}</dt>
+  <dd class="col-sm-3">{{ object.created_at|date }}</dd>
+</dl>
+{% if object.delayed_sending_at %}
+<dl class="row">
+  <dt class="col-sm-3">{% trans "Delayed seding" %}</dt>
+  <dd class="col-sm-3">{{ object.delayed_sending_at|date }}</dd>
+</dl>
+{% endif %}
+{% if object.sent_at %}
+<dl class="row">
+  <dt class="col-sm-3">{% trans "Sent" %}</dt>
+  <dd class="col-sm-3">{{ object.sent_at|date }}</dd>
+</dl>
+{% endif %}
