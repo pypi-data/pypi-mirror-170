@@ -1,0 +1,13 @@
+README.md
+setup.py
+bin/conexao
+conexao/__init__.py
+conexao/cli.py
+conexao/config.py
+conexao/docker.py
+conexao/mongodb.py
+conexao/ssh.py
+conexao.egg-info/PKG-INFO
+conexao.egg-info/SOURCES.txt
+conexao.egg-info/dependency_links.txt
+conexao.egg-info/top_level.txt
