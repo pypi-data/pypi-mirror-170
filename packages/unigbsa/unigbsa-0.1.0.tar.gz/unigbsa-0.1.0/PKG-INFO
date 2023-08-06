@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: unigbsa
+Version: 0.1.0
+Summary: MMPB(GB)SA tools for calculate energy.
+Home-page: https://github.com/dptech-corp/Uni-GBSA
+Author: dptech.net
+Author-email: hermite@dptech.net
+Keywords: MMPBSA MMGBSA
+License-File: LICENCE.txt
