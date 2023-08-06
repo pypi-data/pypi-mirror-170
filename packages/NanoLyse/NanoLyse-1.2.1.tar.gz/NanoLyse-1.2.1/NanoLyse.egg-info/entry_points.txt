@@ -1,0 +1,2 @@
+[console_scripts]
+NanoLyse = nanolyse.NanoLyse:main
