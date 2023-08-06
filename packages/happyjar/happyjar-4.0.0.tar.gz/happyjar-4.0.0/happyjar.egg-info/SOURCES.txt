@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+happy/__init__.py
+happy/main.py
+happyjar.egg-info/PKG-INFO
+happyjar.egg-info/SOURCES.txt
+happyjar.egg-info/dependency_links.txt
+happyjar.egg-info/entry_points.txt
+happyjar.egg-info/top_level.txt
