@@ -1,0 +1,2 @@
+[console_scripts]
+landrop = LANDrop.__main__:main
