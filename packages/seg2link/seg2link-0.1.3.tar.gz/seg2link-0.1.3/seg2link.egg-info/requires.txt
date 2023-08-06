@@ -1,0 +1,2 @@
+napari[pyqt5]==0.4.10
+scikit-image==0.18.3
