@@ -1,0 +1,12 @@
+esporifai/__init__.py,sha256=oigpL-KTSMQwHFeMBMyBtF-I6yR_cpuAh3y6PHcR_iM,49
+esporifai/__main__.py,sha256=RX8AhSLFx3-lEra7W7Nv-hsTyxqcWzoqkQNPuZNBO0E,117
+esporifai/api.py,sha256=lGqAEMzfKdCjh3r96vT0Es94qBD1AV0LKroYmVklhYY,4984
+esporifai/cli.py,sha256=9QRVhqNPR8_zzF1tdRdbVnWO1V5QP40XyjZ66U0Sa0w,6236
+esporifai/constants.py,sha256=ekbpAp5JP4ZEshhHEBpmu1k_MRHWIMhaMstUeMgC2m8,2109
+esporifai/utils.py,sha256=UUyFdwsU309c6w5PL3X7M2PXCJKKxF_18vQNvtF4g_E,4865
+esporifai-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+esporifai-0.2.1.dist-info/METADATA,sha256=vsPtmrUtPbbV_El-ISmVzlGwT-2iaJRlxy5hPB7R-SM,2498
+esporifai-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+esporifai-0.2.1.dist-info/entry_points.txt,sha256=byJJOQWv4Pnw-HxQNOZrXrTreiPkmr__ulZ8IYAOB_A,48
+esporifai-0.2.1.dist-info/top_level.txt,sha256=5mleEC43n2y3C1tTWOd9A8y0VYiANVYfCwF8h_zm3c4,10
+esporifai-0.2.1.dist-info/RECORD,,
