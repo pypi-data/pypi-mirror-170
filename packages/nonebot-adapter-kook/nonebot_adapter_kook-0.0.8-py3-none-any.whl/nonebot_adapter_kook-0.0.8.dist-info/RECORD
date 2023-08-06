@@ -1,0 +1,14 @@
+nonebot/adapters/kook/__init__.py,sha256=kY8Gj60XiDytffpzKEM-Ty6a9quFJTDOIOLeSJKoLXY,361
+nonebot/adapters/kook/adapter.py,sha256=h5d3HTw-TPd1ALEPNxdMF0yDZIHMmnOBpIXc030KYck,16318
+nonebot/adapters/kook/api.py,sha256=gqzoSFDn2TGoDoCcO2v3YSNlsSV2sCZWeK8XKg5mcj8,2063
+nonebot/adapters/kook/bot.py,sha256=lEGx6cXyQH1fOAvF8y8BuSrmqU6jUtAjhp4sazzqy9g,12214
+nonebot/adapters/kook/config.py,sha256=3wyMapzFwnYISaL3Fg6c3I18iw3XEeA8fuOfyr2wpLI,848
+nonebot/adapters/kook/event.py,sha256=Ns6Yg_aErT2V_WXw_drH65dVcOh8NyRO9UKRxC6c5DQ,31988
+nonebot/adapters/kook/exception.py,sha256=px3FEzCYZiPr6HUwYa1YYIHdeVzfpsrN0gxvUTQE78A,2778
+nonebot/adapters/kook/message.py,sha256=YLEH5Qws-Ay1tuOeZWNq_8niQwl0U0iC0oz7DPRCbvQ,9875
+nonebot/adapters/kook/permission.py,sha256=ftTBFL75F7yuFD6QMKFdV9esF3G8KDcdL38EAMLl15U,520
+nonebot/adapters/kook/utils.py,sha256=VChJqvwnfRxrCg9I8kAdAB6FjBywZfrHOPJ4lEJ1O5s,2039
+nonebot_adapter_kook-0.0.8.dist-info/LICENSE,sha256=IXKpc26RgBkg76HQGYULgvRER2OxOqS-lK3eLhmgiUE,1086
+nonebot_adapter_kook-0.0.8.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+nonebot_adapter_kook-0.0.8.dist-info/METADATA,sha256=0xuFypQfBCV0EArzSPZvgxekF6tSbQOhJYfUR86URTY,1086
+nonebot_adapter_kook-0.0.8.dist-info/RECORD,,

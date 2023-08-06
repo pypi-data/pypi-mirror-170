@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: nonebot-adapter-kook
+Version: 0.0.8
+Summary: Kook adapter for nonebot2
+Home-page: https://github.com/SUIBING112233/nonebot-adapter-kook
+License: MIT
+Keywords: bot,khl,kook,khlbot
+Author: Krysztal
+Author-email: suibing112233@outlook.com
+Requires-Python: >=3.7.3,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: deprecated (>=1.2.13,<2.0.0)
+Requires-Dist: nonebot2 (>=2.0.0-beta.1,<3.0.0)
+Project-URL: Repository, https://github.com/SUIBING112233/nonebot-adapter-kook
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <a"><img src="docs/logo2.png" width="500" alt="logo"></a>
+</p>
+
+<div align="center">
+
+# NoneBot-Adapter-Kook
+
+_✨ Kook协议适配 ✨_
+
+</div>
+
+## 个人工作繁忙时间不多， 欢迎有想法的各位共同维护仓库
+
+## Manual
+
+[使用指南](./MANUAL.md)
+
