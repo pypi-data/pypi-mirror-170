@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pip_test1008
+Version: 1.0
+Summary: A  module for test
+Author: zenghui_shu
+Author-email: zenghui_shu@163.com
+License: MIT
+License-File: LICENSE.lic
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
