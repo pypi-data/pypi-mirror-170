@@ -1,0 +1,8 @@
+antchain_sdk_bccr/__init__.py,sha256=9cTteZN2dOxjRICJTMPg8YKbdGxJVV7EOQRxXVXjikI,23
+antchain_sdk_bccr/client.py,sha256=Frhg_pEN1b4y49jfflhh2jn_MEUPd9Ep-g-QiyqFA-U,113251
+antchain_sdk_bccr/models.py,sha256=2YvdoLmdiCtmma8iWUvorho-qRpuH_luzaSRnSqhjP8,361036
+antchain_bccr-1.16.24.dist-info/LICENSE,sha256=0CFItL6bHvxqS44T6vlLoW2R4Zaic304OO3WxN0oXF0,600
+antchain_bccr-1.16.24.dist-info/METADATA,sha256=YRPgijCSfjkOXMBaV3QuvFkghtDsS5fMKp_AykrCYLA,2000
+antchain_bccr-1.16.24.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+antchain_bccr-1.16.24.dist-info/top_level.txt,sha256=jK1qarTMwLEqlizyoaQjBImLJaFcQMK_cSzHGAMbizQ,18
+antchain_bccr-1.16.24.dist-info/RECORD,,
