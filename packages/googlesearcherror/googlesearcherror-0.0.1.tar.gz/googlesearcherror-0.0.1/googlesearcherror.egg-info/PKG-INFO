@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: googlesearcherror
+Version: 0.0.1
+Summary: A package to search error in python code
+Home-page: https://github.com/plantcraft94/pysearcherror
+Author: plantcraft94
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+This project is for people who new to python and cannot understand what's wrong with their code, 
+
+if your code raise an Exception, the code will automatically search for a fix on google and print a link on the terminal
+
+## Installation
+
+```pip install pysearcherror```
+
+## Usage
+
+put this code at the top of your code
+
+```python
+import googlesearcherror
+googlesearcherror.searcherror()
+```
+
+Example:
+
+
+Input:
+```python
+import googlesearcherror
+googlesearcherror.searcherror()
+
+print(0/0)
+```
+
+Output:
+```
+ File "test.py", line 4, in <module>
+    print(0/0)
+ZeroDivisionError: division by zero
+
+-->  https://www.google.com/search?q=python+ZeroDivisionError++division+by+zero+site:stackoverflow.com
+```

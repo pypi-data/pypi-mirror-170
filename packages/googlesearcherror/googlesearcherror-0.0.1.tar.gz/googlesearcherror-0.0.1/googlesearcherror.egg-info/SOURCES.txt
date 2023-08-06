@@ -1,0 +1,11 @@
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+googlesearcherror/__init__.py
+googlesearcherror/googlesearcherror.py
+googlesearcherror.egg-info/PKG-INFO
+googlesearcherror.egg-info/SOURCES.txt
+googlesearcherror.egg-info/dependency_links.txt
+googlesearcherror.egg-info/top_level.txt
