@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: jobx
+Version: 0.0.0.4
+Summary: Run batch scripts in a managed way
+Home-page: UNKNOWN
+Author: Wang Pei
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fire
+Requires-Dist: jinja2
+Requires-Dist: pyyaml
+
+# jobx
+---
+run batch scripts in a managed way
+
