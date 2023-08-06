@@ -1,0 +1,12 @@
+notebooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+workflows/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+workflows/buckets.py,sha256=_3WhPTzDRPQ9H7wQw-nkSAsXIoi3Z1IBGywBGzW5KNQ,605
+workflows/env.py,sha256=y7ispUNJluEzoc2s3QPtfYm9qJ_VttXXHvqTSWVdHnE,185
+workflows/sql_dbs.py,sha256=1mbAyQxJ2wKIDu_O0txeZwOcGLwWdslYmGmhs1c9l5I,522
+workspace/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+workspace/config.py,sha256=IOF6wwAEtCdx6LXk6XBACBKTz2lr81Ve2yLr-QY1O7U,741
+workspace/settings.py,sha256=c6ewcgex8oQXulObSXho52pcrPZbrpB_sc3COCh0Er4,1445
+awsdp-0.1.0.dist-info/METADATA,sha256=VHnh3cXrP_qmlHDbHxTsrRPpW5EdFxzsnqb3sEBds0U,7026
+awsdp-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+awsdp-0.1.0.dist-info/top_level.txt,sha256=NpSqamGXWCbk0uCCPWRYgjR8-PTSjM7FsAwQm3UYU9U,30
+awsdp-0.1.0.dist-info/RECORD,,
