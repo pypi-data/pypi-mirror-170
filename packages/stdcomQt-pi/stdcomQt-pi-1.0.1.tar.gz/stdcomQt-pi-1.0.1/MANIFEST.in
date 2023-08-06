@@ -1,0 +1,6 @@
+include LICENSE.txt
+include requirements.txt
+include README.md
+recursive-include src/ *
+recursive-include src/stdcomQtPiPlate *
+recursive-include src/stdcomQtPiPlate/html *
