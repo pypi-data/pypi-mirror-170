@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: vEMden
+Version: 0.2
+Summary: Volume Electron Microscopy DENoising (vEMden)
+Home-page: https://www.thibault.biz/Research/VolumeEM/vEMden/vEMden.html
+Download-URL: https://www.thibault.biz/Doc/vEMden/vEMden-0.2.tar.gz
+Author: Guillaume THIBAULT, Katya GIANNIOS
+Author-email: thibaulg@ohsu.edu
+Maintainer: Guillaume THIBAULT
+Maintainer-email: thibaulg@ohsu.edu
+License: MIT
+Keywords: Denoising,Electron Microscopy,Volume EM,vEM,FIB-SEM,Focused Ion Beam Scanning Electron Microscop
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: GPU
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 10.2
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.8,<3.10
+
+# Volume Electron Microscropy DENoising (vEMden)
+
+This package performs automatic (unsupervised) denoising of volume electron microscopy images. Two deep learning 
+architectures are available:
+<ul>
+<li>Noise Reconstruction & Remove Network (NRRN)</li>
+<li>DenoiseNet</li>
+</ul>
+
+For installation, more information/details and full examples with code and data, visit:
+https://www.thibault.biz/Research/VolumeEM/vEMden/vEMden.html
