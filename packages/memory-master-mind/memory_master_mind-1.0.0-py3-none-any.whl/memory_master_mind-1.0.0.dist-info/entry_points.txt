@@ -1,0 +1,4 @@
+[console_scripts]
+memory-master-mind=memory_master_mind.runner:main
+mmm=memory_master_mind.runner:main
+
