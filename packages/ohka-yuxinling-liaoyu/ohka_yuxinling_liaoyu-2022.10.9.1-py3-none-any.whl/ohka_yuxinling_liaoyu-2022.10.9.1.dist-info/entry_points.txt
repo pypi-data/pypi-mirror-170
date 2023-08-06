@@ -1,0 +1,4 @@
+[console_scripts]
+OhkaYuxinlingLiaoyu = OhkaYuxinlingLiaoyu.__main__:main
+ohka-yuxinling-liaoyu = OhkaYuxinlingLiaoyu.__main__:main
+
