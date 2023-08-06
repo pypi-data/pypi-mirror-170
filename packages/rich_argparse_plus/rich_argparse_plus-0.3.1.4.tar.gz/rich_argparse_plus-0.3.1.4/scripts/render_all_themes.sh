@@ -1,0 +1,5 @@
+export RENDER_HELP_FORMAT=png
+export RENDER_HELP_OUTPUT_DIR=doc/themes/
+export THEME_IN_RENDERED_FILENAME=True
+
+rich_argparse_plus_show_themes
