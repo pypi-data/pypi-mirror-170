@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scapula_predict"
+version = "0.0.9"
+authors = [
+  { name="wxy", email="837038599@qq.com" },
+]
+description = "Scapula Predict"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+Requires-Dist = "open3d"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows :: Windows 11",
+]
