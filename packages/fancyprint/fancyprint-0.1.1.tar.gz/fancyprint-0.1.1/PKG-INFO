@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fancyprint
+Version: 0.1.1
+Summary: A aesthetic replacement to print()
+Author-email: MU <iammu@duck.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Project-URL: Bug Tracker, https://github.com/IamMU/Fancy-Print/issues
+Project-URL: Homepage, https://github.com/IamMU/Fancy-Print
+
+<h1 align="center">Fancy Print</h1>
+Fancy Print is a library that makes it easy to print beautiful text in python, without much of code.
+
