@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "NiuLab_download_YouTube_shorts"
+version = "1.0.1"
+authors = [
+  { name="Shuo Niu, Abhisan Ghimire", email="invictuscreatesanapp@gmail.com" },
+]
+description = "Downloads Youtube Videos"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]

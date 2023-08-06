@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/NiuLab_download_YouTube_shorts.egg-info/PKG-INFO
+src/NiuLab_download_YouTube_shorts.egg-info/SOURCES.txt
+src/NiuLab_download_YouTube_shorts.egg-info/dependency_links.txt
+src/NiuLab_download_YouTube_shorts.egg-info/top_level.txt
+src/NiuLab_download_Youtube_shorts/NiuLab_download_Youtube_shorts.py
+src/NiuLab_download_Youtube_shorts/__init__.py
