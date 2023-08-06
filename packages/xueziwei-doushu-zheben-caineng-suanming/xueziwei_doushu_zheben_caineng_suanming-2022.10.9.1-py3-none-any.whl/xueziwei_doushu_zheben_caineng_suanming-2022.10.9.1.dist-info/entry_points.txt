@@ -1,0 +1,4 @@
+[console_scripts]
+XueziweiDoushuZhebenCainengSuanming = XueziweiDoushuZhebenCainengSuanming.__main__:main
+xueziwei-doushu-zheben-caineng-suanming = XueziweiDoushuZhebenCainengSuanming.__main__:main
+
