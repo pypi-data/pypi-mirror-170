@@ -1,0 +1,7 @@
+[tool.poetry]
+name = "TruthDarePy"
+version = "2.0.6"
+description = "Wrapper For Truth & Dare"
+authors = ["Welcome To TruthDarePy v2.0.5 Powered By @Its_IZ_PRINCE_xD"]
+license = "GNU General Public License v3.0"
+readme = "README.md"

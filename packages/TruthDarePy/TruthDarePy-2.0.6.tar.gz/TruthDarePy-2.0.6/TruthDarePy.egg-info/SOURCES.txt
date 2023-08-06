@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+TruthDarePy/__init__.py
+TruthDarePy.egg-info/PKG-INFO
+TruthDarePy.egg-info/SOURCES.txt
+TruthDarePy.egg-info/dependency_links.txt
+TruthDarePy.egg-info/requires.txt
+TruthDarePy.egg-info/top_level.txt
