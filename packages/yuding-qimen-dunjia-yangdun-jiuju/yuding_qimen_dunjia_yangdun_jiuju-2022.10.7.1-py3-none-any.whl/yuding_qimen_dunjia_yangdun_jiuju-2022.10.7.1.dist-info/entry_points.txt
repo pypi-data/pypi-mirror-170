@@ -1,0 +1,4 @@
+[console_scripts]
+YudingQimenDunjiaYangdunJiuju = YudingQimenDunjiaYangdunJiuju.__main__:main
+yuding-qimen-dunjia-yangdun-jiuju = YudingQimenDunjiaYangdunJiuju.__main__:main
+
