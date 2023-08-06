@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ppac
+Version: 0.0.2
+Summary: (PPAC) Project Planning as Code
+Home-page: https://github.com/MatthiasRieck/ppac
+Author: Matthias Rieck
+Author-email: Matthias.Rieck@tum.de
+License-File: LICENSE
+Requires-Dist: jira
+
+(PPAC) Project Planning as Code
