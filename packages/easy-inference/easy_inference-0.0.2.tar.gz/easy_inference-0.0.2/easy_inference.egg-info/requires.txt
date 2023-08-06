@@ -1,0 +1,14 @@
+numpy
+
+[gpu]
+pyopencl
+six
+
+[testing]
+mypy
+onnx
+onnx2torch
+protobuf~=3.19.0
+pytest
+torch~=1.11.0
+tqdm
