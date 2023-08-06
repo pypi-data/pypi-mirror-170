@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/prime_system.py
+src/vessel_manoeuvring_models.egg-info/PKG-INFO
+src/vessel_manoeuvring_models.egg-info/SOURCES.txt
+src/vessel_manoeuvring_models.egg-info/dependency_links.txt
+src/vessel_manoeuvring_models.egg-info/top_level.txt
