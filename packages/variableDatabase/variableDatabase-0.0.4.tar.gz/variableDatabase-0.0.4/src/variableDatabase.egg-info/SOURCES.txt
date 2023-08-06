@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/variableDatabase/__init__.py
+src/variableDatabase/database.py
+src/variableDatabase.egg-info/PKG-INFO
+src/variableDatabase.egg-info/SOURCES.txt
+src/variableDatabase.egg-info/dependency_links.txt
+src/variableDatabase.egg-info/top_level.txt

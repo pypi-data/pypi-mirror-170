@@ -1,0 +1,154 @@
+# How to Import
+
+**Import this way:**
+```
+from variableDatabase import database
+```
+
+# Usage
+This is used to store global variables in a database.
+You can retrieve the variables from unique variableIDs.
+
+# Functions
+
+## createVar(auth, name, value)
+  
+  Creates a new variable and returns the Variable ID, which you can use to retrieve the value using the getValueFromID() Function. 
+
+---------------- 
+  **Example Script:**
+```
+  moneyID = createVar("myUniqueAuth", "money", "$1,291")
+  value = getValueFromID(moneyID)    
+  print(value)
+```
+--------------------
+  **Example Response:**
+  ```
+   >>> $1, 291
+  ````
+
+## getValueFromID(ID)
+  
+  Retrieve the value from the Variable ID. 
+  
+--------------
+  
+  **Example Script:**
+```
+  moneyID = createVar("myUniqueAuth", "money", "$1,291")
+  value = getValueFromID(moneyID)    
+  print(value)
+```
+----------------------
+  **Example Response:**
+``` 
+  >>>  $1, 291
+```  
+ 
+## getJSONFromID(ID)
+  
+   Retrieve the JSON from the Variable ID.
+   
+   **Does not work for userGen() Variable IDs, use getUserJSON() instead...**
+
+-------------  
+  **Example Script:**
+```
+  moneyID = createVar("myUniqueAuth", "money", "$1,291")
+  json = getJSONFromID(moneyID)    
+  print(json)
+```
+---------------
+  **Example Response:**
+```  
+  >>> {'_id': '633cbfd65057d14f0004d011', 'name': 'Hi', 'auth': 'John', 'value': 15}
+```
+## userGen(amount_of_users, statusUpdate)
+ 
+Generate completely random users with phone numbers, usernames, passwords, adresses, emails, and more.
+
+------------------------------------
+
+**Params:** 
+
+ amount_of_users: int -> How many users to generate. Must be an int such as 1, 219, or 173. | Generates a maximum of 999 users.
+ 
+ statusUpdate: bool -> Print updates on the user generation status. If True -> Will print update for each user created. If False -> Will not print update. **BETA MODE DO NOT RECOMEND!**
+
+-------------------------------------
+**Example Script:**
+```  
+ranUser = userGen(5, True)
+print(ranUser[0])
+print("\n"+ranUser[1]["name"])
+print("\n"+str(ranUser[2]["age"]))
+```  
+----------------------------------
+
+**Example Response:**
+```  
+User #1 Created!
+User #2 Created!
+User #3 Created!
+User #4 Created!
+User #5 Created!
+{'_id': '633c78f45057d14f0004c7d4', 'pass': '9Clifford57', 
+'name': 'Bobbie Towne', 'email': 
+'Hortense.Mayert@yahoo.com', 'user': 'Carolina_Ruecker', 
+'age': 89, 'phone': '040-533-6820', 'address': '6724 
+Rodriguez Turnpike\nLake Edgardo, UT 84745', '_mock': True}
+   
+Chelsey Gusikowski
+
+96
+```
+-------------------------------------------------------
+*_id and _mock are debug elements, ignore them*
+
+## setVar(ID, new_value)
+  Updates an already existing variable and returns the Variable ID, which you can use to retrieve the value using the getValueFromID() Function. 
+
+----------------------
+  **Example Script:**
+```
+ moneyID = createVar("myUniqueAuth", "money", "$1,291")
+  value = getValueFromID(moneyID)    
+  print(value)
+  updatedMoney = setVar(moneyID, "$1,801")
+  updated_value = getValueFromID(moneyID)    
+  print(updated_value)
+```
+----------------
+  **Example Response:**
+  ```
+  >> $1, 291
+  >> $1, 801
+```  
+## removeVar(ID)
+ 
+  Deletes an already created variable.
+  
+  ---------------------------
+  **Example Script:**
+```
+  moneyID = createVar("myUniqueAuth", "money", "$1,291")
+  value = getValueFromID(moneyID)    
+  print(value)
+  removeVar(moneyID)
+  print(getJSONFromID(moneyID))
+  print(getValueFromID(moneyID))
+ ```
+-------------------------
+  **Example Response:**
+ ``` 
+  >> $1, 291
+  >> []
+  >> Traceback (most recent call last):
+  File "main.py", line 262, in <module>
+    print(getValueFromID(moneyID))
+  File "main.py", line 58, in getValueFromID
+    value = response.json()["value"]
+TypeError: list indices must be integers or slices, not str
+  
+ ``` 
