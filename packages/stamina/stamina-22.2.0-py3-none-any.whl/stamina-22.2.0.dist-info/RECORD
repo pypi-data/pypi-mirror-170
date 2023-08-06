@@ -1,0 +1,10 @@
+stamina/__init__.py,sha256=ztn7x1VWG_vHBoBJNmddigLV21wA8_m5LUolF0i_zWo,270
+stamina/_config.py,sha256=DQwJs_L_DYJ8F_0qIJ-w5BbK2fGAnhZJDzRcGacg0V4,822
+stamina/_instrumentation.py,sha256=abT-rSmsUxiqqlqHKJM1dRLFxKhvJHVv098QJ9XNgY4,1599
+stamina/_sync.py,sha256=tD-PDF2DUKpBvt-bqmUtjNj4T6nwhtNG7GP0FieR1og,3437
+stamina/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stamina/typing.py,sha256=VsI1N-UuPUNYQ0VofLbB86GRP64wdeWtFVr_avDMXMs,491
+stamina-22.2.0.dist-info/METADATA,sha256=8YN6XxZZH-QHhGJnG_alAvtNAELqHSIiSDPvw06VdE0,3284
+stamina-22.2.0.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+stamina-22.2.0.dist-info/licenses/LICENSE,sha256=7tA79vu7yGNVVir1eIHhPh67gwWlKcZPNatVLd12nzQ,1072
+stamina-22.2.0.dist-info/RECORD,,
