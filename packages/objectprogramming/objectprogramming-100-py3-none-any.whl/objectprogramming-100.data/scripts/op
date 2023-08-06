@@ -1,0 +1,57 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+"object programming"
+
+
+import os
+import readline
+import signal
+import sys
+import termios
+import time
+
+
+starttime = time.time()
+
+
+from op import Db, Wd, allobj, elapsed, keys, fntime, format
+
+
+Wd.workdir = os.path.expanduser("~/.op")
+
+
+def fnd(args):
+    if len(args) == 0:
+        print("op workdir [type] [selector]")
+        return
+    wd = args[0]
+    if not os.path.exists(wd):
+        print("%s is not a directory" % wd)
+        return
+    Wd.workdir = wd
+    if len(args) == 1:
+        res = ",".join({x.split(".")[-1].lower() for x in Wd.types()})
+        if res:
+            print(res)
+        else:
+            print("no types yet.")
+        return
+    otype = args[1]
+    dbs = Db()
+    res = list(allobj(otype))
+    _nr = 0
+    for _fn, obj in res:
+        txt = "%s %s %s" % (
+                            str(_nr),
+                            format(obj, keys(obj)),
+                            elapsed(time.time()-fntime(_fn))
+                           )
+        _nr += 1
+        print(txt)
+    if not _nr:
+        print("no result")
+
+
+fnd(sys.argv[1:])
