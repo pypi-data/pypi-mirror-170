@@ -1,0 +1,4 @@
+[console_scripts]
+YushenDuihuaWanjiepian = YushenDuihuaWanjiepian.__main__:main
+yushen-duihua-wanjiepian = YushenDuihuaWanjiepian.__main__:main
+
