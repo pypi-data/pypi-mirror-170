@@ -1,0 +1,9 @@
+bak
+dist
+docs
+img
+javascripts
+pyfda
+ressource
+spec_files
+stylesheets
