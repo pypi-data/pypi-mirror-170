@@ -1,0 +1,23 @@
+[build-system]
+requires = [
+"setuptools>=61.0",
+"wheel"
+]
+build-backend = "setuptools.build_meta"
+[project]
+name = "PMMP"
+version = "0.0.1"
+authors = [
+  { name="Otis Kelso Heggem"},
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+#[project.urls]
+#"Homepage" = "https://github.com/pypa/sampleproject"
+#"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
