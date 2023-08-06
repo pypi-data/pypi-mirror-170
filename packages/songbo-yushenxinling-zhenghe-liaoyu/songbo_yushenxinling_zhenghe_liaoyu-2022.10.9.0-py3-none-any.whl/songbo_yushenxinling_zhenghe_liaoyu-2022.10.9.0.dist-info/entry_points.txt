@@ -1,0 +1,4 @@
+[console_scripts]
+SongboYushenxinlingZhengheLiaoyu = SongboYushenxinlingZhengheLiaoyu.__main__:main
+songbo-yushenxinling-zhenghe-liaoyu = SongboYushenxinlingZhengheLiaoyu.__main__:main
+
