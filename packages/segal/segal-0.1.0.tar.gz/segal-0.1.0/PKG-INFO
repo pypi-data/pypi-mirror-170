@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: segal
+Version: 0.1.0
+Summary: Sequence labeling active learning framework for Python
+Home-page: https://github.com/tech-sketch/SegAL
+License: MIT
+Author: Xu Liang
+Author-email: liangxu006@gmail.com
+Requires-Python: >=3.8,<3.12
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: albumentations (>=1.3.0,<2.0.0)
+Requires-Dist: matplotlib (>=3.6.0,<4.0.0)
+Requires-Dist: scipy (>=1.8.0,<2.0.0)
+Requires-Dist: segmentation-models-pytorch (==0.3.0)
+Project-URL: Bug Tracker, https://github.com/tech-sketch/SegAL/issues
+Project-URL: Changelog, https://segal.readthedocs.io/changelog.html
+Project-URL: Documentation, https://segal.readthedocs.io
+Project-URL: Repository, https://github.com/tech-sketch/SegAL
+Description-Content-Type: text/markdown
+
+# SegAL
+
+SegAL is a semantice segmentation active learning tool.
+
+## Installation
+
+SegAL is available on PyPI:
+
+`pip install seqal`
+
+SegAL officially supports Python 3.8+.
+
+## Usage
+
+```
+python examples/run_al_cycle.py --dataset CamVid  --data_path ./data/CamVid/ --model_name Unet --encoder resnet34 --encoder_weights imagenet --num_classes 12 --strategy LeastConfidence --seed_ratio 0.02 --query_ratio 0.02 --n_epoch 1
+```
