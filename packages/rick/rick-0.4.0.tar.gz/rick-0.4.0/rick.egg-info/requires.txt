@@ -1,0 +1,9 @@
+
+[bcrypt]
+bcrypt>=3.2.0
+
+[minio]
+minio>=7.1.11
+
+[redis]
+redis>=3.5.0
