@@ -1,0 +1,9 @@
+README.md
+setup.py
+zodiaco/__init__.py
+zodiaco.egg-info/PKG-INFO
+zodiaco.egg-info/SOURCES.txt
+zodiaco.egg-info/dependency_links.txt
+zodiaco.egg-info/top_level.txt
+zodiaco/signos/__init__.py
+zodiaco/signos/getSignos.py
