@@ -1,0 +1,1 @@
+This python package saves variables and lists even after you restart your  python script
