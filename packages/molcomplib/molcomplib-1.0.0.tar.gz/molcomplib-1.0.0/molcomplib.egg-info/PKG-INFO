@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: molcomplib
+Version: 1.0.0
+Summary: A python library and the standatrized model for the navigation in chemical space. It consists of parametric t-SNE model pretrained on large dataset of bioactive compoundsThis library is a part of MolCompass project. 
+Author: Sergey Sosnin <serg.sosnin@gmail.com>
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+
