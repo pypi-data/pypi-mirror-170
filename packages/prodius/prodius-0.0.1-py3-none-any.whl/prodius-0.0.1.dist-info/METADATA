@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: prodius
+Version: 0.0.1
+Summary: Calculates cartesian product from iterables without memory error.
+Home-page: https://github.com/sekgobela-kevin/prodius
+Author: Sekgobela Kevin
+Author-email: kevinnoko23@gmail.com
+Project-URL: Bug Tracker, https://github.com/sekgobela-kevin/prodius/issues
+Keywords: cartesian-product,product,iterables,sets,pairs
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+License-File: LICENSE
+
