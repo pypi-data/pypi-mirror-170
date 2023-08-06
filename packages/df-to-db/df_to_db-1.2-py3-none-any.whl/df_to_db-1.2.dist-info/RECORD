@@ -1,0 +1,12 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_nosql_writer.py,sha256=0EyiSLVSuspWFxtt58A0a9oQADPcLMrc6YZ3jzZJrPY,3067
+tests/test_sql_writer.py,sha256=E1Q_dgiwA5_0HDVPNevnG1jbUKf12AyOpGN5wsoYk7I,4760
+write_df/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+write_df/common.py,sha256=wLM8_KJ_EHuYzsOtOUqdkMgmT5MtT-s2RC9FTbCKj_s,1295
+write_df/nosql_writer.py,sha256=j12Xw2drCFUC7y81i4OenfE2OuhuU4PGOdtCSRlQZlM,5174
+write_df/sql_writer.py,sha256=OVP2hFaTQvfnyYmY3Mzazqns2V86AzYgMUS2wThbdrI,9259
+df_to_db-1.2.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+df_to_db-1.2.dist-info/METADATA,sha256=v8bvMhurg0wLt7xJaaxxb5BSLqK1V1RgKZFqZehBw9s,6068
+df_to_db-1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+df_to_db-1.2.dist-info/top_level.txt,sha256=NinKuDcNVhBhHeh0vGD3ZmbTEi1NFNcw29WhGuC0dv8,15
+df_to_db-1.2.dist-info/RECORD,,
