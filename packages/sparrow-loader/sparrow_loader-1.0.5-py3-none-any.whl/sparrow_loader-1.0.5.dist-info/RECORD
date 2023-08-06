@@ -1,0 +1,15 @@
+sparrow/loader/__init__.py,sha256=usjE3n0WrLSbdKH45ISF_oaIuTtaRUzGerROlVQr1TM,2035
+sparrow/loader/cli.py,sha256=0qq_MBk5BaZAuDAWmDu_Gxii5YPm0F6uPtzsyM5RkNo,1132
+sparrow/loader/converter.py,sha256=6wjx7vkuYF2bDdIjq6e7udSUiPLqRJJM7F0T8oqGPv0,10108
+sparrow/loader/display.py,sha256=svXvBNnAu6rJcXBj4v3Bauo_IHF3RyAM9Qu1NCfE09E,4898
+sparrow/loader/fields.py,sha256=trBdEswNstYfvO7qiN7CqeiyTsq-CqYF3ZcYwulIpmM,5926
+sparrow/loader/interface.py,sha256=C34GJ7miw-dibvTGyhoJU8dLz8yE09L_9c6bpWG9W3k,1622
+sparrow/loader/schema.py,sha256=BDrn65zRFqsTQXbRXCarMKeUo9LZA_6gBK0M_LPPs30,12977
+sparrow/loader/schema_checking.py,sha256=7jviCVd05s6RvA8djbtkqcx9XWnR7y3YbAI2IfwtNo8,1390
+sparrow/loader/sparrow-db-models.pickle,sha256=Xw4wRiHjjKk7JHa6AqOwC_ex-kwnoPaFhY3mDXX4Wus,136624
+sparrow/loader/test_schema_checking.py,sha256=W7rr3kih_cYxRCr6C3Nf6yCssy-U4gwSErkZu7OGu8Q,443
+sparrow/loader/util.py,sha256=2j-pJzglRF8YQxcHzukY4RsGmSglcUXDw-Kyr_VcwpI,1675
+sparrow_loader-1.0.5.dist-info/entry_points.txt,sha256=kVmJIAO14ts8PRlzlG9JgnO5F3XTu7Erb8N7MiZwHYM,57
+sparrow_loader-1.0.5.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+sparrow_loader-1.0.5.dist-info/METADATA,sha256=VAnYGRArgBnrHsjRLJt_2MwiuUQW4fT9ykoOIPsBjYg,1710
+sparrow_loader-1.0.5.dist-info/RECORD,,
