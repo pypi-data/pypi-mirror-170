@@ -1,0 +1,4 @@
+include a_pandas_ex_regex_enhancements/requirements.txt
+include a_pandas_ex_regex_enhancements/thirdparty.json
+include a_pandas_ex_regex_enhancements/README.MD
+include a_pandas_ex_regex_enhancements/LICENSE
