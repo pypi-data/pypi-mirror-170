@@ -1,0 +1,9 @@
+sparsestack/StackedSparseArray.py,sha256=gsvmfht9-KeBts8TmolqiZPEoQKupCdLrwAmumQy6go,17334
+sparsestack/__init__.py,sha256=E_GlXKv-d8dykTF8DAX9DiNIuV6Xvn8jfU_zN_LnKGg,225
+sparsestack/__version__.py,sha256=PmcQ2PI2oP8irnLtJLJby2YfW6sBvLAmL-VpABzTqwc,22
+sparsestack/utils.py,sha256=pcb1Ctaygb43UvN4AeXcVGh78OR2oxmmreRMVgjc_j4,6438
+sparsestack-0.2.1.dist-info/LICENSE,sha256=J82N4FIZv8_gNtdGoHwSHwwuuJCaDPmpC_2CxIh5l8c,1070
+sparsestack-0.2.1.dist-info/METADATA,sha256=9M0CMouNMAUxyC35krvelfI9GI3XZsXp7YYQs5oR6_o,4913
+sparsestack-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sparsestack-0.2.1.dist-info/top_level.txt,sha256=NbcqhiAQY6b41C7VCdnP3iYDsdgwOdLay-VAeA-iMMM,12
+sparsestack-0.2.1.dist-info/RECORD,,
