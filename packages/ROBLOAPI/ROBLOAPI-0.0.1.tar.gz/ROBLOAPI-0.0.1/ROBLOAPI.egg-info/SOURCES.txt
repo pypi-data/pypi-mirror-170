@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LISENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+Py Roblox API Wrapper/__init__.py
+ROBLOAPI.egg-info/PKG-INFO
+ROBLOAPI.egg-info/SOURCES.txt
+ROBLOAPI.egg-info/dependency_links.txt
+ROBLOAPI.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ROBLOAPI
+Version: 0.0.1
+Summary: A ROBLOX to Python API wrapper
+Home-page: 
+Author: Jacks Productions
+Author-email: jackbusinessac@gmail.com
+License: MIT
+Keywords: roblox
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+A tool to help users use ROBLOX API with Python.
+
+Change Log
+==========
+
+0.0.1 (10/8/22)
+----------------
+- First Release
