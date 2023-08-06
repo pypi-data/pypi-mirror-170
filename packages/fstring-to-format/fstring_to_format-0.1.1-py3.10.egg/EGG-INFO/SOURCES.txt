@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fstring_to_format/__init__.py
+fstring_to_format/__main__.py
+fstring_to_format/core.py
+fstring_to_format.egg-info/PKG-INFO
+fstring_to_format.egg-info/SOURCES.txt
+fstring_to_format.egg-info/dependency_links.txt
+fstring_to_format.egg-info/top_level.txt
