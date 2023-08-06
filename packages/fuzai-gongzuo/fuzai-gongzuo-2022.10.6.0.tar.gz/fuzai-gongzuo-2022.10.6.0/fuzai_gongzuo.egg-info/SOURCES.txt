@@ -1,0 +1,13 @@
+README.md
+setup.py
+FuzaiGongzuo/Dockerfile
+FuzaiGongzuo/README.md
+FuzaiGongzuo/__init__.py
+FuzaiGongzuo/__main__.py
+FuzaiGongzuo/file.pdf
+FuzaiGongzuo/index.html
+fuzai_gongzuo.egg-info/PKG-INFO
+fuzai_gongzuo.egg-info/SOURCES.txt
+fuzai_gongzuo.egg-info/dependency_links.txt
+fuzai_gongzuo.egg-info/entry_points.txt
+fuzai_gongzuo.egg-info/top_level.txt
