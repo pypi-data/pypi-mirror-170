@@ -1,0 +1,69 @@
+"""this module defines an abstract class for password writers"""
+
+from abc import abstractmethod
+from typing import Any, ClassVar, Dict, Type
+
+
+class PasswordWriter:
+    # pylint: disable=too-few-public-methods
+    """PasswordWriter is the interface that all concrete password writer
+    classes need to implement.
+    """
+
+    def __init__(self, out_file: str, **kwargs) -> None:
+        self.out_file = out_file
+        self.options = kwargs
+
+    @abstractmethod
+    def write(self, password: str) -> None:
+        """Subclasses must implement the write method to actually write
+        the password in the correct format."""
+
+
+class PasswordWriterRegistry:
+    """This class maintains a registry of password writer classes indexed by
+    output format.
+    """
+
+    writers: ClassVar[Dict[str, Any]] = {}
+
+    @staticmethod
+    def register(fmt: str, writer: Type[PasswordWriter]) -> None:
+        """register a subclass as a writer for a specific format"""
+        PasswordWriterRegistry.writers[fmt] = writer
+
+    @staticmethod
+    def get_writer(fmt: str, out_file: str, **kwargs) -> PasswordWriter:
+        """get_writer returns an instance of the PasswordWriter class for
+        the given format.
+        """
+        try:
+            writer = PasswordWriterRegistry.writers[fmt](
+                out_file, kwargs=kwargs
+            )
+        except KeyError as ex:
+            raise Exception(
+                f"no password writer registered for format {fmt}"
+            ) from ex
+        return writer
+
+
+def write_to_file(output: str, filename: str) -> None:
+    """Write out an output string to the specified file or to stdout."""
+    if filename is not None and filename != "stdout":
+        out_file = open(filename, mode="w", encoding="utf8")
+        with out_file:
+            print(output, file=out_file)
+        return
+    print(output)
+
+
+class PlainTextPasswordWriter(PasswordWriter):
+    # pylint: disable=too-few-public-methods
+    """Write password as plain text with no formatting"""
+
+    def write(self, password: str) -> None:
+        write_to_file(password, self.out_file)
+
+
+PasswordWriterRegistry.register("plain", PlainTextPasswordWriter)
