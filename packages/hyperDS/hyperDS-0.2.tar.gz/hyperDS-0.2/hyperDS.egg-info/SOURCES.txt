@@ -1,0 +1,9 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+hyperDS/__init__.py
+hyperDS.egg-info/PKG-INFO
+hyperDS.egg-info/SOURCES.txt
+hyperDS.egg-info/dependency_links.txt
+hyperDS.egg-info/top_level.txt
