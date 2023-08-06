@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: TrainerBase
+Version: 1.1.1
+Summary: Template/Framework to create game trainers
+License: MIT
+Author-email: v01d <v01d@v01d.ru>
+Requires-Python: >=3.9
+Project-URL: homepage, https://gitlab.com/v01d-gamemods/trainer-base
