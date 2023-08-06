@@ -1,0 +1,11 @@
+as_scraper_airflow/__init__.py,sha256=in-kx2IUvAS72O3vVwgI3DGETCkl2LA3YCguiJ9Neoo,25
+as_scraper_airflow/errors.py,sha256=Tc2hafKM-vOvql_27rHz7Rp1ON3YkfLLzFysuzY37oI,110
+as_scraper_airflow/operators/__init__.py,sha256=Tow0o4gGCpDkltqtybI5sQ6jSSGWtP7cIvcTnTdm-bM,141
+as_scraper_airflow/operators/scraper.py,sha256=-FNEZBYZ4HayIQ7-kEALKQu0B8bscDk7SS74-pnuIZA,5157
+as_scraper_airflow/operators/scraper_to_bq.py,sha256=9YadUC3KonFnMP8JX2qpWPxSEcWGtJQaRsqfgUgeoMk,3550
+as_scraper_airflow/operators/scraper_to_logs.py,sha256=gvdmeVqzoOazFOBQTtG8tMAfrtmPN8PsJLvSbtgATlg,655
+as_scraper_airflow-1.0.1.dist-info/LICENSE,sha256=hc4BHLDxmh8XFjY5oUVQo9pk224iBOHBYBFsJN-yvsI,1070
+as_scraper_airflow-1.0.1.dist-info/METADATA,sha256=za1mw2T1MuNVGwosbNYA9N680qpt33IDsuvOcKEqKoc,8134
+as_scraper_airflow-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+as_scraper_airflow-1.0.1.dist-info/top_level.txt,sha256=XI0tuX2kZ7D_U1PKbBdiPqKBzf4iEEv0gs0DBEyNkNw,19
+as_scraper_airflow-1.0.1.dist-info/RECORD,,
