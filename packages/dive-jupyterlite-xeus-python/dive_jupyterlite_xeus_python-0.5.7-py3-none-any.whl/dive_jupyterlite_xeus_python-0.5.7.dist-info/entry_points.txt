@@ -1,0 +1,2 @@
+[jupyterlite.addon.v0]
+dive-jupyterlite-xeus-python = dive_jupyterlite_xeus_python.env_build_addon:XeusPythonEnv
