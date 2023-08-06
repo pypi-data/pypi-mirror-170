@@ -1,0 +1,17 @@
+invenio_records_permissions/__init__.py,sha256=2bc_YYB7bbEV-_FEVcovwZYZ3JTC-y_XUIzbpfoGxGg,6295
+invenio_records_permissions/api.py,sha256=7iKhlIDyczyMFVa1-H8KYFlCJzQ9zzWyBM_zOJq0AdQ,718
+invenio_records_permissions/config.py,sha256=6JHdUyqk46e8frGJoWuZ5dEMkcR6UxWKbuTX33xSlkA,490
+invenio_records_permissions/errors.py,sha256=vF1f6zLdg9r-qb1Cq0nNdwxWzgZI70l5EBmrAsbOOX4,366
+invenio_records_permissions/ext.py,sha256=ellR9dAhfYh4ZDBTerCnDCNE-EvidzJ4wgkYtv_cFy4,1183
+invenio_records_permissions/generators.py,sha256=q8wmrzb0lJ9vZYRxQr1RUV6fJK-zbY4AFqPuL7I9nBA,8688
+invenio_records_permissions/policies/__init__.py,sha256=5RJcppHZKwLZ_2zUaoDfo6cFQkpmazlo-ngjEY9_Loc,424
+invenio_records_permissions/policies/base.py,sha256=HYeA13CiHu_w60nNF8ONVIzyh4Cb9tZX--h7UqfvTUE,4870
+invenio_records_permissions/policies/records.py,sha256=PEjAMh_U3RtpzWZm7iRqzgChwS7-UbuGp-YXhu_0Mdk,2763
+invenio_records_permissions/translations/messages.pot,sha256=lChK7WStCcjvO5gzN0pEGRHPDr-zX5kU3T7g0fA96cI,667
+invenio_records_permissions-0.15.1.dist-info/AUTHORS.rst,sha256=H6waRyaTvwSYcqI5bRK0ltmHvC0a-SVMb-XVb5XhaW8,255
+invenio_records_permissions-0.15.1.dist-info/LICENSE,sha256=U9YuBHwFUFnak-35zDTsCLs00EzyaH5DBdC7KXA05lg,1062
+invenio_records_permissions-0.15.1.dist-info/METADATA,sha256=kh8qDNdH4w6v35uKtQE_mpmjxuUY6_2piFtLGi4_goc,3018
+invenio_records_permissions-0.15.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+invenio_records_permissions-0.15.1.dist-info/entry_points.txt,sha256=_3z-k9A_V3fZRWjZjkJq40GbN9jsbi13T-3HmjhIBQM,282
+invenio_records_permissions-0.15.1.dist-info/top_level.txt,sha256=vkJHNSBsTeCk_0ygwVzV1pkYBCq6y-oT6kHINyjcnSA,28
+invenio_records_permissions-0.15.1.dist-info/RECORD,,
