@@ -1,0 +1,8 @@
+Products.CMFPlone>=6.0a4
+plone.namedfile>=3.999
+setuptools
+six
+
+[test]
+plone.app.testing
+plone.app.robotframework[debug]
