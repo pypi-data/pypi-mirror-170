@@ -1,0 +1,7 @@
+Click
+banal
+clickhouse-driver[numpy]
+followthemoney
+pandas
+pyicu
+structlog
