@@ -1,0 +1,13 @@
+pydatacheck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydatacheck/configs.py,sha256=CISMwW-Y7FMh_4g0ulz1ZsEkLYkMDFQK708lJe3rURg,143
+pydatacheck/data_check_books.py,sha256=zf9CXO8PtaBSBBjprkRx1W9Hj2l0EipXldawTHMuBlE,3633
+pydatacheck/data_check_imdb.py,sha256=UiXyfQcLgFYMR84tP11uJT4BYzfhZmOv0JuW6Fpxjnc,1307
+pydatacheck/main.py,sha256=9DRIeF8VQNjHFUTC880lW3Ij0yDFz4AXbBxWpsS-M-g,502
+pydatacheck/route.py,sha256=2s-ow37c9pCLsVhEFjmzEFD3qq8PB-tdleYkwN3QDYo,34
+pydatacheck/static.py,sha256=gi5pnIyG6FQyU0waTg42MiK4SuljSZnb3fXX7BkFmC0,187
+pydatacheck-0.0.2.dist-info/LICENSE,sha256=B3D1kVWAgbBtYwPAnnRvqQs4sTkTuq3L9jbTt5P44LM,1069
+pydatacheck-0.0.2.dist-info/METADATA,sha256=w-8SwmpAHS1uQoJ49OdGEf11Lrbkmazm6TdU3TY9B4Y,1530
+pydatacheck-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pydatacheck-0.0.2.dist-info/entry_points.txt,sha256=s-ViZgq-9gyVcsoDQ07yjdbTymwp-yAcWqGR26bGpUw,43
+pydatacheck-0.0.2.dist-info/top_level.txt,sha256=EHa6SRwnrDkW25-Fh2Z3Ea9ObH6u1Yo6ws_AaB1sAHM,12
+pydatacheck-0.0.2.dist-info/RECORD,,
