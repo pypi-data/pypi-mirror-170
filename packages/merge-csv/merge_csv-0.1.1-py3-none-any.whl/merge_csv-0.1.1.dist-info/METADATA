@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: merge-csv
+Version: 0.1.1
+Summary: A Simple Program to Merge Multiple CSV Files Into One File
+Home-page: https://github.com/Alyetama/Merge_CSV
+License: MIT
+Author: Mohammad Alyetama
+Author-email: malyetama@pm.me
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PySimpleGUI (>=4.60.3,<5.0.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Project-URL: Repository, https://github.com/Alyetama/Merge_CSV
+Description-Content-Type: text/markdown
+
+# Merge CSV
+
+## Installation
+```shell
+pip install merge_csv
+```
+
+## Usage
+```shell
+mcsv  # or merge_csv
+```
+
+![screenshot](static/screenshot.png)
+
