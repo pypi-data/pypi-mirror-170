@@ -1,0 +1,14 @@
+tkitAutoRewriter/__init__.py,sha256=FWpBwb3np1sFVOzdMmk6oqP1b5W12XwEPcu1NlQsBWo,208
+tkitAutoRewriter/api.py,sha256=RRHcDo6uBI0RTHhN88VanBichSpGXBXVQQ1fB794TuY,30874
+tkitAutoRewriter/cut.py,sha256=yP-yAcPzFQvfz6NBbwUej0w-kp1yRU0Mob-3bCJz3r0,1394
+tkitAutoRewriter/diff.py,sha256=IRqWJrQdd9ur_jq17AYNay6t4XECJqzp5OMevdKJrc8,1279
+tkitAutoRewriter/rewriter.py,sha256=IvqVABjMgiWFilh6Y4hCbRXVKiGe1wO9ZGp4-qJXSDs,1078
+tkitAutoRewriter/test_text_rewrite_.py,sha256=p_BZKFf0l-zSXjdxSsmEI_j7J7OxwwE1oejmQeUSRbg,3950
+tkitAutoRewriter/text_tilling.py,sha256=-xrJt2jpPx-5myGYEayVn03Y56mEoFyg1t3IAjewfx4,2057
+tkitAutoRewriter/nltk_data/corpora/stopwords/english,sha256=AZ8QS6LtB0NtBfnN0zgwNK1mAU7cJ_xlH4N-GgOLZFE,936
+tkitAutoRewriter/nltk_data/tokenizers/punkt/english.pickle,sha256=3aN5cq6ImYpv0-PsACaXpr02KzLQUP2n18pSdocwkqo,433305
+tkitAutoRewriter/nltk_data/tokenizers/punkt/PY3/english.pickle,sha256=XK03WFljkjZOO-mAPb1-vto4S2iTe0iKATZfVVG7lCw,406697
+tkitAutoRewriter-0.0.0.716652421.dist-info/METADATA,sha256=_ouF5RXD1KU8lk_wP7RVj9y3njlu_EqMFHWQmO-nkoc,9294
+tkitAutoRewriter-0.0.0.716652421.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tkitAutoRewriter-0.0.0.716652421.dist-info/top_level.txt,sha256=O102HReAL1UEnal2KG8GcG_Ui18IOY8RgNJFg0IANBM,17
+tkitAutoRewriter-0.0.0.716652421.dist-info/RECORD,,
