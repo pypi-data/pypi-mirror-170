@@ -1,0 +1,15 @@
+# [project]
+# name = "auto_sort"
+# version = "0.0.1"
+# author = "Emmanuel Agyapong"
+# author_name = "emmanuelagyapong070@gmail.com"
+# dependencies = [
+#     "shutils"
+# ]
+
+# [tool.setuptools.packages.find]
+# find = {}
+
+
+# [project.scripts]
+# auto_sort = "auto_group.determine_location:main"
