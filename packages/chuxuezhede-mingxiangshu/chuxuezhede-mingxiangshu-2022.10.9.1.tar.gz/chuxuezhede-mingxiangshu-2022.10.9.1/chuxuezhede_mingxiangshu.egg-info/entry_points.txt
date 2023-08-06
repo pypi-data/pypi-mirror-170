@@ -1,0 +1,4 @@
+[console_scripts]
+ChuxuezhedeMingxiangshu = ChuxuezhedeMingxiangshu.__main__:main
+chuxuezhede-mingxiangshu = ChuxuezhedeMingxiangshu.__main__:main
+
