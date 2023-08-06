@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+variousSort.egg-info/PKG-INFO
+variousSort.egg-info/SOURCES.txt
+variousSort.egg-info/dependency_links.txt
+variousSort.egg-info/requires.txt
+variousSort.egg-info/top_level.txt
