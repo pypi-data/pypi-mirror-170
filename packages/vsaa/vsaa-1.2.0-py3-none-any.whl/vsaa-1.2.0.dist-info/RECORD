@@ -1,0 +1,17 @@
+vsaa/__init__.py,sha256=jttio0UwPtNreieBzX8ky2xXOlrt7jqWSpVkeojKM0c,174
+vsaa/_metadata.py,sha256=tCc4jeObwjPjR6xt64hfO04WPaXYOzr6wQl6XrUhWmo,378
+vsaa/abstract.py,sha256=Rmi4xP0VK60qIAImmFHUkgq8oMTGkTcw0DFFy-OCR-E,8649
+vsaa/enums.py,sha256=W1X5EEe3ZhvIrHsFSZgPM166AViYzV2FDBh4O081kTY,411
+vsaa/funcs.py,sha256=Tt534QnvizrxH_N9m-oZmJGbbtR53ZDauHw9MFlATVA,7874
+vsaa/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsaa/antialiasers/__init__.py,sha256=SVTnaMC7RZMv0PhqX-ljoHxGa8rTec-nkcdnS4lh3Ik,209
+vsaa/antialiasers/eedi2.py,sha256=F8jxNL9qTTA4SYBnw4EcSzlU-pHFUlXnYoWO0oKyGq0,2093
+vsaa/antialiasers/eedi3.py,sha256=i3wAHImjHHnjWxhuo3XrJJ4l8ul_lamkvnQkaQsGDbw,2226
+vsaa/antialiasers/nnedi3.py,sha256=R0rkrQWLuGBIOGy-kgeZb724F7JzODzEZpGlM26Eppo,1650
+vsaa/antialiasers/sangnom.py,sha256=lno1aKJU-FFRQRTZzDOdvc3OopF8K9CBB7IjliR_qAQ,1265
+vsaa/antialiasers/znedi3.py,sha256=2JYozY2ekbuteasg-gJU552HDdWgzeVLHrbPijFAG3Y,1088
+vsaa-1.2.0.dist-info/LICENSE,sha256=c7zRrcdsvNZLijyo88GQRpJcrBlQTR-ANFAUH1PCi24,1088
+vsaa-1.2.0.dist-info/METADATA,sha256=lQh_Lvg2a9nbSruhnDTeeZ1ildvwIkHUDU1AwlkpmOw,1372
+vsaa-1.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vsaa-1.2.0.dist-info/top_level.txt,sha256=XMrQTV_mTP4VEQvSU_gt-F6qCs83nbmeDFFVXE_hpzg,5
+vsaa-1.2.0.dist-info/RECORD,,
