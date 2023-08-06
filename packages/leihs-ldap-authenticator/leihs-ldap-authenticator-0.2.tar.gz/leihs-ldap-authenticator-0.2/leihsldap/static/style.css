@@ -1,0 +1,42 @@
+/*
+LDAP based authentication handler for Leihs 
+Copyright 2022 ELAN e.V.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+body {
+	color: #000;
+	background-color: #fff;
+	font-size: 16px;
+	font-family: sans-serif;
+	max-width: 400px;
+	margin: 250px auto;
+	padding: 25px;
+}
+
+@media only screen and (max-height: 500px) {
+	body {
+		margin: 50px auto;
+	}
+}
+
+input {
+	display: block;
+	margin: 15px 0;
+}
+
+input[name] {
+	width: 100%;
+}
