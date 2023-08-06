@@ -1,0 +1,9 @@
+cffi>=1.12.0
+
+[pycuda]
+pycuda
+
+[test]
+pytest
+pycuda
+numpy
