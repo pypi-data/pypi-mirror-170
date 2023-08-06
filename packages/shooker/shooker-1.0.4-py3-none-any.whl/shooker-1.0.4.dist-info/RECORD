@@ -1,0 +1,12 @@
+shooker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shooker/shooker.py,sha256=IwmRcVH8LSiutubO0bWe9rVBb0lrx2qpWTXo-JbRas4,3890
+shooker/internal/asm.py,sha256=I21QbfLEMqd_BPHg95JdaZZUCZQG36-xlMSeWo2cfzY,3368
+shooker/internal/cmpl.py,sha256=N5FEPOCZvjm7hVkO4gurWE6y09ArJbRQy83MN_fSQv8,3421
+shooker/internal/ftb.py,sha256=TpQNsDCmYoVbIZPdM2KKrgTQfHVL3EIWaqTtQbVENLY,1199
+shooker/internal/inj.py,sha256=HvHCee4TStRVf8MzOPD2paLWLQSAuRb_6wc3MWrMrSM,1318
+shooker/internal/other.py,sha256=2lMvmrmNgNr0aXThYqv6_vXxpQabiDMPYZktPgPM5Qo,737
+shooker-1.0.4.dist-info/METADATA,sha256=8PpAVsFqBYrzJn02I1GwWl4Xmw0ePcjKZEElAy5mUeQ,752
+shooker-1.0.4.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+shooker-1.0.4.dist-info/entry_points.txt,sha256=8jzuazjtPdCVQzaGtIPL6CISu9rD4PPxo1hl_EIHAm8,58
+shooker-1.0.4.dist-info/licenses/LICENSE,sha256=JLmgk1FBpziNtEtnWj6dvmxQALQW_J5AGFfK34mT-iA,1064
+shooker-1.0.4.dist-info/RECORD,,
