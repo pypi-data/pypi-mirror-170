@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyconfigloader
+Version: 0.1.2
+Summary: Application config loader helper with multiple config file format supported
+Home-page: https://github.com/Fifan31/pyconfigloader
+Author: Stéphan Aimé
+Author-email: stephan.aime@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/Fifan31/pyconfigloader/archive/0.1.2.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Provides-Extra: yaml
+Provides-Extra: toml
+Provides-Extra: properties
+Provides-Extra: all
+License-File: LICENSE
+
+UNKNOWN
+
