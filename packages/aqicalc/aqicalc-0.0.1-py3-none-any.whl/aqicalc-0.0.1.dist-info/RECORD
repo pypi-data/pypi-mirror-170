@@ -1,0 +1,13 @@
+aqicalc/__init__.py,sha256=dP7hpfCaDtV_nQvA_UDLuxReB_He8w1cbeUNM-bsfI0,7429
+aqicalc/constants.py,sha256=S81RyklqV2m6x3529AzSrNgmn3Y7H-sjIZYVt2tY79w,540
+aqicalc/algos/__init__.py,sha256=4STfV-uumZCR7QnqdAT538gOEYmXlfC8RxZRt9_rnWA,696
+aqicalc/algos/base.py,sha256=-xzak8rqil_C5zWkXpkh6qdeUfeFYaCJA9pgGUg7nDQ,4009
+aqicalc/algos/cpcb.py,sha256=PP2x_pe18X3H068RmYMBvc7K6k5HmCT5wr48R05SjRY,3480
+aqicalc/algos/epa.py,sha256=s8yZpVeVmC7bu8mUU3TdNLIhHWQRChFplTtCX5SHX78,3949
+aqicalc/algos/mep.py,sha256=11sOIBWYvHKCueZr3I5cY6CHJiKlT98OhNpnlNlGmrs,5314
+aqicalc-0.0.1.dist-info/LICENSE,sha256=0sCaGMpUPnZH6XEvjxudkJMOAJiNU_x-fQF8Awoj9cU,1489
+aqicalc-0.0.1.dist-info/METADATA,sha256=-BNyGwMlgLNfQLJwTjHcfhtFBxTAdTMwh0ldSIkup9k,4332
+aqicalc-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aqicalc-0.0.1.dist-info/entry_points.txt,sha256=8hD9G44U89jRxY04bcdbtdlR74_B85P3zZ_rz6RasPg,40
+aqicalc-0.0.1.dist-info/top_level.txt,sha256=8kOiL56Znrt1ABz7ydqM6I4DE-h8DwTDhKgDKQ88sto,8
+aqicalc-0.0.1.dist-info/RECORD,,
