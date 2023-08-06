@@ -1,0 +1,4 @@
+[console_scripts]
+HuixuanYuzhouVol2a = HuixuanYuzhouVol2a.__main__:main
+huixuan-yuzhou-vol2a = HuixuanYuzhouVol2a.__main__:main
+
