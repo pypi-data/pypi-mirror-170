@@ -1,0 +1,4 @@
+[console_scripts]
+AiqingdeXiyinliFaze = AiqingdeXiyinliFaze.__main__:main
+aiqingde-xiyinli-faze = AiqingdeXiyinliFaze.__main__:main
+
