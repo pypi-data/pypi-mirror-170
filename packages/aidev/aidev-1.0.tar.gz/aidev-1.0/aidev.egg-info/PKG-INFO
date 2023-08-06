@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aidev
+Version: 1.0
+Summary: General structure optimizer leveraging AI.
+Home-page: https://github.com/radiate-engineering/AiDev
+Author: Massimo Brivio
+Author-email: brivio@radiate.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+AiDev is a Python library for dealing with structural optimization.
+
