@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pyltk"
+version = "0.0.2"
+description = "english tokenizer and stemmer"
+authors = ["wayfaring-stranger <zw6p226m@duck.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
