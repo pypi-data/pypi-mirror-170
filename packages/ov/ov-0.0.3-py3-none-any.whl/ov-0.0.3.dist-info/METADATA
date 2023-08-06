@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ov
+Version: 0.0.3
+Summary: Dynamo access
+Home-page: https://github.com/thorwhalen/ut/tree/master/serialize/dynamo.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# ov
+Dynamo access
+
+
+To install:	```pip install ov```
+
+
