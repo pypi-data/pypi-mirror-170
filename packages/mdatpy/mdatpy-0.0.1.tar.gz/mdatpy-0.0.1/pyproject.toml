@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "mdatpy"
+version = "0.0.1"
+description = "A pypi release of the MDAT"
+authors = ["Abhijeet Parida <abhijeet.parida@tum.de>"]
+license = "MIT"
+repository = 'https://github.com/a-parida12/MDAT'
+readme = 'README.md'
+keywords = []
+
+[tool.poetry.dependencies]
+python = "3.10.4"
+numpy = "1.23.3"
+tensorflow = "2.10.0"
+SimpleITK = "^2.2.0"
+scipy = "^1.9.1"
+Pyro4 = "^4.82"
+tqdm = "^4.64.1"
+scikit-image = "^0.19.3"
+scikit-learn = "^1.1.2"
+matplotlib = "^3.6.0"
+cachetools = "^5.2.0"
+lz4 = "^4.0.2"
+zfpy = "^1.0.0.post3"
+itk = "5.3rc04"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+flake8 = "^4.0.1"
+pytest-cov = "^3.0.0"
+commitizen = "^2.20.3"
+bandit = "^1.7.1"
+pre-commit = "^2.17.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = [
+    "pyproject.toml:version"
+]
+branch = "main"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
