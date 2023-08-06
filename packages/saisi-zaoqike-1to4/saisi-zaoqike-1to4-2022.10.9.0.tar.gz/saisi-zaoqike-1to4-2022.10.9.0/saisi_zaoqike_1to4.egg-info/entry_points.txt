@@ -1,0 +1,4 @@
+[console_scripts]
+SaisiZaoqike1to4 = SaisiZaoqike1to4.__main__:main
+saisi-zaoqike-1to4 = SaisiZaoqike1to4.__main__:main
+
