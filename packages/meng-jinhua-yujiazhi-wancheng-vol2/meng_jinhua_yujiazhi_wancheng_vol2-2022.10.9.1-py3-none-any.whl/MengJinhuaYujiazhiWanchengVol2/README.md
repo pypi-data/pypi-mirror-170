@@ -1,0 +1,27 @@
+# 赛斯书：梦、进化与价值完成（卷二）
+
+## 下载
+
+### Docker
+
+```
+docker pull apachecn0/meng-jinhua-yujiazhi-wancheng-vol2
+docker run -tid -p <port>:80 apachecn0/meng-jinhua-yujiazhi-wancheng-vol2
+# 访问 http://localhost:{port} 查看文档
+```
+
+### PYPI
+
+```
+pip install meng-jinhua-yujiazhi-wancheng-vol2
+meng-jinhua-yujiazhi-wancheng-vol2 <port>
+# 访问 http://localhost:{port} 查看文档
+```
+
+### NPM
+
+```
+npm install -g meng-jinhua-yujiazhi-wancheng-vol2
+meng-jinhua-yujiazhi-wancheng-vol2 <port>
+# 访问 http://localhost:{port} 查看文档
+```

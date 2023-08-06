@@ -1,0 +1,4 @@
+[console_scripts]
+MengJinhuaYujiazhiWanchengVol2 = MengJinhuaYujiazhiWanchengVol2.__main__:main
+meng-jinhua-yujiazhi-wancheng-vol2 = MengJinhuaYujiazhiWanchengVol2.__main__:main
+
