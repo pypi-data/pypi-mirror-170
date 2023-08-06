@@ -1,0 +1,14 @@
+LICENSE
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+ProcessAudio/ProcessAudio.py
+ProcessAudio/README.md
+ProcessAudio/__init__.py
+ProcessAudio.egg-info/PKG-INFO
+ProcessAudio.egg-info/SOURCES.txt
+ProcessAudio.egg-info/dependency_links.txt
+ProcessAudio.egg-info/requires.txt
+ProcessAudio.egg-info/top_level.txt
