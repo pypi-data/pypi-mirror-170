@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: Shop-Filtering-Tool-Inect-2
+Version: 0.0.2
+Summary: A tool to filter contents of shop using simple language of filter creation
+Author: Mikołaj Marsy
+Author-email: mikolaj.marsy@gmail.com
+Requires-Python: >=3.7, <4
+License-File: LICENSE.txt
