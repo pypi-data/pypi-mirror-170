@@ -1,0 +1,4 @@
+[console_scripts]
+MengyuYoumingShijie = MengyuYoumingShijie.__main__:main
+mengyu-youming-shijie = MengyuYoumingShijie.__main__:main
+
