@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pycord-cogsbyserver"
+version = "0.3.2"
+description = "A pycord extension that adds cogs that have a different object for each server."
+license = "MIT"
+authors = ["Nathan Strong <nathanstrong777@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/NathanNull/pycord-cogsbyserver"
+packages = [{include = "pycord_cogsbyserver"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+py-cord = "^2.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
