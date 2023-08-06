@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/GUBS_Invoice_OCR.egg-info/PKG-INFO
+src/GUBS_Invoice_OCR.egg-info/SOURCES.txt
+src/GUBS_Invoice_OCR.egg-info/dependency_links.txt
+src/GUBS_Invoice_OCR.egg-info/top_level.txt
+src/InvoiceOcrGubs_3/__init__.py
+src/InvoiceOcrGubs_3/final.py
+src/InvoiceOcrGubs_3/part1.py
+src/InvoiceOcrGubs_3/part3.py
