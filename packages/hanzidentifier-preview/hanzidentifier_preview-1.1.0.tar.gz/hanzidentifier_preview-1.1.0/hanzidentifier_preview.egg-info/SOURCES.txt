@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+hanzidentifier.py
+requirements.txt
+setup.py
+hanzidentifier_preview.egg-info/PKG-INFO
+hanzidentifier_preview.egg-info/SOURCES.txt
+hanzidentifier_preview.egg-info/dependency_links.txt
+hanzidentifier_preview.egg-info/requires.txt
+hanzidentifier_preview.egg-info/top_level.txt
