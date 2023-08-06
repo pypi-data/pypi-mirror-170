@@ -1,0 +1,4 @@
+[console_scripts]
+CongxinJuexing = CongxinJuexing.__main__:main
+congxin-juexing = CongxinJuexing.__main__:main
+
