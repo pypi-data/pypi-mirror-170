@@ -1,0 +1,4 @@
+[console_scripts]
+XinlingZhengzhi = XinlingZhengzhi.__main__:main
+xinling-zhengzhi = XinlingZhengzhi.__main__:main
+
