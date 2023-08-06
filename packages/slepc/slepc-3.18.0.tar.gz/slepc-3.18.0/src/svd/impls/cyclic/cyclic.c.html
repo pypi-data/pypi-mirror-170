@@ -1,0 +1,1024 @@
+<center><a href="cyclic.c">Actual source code: cyclic.c</a></center><br>
+
+<html>
+<head> <link rel="canonical" href="https://slepc.upv.es/documentation/current/src/svd/impls/cyclic/cyclic.c.html" />
+<title></title>
+<meta name="generator" content="c2html 0.9.4">
+<meta name="date" content="2022-10-01T06:40:11+00:00">
+</head>
+
+<body bgcolor="#FFFFFF">
+   <div id="version" align=right><b>slepc-3.18.0 2022-10-01</b></div>
+   <div id="bugreport" align=right><a href="mailto:slepc-maint@upv.es?subject=Typo or Error in Documentation &body=Please describe the typo or error in the documentation: slepc-3.18.0 v3.18.0 src/svd/impls/cyclic/cyclic.c.html "><small>Report Typos and Errors</small></a></div>
+<pre width="80">
+<a name="line1">  1: </a><font color="#B22222">/*</font>
+<a name="line2">  2: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line3">  3: </a><font color="#B22222">   SLEPc - Scalable Library for Eigenvalue Problem Computations</font>
+<a name="line4">  4: </a><font color="#B22222">   Copyright (c) 2002-, Universitat Politecnica de Valencia, Spain</font>
+
+<a name="line6">  6: </a><font color="#B22222">   This file is part of SLEPc.</font>
+<a name="line7">  7: </a><font color="#B22222">   SLEPc is distributed under a 2-clause BSD license (see LICENSE).</font>
+<a name="line8">  8: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line9">  9: </a><font color="#B22222">*/</font>
+<a name="line10"> 10: </a><font color="#B22222">/*</font>
+<a name="line11"> 11: </a><font color="#B22222">   SLEPc singular value solver: "cyclic"</font>
+
+<a name="line13"> 13: </a><font color="#B22222">   Method: Uses a Hermitian eigensolver for H(A) = [ 0  A ; A^T 0 ]</font>
+<a name="line14"> 14: </a><font color="#B22222">*/</font>
+
+<a name="line16"> 16: </a>#include <A href="../../../../include/slepc/private/svdimpl.h.html">&lt;slepc/private/svdimpl.h&gt;</A>
+<a name="line17"> 17: </a>#include <A href="../../../../include/slepc/private/epsimpl.h.html">&lt;slepc/private/epsimpl.h&gt;</A>
+<a name="line18"> 18: </a><font color="#A020F0">#include </font><font color="#666666">"cyclic.h"</font><font color="#A020F0"></font>
+
+<a name="line20"> 20: </a><strong><font color="#4169E1"><a name="MatMult_Cyclic"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> MatMult_Cyclic(<a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a> B,<a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a> x,<a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a> y)</font></strong>
+<a name="line21"> 21: </a>{
+<a name="line22"> 22: </a>  SVD_CYCLIC_SHELL  *ctx;
+<a name="line23"> 23: </a>  const <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> *px;
+<a name="line24"> 24: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a>       *py;
+<a name="line25"> 25: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>          m;
+
+<a name="line27"> 27: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatShellGetContext.html#MatShellGetContext">MatShellGetContext</a>(B,&amp;ctx);
+<a name="line28"> 28: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetLocalSize.html#MatGetLocalSize">MatGetLocalSize</a>(ctx-&gt;A,&amp;m,NULL);
+<a name="line29"> 29: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayRead.html#VecGetArrayRead">VecGetArrayRead</a>(x,&amp;px);
+<a name="line30"> 30: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayWrite.html#VecGetArrayWrite">VecGetArrayWrite</a>(y,&amp;py);
+<a name="line31"> 31: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(ctx-&gt;x1,px);
+<a name="line32"> 32: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(ctx-&gt;x2,px+m);
+<a name="line33"> 33: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(ctx-&gt;y1,py);
+<a name="line34"> 34: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(ctx-&gt;y2,py+m);
+<a name="line35"> 35: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatMult.html#MatMult">MatMult</a>(ctx-&gt;A,ctx-&gt;x2,ctx-&gt;y1);
+<a name="line36"> 36: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatMult.html#MatMult">MatMult</a>(ctx-&gt;AT,ctx-&gt;x1,ctx-&gt;y2);
+<a name="line37"> 37: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(ctx-&gt;x1);
+<a name="line38"> 38: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(ctx-&gt;x2);
+<a name="line39"> 39: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(ctx-&gt;y1);
+<a name="line40"> 40: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(ctx-&gt;y2);
+<a name="line41"> 41: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayRead.html#VecRestoreArrayRead">VecRestoreArrayRead</a>(x,&amp;px);
+<a name="line42"> 42: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayWrite.html#VecRestoreArrayWrite">VecRestoreArrayWrite</a>(y,&amp;py);
+<a name="line43"> 43: </a>  <font color="#4169E1">return</font> 0;
+<a name="line44"> 44: </a>}
+
+<a name="line46"> 46: </a><strong><font color="#4169E1"><a name="MatGetDiagonal_Cyclic"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> MatGetDiagonal_Cyclic(<a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a> B,<a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a> diag)</font></strong>
+<a name="line47"> 47: </a>{
+<a name="line48"> 48: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecSet.html#VecSet">VecSet</a>(diag,0.0);
+<a name="line49"> 49: </a>  <font color="#4169E1">return</font> 0;
+<a name="line50"> 50: </a>}
+
+<a name="line52"> 52: </a><strong><font color="#4169E1"><a name="MatDestroy_Cyclic"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> MatDestroy_Cyclic(<a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a> B)</font></strong>
+<a name="line53"> 53: </a>{
+<a name="line54"> 54: </a>  SVD_CYCLIC_SHELL *ctx;
+
+<a name="line56"> 56: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatShellGetContext.html#MatShellGetContext">MatShellGetContext</a>(B,&amp;ctx);
+<a name="line57"> 57: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;ctx-&gt;x1);
+<a name="line58"> 58: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;ctx-&gt;x2);
+<a name="line59"> 59: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;ctx-&gt;y1);
+<a name="line60"> 60: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;ctx-&gt;y2);
+<a name="line61"> 61: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscFree.html#PetscFree">PetscFree</a>(ctx);
+<a name="line62"> 62: </a>  <font color="#4169E1">return</font> 0;
+<a name="line63"> 63: </a>}
+
+<a name="line65"> 65: </a><font color="#B22222">/*</font>
+<a name="line66"> 66: </a><font color="#B22222">   Builds cyclic matrix   C = | 0   A |</font>
+<a name="line67"> 67: </a><font color="#B22222">                              | AT  0 |</font>
+<a name="line68"> 68: </a><font color="#B22222">*/</font>
+<a name="line69"> 69: </a><strong><font color="#4169E1"><a name="SVDCyclicGetCyclicMat"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDCyclicGetCyclicMat(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd,<a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a> A,<a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a> AT,<a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a> *C)</font></strong>
+<a name="line70"> 70: </a>{
+<a name="line71"> 71: </a>  SVD_CYCLIC       *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+<a name="line72"> 72: </a>  SVD_CYCLIC_SHELL *ctx;
+<a name="line73"> 73: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>         i,M,N,m,n,Istart,Iend;
+<a name="line74"> 74: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecType.html#VecType">VecType</a>          vtype;
+<a name="line75"> 75: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a>              Zm,Zn;
+<a name="line76"> 76: </a><font color="#A020F0">#if defined(PETSC_HAVE_CUDA)</font>
+<a name="line77"> 77: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscBool.html#PetscBool">PetscBool</a>        cuda;
+<a name="line78"> 78: </a><font color="#A020F0">#endif</font>
+
+<a name="line80"> 80: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetSize.html#MatGetSize">MatGetSize</a>(A,&amp;M,&amp;N);
+<a name="line81"> 81: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetLocalSize.html#MatGetLocalSize">MatGetLocalSize</a>(A,&amp;m,&amp;n);
+
+<a name="line83"> 83: </a>  <font color="#4169E1">if</font> (cyclic-&gt;explicitmatrix) {
+<a name="line85"> 85: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreate.html#MatCreate">MatCreate</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd),&amp;Zm);
+<a name="line86"> 86: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetSizes.html#MatSetSizes">MatSetSizes</a>(Zm,m,m,M,M);
+<a name="line87"> 87: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetFromOptions.html#MatSetFromOptions">MatSetFromOptions</a>(Zm);
+<a name="line88"> 88: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetUp.html#MatSetUp">MatSetUp</a>(Zm);
+<a name="line89"> 89: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetOwnershipRange.html#MatGetOwnershipRange">MatGetOwnershipRange</a>(Zm,&amp;Istart,&amp;Iend);
+<a name="line90"> 90: </a>    <font color="#4169E1">for</font> (i=Istart;i&lt;Iend;i++) <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetValue.html#MatSetValue">MatSetValue</a>(Zm,i,i,0.0,<a href="https://petsc.org/release/docs/manualpages/Sys/INSERT_VALUES.html#INSERT_VALUES">INSERT_VALUES</a>);
+<a name="line91"> 91: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyBegin.html#MatAssemblyBegin">MatAssemblyBegin</a>(Zm,<a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyType.html#MatAssemblyType">MAT_FINAL_ASSEMBLY</a>);
+<a name="line92"> 92: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyEnd.html#MatAssemblyEnd">MatAssemblyEnd</a>(Zm,<a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyType.html#MatAssemblyType">MAT_FINAL_ASSEMBLY</a>);
+<a name="line93"> 93: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreate.html#MatCreate">MatCreate</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd),&amp;Zn);
+<a name="line94"> 94: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetSizes.html#MatSetSizes">MatSetSizes</a>(Zn,n,n,N,N);
+<a name="line95"> 95: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetFromOptions.html#MatSetFromOptions">MatSetFromOptions</a>(Zn);
+<a name="line96"> 96: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetUp.html#MatSetUp">MatSetUp</a>(Zn);
+<a name="line97"> 97: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetOwnershipRange.html#MatGetOwnershipRange">MatGetOwnershipRange</a>(Zn,&amp;Istart,&amp;Iend);
+<a name="line98"> 98: </a>    <font color="#4169E1">for</font> (i=Istart;i&lt;Iend;i++) <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetValue.html#MatSetValue">MatSetValue</a>(Zn,i,i,0.0,<a href="https://petsc.org/release/docs/manualpages/Sys/INSERT_VALUES.html#INSERT_VALUES">INSERT_VALUES</a>);
+<a name="line99"> 99: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyBegin.html#MatAssemblyBegin">MatAssemblyBegin</a>(Zn,<a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyType.html#MatAssemblyType">MAT_FINAL_ASSEMBLY</a>);
+<a name="line100">100: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyEnd.html#MatAssemblyEnd">MatAssemblyEnd</a>(Zn,<a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyType.html#MatAssemblyType">MAT_FINAL_ASSEMBLY</a>);
+<a name="line101">101: </a>    <a href="../../../../docs/manualpages/sys/MatCreateTile.html#MatCreateTile">MatCreateTile</a>(1.0,Zm,1.0,A,1.0,AT,1.0,Zn,C);
+<a name="line102">102: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatDestroy.html#MatDestroy">MatDestroy</a>(&amp;Zm);
+<a name="line103">103: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatDestroy.html#MatDestroy">MatDestroy</a>(&amp;Zn);
+<a name="line104">104: </a>  } <font color="#4169E1">else</font> {
+<a name="line105">105: </a>    <a href="https://petsc.org/release/docs/manualpages/Sys/PetscNew.html#PetscNew">PetscNew</a>(&amp;ctx);
+<a name="line106">106: </a>    ctx-&gt;A       = A;
+<a name="line107">107: </a>    ctx-&gt;AT      = AT;
+<a name="line108">108: </a>    ctx-&gt;swapped = svd-&gt;swapped;
+<a name="line109">109: </a>    <a href="../../../../docs/manualpages/sys/MatCreateVecsEmpty.html#MatCreateVecsEmpty">MatCreateVecsEmpty</a>(A,&amp;ctx-&gt;x2,&amp;ctx-&gt;x1);
+<a name="line110">110: </a>    <a href="../../../../docs/manualpages/sys/MatCreateVecsEmpty.html#MatCreateVecsEmpty">MatCreateVecsEmpty</a>(A,&amp;ctx-&gt;y2,&amp;ctx-&gt;y1);
+<a name="line111">111: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateShell.html#MatCreateShell">MatCreateShell</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd),m+n,m+n,M+N,M+N,ctx,C);
+<a name="line112">112: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatShellSetOperation.html#MatShellSetOperation">MatShellSetOperation</a>(*C,MATOP_GET_DIAGONAL,(void(*)(void))MatGetDiagonal_Cyclic);
+<a name="line113">113: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatShellSetOperation.html#MatShellSetOperation">MatShellSetOperation</a>(*C,MATOP_DESTROY,(void(*)(void))MatDestroy_Cyclic);
+<a name="line114">114: </a><font color="#A020F0">#if defined(PETSC_HAVE_CUDA)</font>
+<a name="line115">115: </a>    <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectTypeCompareAny.html#PetscObjectTypeCompareAny">PetscObjectTypeCompareAny</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)(svd-&gt;swapped?AT:A),&amp;cuda,MATSEQAIJCUSPARSE,MATMPIAIJCUSPARSE,<font color="#666666">""</font>);
+<a name="line116">116: </a>    <font color="#4169E1">if</font> (cuda) <a href="https://petsc.org/release/docs/manualpages/Mat/MatShellSetOperation.html#MatShellSetOperation">MatShellSetOperation</a>(*C,MATOP_MULT,(void(*)(void))MatMult_Cyclic_CUDA);
+<a name="line117">117: </a>    <font color="#4169E1">else</font>
+<a name="line118">118: </a><font color="#A020F0">#endif</font>
+<a name="line119">119: </a>      <a href="https://petsc.org/release/docs/manualpages/Mat/MatShellSetOperation.html#MatShellSetOperation">MatShellSetOperation</a>(*C,MATOP_MULT,(void(*)(void))MatMult_Cyclic);
+<a name="line120">120: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetVecType.html#MatGetVecType">MatGetVecType</a>(A,&amp;vtype);
+<a name="line121">121: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetVecType.html#MatSetVecType">MatSetVecType</a>(*C,vtype);
+<a name="line122">122: </a>  }
+<a name="line123">123: </a>  <font color="#4169E1">return</font> 0;
+<a name="line124">124: </a>}
+
+<a name="line126">126: </a><strong><font color="#4169E1"><a name="MatMult_ECross"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> MatMult_ECross(<a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a> B,<a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a> x,<a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a> y)</font></strong>
+<a name="line127">127: </a>{
+<a name="line128">128: </a>  SVD_CYCLIC_SHELL  *ctx;
+<a name="line129">129: </a>  const <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> *px;
+<a name="line130">130: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a>       *py;
+<a name="line131">131: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>          mn,m,n;
+
+<a name="line133">133: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatShellGetContext.html#MatShellGetContext">MatShellGetContext</a>(B,&amp;ctx);
+<a name="line134">134: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetLocalSize.html#MatGetLocalSize">MatGetLocalSize</a>(ctx-&gt;A,NULL,&amp;n);
+<a name="line135">135: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetLocalSize.html#VecGetLocalSize">VecGetLocalSize</a>(y,&amp;mn);
+<a name="line136">136: </a>  m = mn-n;
+<a name="line137">137: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayRead.html#VecGetArrayRead">VecGetArrayRead</a>(x,&amp;px);
+<a name="line138">138: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayWrite.html#VecGetArrayWrite">VecGetArrayWrite</a>(y,&amp;py);
+<a name="line139">139: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(ctx-&gt;x1,px);
+<a name="line140">140: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(ctx-&gt;x2,px+m);
+<a name="line141">141: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(ctx-&gt;y1,py);
+<a name="line142">142: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(ctx-&gt;y2,py+m);
+<a name="line143">143: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecCopy.html#VecCopy">VecCopy</a>(ctx-&gt;x1,ctx-&gt;y1);
+<a name="line144">144: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatMult.html#MatMult">MatMult</a>(ctx-&gt;A,ctx-&gt;x2,ctx-&gt;w);
+<a name="line145">145: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatMult.html#MatMult">MatMult</a>(ctx-&gt;AT,ctx-&gt;w,ctx-&gt;y2);
+<a name="line146">146: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(ctx-&gt;x1);
+<a name="line147">147: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(ctx-&gt;x2);
+<a name="line148">148: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(ctx-&gt;y1);
+<a name="line149">149: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(ctx-&gt;y2);
+<a name="line150">150: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayRead.html#VecRestoreArrayRead">VecRestoreArrayRead</a>(x,&amp;px);
+<a name="line151">151: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayWrite.html#VecRestoreArrayWrite">VecRestoreArrayWrite</a>(y,&amp;py);
+<a name="line152">152: </a>  <font color="#4169E1">return</font> 0;
+<a name="line153">153: </a>}
+
+<a name="line155">155: </a><strong><font color="#4169E1"><a name="MatGetDiagonal_ECross"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> MatGetDiagonal_ECross(<a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a> B,<a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a> d)</font></strong>
+<a name="line156">156: </a>{
+<a name="line157">157: </a>  SVD_CYCLIC_SHELL  *ctx;
+<a name="line158">158: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a>       *pd;
+<a name="line159">159: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscMPIInt.html#PetscMPIInt">PetscMPIInt</a>       len;
+<a name="line160">160: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>          mn,m,n,N,i,j,start,end,ncols;
+<a name="line161">161: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a>       *work1,*work2,*diag;
+<a name="line162">162: </a>  const <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>    *cols;
+<a name="line163">163: </a>  const <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> *vals;
+
+<a name="line165">165: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatShellGetContext.html#MatShellGetContext">MatShellGetContext</a>(B,&amp;ctx);
+<a name="line166">166: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetLocalSize.html#MatGetLocalSize">MatGetLocalSize</a>(ctx-&gt;A,NULL,&amp;n);
+<a name="line167">167: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetLocalSize.html#VecGetLocalSize">VecGetLocalSize</a>(d,&amp;mn);
+<a name="line168">168: </a>  m = mn-n;
+<a name="line169">169: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayWrite.html#VecGetArrayWrite">VecGetArrayWrite</a>(d,&amp;pd);
+<a name="line170">170: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(ctx-&gt;y1,pd);
+<a name="line171">171: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecSet.html#VecSet">VecSet</a>(ctx-&gt;y1,1.0);
+<a name="line172">172: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(ctx-&gt;y1);
+<a name="line173">173: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(ctx-&gt;y2,pd+m);
+<a name="line174">174: </a>  <font color="#4169E1">if</font> (!ctx-&gt;diag) {
+<a name="line175">175: </a>    <font color="#B22222">/* compute diagonal from rows and store in ctx-&gt;diag */</font>
+<a name="line176">176: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecDuplicate.html#VecDuplicate">VecDuplicate</a>(ctx-&gt;y2,&amp;ctx-&gt;diag);
+<a name="line177">177: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetSize.html#MatGetSize">MatGetSize</a>(ctx-&gt;A,NULL,&amp;N);
+<a name="line178">178: </a>    <a href="https://petsc.org/release/docs/manualpages/Sys/PetscCalloc2.html#PetscCalloc2">PetscCalloc2</a>(N,&amp;work1,N,&amp;work2);
+<a name="line179">179: </a>    <font color="#4169E1">if</font> (ctx-&gt;swapped) {
+<a name="line180">180: </a>      <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetOwnershipRange.html#MatGetOwnershipRange">MatGetOwnershipRange</a>(ctx-&gt;AT,&amp;start,&amp;end);
+<a name="line181">181: </a>      <font color="#4169E1">for</font> (i=start;i&lt;end;i++) {
+<a name="line182">182: </a>        <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetRow.html#MatGetRow">MatGetRow</a>(ctx-&gt;AT,i,&amp;ncols,NULL,&amp;vals);
+<a name="line183">183: </a>        <font color="#4169E1">for</font> (j=0;j&lt;ncols;j++) work1[i] += vals[j]*vals[j];
+<a name="line184">184: </a>        <a href="https://petsc.org/release/docs/manualpages/Mat/MatRestoreRow.html#MatRestoreRow">MatRestoreRow</a>(ctx-&gt;AT,i,&amp;ncols,NULL,&amp;vals);
+<a name="line185">185: </a>      }
+<a name="line186">186: </a>    } <font color="#4169E1">else</font> {
+<a name="line187">187: </a>      <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetOwnershipRange.html#MatGetOwnershipRange">MatGetOwnershipRange</a>(ctx-&gt;A,&amp;start,&amp;end);
+<a name="line188">188: </a>      <font color="#4169E1">for</font> (i=start;i&lt;end;i++) {
+<a name="line189">189: </a>        <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetRow.html#MatGetRow">MatGetRow</a>(ctx-&gt;A,i,&amp;ncols,&amp;cols,&amp;vals);
+<a name="line190">190: </a>        <font color="#4169E1">for</font> (j=0;j&lt;ncols;j++) work1[cols[j]] += vals[j]*vals[j];
+<a name="line191">191: </a>        <a href="https://petsc.org/release/docs/manualpages/Mat/MatRestoreRow.html#MatRestoreRow">MatRestoreRow</a>(ctx-&gt;A,i,&amp;ncols,&amp;cols,&amp;vals);
+<a name="line192">192: </a>      }
+<a name="line193">193: </a>    }
+<a name="line194">194: </a>    <a href="https://petsc.org/release/docs/manualpages/Sys/PetscMPIIntCast.html#PetscMPIIntCast">PetscMPIIntCast</a>(N,&amp;len);
+<a name="line195">195: </a>    <a href="https://petsc.org/release/docs/manualpages/Sys/MPIU_Allreduce.html#MPIU_Allreduce">MPIU_Allreduce</a>(work1,work2,len,<a href="https://petsc.org/release/docs/manualpages/Sys/MPIU_SCALAR.html#MPIU_SCALAR">MPIU_SCALAR</a>,MPIU_SUM,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)B));
+<a name="line196">196: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetOwnershipRange.html#VecGetOwnershipRange">VecGetOwnershipRange</a>(ctx-&gt;diag,&amp;start,&amp;end);
+<a name="line197">197: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayWrite.html#VecGetArrayWrite">VecGetArrayWrite</a>(ctx-&gt;diag,&amp;diag);
+<a name="line198">198: </a>    <font color="#4169E1">for</font> (i=start;i&lt;end;i++) diag[i-start] = work2[i];
+<a name="line199">199: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayWrite.html#VecRestoreArrayWrite">VecRestoreArrayWrite</a>(ctx-&gt;diag,&amp;diag);
+<a name="line200">200: </a>    <a href="https://petsc.org/release/docs/manualpages/Sys/PetscFree2.html#PetscFree2">PetscFree2</a>(work1,work2);
+<a name="line201">201: </a>  }
+<a name="line202">202: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecCopy.html#VecCopy">VecCopy</a>(ctx-&gt;diag,ctx-&gt;y2);
+<a name="line203">203: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(ctx-&gt;y2);
+<a name="line204">204: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayWrite.html#VecRestoreArrayWrite">VecRestoreArrayWrite</a>(d,&amp;pd);
+<a name="line205">205: </a>  <font color="#4169E1">return</font> 0;
+<a name="line206">206: </a>}
+
+<a name="line208">208: </a><strong><font color="#4169E1"><a name="MatDestroy_ECross"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> MatDestroy_ECross(<a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a> B)</font></strong>
+<a name="line209">209: </a>{
+<a name="line210">210: </a>  SVD_CYCLIC_SHELL *ctx;
+
+<a name="line212">212: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatShellGetContext.html#MatShellGetContext">MatShellGetContext</a>(B,&amp;ctx);
+<a name="line213">213: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;ctx-&gt;x1);
+<a name="line214">214: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;ctx-&gt;x2);
+<a name="line215">215: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;ctx-&gt;y1);
+<a name="line216">216: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;ctx-&gt;y2);
+<a name="line217">217: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;ctx-&gt;diag);
+<a name="line218">218: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;ctx-&gt;w);
+<a name="line219">219: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscFree.html#PetscFree">PetscFree</a>(ctx);
+<a name="line220">220: </a>  <font color="#4169E1">return</font> 0;
+<a name="line221">221: </a>}
+
+<a name="line223">223: </a><font color="#B22222">/*</font>
+<a name="line224">224: </a><font color="#B22222">   Builds extended cross product matrix   C = | I_m   0  |</font>
+<a name="line225">225: </a><font color="#B22222">                                              |  0  AT*A |</font>
+<a name="line226">226: </a><font color="#B22222">   t is an auxiliary <a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a> used to take the dimensions of the upper block</font>
+<a name="line227">227: </a><font color="#B22222">*/</font>
+<a name="line228">228: </a><strong><font color="#4169E1"><a name="SVDCyclicGetECrossMat"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDCyclicGetECrossMat(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd,<a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a> A,<a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a> AT,<a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a> *C,<a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a> t)</font></strong>
+<a name="line229">229: </a>{
+<a name="line230">230: </a>  SVD_CYCLIC       *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+<a name="line231">231: </a>  SVD_CYCLIC_SHELL *ctx;
+<a name="line232">232: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>         i,M,N,m,n,Istart,Iend;
+<a name="line233">233: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecType.html#VecType">VecType</a>          vtype;
+<a name="line234">234: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a>              Id,Zm,Zn,ATA;
+<a name="line235">235: </a><font color="#A020F0">#if defined(PETSC_HAVE_CUDA)</font>
+<a name="line236">236: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscBool.html#PetscBool">PetscBool</a>        cuda;
+<a name="line237">237: </a><font color="#A020F0">#endif</font>
+
+<a name="line239">239: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetSize.html#MatGetSize">MatGetSize</a>(A,NULL,&amp;N);
+<a name="line240">240: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetLocalSize.html#MatGetLocalSize">MatGetLocalSize</a>(A,NULL,&amp;n);
+<a name="line241">241: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetSize.html#VecGetSize">VecGetSize</a>(t,&amp;M);
+<a name="line242">242: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetLocalSize.html#VecGetLocalSize">VecGetLocalSize</a>(t,&amp;m);
+
+<a name="line244">244: </a>  <font color="#4169E1">if</font> (cyclic-&gt;explicitmatrix) {
+<a name="line246">246: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateConstantDiagonal.html#MatCreateConstantDiagonal">MatCreateConstantDiagonal</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd),m,m,M,M,1.0,&amp;Id);
+<a name="line247">247: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreate.html#MatCreate">MatCreate</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd),&amp;Zm);
+<a name="line248">248: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetSizes.html#MatSetSizes">MatSetSizes</a>(Zm,m,n,M,N);
+<a name="line249">249: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetFromOptions.html#MatSetFromOptions">MatSetFromOptions</a>(Zm);
+<a name="line250">250: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetUp.html#MatSetUp">MatSetUp</a>(Zm);
+<a name="line251">251: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetOwnershipRange.html#MatGetOwnershipRange">MatGetOwnershipRange</a>(Zm,&amp;Istart,&amp;Iend);
+<a name="line252">252: </a>    <font color="#4169E1">for</font> (i=Istart;i&lt;Iend;i++) {
+<a name="line253">253: </a>      <font color="#4169E1">if</font> (i&lt;N) <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetValue.html#MatSetValue">MatSetValue</a>(Zm,i,i,0.0,<a href="https://petsc.org/release/docs/manualpages/Sys/INSERT_VALUES.html#INSERT_VALUES">INSERT_VALUES</a>);
+<a name="line254">254: </a>    }
+<a name="line255">255: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyBegin.html#MatAssemblyBegin">MatAssemblyBegin</a>(Zm,<a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyType.html#MatAssemblyType">MAT_FINAL_ASSEMBLY</a>);
+<a name="line256">256: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyEnd.html#MatAssemblyEnd">MatAssemblyEnd</a>(Zm,<a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyType.html#MatAssemblyType">MAT_FINAL_ASSEMBLY</a>);
+<a name="line257">257: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreate.html#MatCreate">MatCreate</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd),&amp;Zn);
+<a name="line258">258: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetSizes.html#MatSetSizes">MatSetSizes</a>(Zn,n,m,N,M);
+<a name="line259">259: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetFromOptions.html#MatSetFromOptions">MatSetFromOptions</a>(Zn);
+<a name="line260">260: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetUp.html#MatSetUp">MatSetUp</a>(Zn);
+<a name="line261">261: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetOwnershipRange.html#MatGetOwnershipRange">MatGetOwnershipRange</a>(Zn,&amp;Istart,&amp;Iend);
+<a name="line262">262: </a>    <font color="#4169E1">for</font> (i=Istart;i&lt;Iend;i++) {
+<a name="line263">263: </a>      <font color="#4169E1">if</font> (i&lt;m) <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetValue.html#MatSetValue">MatSetValue</a>(Zn,i,i,0.0,<a href="https://petsc.org/release/docs/manualpages/Sys/INSERT_VALUES.html#INSERT_VALUES">INSERT_VALUES</a>);
+<a name="line264">264: </a>    }
+<a name="line265">265: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyBegin.html#MatAssemblyBegin">MatAssemblyBegin</a>(Zn,<a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyType.html#MatAssemblyType">MAT_FINAL_ASSEMBLY</a>);
+<a name="line266">266: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyEnd.html#MatAssemblyEnd">MatAssemblyEnd</a>(Zn,<a href="https://petsc.org/release/docs/manualpages/Mat/MatAssemblyType.html#MatAssemblyType">MAT_FINAL_ASSEMBLY</a>);
+<a name="line267">267: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatProductCreate.html#MatProductCreate">MatProductCreate</a>(AT,A,NULL,&amp;ATA);
+<a name="line268">268: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatProductSetType.html#MatProductSetType">MatProductSetType</a>(ATA,<a href="https://petsc.org/release/docs/manualpages/Mat/MatProductType.html#MatProductType">MATPRODUCT_AB</a>);
+<a name="line269">269: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatProductSetFromOptions.html#MatProductSetFromOptions">MatProductSetFromOptions</a>(ATA);
+<a name="line270">270: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatProductSymbolic.html#MatProductSymbolic">MatProductSymbolic</a>(ATA);
+<a name="line271">271: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatProductNumeric.html#MatProductNumeric">MatProductNumeric</a>(ATA);
+<a name="line272">272: </a>    <a href="../../../../docs/manualpages/sys/MatCreateTile.html#MatCreateTile">MatCreateTile</a>(1.0,Id,1.0,Zm,1.0,Zn,1.0,ATA,C);
+<a name="line273">273: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatDestroy.html#MatDestroy">MatDestroy</a>(&amp;Id);
+<a name="line274">274: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatDestroy.html#MatDestroy">MatDestroy</a>(&amp;Zm);
+<a name="line275">275: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatDestroy.html#MatDestroy">MatDestroy</a>(&amp;Zn);
+<a name="line276">276: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatDestroy.html#MatDestroy">MatDestroy</a>(&amp;ATA);
+<a name="line277">277: </a>  } <font color="#4169E1">else</font> {
+<a name="line278">278: </a>    <a href="https://petsc.org/release/docs/manualpages/Sys/PetscNew.html#PetscNew">PetscNew</a>(&amp;ctx);
+<a name="line279">279: </a>    ctx-&gt;A       = A;
+<a name="line280">280: </a>    ctx-&gt;AT      = AT;
+<a name="line281">281: </a>    ctx-&gt;swapped = svd-&gt;swapped;
+<a name="line282">282: </a>    <a href="../../../../docs/manualpages/sys/VecDuplicateEmpty.html#VecDuplicateEmpty">VecDuplicateEmpty</a>(t,&amp;ctx-&gt;x1);
+<a name="line283">283: </a>    <a href="../../../../docs/manualpages/sys/VecDuplicateEmpty.html#VecDuplicateEmpty">VecDuplicateEmpty</a>(t,&amp;ctx-&gt;y1);
+<a name="line284">284: </a>    <a href="../../../../docs/manualpages/sys/MatCreateVecsEmpty.html#MatCreateVecsEmpty">MatCreateVecsEmpty</a>(A,&amp;ctx-&gt;x2,NULL);
+<a name="line285">285: </a>    <a href="../../../../docs/manualpages/sys/MatCreateVecsEmpty.html#MatCreateVecsEmpty">MatCreateVecsEmpty</a>(A,&amp;ctx-&gt;y2,NULL);
+<a name="line286">286: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateVecs.html#MatCreateVecs">MatCreateVecs</a>(A,NULL,&amp;ctx-&gt;w);
+<a name="line287">287: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateShell.html#MatCreateShell">MatCreateShell</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd),m+n,m+n,M+N,M+N,ctx,C);
+<a name="line288">288: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatShellSetOperation.html#MatShellSetOperation">MatShellSetOperation</a>(*C,MATOP_GET_DIAGONAL,(void(*)(void))MatGetDiagonal_ECross);
+<a name="line289">289: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatShellSetOperation.html#MatShellSetOperation">MatShellSetOperation</a>(*C,MATOP_DESTROY,(void(*)(void))MatDestroy_ECross);
+<a name="line290">290: </a><font color="#A020F0">#if defined(PETSC_HAVE_CUDA)</font>
+<a name="line291">291: </a>    <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectTypeCompareAny.html#PetscObjectTypeCompareAny">PetscObjectTypeCompareAny</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)(svd-&gt;swapped?AT:A),&amp;cuda,MATSEQAIJCUSPARSE,MATMPIAIJCUSPARSE,<font color="#666666">""</font>);
+<a name="line292">292: </a>    <font color="#4169E1">if</font> (cuda) <a href="https://petsc.org/release/docs/manualpages/Mat/MatShellSetOperation.html#MatShellSetOperation">MatShellSetOperation</a>(*C,MATOP_MULT,(void(*)(void))MatMult_ECross_CUDA);
+<a name="line293">293: </a>    <font color="#4169E1">else</font>
+<a name="line294">294: </a><font color="#A020F0">#endif</font>
+<a name="line295">295: </a>      <a href="https://petsc.org/release/docs/manualpages/Mat/MatShellSetOperation.html#MatShellSetOperation">MatShellSetOperation</a>(*C,MATOP_MULT,(void(*)(void))MatMult_ECross);
+<a name="line296">296: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetVecType.html#MatGetVecType">MatGetVecType</a>(A,&amp;vtype);
+<a name="line297">297: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetVecType.html#MatSetVecType">MatSetVecType</a>(*C,vtype);
+<a name="line298">298: </a>  }
+<a name="line299">299: </a>  <font color="#4169E1">return</font> 0;
+<a name="line300">300: </a>}
+
+<a name="line302">302: </a><font color="#B22222">/* Convergence test relative to the norm of R (used in GSVD only) */</font>
+<a name="line303">303: </a><strong><font color="#4169E1"><a name="EPSConv_Cyclic"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> EPSConv_Cyclic(<a href="../../../../docs/manualpages/EPS/EPS.html#EPS">EPS</a> eps,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> eigr,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> eigi,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscReal.html#PetscReal">PetscReal</a> res,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscReal.html#PetscReal">PetscReal</a> *errest,void *ctx)</font></strong>
+<a name="line304">304: </a>{
+<a name="line305">305: </a>  <a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd = (<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a>)ctx;
+
+<a name="line307">307: </a>  *errest = res/<a href="https://petsc.org/release/docs/manualpages/Sys/PetscMax.html#PetscMax">PetscMax</a>(svd-&gt;nrma,svd-&gt;nrmb);
+<a name="line308">308: </a>  <font color="#4169E1">return</font> 0;
+<a name="line309">309: </a>}
+
+<a name="line311">311: </a><strong><font color="#4169E1"><a name="SVDSetUp_Cyclic"></a><a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDSetUp_Cyclic(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd)</font></strong>
+<a name="line312">312: </a>{
+<a name="line313">313: </a>  SVD_CYCLIC        *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+<a name="line314">314: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>          M,N,m,n,p,k,i,isl,offset,nev,ncv,mpd,maxit;
+<a name="line315">315: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscReal.html#PetscReal">PetscReal</a>         tol;
+<a name="line316">316: </a>  const <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> *isa,*oa;
+<a name="line317">317: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a>       *va;
+<a name="line318">318: </a>  <a href="../../../../docs/manualpages/EPS/EPSProblemType.html#EPSProblemType">EPSProblemType</a>    ptype;
+<a name="line319">319: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscBool.html#PetscBool">PetscBool</a>         trackall,issinv;
+<a name="line320">320: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a>               v,t;
+<a name="line321">321: </a>  <a href="../../../../docs/manualpages/ST/ST.html#ST">ST</a>                st;
+<a name="line322">322: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a>               Omega;
+<a name="line323">323: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatType.html#MatType">MatType</a>           Atype;
+
+<a name="line325">325: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetSize.html#MatGetSize">MatGetSize</a>(svd-&gt;A,&amp;M,&amp;N);
+<a name="line326">326: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetLocalSize.html#MatGetLocalSize">MatGetLocalSize</a>(svd-&gt;A,&amp;m,&amp;n);
+<a name="line327">327: </a>  <font color="#4169E1">if</font> (!cyclic-&gt;eps) <a href="../../../../docs/manualpages/SVD/SVDCyclicGetEPS.html#SVDCyclicGetEPS">SVDCyclicGetEPS</a>(svd,&amp;cyclic-&gt;eps);
+<a name="line328">328: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatDestroy.html#MatDestroy">MatDestroy</a>(&amp;cyclic-&gt;C);
+<a name="line329">329: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatDestroy.html#MatDestroy">MatDestroy</a>(&amp;cyclic-&gt;D);
+<a name="line330">330: </a>  <font color="#4169E1">if</font> (svd-&gt;isgeneralized) {
+<a name="line331">331: </a>    <font color="#4169E1">if</font> (svd-&gt;which==<a href="../../../../docs/manualpages/SVD/SVDWhich.html#SVDWhich">SVD_SMALLEST</a>) {  <font color="#B22222">/* alternative pencil */</font>
+<a name="line332">332: </a>      <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateVecs.html#MatCreateVecs">MatCreateVecs</a>(svd-&gt;B,NULL,&amp;t);
+<a name="line333">333: </a>      SVDCyclicGetCyclicMat(svd,svd-&gt;B,svd-&gt;BT,&amp;cyclic-&gt;C);
+<a name="line334">334: </a>      SVDCyclicGetECrossMat(svd,svd-&gt;A,svd-&gt;AT,&amp;cyclic-&gt;D,t);
+<a name="line335">335: </a>    } <font color="#4169E1">else</font> {
+<a name="line336">336: </a>      <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateVecs.html#MatCreateVecs">MatCreateVecs</a>(svd-&gt;A,NULL,&amp;t);
+<a name="line337">337: </a>      SVDCyclicGetCyclicMat(svd,svd-&gt;A,svd-&gt;AT,&amp;cyclic-&gt;C);
+<a name="line338">338: </a>      SVDCyclicGetECrossMat(svd,svd-&gt;B,svd-&gt;BT,&amp;cyclic-&gt;D,t);
+<a name="line339">339: </a>    }
+<a name="line340">340: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;t);
+<a name="line341">341: </a>    <a href="../../../../docs/manualpages/EPS/EPSSetOperators.html#EPSSetOperators">EPSSetOperators</a>(cyclic-&gt;eps,cyclic-&gt;C,cyclic-&gt;D);
+<a name="line342">342: </a>    <a href="../../../../docs/manualpages/EPS/EPSGetProblemType.html#EPSGetProblemType">EPSGetProblemType</a>(cyclic-&gt;eps,&amp;ptype);
+<a name="line343">343: </a>    <font color="#4169E1">if</font> (!ptype) <a href="../../../../docs/manualpages/EPS/EPSSetProblemType.html#EPSSetProblemType">EPSSetProblemType</a>(cyclic-&gt;eps,<a href="../../../../docs/manualpages/EPS/EPSProblemType.html#EPSProblemType">EPS_GHEP</a>);
+<a name="line344">344: </a>  } <font color="#4169E1">else</font> <font color="#4169E1">if</font> (svd-&gt;ishyperbolic) {
+<a name="line345">345: </a>    SVDCyclicGetCyclicMat(svd,svd-&gt;A,svd-&gt;AT,&amp;cyclic-&gt;C);
+<a name="line346">346: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateVecs.html#MatCreateVecs">MatCreateVecs</a>(cyclic-&gt;C,&amp;v,NULL);
+<a name="line347">347: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecSet.html#VecSet">VecSet</a>(v,1.0);
+<a name="line348">348: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayRead.html#VecGetArrayRead">VecGetArrayRead</a>(svd-&gt;omega,&amp;oa);
+<a name="line349">349: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArray.html#VecGetArray">VecGetArray</a>(v,&amp;va);
+<a name="line350">350: </a>    <font color="#4169E1">if</font> (svd-&gt;swapped) <a href="https://petsc.org/release/docs/manualpages/Sys/PetscArraycpy.html#PetscArraycpy">PetscArraycpy</a>(va+m,oa,n);
+<a name="line351">351: </a>    <font color="#4169E1">else</font> <a href="https://petsc.org/release/docs/manualpages/Sys/PetscArraycpy.html#PetscArraycpy">PetscArraycpy</a>(va,oa,m);
+<a name="line352">352: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayRead.html#VecRestoreArrayRead">VecRestoreArrayRead</a>(svd-&gt;omega,&amp;oa);
+<a name="line353">353: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArray.html#VecRestoreArray">VecRestoreArray</a>(v,&amp;va);
+<a name="line354">354: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetType.html#MatGetType">MatGetType</a>(svd-&gt;OP,&amp;Atype);
+<a name="line355">355: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreate.html#MatCreate">MatCreate</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd),&amp;Omega);
+<a name="line356">356: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetSizes.html#MatSetSizes">MatSetSizes</a>(Omega,m+n,m+n,M+N,M+N);
+<a name="line357">357: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetType.html#MatSetType">MatSetType</a>(Omega,Atype);
+<a name="line358">358: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetUp.html#MatSetUp">MatSetUp</a>(Omega);
+<a name="line359">359: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatDiagonalSet.html#MatDiagonalSet">MatDiagonalSet</a>(Omega,v,<a href="https://petsc.org/release/docs/manualpages/Sys/INSERT_VALUES.html#INSERT_VALUES">INSERT_VALUES</a>);
+<a name="line360">360: </a>    <a href="../../../../docs/manualpages/EPS/EPSSetOperators.html#EPSSetOperators">EPSSetOperators</a>(cyclic-&gt;eps,cyclic-&gt;C,Omega);
+<a name="line361">361: </a>    <a href="../../../../docs/manualpages/EPS/EPSSetProblemType.html#EPSSetProblemType">EPSSetProblemType</a>(cyclic-&gt;eps,<a href="../../../../docs/manualpages/EPS/EPSProblemType.html#EPSProblemType">EPS_GHIEP</a>);
+<a name="line362">362: </a>    <a href="https://petsc.org/release/docs/manualpages/Mat/MatDestroy.html#MatDestroy">MatDestroy</a>(&amp;Omega);
+<a name="line363">363: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;v);
+<a name="line364">364: </a>  } <font color="#4169E1">else</font> {
+<a name="line365">365: </a>    SVDCyclicGetCyclicMat(svd,svd-&gt;A,svd-&gt;AT,&amp;cyclic-&gt;C);
+<a name="line366">366: </a>    <a href="../../../../docs/manualpages/EPS/EPSSetOperators.html#EPSSetOperators">EPSSetOperators</a>(cyclic-&gt;eps,cyclic-&gt;C,NULL);
+<a name="line367">367: </a>    <a href="../../../../docs/manualpages/EPS/EPSSetProblemType.html#EPSSetProblemType">EPSSetProblemType</a>(cyclic-&gt;eps,<a href="../../../../docs/manualpages/EPS/EPSProblemType.html#EPSProblemType">EPS_HEP</a>);
+<a name="line368">368: </a>  }
+<a name="line369">369: </a>  <font color="#4169E1">if</font> (!cyclic-&gt;usereps) {
+<a name="line370">370: </a>    <font color="#4169E1">if</font> (svd-&gt;which == <a href="../../../../docs/manualpages/SVD/SVDWhich.html#SVDWhich">SVD_LARGEST</a>) {
+<a name="line371">371: </a>      <a href="../../../../docs/manualpages/EPS/EPSGetST.html#EPSGetST">EPSGetST</a>(cyclic-&gt;eps,&amp;st);
+<a name="line372">372: </a>      <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectTypeCompare.html#PetscObjectTypeCompare">PetscObjectTypeCompare</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)st,STSINVERT,&amp;issinv);
+<a name="line373">373: </a>      <font color="#4169E1">if</font> (issinv) <a href="../../../../docs/manualpages/EPS/EPSSetWhichEigenpairs.html#EPSSetWhichEigenpairs">EPSSetWhichEigenpairs</a>(cyclic-&gt;eps,<a href="../../../../docs/manualpages/EPS/EPSWhich.html#EPSWhich">EPS_TARGET_MAGNITUDE</a>);
+<a name="line374">374: </a>      <font color="#4169E1">else</font> <font color="#4169E1">if</font> (svd-&gt;ishyperbolic) <a href="../../../../docs/manualpages/EPS/EPSSetWhichEigenpairs.html#EPSSetWhichEigenpairs">EPSSetWhichEigenpairs</a>(cyclic-&gt;eps,<a href="../../../../docs/manualpages/EPS/EPSWhich.html#EPSWhich">EPS_LARGEST_MAGNITUDE</a>);
+<a name="line375">375: </a>      <font color="#4169E1">else</font> <a href="../../../../docs/manualpages/EPS/EPSSetWhichEigenpairs.html#EPSSetWhichEigenpairs">EPSSetWhichEigenpairs</a>(cyclic-&gt;eps,<a href="../../../../docs/manualpages/EPS/EPSWhich.html#EPSWhich">EPS_LARGEST_REAL</a>);
+<a name="line376">376: </a>    } <font color="#4169E1">else</font> {
+<a name="line377">377: </a>      <font color="#4169E1">if</font> (svd-&gt;isgeneralized) {  <font color="#B22222">/* computes sigma^{-1} via alternative pencil */</font>
+<a name="line378">378: </a>        <a href="../../../../docs/manualpages/EPS/EPSSetWhichEigenpairs.html#EPSSetWhichEigenpairs">EPSSetWhichEigenpairs</a>(cyclic-&gt;eps,<a href="../../../../docs/manualpages/EPS/EPSWhich.html#EPSWhich">EPS_LARGEST_REAL</a>);
+<a name="line379">379: </a>      } <font color="#4169E1">else</font> {
+<a name="line380">380: </a>        <font color="#4169E1">if</font> (svd-&gt;ishyperbolic) <a href="../../../../docs/manualpages/EPS/EPSSetWhichEigenpairs.html#EPSSetWhichEigenpairs">EPSSetWhichEigenpairs</a>(cyclic-&gt;eps,<a href="../../../../docs/manualpages/EPS/EPSWhich.html#EPSWhich">EPS_TARGET_MAGNITUDE</a>);
+<a name="line381">381: </a>        <font color="#4169E1">else</font> <a href="../../../../docs/manualpages/EPS/EPSSetEigenvalueComparison.html#EPSSetEigenvalueComparison">EPSSetEigenvalueComparison</a>(cyclic-&gt;eps,SlepcCompareSmallestPosReal,NULL);
+<a name="line382">382: </a>        <a href="../../../../docs/manualpages/EPS/EPSSetTarget.html#EPSSetTarget">EPSSetTarget</a>(cyclic-&gt;eps,0.0);
+<a name="line383">383: </a>      }
+<a name="line384">384: </a>    }
+<a name="line385">385: </a>    <a href="../../../../docs/manualpages/EPS/EPSGetDimensions.html#EPSGetDimensions">EPSGetDimensions</a>(cyclic-&gt;eps,&amp;nev,&amp;ncv,&amp;mpd);
+<a name="line387">387: </a>    nev = <a href="https://petsc.org/release/docs/manualpages/Sys/PetscMax.html#PetscMax">PetscMax</a>(nev,2*svd-&gt;nsv);
+<a name="line388">388: </a>    <font color="#4169E1">if</font> (ncv==<a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_DEFAULT.html#PETSC_DEFAULT">PETSC_DEFAULT</a> &amp;&amp; svd-&gt;ncv!=<a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_DEFAULT.html#PETSC_DEFAULT">PETSC_DEFAULT</a>) ncv = <a href="https://petsc.org/release/docs/manualpages/Sys/PetscMax.html#PetscMax">PetscMax</a>(3*svd-&gt;nsv,svd-&gt;ncv);
+<a name="line389">389: </a>    <font color="#4169E1">if</font> (mpd==<a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_DEFAULT.html#PETSC_DEFAULT">PETSC_DEFAULT</a> &amp;&amp; svd-&gt;mpd!=<a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_DEFAULT.html#PETSC_DEFAULT">PETSC_DEFAULT</a>) mpd = svd-&gt;mpd;
+<a name="line390">390: </a>    <a href="../../../../docs/manualpages/EPS/EPSSetDimensions.html#EPSSetDimensions">EPSSetDimensions</a>(cyclic-&gt;eps,nev,ncv,mpd);
+<a name="line391">391: </a>    <a href="../../../../docs/manualpages/EPS/EPSGetTolerances.html#EPSGetTolerances">EPSGetTolerances</a>(cyclic-&gt;eps,&amp;tol,&amp;maxit);
+<a name="line392">392: </a>    <font color="#4169E1">if</font> (tol==<a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_DEFAULT.html#PETSC_DEFAULT">PETSC_DEFAULT</a>) tol = svd-&gt;tol==<a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_DEFAULT.html#PETSC_DEFAULT">PETSC_DEFAULT</a>? SLEPC_DEFAULT_TOL/10.0: svd-&gt;tol;
+<a name="line393">393: </a>    <font color="#4169E1">if</font> (maxit==<a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_DEFAULT.html#PETSC_DEFAULT">PETSC_DEFAULT</a> &amp;&amp; svd-&gt;max_it!=<a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_DEFAULT.html#PETSC_DEFAULT">PETSC_DEFAULT</a>) maxit = svd-&gt;max_it;
+<a name="line394">394: </a>    <a href="../../../../docs/manualpages/EPS/EPSSetTolerances.html#EPSSetTolerances">EPSSetTolerances</a>(cyclic-&gt;eps,tol,maxit);
+<a name="line395">395: </a>    <font color="#4169E1">switch</font> (svd-&gt;conv) {
+<a name="line396">396: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/SVD/SVDConv.html#SVDConv">SVD_CONV_ABS</a>:
+<a name="line397">397: </a>      <a href="../../../../docs/manualpages/EPS/EPSSetConvergenceTest.html#EPSSetConvergenceTest">EPSSetConvergenceTest</a>(cyclic-&gt;eps,<a href="../../../../docs/manualpages/EPS/EPSConv.html#EPSConv">EPS_CONV_ABS</a>);<font color="#4169E1">break</font>;
+<a name="line398">398: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/SVD/SVDConv.html#SVDConv">SVD_CONV_REL</a>:
+<a name="line399">399: </a>      <a href="../../../../docs/manualpages/EPS/EPSSetConvergenceTest.html#EPSSetConvergenceTest">EPSSetConvergenceTest</a>(cyclic-&gt;eps,<a href="../../../../docs/manualpages/EPS/EPSConv.html#EPSConv">EPS_CONV_REL</a>);<font color="#4169E1">break</font>;
+<a name="line400">400: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/SVD/SVDConv.html#SVDConv">SVD_CONV_NORM</a>:
+<a name="line401">401: </a>      <font color="#4169E1">if</font> (svd-&gt;isgeneralized) {
+<a name="line402">402: </a>        <font color="#4169E1">if</font> (!svd-&gt;nrma) <a href="https://petsc.org/release/docs/manualpages/Mat/MatNorm.html#MatNorm">MatNorm</a>(svd-&gt;OP,<a href="https://petsc.org/release/docs/manualpages/Vec/NORM_INFINITY.html#NORM_INFINITY">NORM_INFINITY</a>,&amp;svd-&gt;nrma);
+<a name="line403">403: </a>        <font color="#4169E1">if</font> (!svd-&gt;nrmb) <a href="https://petsc.org/release/docs/manualpages/Mat/MatNorm.html#MatNorm">MatNorm</a>(svd-&gt;OPb,<a href="https://petsc.org/release/docs/manualpages/Vec/NORM_INFINITY.html#NORM_INFINITY">NORM_INFINITY</a>,&amp;svd-&gt;nrmb);
+<a name="line404">404: </a>        <a href="../../../../docs/manualpages/EPS/EPSSetConvergenceTestFunction.html#EPSSetConvergenceTestFunction">EPSSetConvergenceTestFunction</a>(cyclic-&gt;eps,EPSConv_Cyclic,svd,NULL);
+<a name="line405">405: </a>      } <font color="#4169E1">else</font> {
+<a name="line406">406: </a>        <a href="../../../../docs/manualpages/EPS/EPSSetConvergenceTest.html#EPSSetConvergenceTest">EPSSetConvergenceTest</a>(cyclic-&gt;eps,<a href="../../../../docs/manualpages/EPS/EPSConv.html#EPSConv">EPS_CONV_NORM</a>);<font color="#4169E1">break</font>;
+<a name="line407">407: </a>      }
+<a name="line408">408: </a>      <font color="#4169E1">break</font>;
+<a name="line409">409: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/SVD/SVDConv.html#SVDConv">SVD_CONV_MAXIT</a>:
+<a name="line410">410: </a>      <a href="https://petsc.org/release/docs/manualpages/Sys/SETERRQ.html#SETERRQ">SETERRQ</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd),PETSC_ERR_SUP,<font color="#666666">"Maxit convergence test not supported in this solver"</font>);
+<a name="line411">411: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/SVD/SVDConv.html#SVDConv">SVD_CONV_USER</a>:
+<a name="line412">412: </a>      <a href="https://petsc.org/release/docs/manualpages/Sys/SETERRQ.html#SETERRQ">SETERRQ</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd),PETSC_ERR_SUP,<font color="#666666">"User-defined convergence test not supported in this solver"</font>);
+<a name="line413">413: </a>    }
+<a name="line414">414: </a>  }
+<a name="line415">415: </a>  SVDCheckUnsupported(svd,SVD_FEATURE_STOPPING);
+<a name="line416">416: </a>  <font color="#B22222">/* Transfer the trackall option from svd to eps */</font>
+<a name="line417">417: </a>  <a href="../../../../docs/manualpages/SVD/SVDGetTrackAll.html#SVDGetTrackAll">SVDGetTrackAll</a>(svd,&amp;trackall);
+<a name="line418">418: </a>  <a href="../../../../docs/manualpages/EPS/EPSSetTrackAll.html#EPSSetTrackAll">EPSSetTrackAll</a>(cyclic-&gt;eps,trackall);
+<a name="line419">419: </a>  <font color="#B22222">/* Transfer the initial subspace from svd to eps */</font>
+<a name="line420">420: </a>  <font color="#4169E1">if</font> (svd-&gt;nini&lt;0 || svd-&gt;ninil&lt;0) {
+<a name="line421">421: </a>    <font color="#4169E1">for</font> (i=0;i&lt;-<a href="https://petsc.org/release/docs/manualpages/Sys/PetscMin.html#PetscMin">PetscMin</a>(svd-&gt;nini,svd-&gt;ninil);i++) {
+<a name="line422">422: </a>      <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateVecs.html#MatCreateVecs">MatCreateVecs</a>(cyclic-&gt;C,&amp;v,NULL);
+<a name="line423">423: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayWrite.html#VecGetArrayWrite">VecGetArrayWrite</a>(v,&amp;va);
+<a name="line424">424: </a>      <font color="#4169E1">if</font> (svd-&gt;isgeneralized) <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetLocalSize.html#MatGetLocalSize">MatGetLocalSize</a>(svd-&gt;B,&amp;p,NULL);
+<a name="line425">425: </a>      k = (svd-&gt;isgeneralized &amp;&amp; svd-&gt;which==<a href="../../../../docs/manualpages/SVD/SVDWhich.html#SVDWhich">SVD_SMALLEST</a>)? p: m;  <font color="#B22222">/* size of upper block row */</font>
+<a name="line426">426: </a>      <font color="#4169E1">if</font> (i&lt;-svd-&gt;ninil) {
+<a name="line427">427: </a>        <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayRead.html#VecGetArrayRead">VecGetArrayRead</a>(svd-&gt;ISL[i],&amp;isa);
+<a name="line428">428: </a>        <font color="#4169E1">if</font> (svd-&gt;isgeneralized) {
+<a name="line429">429: </a>          <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetLocalSize.html#VecGetLocalSize">VecGetLocalSize</a>(svd-&gt;ISL[i],&amp;isl);
+<a name="line431">431: </a>          offset = (svd-&gt;which==<a href="../../../../docs/manualpages/SVD/SVDWhich.html#SVDWhich">SVD_SMALLEST</a>)? m: 0;
+<a name="line432">432: </a>          <a href="https://petsc.org/release/docs/manualpages/Sys/PetscArraycpy.html#PetscArraycpy">PetscArraycpy</a>(va,isa+offset,k);
+<a name="line433">433: </a>        } <font color="#4169E1">else</font> {
+<a name="line434">434: </a>          <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetLocalSize.html#VecGetLocalSize">VecGetLocalSize</a>(svd-&gt;ISL[i],&amp;isl);
+<a name="line436">436: </a>          <a href="https://petsc.org/release/docs/manualpages/Sys/PetscArraycpy.html#PetscArraycpy">PetscArraycpy</a>(va,isa,k);
+<a name="line437">437: </a>        }
+<a name="line438">438: </a>        <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayRead.html#VecRestoreArrayRead">VecRestoreArrayRead</a>(svd-&gt;<a href="https://petsc.org/release/docs/manualpages/IS/IS.html#IS">IS</a>[i],&amp;isa);
+<a name="line439">439: </a>      } <font color="#4169E1">else</font> <a href="https://petsc.org/release/docs/manualpages/Sys/PetscArrayzero.html#PetscArrayzero">PetscArrayzero</a>(&amp;va,k);
+<a name="line440">440: </a>      <font color="#4169E1">if</font> (i&lt;-svd-&gt;nini) {
+<a name="line441">441: </a>        <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetLocalSize.html#VecGetLocalSize">VecGetLocalSize</a>(svd-&gt;<a href="https://petsc.org/release/docs/manualpages/IS/IS.html#IS">IS</a>[i],&amp;isl);
+<a name="line443">443: </a>        <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayRead.html#VecGetArrayRead">VecGetArrayRead</a>(svd-&gt;<a href="https://petsc.org/release/docs/manualpages/IS/IS.html#IS">IS</a>[i],&amp;isa);
+<a name="line444">444: </a>        <a href="https://petsc.org/release/docs/manualpages/Sys/PetscArraycpy.html#PetscArraycpy">PetscArraycpy</a>(va+k,isa,n);
+<a name="line445">445: </a>        <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayRead.html#VecRestoreArrayRead">VecRestoreArrayRead</a>(svd-&gt;<a href="https://petsc.org/release/docs/manualpages/IS/IS.html#IS">IS</a>[i],&amp;isa);
+<a name="line446">446: </a>      } <font color="#4169E1">else</font> <a href="https://petsc.org/release/docs/manualpages/Sys/PetscArrayzero.html#PetscArrayzero">PetscArrayzero</a>(va+k,n);
+<a name="line447">447: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayWrite.html#VecRestoreArrayWrite">VecRestoreArrayWrite</a>(v,&amp;va);
+<a name="line448">448: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;svd-&gt;<a href="https://petsc.org/release/docs/manualpages/IS/IS.html#IS">IS</a>[i]);
+<a name="line449">449: </a>      svd-&gt;<a href="https://petsc.org/release/docs/manualpages/IS/IS.html#IS">IS</a>[i] = v;
+<a name="line450">450: </a>    }
+<a name="line451">451: </a>    svd-&gt;nini = <a href="https://petsc.org/release/docs/manualpages/Sys/PetscMin.html#PetscMin">PetscMin</a>(svd-&gt;nini,svd-&gt;ninil);
+<a name="line452">452: </a>    <a href="../../../../docs/manualpages/EPS/EPSSetInitialSpace.html#EPSSetInitialSpace">EPSSetInitialSpace</a>(cyclic-&gt;eps,-svd-&gt;nini,svd-&gt;<a href="https://petsc.org/release/docs/manualpages/IS/IS.html#IS">IS</a>);
+<a name="line453">453: </a>    SlepcBasisDestroy_Private(&amp;svd-&gt;nini,&amp;svd-&gt;<a href="https://petsc.org/release/docs/manualpages/IS/IS.html#IS">IS</a>);
+<a name="line454">454: </a>    SlepcBasisDestroy_Private(&amp;svd-&gt;ninil,&amp;svd-&gt;ISL);
+<a name="line455">455: </a>  }
+<a name="line456">456: </a>  <a href="../../../../docs/manualpages/EPS/EPSSetUp.html#EPSSetUp">EPSSetUp</a>(cyclic-&gt;eps);
+<a name="line457">457: </a>  <a href="../../../../docs/manualpages/EPS/EPSGetDimensions.html#EPSGetDimensions">EPSGetDimensions</a>(cyclic-&gt;eps,NULL,&amp;svd-&gt;ncv,&amp;svd-&gt;mpd);
+<a name="line458">458: </a>  svd-&gt;ncv = <a href="https://petsc.org/release/docs/manualpages/Sys/PetscMin.html#PetscMin">PetscMin</a>(svd-&gt;ncv,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscMin.html#PetscMin">PetscMin</a>(M,N));
+<a name="line459">459: </a>  <a href="../../../../docs/manualpages/EPS/EPSGetTolerances.html#EPSGetTolerances">EPSGetTolerances</a>(cyclic-&gt;eps,NULL,&amp;svd-&gt;max_it);
+<a name="line460">460: </a>  <font color="#4169E1">if</font> (svd-&gt;tol==<a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_DEFAULT.html#PETSC_DEFAULT">PETSC_DEFAULT</a>) svd-&gt;tol = SLEPC_DEFAULT_TOL;
+
+<a name="line462">462: </a>  svd-&gt;leftbasis = <a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_TRUE.html#PETSC_TRUE">PETSC_TRUE</a>;
+<a name="line463">463: </a>  <a href="../../../../docs/manualpages/SVD/SVDAllocateSolution.html#SVDAllocateSolution">SVDAllocateSolution</a>(svd,0);
+<a name="line464">464: </a>  <font color="#4169E1">return</font> 0;
+<a name="line465">465: </a>}
+
+<a name="line467">467: </a><strong><font color="#4169E1"><a name="SVDCyclicCheckEigenvalue"></a><a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDCyclicCheckEigenvalue(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> er,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> ei,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscReal.html#PetscReal">PetscReal</a> *sigma,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscBool.html#PetscBool">PetscBool</a> *isreal)</font></strong>
+<a name="line468">468: </a>{
+<a name="line469">469: </a>  <font color="#4169E1">if</font> (svd-&gt;ishyperbolic &amp;&amp; <a href="https://petsc.org/release/docs/manualpages/Sys/PetscDefined.html#PetscDefined">PetscDefined</a>(USE_COMPLEX) &amp;&amp; <a href="https://petsc.org/release/docs/manualpages/Sys/PetscAbsReal.html#PetscAbsReal">PetscAbsReal</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscImaginaryPart.html#PetscImaginaryPart">PetscImaginaryPart</a>(er))&gt;10*<a href="https://petsc.org/release/docs/manualpages/Sys/PetscAbsReal.html#PetscAbsReal">PetscAbsReal</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscRealPart.html#PetscRealPart">PetscRealPart</a>(er))) {
+<a name="line470">470: </a>    *sigma = <a href="https://petsc.org/release/docs/manualpages/Sys/PetscImaginaryPart.html#PetscImaginaryPart">PetscImaginaryPart</a>(er);
+<a name="line471">471: </a>    <font color="#4169E1">if</font> (isreal) *isreal = <a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_FALSE.html#PETSC_FALSE">PETSC_FALSE</a>;
+<a name="line472">472: </a>  } <font color="#4169E1">else</font> <font color="#4169E1">if</font> (svd-&gt;ishyperbolic &amp;&amp; !<a href="https://petsc.org/release/docs/manualpages/Sys/PetscDefined.html#PetscDefined">PetscDefined</a>(USE_COMPLEX) &amp;&amp; PetscAbsScalar(ei)&gt;10*PetscAbsScalar(er)) {
+<a name="line473">473: </a>    *sigma = <a href="https://petsc.org/release/docs/manualpages/Sys/PetscRealPart.html#PetscRealPart">PetscRealPart</a>(ei);
+<a name="line474">474: </a>    <font color="#4169E1">if</font> (isreal) *isreal = <a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_FALSE.html#PETSC_FALSE">PETSC_FALSE</a>;
+<a name="line475">475: </a>  } <font color="#4169E1">else</font> {
+<a name="line476">476: </a>    *sigma = <a href="https://petsc.org/release/docs/manualpages/Sys/PetscRealPart.html#PetscRealPart">PetscRealPart</a>(er);
+<a name="line477">477: </a>    <font color="#4169E1">if</font> (isreal) *isreal = <a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_TRUE.html#PETSC_TRUE">PETSC_TRUE</a>;
+<a name="line478">478: </a>  }
+<a name="line479">479: </a>  <font color="#4169E1">return</font> 0;
+<a name="line480">480: </a>}
+
+<a name="line482">482: </a><strong><font color="#4169E1"><a name="SVDSolve_Cyclic"></a><a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDSolve_Cyclic(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd)</font></strong>
+<a name="line483">483: </a>{
+<a name="line484">484: </a>  SVD_CYCLIC     *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+<a name="line485">485: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>       i,j,nconv;
+<a name="line486">486: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a>    er,ei;
+<a name="line487">487: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscReal.html#PetscReal">PetscReal</a>      sigma;
+
+<a name="line489">489: </a>  <a href="../../../../docs/manualpages/EPS/EPSSolve.html#EPSSolve">EPSSolve</a>(cyclic-&gt;eps);
+<a name="line490">490: </a>  <a href="../../../../docs/manualpages/EPS/EPSGetConverged.html#EPSGetConverged">EPSGetConverged</a>(cyclic-&gt;eps,&amp;nconv);
+<a name="line491">491: </a>  <a href="../../../../docs/manualpages/EPS/EPSGetIterationNumber.html#EPSGetIterationNumber">EPSGetIterationNumber</a>(cyclic-&gt;eps,&amp;svd-&gt;its);
+<a name="line492">492: </a>  <a href="../../../../docs/manualpages/EPS/EPSGetConvergedReason.html#EPSGetConvergedReason">EPSGetConvergedReason</a>(cyclic-&gt;eps,(<a href="../../../../docs/manualpages/EPS/EPSConvergedReason.html#EPSConvergedReason">EPSConvergedReason</a>*)&amp;svd-&gt;reason);
+<a name="line493">493: </a>  <font color="#4169E1">for</font> (i=0,j=0;i&lt;nconv;i++) {
+<a name="line494">494: </a>    <a href="../../../../docs/manualpages/EPS/EPSGetEigenvalue.html#EPSGetEigenvalue">EPSGetEigenvalue</a>(cyclic-&gt;eps,i,&amp;er,&amp;ei);
+<a name="line495">495: </a>    SVDCyclicCheckEigenvalue(svd,er,ei,&amp;sigma,NULL);
+<a name="line496">496: </a>    <font color="#4169E1">if</font> (sigma&gt;0.0) {
+<a name="line497">497: </a>      <font color="#4169E1">if</font> (svd-&gt;isgeneralized &amp;&amp; svd-&gt;which==<a href="../../../../docs/manualpages/SVD/SVDWhich.html#SVDWhich">SVD_SMALLEST</a>) svd-&gt;sigma[j] = 1.0/sigma;
+<a name="line498">498: </a>      <font color="#4169E1">else</font> svd-&gt;sigma[j] = sigma;
+<a name="line499">499: </a>      j++;
+<a name="line500">500: </a>    }
+<a name="line501">501: </a>  }
+<a name="line502">502: </a>  svd-&gt;nconv = j;
+<a name="line503">503: </a>  <font color="#4169E1">return</font> 0;
+<a name="line504">504: </a>}
+
+<a name="line506">506: </a><strong><font color="#4169E1"><a name="SVDComputeVectors_Cyclic_Standard"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDComputeVectors_Cyclic_Standard(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd)</font></strong>
+<a name="line507">507: </a>{
+<a name="line508">508: </a>  SVD_CYCLIC        *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+<a name="line509">509: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>          i,j,m,nconv;
+<a name="line510">510: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a>       er,ei;
+<a name="line511">511: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscReal.html#PetscReal">PetscReal</a>         sigma;
+<a name="line512">512: </a>  const <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> *px;
+<a name="line513">513: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a>               x,x1,x2;
+
+<a name="line515">515: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateVecs.html#MatCreateVecs">MatCreateVecs</a>(cyclic-&gt;C,&amp;x,NULL);
+<a name="line516">516: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetLocalSize.html#MatGetLocalSize">MatGetLocalSize</a>(svd-&gt;A,&amp;m,NULL);
+<a name="line517">517: </a>  <a href="../../../../docs/manualpages/sys/MatCreateVecsEmpty.html#MatCreateVecsEmpty">MatCreateVecsEmpty</a>(svd-&gt;A,&amp;x2,&amp;x1);
+<a name="line518">518: </a>  <a href="../../../../docs/manualpages/EPS/EPSGetConverged.html#EPSGetConverged">EPSGetConverged</a>(cyclic-&gt;eps,&amp;nconv);
+<a name="line519">519: </a>  <font color="#4169E1">for</font> (i=0,j=0;i&lt;nconv;i++) {
+<a name="line520">520: </a>    <a href="../../../../docs/manualpages/EPS/EPSGetEigenpair.html#EPSGetEigenpair">EPSGetEigenpair</a>(cyclic-&gt;eps,i,&amp;er,&amp;ei,x,NULL);
+<a name="line521">521: </a>    SVDCyclicCheckEigenvalue(svd,er,ei,&amp;sigma,NULL);
+<a name="line522">522: </a>    <font color="#4169E1">if</font> (sigma&lt;0.0) <font color="#4169E1">continue</font>;
+<a name="line523">523: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayRead.html#VecGetArrayRead">VecGetArrayRead</a>(x,&amp;px);
+<a name="line524">524: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x1,px);
+<a name="line525">525: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x2,px+m);
+<a name="line526">526: </a>    <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(svd-&gt;U,j,x1);
+<a name="line527">527: </a>    <a href="../../../../docs/manualpages/BV/BVScaleColumn.html#BVScaleColumn">BVScaleColumn</a>(svd-&gt;U,j,PETSC_SQRT2);
+<a name="line528">528: </a>    <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(svd-&gt;V,j,x2);
+<a name="line529">529: </a>    <a href="../../../../docs/manualpages/BV/BVScaleColumn.html#BVScaleColumn">BVScaleColumn</a>(svd-&gt;V,j,PETSC_SQRT2);
+<a name="line530">530: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(x1);
+<a name="line531">531: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(x2);
+<a name="line532">532: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayRead.html#VecRestoreArrayRead">VecRestoreArrayRead</a>(x,&amp;px);
+<a name="line533">533: </a>    j++;
+<a name="line534">534: </a>  }
+<a name="line535">535: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;x);
+<a name="line536">536: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;x1);
+<a name="line537">537: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;x2);
+<a name="line538">538: </a>  <font color="#4169E1">return</font> 0;
+<a name="line539">539: </a>}
+
+<a name="line541">541: </a><strong><font color="#4169E1"><a name="SVDComputeVectors_Cyclic_Generalized"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDComputeVectors_Cyclic_Generalized(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd)</font></strong>
+<a name="line542">542: </a>{
+<a name="line543">543: </a>  SVD_CYCLIC        *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+<a name="line544">544: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>          i,j,m,p,nconv;
+<a name="line545">545: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a>       *dst,er,ei;
+<a name="line546">546: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscReal.html#PetscReal">PetscReal</a>         sigma;
+<a name="line547">547: </a>  const <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> *src,*px;
+<a name="line548">548: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a>               u,v,x,x1,x2,uv;
+
+<a name="line550">550: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetLocalSize.html#MatGetLocalSize">MatGetLocalSize</a>(svd-&gt;A,&amp;m,NULL);
+<a name="line551">551: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetLocalSize.html#MatGetLocalSize">MatGetLocalSize</a>(svd-&gt;B,&amp;p,NULL);
+<a name="line552">552: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateVecs.html#MatCreateVecs">MatCreateVecs</a>(cyclic-&gt;C,&amp;x,NULL);
+<a name="line553">553: </a>  <font color="#4169E1">if</font> (svd-&gt;which==<a href="../../../../docs/manualpages/SVD/SVDWhich.html#SVDWhich">SVD_SMALLEST</a>) <a href="../../../../docs/manualpages/sys/MatCreateVecsEmpty.html#MatCreateVecsEmpty">MatCreateVecsEmpty</a>(svd-&gt;B,&amp;x1,&amp;x2);
+<a name="line554">554: </a>  <font color="#4169E1">else</font> <a href="../../../../docs/manualpages/sys/MatCreateVecsEmpty.html#MatCreateVecsEmpty">MatCreateVecsEmpty</a>(svd-&gt;A,&amp;x2,&amp;x1);
+<a name="line555">555: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateVecs.html#MatCreateVecs">MatCreateVecs</a>(svd-&gt;A,NULL,&amp;u);
+<a name="line556">556: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateVecs.html#MatCreateVecs">MatCreateVecs</a>(svd-&gt;B,NULL,&amp;v);
+<a name="line557">557: </a>  <a href="../../../../docs/manualpages/EPS/EPSGetConverged.html#EPSGetConverged">EPSGetConverged</a>(cyclic-&gt;eps,&amp;nconv);
+<a name="line558">558: </a>  <font color="#4169E1">for</font> (i=0,j=0;i&lt;nconv;i++) {
+<a name="line559">559: </a>    <a href="../../../../docs/manualpages/EPS/EPSGetEigenpair.html#EPSGetEigenpair">EPSGetEigenpair</a>(cyclic-&gt;eps,i,&amp;er,&amp;ei,x,NULL);
+<a name="line560">560: </a>    SVDCyclicCheckEigenvalue(svd,er,ei,&amp;sigma,NULL);
+<a name="line561">561: </a>    <font color="#4169E1">if</font> (sigma&lt;0.0) <font color="#4169E1">continue</font>;
+<a name="line562">562: </a>    <font color="#4169E1">if</font> (svd-&gt;which==<a href="../../../../docs/manualpages/SVD/SVDWhich.html#SVDWhich">SVD_SMALLEST</a>) {
+<a name="line563">563: </a>      <font color="#B22222">/* evec_i = 1/sqrt(2)*[ v_i; w_i ],  w_i = x_i/c_i */</font>
+<a name="line564">564: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayRead.html#VecGetArrayRead">VecGetArrayRead</a>(x,&amp;px);
+<a name="line565">565: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x2,px);
+<a name="line566">566: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x1,px+p);
+<a name="line567">567: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecCopy.html#VecCopy">VecCopy</a>(x2,v);
+<a name="line568">568: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecScale.html#VecScale">VecScale</a>(v,PETSC_SQRT2);  <font color="#B22222">/* v_i = sqrt(2)*evec_i_1 */</font>
+<a name="line569">569: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecScale.html#VecScale">VecScale</a>(x1,PETSC_SQRT2); <font color="#B22222">/* w_i = sqrt(2)*evec_i_2 */</font>
+<a name="line570">570: </a>      <a href="https://petsc.org/release/docs/manualpages/Mat/MatMult.html#MatMult">MatMult</a>(svd-&gt;A,x1,u);     <font color="#B22222">/* A*w_i = u_i */</font>
+<a name="line571">571: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecScale.html#VecScale">VecScale</a>(x1,1.0/PetscSqrtScalar(1.0+sigma*sigma));  <font color="#B22222">/* x_i = w_i*c_i */</font>
+<a name="line572">572: </a>      <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(svd-&gt;V,j,x1);
+<a name="line573">573: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(x2);
+<a name="line574">574: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(x1);
+<a name="line575">575: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayRead.html#VecRestoreArrayRead">VecRestoreArrayRead</a>(x,&amp;px);
+<a name="line576">576: </a>    } <font color="#4169E1">else</font> {
+<a name="line577">577: </a>      <font color="#B22222">/* evec_i = 1/sqrt(2)*[ u_i; w_i ],  w_i = x_i/s_i */</font>
+<a name="line578">578: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayRead.html#VecGetArrayRead">VecGetArrayRead</a>(x,&amp;px);
+<a name="line579">579: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x1,px);
+<a name="line580">580: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x2,px+m);
+<a name="line581">581: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecCopy.html#VecCopy">VecCopy</a>(x1,u);
+<a name="line582">582: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecScale.html#VecScale">VecScale</a>(u,PETSC_SQRT2);  <font color="#B22222">/* u_i = sqrt(2)*evec_i_1 */</font>
+<a name="line583">583: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecScale.html#VecScale">VecScale</a>(x2,PETSC_SQRT2); <font color="#B22222">/* w_i = sqrt(2)*evec_i_2 */</font>
+<a name="line584">584: </a>      <a href="https://petsc.org/release/docs/manualpages/Mat/MatMult.html#MatMult">MatMult</a>(svd-&gt;B,x2,v);     <font color="#B22222">/* B*w_i = v_i */</font>
+<a name="line585">585: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecScale.html#VecScale">VecScale</a>(x2,1.0/PetscSqrtScalar(1.0+sigma*sigma));  <font color="#B22222">/* x_i = w_i*s_i */</font>
+<a name="line586">586: </a>      <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(svd-&gt;V,j,x2);
+<a name="line587">587: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(x1);
+<a name="line588">588: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(x2);
+<a name="line589">589: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayRead.html#VecRestoreArrayRead">VecRestoreArrayRead</a>(x,&amp;px);
+<a name="line590">590: </a>    }
+<a name="line591">591: </a>    <font color="#B22222">/* copy [u;v] to U[j] */</font>
+<a name="line592">592: </a>    <a href="../../../../docs/manualpages/BV/BVGetColumn.html#BVGetColumn">BVGetColumn</a>(svd-&gt;U,j,&amp;uv);
+<a name="line593">593: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayWrite.html#VecGetArrayWrite">VecGetArrayWrite</a>(uv,&amp;dst);
+<a name="line594">594: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayRead.html#VecGetArrayRead">VecGetArrayRead</a>(u,&amp;src);
+<a name="line595">595: </a>    <a href="https://petsc.org/release/docs/manualpages/Sys/PetscArraycpy.html#PetscArraycpy">PetscArraycpy</a>(dst,src,m);
+<a name="line596">596: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayRead.html#VecRestoreArrayRead">VecRestoreArrayRead</a>(u,&amp;src);
+<a name="line597">597: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayRead.html#VecGetArrayRead">VecGetArrayRead</a>(v,&amp;src);
+<a name="line598">598: </a>    <a href="https://petsc.org/release/docs/manualpages/Sys/PetscArraycpy.html#PetscArraycpy">PetscArraycpy</a>(dst+m,src,p);
+<a name="line599">599: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayRead.html#VecRestoreArrayRead">VecRestoreArrayRead</a>(v,&amp;src);
+<a name="line600">600: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayWrite.html#VecRestoreArrayWrite">VecRestoreArrayWrite</a>(uv,&amp;dst);
+<a name="line601">601: </a>    <a href="../../../../docs/manualpages/BV/BVRestoreColumn.html#BVRestoreColumn">BVRestoreColumn</a>(svd-&gt;U,j,&amp;uv);
+<a name="line602">602: </a>    j++;
+<a name="line603">603: </a>  }
+<a name="line604">604: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;x);
+<a name="line605">605: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;x1);
+<a name="line606">606: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;x2);
+<a name="line607">607: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;u);
+<a name="line608">608: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;v);
+<a name="line609">609: </a>  <font color="#4169E1">return</font> 0;
+<a name="line610">610: </a>}
+
+<a name="line612">612: </a><font color="#A020F0">#if defined(PETSC_USE_COMPLEX)</font>
+<a name="line613">613: </a><font color="#B22222">/* VecMaxAbs: returns the entry of x that has max(abs(x(i))), using w as a workspace vector */</font>
+<a name="line614">614: </a><strong><font color="#4169E1"><a name="VecMaxAbs"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> VecMaxAbs(<a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a> x,<a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a> w,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> *v)</font></strong>
+<a name="line615">615: </a>{
+<a name="line616">616: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscMPIInt.html#PetscMPIInt">PetscMPIInt</a>       size,rank,root;
+<a name="line617">617: </a>  const <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> *xx;
+<a name="line618">618: </a>  const <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>    *ranges;
+<a name="line619">619: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscReal.html#PetscReal">PetscReal</a>         val;
+<a name="line620">620: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>          p;
+
+<a name="line622">622: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecCopy.html#VecCopy">VecCopy</a>(x,w);
+<a name="line623">623: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecAbs.html#VecAbs">VecAbs</a>(w);
+<a name="line624">624: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecMax.html#VecMax">VecMax</a>(w,&amp;p,&amp;val);
+<a name="line625">625: </a>  <a href="http://www.mpich.org/static/docs/latest/www3/MPI_Comm_size.html#MPI_Comm_size">MPI_Comm_size</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)x),&amp;size);
+<a name="line626">626: </a>  <a href="http://www.mpich.org/static/docs/latest/www3/MPI_Comm_rank.html#MPI_Comm_rank">MPI_Comm_rank</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)x),&amp;rank);
+<a name="line627">627: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetOwnershipRanges.html#VecGetOwnershipRanges">VecGetOwnershipRanges</a>(x,&amp;ranges);
+<a name="line628">628: </a>  <font color="#4169E1">for</font> (root=0;root&lt;size;root++) <font color="#4169E1">if</font> (p&gt;=ranges[root] &amp;&amp; p&lt;ranges[root+1]) <font color="#4169E1">break</font>;
+<a name="line629">629: </a>  <font color="#4169E1">if</font> (rank==root) {
+<a name="line630">630: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayRead.html#VecGetArrayRead">VecGetArrayRead</a>(x,&amp;xx);
+<a name="line631">631: </a>    *v = xx[p-ranges[root]];
+<a name="line632">632: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayRead.html#VecRestoreArrayRead">VecRestoreArrayRead</a>(x,&amp;xx);
+<a name="line633">633: </a>  }
+<a name="line634">634: </a>  <a href="http://www.mpich.org/static/docs/latest/www3/MPI_Bcast.html#MPI_Bcast">MPI_Bcast</a>(v,1,<a href="https://petsc.org/release/docs/manualpages/Sys/MPIU_SCALAR.html#MPIU_SCALAR">MPIU_SCALAR</a>,root,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)x));
+<a name="line635">635: </a>  <font color="#4169E1">return</font> 0;
+<a name="line636">636: </a>}
+<a name="line637">637: </a><font color="#A020F0">#endif</font>
+
+<a name="line639">639: </a><strong><font color="#4169E1"><a name="SVDComputeVectors_Cyclic_Hyperbolic"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDComputeVectors_Cyclic_Hyperbolic(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd)</font></strong>
+<a name="line640">640: </a>{
+<a name="line641">641: </a>  SVD_CYCLIC        *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+<a name="line642">642: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>          i,j,m,n,N,nconv;
+<a name="line643">643: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a>       er,ei;
+<a name="line644">644: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscReal.html#PetscReal">PetscReal</a>         sigma,nrm;
+<a name="line645">645: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscBool.html#PetscBool">PetscBool</a>         isreal;
+<a name="line646">646: </a>  const <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> *px;
+<a name="line647">647: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/Vec.html#Vec">Vec</a>               u,x,xi=NULL,x1,x2,x1i=NULL,x2i;
+<a name="line648">648: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/Mat.html#Mat">Mat</a>               Omega;
+<a name="line649">649: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatType.html#MatType">MatType</a>           Atype;
+<a name="line650">650: </a>  <a href="../../../../docs/manualpages/BV/BV.html#BV">BV</a>                U=NULL,V=NULL;
+<a name="line651">651: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line652">652: </a>  const <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> *pxi;
+<a name="line653">653: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscReal.html#PetscReal">PetscReal</a>         nrmr,nrmi;
+<a name="line654">654: </a><font color="#A020F0">#else</font>
+<a name="line655">655: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a>       alpha;
+<a name="line656">656: </a><font color="#A020F0">#endif</font>
+
+<a name="line658">658: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateVecs.html#MatCreateVecs">MatCreateVecs</a>(cyclic-&gt;C,&amp;x,svd-&gt;ishyperbolic?&amp;xi:NULL);
+<a name="line659">659: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetLocalSize.html#MatGetLocalSize">MatGetLocalSize</a>(svd-&gt;A,&amp;m,NULL);
+<a name="line660">660: </a>  <a href="../../../../docs/manualpages/sys/MatCreateVecsEmpty.html#MatCreateVecsEmpty">MatCreateVecsEmpty</a>(svd-&gt;OP,&amp;x2,&amp;x1);
+<a name="line661">661: </a><font color="#A020F0">#if defined(PETSC_USE_COMPLEX)</font>
+<a name="line662">662: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreateVecs.html#MatCreateVecs">MatCreateVecs</a>(svd-&gt;OP,&amp;x2i,&amp;x1i);
+<a name="line663">663: </a><font color="#A020F0">#else</font>
+<a name="line664">664: </a>  <a href="../../../../docs/manualpages/sys/MatCreateVecsEmpty.html#MatCreateVecsEmpty">MatCreateVecsEmpty</a>(svd-&gt;OP,&amp;x2i,&amp;x1i);
+<a name="line665">665: </a><font color="#A020F0">#endif</font>
+<a name="line666">666: </a>  <font color="#B22222">/* set-up Omega-normalization of U */</font>
+<a name="line667">667: </a>  U = svd-&gt;swapped? svd-&gt;V: svd-&gt;U;
+<a name="line668">668: </a>  V = svd-&gt;swapped? svd-&gt;U: svd-&gt;V;
+<a name="line669">669: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatGetType.html#MatGetType">MatGetType</a>(svd-&gt;A,&amp;Atype);
+<a name="line670">670: </a>  <a href="../../../../docs/manualpages/BV/BVGetSizes.html#BVGetSizes">BVGetSizes</a>(U,&amp;n,&amp;N,NULL);
+<a name="line671">671: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatCreate.html#MatCreate">MatCreate</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd),&amp;Omega);
+<a name="line672">672: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetSizes.html#MatSetSizes">MatSetSizes</a>(Omega,n,n,N,N);
+<a name="line673">673: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetType.html#MatSetType">MatSetType</a>(Omega,Atype);
+<a name="line674">674: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatSetUp.html#MatSetUp">MatSetUp</a>(Omega);
+<a name="line675">675: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatDiagonalSet.html#MatDiagonalSet">MatDiagonalSet</a>(Omega,svd-&gt;omega,<a href="https://petsc.org/release/docs/manualpages/Sys/INSERT_VALUES.html#INSERT_VALUES">INSERT_VALUES</a>);
+<a name="line676">676: </a>  <a href="../../../../docs/manualpages/BV/BVSetMatrix.html#BVSetMatrix">BVSetMatrix</a>(U,Omega,<a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_TRUE.html#PETSC_TRUE">PETSC_TRUE</a>);
+<a name="line677">677: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatDestroy.html#MatDestroy">MatDestroy</a>(&amp;Omega);
+
+<a name="line679">679: </a>  <a href="../../../../docs/manualpages/EPS/EPSGetConverged.html#EPSGetConverged">EPSGetConverged</a>(cyclic-&gt;eps,&amp;nconv);
+<a name="line680">680: </a>  <font color="#4169E1">for</font> (i=0,j=0;i&lt;nconv;i++) {
+<a name="line681">681: </a>    <a href="../../../../docs/manualpages/EPS/EPSGetEigenpair.html#EPSGetEigenpair">EPSGetEigenpair</a>(cyclic-&gt;eps,i,&amp;er,&amp;ei,x,xi);
+<a name="line682">682: </a>    SVDCyclicCheckEigenvalue(svd,er,ei,&amp;sigma,&amp;isreal);
+<a name="line683">683: </a>    <font color="#4169E1">if</font> (sigma&lt;0.0) <font color="#4169E1">continue</font>;
+<a name="line684">684: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayRead.html#VecGetArrayRead">VecGetArrayRead</a>(x,&amp;px);
+<a name="line685">685: </a>    <font color="#4169E1">if</font> (svd-&gt;swapped) {
+<a name="line686">686: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x2,px);
+<a name="line687">687: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x1,px+m);
+<a name="line688">688: </a>    } <font color="#4169E1">else</font> {
+<a name="line689">689: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x1,px);
+<a name="line690">690: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x2,px+n);
+<a name="line691">691: </a>    }
+<a name="line692">692: </a><font color="#A020F0">#if defined(PETSC_USE_COMPLEX)</font>
+<a name="line693">693: </a>    <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(U,j,x1);
+<a name="line694">694: </a>    <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(V,j,x2);
+<a name="line695">695: </a>    <font color="#4169E1">if</font> (!isreal) {
+<a name="line696">696: </a>      VecMaxAbs(x1,x1i,&amp;alpha);
+<a name="line697">697: </a>      <a href="../../../../docs/manualpages/BV/BVScaleColumn.html#BVScaleColumn">BVScaleColumn</a>(U,j,PetscAbsScalar(alpha)/alpha);
+<a name="line698">698: </a>      <a href="../../../../docs/manualpages/BV/BVScaleColumn.html#BVScaleColumn">BVScaleColumn</a>(V,j,PetscAbsScalar(alpha)/(alpha*<a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_i.html#PETSC_i">PETSC_i</a>));
+<a name="line699">699: </a>    }
+<a name="line700">700: </a><font color="#A020F0">#else</font>
+<a name="line701">701: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecGetArrayRead.html#VecGetArrayRead">VecGetArrayRead</a>(xi,&amp;pxi);
+<a name="line702">702: </a>    <font color="#4169E1">if</font> (svd-&gt;swapped) {
+<a name="line703">703: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x2i,pxi);
+<a name="line704">704: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x1i,pxi+m);
+<a name="line705">705: </a>    } <font color="#4169E1">else</font> {
+<a name="line706">706: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x1i,pxi);
+<a name="line707">707: </a>      <a href="https://petsc.org/release/docs/manualpages/Vec/VecPlaceArray.html#VecPlaceArray">VecPlaceArray</a>(x2i,pxi+n);
+<a name="line708">708: </a>    }
+<a name="line709">709: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecNorm.html#VecNorm">VecNorm</a>(x2,<a href="https://petsc.org/release/docs/manualpages/Vec/NORM_2.html#NORM_2">NORM_2</a>,&amp;nrmr);
+<a name="line710">710: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecNorm.html#VecNorm">VecNorm</a>(x2i,<a href="https://petsc.org/release/docs/manualpages/Vec/NORM_2.html#NORM_2">NORM_2</a>,&amp;nrmi);
+<a name="line711">711: </a>    <font color="#4169E1">if</font> (nrmi&gt;nrmr) {
+<a name="line712">712: </a>      <font color="#4169E1">if</font> (isreal) {
+<a name="line713">713: </a>        <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(U,j,x1i);
+<a name="line714">714: </a>        <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(V,j,x2i);
+<a name="line715">715: </a>      } <font color="#4169E1">else</font> {
+<a name="line716">716: </a>        <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(U,j,x1);
+<a name="line717">717: </a>        <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(V,j,x2i);
+<a name="line718">718: </a>      }
+<a name="line719">719: </a>    } <font color="#4169E1">else</font> {
+<a name="line720">720: </a>      <font color="#4169E1">if</font> (isreal) {
+<a name="line721">721: </a>        <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(U,j,x1);
+<a name="line722">722: </a>        <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(V,j,x2);
+<a name="line723">723: </a>      } <font color="#4169E1">else</font> {
+<a name="line724">724: </a>        <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(U,j,x1i);
+<a name="line725">725: </a>        <a href="../../../../docs/manualpages/BV/BVScaleColumn.html#BVScaleColumn">BVScaleColumn</a>(U,j,-1.0);
+<a name="line726">726: </a>        <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(V,j,x2);
+<a name="line727">727: </a>      }
+<a name="line728">728: </a>    }
+<a name="line729">729: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(x1i);
+<a name="line730">730: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(x2i);
+<a name="line731">731: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayRead.html#VecRestoreArrayRead">VecRestoreArrayRead</a>(xi,&amp;pxi);
+<a name="line732">732: </a><font color="#A020F0">#endif</font>
+<a name="line733">733: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(x1);
+<a name="line734">734: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecResetArray.html#VecResetArray">VecResetArray</a>(x2);
+<a name="line735">735: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecRestoreArrayRead.html#VecRestoreArrayRead">VecRestoreArrayRead</a>(x,&amp;px);
+<a name="line736">736: </a>    <a href="../../../../docs/manualpages/BV/BVGetColumn.html#BVGetColumn">BVGetColumn</a>(U,j,&amp;u);
+<a name="line737">737: </a>    <a href="https://petsc.org/release/docs/manualpages/Vec/VecPointwiseMult.html#VecPointwiseMult">VecPointwiseMult</a>(u,u,svd-&gt;omega);
+<a name="line738">738: </a>    <a href="../../../../docs/manualpages/BV/BVRestoreColumn.html#BVRestoreColumn">BVRestoreColumn</a>(U,j,&amp;u);
+<a name="line739">739: </a>    <a href="../../../../docs/manualpages/BV/BVNormColumn.html#BVNormColumn">BVNormColumn</a>(U,j,<a href="https://petsc.org/release/docs/manualpages/Vec/NORM_2.html#NORM_2">NORM_2</a>,&amp;nrm);
+<a name="line740">740: </a>    <a href="../../../../docs/manualpages/BV/BVScaleColumn.html#BVScaleColumn">BVScaleColumn</a>(U,j,1.0/<a href="https://petsc.org/release/docs/manualpages/Sys/PetscAbs.html#PetscAbs">PetscAbs</a>(nrm));
+<a name="line741">741: </a>    svd-&gt;sign[j] = <a href="https://petsc.org/release/docs/manualpages/Sys/PetscSign.html#PetscSign">PetscSign</a>(nrm);
+<a name="line742">742: </a>    <a href="../../../../docs/manualpages/BV/BVNormColumn.html#BVNormColumn">BVNormColumn</a>(V,j,<a href="https://petsc.org/release/docs/manualpages/Vec/NORM_2.html#NORM_2">NORM_2</a>,&amp;nrm);
+<a name="line743">743: </a>    <a href="../../../../docs/manualpages/BV/BVScaleColumn.html#BVScaleColumn">BVScaleColumn</a>(V,j,1.0/nrm);
+<a name="line744">744: </a>    j++;
+<a name="line745">745: </a>  }
+<a name="line746">746: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;x);
+<a name="line747">747: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;x1);
+<a name="line748">748: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;x2);
+<a name="line749">749: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;xi);
+<a name="line750">750: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;x1i);
+<a name="line751">751: </a>  <a href="https://petsc.org/release/docs/manualpages/Vec/VecDestroy.html#VecDestroy">VecDestroy</a>(&amp;x2i);
+<a name="line752">752: </a>  <font color="#4169E1">return</font> 0;
+<a name="line753">753: </a>}
+
+<a name="line755">755: </a><strong><font color="#4169E1"><a name="SVDComputeVectors_Cyclic"></a><a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDComputeVectors_Cyclic(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd)</font></strong>
+<a name="line756">756: </a>{
+<a name="line757">757: </a>  <font color="#4169E1">switch</font> (svd-&gt;problem_type) {
+<a name="line758">758: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/SVD/SVDProblemType.html#SVDProblemType">SVD_STANDARD</a>:
+<a name="line759">759: </a>      SVDComputeVectors_Cyclic_Standard(svd);
+<a name="line760">760: </a>      <font color="#4169E1">break</font>;
+<a name="line761">761: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/SVD/SVDProblemType.html#SVDProblemType">SVD_GENERALIZED</a>:
+<a name="line762">762: </a>      SVDComputeVectors_Cyclic_Generalized(svd);
+<a name="line763">763: </a>      <font color="#4169E1">break</font>;
+<a name="line764">764: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/SVD/SVDProblemType.html#SVDProblemType">SVD_HYPERBOLIC</a>:
+<a name="line765">765: </a>      SVDComputeVectors_Cyclic_Hyperbolic(svd);
+<a name="line766">766: </a>      <font color="#4169E1">break</font>;
+<a name="line767">767: </a><strong><font color="#FF0000">    default:</font></strong>
+<a name="line768">768: </a>      <a href="https://petsc.org/release/docs/manualpages/Sys/SETERRQ.html#SETERRQ">SETERRQ</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd),PETSC_ERR_ARG_WRONG,<font color="#666666">"Unknown singular value problem type"</font>);
+<a name="line769">769: </a>  }
+<a name="line770">770: </a>  <font color="#4169E1">return</font> 0;
+<a name="line771">771: </a>}
+
+<a name="line773">773: </a><strong><font color="#4169E1"><a name="EPSMonitor_Cyclic"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> EPSMonitor_Cyclic(<a href="../../../../docs/manualpages/EPS/EPS.html#EPS">EPS</a> eps,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a> its,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a> nconv,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> *eigr,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a> *eigi,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscReal.html#PetscReal">PetscReal</a> *errest,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a> nest,void *ctx)</font></strong>
+<a name="line774">774: </a>{
+<a name="line775">775: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscInt.html#PetscInt">PetscInt</a>       i,j;
+<a name="line776">776: </a>  <a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a>            svd = (<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a>)ctx;
+<a name="line777">777: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscScalar.html#PetscScalar">PetscScalar</a>    er,ei;
+<a name="line778">778: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscReal.html#PetscReal">PetscReal</a>      sigma;
+
+<a name="line780">780: </a>  nconv = 0;
+<a name="line781">781: </a>  <font color="#4169E1">for</font> (i=0,j=0;i&lt;<a href="https://petsc.org/release/docs/manualpages/Sys/PetscMin.html#PetscMin">PetscMin</a>(nest,svd-&gt;ncv);i++) {
+<a name="line782">782: </a>    er = eigr[i]; ei = eigi[i];
+<a name="line783">783: </a>    <a href="../../../../docs/manualpages/ST/STBackTransform.html#STBackTransform">STBackTransform</a>(eps-&gt;st,1,&amp;er,&amp;ei);
+<a name="line784">784: </a>    SVDCyclicCheckEigenvalue(svd,er,ei,&amp;sigma,NULL);
+<a name="line785">785: </a>    <font color="#4169E1">if</font> (sigma&gt;0.0) {
+<a name="line786">786: </a>      svd-&gt;sigma[j]  = sigma;
+<a name="line787">787: </a>      svd-&gt;errest[j] = errest[i];
+<a name="line788">788: </a>      <font color="#4169E1">if</font> (errest[i] &amp;&amp; errest[i] &lt; svd-&gt;tol) nconv++;
+<a name="line789">789: </a>      j++;
+<a name="line790">790: </a>    }
+<a name="line791">791: </a>  }
+<a name="line792">792: </a>  nest = j;
+<a name="line793">793: </a>  SVDMonitor(svd,its,nconv,svd-&gt;sigma,svd-&gt;errest,nest);
+<a name="line794">794: </a>  <font color="#4169E1">return</font> 0;
+<a name="line795">795: </a>}
+
+<a name="line797">797: </a><strong><font color="#4169E1"><a name="SVDSetFromOptions_Cyclic"></a><a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDSetFromOptions_Cyclic(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd,PetscOptionItems *PetscOptionsObject)</font></strong>
+<a name="line798">798: </a>{
+<a name="line799">799: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscBool.html#PetscBool">PetscBool</a>      set,val;
+<a name="line800">800: </a>  SVD_CYCLIC     *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+<a name="line801">801: </a>  <a href="../../../../docs/manualpages/ST/ST.html#ST">ST</a>             st;
+
+<a name="line803">803: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscOptionsHeadBegin.html#PetscOptionsHeadBegin">PetscOptionsHeadBegin</a>(PetscOptionsObject,<font color="#666666">"<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> Cyclic Options"</font>);
+
+<a name="line805">805: </a>    <a href="https://petsc.org/release/docs/manualpages/Sys/PetscOptionsBool.html#PetscOptionsBool">PetscOptionsBool</a>(<font color="#666666">"-svd_cyclic_explicitmatrix"</font>,<font color="#666666">"Use cyclic explicit matrix"</font>,<font color="#666666">"<a href="../../../../docs/manualpages/SVD/SVDCyclicSetExplicitMatrix.html#SVDCyclicSetExplicitMatrix">SVDCyclicSetExplicitMatrix</a>"</font>,cyclic-&gt;explicitmatrix,&amp;val,&amp;set);
+<a name="line806">806: </a>    <font color="#4169E1">if</font> (set) <a href="../../../../docs/manualpages/SVD/SVDCyclicSetExplicitMatrix.html#SVDCyclicSetExplicitMatrix">SVDCyclicSetExplicitMatrix</a>(svd,val);
+
+<a name="line808">808: </a>  PetscOptionsHeadEnd();
+
+<a name="line810">810: </a>  <font color="#4169E1">if</font> (!cyclic-&gt;eps) <a href="../../../../docs/manualpages/SVD/SVDCyclicGetEPS.html#SVDCyclicGetEPS">SVDCyclicGetEPS</a>(svd,&amp;cyclic-&gt;eps);
+<a name="line811">811: </a>  <font color="#4169E1">if</font> (!cyclic-&gt;explicitmatrix &amp;&amp; !cyclic-&gt;usereps) {
+<a name="line812">812: </a>    <font color="#B22222">/* use as default an <a href="../../../../docs/manualpages/ST/ST.html#ST">ST</a> with shell matrix and Jacobi */</font>
+<a name="line813">813: </a>    <a href="../../../../docs/manualpages/EPS/EPSGetST.html#EPSGetST">EPSGetST</a>(cyclic-&gt;eps,&amp;st);
+<a name="line814">814: </a>    <a href="../../../../docs/manualpages/ST/STSetMatMode.html#STSetMatMode">STSetMatMode</a>(st,<a href="../../../../docs/manualpages/ST/STMatMode.html#STMatMode">ST_MATMODE_SHELL</a>);
+<a name="line815">815: </a>  }
+<a name="line816">816: </a>  <a href="../../../../docs/manualpages/EPS/EPSSetFromOptions.html#EPSSetFromOptions">EPSSetFromOptions</a>(cyclic-&gt;eps);
+<a name="line817">817: </a>  <font color="#4169E1">return</font> 0;
+<a name="line818">818: </a>}
+
+<a name="line820">820: </a><strong><font color="#4169E1"><a name="SVDCyclicSetExplicitMatrix_Cyclic"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDCyclicSetExplicitMatrix_Cyclic(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscBool.html#PetscBool">PetscBool</a> explicitmat)</font></strong>
+<a name="line821">821: </a>{
+<a name="line822">822: </a>  SVD_CYCLIC *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+
+<a name="line824">824: </a>  <font color="#4169E1">if</font> (cyclic-&gt;explicitmatrix != explicitmat) {
+<a name="line825">825: </a>    cyclic-&gt;explicitmatrix = explicitmat;
+<a name="line826">826: </a>    svd-&gt;state = SVD_STATE_INITIAL;
+<a name="line827">827: </a>  }
+<a name="line828">828: </a>  <font color="#4169E1">return</font> 0;
+<a name="line829">829: </a>}
+
+<a name="line831">831: </a><font color="#B22222">/*@</font>
+<a name="line832">832: </a><font color="#B22222">   <a href="../../../../docs/manualpages/SVD/SVDCyclicSetExplicitMatrix.html#SVDCyclicSetExplicitMatrix">SVDCyclicSetExplicitMatrix</a> - Indicate if the eigensolver operator</font>
+<a name="line833">833: </a><font color="#B22222">   H(A) = [ 0  A ; A^T 0 ] must be computed explicitly.</font>
+
+<a name="line835">835: </a><font color="#B22222">   Logically Collective on svd</font>
+
+<a name="line837">837: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line838">838: </a><font color="#B22222">+  svd         - singular value solver</font>
+<a name="line839">839: </a><font color="#B22222">-  explicitmat - boolean flag indicating if H(A) is built explicitly</font>
+
+<a name="line841">841: </a><font color="#B22222">   Options Database Key:</font>
+<a name="line842">842: </a><font color="#B22222">.  -svd_cyclic_explicitmatrix &lt;boolean&gt; - Indicates the boolean flag</font>
+
+<a name="line844">844: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line846">846: </a><font color="#B22222">.seealso: <a href="../../../../docs/manualpages/SVD/SVDCyclicGetExplicitMatrix.html#SVDCyclicGetExplicitMatrix">SVDCyclicGetExplicitMatrix</a>()</font>
+<a name="line847">847: </a><font color="#B22222">@*/</font>
+<a name="line848">848: </a><strong><font color="#4169E1"><a name="SVDCyclicSetExplicitMatrix"></a><a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> <a href="../../../../docs/manualpages/SVD/SVDCyclicSetExplicitMatrix.html#SVDCyclicSetExplicitMatrix">SVDCyclicSetExplicitMatrix</a>(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscBool.html#PetscBool">PetscBool</a> explicitmat)</font></strong>
+<a name="line849">849: </a>{
+<a name="line852">852: </a>  PetscTryMethod(svd,<font color="#666666">"SVDCyclicSetExplicitMatrix_C"</font>,(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a>,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscBool.html#PetscBool">PetscBool</a>),(svd,explicitmat));
+<a name="line853">853: </a>  <font color="#4169E1">return</font> 0;
+<a name="line854">854: </a>}
+
+<a name="line856">856: </a><strong><font color="#4169E1"><a name="SVDCyclicGetExplicitMatrix_Cyclic"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDCyclicGetExplicitMatrix_Cyclic(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscBool.html#PetscBool">PetscBool</a> *explicitmat)</font></strong>
+<a name="line857">857: </a>{
+<a name="line858">858: </a>  SVD_CYCLIC *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+
+<a name="line860">860: </a>  *explicitmat = cyclic-&gt;explicitmatrix;
+<a name="line861">861: </a>  <font color="#4169E1">return</font> 0;
+<a name="line862">862: </a>}
+
+<a name="line864">864: </a><font color="#B22222">/*@</font>
+<a name="line865">865: </a><font color="#B22222">   <a href="../../../../docs/manualpages/SVD/SVDCyclicGetExplicitMatrix.html#SVDCyclicGetExplicitMatrix">SVDCyclicGetExplicitMatrix</a> - Returns the flag indicating if H(A) is built explicitly.</font>
+
+<a name="line867">867: </a><font color="#B22222">   Not Collective</font>
+
+<a name="line869">869: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line870">870: </a><font color="#B22222">.  svd  - singular value solver</font>
+
+<a name="line872">872: </a><font color="#B22222">   Output Parameter:</font>
+<a name="line873">873: </a><font color="#B22222">.  explicitmat - the mode flag</font>
+
+<a name="line875">875: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line877">877: </a><font color="#B22222">.seealso: <a href="../../../../docs/manualpages/SVD/SVDCyclicSetExplicitMatrix.html#SVDCyclicSetExplicitMatrix">SVDCyclicSetExplicitMatrix</a>()</font>
+<a name="line878">878: </a><font color="#B22222">@*/</font>
+<a name="line879">879: </a><strong><font color="#4169E1"><a name="SVDCyclicGetExplicitMatrix"></a><a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> <a href="../../../../docs/manualpages/SVD/SVDCyclicGetExplicitMatrix.html#SVDCyclicGetExplicitMatrix">SVDCyclicGetExplicitMatrix</a>(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscBool.html#PetscBool">PetscBool</a> *explicitmat)</font></strong>
+<a name="line880">880: </a>{
+<a name="line883">883: </a>  PetscUseMethod(svd,<font color="#666666">"SVDCyclicGetExplicitMatrix_C"</font>,(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a>,<a href="https://petsc.org/release/docs/manualpages/Sys/PetscBool.html#PetscBool">PetscBool</a>*),(svd,explicitmat));
+<a name="line884">884: </a>  <font color="#4169E1">return</font> 0;
+<a name="line885">885: </a>}
+
+<a name="line887">887: </a><strong><font color="#4169E1"><a name="SVDCyclicSetEPS_Cyclic"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDCyclicSetEPS_Cyclic(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd,<a href="../../../../docs/manualpages/EPS/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line888">888: </a>{
+<a name="line889">889: </a>  SVD_CYCLIC      *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+
+<a name="line891">891: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectReference.html#PetscObjectReference">PetscObjectReference</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)eps);
+<a name="line892">892: </a>  <a href="../../../../docs/manualpages/EPS/EPSDestroy.html#EPSDestroy">EPSDestroy</a>(&amp;cyclic-&gt;eps);
+<a name="line893">893: </a>  cyclic-&gt;eps     = eps;
+<a name="line894">894: </a>  cyclic-&gt;usereps = <a href="https://petsc.org/release/docs/manualpages/Sys/PETSC_TRUE.html#PETSC_TRUE">PETSC_TRUE</a>;
+<a name="line895">895: </a>  svd-&gt;state      = SVD_STATE_INITIAL;
+<a name="line896">896: </a>  <font color="#4169E1">return</font> 0;
+<a name="line897">897: </a>}
+
+<a name="line899">899: </a><font color="#B22222">/*@</font>
+<a name="line900">900: </a><font color="#B22222">   <a href="../../../../docs/manualpages/SVD/SVDCyclicSetEPS.html#SVDCyclicSetEPS">SVDCyclicSetEPS</a> - Associate an eigensolver object (<a href="../../../../docs/manualpages/EPS/EPS.html#EPS">EPS</a>) to the</font>
+<a name="line901">901: </a><font color="#B22222">   singular value solver.</font>
+
+<a name="line903">903: </a><font color="#B22222">   Collective on svd</font>
+
+<a name="line905">905: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line906">906: </a><font color="#B22222">+  svd - singular value solver</font>
+<a name="line907">907: </a><font color="#B22222">-  eps - the eigensolver object</font>
+
+<a name="line909">909: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line911">911: </a><font color="#B22222">.seealso: <a href="../../../../docs/manualpages/SVD/SVDCyclicGetEPS.html#SVDCyclicGetEPS">SVDCyclicGetEPS</a>()</font>
+<a name="line912">912: </a><font color="#B22222">@*/</font>
+<a name="line913">913: </a><strong><font color="#4169E1"><a name="SVDCyclicSetEPS"></a><a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> <a href="../../../../docs/manualpages/SVD/SVDCyclicSetEPS.html#SVDCyclicSetEPS">SVDCyclicSetEPS</a>(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd,<a href="../../../../docs/manualpages/EPS/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line914">914: </a>{
+<a name="line918">918: </a>  PetscTryMethod(svd,<font color="#666666">"SVDCyclicSetEPS_C"</font>,(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a>,<a href="../../../../docs/manualpages/EPS/EPS.html#EPS">EPS</a>),(svd,eps));
+<a name="line919">919: </a>  <font color="#4169E1">return</font> 0;
+<a name="line920">920: </a>}
+
+<a name="line922">922: </a><strong><font color="#4169E1"><a name="SVDCyclicGetEPS_Cyclic"></a>static <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDCyclicGetEPS_Cyclic(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd,<a href="../../../../docs/manualpages/EPS/EPS.html#EPS">EPS</a> *eps)</font></strong>
+<a name="line923">923: </a>{
+<a name="line924">924: </a>  SVD_CYCLIC     *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+
+<a name="line926">926: </a>  <font color="#4169E1">if</font> (!cyclic-&gt;eps) {
+<a name="line927">927: </a>    <a href="../../../../docs/manualpages/EPS/EPSCreate.html#EPSCreate">EPSCreate</a>(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComm.html#PetscObjectComm">PetscObjectComm</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd),&amp;cyclic-&gt;eps);
+<a name="line928">928: </a>    <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectIncrementTabLevel.html#PetscObjectIncrementTabLevel">PetscObjectIncrementTabLevel</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)cyclic-&gt;eps,(<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd,1);
+<a name="line929">929: </a>    <a href="../../../../docs/manualpages/EPS/EPSSetOptionsPrefix.html#EPSSetOptionsPrefix">EPSSetOptionsPrefix</a>(cyclic-&gt;eps,((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd)-&gt;prefix);
+<a name="line930">930: </a>    <a href="../../../../docs/manualpages/EPS/EPSAppendOptionsPrefix.html#EPSAppendOptionsPrefix">EPSAppendOptionsPrefix</a>(cyclic-&gt;eps,<font color="#666666">"svd_cyclic_"</font>);
+<a name="line931">931: </a>    <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectSetOptions.html#PetscObjectSetOptions">PetscObjectSetOptions</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)cyclic-&gt;eps,((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd)-&gt;options);
+<a name="line932">932: </a>    <a href="../../../../docs/manualpages/EPS/EPSSetWhichEigenpairs.html#EPSSetWhichEigenpairs">EPSSetWhichEigenpairs</a>(cyclic-&gt;eps,<a href="../../../../docs/manualpages/EPS/EPSWhich.html#EPSWhich">EPS_LARGEST_REAL</a>);
+<a name="line933">933: </a>    <a href="../../../../docs/manualpages/EPS/EPSMonitorSet.html#EPSMonitorSet">EPSMonitorSet</a>(cyclic-&gt;eps,EPSMonitor_Cyclic,svd,NULL);
+<a name="line934">934: </a>  }
+<a name="line935">935: </a>  *eps = cyclic-&gt;eps;
+<a name="line936">936: </a>  <font color="#4169E1">return</font> 0;
+<a name="line937">937: </a>}
+
+<a name="line939">939: </a><font color="#B22222">/*@</font>
+<a name="line940">940: </a><font color="#B22222">   <a href="../../../../docs/manualpages/SVD/SVDCyclicGetEPS.html#SVDCyclicGetEPS">SVDCyclicGetEPS</a> - Retrieve the eigensolver object (<a href="../../../../docs/manualpages/EPS/EPS.html#EPS">EPS</a>) associated</font>
+<a name="line941">941: </a><font color="#B22222">   to the singular value solver.</font>
+
+<a name="line943">943: </a><font color="#B22222">   Not Collective</font>
+
+<a name="line945">945: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line946">946: </a><font color="#B22222">.  svd - singular value solver</font>
+
+<a name="line948">948: </a><font color="#B22222">   Output Parameter:</font>
+<a name="line949">949: </a><font color="#B22222">.  eps - the eigensolver object</font>
+
+<a name="line951">951: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line953">953: </a><font color="#B22222">.seealso: <a href="../../../../docs/manualpages/SVD/SVDCyclicSetEPS.html#SVDCyclicSetEPS">SVDCyclicSetEPS</a>()</font>
+<a name="line954">954: </a><font color="#B22222">@*/</font>
+<a name="line955">955: </a><strong><font color="#4169E1"><a name="SVDCyclicGetEPS"></a><a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> <a href="../../../../docs/manualpages/SVD/SVDCyclicGetEPS.html#SVDCyclicGetEPS">SVDCyclicGetEPS</a>(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd,<a href="../../../../docs/manualpages/EPS/EPS.html#EPS">EPS</a> *eps)</font></strong>
+<a name="line956">956: </a>{
+<a name="line959">959: </a>  PetscUseMethod(svd,<font color="#666666">"SVDCyclicGetEPS_C"</font>,(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a>,<a href="../../../../docs/manualpages/EPS/EPS.html#EPS">EPS</a>*),(svd,eps));
+<a name="line960">960: </a>  <font color="#4169E1">return</font> 0;
+<a name="line961">961: </a>}
+
+<a name="line963">963: </a><strong><font color="#4169E1"><a name="SVDView_Cyclic"></a><a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDView_Cyclic(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd,<a href="https://petsc.org/release/docs/manualpages/Viewer/PetscViewer.html#PetscViewer">PetscViewer</a> viewer)</font></strong>
+<a name="line964">964: </a>{
+<a name="line965">965: </a>  SVD_CYCLIC     *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+<a name="line966">966: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscBool.html#PetscBool">PetscBool</a>      isascii;
+
+<a name="line968">968: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectTypeCompare.html#PetscObjectTypeCompare">PetscObjectTypeCompare</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)viewer,<a href="https://petsc.org/release/docs/manualpages/Viewer/PETSCVIEWERASCII.html#PETSCVIEWERASCII">PETSCVIEWERASCII</a>,&amp;isascii);
+<a name="line969">969: </a>  <font color="#4169E1">if</font> (isascii) {
+<a name="line970">970: </a>    <font color="#4169E1">if</font> (!cyclic-&gt;eps) <a href="../../../../docs/manualpages/SVD/SVDCyclicGetEPS.html#SVDCyclicGetEPS">SVDCyclicGetEPS</a>(svd,&amp;cyclic-&gt;eps);
+<a name="line971">971: </a>    <a href="https://petsc.org/release/docs/manualpages/Viewer/PetscViewerASCIIPrintf.html#PetscViewerASCIIPrintf">PetscViewerASCIIPrintf</a>(viewer,<font color="#666666">"  %s matrix\n"</font>,cyclic-&gt;explicitmatrix?<font color="#666666">"explicit"</font>:<font color="#666666">"implicit"</font>);
+<a name="line972">972: </a>    <a href="https://petsc.org/release/docs/manualpages/Viewer/PetscViewerASCIIPushTab.html#PetscViewerASCIIPushTab">PetscViewerASCIIPushTab</a>(viewer);
+<a name="line973">973: </a>    <a href="../../../../docs/manualpages/EPS/EPSView.html#EPSView">EPSView</a>(cyclic-&gt;eps,viewer);
+<a name="line974">974: </a>    <a href="https://petsc.org/release/docs/manualpages/Viewer/PetscViewerASCIIPopTab.html#PetscViewerASCIIPopTab">PetscViewerASCIIPopTab</a>(viewer);
+<a name="line975">975: </a>  }
+<a name="line976">976: </a>  <font color="#4169E1">return</font> 0;
+<a name="line977">977: </a>}
+
+<a name="line979">979: </a><strong><font color="#4169E1"><a name="SVDReset_Cyclic"></a><a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDReset_Cyclic(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd)</font></strong>
+<a name="line980">980: </a>{
+<a name="line981">981: </a>  SVD_CYCLIC     *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+
+<a name="line983">983: </a>  <a href="../../../../docs/manualpages/EPS/EPSReset.html#EPSReset">EPSReset</a>(cyclic-&gt;eps);
+<a name="line984">984: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatDestroy.html#MatDestroy">MatDestroy</a>(&amp;cyclic-&gt;C);
+<a name="line985">985: </a>  <a href="https://petsc.org/release/docs/manualpages/Mat/MatDestroy.html#MatDestroy">MatDestroy</a>(&amp;cyclic-&gt;D);
+<a name="line986">986: </a>  <font color="#4169E1">return</font> 0;
+<a name="line987">987: </a>}
+
+<a name="line989">989: </a><strong><font color="#4169E1"><a name="SVDDestroy_Cyclic"></a><a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDDestroy_Cyclic(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd)</font></strong>
+<a name="line990">990: </a>{
+<a name="line991">991: </a>  SVD_CYCLIC     *cyclic = (SVD_CYCLIC*)svd-&gt;data;
+
+<a name="line993">993: </a>  <a href="../../../../docs/manualpages/EPS/EPSDestroy.html#EPSDestroy">EPSDestroy</a>(&amp;cyclic-&gt;eps);
+<a name="line994">994: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscFree.html#PetscFree">PetscFree</a>(svd-&gt;data);
+<a name="line995">995: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComposeFunction.html#PetscObjectComposeFunction">PetscObjectComposeFunction</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd,<font color="#666666">"SVDCyclicSetEPS_C"</font>,NULL);
+<a name="line996">996: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComposeFunction.html#PetscObjectComposeFunction">PetscObjectComposeFunction</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd,<font color="#666666">"SVDCyclicGetEPS_C"</font>,NULL);
+<a name="line997">997: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComposeFunction.html#PetscObjectComposeFunction">PetscObjectComposeFunction</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd,<font color="#666666">"SVDCyclicSetExplicitMatrix_C"</font>,NULL);
+<a name="line998">998: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComposeFunction.html#PetscObjectComposeFunction">PetscObjectComposeFunction</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd,<font color="#666666">"SVDCyclicGetExplicitMatrix_C"</font>,NULL);
+<a name="line999">999: </a>  <font color="#4169E1">return</font> 0;
+<a name="line1000">1000: </a>}
+
+<a name="line1002">1002: </a><strong><font color="#4169E1"><a name="SVDCreate_Cyclic"></a>SLEPC_EXTERN <a href="https://petsc.org/release/docs/manualpages/Sys/PetscErrorCode.html#PetscErrorCode">PetscErrorCode</a> SVDCreate_Cyclic(<a href="../../../../docs/manualpages/SVD/SVD.html#SVD">SVD</a> svd)</font></strong>
+<a name="line1003">1003: </a>{
+<a name="line1004">1004: </a>  SVD_CYCLIC     *cyclic;
+
+<a name="line1006">1006: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscNew.html#PetscNew">PetscNew</a>(&amp;cyclic);
+<a name="line1007">1007: </a>  svd-&gt;data                = (void*)cyclic;
+<a name="line1008">1008: </a>  svd-&gt;ops-&gt;solve          = SVDSolve_Cyclic;
+<a name="line1009">1009: </a>  svd-&gt;ops-&gt;solveg         = SVDSolve_Cyclic;
+<a name="line1010">1010: </a>  svd-&gt;ops-&gt;solveh         = SVDSolve_Cyclic;
+<a name="line1011">1011: </a>  svd-&gt;ops-&gt;setup          = SVDSetUp_Cyclic;
+<a name="line1012">1012: </a>  svd-&gt;ops-&gt;setfromoptions = SVDSetFromOptions_Cyclic;
+<a name="line1013">1013: </a>  svd-&gt;ops-&gt;destroy        = SVDDestroy_Cyclic;
+<a name="line1014">1014: </a>  svd-&gt;ops-&gt;reset          = SVDReset_Cyclic;
+<a name="line1015">1015: </a>  svd-&gt;ops-&gt;view           = SVDView_Cyclic;
+<a name="line1016">1016: </a>  svd-&gt;ops-&gt;computevectors = SVDComputeVectors_Cyclic;
+<a name="line1017">1017: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComposeFunction.html#PetscObjectComposeFunction">PetscObjectComposeFunction</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd,<font color="#666666">"SVDCyclicSetEPS_C"</font>,SVDCyclicSetEPS_Cyclic);
+<a name="line1018">1018: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComposeFunction.html#PetscObjectComposeFunction">PetscObjectComposeFunction</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd,<font color="#666666">"SVDCyclicGetEPS_C"</font>,SVDCyclicGetEPS_Cyclic);
+<a name="line1019">1019: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComposeFunction.html#PetscObjectComposeFunction">PetscObjectComposeFunction</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd,<font color="#666666">"SVDCyclicSetExplicitMatrix_C"</font>,SVDCyclicSetExplicitMatrix_Cyclic);
+<a name="line1020">1020: </a>  <a href="https://petsc.org/release/docs/manualpages/Sys/PetscObjectComposeFunction.html#PetscObjectComposeFunction">PetscObjectComposeFunction</a>((<a href="https://petsc.org/release/docs/manualpages/Sys/PetscObject.html#PetscObject">PetscObject</a>)svd,<font color="#666666">"SVDCyclicGetExplicitMatrix_C"</font>,SVDCyclicGetExplicitMatrix_Cyclic);
+<a name="line1021">1021: </a>  <font color="#4169E1">return</font> 0;
+<a name="line1022">1022: </a>}
+</pre>
+</body>
+
+</html>
