@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: gsone
+Version: 0.1.0
+Summary: GS1 Barcode helpers
+Home-page: https://github.com/versada/gsone
+Author: Versada (Andrius Laukavičius)
+Author-email: andrius.laukavicius@versada.eu
+License: LGPLv3
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+GS1 Barcode
+###########
+
+Allows to calculate `GS1 <https://www.gs1.org>`_ barcode:
+
+* Can calculate check digit for given GS1 barcode number.
+* Can generate GS1 barcode number using company prefix and serial number.

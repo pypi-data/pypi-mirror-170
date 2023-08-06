@@ -1,0 +1,8 @@
+gsone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gsone/gsone.py,sha256=530T3JPXn0gKHRi1Uv5ahkIw_t4X12gAV_9FGyiN0fc,3149
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_gsone.py,sha256=R4866gxZN0qvHAd986KaWSxqKM8E51Osqh_nd6-y16U,2532
+gsone-0.1.0.dist-info/METADATA,sha256=UokHQKllskjBKCElCaq_aiLKXOSeZzliDmaxMVbvbcU,1067
+gsone-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+gsone-0.1.0.dist-info/top_level.txt,sha256=O2cVaLVXvHdH_unJwdfc__dXWo6D5gDKn5O372gvDoQ,12
+gsone-0.1.0.dist-info/RECORD,,
