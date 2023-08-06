@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nw
+Version: 0.0.3
+Summary: Association mining
+Home-page: https://github.com/thorwhalen/ut/tree/master/ml/association/fp_tree.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# nw
+Association mining
+
+
+To install:	```pip install nw```
+
+
