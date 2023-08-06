@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "deucalion"
+version = "0.0.1"
+description = "Deucalion: Edge anomaly detection framework based on Prometheus monitoring."
+authors = ["Pieter Moens <pieter.moens@ugent.be>"]
+packages = [
+        { include = "deucalion"}
+    ]
+readme = "README.md"
+repository = "https://github.com/pimoens/deucalion"
+documentation = ""
+keywords = ["deucalion", "anomaly detection", "prometheus", "kubernetes", "microservices"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+python = "^3.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

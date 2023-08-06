@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: deucalion
+Version: 0.0.1
+Summary: Deucalion: Edge anomaly detection framework based on Prometheus monitoring.
+Home-page: https://github.com/pimoens/deucalion
+Keywords: deucalion,anomaly detection,prometheus,kubernetes,microservices
+Author: Pieter Moens
+Author-email: pieter.moens@ugent.be
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/pimoens/deucalion
+Description-Content-Type: text/markdown
+
+# Deucalion: Edge anomaly detection framework based on Prometheus
+
+## Surviving the flood of monitoring data
+
+This repository is a monorepo containing:
+- The Deucalion Python library
+- A boilerplate Deucalion application
+- Helm deployment charts
+- Evaluation setup
