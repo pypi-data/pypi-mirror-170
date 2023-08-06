@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: joj-auth
+Version: 0.0.2
+Summary: Get JOJ SID
+Home-page: https://github.com/linsyking/joj-auth
+Author: linsy king
+Author-email: linsy_king@sjtu.edu.cn
+License: MIT License
+Keywords: joj
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: beautifulsoup4
+Requires-Dist: jaccount-cli
+Requires-Dist: typer
+

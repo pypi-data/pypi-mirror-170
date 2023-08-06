@@ -1,0 +1,11 @@
+joj_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+joj_auth/__main__.py,sha256=KoPPa_aHBxaYrWcTjOdRbl9hXJnCUhppLR0z5WsO7mE,548
+joj_auth/command_line.py,sha256=iQfWaO8MM0A9EQR-aXhEuY0Hp5ufkmByrm1yxWbnK18,65
+joj_auth/joj.py,sha256=XjIVqTAyiL3x0fPw2dCZXcsa-fIOYMab_mp9IOLOKQI,383
+joj_auth/login.py,sha256=BNcy_pVZY7Z7y1l3cZQw20RT6gqM0c6UDne2t5Gbvo8,473
+joj_auth-0.0.2.dist-info/LICENSE,sha256=yomCqCNAzUiZ8IclYTB_D6T9PD1lXpHjBI-fuw_XNxI,1064
+joj_auth-0.0.2.dist-info/METADATA,sha256=ZGO_roXt4El6spMWrK5gmogg0FgDjf5gHe_VcwyBYO4,401
+joj_auth-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+joj_auth-0.0.2.dist-info/entry_points.txt,sha256=i6vdK6BGkiVsEHXslmpYsvwgPiXhGlE62FGpkk0IpkA,56
+joj_auth-0.0.2.dist-info/top_level.txt,sha256=VRP7VVeDBnY5cEK0mbRxLePa0NJ_7nO-UQ8woHHlqmY,9
+joj_auth-0.0.2.dist-info/RECORD,,
