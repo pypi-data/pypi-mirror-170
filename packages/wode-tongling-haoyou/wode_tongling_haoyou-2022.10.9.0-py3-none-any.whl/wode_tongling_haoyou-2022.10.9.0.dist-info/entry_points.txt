@@ -1,0 +1,4 @@
+[console_scripts]
+WodeTonglingHaoyou = WodeTonglingHaoyou.__main__:main
+wode-tongling-haoyou = WodeTonglingHaoyou.__main__:main
+
