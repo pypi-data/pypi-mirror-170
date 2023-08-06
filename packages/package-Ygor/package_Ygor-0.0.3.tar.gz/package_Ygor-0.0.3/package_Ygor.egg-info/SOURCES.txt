@@ -1,0 +1,14 @@
+README.md
+setup.py
+package_Ygor/__init__.py
+package_Ygor.egg-info/PKG-INFO
+package_Ygor.egg-info/SOURCES.txt
+package_Ygor.egg-info/dependency_links.txt
+package_Ygor.egg-info/requires.txt
+package_Ygor.egg-info/top_level.txt
+package_Ygor/module1_name/Combination.py
+package_Ygor/module1_name/Transformation.py
+package_Ygor/module1_name/__init__.py
+package_Ygor/module2_name/Io.py
+package_Ygor/module2_name/Plot.py
+package_Ygor/module2_name/__init__.py
