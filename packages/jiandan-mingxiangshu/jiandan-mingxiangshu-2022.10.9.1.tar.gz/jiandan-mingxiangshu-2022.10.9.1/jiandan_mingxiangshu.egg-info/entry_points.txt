@@ -1,0 +1,4 @@
+[console_scripts]
+JiandanMingxiangshu = JiandanMingxiangshu.__main__:main
+jiandan-mingxiangshu = JiandanMingxiangshu.__main__:main
+
