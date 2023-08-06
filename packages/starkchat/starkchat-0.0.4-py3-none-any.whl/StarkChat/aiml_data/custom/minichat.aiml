@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+    <category>
+        <pattern>STARKCHAT</pattern>
+        <template>Hello, it's me. I was created by the developer Sathishzus (https://sathishzus.vercel.app)</template>
+    </category>
+</aiml>
