@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mausy5043-common
+Version: 0.1.1
+Summary: Common python functions
+Project-URL: Homepage, https://github.com/Mausy5043/mausy5043-common
+Project-URL: Bug Tracker, https://github.com/Mausy5043/mausy5043-common/issues
+Author-email: Mausy5043 <mausy5043@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: pandas
+Description-Content-Type: text/markdown
+
+# mausy5043-common
+
+# NOTE:
+## user action required !!
+Before trying to use the SQLITE3 functions in this package make sure you have installed the sqlite3 server/client and 
+the default Python package that comes with it.
