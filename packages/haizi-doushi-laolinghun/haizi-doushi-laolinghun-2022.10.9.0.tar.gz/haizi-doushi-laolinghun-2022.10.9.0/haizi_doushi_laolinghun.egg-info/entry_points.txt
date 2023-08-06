@@ -1,0 +1,4 @@
+[console_scripts]
+HaiziDoushiLaolinghun = HaiziDoushiLaolinghun.__main__:main
+haizi-doushi-laolinghun = HaiziDoushiLaolinghun.__main__:main
+
