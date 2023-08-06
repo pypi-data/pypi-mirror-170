@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: uripecker
+Version: 0.0.2
+Summary: uripecker - Peck them URIs out
+Home-page: https://gitlab.com/vornet/python/python-uripecker
+Author: UNKNOWN
+Author-email: Alois Mahdal <netvor+uripecker@vornet.cz>
+License: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Description: 
+        __VDK_PYLIB_DESC_MAIN__
+        
+Platform: UNKNOWN
