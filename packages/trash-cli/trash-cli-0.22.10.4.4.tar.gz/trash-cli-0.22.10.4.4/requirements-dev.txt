@@ -1,0 +1,7 @@
+mock
+pytest
+six
+twine
+setuptools
+build
+flexmock
