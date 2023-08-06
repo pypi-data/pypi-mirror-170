@@ -1,0 +1,8 @@
+abc_classification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+abc_classification/abc_classifier.py,sha256=VawRyfLQ-p6EWlXna0nH-BGhJqLVmJxktHAxz-a2z5M,2434
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_abc_classifier.py,sha256=pnEvOyN7ctjoKj-DRTC3qpx1cQysvy243i_-5OQ_N0A,1229
+abc_classification-0.0.6.dist-info/METADATA,sha256=ADYmG0Dan7_GUXAmkrBnHwPsJslmytMGqJRTiEzPOqA,2081
+abc_classification-0.0.6.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+abc_classification-0.0.6.dist-info/top_level.txt,sha256=cLMi-sib6zhiHFFaCku_gBtfE5i_f9Szua1yb0WSYjA,25
+abc_classification-0.0.6.dist-info/RECORD,,
