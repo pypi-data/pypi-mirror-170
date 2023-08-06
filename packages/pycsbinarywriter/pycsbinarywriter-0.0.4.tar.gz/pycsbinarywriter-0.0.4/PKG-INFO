@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pycsbinarywriter
+Version: 0.0.4
+Summary: Helpers for parsing binary data created by dotnet BinaryWriters.
+Home-page: https://gitlab.com/N3X15/pycsbinarywriter
+License: MIT
+Author: Rob Nelson
+Author-email: nexisentertainment@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pytz (>=2022.2.1,<2023.0.0)
+Project-URL: Repository, https://gitlab.com/N3X15/pycsbinarywriter
+Description-Content-Type: text/markdown
+
+# pyCSBinaryWriter
+
+A simple library for .NET binary (de)serialization.
+
+## Limitations
+
+* Decimal is not implemented yet. Pull requests are welcome.
+
+## Installation
+
+```shell
+$ pip install -U pycsbinarywriter
+```
+
+## Usage
+
+```python
+from pycsbinarywriter import cstypes
+
+# Decode .NET 7-bit-prefixed string
+assert 'abc123' == cstypes.string.unpack(b'\x06\x61\x62\x63\x31\x32\x33')
+
+# Decode .NET uint8 (ubyte)
+assert 127 == cstypes.uint8.unpack(b'\x7f')
+
+# Encode .NET int16
+assert b'\x2e\xfb' == cstypes.int16.pack(-1234)
+```
+
+## License
+
+MIT License
+
