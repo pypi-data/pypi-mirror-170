@@ -1,0 +1,4 @@
+[console_scripts]
+QingxingmengWanquanShouce = QingxingmengWanquanShouce.__main__:main
+qingxingmeng-wanquan-shouce = QingxingmengWanquanShouce.__main__:main
+
