@@ -1,0 +1,3 @@
+[console_scripts]
+msc=moralis_streams_client:cli
+
