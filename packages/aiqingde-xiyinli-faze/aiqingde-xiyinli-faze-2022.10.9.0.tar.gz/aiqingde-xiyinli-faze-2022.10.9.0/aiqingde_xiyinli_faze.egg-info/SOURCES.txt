@@ -1,0 +1,12 @@
+README.md
+setup.py
+AiqingdeXiyinliFaze/README.md
+AiqingdeXiyinliFaze/__init__.py
+AiqingdeXiyinliFaze/__main__.py
+AiqingdeXiyinliFaze/file.pdf
+AiqingdeXiyinliFaze/index.html
+aiqingde_xiyinli_faze.egg-info/PKG-INFO
+aiqingde_xiyinli_faze.egg-info/SOURCES.txt
+aiqingde_xiyinli_faze.egg-info/dependency_links.txt
+aiqingde_xiyinli_faze.egg-info/entry_points.txt
+aiqingde_xiyinli_faze.egg-info/top_level.txt
