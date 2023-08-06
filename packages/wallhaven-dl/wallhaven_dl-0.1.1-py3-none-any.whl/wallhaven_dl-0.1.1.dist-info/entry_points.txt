@@ -1,0 +1,2 @@
+[console_scripts]
+wallhaven_dl = wallhaven_dl:main
