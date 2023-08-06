@@ -1,0 +1,4 @@
+[console_scripts]
+CaifudeXinlingFaze = CaifudeXinlingFaze.__main__:main
+caifude-xinling-faze = CaifudeXinlingFaze.__main__:main
+
