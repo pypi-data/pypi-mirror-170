@@ -1,0 +1,9 @@
+book_library/__init__.py,sha256=A1wzkmDlutuJeChhnmjTroGbd38Ax5o_zwcd5xb649M,34
+book_library/details/__init__.py,sha256=M8SxcGvvzZOOhbq64Hz6nsygMv9Vv2tvmsj4ZT7_D7M,89
+book_library/details/book.py,sha256=yDoB3AAC3RHHGN0slWdj2CoozEwMK4X4wFh4zPDGPQE,591
+book_library/details/writer.py,sha256=qDDF37h7eR_6RwwzWzzgqq6EWg7rnC0uqR6OzVZdgSA,326
+book_library-0.1.dist-info/LICENSE.TXT,sha256=ZjWR4gBLuXzlsqeuy1O0FrfAblY_0JBW0YcI-uhKIrQ,1057
+book_library-0.1.dist-info/METADATA,sha256=iWT3YdGtLuwrljwGIMd_pBQyiFnbx4GCPhO8ccAZMII,377
+book_library-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+book_library-0.1.dist-info/top_level.txt,sha256=qx7BeFDqQUuJoAocX4f5o6WhcBkpOj8bXRuF3vjJE3s,13
+book_library-0.1.dist-info/RECORD,,
