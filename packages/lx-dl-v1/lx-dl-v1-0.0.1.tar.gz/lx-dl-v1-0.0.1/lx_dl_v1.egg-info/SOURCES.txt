@@ -1,0 +1,16 @@
+README.md
+setup.py
+datalake/__init__.py
+datalake/annotation.py
+datalake/constants.py
+datalake/datalakeinterface.py
+datalake/dataset.py
+datalake/keys.py
+datalake/label.py
+datalake/logger.py
+datalake/model.py
+lx_dl_v1.egg-info/PKG-INFO
+lx_dl_v1.egg-info/SOURCES.txt
+lx_dl_v1.egg-info/dependency_links.txt
+lx_dl_v1.egg-info/requires.txt
+lx_dl_v1.egg-info/top_level.txt
