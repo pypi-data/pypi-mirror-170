@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nbdapi
+Version: 0.0.1
+Summary: nbapi is an open source python library that acts as an API wrapper for National Bank Direct Brokerage.
+Author: Andre Ceschia
+Author-email: andre.ceschia04@gmail.com
+Keywords: python,finance,national bank direct brokerage,national bank of canada,broker api,nbdb
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE

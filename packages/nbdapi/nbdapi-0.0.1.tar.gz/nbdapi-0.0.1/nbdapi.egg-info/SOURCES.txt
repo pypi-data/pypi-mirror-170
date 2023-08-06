@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+nbdapi/__init__.py
+nbdapi/nbdapi.py
+nbdapi.egg-info/PKG-INFO
+nbdapi.egg-info/SOURCES.txt
+nbdapi.egg-info/dependency_links.txt
+nbdapi.egg-info/requires.txt
+nbdapi.egg-info/top_level.txt
