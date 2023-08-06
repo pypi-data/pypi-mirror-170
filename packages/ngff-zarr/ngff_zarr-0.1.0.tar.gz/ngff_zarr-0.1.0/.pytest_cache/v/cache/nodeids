@@ -1,0 +1,6 @@
+[
+  "test/test_itk_image_to_ngff_image.py::test_2d_image",
+  "test/test_itk_image_to_ngff_image.py::test_2d_itk_image",
+  "test/test_itk_image_to_ngff_image.py::test_2d_itkwasm_image",
+  "test/test_to_ngff_zarr_dask_image.py::test_gaussian_isotropic_scale_factors"
+]
