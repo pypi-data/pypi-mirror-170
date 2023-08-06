@@ -1,0 +1,13 @@
+README.md
+setup.py
+Shouzhiwu/Dockerfile
+Shouzhiwu/README.md
+Shouzhiwu/__init__.py
+Shouzhiwu/__main__.py
+Shouzhiwu/file.pdf
+Shouzhiwu/index.html
+shouzhiwu.egg-info/PKG-INFO
+shouzhiwu.egg-info/SOURCES.txt
+shouzhiwu.egg-info/dependency_links.txt
+shouzhiwu.egg-info/entry_points.txt
+shouzhiwu.egg-info/top_level.txt
