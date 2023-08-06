@@ -1,0 +1,5 @@
+[gui_scripts]
+splatplost = splatplost.gui.plotter:main
+
+[pyinstaller40]
+hook-dirs = splatplost.pyinstaller:get_hook_dirs
