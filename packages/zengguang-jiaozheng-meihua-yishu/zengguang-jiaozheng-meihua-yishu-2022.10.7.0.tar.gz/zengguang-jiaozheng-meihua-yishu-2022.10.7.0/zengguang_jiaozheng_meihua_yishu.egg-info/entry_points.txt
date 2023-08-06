@@ -1,0 +1,4 @@
+[console_scripts]
+ZengguangJiaozhengMeihuaYishu = ZengguangJiaozhengMeihuaYishu.__main__:main
+zengguang-jiaozheng-meihua-yishu = ZengguangJiaozhengMeihuaYishu.__main__:main
+
