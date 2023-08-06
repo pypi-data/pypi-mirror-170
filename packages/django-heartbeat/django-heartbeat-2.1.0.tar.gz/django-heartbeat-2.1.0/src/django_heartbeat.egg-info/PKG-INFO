@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: django-heartbeat
+Version: 2.1.0
+Summary: Your project's heartbeat/healthcheck and dependency status
+Home-page: https://github.com/pbs/django-heartbeat/
+Author: PBS Core Services
+Author-email: pbsi-team-core-services@pbs.org
+Keywords: django heartbeat health check dependency services status
+License-File: LICENSE
+
+A simple reusable app that checks and lists various information about your project and its dependencies
