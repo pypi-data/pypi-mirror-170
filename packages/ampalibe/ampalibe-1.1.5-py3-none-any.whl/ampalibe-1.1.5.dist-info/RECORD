@@ -1,0 +1,15 @@
+ampalibe/__init__.py,sha256=Xz1xwcEWJ6GtfSdZjzJSVPZPKAQnbZlq7NEXorpqX_k,5170
+ampalibe/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ampalibe/core.py,sha256=Zte9QsUVB3P31lHUvoVl3vbnckCWgS9PeSTmDtNYIwA,4720
+ampalibe/messenger.py,sha256=UbZtEVshv4WeH6AcsD4Eh0VeY7g7HwqcXq41y8Qz3VA,21255
+ampalibe/model.py,sha256=fN7wlrNlBHP6gT0e5a6HfhNHlMJTlkjbJ7i0ZGx2aso,9109
+ampalibe/source.py,sha256=MX9NnXUFL2XAtcdDOgFumpkfiiAe7ZXaYMXApFR3oRQ,2662
+ampalibe/ui.py,sha256=7NMTAWrtAyzSkpB-WvPRC7RUCg6Izt17BTLFb96m09E,4501
+ampalibe/utils.py,sha256=5UY7QArDJ7iUGMiFoU9U-shtOH_EGPoCT1VhUVk7Ldk,7206
+ampalibe-1.1.5.data/scripts/ampalibe,sha256=CkDQJVfvMBlLj8cFC_vqVLiMSgJe0Xa_lLqpvlfCcY4,2778
+ampalibe-1.1.5.data/scripts/ampalibe.bat,sha256=T1OErfYFdZq9ELYHg-6_Ra7I8uhz5zVXNjgzWKjzWmw,1025
+ampalibe-1.1.5.dist-info/LICENSE,sha256=GWuEyMKAocdyAFsNqRKWGSkxPL_kFbq3niAeG8XHnvk,1064
+ampalibe-1.1.5.dist-info/METADATA,sha256=LdvebGG6oy96cSWvPchSQ8q0FumkyJNTVUf0x2YjA0k,6668
+ampalibe-1.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ampalibe-1.1.5.dist-info/top_level.txt,sha256=xd5jyljvqj49pOf3Rb8FrxwebmsiA3Z4mNbtviDAEnA,9
+ampalibe-1.1.5.dist-info/RECORD,,
