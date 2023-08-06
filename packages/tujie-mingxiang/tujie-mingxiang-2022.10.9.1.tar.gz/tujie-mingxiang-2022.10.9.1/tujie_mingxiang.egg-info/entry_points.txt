@@ -1,0 +1,4 @@
+[console_scripts]
+TujieMingxiang = TujieMingxiang.__main__:main
+tujie-mingxiang = TujieMingxiang.__main__:main
+
