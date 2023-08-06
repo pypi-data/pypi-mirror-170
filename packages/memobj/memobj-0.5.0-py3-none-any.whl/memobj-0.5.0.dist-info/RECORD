@@ -1,0 +1,13 @@
+memobj/__init__.py,sha256=YEhqHat0Vz5tVKQBcjVZPHHW71EOYFNe2a9w4lKUXNg,105
+memobj/object.py,sha256=4IpNxdCMxeWnlN9CLwsXYLhojHzKxtrx3NrwAW0ieQQ,2987
+memobj/process.py,sha256=eqfDVwL1SqatchOQBBWdGjwmfphrupo5O-sZL4eB0nw,21189
+memobj/property/__init__.py,sha256=PjGBCS3EkntBoQdxm6xQXfz3vAg7hhO8buXV0uudcqA,93
+memobj/property/array.py,sha256=x8BJtU24fXdWDx665z3LZVRdn98dacnVp5Keo2ksTZw,1794
+memobj/property/base.py,sha256=uZB-xnhbkkmyJ3X2FEwy8N3iOuYYMY2cBIQyQcbTIIw,1738
+memobj/property/pointer.py,sha256=Kt-F7WMohxNy-0hWqaLxHtM6OC-ngeLge3CEw0KEmvQ,4854
+memobj/property/simple.py,sha256=zMsLsAgQHS_mDNCODhbOUU_IOC2yMTNW8LwzM0o_aDM,1273
+memobj/utils.py,sha256=nJEbpld1AEv2K6AB0pNCOdEbI9HoEzRN7qcBMWFsqZk,1105
+memobj-0.5.0.dist-info/LICENSE,sha256=h1e1eRVmNGSDBIFKg8DyHw4IEGFeIqdqe812PP7w4kM,1086
+memobj-0.5.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+memobj-0.5.0.dist-info/METADATA,sha256=yN684cOEI8-hd04AVaHVM3dQRQN4WQAj0drAe29EMWg,1022
+memobj-0.5.0.dist-info/RECORD,,
