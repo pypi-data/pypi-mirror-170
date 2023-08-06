@@ -1,0 +1,11 @@
+LICENSE
+pyproject.toml
+setup.cfg
+setup.py
+src/custom_operators/__init__.py
+src/custom_operators/operators/__init__.py
+src/custom_operators/operators/true_division.py
+src/custom_operators_ChrisPrein.egg-info/PKG-INFO
+src/custom_operators_ChrisPrein.egg-info/SOURCES.txt
+src/custom_operators_ChrisPrein.egg-info/dependency_links.txt
+src/custom_operators_ChrisPrein.egg-info/top_level.txt
