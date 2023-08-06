@@ -1,0 +1,3 @@
+[console_scripts]
+git-form-saver = gitformsaver.cli:run_http_server
+git-form-saver-jwt-token = gitformsaver.cli:generate_token
