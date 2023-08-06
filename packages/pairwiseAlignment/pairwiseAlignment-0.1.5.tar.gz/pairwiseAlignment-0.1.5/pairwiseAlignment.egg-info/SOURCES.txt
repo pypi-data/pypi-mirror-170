@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pairwiseAlignment.egg-info/PKG-INFO
+pairwiseAlignment.egg-info/SOURCES.txt
+pairwiseAlignment.egg-info/dependency_links.txt
+pairwiseAlignment.egg-info/entry_points.txt
+pairwiseAlignment.egg-info/requires.txt
+pairwiseAlignment.egg-info/top_level.txt
+src/PairwiseSeqAlignment.py
+src/__init__.py
+src/run.py
+src/utils.py
