@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/Pywrt/Pywrt.py
+src/Pywrt/__init__.py
+src/Pywrt.egg-info/PKG-INFO
+src/Pywrt.egg-info/SOURCES.txt
+src/Pywrt.egg-info/dependency_links.txt
+src/Pywrt.egg-info/top_level.txt
