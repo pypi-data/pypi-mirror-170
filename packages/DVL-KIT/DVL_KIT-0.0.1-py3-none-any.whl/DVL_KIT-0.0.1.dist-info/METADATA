@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: DVL-KIT
+Version: 0.0.1
+Summary: DEV's kit
+Home-page: https://github.com/Aqouthe
+Author: Aqouthe
+Author-email: hoonie0929@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Welcome to DEV_KIT
+Welcome to the DEV_KIT module!
+This module is a compilation of methods for working developers.
+Open this module file and check it to see what the code is!
+----------------------------------------------------------------
+# Hmm...
+I don't know what the code is because it's from someone else's blog...
+ I'll put the code as it is in the code description, so please take a look and tell me!
+-----------------------------------------------------------------
+
