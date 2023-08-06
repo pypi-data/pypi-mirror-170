@@ -1,0 +1,14 @@
+cnsyn/__init__.py,sha256=ny3ha3BoKIm-_LJOxPOyI0URPEqrQ2g04-qxmokrA5I,166
+cnsyn/__main__.py,sha256=pdO5tXK7PVNMrBpRrP3WtMpaO-zuqcd4kYfq4Cd1CfI,37
+cnsyn/simwords.py,sha256=0k7J4RFkJKzyO9XJ3aSIxTT1G6qf0Uwh4KV5rjeBAzc,2900
+cnsyn/utils_index.py,sha256=6Q1KrJyxamsg_xDfjizYtTYulRBuXuIkHIDyCsoaXDw,1638
+cnsyn/chinese_dictionary/sim_words.txt,sha256=c2rct2MxP1c6YXIlw-Xr6XSHxaApj9yqluupWkqr3ys,1593026
+cnsyn/query/MAIN_WRITELOCK,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cnsyn/query/MAIN_ue7k3fkhantq7m50.seg,sha256=V-ayvQJ76FvSBtbUcGSAGg2tJyPLMbA00asJYagQXvQ,37574062
+cnsyn/query/_MAIN_1.toc,sha256=ABK9KxnuQaj4g1zMfvJtAHLfraFFU2cl2uHY6cP2aA4,1802
+cnsyn/query/words_tree_mini.m,sha256=nGmbWPrx5G-b1bRN05xYwqwF8SzCO2pf5iNLoc50LII,82997847
+cnsyn-1.2.0.dist-info/LICENSE,sha256=Etn2r5_rA8zJxEpQCtMJLi-kaHnwoLEDsrTxKQPjpfE,11544
+cnsyn-1.2.0.dist-info/METADATA,sha256=1Cy7R3d9yhyfoJoFUHrgRKuvVFFHACmHea2R-Uto688,2300
+cnsyn-1.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cnsyn-1.2.0.dist-info/top_level.txt,sha256=O2t4QQXJnc8Zr5Ex3sChfUNLomwzkQphw5uUk9me9xA,6
+cnsyn-1.2.0.dist-info/RECORD,,
