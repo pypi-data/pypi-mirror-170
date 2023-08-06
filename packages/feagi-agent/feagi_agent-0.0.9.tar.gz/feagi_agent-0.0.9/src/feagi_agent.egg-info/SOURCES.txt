@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/feagi_agent/__init__.py
+src/feagi_agent/feagi_interface.py
+src/feagi_agent/retina.py
+src/feagi_agent/router.py
+src/feagi_agent.egg-info/PKG-INFO
+src/feagi_agent.egg-info/SOURCES.txt
+src/feagi_agent.egg-info/dependency_links.txt
+src/feagi_agent.egg-info/top_level.txt
