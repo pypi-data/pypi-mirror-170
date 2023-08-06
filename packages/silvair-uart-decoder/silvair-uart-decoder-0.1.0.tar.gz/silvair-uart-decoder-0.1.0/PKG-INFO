@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: silvair-uart-decoder
+Version: 0.1.0
+Summary: Tool for decoding Silvair UART protocol.
+Home-page: https://github.com/SilvairGit/silvair-uart-decoder
+Author: Silvair
+Author-email: support@silvair.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
