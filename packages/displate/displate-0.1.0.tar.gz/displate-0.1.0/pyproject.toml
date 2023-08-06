@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "displate"
+version = "0.1.0"
+description = "a boilterplate coder writter command line utility for discord.py"
+authors = ["NaviTheCoderboi <navindersingh568@gmail.com>"]
+readme = "README.md"
+license = "LICENCE"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3.9",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
