@@ -1,0 +1,215 @@
+# openapi_client.RealTimeMonitoringRBACApi
+
+All URIs are relative to */dataservice*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**get_pnic_stats**](RealTimeMonitoringRBACApi.md#get_pnic_stats) | **GET** /device/csp/pnic | 
+[**get_pnic_stats_from_device**](RealTimeMonitoringRBACApi.md#get_pnic_stats_from_device) | **GET** /device/csp/pnic/synced | 
+[**get_rbac_interface**](RealTimeMonitoringRBACApi.md#get_rbac_interface) | **GET** /device/csp/rbac | 
+
+
+# **get_pnic_stats**
+> {str: (bool, date, datetime, dict, float, int, list, str, none_type)} get_pnic_stats(device_id)
+
+
+
+Get pnic interfaces from device
+
+### Example
+
+
+```python
+import time
+import openapi_client
+from openapi_client.api import real_time_monitoring_rbac_api
+from pprint import pprint
+# Defining the host is optional and defaults to /dataservice
+# See configuration.py for a list of all supported configuration parameters.
+configuration = openapi_client.Configuration(
+    host = "/dataservice"
+)
+
+
+# Enter a context with an instance of the API client
+with openapi_client.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = real_time_monitoring_rbac_api.RealTimeMonitoringRBACApi(api_client)
+    device_id = "00r252U250?250" # str | Device IP
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.get_pnic_stats(device_id)
+        pprint(api_response)
+    except openapi_client.ApiException as e:
+        print("Exception when calling RealTimeMonitoringRBACApi->get_pnic_stats: %s\n" % e)
+```
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **device_id** | **str**| Device IP |
+
+### Return type
+
+**{str: (bool, date, datetime, dict, float, int, list, str, none_type)}**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
+**400** | Bad Request |  -  |
+**403** | Forbidden |  -  |
+**500** | Internal Server Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_pnic_stats_from_device**
+> {str: (bool, date, datetime, dict, float, int, list, str, none_type)} get_pnic_stats_from_device(device_id)
+
+
+
+Get pnic stats from device
+
+### Example
+
+
+```python
+import time
+import openapi_client
+from openapi_client.api import real_time_monitoring_rbac_api
+from pprint import pprint
+# Defining the host is optional and defaults to /dataservice
+# See configuration.py for a list of all supported configuration parameters.
+configuration = openapi_client.Configuration(
+    host = "/dataservice"
+)
+
+
+# Enter a context with an instance of the API client
+with openapi_client.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = real_time_monitoring_rbac_api.RealTimeMonitoringRBACApi(api_client)
+    device_id = "00r252U250?250" # str | Device IP
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.get_pnic_stats_from_device(device_id)
+        pprint(api_response)
+    except openapi_client.ApiException as e:
+        print("Exception when calling RealTimeMonitoringRBACApi->get_pnic_stats_from_device: %s\n" % e)
+```
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **device_id** | **str**| Device IP |
+
+### Return type
+
+**{str: (bool, date, datetime, dict, float, int, list, str, none_type)}**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
+**400** | Bad Request |  -  |
+**403** | Forbidden |  -  |
+**500** | Internal Server Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_rbac_interface**
+> {str: (bool, date, datetime, dict, float, int, list, str, none_type)} get_rbac_interface(device_id)
+
+
+
+Get RBAC interfaces from device
+
+### Example
+
+
+```python
+import time
+import openapi_client
+from openapi_client.api import real_time_monitoring_rbac_api
+from pprint import pprint
+# Defining the host is optional and defaults to /dataservice
+# See configuration.py for a list of all supported configuration parameters.
+configuration = openapi_client.Configuration(
+    host = "/dataservice"
+)
+
+
+# Enter a context with an instance of the API client
+with openapi_client.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = real_time_monitoring_rbac_api.RealTimeMonitoringRBACApi(api_client)
+    device_id = "00r252U250?250" # str | Device IP
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.get_rbac_interface(device_id)
+        pprint(api_response)
+    except openapi_client.ApiException as e:
+        print("Exception when calling RealTimeMonitoringRBACApi->get_rbac_interface: %s\n" % e)
+```
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **device_id** | **str**| Device IP |
+
+### Return type
+
+**{str: (bool, date, datetime, dict, float, int, list, str, none_type)}**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
+**400** | Bad Request |  -  |
+**403** | Forbidden |  -  |
+**500** | Internal Server Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
