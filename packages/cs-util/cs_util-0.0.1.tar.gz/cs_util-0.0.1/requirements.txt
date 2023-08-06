@@ -1,0 +1,7 @@
+astropy
+datetime
+importlib_metadata
+numpy
+matplotlib
+pycodestyle==2.9.0
+vos
