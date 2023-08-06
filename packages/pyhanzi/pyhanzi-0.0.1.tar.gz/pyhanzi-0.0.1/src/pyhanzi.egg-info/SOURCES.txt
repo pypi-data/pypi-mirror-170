@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pyhanzi/__init__.py
+src/pyhanzi/compat.py
+src/pyhanzi/runner.py
+src/pyhanzi.egg-info/PKG-INFO
+src/pyhanzi.egg-info/SOURCES.txt
+src/pyhanzi.egg-info/dependency_links.txt
+src/pyhanzi.egg-info/entry_points.txt
+src/pyhanzi.egg-info/requires.txt
+src/pyhanzi.egg-info/top_level.txt
+src/pyhanzi/core/__init__.py
