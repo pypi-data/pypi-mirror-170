@@ -1,0 +1,4 @@
+[console_scripts]
+QimenMizhan = QimenMizhan.__main__:main
+qimen-mizhan = QimenMizhan.__main__:main
+
