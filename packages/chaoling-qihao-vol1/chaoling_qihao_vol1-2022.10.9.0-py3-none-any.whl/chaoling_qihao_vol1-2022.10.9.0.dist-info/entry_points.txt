@@ -1,0 +1,4 @@
+[console_scripts]
+ChaolingQihaoVol1 = ChaolingQihaoVol1.__main__:main
+chaoling-qihao-vol1 = ChaolingQihaoVol1.__main__:main
+
