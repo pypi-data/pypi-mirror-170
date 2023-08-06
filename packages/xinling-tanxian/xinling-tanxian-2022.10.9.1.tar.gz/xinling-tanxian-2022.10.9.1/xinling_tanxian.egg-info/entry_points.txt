@@ -1,0 +1,4 @@
+[console_scripts]
+XinlingTanxian = XinlingTanxian.__main__:main
+xinling-tanxian = XinlingTanxian.__main__:main
+
