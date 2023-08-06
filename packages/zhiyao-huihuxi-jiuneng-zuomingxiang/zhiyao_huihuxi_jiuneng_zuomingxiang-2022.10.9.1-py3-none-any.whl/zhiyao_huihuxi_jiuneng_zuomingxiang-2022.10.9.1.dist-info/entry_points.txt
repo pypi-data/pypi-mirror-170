@@ -1,0 +1,4 @@
+[console_scripts]
+ZhiyaoHuihuxiJiunengZuomingxiang = ZhiyaoHuihuxiJiunengZuomingxiang.__main__:main
+zhiyao-huihuxi-jiuneng-zuomingxiang = ZhiyaoHuihuxiJiunengZuomingxiang.__main__:main
+
