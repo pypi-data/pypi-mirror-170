@@ -1,0 +1,4 @@
+pyjsoncfg
+pytkfaicons
+tkinter-tooltip
+black
