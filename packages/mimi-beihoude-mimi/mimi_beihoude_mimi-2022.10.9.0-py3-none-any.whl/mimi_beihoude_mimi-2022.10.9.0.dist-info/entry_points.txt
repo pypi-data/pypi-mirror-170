@@ -1,0 +1,4 @@
+[console_scripts]
+MimiBeihoudeMimi = MimiBeihoudeMimi.__main__:main
+mimi-beihoude-mimi = MimiBeihoudeMimi.__main__:main
+
