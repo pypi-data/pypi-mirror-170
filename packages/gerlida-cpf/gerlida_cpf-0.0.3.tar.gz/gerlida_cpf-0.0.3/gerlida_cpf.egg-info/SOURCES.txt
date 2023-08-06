@@ -1,0 +1,11 @@
+README.md
+setup.py
+gerlida_cpf/__init__.py
+gerlida_cpf.egg-info/PKG-INFO
+gerlida_cpf.egg-info/SOURCES.txt
+gerlida_cpf.egg-info/dependency_links.txt
+gerlida_cpf.egg-info/top_level.txt
+gerlida_cpf/gera_cpf/__init__.py
+gerlida_cpf/gera_cpf/gerador_cpf.py
+gerlida_cpf/valida_cpf/__init__.py
+gerlida_cpf/valida_cpf/validacpf.py
