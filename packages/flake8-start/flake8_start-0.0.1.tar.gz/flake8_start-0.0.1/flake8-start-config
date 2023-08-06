@@ -1,0 +1,14 @@
+# This is the flake8 configuration file we use for the flake8-start project
+# We don't want to name it .flake8 so it won't interfere with our tests.
+
+# E226 - (1) - missing whitespace around arithmetic operator
+# E265 - (2) - block comment should start with '# '
+# E305 - (1) - expected 2 blank lines after class or function definition, found 1
+# E501 - (4) - line too long (108 > 79 characters)
+# W391 - (1) - blank line at end of file
+
+
+[flake8]
+ignore =
+    *.py E226 E265 E305 E501 W391 PLC0103 PLC0114 PLC0116 PLC0301 PLC0305 PLC0411 PLR1722 PLW0511 PLW0612 PLW0621 PLW1514
+exclude = projects/ examples/
