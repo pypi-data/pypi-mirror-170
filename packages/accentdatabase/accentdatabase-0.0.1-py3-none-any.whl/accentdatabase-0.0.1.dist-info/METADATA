@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: accentdatabase
+Version: 0.0.1
+Summary: Some useful description.
+Author-email: Accent Design Group Ltd <support@accentdesign.co.uk>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Requires-Dist: pydantic
+Requires-Dist: sqlalchemy>=1.4.0,<1.5.0
+Requires-Dist: autoflake ; extra == "dev"
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: mypy ; extra == "test"
+Requires-Dist: flake8 ; extra == "test"
+Requires-Dist: black ; extra == "test"
+Requires-Dist: isort ; extra == "test"
+Project-URL: Homepage, https://github.com/accentdesign/accentdatabase
+Provides-Extra: dev
+Provides-Extra: test
+
+[![Test](https://github.com/accentdesign/accentdatabase/actions/workflows/test.yml/badge.svg)](https://github.com/accentdesign/accentdatabase/actions/workflows/test.yml)
+
+---
+**Source Code**: <a href="https://github.com/accentdesign/accentdatabase" target="_blank">https://github.com/accentdesign/accentdatabase</a>
+---
