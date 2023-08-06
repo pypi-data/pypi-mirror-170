@@ -1,0 +1,15 @@
+botstudio_sdk/__init__.py,sha256=zQ_vy5z1_-FlWBjtJ9SwgI-nkbYGItRBuTGjUqyEtRY,30
+botstudio_sdk/example.py,sha256=3OdMJUgBHmfwWFtuu4y0VS5kO8POYM1EU1oU8k9ZSuk,171
+botstudio_sdk/text.py,sha256=QfH56ZTJBpo-ui5-0npEH6e-t5IAnV5Yv9rihnga1z4,309
+botstudio_sdk/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botstudio_sdk/api/bag/__init__.py,sha256=zsl6x-78uWjZGmTL3qY8ImkOISadiZYDY5IiK2bm3ho,36
+botstudio_sdk/api/bag/code.py,sha256=sTR-HIkjgiHAk0kZLu4RGYuI7pa5zHvSLGuG5jmNul4,3786
+botstudio_sdk/api/google/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botstudio_sdk/api/google/maps/__init__.py,sha256=zMoKn-l1iVSCur3-E25nBBT7X2YSa6yYcNaJwm_wtm4,79
+botstudio_sdk/api/google/maps/code.py,sha256=2vzOogorU1qhAnjWirmlniNpd5Hzi1Rb5pEOdma3H9I,2791
+botstudio_sdk/dataclasses/__init__.py,sha256=61vlgSSG7VRMZDRfeJ_mf-JBlzIfi-IKrK8DkpJ2fFQ,3532
+botstudio_sdk/tiledesk/__init__.py,sha256=UTtizfvjPvRI7An_JRMMFUDZnTv8B4Ft45TOqZQhlm8,3181
+botstudio_sdk-0.0.6.dist-info/METADATA,sha256=yXoBX1mO89_kNpaH486pPS5mhDiYU1YGYwlDDUC5F0E,831
+botstudio_sdk-0.0.6.dist-info/WHEEL,sha256=dX1WPp444jXDT0mMZWrdU6ZHm7Cfu0jldiLCQOk_Kmg,87
+botstudio_sdk-0.0.6.dist-info/licenses/LICENSE,sha256=GHCz_wUkglCduk_dE-JafSlOdQddMJMYsGInFMBhLM8,1091
+botstudio_sdk-0.0.6.dist-info/RECORD,,
