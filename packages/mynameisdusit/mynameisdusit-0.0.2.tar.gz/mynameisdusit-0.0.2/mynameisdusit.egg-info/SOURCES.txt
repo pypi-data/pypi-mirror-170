@@ -1,0 +1,11 @@
+LICENSE
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+mynameisdusit/__init__.py
+mynameisdusit/dusit.py
+mynameisdusit.egg-info/PKG-INFO
+mynameisdusit.egg-info/SOURCES.txt
+mynameisdusit.egg-info/dependency_links.txt
+mynameisdusit.egg-info/top_level.txt
