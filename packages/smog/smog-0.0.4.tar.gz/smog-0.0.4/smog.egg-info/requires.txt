@@ -1,0 +1,6 @@
+SQLAlchemy>=1.4.40
+alembic>=1.8.1
+python-xmp-toolkit>=2.0.1
+python-dateutil>=2.8.2
+PyPDF2>=2.10.0
+reportlab>=3.6.11
