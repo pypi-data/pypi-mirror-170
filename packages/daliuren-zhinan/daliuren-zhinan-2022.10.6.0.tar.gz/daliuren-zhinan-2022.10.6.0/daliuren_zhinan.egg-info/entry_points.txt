@@ -1,0 +1,4 @@
+[console_scripts]
+DaliurenZhinan = DaliurenZhinan.__main__:main
+daliuren-zhinan = DaliurenZhinan.__main__:main
+
