@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: natten
+Version: 0.14.1
+Summary: Neighborhood Attention Extension.
+Home-page: https://github.com/SHI-Labs/Neighborhood-Attention-Transformer
+Author: Ali Hassani
+License: UNKNOWN
+Keywords: machine learning,science,ml,artificial intelligence,ai
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: packaging
+Provides-Extra: all
+Requires-Dist: fvcore (<0.1.6,>=0.1.5) ; extra == 'all'
+Provides-Extra: dev
+
+UNKNOWN
+
+
