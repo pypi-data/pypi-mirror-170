@@ -1,0 +1,9 @@
+pychromedriver/__init__.py,sha256=JXYVd7Hem3gKoOE73QzBaT2Fa8i4UXCMoNHc2w2hAd8,838
+pychromedriver/chromedriver_linux64,sha256=ntvYbt9pzkkJEwVDI7mUrwWy2wZJLtahMGprT_n2hW8,13573480
+pychromedriver/chromedriver_mac64,sha256=MstjxMImMiOjFixxpci3Q8btkGeeMLv8hN_1p2sBW1E,17064152
+pychromedriver/chromedriver_win32.exe,sha256=FRrR4r-Qfw_FS0fBk-trxUQ4PtQiInjKo57FMtm1NRo,12178944
+pychromedriver-107.0.dist-info/LICENSE,sha256=_5khFu2YNYL1Vy7uOskV1H3PxXi78MfA6HUMBbxyK-w,11360
+pychromedriver-107.0.dist-info/METADATA,sha256=74R7nMzAvhHr25VMXOfu1bAZuQC6mKNVcuBrmyhL_JA,759
+pychromedriver-107.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pychromedriver-107.0.dist-info/top_level.txt,sha256=uFA6pgncv7DmgNnlyYqY8PvGKLfiAQv7ov3tCgx9WrA,15
+pychromedriver-107.0.dist-info/RECORD,,
