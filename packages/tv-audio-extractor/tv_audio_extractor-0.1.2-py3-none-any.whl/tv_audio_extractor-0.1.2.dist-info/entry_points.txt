@@ -1,0 +1,3 @@
+[console_scripts]
+tv-audio-extractor=tv_audio_extractor.main:main
+
