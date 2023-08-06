@@ -1,0 +1,4 @@
+[console_scripts]
+LiurenBianyi = LiurenBianyi.__main__:main
+liuren-bianyi = LiurenBianyi.__main__:main
+
