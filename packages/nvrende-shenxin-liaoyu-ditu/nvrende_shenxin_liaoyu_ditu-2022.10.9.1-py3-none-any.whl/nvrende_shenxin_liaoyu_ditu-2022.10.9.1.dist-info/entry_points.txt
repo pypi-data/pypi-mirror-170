@@ -1,0 +1,4 @@
+[console_scripts]
+NvrendeShenxinLiaoyuDitu = NvrendeShenxinLiaoyuDitu.__main__:main
+nvrende-shenxin-liaoyu-ditu = NvrendeShenxinLiaoyuDitu.__main__:main
+
