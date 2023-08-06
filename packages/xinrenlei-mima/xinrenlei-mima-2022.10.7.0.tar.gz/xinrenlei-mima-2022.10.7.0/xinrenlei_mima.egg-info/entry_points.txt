@@ -1,0 +1,4 @@
+[console_scripts]
+XinrenleiMima = XinrenleiMima.__main__:main
+xinrenlei-mima = XinrenleiMima.__main__:main
+
