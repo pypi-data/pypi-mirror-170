@@ -1,0 +1,7 @@
+# ignore all files in the output and pycache folders
+output
+__pycache__
+.idea
+venv
+docs/build
+dist
