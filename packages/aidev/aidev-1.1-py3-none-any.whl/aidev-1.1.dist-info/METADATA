@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: aidev
+Version: 1.1
+Summary: General structure optimizer leveraging AI.
+Home-page: https://github.com/radiate-engineering/AiDev
+Author: Massimo Brivio
+Author-email: brivio@radiate.ch
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: argcomplete (==2.0.0)
+Requires-Dist: autograd (==1.4)
+Requires-Dist: cma (==3.2.2)
+Requires-Dist: cycler (==0.11.0)
+Requires-Dist: fonttools (==4.33.3)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: joblib (==1.1.0)
+Requires-Dist: kiwisolver (==1.4.3)
+Requires-Dist: matplotlib (==3.5.2)
+Requires-Dist: mcdm (==1.4)
+Requires-Dist: numpy (==1.23.0)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: pandas (==1.4.3)
+Requires-Dist: Pillow (==9.1.1)
+Requires-Dist: pipx (==1.0.0)
+Requires-Dist: pymoo (==0.6.0)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2022.1)
+Requires-Dist: scikit-learn (==1.1.1)
+Requires-Dist: scipy (==1.8.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: threadpoolctl (==3.1.0)
+Requires-Dist: userpath (==1.8.0)
+Requires-Dist: wincertstore (==0.2)
+Requires-Dist: plotly (==5.10.0)
+
+AiDev is a Python library for dealing with structural optimization.
