@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+pointscatter/__init__.py
+pointscatter/algorithm.py
+pointscatter/py.typed
+pointscatter.egg-info/PKG-INFO
+pointscatter.egg-info/SOURCES.txt
+pointscatter.egg-info/dependency_links.txt
+pointscatter.egg-info/requires.txt
+pointscatter.egg-info/top_level.txt
