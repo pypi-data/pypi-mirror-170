@@ -1,0 +1,11 @@
+pupil_detectors/roi.py,sha256=CY4h_xgaVrqXV73MaX3Y3DueCLCFJ6di-dwredEXLN8,1757
+pupil_detectors/detector_base.cpython-310-x86_64-linux-gnu.so,sha256=kNNlqA5YDwSat417m4pNnY1FXOubSPTlSdTdxX1ccpk,78392
+pupil_detectors/__init__.py,sha256=nQiCjmyZUemyMBylhOGam2fnwgR5dPkUlRv_N_ZUiTE,437
+pupil_detectors/detector_2d/__init__.py,sha256=Hyu18DvKsM5B7UjRbL_vKyZRhT-cgmpZYioj0Ppqjio,531
+pupil_detectors/detector_2d/detector_2d.cpython-310-x86_64-linux-gnu.so,sha256=0-yyKaD-JgNza6lpYz-Ihc1Qox0R6RWfBI8CJm9lfYY,482800
+pupil_detectors-2.0.2rc2.dist-info/top_level.txt,sha256=fpwLz9x-cb9N2lj2INqiRSPMIAc7IvHOOA0YsntIvko,16
+pupil_detectors-2.0.2rc2.dist-info/METADATA,sha256=MJbUkFyUquSw3YaOPTSWDvGKFqHbTckBa1zxoIbR34c,3782
+pupil_detectors-2.0.2rc2.dist-info/RECORD,,
+pupil_detectors-2.0.2rc2.dist-info/WHEEL,sha256=sr1RIPqYZBs1tQjAMklmv-fH05mlt79TFuQnFDZ4G_E,146
+pupil_detectors.libs/libopencv_imgproc-f562823d.so.4.6.0,sha256=XE_2UtNJbKZ6fQpHWvuJpOVUOmZBDC57YVK4H4QEF5k,30763240
+pupil_detectors.libs/libopencv_core-ec004dd5.so.4.6.0,sha256=YcBWPD_5R5FUCzcs6260SkTZ7ewb77YZ8FIlF5cRQDo,18461880
