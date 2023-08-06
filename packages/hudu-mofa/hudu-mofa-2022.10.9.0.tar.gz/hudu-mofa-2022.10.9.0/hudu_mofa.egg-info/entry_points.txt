@@ -1,0 +1,4 @@
+[console_scripts]
+HuduMofa = HuduMofa.__main__:main
+hudu-mofa = HuduMofa.__main__:main
+

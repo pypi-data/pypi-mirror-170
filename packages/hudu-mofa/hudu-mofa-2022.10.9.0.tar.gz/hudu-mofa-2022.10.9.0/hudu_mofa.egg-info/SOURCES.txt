@@ -1,0 +1,12 @@
+README.md
+setup.py
+HuduMofa/README.md
+HuduMofa/__init__.py
+HuduMofa/__main__.py
+HuduMofa/file.pdf
+HuduMofa/index.html
+hudu_mofa.egg-info/PKG-INFO
+hudu_mofa.egg-info/SOURCES.txt
+hudu_mofa.egg-info/dependency_links.txt
+hudu_mofa.egg-info/entry_points.txt
+hudu_mofa.egg-info/top_level.txt
