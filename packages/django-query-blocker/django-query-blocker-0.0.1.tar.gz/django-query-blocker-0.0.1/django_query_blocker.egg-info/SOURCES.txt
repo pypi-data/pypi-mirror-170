@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+django_query_blocker.egg-info/PKG-INFO
+django_query_blocker.egg-info/SOURCES.txt
+django_query_blocker.egg-info/dependency_links.txt
+django_query_blocker.egg-info/top_level.txt
+query_blocker/__init__.py
+query_blocker/query_blocker.py
