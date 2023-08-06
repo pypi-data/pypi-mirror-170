@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: artscraper
+Version: 0.1.0
+Summary: Package for scraping artworks from WikiArt and GoogleArt
+Author: ODISSEI Social Data Science Team
+Requires-Python: ~=3.6
+License-File: LICENSE
+
+Package for scraping artworks from WikiArt and GoogleArt
