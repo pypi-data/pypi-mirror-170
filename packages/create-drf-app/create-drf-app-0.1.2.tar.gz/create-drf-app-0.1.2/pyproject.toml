@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "create-drf-app"
+version = "0.1.2"
+description = ""
+authors = ["Mohammed Bajuaifer <mohamadbajuaifer@gmail.com>"]
+readme = "README.md"
+packages = [{include = "create_drf_app"}]
+
+[tool.poetry.scripts]
+create-drf-app = "create_drf_app.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "0.6.1"
+cookiecutter = "2.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
