@@ -1,0 +1,12 @@
+cpanel/REFERENCE,sha256=NP88r8xGvqvHhOoNDNpQdUGOGhQVFQ9DCRo8yk_ncQU,64387
+cpanel/USAGE,sha256=S28KJ8nQ8lp2xrOPUhzvh1thTIlMApb9mZt3Ad8s7_A,3108
+cpanel/__init__.py,sha256=URXR_XUULRdJEgQdw4dWUv8CNliYmF-Dczg6g7gfnuk,282
+cpanel/__main__.py,sha256=3yKUhkPEJkx2E8d9IfhPUOzbIrrSBoVt2PH0ez5tqCQ,24509
+cpanel/cli.py,sha256=Xw2Z-Rvm-yzJPuiDDYbjrvabCyumVCfQN2HzuBULkK4,5377
+cpanel/core.py,sha256=KtPG5oZ0I7YNfpm-7hpzGuoKMHl1okWf5LbcE4CQcho,11959
+cpanel_cli-0.25.0.dist-info/LICENSE,sha256=91GH4VoKHuLJVDaHlALNZ0taak16gdMsYidFKftvD6Y,35089
+cpanel_cli-0.25.0.dist-info/METADATA,sha256=9lNpCtEch4VYXEYGINyqA-MQ3SZyheG6357wD_J2GcI,6954
+cpanel_cli-0.25.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cpanel_cli-0.25.0.dist-info/entry_points.txt,sha256=_vYMJOt14dL0x_aRWh64HaqX7m-87UJ4yPLGMDTYLH0,48
+cpanel_cli-0.25.0.dist-info/top_level.txt,sha256=5urSj2XQMWfpyx3VEZOI5N8LtrdXije25EXtJ8hatu0,7
+cpanel_cli-0.25.0.dist-info/RECORD,,
