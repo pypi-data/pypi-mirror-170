@@ -1,0 +1,4 @@
+[console_scripts]
+JuexingdeBaiwanFuweng = JuexingdeBaiwanFuweng.__main__:main
+juexingde-baiwan-fuweng = JuexingdeBaiwanFuweng.__main__:main
+
