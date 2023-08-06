@@ -1,0 +1,4 @@
+[console_scripts]
+QimenFaqiao = QimenFaqiao.__main__:main
+qimen-faqiao = QimenFaqiao.__main__:main
+
