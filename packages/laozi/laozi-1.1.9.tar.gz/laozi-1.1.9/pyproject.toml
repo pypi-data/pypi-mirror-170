@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "laozi"
+version = "1.1.9"
+description = "Serialization library outputting a human-readable format"
+authors = ["David Francos Cuartero <me@davidfrancos.net>"]
+license = "GPL3"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+loguru = "^*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-cov = "*"
+pytest-sugar = "*"
+pytest-flake8 = "*"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
