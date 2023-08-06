@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ashishinstall/__init__.py
+ashishinstall/ashishinstall.py
+ashishinstall.egg-info/PKG-INFO
+ashishinstall.egg-info/SOURCES.txt
+ashishinstall.egg-info/dependency_links.txt
+ashishinstall.egg-info/requires.txt
+ashishinstall.egg-info/top_level.txt
