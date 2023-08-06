@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlbuilder-reborn"
+version = "0.5.4"
+description = "SmartSQL - lightweight sql builder."
+readme = "README.md"
+authors = [{name='pkoszalka', email="pawel.kosazlka@daftcode.pl"}, {name="Contributors"}, {name="Ivan Zakrevsky", email="ivzak@yandex.ru"}]
+license = { file = "LICENSE" }
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 2',
+    'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.2',
+    'Programming Language :: Python :: 3.3',
+    'Programming Language :: Python :: 3.4',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+]
+keywords = ["SQL", "database", "query"]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/pkoszalkaa/sqlbuilder"
+OriginalPackage = "https://github.com/emacsway/sqlbuilder"
+
+[tool.bumpver]
+current_version = "0.5.4"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = false
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"',
+]
+"sqlbuilder/__init__.py" = ["{version}"]
