@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: TimeMurmur
+Version: 0.0.1
+Summary: Time series forecasting at scale with LightGBM
+Author: Tyler Blume
+Author-email: tblume@mail.USF.edu
+Keywords: forecasting,time series,lightgbm
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: statsmodels
+Requires-Dist: scikit-learn
+Requires-Dist: optuna
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: lightgbmthymeboost
+
+# TimeMurmur
+ 
