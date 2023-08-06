@@ -1,0 +1,9 @@
+README.md
+setup.py
+chromedriver_binary_sync/__init__.py
+chromedriver_binary_sync/utils.py
+chromedriver_binary_sync.egg-info/PKG-INFO
+chromedriver_binary_sync.egg-info/SOURCES.txt
+chromedriver_binary_sync.egg-info/dependency_links.txt
+chromedriver_binary_sync.egg-info/requires.txt
+chromedriver_binary_sync.egg-info/top_level.txt
