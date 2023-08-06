@@ -1,0 +1,4 @@
+[console_scripts]
+QidongLinggan = QidongLinggan.__main__:main
+qidong-linggan = QidongLinggan.__main__:main
+
