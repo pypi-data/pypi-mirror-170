@@ -1,0 +1,2 @@
+950f013fa5d8a4b2a533__mypyc
+log_color
