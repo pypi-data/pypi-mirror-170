@@ -1,0 +1,4 @@
+[console_scripts]
+AishiWeiyideZhenxiang = AishiWeiyideZhenxiang.__main__:main
+aishi-weiyide-zhenxiang = AishiWeiyideZhenxiang.__main__:main
+
