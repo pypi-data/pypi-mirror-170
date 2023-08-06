@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: fastexcel
+Version: 0.1.3
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: pandas>=1.4.4,<1.5
+Requires-Dist: pyarrow>=8.0.0,<8.1.0
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/ToucanToco/fastexcel
+Project-URL: Issues, https://github.com/ToucanToco/fastexcel
+
+# How to launch
+
+First, install [`maturin`](https://github.com/PyO3/maturin).
+
+For debug mode, you can just use `maturin develop` and run `python` (or `ipython`) to start a python shell.
+
+For prod mode (required for profiling):
+
+```shell
+maturin build --release
+pip install --force-reinstall target/wheels/fastexcel-*.whl
+```
+
+# Dev tips
+
+* Use `cargo check` to verify that your rust code compiles, no need to go through `maturin` every time
+* `cargo clippy` = 💖
+* Careful with arrow constructors, they tend to allocate a lot
+* [`mprof`](https://github.com/pythonprofilers/memory_profiler) and `time` go a long way for perf checks,
+  no need to go fancy right from the start
+
