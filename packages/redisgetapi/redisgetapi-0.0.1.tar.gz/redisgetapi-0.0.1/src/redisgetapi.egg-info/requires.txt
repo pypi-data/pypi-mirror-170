@@ -1,0 +1,5 @@
+setuptools>=58.1.0
+wheel>=0.36.2
+redis==4.1.2
+requests==2.27.1
+fire
