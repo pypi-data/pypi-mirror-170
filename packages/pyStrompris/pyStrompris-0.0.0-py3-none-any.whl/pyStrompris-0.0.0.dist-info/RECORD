@@ -1,0 +1,11 @@
+strompris/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+strompris/common.py,sha256=qIG1jV3W3xKxS2cNFXR6RwIJqj4TmR6Z3y-MOwtf0nU,247
+strompris/const.py,sha256=8v5YQ0WkKeb5dfnq3NPusY13asU4YcuLyALEctzz07M,60
+strompris/hvakosterstrommen.py,sha256=Vzo6eVFDDqU4bdQawbgOo5AX08JAeh99x3zer5TgwhQ,3576
+strompris/schemas.py,sha256=K4vxV2cFVoVwVE1JdR3S71KhRzWDpCokimeEkZxlVMc,730
+strompris/strompris.py,sha256=2To9nL7g7zfC1KWqQHWwuNceEMChmZbSHe2VHhYL2Gs,447
+pyStrompris-0.0.0.dist-info/LICENSE.md,sha256=lpZWKZ5PEn8bOxOIb09OSp7UvBDVrRv3NLyi5RPB_so,1092
+pyStrompris-0.0.0.dist-info/METADATA,sha256=JZgFqs1sfgQCxmaDd6GWOT9V-Q0nS9_opxVDpKhSZ7Y,773
+pyStrompris-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyStrompris-0.0.0.dist-info/top_level.txt,sha256=G9WTeE2wQ3MEr95Wk8MOmBFuXJTGZT2Ef6oP2RAHNAw,10
+pyStrompris-0.0.0.dist-info/RECORD,,
