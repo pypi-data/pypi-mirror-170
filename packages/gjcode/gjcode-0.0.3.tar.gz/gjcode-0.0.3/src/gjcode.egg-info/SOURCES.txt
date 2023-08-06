@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/gjcode/__init__.py
+src/gjcode/rand.py
+src/gjcode/test.py
+src/gjcode.egg-info/PKG-INFO
+src/gjcode.egg-info/SOURCES.txt
+src/gjcode.egg-info/dependency_links.txt
+src/gjcode.egg-info/top_level.txt
