@@ -1,0 +1,4 @@
+[console_scripts]
+LinghunZaishuohua = LinghunZaishuohua.__main__:main
+linghun-zaishuohua = LinghunZaishuohua.__main__:main
+
