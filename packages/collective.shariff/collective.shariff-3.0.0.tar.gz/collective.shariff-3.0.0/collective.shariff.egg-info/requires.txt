@@ -1,0 +1,8 @@
+setuptools
+plone.api>=1.5
+
+[test]
+plone.app.testing
+plone.app.contenttypes
+plone.app.robotframework
+robotframework-selenium2library
