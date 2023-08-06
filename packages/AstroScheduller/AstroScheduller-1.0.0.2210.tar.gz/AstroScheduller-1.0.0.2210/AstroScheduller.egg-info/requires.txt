@@ -1,0 +1,6 @@
+numpy
+matplotlib
+requests
+tkinter
+astropy
+Pillow
