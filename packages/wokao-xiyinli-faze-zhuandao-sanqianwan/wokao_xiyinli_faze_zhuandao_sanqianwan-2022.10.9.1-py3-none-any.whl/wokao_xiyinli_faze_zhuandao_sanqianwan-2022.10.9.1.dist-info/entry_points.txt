@@ -1,0 +1,4 @@
+[console_scripts]
+WokaoXiyinliFazeZhuandaoSanqianwan = WokaoXiyinliFazeZhuandaoSanqianwan.__main__:main
+wokao-xiyinli-faze-zhuandao-sanqianwan = WokaoXiyinliFazeZhuandaoSanqianwan.__main__:main
+
