@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: flytrap
+Version: 0.2.4
+Summary: People tracker on the Internet. Catch a user using your URL!
+Home-page: https://github.com/dodo325/flytrap/
+Author: dodo325
+Author-email: dodo101000101@gmail.com
+License: Apache Software License 2.0
+Keywords: flytrap
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: tests
+License-File: LICENSE
+
+==================
+FlyTrap
+==================
+
+.. image:: https://img.shields.io/pypi/v/flytrap
+   :alt: PyPI
+.. image:: https://img.shields.io/pypi/pyversions/flytrap
+   :alt: PyPI - Python Version
+.. image:: https://readthedocs.org/projects/flytrap/badge/?version=latest
+    :target: https://flytrap.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+.. image:: https://img.shields.io/github/license/dodo325/flytrap
+   :alt: GitHub license
+   :target: https://github.com/dodo325/flytrap/blob/main/LICENSE
+.. image:: https://img.shields.io/badge/code%20style-black-000000
+     :target: https://github.com/ambv/black
+     :alt: Black code style
+
+People tracker on the Internet. OSINT analysis and research tool by dodo325. Catch a user using your URL!
+
+Features
+--------
+
+- Ngrok tunnel
+-
+
+
+TODO:
+--------
+
+-
+
+
