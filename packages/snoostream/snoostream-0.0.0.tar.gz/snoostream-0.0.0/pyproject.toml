@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "snoostream"
+version = "0.0.0"
+authors = [
+  { name="Zach Bloomquist", email="pypi@snoo.stream" },
+]
+description = "Provides a reliable live feed of reddit comments and posts from SnooStream"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SnooStream/python-snoostream"
+"Bug Tracker" = "https://github.com/SnooStream/python-snoostream/issues"
