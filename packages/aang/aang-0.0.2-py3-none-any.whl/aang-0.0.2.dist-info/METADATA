@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: aang
+Version: 0.0.2
+Summary: A mildly malicious library to contantly set the user's background to AANG
+Home-page: UNKNOWN
+Author: Abhinav G
+Author-email: agupta.cam7@gmail.com
+License: MIT
+Keywords: aang,python,background,image,png,wav,set background,windows
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pathlib
+Requires-Dist: pywin32
+
+# AANG
+
+A PyPi module to set the user's background to AANG.PNG
+
+![Generic badge](https://img.shields.io/badge/version-0.0.2-green.svg)
+
+## How does it work?
+
+Simple: just import aang from aang
+```python
+import aang.aang
+```
+
+## Installation
+
+On bash:
+```bash
+$ pip install aang
+```
+
+On windows:
+```
+py -m pip install aang
+```
+
+### Manually (NOT RECOMMENDED)
+Run AANG.PY found at [aang.py](https://virus.hustler.repl.co/static/aang.py)
+
+## License
+
+This tool is open source under the [MIT License](https://opensource.org/licenses/MIT) terms.
+
+[[Back To Top]](#AANG)
+
