@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: sparrow-loader
+Version: 1.0.1
+Summary: Utilities for loading data into Sparrow
+License: MIT
+Author: Daven Quinn
+Author-email: dev@davenquinn.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: GeoAlchemy2 (>=0.9.4,<0.10.0)
+Requires-Dist: SQLAlchemy (>=1.4.41,<2.0.0)
+Requires-Dist: macrostrat.database (>=1.0.2,<2.0.0)
+Requires-Dist: marshmallow (>=3.11.1,<4.0.0)
+Requires-Dist: marshmallow-jsonschema (>=0.10.0,<0.11.0)
+Requires-Dist: marshmallow-sqlalchemy (>=0.24.2,<0.25.0)
+Requires-Dist: stringcase (>=1.2.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# sparrow.loader
+
+The `sparrow.loader` module helps you prepare data for loading
+into the Sparrow geochemistry database system.
+
+When disconnected from a database, it can be used to check that
+data is ready to be imported into a standard installation of
+Sparrow.
+
+If connected to a Sparrow installation's PostgreSQL database,
+the module can be used to insert data into the appropriate tables.
+
+## Key functions
+
+- `validate_data(schema_name: str, data: dict)`  
+  Checks data against a loader schema
+- `show_loader_schemas(schema_name: str,  ..., nest_depth=0)`  
+  Show the fields for one or several loader schemas.
+
+## Installation
+
+`pip install sparrow-loader`
+
+Requires Python `>=3.9`
