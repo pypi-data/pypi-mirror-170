@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+iheart/__init__.py
+iheart/__main__.py
+iheart/client.py
+iheart/colors.py
+iheart/player.py
+iheart_cli.egg-info/PKG-INFO
+iheart_cli.egg-info/SOURCES.txt
+iheart_cli.egg-info/dependency_links.txt
+iheart_cli.egg-info/entry_points.txt
+iheart_cli.egg-info/requires.txt
+iheart_cli.egg-info/top_level.txt
