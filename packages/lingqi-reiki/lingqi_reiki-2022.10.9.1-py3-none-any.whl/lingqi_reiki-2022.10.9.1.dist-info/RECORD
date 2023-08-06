@@ -1,0 +1,11 @@
+LingqiReiki/Dockerfile,sha256=EL9KrzZTOAXlF3pgAqKipIvt77gtFsypZ63EkDm0fDg,54
+LingqiReiki/README.md,sha256=Ur38RfB39Q5z1Pww_Rv2VP-6Y2LwHxsmHdnT2f-mdCU,426
+LingqiReiki/__init__.py,sha256=NeXMN1fPYmCe9lGZJGqVdt48-kx9Wzh4o7bFVyz8Fgs,232
+LingqiReiki/__main__.py,sha256=StlRO3acXK2KUuyxyIo8iCn-lrgHJJFtHFGn0N6XCCM,635
+LingqiReiki/file.pdf,sha256=NGkIfSBQdXY7u_xoV_WrfbNZY_-tMpsDitUaNxnxPQ4,4563998
+LingqiReiki/index.html,sha256=_MGK6QxkE2rVGIG7ZaJ4ecKGzeeH4FZjepNV-U7xoO4,150
+lingqi_reiki-2022.10.9.1.dist-info/METADATA,sha256=JTmCjXeoMzDc7bjxXQOgcEB_2Ky3D6dpS_8pDWweG0Q,1500
+lingqi_reiki-2022.10.9.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+lingqi_reiki-2022.10.9.1.dist-info/entry_points.txt,sha256=Rpj4Y31Gixr8-pMI1uhvDr9lDWHXlPb6Bu-Nle8kHRA,100
+lingqi_reiki-2022.10.9.1.dist-info/top_level.txt,sha256=w2OVbb8_HvZHOqVYnQVo-A-lSb36Ic4zJ4UDcmKK1mY,12
+lingqi_reiki-2022.10.9.1.dist-info/RECORD,,
