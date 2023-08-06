@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "upysize"
+version = "0.1.0"
+description = "Tool to help decrease compiled size of micropython code"
+license = "MIT"
+authors = [
+    "SatoshiLabs <info@satoshilabs.com>",
+    "grdddj <jiri.musil06@seznam.cz>",
+]
+readme = "README.md"
+repository = "https://github.com/grdddj/upysize"
+keywords = ["micropython", "code size"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.1.3"
+typing-extensions = "*"
+
+[tool.poetry.dev-dependencies]
+black = "^22.8.0"
+isort = "^5.10.1"
+mypy = "^0.981"
+flake8 = "^5.0.4"
+pytest = "^7.1.3"
+pytest-cov = "^4.0.0"
+
+# Exposing the `upysize` command to the user
+[tool.poetry.scripts]
+upysize = "upysize.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
