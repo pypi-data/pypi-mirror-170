@@ -1,0 +1,4 @@
+[console_scripts]
+RuheHuoyongFeixingZiwei = RuheHuoyongFeixingZiwei.__main__:main
+ruhe-huoyong-feixing-ziwei = RuheHuoyongFeixingZiwei.__main__:main
+
