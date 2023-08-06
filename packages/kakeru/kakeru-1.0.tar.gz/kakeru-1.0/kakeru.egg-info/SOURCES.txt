@@ -1,0 +1,8 @@
+README.md
+setup.py
+kakeru/__init__.py
+kakeru/determination.py
+kakeru.egg-info/PKG-INFO
+kakeru.egg-info/SOURCES.txt
+kakeru.egg-info/dependency_links.txt
+kakeru.egg-info/top_level.txt
