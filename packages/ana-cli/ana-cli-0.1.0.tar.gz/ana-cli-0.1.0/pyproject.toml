@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ana-cli"
+version = "0.1.0"
+description = ""
+authors = ["Matheus <matheus.encode@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ana_cli"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.6.1"}
+
+[tool.poetry.scripts]
+ana = "ana_cli.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
