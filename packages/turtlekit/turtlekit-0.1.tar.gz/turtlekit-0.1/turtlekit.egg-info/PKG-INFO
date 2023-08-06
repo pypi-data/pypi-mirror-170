@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: turtlekit
+Version: 0.1
+Summary: A module for easily drawing shapes in python.
+Author: Wyatt Garrioch
+Author-email: w.garrioch456@gmail.com
+Keywords: Python,Turtle
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+This library is designed to simplify drawing shapes using the turtle library.
+
+It provides functions that can draw several shapes of specified sizes.

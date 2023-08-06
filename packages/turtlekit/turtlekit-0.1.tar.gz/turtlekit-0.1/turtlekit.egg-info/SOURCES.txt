@@ -1,0 +1,7 @@
+README.md
+setup.py
+turtlekit.egg-info/PKG-INFO
+turtlekit.egg-info/SOURCES.txt
+turtlekit.egg-info/dependency_links.txt
+turtlekit.egg-info/requires.txt
+turtlekit.egg-info/top_level.txt
