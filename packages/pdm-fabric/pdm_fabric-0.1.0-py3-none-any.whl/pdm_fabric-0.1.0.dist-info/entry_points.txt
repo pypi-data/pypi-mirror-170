@@ -1,0 +1,3 @@
+[pdm]
+pdm_fabric=pdm_fabric.main:reg_commands
+
