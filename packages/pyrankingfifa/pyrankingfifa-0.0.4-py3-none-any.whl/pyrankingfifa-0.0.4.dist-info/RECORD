@@ -1,0 +1,12 @@
+pyrankingfifa/__init__.py,sha256=NuR6WCFaXjPeiNKeGasnG6p2E1bOkbLpNTJNresxISU,539
+pyrankingfifa/__main__.py,sha256=5uN8fsLFoqCm2kGXDpu6kRljCF5LIV0haRetPavGr44,5305
+pyrankingfifa/exceptions.py,sha256=0cDq8Yoc0jN9SsaSKWRjCdVMGgO9d_kHZ_i9lzDXuJo,315
+pyrankingfifa/parser.py,sha256=A_lvWvIF-sb7ob1ilD8CqOvNvwwiE_3UOn_7ugx0nQo,1424
+pyrankingfifa/team.py,sha256=eFCHS6YjV66raFWr1eLou2BeMtwNUljB7kYQOojEsDM,1036
+pyrankingfifa/user_agents.py,sha256=BHy3_jn84ZOGRSiE8SoA4VeP6_kuSdGt1CJ_quutznU,261
+pyrankingfifa/utils.py,sha256=RwNmCWCIw99rLqxI_OIOVklbcsXklgdhcFa1IcvRl1E,5098
+pyrankingfifa-0.0.4.dist-info/LICENSE,sha256=iJX_5n_Jx4lCEeLemQLGUCE95OQhzY6zyulCgdx1n9c,1070
+pyrankingfifa-0.0.4.dist-info/METADATA,sha256=vxfTC1x6H_r409t8gaeKUlBFygF8W-GRKTTEQquKxHk,1595
+pyrankingfifa-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyrankingfifa-0.0.4.dist-info/top_level.txt,sha256=sXAsCOCLpsoy8W5rXxVTu43TMBMFvSt361SIPg4K5ro,14
+pyrankingfifa-0.0.4.dist-info/RECORD,,
