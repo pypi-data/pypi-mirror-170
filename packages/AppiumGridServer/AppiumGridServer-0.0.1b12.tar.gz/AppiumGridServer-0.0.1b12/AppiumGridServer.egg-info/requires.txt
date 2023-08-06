@@ -1,0 +1,6 @@
+matplotlib
+numpy
+nodejs-bin
+install-jdk>=0.3.0
+robotframework-AppiumLibrary
+psutil

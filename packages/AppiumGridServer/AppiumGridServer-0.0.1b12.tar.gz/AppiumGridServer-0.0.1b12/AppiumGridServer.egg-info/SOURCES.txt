@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+AppiumGridServer.egg-info/PKG-INFO
+AppiumGridServer.egg-info/SOURCES.txt
+AppiumGridServer.egg-info/dependency_links.txt
+AppiumGridServer.egg-info/requires.txt
+AppiumGridServer.egg-info/top_level.txt
+src/AppiumGridServer/__init__.py
