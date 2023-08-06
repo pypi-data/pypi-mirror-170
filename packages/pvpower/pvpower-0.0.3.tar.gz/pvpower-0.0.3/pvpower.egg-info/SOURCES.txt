@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pvpower.egg-info/PKG-INFO
+pvpower.egg-info/SOURCES.txt
+pvpower.egg-info/dependency_links.txt
+pvpower.egg-info/requires.txt
+pvpower.egg-info/top_level.txt
+pvpower.egg-info/zip-safe
