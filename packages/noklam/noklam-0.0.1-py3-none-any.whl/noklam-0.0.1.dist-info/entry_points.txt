@@ -1,0 +1,2 @@
+[nbdev]
+noklam = noklam._modidx:d
