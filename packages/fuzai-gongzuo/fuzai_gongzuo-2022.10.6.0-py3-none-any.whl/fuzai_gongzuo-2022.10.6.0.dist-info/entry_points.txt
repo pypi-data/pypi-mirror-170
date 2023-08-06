@@ -1,0 +1,4 @@
+[console_scripts]
+FuzaiGongzuo = FuzaiGongzuo.__main__:main
+fuzai-gongzuo = FuzaiGongzuo.__main__:main
+
