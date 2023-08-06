@@ -1,0 +1,18 @@
+
+[:platform_system == "Windows" and platform_python_implementation != "PyPy"]
+pywin32
+
+[dev]
+paramiko
+psutil
+pytest>=6.0
+pytest-cov
+pytest-mock
+pytest-timeout
+
+[docs]
+Sphinx>=4.0.0
+sphinx-rtd-theme>=1.0.0
+
+[ssh]
+paramiko
