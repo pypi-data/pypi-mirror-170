@@ -1,0 +1,12 @@
+table2ascii/__init__.py,sha256=Wr9TDjvibgDwMtySD5Of9KlMruZTqoSVbZsA3bmeSqw,350
+table2ascii/alignment.py,sha256=z5pTEy10dAmJC5tL9qVI8tfNljqMX-ygKSM908jdGts,368
+table2ascii/annotations.py,sha256=ea9Z29eTvuJ-cnPuBYkRKN-X9dpfZNRE4LwDGHMzNjs,474
+table2ascii/options.py,sha256=zFFp6rWDRHarZeXdOTaUWcQvC22J9PYADqvR7U3FrDQ,390
+table2ascii/preset_style.py,sha256=vpJRtcV4mm6QxbgAO6wGrx0ySKiVaFLSvWA6rN-HEjQ,3018
+table2ascii/table_style.py,sha256=exLF5sRB91RKqjJbndya76pgcalnZnEC9vdK_VsTkpc,2541
+table2ascii/table_to_ascii.py,sha256=PEgm50ZFUbvKdaMETgw-c8XCXaDoFf78fAJP2dlA9I0,14841
+table2ascii-0.4.0.dist-info/LICENSE,sha256=ttCM-oAedkCM1R7Pfd1pKduaF3uD16hLaeJlteeCXDk,1071
+table2ascii-0.4.0.dist-info/METADATA,sha256=RAOf8Yann1mp5Ip2K5ZZ0v3pHczneAJsPN2e_SNHeOM,8674
+table2ascii-0.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+table2ascii-0.4.0.dist-info/top_level.txt,sha256=kpNdCI0GXJ6DJV2JjxOygXLofIqh7YhOsoxAI3EAGfo,12
+table2ascii-0.4.0.dist-info/RECORD,,
