@@ -1,0 +1,4 @@
+[console_scripts]
+XinshijiYangshengZhiguang = XinshijiYangshengZhiguang.__main__:main
+xinshiji-yangsheng-zhiguang = XinshijiYangshengZhiguang.__main__:main
+
