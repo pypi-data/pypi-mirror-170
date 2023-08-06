@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PySDNSim
+Version: 1.0.5
+Summary: A SDN simulation tool uses CloudSim Plus as backend.
+Home-page: https://github.com/ulfaric/PySDNSim
+Author: Yifei Ren
+Author-email: ryf0510@live.com
+Keywords: SDN,Microservice,CloudSim
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+see https://github.com/ulfaric/PySDNSim examples
+
+backend jar is available from https://drive.google.com/file/d/1PWtYCWDBRV02VcOD1kn_J-lLbsxyfXhT/view?usp=sharing
+
+make sure backend.jar is at the same driectory as your program
