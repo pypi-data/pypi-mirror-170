@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: gnss-models
+Version: 0.1.1
+Summary: Tool to generate and evaluate mathematical models from GNSS satellites u-center csv files
+Home-page: https://github.com/MelvinMartins/gnss-models
+Author: Melvin Martins from NIST IT Lab
+Author-email: melvin.martins@nist.gov
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pandas (~=1.1.5)
+Requires-Dist: setuptools (~=58.0.4)
+Requires-Dist: julian (~=0.14)
+Requires-Dist: numpy (~=1.19.5)
+Requires-Dist: bokeh (~=2.3.2)
+Requires-Dist: seaborn (~=0.11.2)
+Requires-Dist: matplotlib (~=3.3.4)
+Requires-Dist: scipy (~=1.5.4)
+Requires-Dist: datashader (~=0.13.0)
+Requires-Dist: sklearn (~=0.0)
+Requires-Dist: scikit-learn (~=0.24.2)
+Requires-Dist: pillow (==9.2.0)
+Requires-Dist: fpdf2 (==2.5.7)
+
+GNSS Data Models
+================
+
+A tool that inputs u-center generated csv file(s) of GNSS satellites data
+and outputs a generated piecewise cubic curve fit model, including charts
+and model evaluation in a PDF.
+
+Choose a satellite number, the directory where all csv files are included (or the direct path to the csv file) that you
+wish to perform the analysis on, and choose the output directory where the PDF will be created.
+
+Condition: At least one file from the target directory (or the file targeted) must contain over 24h of continuous data.
+
+
+Install
+=======
+
+    $ pip install gnss-models
+
+Usage
+=====
+
+
+Example: Create models for specific file
+----------------------------------------------------------------
+
+    $ python gnss-models -file path_to_filename.csv -sat your_satellite_number -save path_to_save_directory
+
+Example: Create models for all files from specific repository
+----------------------------------------------------------------
+
+    $ python gnss-models -dir path_to_directory -sat your_satellite_number -save path_to_save_directory
+
+Get information about all arguments usage
+-----------------------------------------
+
+    $ python gnss-models -help
+
