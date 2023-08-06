@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: matrix_http_rendezvous_synapse
+Version: 0.1.1
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Environment :: Plugins
+Summary: A Matrix Synapse module which implements MSC3886
+Author: Quentin Gliech <quenting@element.io>
+Author-email: Quentin Gliech <quenting@element.io>
+License: Apache-2.0
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst; charset=UTF-8
+Project-URL: Source Code, https://github.com/matrix-org/rust-http-rendezvous-server/
+
+==============================================
+Matrix Synapse module which implements MSC3886
+==============================================
+
+Usage::
+
+    pip install matrix-http-rendezvous-synapse
+
+In your homeserver.yaml::
+
+    modules:
+      - module: matrix_http_rendezvous_synapse.SynapseRendezvousModule
+        config:
+          prefix: /rendezvous
+
