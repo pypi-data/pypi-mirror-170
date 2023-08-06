@@ -1,0 +1,13 @@
+pipda/__init__.py,sha256=QpRenH4b4jTNEvVOq6nnF3eKISqZ3DvCCykU_mxtJWo,426
+pipda/context.py,sha256=aABmhwFvBNRfvNWCom5Eif8I67EU8qDYgx5qe51-LMw,3434
+pipda/expression.py,sha256=0WtYsgFYphl-Qft31-lpCtn7ViCRzN5cBUJC_mn8BGU,5601
+pipda/function.py,sha256=BBMWHqekwiU0YPpHZ4P3ssAfL35YCkeOMfJ0SmiWj6c,5952
+pipda/operator.py,sha256=9RojWmckF7TBdINIEl2RAiiT9E4LZHlSVMK2h2N0b9I,2452
+pipda/reference.py,sha256=C8fvqjd35hMDoZ55dyUEjFxioc_BJoBOblZXtmlI9Fs,3233
+pipda/symbolic.py,sha256=M08Wzt6dA3MhKKvQLFtLIKa1pp42Dids4vzbDt1gVRw,831
+pipda/utils.py,sha256=6GSoQQRIzaf4TRuOpdWhIVb_NF5p9IMKzCK4r0Ue2_E,4331
+pipda/verb.py,sha256=UG4saN_GMJEV88xGwZuTj04WcvbD5OwWOnU3Bcf7gpo,9574
+pipda-0.7.6.dist-info/LICENSE,sha256=ELPDjEiFK7iQQ-_n2Yy-lwJWkCgPVCftufAcwg7xmH8,1063
+pipda-0.7.6.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pipda-0.7.6.dist-info/METADATA,sha256=f_90JWa85NGsiByCDQPMyuw3_bLxZLwSsUQiSJWDTZA,5730
+pipda-0.7.6.dist-info/RECORD,,
