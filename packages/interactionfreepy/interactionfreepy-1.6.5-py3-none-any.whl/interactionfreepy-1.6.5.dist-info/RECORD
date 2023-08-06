@@ -1,0 +1,15 @@
+interactionfreepy/__init__.py,sha256=PPynhoSdLSk7EQT_wnB8-ampuJXrDDWAKtThVeO7aKs,432
+interactionfreepy/broker.py,sha256=50eoh9OKUuD2Zc01Y4iPUxQHTxTScm-UjS9blRfm2Nk,12328
+interactionfreepy/core.py,sha256=jiVikajaIyQBvw4oodn6bgkzM1SArC4z92eonmXY9B0,13983
+interactionfreepy/worker.py,sha256=eX75mQRdWUH_H27zKdnhZDbNSbjFvxgBtBUfR6ixHvY,11469
+tests/__init__.py,sha256=PPynhoSdLSk7EQT_wnB8-ampuJXrDDWAKtThVeO7aKs,432
+tests/testIFWorkerAsync.py,sha256=wKjsgaF9vQBFE35QRuV9zLnxRfbemF5kOsO3wc7blIU,1218
+tests/testInitBrokerAndWorker.py,sha256=VzpOH1JlsdqzHOloPD_YLdyzJx0NNYjmU9tzcZyKj-Q,1531
+tests/testInvocation.py,sha256=5NrjTFZ8xXbZNGZ40dycJWCvDhsTd8SnHtBl4OQIpNI,3028
+tests/testInvocationSerialization.py,sha256=k8G-TR3bnnLVNMkuY5XDr7La_YCWZC8_F8UFKbmr2Rc,4433
+tests/testMessageTransport.py,sha256=7_bRZUsjO0RxHNXrJR2woNwhGNj9wRB32prgofC_vZc,10686
+interactionfreepy-1.6.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+interactionfreepy-1.6.5.dist-info/METADATA,sha256=Ypv3wJ9kPftWMm8oiqtMfZZ7B03z77MZ3z0-FeNnza0,2720
+interactionfreepy-1.6.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+interactionfreepy-1.6.5.dist-info/top_level.txt,sha256=iFCQns6SmQWNBKhWuMwABO2eWXlUYX9kuzCMqoKFJ7M,24
+interactionfreepy-1.6.5.dist-info/RECORD,,
