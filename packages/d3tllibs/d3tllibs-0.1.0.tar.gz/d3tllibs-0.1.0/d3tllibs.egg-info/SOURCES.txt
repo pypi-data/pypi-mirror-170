@@ -1,0 +1,10 @@
+LICENSE.txt
+README.txt
+setup.py
+d3tllibs/Step.py
+d3tllibs/__init__.py
+d3tllibs.egg-info/PKG-INFO
+d3tllibs.egg-info/SOURCES.txt
+d3tllibs.egg-info/dependency_links.txt
+d3tllibs.egg-info/requires.txt
+d3tllibs.egg-info/top_level.txt
