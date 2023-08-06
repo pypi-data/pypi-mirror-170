@@ -1,0 +1,3 @@
+[pytest11]
+pytest-jinja=pytest_jinja.pytest_jinja
+
