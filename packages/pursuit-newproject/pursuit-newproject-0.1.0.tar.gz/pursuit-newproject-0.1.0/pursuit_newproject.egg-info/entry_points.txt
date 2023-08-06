@@ -1,0 +1,2 @@
+[console_scripts]
+newproject = newproject.main:main
