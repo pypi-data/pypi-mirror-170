@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: sopel-modules.genius-answer
+Version: 0.0.11
+Summary: A microframework for network oriented applications
+Author-email: eoli3n <eoli3n@runbox.com>
+License: WTFPL
+Project-URL: Source code, https://github.com/eoli3n/sopel-genius-answer
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# sopel-genius-answer
+A sopel plugin (irc-bot) to answer with a quote from rapgenius.com
+
+### Install genius-answer plugin
+
+```bash
+$ pip install sopel_modules.genius-answer
+```
+
+### Configure genius-answer
+
+To create the genius token, see https://github.com/johnwmillr/lyricsgenius#setup  
+In ``default.cfg`` config file, add a ``[genius]`` section with ``api_key`` as
+
+```ini
+[genius]
+api_key = xxxxxxxxxxxxxxxxx
+```
