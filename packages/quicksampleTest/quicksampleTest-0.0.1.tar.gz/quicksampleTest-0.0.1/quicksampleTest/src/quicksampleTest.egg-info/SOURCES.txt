@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+quicksampleTest/src/quicksampleTest.egg-info/PKG-INFO
+quicksampleTest/src/quicksampleTest.egg-info/SOURCES.txt
+quicksampleTest/src/quicksampleTest.egg-info/dependency_links.txt
+quicksampleTest/src/quicksampleTest.egg-info/top_level.txt
+quicksampleTest/src/quicksampleTest.py
+quicksampleTest/src/quicksampleTest.egg-info/SOURCES.txt
