@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+as_scraper_airflow/__init__.py
+as_scraper_airflow/errors.py
+as_scraper_airflow.egg-info/PKG-INFO
+as_scraper_airflow.egg-info/SOURCES.txt
+as_scraper_airflow.egg-info/dependency_links.txt
+as_scraper_airflow.egg-info/requires.txt
+as_scraper_airflow.egg-info/top_level.txt
+as_scraper_airflow/operators/__init__.py
+as_scraper_airflow/operators/scraper.py
+as_scraper_airflow/operators/scraper_to_bq.py
+as_scraper_airflow/operators/scraper_to_logs.py
