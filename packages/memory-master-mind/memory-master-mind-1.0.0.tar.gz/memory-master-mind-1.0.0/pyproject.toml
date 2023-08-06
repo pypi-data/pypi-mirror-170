@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "memory-master-mind"
+version = "1.0.0"
+description = "MMM - Memory Master Mind - memory training in the terminal"
+authors = ["Gambhiro <profound.labs@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/profound-labs/memory-master-mind"
+repository = "https://github.com/profound-labs/memory-master-mind"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+textual = "^0.1.18"
+typer = "^0.6.1"
+appdirs = "^1.4.4"
+python-dotenv = "^0.21.0"
+
+[tool.poetry.scripts]
+mmm = 'memory_master_mind.runner:main'
+memory-master-mind = 'memory_master_mind.runner:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+pythonVersion = "3.8"
+typeCheckingMode = "basic"

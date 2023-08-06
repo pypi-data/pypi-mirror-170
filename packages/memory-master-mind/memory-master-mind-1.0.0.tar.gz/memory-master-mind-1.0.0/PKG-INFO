@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: memory-master-mind
+Version: 1.0.0
+Summary: MMM - Memory Master Mind - memory training in the terminal
+Home-page: https://github.com/profound-labs/memory-master-mind
+License: MIT
+Author: Gambhiro
+Author-email: profound.labs@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: python-dotenv (>=0.21.0,<0.22.0)
+Requires-Dist: textual (>=0.1.18,<0.2.0)
+Requires-Dist: typer (>=0.6.1,<0.7.0)
+Project-URL: Repository, https://github.com/profound-labs/memory-master-mind
+Description-Content-Type: text/markdown
+
+# MMM - Memory Master Mind
+
+Memory training in the terminal
+
+Install with pip:
+
+``` shell
+pip install memory-master-mind
+```
+
+Run with the `mmm` command.
+
+## Help and Challenges Info
+
+- [App Help](mmm/assets/mmm_help.md)
+- [Static Number Sequence](mmm/assets/static_number_sequence.md)
+- [Timed Number Sequence](mmm/assets/timed_number_sequence.md)
+- [Math (Arithmetic)](mmm/assets/math_arithmetic.md)
+- [Quotes and Verses](mmm/assets/quotes_and_verses.md)
+
+![Home Menu](docs/mmm-home.png)
+
+![Static Number Sequence](docs/mmm-static.png)
+
+![Timed Number Sequence](docs/mmm-timed.png)
+
+![Math (Arithmetic)](docs/mmm-math.png)
+
+![Quotes and Verses](docs/mmm-quotes.png)
+
+## Preferences
+
+![App Preferences](docs/mmm-app-prefs.png)
+
+![Preferences: Static Number Sequence](docs/mmm-static-prefs.png)
+
+## Links
+
+Powered by the [textual](https://github.com/Textualize/textual) TUI framework
+
+<https://github.com/profound-labs/memory-master-mind>
+
