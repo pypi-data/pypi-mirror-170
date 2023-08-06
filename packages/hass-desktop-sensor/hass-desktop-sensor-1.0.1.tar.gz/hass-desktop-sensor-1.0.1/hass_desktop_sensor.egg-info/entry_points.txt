@@ -1,0 +1,2 @@
+[console_scripts]
+hass_desktop_sensor = desktop_sensor.manager:main

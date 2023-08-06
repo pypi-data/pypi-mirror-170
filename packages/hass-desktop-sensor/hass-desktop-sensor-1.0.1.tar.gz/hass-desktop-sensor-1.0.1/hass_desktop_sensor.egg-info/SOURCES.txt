@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+desktop_sensor/__init__.py
+desktop_sensor/idle_sensor.py
+desktop_sensor/manager.py
+desktop_sensor/resources_sensor.py
+desktop_sensor/sensors.py
+hass_desktop_sensor.egg-info/PKG-INFO
+hass_desktop_sensor.egg-info/SOURCES.txt
+hass_desktop_sensor.egg-info/dependency_links.txt
+hass_desktop_sensor.egg-info/entry_points.txt
+hass_desktop_sensor.egg-info/requires.txt
+hass_desktop_sensor.egg-info/top_level.txt
