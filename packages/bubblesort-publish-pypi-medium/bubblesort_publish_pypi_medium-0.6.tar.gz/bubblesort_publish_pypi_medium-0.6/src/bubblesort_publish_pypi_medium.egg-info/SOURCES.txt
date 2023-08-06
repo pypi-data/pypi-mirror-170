@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/bubblesort_publish_pypi_medium.egg-info/PKG-INFO
+src/bubblesort_publish_pypi_medium.egg-info/SOURCES.txt
+src/bubblesort_publish_pypi_medium.egg-info/dependency_links.txt
+src/bubblesort_publish_pypi_medium.egg-info/requires.txt
+src/bubblesort_publish_pypi_medium.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+[Bubble sort]
+name = "bubblesort_package_vidyasagar333"
+version = "0.0.1"
+authors = [
+  { name="Vidyasagar Dandetikar", email="vidyasagarvidyasagar2002@gmail.com" },
+]
+description = "Bubble sort package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Nil",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/vidyasagar777/Bubblesort"
