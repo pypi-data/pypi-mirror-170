@@ -1,0 +1,4 @@
+[console_scripts]
+GuiguJinshuQuan5ce = GuiguJinshuQuan5ce.__main__:main
+guigu-jinshu-quan5ce = GuiguJinshuQuan5ce.__main__:main
+
