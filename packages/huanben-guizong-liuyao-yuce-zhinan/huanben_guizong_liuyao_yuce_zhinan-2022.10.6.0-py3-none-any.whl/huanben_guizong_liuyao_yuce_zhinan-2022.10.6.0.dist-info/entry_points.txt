@@ -1,0 +1,4 @@
+[console_scripts]
+HuanbenGuizongLiuyaoYuceZhinan = HuanbenGuizongLiuyaoYuceZhinan.__main__:main
+huanben-guizong-liuyao-yuce-zhinan = HuanbenGuizongLiuyaoYuceZhinan.__main__:main
+
