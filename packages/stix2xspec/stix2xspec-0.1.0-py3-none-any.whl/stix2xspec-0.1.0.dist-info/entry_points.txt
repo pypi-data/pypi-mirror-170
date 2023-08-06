@@ -1,0 +1,3 @@
+[console_scripts]
+stix2xspec=stix2xspec.__main__:app
+
