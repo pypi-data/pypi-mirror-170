@@ -1,0 +1,6 @@
+bionumpy>=0.2.0
+cython
+graph_kmer_index>=0.0.15
+numpy
+shared_memory_wrapper>=0.0.18
+tqdm
