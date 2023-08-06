@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/flaskord/__init__.py
+src/flaskord/exceptions.py
+src/flaskord/flaskord.py
+src/flaskord.egg-info/PKG-INFO
+src/flaskord.egg-info/SOURCES.txt
+src/flaskord.egg-info/dependency_links.txt
+src/flaskord.egg-info/top_level.txt
