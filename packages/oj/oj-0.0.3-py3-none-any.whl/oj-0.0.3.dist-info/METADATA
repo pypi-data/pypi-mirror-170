@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: oj
+Version: 0.0.3
+Summary: Reading excel (but more than just cell values: Also colors
+Home-page: https://github.com/thorwhalen/ut/tree/master/daf/excel.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# oj
+Reading excel (but more than just cell values: Also colors
+
+
+To install:	```pip install oj```
+
+
