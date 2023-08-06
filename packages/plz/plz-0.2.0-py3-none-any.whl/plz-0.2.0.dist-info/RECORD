@@ -1,0 +1,14 @@
+plz/__init__.py,sha256=B7Z-DwYaB17KW3ZywEBV5WI0PJtY1fRxeZGFrj3NLXs,99
+plz/plz_cli.py,sha256=S3Sa_GcDSNIr8kBxNIlr71LPg3fjOhrArryUpnTqffk,4617
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=MUkq8A-EVKQi70gqq_pbam5z100UoMD_gacxNGhyEWA,667
+tests/test_init.py,sha256=R73NFjoELKFpCfUDSRTo1Mhg4auq4ekGQqwYeBHuUAs,1069
+tests/test_install.py,sha256=IRUE8hyUbXIDivrflquorqXsTSpzQVp-01ZPIFqV9CM,4330
+tests/test_lock.py,sha256=sO1QSQF7-KEmurKq6NIguDLVfsTKjV1oQMveE5PxmIo,1127
+tests/utils.py,sha256=gbDDARj6EkUE7EkD0CnlVhbc2Vrl2kGQlkZhUecWe-g,632
+plz-0.2.0.dist-info/LICENSE,sha256=Q0JgqhtY9C-dIERcya6-hjaIXgnB6SqcScv7BHjVBuU,1067
+plz-0.2.0.dist-info/METADATA,sha256=kFCAP_74h-xJ7ZXnXbPIR3z41HmaoVWMu2C8WMduOnw,2139
+plz-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+plz-0.2.0.dist-info/entry_points.txt,sha256=8TwliDjHkyYkBwdPxdwIu5AGNPG6HqBrxmgkuKJ8pXs,32
+plz-0.2.0.dist-info/top_level.txt,sha256=syTJPucPMJPJcaMGh635bOc2AkTibuqqvd489-yV2us,10
+plz-0.2.0.dist-info/RECORD,,
