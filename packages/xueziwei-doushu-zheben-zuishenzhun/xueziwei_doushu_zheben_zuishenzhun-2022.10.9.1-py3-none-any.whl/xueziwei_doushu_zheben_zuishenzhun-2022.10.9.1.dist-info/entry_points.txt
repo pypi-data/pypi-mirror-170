@@ -1,0 +1,4 @@
+[console_scripts]
+XueziweiDoushuZhebenZuishenzhun = XueziweiDoushuZhebenZuishenzhun.__main__:main
+xueziwei-doushu-zheben-zuishenzhun = XueziweiDoushuZhebenZuishenzhun.__main__:main
+
