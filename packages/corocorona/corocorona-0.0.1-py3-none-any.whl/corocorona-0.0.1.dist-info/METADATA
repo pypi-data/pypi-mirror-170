@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: corocorona
+Version: 0.0.1
+Summary: A covoid-19 tracker
+Home-page: https://github.com/sho-yoshikawa/corocorona
+Author: syoshika
+Author-email: syoshika@student.42tokyo.jp
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+get corona infomations
