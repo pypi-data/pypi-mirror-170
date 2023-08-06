@@ -1,0 +1,3 @@
+{
+    "ignore": ["conda_lock/_vendor/**"]
+}
