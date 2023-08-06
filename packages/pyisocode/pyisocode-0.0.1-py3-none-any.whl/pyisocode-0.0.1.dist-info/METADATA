@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyisocode
+Version: 0.0.1
+Summary: converts iso code to country name
+Home-page: https://github.com/wa-le/pyisocode
+Author: Adewale Adeagbo
+Author-email: waleadeagbo30@gmail.com
+License: MIT
+Keywords: country
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is simple library that converts country ISO to country name and also converts country name to country ISO.
+
+Change Log
+==========
+
+0.0.1 (06/10/2022)
+-------------------
+- First Release
+
