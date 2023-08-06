@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: assuming
+Version: 0.0.2
+Summary: An easy way to enforce assumptions on parameters.
+Author-email: Peter Matthews <peter@pjmatthews.dev>
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/peterjamesmatthews/assuming
