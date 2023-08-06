@@ -1,0 +1,10 @@
+conda_envfile/__init__.py,sha256=f4ObB5umiFUss1v3q8b_RGGyXwA8gUkFoTllAaA59Vo,14312
+conda_envfile/_version.py,sha256=6phs_teiMFXlYjRZHHJJHElOwXq2XLUA2bDPY9cA4bQ,176
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_basic.py,sha256=-XiYWiUiqSip9Q-sgM_7vy4GCRww_4SfXYGOcI20Azs,3391
+conda_envfile-0.1.0.dist-info/LICENSE,sha256=S_ozu4z8QiP4itV3NOZDYjuf_93ODUyAcYzru2L-t4g,1068
+conda_envfile-0.1.0.dist-info/METADATA,sha256=xgCXGihBfV5AjC54WT2JBX_s_fu8V3ntCvBRr46LzNY,431
+conda_envfile-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+conda_envfile-0.1.0.dist-info/entry_points.txt,sha256=ObHPPrzupg5ONR06N1-oZSolXusUwRcxmF0m0ybhlXo,140
+conda_envfile-0.1.0.dist-info/top_level.txt,sha256=1AAe0ju_KdYGOhFSm99TKaZTdDsIrHoG3MR9i3jHfl4,20
+conda_envfile-0.1.0.dist-info/RECORD,,
