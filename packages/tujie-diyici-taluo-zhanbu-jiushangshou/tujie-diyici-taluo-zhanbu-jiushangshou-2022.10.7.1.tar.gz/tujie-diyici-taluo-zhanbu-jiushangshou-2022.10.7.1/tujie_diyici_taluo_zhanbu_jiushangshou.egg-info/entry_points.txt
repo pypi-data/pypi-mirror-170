@@ -1,0 +1,4 @@
+[console_scripts]
+TujieDiyiciTaluoZhanbuJiushangshou = TujieDiyiciTaluoZhanbuJiushangshou.__main__:main
+tujie-diyici-taluo-zhanbu-jiushangshou = TujieDiyiciTaluoZhanbuJiushangshou.__main__:main
+
