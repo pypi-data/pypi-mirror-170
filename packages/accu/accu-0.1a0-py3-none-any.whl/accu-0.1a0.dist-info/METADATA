@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: accu
+Version: 0.1a0
+Summary: More batteries for Django - an opinionated package
+License: MIT
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django
+
+# Django Accu
+
+More batteries for Django - an opinionated package for creating a Django application faster.
+
+## Architecture
+This project is not flexible in the supported architecture, it makes clear assumptions about the used structure. It uses:
+- Python >=3.9
+- Django >=4.1
+- DRF => 3.14
+- Django Q => 1.3
+- Sentry (optional)
+
+## Provided namespaces:
+### Currently available
+- [ ] https://github.com/matmair/django-accu/issues/1 core.checks: checks to make sure the Django project confirms to core assumptions made
+- [ ] https://github.com/matmair/django-accu/issues/2 core.config: utils to load settings from different sources (environment, .env, config files, ...)
+- [ ] https://github.com/matmair/django-accu/issues/3 core.clean: clean user inputs with bleach
+- [ ] https://github.com/matmair/django-accu/issues/4 core.urls: import for this project URLs
+- [ ] https://github.com/matmair/django-accu/issues/5 core.utils: helper functions
+- [ ] https://github.com/matmair/django-accu/issues/6 tasks: async execution of functions
+
+### On the roadmap
+- [ ] https://github.com/matmair/django-accu/issues/7 plugins: a plugin implementation for Django
+- [ ] https://github.com/matmair/django-accu/issues/8 settings: database settings
+- [ ] https://github.com/matmair/django-accu/issues/8 settings.api: expose the settings for consumption in apps/frontends
+
+### TODO/to be ported from codebases
+- [ ] users: expandable user (uses a profile to expand the model to keep usability with other projects high)
+- [ ] changelogs
+- [ ] approvals
+- [ ] setups
+- [ ] core.update
+- [ ] reports.client (jasper-server-based)
+- [ ] reports.file (jasper-file-based
+
+### To be finished and ported:
+- [ ] users.token: multi-token implementation for usage with DRF
+- [ ] core.security.api: expose all core security flows via API (registration, login, logoff, deletion, MFA-actions, password-reset)
+
+## WARNING
+
+THIS IS CURRENTLY A PLACEHOLDER WHILE SOME HURDLES ARE CLEARED
+
+## Acknowledgement
+
+This repo contains code from InvenTree/InvenTree (MIT licensed), MissionLog (closed source, with permission) and several closed source projects I (matmair / mjmair.com) work on with the permission of the owners.
