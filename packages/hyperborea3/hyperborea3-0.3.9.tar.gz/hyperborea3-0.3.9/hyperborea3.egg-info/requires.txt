@@ -1,0 +1,15 @@
+
+[dev]
+fastapi
+pip-tools
+twine
+uvicorn
+
+[test]
+black
+flake8
+tox
+pytest
+pytest-cov
+pytest-repeat
+mypy
