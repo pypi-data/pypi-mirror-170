@@ -1,0 +1,11 @@
+
+[dev]
+black
+isort
+mypy
+pyre-check
+twine
+
+[docs]
+sphinx
+sphinx_rtd_theme

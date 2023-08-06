@@ -1,0 +1,112 @@
+[build-system]
+requires = [
+    "build",
+    "mypy",
+    "setuptools >= 65.3.0",
+    "setuptools_scm[toml]",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "log_color"
+description = "Simple log formatters for colored output"
+dynamic = ['version']
+authors = [
+    { "name" = "Brant Watson", "email" = "oldspiceap@gmail.com" },
+]
+license = {file = "LICENSE"}
+keywords = ["logging", "color", "formatter", ]
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+requires-python = ">= 3.6.*"
+dependencies = []
+
+[project.urls]
+homepage = "https://github.com/induane/logcolor"
+documentation = "http://log-color.readthedocs.io/en/latest/"
+repository = "https://github.com/induane/logcolor"
+changelog = "https://github.com/induane/logcolor/blob/master/docs/source/changelog.rst"
+
+[tool.setuptools.package-data]
+"log_color" = [ "py.typed",]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "mypy",
+    "pyre-check",
+    "twine",
+]
+docs = [
+  "sphinx",
+  "sphinx_rtd_theme",
+]
+
+[tool.setuptools_scm]
+root = "."
+
+[tool.vermin]
+setuptools_scm = true
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.black]
+line-length = 120
+target-version = ['py37', 'py38', 'py39', 'py310']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+warn_return_any = true
+show_error_codes = true
+warn_unused_ignores = true
+namespace_packages = true
+warn_redundant_casts = true
+warn_no_return = true
+warn_unreachable = true
+pretty = true
+show_error_context = true
+# Mypy ignores hidden directories but it needs scan __pycache__ for .pyc and pyi files, so it cannot honor gitignore.
+exclude = [
+    '''^(?:.*\/)+[tT]ests?''',
+    'venv/',
+    'build/',
+    '.env_python3/',
+    '.env_python3.6/',
+    '.env_python3.7/',
+    '.env_python3.8/',
+    '.env_python3.9/',
+    '.env_python3.10/',
+    '.env_python3.11/',
+    '.env_python3.12/',
+]
