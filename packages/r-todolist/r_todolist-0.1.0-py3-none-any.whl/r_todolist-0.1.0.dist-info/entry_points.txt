@@ -1,0 +1,3 @@
+[console_scripts]
+todo=r_todolist.main:app
+
