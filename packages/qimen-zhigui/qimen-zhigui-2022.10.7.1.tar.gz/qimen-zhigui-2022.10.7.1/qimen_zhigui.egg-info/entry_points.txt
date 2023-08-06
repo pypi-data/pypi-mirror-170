@@ -1,0 +1,4 @@
+[console_scripts]
+QimenZhigui = QimenZhigui.__main__:main
+qimen-zhigui = QimenZhigui.__main__:main
+
