@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "help-desk-client"
+version = "0.1.9"
+readme = "README.md"
+description = "A Python client for interfacing with help desk services."
+authors = ["Sam Dudley <sam.dudley@digital.trade.gov.uk>", "Ross Miller <ross.miller@digital.trade.gov.uk>", "Luisella Strona <luisella.strona@trade.gov.uk>", "Anthoni Gleeson <anthoni.gleeson@trade.gov.uk>", "Ares Galamatis <ares.galamatis@trade.gov.uk>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+zenpy = "^2.0.25"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.971"
+black = "^22.6.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+skip_gitignore = true
+line_length = 88
+lines_after_imports = 2
