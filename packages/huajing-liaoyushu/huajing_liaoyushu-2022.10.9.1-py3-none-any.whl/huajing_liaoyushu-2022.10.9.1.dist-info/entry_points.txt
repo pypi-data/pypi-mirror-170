@@ -1,0 +1,4 @@
+[console_scripts]
+HuajingLiaoyushu = HuajingLiaoyushu.__main__:main
+huajing-liaoyushu = HuajingLiaoyushu.__main__:main
+
