@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cosima
+Version: 0.1
+Summary: COmmunication SIMulation with Agents
+Home-page: https://gitlab.com/mosaik/examples/cosima.git
+Author: Cosima Team
+Author-email: emilie.frost@offis.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Integration of the (communication) simulator OMNeT++ into the co-simulation framework mosaik
+
