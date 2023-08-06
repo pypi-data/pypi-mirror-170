@@ -1,0 +1,15 @@
+pypgsync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypgsync/mode/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypgsync/mode/primarykey.py,sha256=JC7e0MSviVESo8vCPHvhsyjdOtvppAD89iwGx87gdFc,6453
+pypgsync/pypgsync.py,sha256=DuWyrLKgOS7gDzq7jboyPEIlbk11ZPQdS4wRNGt99gI,3295
+pypgsync/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypgsync/util/conversion.py,sha256=5EPnWcLbxtXbfI2a7jPDn0sj9Wd43RTnte4aFihefxc,467
+pypgsync/util/create.py,sha256=5pe7QP_TZ12DcVl_0iMWz8ZZt_uloeKgICdT1ug7Qi0,1169
+pypgsync/util/delete.py,sha256=6vfBV-28hp3QLS2cigqkwq3JA4kkA5X86GigQZqPGHc,468
+pypgsync/util/log.py,sha256=Yp9IbOFXTwEhAQqLJDxsP-QZr3teCbj_3PfTkrvATj0,363
+pypgsync/util/query.py,sha256=NXNaQ_LlRopxiaQjLQg5G7GXrTu5pT5q5soNnIAqfYQ,3836
+pypgsync/util/update.py,sha256=7bZjbhcUc7H_h5rhTL0ue9GDl8y5rSO-TLIoWvfI25s,560
+pypgsync-1.1.0.dist-info/LICENSE,sha256=kLaVEIXx8a_6vFV1pNHNZtToUytC7wGeziH96_RVwtQ,1074
+pypgsync-1.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pypgsync-1.1.0.dist-info/METADATA,sha256=IR-2ODp9HHP2vJPzby6ZXaSYD-A0DPpDykqpikGF7ZI,1859
+pypgsync-1.1.0.dist-info/RECORD,,
