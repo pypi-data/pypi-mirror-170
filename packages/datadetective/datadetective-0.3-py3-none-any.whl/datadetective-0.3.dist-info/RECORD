@@ -1,0 +1,16 @@
+lapros/__init__.py,sha256=7HAOL3BNu8quNaeBl0VKkQsN2T4FOvfnf6B6b-9meiw,46
+lapros/_modidx.py,sha256=42aEbYgcafABt69_lFeukXfbbQ4732KHmmwQDgkuYMc,3567
+lapros/_nbdev.py,sha256=AMXAPNAaTY3wq845OkSA7WQpB72WIj_hXfkKtzrb45s,429
+lapros/alg.py,sha256=vaKYfpaVsSe8rVKZRCJaJ_5V6McHpmmitAU50UCwL5I,5767
+lapros/api.py,sha256=uD_A7-zLC2MdP5uxkTjhRXWaYQ17YMM-gUMpDUtfxhA,4157
+lapros/util.py,sha256=Sq_5ViFDQxlj5FN1pXmNPJ_jNAPmAqfrDCc05_q3gMY,434
+lapros/classification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lapros/classification/estimate_noise.py,sha256=UJ2kcmbguyWAgMrRmcE_MaJUSWNSM9FgMEonUZUytRo,4559
+lapros/classification/rank_noise/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lapros/classification/rank_noise/confidence.py,sha256=f1w_lxEhrC-7x2sKid-FyWzdSKippfV_W2Wr2JJcEHI,2956
+lapros/classification/rank_noise/residual.py,sha256=UdHU9S_HH7yd-PuuAcXD1UBivLLJVW3D9xdJZlRBn70,2463
+datadetective-0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datadetective-0.3.dist-info/METADATA,sha256=hy9krBpX4yuN-Nixf4Mz5c9qZ78xPAKNW_8zTvpYLkc,8601
+datadetective-0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+datadetective-0.3.dist-info/top_level.txt,sha256=waRRn0g76hffw9Usc-z3ErAb3YNz0eh1--JYQfwkfcg,7
+datadetective-0.3.dist-info/RECORD,,
