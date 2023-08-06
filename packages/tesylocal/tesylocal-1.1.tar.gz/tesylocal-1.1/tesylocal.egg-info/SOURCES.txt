@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+tesylocal/__init__.py
+tesylocal.egg-info/PKG-INFO
+tesylocal.egg-info/SOURCES.txt
+tesylocal.egg-info/dependency_links.txt
+tesylocal.egg-info/requires.txt
+tesylocal.egg-info/top_level.txt
