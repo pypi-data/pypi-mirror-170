@@ -1,0 +1,2 @@
+[console_scripts]
+joj-auth = joj_auth.command_line:main
