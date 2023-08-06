@@ -1,0 +1,6 @@
+h5py
+pandas
+plotly
+trame-grid-layout
+trame>=2.0.0rc2
+vtk
