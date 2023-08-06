@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: whatlang-pyo3
+Version: 0.1.6
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Author-email: Omar MHAIMDAT <omarmhaidmat@gmail.com>
+Requires-Python: >=3.6
