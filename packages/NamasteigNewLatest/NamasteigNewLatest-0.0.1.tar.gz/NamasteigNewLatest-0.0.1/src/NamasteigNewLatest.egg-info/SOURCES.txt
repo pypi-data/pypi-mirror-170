@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/NamasteigNewLatest/__init__.py
+src/NamasteigNewLatest/login.py
+src/NamasteigNewLatest.egg-info/PKG-INFO
+src/NamasteigNewLatest.egg-info/SOURCES.txt
+src/NamasteigNewLatest.egg-info/dependency_links.txt
+src/NamasteigNewLatest.egg-info/top_level.txt
