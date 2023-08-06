@@ -1,0 +1,10 @@
+setup.py
+frankieyeung_distributions/Binomialdistribution.py
+frankieyeung_distributions/Gaussiandistribution.py
+frankieyeung_distributions/Generaldistribution.py
+frankieyeung_distributions/__init__.py
+frankieyeung_distributions.egg-info/PKG-INFO
+frankieyeung_distributions.egg-info/SOURCES.txt
+frankieyeung_distributions.egg-info/dependency_links.txt
+frankieyeung_distributions.egg-info/not-zip-safe
+frankieyeung_distributions.egg-info/top_level.txt
