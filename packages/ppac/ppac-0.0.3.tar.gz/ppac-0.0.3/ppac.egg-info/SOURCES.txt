@@ -1,0 +1,14 @@
+LICENSE
+setup.py
+ppac/REQUIREMENTS
+ppac/VERSION
+ppac/__init__.py
+ppac/item.py
+ppac/utils.py
+ppac.egg-info/PKG-INFO
+ppac.egg-info/SOURCES.txt
+ppac.egg-info/dependency_links.txt
+ppac.egg-info/requires.txt
+ppac.egg-info/top_level.txt
+ppac/loaders/__init__.py
+ppac/loaders/jira.py
