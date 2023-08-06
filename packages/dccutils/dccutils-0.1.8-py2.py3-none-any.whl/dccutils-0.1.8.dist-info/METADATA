@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: dccutils
+Version: 0.1.8
+Summary: Classes to abstract DCC functions and make your code DCC work agnostic
+Home-page: https://github.com/cgwire/dcc-utils
+Author: CGWire
+Author-email: contact@cg-wire.com
+License: MIT
+Keywords: cg,vfx,pipeline,production,asset manager
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Multimedia :: Graphics
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: wheel ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pre-commit (<=2.20.0) ; extra == 'test'
+Requires-Dist: black (<=22.8.0) ; (python_version >= "3.5") and extra == 'test'
+
+DCCUtils
+=====================================
+
+This library offers a serie of classes to abstract the most common features
+available in Digital Content Creation (DCC) tools.
+
+It currently supports Blender, Unreal, Maya and Houdini.
+
+|Discord| |Downloads|
+
+How to use it
+-------------
+
+Install the library:
+
+.. code-block:: bash
+
+    pip install dccutils
+
+
+Then in your code (let's say you are working in Blender):
+
+.. code-block:: python
+
+    from dccutils import BlenderContext
+
+    dcc_software_manager.blender = BlenderContext()
+    print(dcc_software_manager.get_cameras())
+
+
+Contributions
+-------------
+
+All contributions are welcome as long as they respect the `C4
+contract <https://rfc.zeromq.org/spec:42/C4>`__.
+
+Code must follow the pep8 convention.
+
+You can use the pre-commit hook for Black (a python code formatter) before commiting :
+
+.. code:: bash
+
+    pip install pre-commit
+    pre-commit install
+
+
+About authors
+-------------
+
+DCCUtils is written by CGWire, a company based in France. We help animation and VFX studios to collaborate better through efficient tooling. We already work with more than 70 studios around the world.
+
+Visit `cg-wire.com <https://cg-wire.com>`__ for more information.
+
+|CGWire Logo|
+
+.. |Discord| image:: https://badgen.net/badge/icon/discord?icon=discord&label
+   :target: https://discord.com/invite/VbCxtKN
+.. |CGWire Logo| image:: https://zou.cg-wire.com/cgwire.png
+   :target: https://cg-wire.com
+.. |Downloads| image:: https://static.pepy.tech/personalized-badge/dccutils?period=month&units=international_system&left_color=grey&right_color=orange&left_text=Downloads
+   :target: https://pepy.tech/project/dccutils
+
+
