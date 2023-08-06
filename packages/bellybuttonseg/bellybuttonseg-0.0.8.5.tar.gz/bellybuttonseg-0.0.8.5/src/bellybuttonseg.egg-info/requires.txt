@@ -1,0 +1,8 @@
+numpy
+matplotlib
+opencv_contrib_python==4.5.5.64
+scipy
+scikit-image
+tensorflow
+pillow
+requests
