@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "dvsgc"
+version = "0.1"
+authors = [
+  { name="VicenteAlex", email="alex.vicente-sola@strath.ac.uk" },
+]
+description = "DVS-Gestures-Chain. Official implementation of the dataset defined in \"Evaluating the temporal understanding of neural networks on event-based action recognition with DVS-Gesture-Chain\""
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "spikingjelly==0.0.0.0.8",
+    "torchvision",
+    "tqdm"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/VicenteAlex/DVS-Gesture-Chain"
+"Bug Tracker" = "https://github.com/VicenteAlex/DVS-Gesture-Chain/issues"
