@@ -1,0 +1,2 @@
+[console_scripts]
+seg2link = seg2link.start_seg2link:main
