@@ -1,0 +1,7 @@
+netifaces2-0.0.10.dist-info/METADATA,sha256=QaDzfFxDW0zdIvcj14lovTYJkyJU664cYq1L1icd5YA,1790
+netifaces2-0.0.10.dist-info/WHEEL,sha256=nP7okTueiXEkhLC6BHv-ZmvZyVFabSluE3jKo3BwmUA,135
+netifaces2-0.0.10.dist-info/license_files/LICENSE,sha256=IY9mQ-vHSqgWaMoIB-1-herwyKtAUkF0e4JCE4madx8,1055
+netifaces/__init__.py,sha256=HNk43hnZ6rTNIVLHeWpCgLMnViZ0KSXh6SD2AN_Hm6o,1361
+netifaces/impl.py,sha256=sV2_G9szMvG05AOW0LndDNDg0_omU1kUcoLePsmL5PI,1363
+netifaces/netifaces.pypy39-pp73-x86_64-linux-gnu.so,sha256=LSN6duI-BX_173il_7BUthSBU9nIrJdkfRtYQoxszvA,4097376
+netifaces2-0.0.10.dist-info/RECORD,,
