@@ -1,0 +1,12 @@
+README.md
+setup.py
+WokaoXiyinliFazeZhuandaoSanqianwan/README.md
+WokaoXiyinliFazeZhuandaoSanqianwan/__init__.py
+WokaoXiyinliFazeZhuandaoSanqianwan/__main__.py
+WokaoXiyinliFazeZhuandaoSanqianwan/file.pdf
+WokaoXiyinliFazeZhuandaoSanqianwan/index.html
+wokao_xiyinli_faze_zhuandao_sanqianwan.egg-info/PKG-INFO
+wokao_xiyinli_faze_zhuandao_sanqianwan.egg-info/SOURCES.txt
+wokao_xiyinli_faze_zhuandao_sanqianwan.egg-info/dependency_links.txt
+wokao_xiyinli_faze_zhuandao_sanqianwan.egg-info/entry_points.txt
+wokao_xiyinli_faze_zhuandao_sanqianwan.egg-info/top_level.txt
