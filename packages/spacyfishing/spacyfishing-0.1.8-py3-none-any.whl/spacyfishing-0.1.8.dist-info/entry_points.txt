@@ -1,0 +1,2 @@
+[spacy_factories]
+entityfishing = spacyfishing.entity_fishing_linker:EntityFishing
