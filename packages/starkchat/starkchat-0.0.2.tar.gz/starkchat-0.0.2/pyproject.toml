@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "starkchat"
+version = "0.0.2"
+description = "Stark chatbot client based on AIML"
+authors = ["Sathishzus <sourechebala19470@gmail.com>"]
+license = "BSD"
+readme = "README.md"
+repository = "https://github.com/StarkIndustriesTG"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+packages = [{ include = "StarkChat" }]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+python-aiml = "0.9.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
