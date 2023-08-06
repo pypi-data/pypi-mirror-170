@@ -1,0 +1,15 @@
+mssw/__init__.py,sha256=S0BJjePuqSdK_1rSQEQza7tg2-jfupKC-AhKC25PQx4,144
+mssw/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mssw/src/Makefile,sha256=AFEXOEenXONGzl9vCvl8RCL0Q0mP0lljew89q8_pfmk,1594
+mssw/src/example.cpp,sha256=3XgIhuE7H8bVkJqg8zxsMoKw1XKL5xdJFegQlVycMMQ,1974
+mssw/src/kseq.h,sha256=j-D6GW4Cq6EGQXZ0risH4csG-yC_AAwCJO2OdovCDSg,13189
+mssw/src/main.c,sha256=yrH_q_2IP0aVZ80Ddj_HDZ244jHn8gxAjSl-X2rNnkU,20351
+mssw/src/sse2neon.h,sha256=LVPJdoOs31WE1eYirS8qqQpcHIAZFu8Arl-mAUL0qAo,330645
+mssw/src/ssw.c,sha256=BECHdZrsLNIdA5ULAOC7F41FC0CNqPCDvOOuwOjE9gI,35775
+mssw/src/ssw.h,sha256=tDDxUst3aj5g_9PGjM8rsSVz9d52QER-F5Hr3ymFzIE,9527
+mssw/src/ssw_cpp20.cpp,sha256=PdRK8FwsvF8-pxQJErNDKOvWHJx0wCPUdADfq_HKvoA,13654
+mssw/src/ssw_cpp20.hpp,sha256=yjvU9BVn3yqWGHoMUwll-dsclR4XzQcJaaG8p8HRX2M,9004
+mssw/_cpp.cpython-310-x86_64-linux-gnu.so,sha256=k-CDXaqIbvsWAl8FgSPBNKu1Y1TSlZHUyN9JTr_THF4,339752
+mssw-0.1.1.dist-info/WHEEL,sha256=4ZipzdKrQ-tDEOLBFMAG2c43H5N9Ijn1soJxR7uBCR0,110
+mssw-0.1.1.dist-info/METADATA,sha256=HG63BE4iD4UsDfycFBHZxiYmV16bPfkQJeJPOFiCNQM,1869
+mssw-0.1.1.dist-info/RECORD,,
