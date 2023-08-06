@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cwrf"
+version = "0.0.1"
+authors = [
+  { name="Dropicode", email="dropicode@protonmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+# url="https://gitlab.com/quant15/tangent/ws-request-formulator"
+
+# [project.urls]
+# "Homepage" = "https://gitlab.com/quant15/tangent/ws-request-formulator"
+# "Bug Tracker" = "https://gitlab.com/quant15/tangent/ws-request-formulator/-/issues"
