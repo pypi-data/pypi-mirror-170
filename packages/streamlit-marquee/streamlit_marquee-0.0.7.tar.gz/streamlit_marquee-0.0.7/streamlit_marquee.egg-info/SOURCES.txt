@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+streamlit_marquee/__init__.py
+streamlit_marquee.egg-info/PKG-INFO
+streamlit_marquee.egg-info/SOURCES.txt
+streamlit_marquee.egg-info/dependency_links.txt
+streamlit_marquee.egg-info/requires.txt
+streamlit_marquee.egg-info/top_level.txt
+streamlit_marquee/frontend/index.html
+streamlit_marquee/frontend/css/index.css
+streamlit_marquee/frontend/js/index.js
