@@ -1,0 +1,14 @@
+dccutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dccutils/__version__.py,sha256=YpKDcdV7CqL8n45u267wKtyloM13FSVbOdrqgNZnSLM,22
+dccutils/blender.py,sha256=zlL06GGfMh-anCPYSWYmrQrw-6Boe81ApXnHPkwc4tE,8854
+dccutils/exceptions.py,sha256=S_b4-lyywcxjGo20rvKny1Fq12aUc5MZYri8X4TArAQ,210
+dccutils/guess.py,sha256=VAnUHcO-Iq-Fey1H5VlqglsMFRlTtki-Lel6fqR-dBc,538
+dccutils/houdini.py,sha256=4VAqJ9LxYB0PpAFuxdN7xtbLRQrDXV9zTjtfHUap9Bs,5240
+dccutils/maya.py,sha256=9Y69fMwK_mhAzWFs8y8xeuhbTIHbYDoVg3zbIiz4p3E,8546
+dccutils/software.py,sha256=QZTgRzJ8KBDBVZftc1Vc3xYddO8QKAkQD-wC1Cp5lBs,2483
+dccutils/unreal.py,sha256=e89f6WbagC9dJHL36xDeIyQYRBa8J7ekgC_QdPj5S_g,7673
+dccutils-0.1.7.dist-info/LICENSE,sha256=KhTLyPEX5Q7kiEhTX69HaqmwHjjpRFRRKhKApfGTinI,1067
+dccutils-0.1.7.dist-info/METADATA,sha256=ymXjJvPqHlG89m6MpTCTXeOZdx9tO2dHNooxMKnG5GQ,2691
+dccutils-0.1.7.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+dccutils-0.1.7.dist-info/top_level.txt,sha256=b4MS8qU3bPqx_wD1NCAXIV-MX0IKAy-GFhslzKwnIFA,9
+dccutils-0.1.7.dist-info/RECORD,,
