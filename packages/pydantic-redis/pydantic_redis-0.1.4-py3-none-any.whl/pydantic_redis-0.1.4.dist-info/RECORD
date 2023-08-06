@@ -1,0 +1,10 @@
+pydantic_redis/__init__.py,sha256=GdJdwU5Py01ZTd0eoejqKComL_i4Z5uoCIUzyUY77pw,135
+pydantic_redis/abstract.py,sha256=-jXyflpu6WAymmeRFCPfKAkyrYElxlJEUE2juwnnIxU,2050
+pydantic_redis/config.py,sha256=cmo-RfVrAoaYyOhQVqUzIzaK7VF1tou0IVZatWAKBiY,667
+pydantic_redis/model.py,sha256=2soltqvtZ5kV2ZlhDpDV2iA1t9iC1CQmZ1Ir4242CQ4,9222
+pydantic_redis/store.py,sha256=fUUaIeYsVmIPewj-OTapOOCyTuIXp6XONDbHH6xXAZw,1518
+pydantic_redis-0.1.4.dist-info/LICENSE,sha256=j5xpuOdo-ZQUB_WweumZmGoFMvKBxi_28Ak9wNZ5SNU,1072
+pydantic_redis-0.1.4.dist-info/METADATA,sha256=vX7B3ve7hhyAFbm7MtmfSFv9UBzD3W3fZhq56zKmV1A,6031
+pydantic_redis-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pydantic_redis-0.1.4.dist-info/top_level.txt,sha256=__4BECVczpbpOyRjABa6vRjG2ubzXq16nPXsUIDLcTA,15
+pydantic_redis-0.1.4.dist-info/RECORD,,
