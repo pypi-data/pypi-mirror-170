@@ -1,0 +1,11 @@
+QimenZhigui/Dockerfile,sha256=EL9KrzZTOAXlF3pgAqKipIvt77gtFsypZ63EkDm0fDg,54
+QimenZhigui/README.md,sha256=l9roG-zktAiznjwlYuGaZdAf50Gq07gQlumITpocF9o,427
+QimenZhigui/__init__.py,sha256=Bz9bqDs-p5kG3_JujkGYoo_njm_seVcwLK0o0v12Bc0,232
+QimenZhigui/__main__.py,sha256=StlRO3acXK2KUuyxyIo8iCn-lrgHJJFtHFGn0N6XCCM,635
+QimenZhigui/file.pdf,sha256=SfzUcI9yuH1fk3iaz248Flmvp8Hyt0D0MyICUKFHlss,9857775
+QimenZhigui/index.html,sha256=_MGK6QxkE2rVGIG7ZaJ4ecKGzeeH4FZjepNV-U7xoO4,150
+qimen_zhigui-2022.10.7.1.dist-info/METADATA,sha256=6huWYWaRN0ZC9SO0ivOLFj7SssxL2QTapMAzJza3hTU,1502
+qimen_zhigui-2022.10.7.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+qimen_zhigui-2022.10.7.1.dist-info/entry_points.txt,sha256=zAmEoZZgr-8j_zUU8Jg06fAie3wZa4i7tFsYYdOkifo,100
+qimen_zhigui-2022.10.7.1.dist-info/top_level.txt,sha256=N9a0pgf4cvHw5EYjcKmZNFylTI7ybHazF9yaZTZAdaM,12
+qimen_zhigui-2022.10.7.1.dist-info/RECORD,,
