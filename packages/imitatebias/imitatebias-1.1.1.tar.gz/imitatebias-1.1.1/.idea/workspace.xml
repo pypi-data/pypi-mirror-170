@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ed59bb22-cfaa-4ea2-b946-e9c95aec2cf6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dist/imitatebias-1.1.0.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imitatebias/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imitatebias/cancels.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imitatebias/generators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imitatebias/imitate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imitatebias/mimic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imitatebias/cancels.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imitatebias/generators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imitatebias/imitate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imitatebias/mimic.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FpIpEntpbxft3EvdpLgPxZwYUV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Uni/imitatebias/src/imitatebias",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Uni\imitatebias\src\imitatebias" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed59bb22-cfaa-4ea2-b946-e9c95aec2cf6" name="Changes" comment="" />
+      <created>1665182779345</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665182779345</updated>
+      <workItem from="1665182780627" duration="630000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
