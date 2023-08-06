@@ -1,0 +1,7 @@
+setup.py
+Math/__init__.py
+Math/formulas.py
+vpython_zth_math.egg-info/PKG-INFO
+vpython_zth_math.egg-info/SOURCES.txt
+vpython_zth_math.egg-info/dependency_links.txt
+vpython_zth_math.egg-info/top_level.txt
