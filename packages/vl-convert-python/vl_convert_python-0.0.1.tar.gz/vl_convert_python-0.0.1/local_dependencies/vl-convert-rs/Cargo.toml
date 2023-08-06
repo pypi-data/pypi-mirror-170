@@ -1,0 +1,23 @@
+[package]
+name = "vl-convert-rs"
+version = "0.1.0-rc1"
+edition = "2021"
+license = "BSD-3-Clause"
+readme = "README.md"
+homepage = "https://github.com/jonmmease/vl-convert"
+repository = "https://github.com/jonmmease/vl-convert"
+description = "Library for converting Vega-Lite visualization specifications to Vega specifications"
+keywords = ["Visualization", "Vega", "Vega-Lite"]
+
+[dependencies]
+deno_core = "0.153.0"
+serde_json = "1.0.85"
+futures = "0.3.24"
+futures-util = "0.3.24"
+
+[dev-dependencies]
+tokio = {version="1.21.2", features=["macros", "rt", "rt-multi-thread"]}
+rstest = "0.15.0"
+
+[build-dependencies]
+serde_json = "1.0.85"
