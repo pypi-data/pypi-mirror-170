@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: async-sqs-consumer
+Version: 0.1.2
+Summary: 
+Home-page: https://github.com/drestrepom/async_sqs_consumer
+Keywords: AWS,AWS,SQS,sqs,consumer,async,worker
+Author: Diego Restrepo
+Author-email: drestrepo@fluidattacks.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aioboto3 (>=10.1.0,<11.0.0)
+Requires-Dist: aiobotocore (>=2.4.0,<3.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: jsonschema (>=4.16.0,<5.0.0)
+Project-URL: Repository, https://github.com/drestrepom/async_sqs_consumer
+Description-Content-Type: text/markdown
+
+# Async SQS consumer
+
+This is a simple asynchronous worker for consuming messages from AWS SQS.
+
+This is a hobby project, if you find the project interesting
+any contribution is welcome
+
+
+## Usage
+
+You must create an instance of the worker with the url of the queue.
+
+Aws credentials are taken from environment variables, you must set the following environment variables
+
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
+
+```python
+from async_sqs_consumer.worker import (
+    Worker,
+)
+
+worker = Worker(
+    queue_url="https://sqs.us-east-1.amazonaws.com/xxxxxxx/queue_name"
+)
+
+
+@worker.task("report")
+async def report(text: str) -> None:
+    print(text)
+
+worker.start()
+```
+
+To publish the messages they must have the following structure
+
+```json
+{
+    "task": {"type": "string"},
+    "id": {"type": "string"},
+    "args": {"type": "array"},
+    "kwargs": {"type": "object"},
+    "retries": {"type": "number"},
+    "eta": {"type": "string"},
+    "expires": {"type": "string"},
+}
+```
+
