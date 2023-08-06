@@ -1,0 +1,3 @@
+[console_scripts]
+diffalarm=diffalarm:main
+
