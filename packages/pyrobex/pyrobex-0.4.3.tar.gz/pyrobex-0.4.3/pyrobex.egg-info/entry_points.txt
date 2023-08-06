@@ -1,0 +1,2 @@
+[console_scripts]
+robex = pyrobex.cli:main
