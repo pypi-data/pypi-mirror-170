@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+demand_pred_model = demand_pred_model._modidx:d
+
