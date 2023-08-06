@@ -1,0 +1,9 @@
+il_supermarket_scarper/__init__.py,sha256=iMu0ADuGqjauqUQjzPXDHls5bQ45d1ZxvYeC3tXK15k,79
+il_supermarket_scarper/main.py,sha256=vQH_ti4Kchc8u_UygTdn6TRCRGW3QzATJas91cDdfpQ,1011
+il_supermarket_scarper/scrapper_runner.py,sha256=Hg6Rsy-t9RCl1-JEeu2ljYtFU-DwQwnnxY1eLrQaAXw,3297
+il_supermarket_scarper/scrappers_factory.py,sha256=LugWwR9X1r_zfWHBfA2aCVWCz45jeQMyE7j9xtln5cE,898
+il_supermarket_scraper-0.2.3.dist-info/LICENSE.txt,sha256=ODrXI-Tdg0xNER8_j12xQezIUSxHBDm-oFPX17ODkUo,1052
+il_supermarket_scraper-0.2.3.dist-info/METADATA,sha256=QwSkzK0E_88HwulCc2LBdzHD14efbqI-Nm1gPL42mTk,4864
+il_supermarket_scraper-0.2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+il_supermarket_scraper-0.2.3.dist-info/top_level.txt,sha256=ZgxiGYK2fzmLLnrjLBClsPpOmomYSdDMV3QleVKxlMs,23
+il_supermarket_scraper-0.2.3.dist-info/RECORD,,
