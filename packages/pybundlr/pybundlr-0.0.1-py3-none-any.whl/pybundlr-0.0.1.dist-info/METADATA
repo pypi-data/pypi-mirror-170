@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pybundlr
+Version: 0.0.1
+Summary: Simple py driver for bundlr
+Project-URL: Homepage, https://github.com/oceanprotocol/pybundlr
+Project-URL: Bug Tracker, https://github.com/oceanprotocol/pybundlr/issues
+Author-email: Trent McConaghy <gtrent@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# pybundlr
+Simple py driver for bundlr
+
+Constructed by wrapping [bundlr CLI](https://docs.bundlr.network/docs/client/cli).

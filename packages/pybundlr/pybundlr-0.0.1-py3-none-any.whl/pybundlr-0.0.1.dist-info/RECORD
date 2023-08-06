@@ -1,0 +1,7 @@
+pybundlr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybundlr/pybundlr.py,sha256=ZL8y62skws9fo4KZj42xt7BwWDkqzv8nhYjuFWuS59k,1005
+pybundlr/test/test_pybundlr.py,sha256=W8B64zF42PqI6uhMnQ34nP8b4OWMEw6bFO3JqV4J8CU,167
+pybundlr-0.0.1.dist-info/METADATA,sha256=ob7GQGSsfir9o5ODHjDHTvAXsMjS7dmLXpfdblIWmAI,623
+pybundlr-0.0.1.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+pybundlr-0.0.1.dist-info/licenses/LICENSE,sha256=spHSmXF7DO9mxcKFLWKJQkvIgNDiICk8af_hYigzkAY,1071
+pybundlr-0.0.1.dist-info/RECORD,,
