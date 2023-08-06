@@ -1,0 +1,137 @@
+2022-10-07 18:05:23,106 INFO WebSocket Inverse Perp attempting connection...
+2022-10-07 18:05:23,106 DEBUG WebSocket Inverse Perp closed.
+2022-10-07 18:05:23,106 DEBUG WebSocket Inverse Perp opened.
+2022-10-07 18:05:23,259 DEBUG --- request header ---
+2022-10-07 18:05:23,259 DEBUG GET /realtime HTTP/1.1
+Upgrade: websocket
+Host: stream.bybit.com
+Origin: https://stream.bybit.com
+Sec-WebSocket-Key: HbUnWALOyN05OrjXzc1hMQ==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+2022-10-07 18:05:23,259 DEBUG -----------------------
+2022-10-07 18:05:23,265 DEBUG --- response header ---
+2022-10-07 18:05:23,956 DEBUG HTTP/1.1 101 Switching Protocols
+2022-10-07 18:05:23,963 DEBUG Connection: upgrade
+2022-10-07 18:05:23,969 DEBUG Date: Fri, 07 Oct 2022 17:05:23 GMT
+2022-10-07 18:05:23,980 DEBUG Upgrade: websocket
+2022-10-07 18:05:23,986 DEBUG Sec-WebSocket-Accept: g/K9mdc1OSDOnfWpSyJCujxk3PI=
+2022-10-07 18:05:23,993 DEBUG X-Cache: Miss from cloudfront
+2022-10-07 18:05:24,004 DEBUG Via: 1.1 48179baa1f4b10fb9dd77b83761e5d14.cloudfront.net (CloudFront)
+2022-10-07 18:05:24,004 DEBUG X-Amz-Cf-Pop: LHR61-P2
+2022-10-07 18:05:24,010 DEBUG X-Amz-Cf-Id: GJWh_IEIh-Sa2e5XqbgxFWMg56c64dHIIuI_AVCswpvKpe-Uoxmdhw==
+2022-10-07 18:05:24,016 DEBUG -----------------------
+2022-10-07 18:05:24,023 WARNING websocket connected
+2022-10-07 18:05:25,025 INFO WebSocket Inverse Perp connected
+2022-10-07 18:05:25,025 DEBUG ++Sent raw: b'\x81\xad,\xee?\x1eW\xccPn\x0e\xd4\x1f<_\x9b]mO\x9cV|I\xcc\x13>\x0e\x8fMy_\xcc\x05>w\xccKlM\x8aZ0t\xbcoK\x7f\xaa\x1dCQ'
+2022-10-07 18:05:25,025 DEBUG ++Sent decoded: fin=1 opcode=1 data=b'{"op": "subscribe", "args": ["trade.XRPUSD"]}'
+2022-10-07 18:05:25,322 DEBUG ++Rcv raw: b'\x81~\x00\x83{"success":true,"ret_msg":"","conn_id":"6d1bac8e-a9a3-4648-89b3-90bb09ddc82a","request":{"op":"subscribe","args":["trade.XRPUSD"]}}'
+2022-10-07 18:05:25,322 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"success":true,"ret_msg":"","conn_id":"6d1bac8e-a9a3-4648-89b3-90bb09ddc82a","request":{"op":"subscribe","args":["trade.XRPUSD"]}}'
+2022-10-07 18:05:25,323 DEBUG Subscription to ['trade.XRPUSD'] successful.
+2022-10-07 18:05:27,116 DEBUG ++Sent raw: b'\x89\x80\xb1\x94\xf0\xc4'
+2022-10-07 18:05:27,116 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-10-07 18:05:27,178 DEBUG ++Rcv raw: b'\x81~\x01\x1f{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162327045,"timestamp":"2022-10-07T17:05:27.000Z","symbol":"XRPUSD","side":"Sell","size":1,"price":0.4938,"tick_direction":"MinusTick","trade_id":"0b917293-fbda-59e9-8624-032517d1da37","cross_seq":5743253332,"is_block_trade":"false"}]}'
+2022-10-07 18:05:27,179 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162327045,"timestamp":"2022-10-07T17:05:27.000Z","symbol":"XRPUSD","side":"Sell","size":1,"price":0.4938,"tick_direction":"MinusTick","trade_id":"0b917293-fbda-59e9-8624-032517d1da37","cross_seq":5743253332,"is_block_trade":"false"}]}'
+2022-10-07 18:05:27,332 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-10-07 18:05:27,332 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-10-07 18:05:31,121 DEBUG ++Sent raw: b'\x89\x80W\xf0\xcf\xd8'
+2022-10-07 18:05:31,121 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-10-07 18:05:33,334 ERROR ping/pong timed out - goodbye
+2022-10-07 18:05:33,334 ERROR WebSocket Inverse Perp encountered error: ping/pong timed out.
+2022-10-07 18:05:33,335 DEBUG ++Sent raw: b'\x88\x82\x0c\x01\xb2F\x0f\xe9'
+2022-10-07 18:05:33,335 DEBUG ++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+2022-10-07 18:05:35,126 DEBUG ++Sent raw: b'\x89\x80B\x9ca\xa4'
+2022-10-07 18:05:35,126 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-10-07 18:05:36,337 INFO WebSocket Inverse Perp attempting connection...
+2022-10-07 18:05:36,338 DEBUG WebSocket Inverse Perp closed.
+2022-10-07 18:05:36,338 DEBUG WebSocket Inverse Perp opened.
+2022-10-07 18:05:36,351 ERROR [Errno 8] nodename nor servname provided, or not known - goodbye
+2022-10-07 18:05:36,361 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1102c64c0>: [Errno 8] nodename nor servname provided, or not known
+2022-10-07 18:05:38,056 INFO WebSocket Inverse Perp attempting connection...
+2022-10-07 18:05:38,056 DEBUG WebSocket Inverse Perp closed.
+2022-10-07 18:05:38,056 DEBUG WebSocket Inverse Perp opened.
+2022-10-07 18:05:38,080 ERROR [Errno 8] nodename nor servname provided, or not known - goodbye
+2022-10-07 18:05:38,080 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1102c6550>: [Errno 8] nodename nor servname provided, or not known
+2022-10-07 18:05:39,279 INFO WebSocket Inverse Perp attempting connection...
+2022-10-07 18:05:39,279 DEBUG WebSocket Inverse Perp closed.
+2022-10-07 18:05:39,279 DEBUG WebSocket Inverse Perp opened.
+2022-10-07 18:05:39,303 ERROR [Errno 8] nodename nor servname provided, or not known - goodbye
+2022-10-07 18:05:39,308 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1102c6a60>: [Errno 8] nodename nor servname provided, or not known
+2022-10-07 18:05:40,668 INFO WebSocket Inverse Perp attempting connection...
+2022-10-07 18:05:40,669 DEBUG WebSocket Inverse Perp closed.
+2022-10-07 18:05:40,669 DEBUG WebSocket Inverse Perp opened.
+2022-10-07 18:05:41,204 DEBUG --- request header ---
+2022-10-07 18:05:41,210 DEBUG GET /realtime HTTP/1.1
+Upgrade: websocket
+Host: stream.bybit.com
+Origin: https://stream.bybit.com
+Sec-WebSocket-Key: /ccdK2b7pVfoQGqfJ8E8kQ==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+2022-10-07 18:05:41,215 DEBUG -----------------------
+2022-10-07 18:05:41,220 DEBUG --- response header ---
+2022-10-07 18:05:41,928 DEBUG HTTP/1.1 101 Switching Protocols
+2022-10-07 18:05:41,929 DEBUG Connection: upgrade
+2022-10-07 18:05:41,929 DEBUG Date: Fri, 07 Oct 2022 17:05:41 GMT
+2022-10-07 18:05:41,929 DEBUG Upgrade: websocket
+2022-10-07 18:05:41,930 DEBUG Sec-WebSocket-Accept: 2nrelCVHmF4GVEDDI3TyzlqfOTQ=
+2022-10-07 18:05:41,930 DEBUG X-Cache: Miss from cloudfront
+2022-10-07 18:05:41,931 DEBUG Via: 1.1 dc934eeca08c60e0878cc8271c2e7428.cloudfront.net (CloudFront)
+2022-10-07 18:05:41,931 DEBUG X-Amz-Cf-Pop: LHR61-P2
+2022-10-07 18:05:41,931 DEBUG X-Amz-Cf-Id: RE1-MYAM-6oS7eOt_eifZP6pZ_PEBe8_xk1ZZsa1xemE9d0rrXOAyA==
+2022-10-07 18:05:41,931 DEBUG -----------------------
+2022-10-07 18:05:41,931 WARNING websocket connected
+2022-10-07 18:05:42,938 INFO WebSocket Inverse Perp connected
+2022-10-07 18:05:42,938 DEBUG ++Sent raw: b"\x81\xadt\xb1\x9e0\x0f\x93\xf1@V\x8b\xbe\x12\x07\xc4\xfcC\x17\xc3\xf7R\x11\x93\xb2\x10V\xd0\xecW\x07\x93\xa4\x10/\x93\xeaB\x15\xd5\xfb\x1e,\xe3\xcee'\xf5\xbcm\t"
+2022-10-07 18:05:42,938 DEBUG ++Sent decoded: fin=1 opcode=1 data=b'{"op": "subscribe", "args": ["trade.XRPUSD"]}'
+2022-10-07 18:05:43,440 DEBUG ++Rcv raw: b'\x81~\x00\x83{"success":true,"ret_msg":"","conn_id":"240f32dc-63fb-4c83-bbd3-9cd33b4ec8d6","request":{"op":"subscribe","args":["trade.XRPUSD"]}}'
+2022-10-07 18:05:43,440 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"success":true,"ret_msg":"","conn_id":"240f32dc-63fb-4c83-bbd3-9cd33b4ec8d6","request":{"op":"subscribe","args":["trade.XRPUSD"]}}'
+2022-10-07 18:05:43,440 DEBUG Subscription to ['trade.XRPUSD'] successful.
+2022-10-07 18:05:44,607 DEBUG ++Sent raw: b'\x89\x80\xf60\xf9\xea'
+2022-10-07 18:05:44,640 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-10-07 18:05:44,824 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-10-07 18:05:44,824 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-10-07 18:05:48,645 DEBUG ++Sent raw: b'\x89\x80\x0f\xef\x99\xab'
+2022-10-07 18:05:48,645 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-10-07 18:05:48,826 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-10-07 18:05:48,826 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-10-07 18:05:49,933 DEBUG ++Rcv raw: b'\x81~\x08*{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162349751,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":1723,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"d1bdcce6-7ce3-5f9b-b9df-8f76ac47104a","cross_seq":5743254143,"is_block_trade":"false"},{"trade_time_ms":1665162349778,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":2000,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"f342e045-021e-5e20-aa87-162c7818ac63","cross_seq":5743254149,"is_block_trade":"false"},{"trade_time_ms":1665162349779,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":2497,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"6fcebcb9-08fd-5746-96a5-3b1295b6404f","cross_seq":5743254150,"is_block_trade":"false"},{"trade_time_ms":1665162349779,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":1,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"d55fedf7-4a3c-54e9-8edc-bf36cc839717","cross_seq":5743254150,"is_block_trade":"false"},{"trade_time_ms":1665162349779,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":84,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"60aa66e6-2e18-5e7b-8a3d-22ff8b3d2268","cross_seq":5743254150,"is_block_trade":"false"},{"trade_time_ms":1665162349786,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":1,"price":0.494,"tick_direction":"PlusTick","trade_id":"25aab9e6-48b9-5506-a6c2-b84752d9041d","cross_seq":5743254158,"is_block_trade":"false"},{"trade_time_ms":1665162349786,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":1,"price":0.494,"tick_direction":"ZeroPlusTick","trade_id":"4e92f700-44a0-5e02-823c-d2abdbf4a6bd","cross_seq":5743254158,"is_block_trade":"false"},{"trade_time_ms":1665162349801,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":19,"price":0.494,"tick_direction":"ZeroPlusTick","trade_id":"e794d0af-f9fc-5daa-95d9-a1bd960e4ff1","cross_seq":5743254180,"is_block_trade":"false"}]}'
+2022-10-07 18:05:49,934 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162349751,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":1723,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"d1bdcce6-7ce3-5f9b-b9df-8f76ac47104a","cross_seq":5743254143,"is_block_trade":"false"},{"trade_time_ms":1665162349778,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":2000,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"f342e045-021e-5e20-aa87-162c7818ac63","cross_seq":5743254149,"is_block_trade":"false"},{"trade_time_ms":1665162349779,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":2497,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"6fcebcb9-08fd-5746-96a5-3b1295b6404f","cross_seq":5743254150,"is_block_trade":"false"},{"trade_time_ms":1665162349779,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":1,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"d55fedf7-4a3c-54e9-8edc-bf36cc839717","cross_seq":5743254150,"is_block_trade":"false"},{"trade_time_ms":1665162349779,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":84,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"60aa66e6-2e18-5e7b-8a3d-22ff8b3d2268","cross_seq":5743254150,"is_block_trade":"false"},{"trade_time_ms":1665162349786,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":1,"price":0.494,"tick_direction":"PlusTick","trade_id":"25aab9e6-48b9-5506-a6c2-b84752d9041d","cross_seq":5743254158,"is_block_trade":"false"},{"trade_time_ms":1665162349786,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":1,"price":0.494,"tick_direction":"ZeroPlusTick","trade_id":"4e92f700-44a0-5e02-823c-d2abdbf4a6bd","cross_seq":5743254158,"is_block_trade":"false"},{"trade_time_ms":1665162349801,"timestamp":"2022-10-07T17:05:49.000Z","symbol":"XRPUSD","side":"Buy","size":19,"price":0.494,"tick_direction":"ZeroPlusTick","trade_id":"e794d0af-f9fc-5daa-95d9-a1bd960e4ff1","cross_seq":5743254180,"is_block_trade":"false"}]}'
+2022-10-07 18:05:50,106 DEBUG ++Rcv raw: b'\x81~\x03!{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162350049,"timestamp":"2022-10-07T17:05:50.000Z","symbol":"XRPUSD","side":"Buy","size":1,"price":0.4941,"tick_direction":"PlusTick","trade_id":"af4dca66-d743-5a56-9ca9-5c5676d21ca1","cross_seq":5743254272,"is_block_trade":"false"},{"trade_time_ms":1665162350049,"timestamp":"2022-10-07T17:05:50.000Z","symbol":"XRPUSD","side":"Buy","size":212,"price":0.4941,"tick_direction":"ZeroPlusTick","trade_id":"5db6dcb0-6d2f-5777-8c92-6b8b6e197204","cross_seq":5743254272,"is_block_trade":"false"},{"trade_time_ms":1665162350049,"timestamp":"2022-10-07T17:05:50.000Z","symbol":"XRPUSD","side":"Buy","size":211,"price":0.4941,"tick_direction":"ZeroPlusTick","trade_id":"04052d93-e8c0-5945-b869-747f9d7cd23e","cross_seq":5743254272,"is_block_trade":"false"}]}'
+2022-10-07 18:05:50,106 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162350049,"timestamp":"2022-10-07T17:05:50.000Z","symbol":"XRPUSD","side":"Buy","size":1,"price":0.4941,"tick_direction":"PlusTick","trade_id":"af4dca66-d743-5a56-9ca9-5c5676d21ca1","cross_seq":5743254272,"is_block_trade":"false"},{"trade_time_ms":1665162350049,"timestamp":"2022-10-07T17:05:50.000Z","symbol":"XRPUSD","side":"Buy","size":212,"price":0.4941,"tick_direction":"ZeroPlusTick","trade_id":"5db6dcb0-6d2f-5777-8c92-6b8b6e197204","cross_seq":5743254272,"is_block_trade":"false"},{"trade_time_ms":1665162350049,"timestamp":"2022-10-07T17:05:50.000Z","symbol":"XRPUSD","side":"Buy","size":211,"price":0.4941,"tick_direction":"ZeroPlusTick","trade_id":"04052d93-e8c0-5945-b869-747f9d7cd23e","cross_seq":5743254272,"is_block_trade":"false"}]}'
+2022-10-07 18:05:50,706 DEBUG ++Rcv raw: b'\x81~\x01!{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162350606,"timestamp":"2022-10-07T17:05:50.000Z","symbol":"XRPUSD","side":"Buy","size":1,"price":0.4941,"tick_direction":"ZeroPlusTick","trade_id":"7e6a8e52-6cad-58c6-8083-187b5ce1e929","cross_seq":5743254340,"is_block_trade":"false"}]}'
+2022-10-07 18:05:50,706 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162350606,"timestamp":"2022-10-07T17:05:50.000Z","symbol":"XRPUSD","side":"Buy","size":1,"price":0.4941,"tick_direction":"ZeroPlusTick","trade_id":"7e6a8e52-6cad-58c6-8083-187b5ce1e929","cross_seq":5743254340,"is_block_trade":"false"}]}'
+2022-10-07 18:05:52,337 DEBUG ++Rcv raw: b'\x81~\x04!{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162352204,"timestamp":"2022-10-07T17:05:52.000Z","symbol":"XRPUSD","side":"Buy","size":1,"price":0.4942,"tick_direction":"PlusTick","trade_id":"9f0e156c-cf05-57b8-a3d9-52288001674f","cross_seq":5743254427,"is_block_trade":"false"},{"trade_time_ms":1665162352204,"timestamp":"2022-10-07T17:05:52.000Z","symbol":"XRPUSD","side":"Buy","size":20,"price":0.4942,"tick_direction":"ZeroPlusTick","trade_id":"6fb26a2b-7bcc-57f5-b921-febb77ae6727","cross_seq":5743254427,"is_block_trade":"false"},{"trade_time_ms":1665162352204,"timestamp":"2022-10-07T17:05:52.000Z","symbol":"XRPUSD","side":"Buy","size":212,"price":0.4942,"tick_direction":"ZeroPlusTick","trade_id":"cbc7c8bb-24dd-55c9-a810-fbda84ca4ed2","cross_seq":5743254427,"is_block_trade":"false"},{"trade_time_ms":1665162352204,"timestamp":"2022-10-07T17:05:52.000Z","symbol":"XRPUSD","side":"Buy","size":17,"price":0.4942,"tick_direction":"ZeroPlusTick","trade_id":"8e6d66bb-2380-5279-956c-b2a273163976","cross_seq":5743254427,"is_block_trade":"false"}]}'
+2022-10-07 18:05:52,337 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162352204,"timestamp":"2022-10-07T17:05:52.000Z","symbol":"XRPUSD","side":"Buy","size":1,"price":0.4942,"tick_direction":"PlusTick","trade_id":"9f0e156c-cf05-57b8-a3d9-52288001674f","cross_seq":5743254427,"is_block_trade":"false"},{"trade_time_ms":1665162352204,"timestamp":"2022-10-07T17:05:52.000Z","symbol":"XRPUSD","side":"Buy","size":20,"price":0.4942,"tick_direction":"ZeroPlusTick","trade_id":"6fb26a2b-7bcc-57f5-b921-febb77ae6727","cross_seq":5743254427,"is_block_trade":"false"},{"trade_time_ms":1665162352204,"timestamp":"2022-10-07T17:05:52.000Z","symbol":"XRPUSD","side":"Buy","size":212,"price":0.4942,"tick_direction":"ZeroPlusTick","trade_id":"cbc7c8bb-24dd-55c9-a810-fbda84ca4ed2","cross_seq":5743254427,"is_block_trade":"false"},{"trade_time_ms":1665162352204,"timestamp":"2022-10-07T17:05:52.000Z","symbol":"XRPUSD","side":"Buy","size":17,"price":0.4942,"tick_direction":"ZeroPlusTick","trade_id":"8e6d66bb-2380-5279-956c-b2a273163976","cross_seq":5743254427,"is_block_trade":"false"}]}'
+2022-10-07 18:05:52,650 DEBUG ++Sent raw: b'\x89\x80\xd7k\xe6"'
+2022-10-07 18:05:52,651 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-10-07 18:05:52,839 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-10-07 18:05:52,839 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-10-07 18:05:53,406 DEBUG ++Rcv raw: b'\x81~\x02${"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162353281,"timestamp":"2022-10-07T17:05:53.000Z","symbol":"XRPUSD","side":"Buy","size":195,"price":0.4942,"tick_direction":"ZeroPlusTick","trade_id":"6e48c0b4-232f-52a9-bfad-374326d9a0be","cross_seq":5743254471,"is_block_trade":"false"},{"trade_time_ms":1665162353281,"timestamp":"2022-10-07T17:05:53.000Z","symbol":"XRPUSD","side":"Buy","size":55,"price":0.4942,"tick_direction":"ZeroPlusTick","trade_id":"2b633f97-eaad-5e22-9dd3-245e59ccb16f","cross_seq":5743254471,"is_block_trade":"false"}]}'
+2022-10-07 18:05:53,406 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162353281,"timestamp":"2022-10-07T17:05:53.000Z","symbol":"XRPUSD","side":"Buy","size":195,"price":0.4942,"tick_direction":"ZeroPlusTick","trade_id":"6e48c0b4-232f-52a9-bfad-374326d9a0be","cross_seq":5743254471,"is_block_trade":"false"},{"trade_time_ms":1665162353281,"timestamp":"2022-10-07T17:05:53.000Z","symbol":"XRPUSD","side":"Buy","size":55,"price":0.4942,"tick_direction":"ZeroPlusTick","trade_id":"2b633f97-eaad-5e22-9dd3-245e59ccb16f","cross_seq":5743254471,"is_block_trade":"false"}]}'
+2022-10-07 18:05:55,206 DEBUG ++Rcv raw: b'\x81~\x01\x1f{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162355022,"timestamp":"2022-10-07T17:05:55.000Z","symbol":"XRPUSD","side":"Sell","size":1,"price":0.4941,"tick_direction":"MinusTick","trade_id":"0ee8c03b-2e09-5b0e-a140-141e90c5caff","cross_seq":5743254586,"is_block_trade":"false"}]}'
+2022-10-07 18:05:55,207 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162355022,"timestamp":"2022-10-07T17:05:55.000Z","symbol":"XRPUSD","side":"Sell","size":1,"price":0.4941,"tick_direction":"MinusTick","trade_id":"0ee8c03b-2e09-5b0e-a140-141e90c5caff","cross_seq":5743254586,"is_block_trade":"false"}]}'
+2022-10-07 18:05:56,656 DEBUG ++Sent raw: b'\x89\x80g\x1f\x9e>'
+2022-10-07 18:05:56,656 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-10-07 18:05:56,848 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-10-07 18:05:56,848 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-10-07 18:06:00,661 DEBUG ++Sent raw: b'\x89\x80\xd7&\xdes'
+2022-10-07 18:06:00,661 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-10-07 18:06:00,891 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-10-07 18:06:00,891 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-10-07 18:06:03,664 DEBUG ++Rcv raw: b'\x81~\x02#{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162363545,"timestamp":"2022-10-07T17:06:03.000Z","symbol":"XRPUSD","side":"Sell","size":1,"price":0.4939,"tick_direction":"MinusTick","trade_id":"74f817bc-1d26-52e7-aa16-78d0a37d3b38","cross_seq":5743254926,"is_block_trade":"false"},{"trade_time_ms":1665162363545,"timestamp":"2022-10-07T17:06:03.000Z","symbol":"XRPUSD","side":"Sell","size":399,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"454f4429-1e03-585b-9eed-4248d88ed3f5","cross_seq":5743254926,"is_block_trade":"false"}]}'
+2022-10-07 18:06:03,664 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162363545,"timestamp":"2022-10-07T17:06:03.000Z","symbol":"XRPUSD","side":"Sell","size":1,"price":0.4939,"tick_direction":"MinusTick","trade_id":"74f817bc-1d26-52e7-aa16-78d0a37d3b38","cross_seq":5743254926,"is_block_trade":"false"},{"trade_time_ms":1665162363545,"timestamp":"2022-10-07T17:06:03.000Z","symbol":"XRPUSD","side":"Sell","size":399,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"454f4429-1e03-585b-9eed-4248d88ed3f5","cross_seq":5743254926,"is_block_trade":"false"}]}'
+2022-10-07 18:06:03,706 DEBUG ++Rcv raw: b'\x81~\x04/{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162363569,"timestamp":"2022-10-07T17:06:03.000Z","symbol":"XRPUSD","side":"Sell","size":400,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"e5006e07-1f52-5a4e-89c2-eff9f7b980a9","cross_seq":5743254941,"is_block_trade":"false"},{"trade_time_ms":1665162363584,"timestamp":"2022-10-07T17:06:03.000Z","symbol":"XRPUSD","side":"Sell","size":1,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"f42c0737-ac6e-5fe8-b858-78aa2a8d8e9d","cross_seq":5743254950,"is_block_trade":"false"},{"trade_time_ms":1665162363595,"timestamp":"2022-10-07T17:06:03.000Z","symbol":"XRPUSD","side":"Sell","size":400,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"9591401c-2cce-51be-be19-0d1721f8f79f","cross_seq":5743254953,"is_block_trade":"false"},{"trade_time_ms":1665162363618,"timestamp":"2022-10-07T17:06:03.000Z","symbol":"XRPUSD","side":"Sell","size":483,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"b24b9f0d-663c-5d3d-9e46-5927f968b79f","cross_seq":5743254957,"is_block_trade":"false"}]}'
+2022-10-07 18:06:03,706 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162363569,"timestamp":"2022-10-07T17:06:03.000Z","symbol":"XRPUSD","side":"Sell","size":400,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"e5006e07-1f52-5a4e-89c2-eff9f7b980a9","cross_seq":5743254941,"is_block_trade":"false"},{"trade_time_ms":1665162363584,"timestamp":"2022-10-07T17:06:03.000Z","symbol":"XRPUSD","side":"Sell","size":1,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"f42c0737-ac6e-5fe8-b858-78aa2a8d8e9d","cross_seq":5743254950,"is_block_trade":"false"},{"trade_time_ms":1665162363595,"timestamp":"2022-10-07T17:06:03.000Z","symbol":"XRPUSD","side":"Sell","size":400,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"9591401c-2cce-51be-be19-0d1721f8f79f","cross_seq":5743254953,"is_block_trade":"false"},{"trade_time_ms":1665162363618,"timestamp":"2022-10-07T17:06:03.000Z","symbol":"XRPUSD","side":"Sell","size":483,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"b24b9f0d-663c-5d3d-9e46-5927f968b79f","cross_seq":5743254957,"is_block_trade":"false"}]}'
+2022-10-07 18:06:04,667 DEBUG ++Sent raw: b'\x89\x80\xa5\xe5U1'
+2022-10-07 18:06:04,667 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-10-07 18:06:04,707 DEBUG ++Rcv raw: b'\x81~\x01#{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162364644,"timestamp":"2022-10-07T17:06:04.000Z","symbol":"XRPUSD","side":"Sell","size":1,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"19cff5c5-554f-523e-8035-c0227cb46183","cross_seq":5743255010,"is_block_trade":"false"}]}'
+2022-10-07 18:06:04,707 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162364644,"timestamp":"2022-10-07T17:06:04.000Z","symbol":"XRPUSD","side":"Sell","size":1,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"19cff5c5-554f-523e-8035-c0227cb46183","cross_seq":5743255010,"is_block_trade":"false"}]}'
+2022-10-07 18:06:04,876 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-10-07 18:06:04,876 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-10-07 18:06:06,687 DEBUG ++Rcv raw: b'\x81~\x03-{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162366467,"timestamp":"2022-10-07T17:06:06.000Z","symbol":"XRPUSD","side":"Sell","size":1626,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"c2e7937c-44f7-5992-a125-090f63a2f492","cross_seq":5743255127,"is_block_trade":"false"},{"trade_time_ms":1665162366467,"timestamp":"2022-10-07T17:06:06.000Z","symbol":"XRPUSD","side":"Sell","size":1100,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"3e2424e5-ad11-5945-afc8-5a708f07c1b8","cross_seq":5743255128,"is_block_trade":"false"},{"trade_time_ms":1665162366469,"timestamp":"2022-10-07T17:06:06.000Z","symbol":"XRPUSD","side":"Sell","size":1,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"fd55f0e1-1208-5229-ad98-504a8b0e9a7c","cross_seq":5743255130,"is_block_trade":"false"}]}'
+2022-10-07 18:06:06,687 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.XRPUSD","data":[{"trade_time_ms":1665162366467,"timestamp":"2022-10-07T17:06:06.000Z","symbol":"XRPUSD","side":"Sell","size":1626,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"c2e7937c-44f7-5992-a125-090f63a2f492","cross_seq":5743255127,"is_block_trade":"false"},{"trade_time_ms":1665162366467,"timestamp":"2022-10-07T17:06:06.000Z","symbol":"XRPUSD","side":"Sell","size":1100,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"3e2424e5-ad11-5945-afc8-5a708f07c1b8","cross_seq":5743255128,"is_block_trade":"false"},{"trade_time_ms":1665162366469,"timestamp":"2022-10-07T17:06:06.000Z","symbol":"XRPUSD","side":"Sell","size":1,"price":0.4939,"tick_direction":"ZeroMinusTick","trade_id":"fd55f0e1-1208-5229-ad98-504a8b0e9a7c","cross_seq":5743255130,"is_block_trade":"false"}]}'
