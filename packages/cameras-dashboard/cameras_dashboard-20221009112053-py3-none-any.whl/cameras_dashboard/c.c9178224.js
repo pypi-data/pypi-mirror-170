@@ -1,0 +1,1 @@
+import{f as o}from"./main-d07cb663.js";const a=(a,i)=>{o(a,"show-dialog",{dialogTag:"dialog-media-player-browse",dialogImport:()=>import("./c.21d03eeb.js").then((function(o){return o.d})),dialogParams:i})};export{a as s};

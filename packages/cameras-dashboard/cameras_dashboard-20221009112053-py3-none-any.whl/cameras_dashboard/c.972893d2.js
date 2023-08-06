@@ -1,0 +1,1 @@
+import{am as a,ao as t,an as s,as as o,ax as e,ar as i}from"./c.fc0bbf07.js";import{a as p}from"./c.ebfe053a.js";import{e as r}from"./c.b0065faf.js";const c=a({type:t(),image:t(),tap_action:s(p),hold_action:s(p),double_tap_action:s(p)}),f=a({type:t(),entities:o(r)}),m=a({type:t(),entity:t(),detail:s(e()),hours_to_show:s(e())}),n=i([c,f,m]);export{m as g,n as h};
