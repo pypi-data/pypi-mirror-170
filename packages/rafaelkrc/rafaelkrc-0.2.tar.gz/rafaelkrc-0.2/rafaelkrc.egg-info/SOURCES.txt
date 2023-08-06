@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libpythonpro/__init__.py
+libpythonpro/github_api.py
+rafaelkrc.egg-info/PKG-INFO
+rafaelkrc.egg-info/SOURCES.txt
+rafaelkrc.egg-info/dependency_links.txt
+rafaelkrc.egg-info/not-zip-safe
+rafaelkrc.egg-info/requires.txt
+rafaelkrc.egg-info/top_level.txt
