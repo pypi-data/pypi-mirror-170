@@ -1,0 +1,7 @@
+License
+README.md
+setup.py
+danypdf.egg-info/PKG-INFO
+danypdf.egg-info/SOURCES.txt
+danypdf.egg-info/dependency_links.txt
+danypdf.egg-info/top_level.txt
