@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: cuquantum-python-cu11
+Version: 0.0.1.dev0
+Summary: NVIDIA cuQuantum Python
+Home-page: https://developer.nvidia.com/cuquantum-sdk
+Author: NVIDIA Corporation
+Author-email: cuda_installer@nvidia.com
+License: NVIDIA Proprietary Software
+Keywords: cuda,nvidia,state vector,tensor network,high-performance computing,quantum computing
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.0
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.1
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.2
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.3
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.4
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.5
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.6
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.7
+Description-Content-Type: text/x-rst
+Requires-Dist: cuquantum-cu11
+
+NVIDIA cuQuantum Python
+
+Citing cuQuantum
+================
+
+Pleae click this Zenodo badge to see the citation format: |DOI|
+
+.. |DOI| image:: https://zenodo.org/badge/435003852.svg
+    :target: https://zenodo.org/badge/latestdoi/435003852
+
+
