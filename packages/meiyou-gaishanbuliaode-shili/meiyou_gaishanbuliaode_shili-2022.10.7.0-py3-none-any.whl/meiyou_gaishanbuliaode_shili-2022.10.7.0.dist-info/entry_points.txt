@@ -1,0 +1,4 @@
+[console_scripts]
+MeiyouGaishanbuliaodeShili = MeiyouGaishanbuliaodeShili.__main__:main
+meiyou-gaishanbuliaode-shili = MeiyouGaishanbuliaodeShili.__main__:main
+
