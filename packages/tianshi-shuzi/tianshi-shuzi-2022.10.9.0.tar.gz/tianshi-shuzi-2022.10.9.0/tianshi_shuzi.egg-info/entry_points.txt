@@ -1,0 +1,4 @@
+[console_scripts]
+TianshiShuzi = TianshiShuzi.__main__:main
+tianshi-shuzi = TianshiShuzi.__main__:main
+

@@ -1,0 +1,12 @@
+README.md
+setup.py
+TianshiShuzi/README.md
+TianshiShuzi/__init__.py
+TianshiShuzi/__main__.py
+TianshiShuzi/file.pdf
+TianshiShuzi/index.html
+tianshi_shuzi.egg-info/PKG-INFO
+tianshi_shuzi.egg-info/SOURCES.txt
+tianshi_shuzi.egg-info/dependency_links.txt
+tianshi_shuzi.egg-info/entry_points.txt
+tianshi_shuzi.egg-info/top_level.txt
