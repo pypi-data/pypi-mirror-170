@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gtdblib/__init__.py
+gtdblib.egg-info/PKG-INFO
+gtdblib.egg-info/SOURCES.txt
+gtdblib.egg-info/dependency_links.txt
+gtdblib.egg-info/requires.txt
+gtdblib.egg-info/top_level.txt
