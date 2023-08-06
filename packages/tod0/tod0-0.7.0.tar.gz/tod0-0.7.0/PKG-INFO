@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tod0
+Version: 0.7.0
+Summary: A Terminal Client for Microsoft To-Do.
+Home-page: https://github.com/kiblee/tod0
+Author: kiblee
+Author-email: kiblee@pm.me
+License: LICENSE
+Requires-Python: >=3.6
+License-File: LICENSE
