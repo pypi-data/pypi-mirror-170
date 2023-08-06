@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: il-supermarket-scraper
+Version: 0.1
+Summary: An example of a python package from pre-existing code
+Home-page: https://github.com/jladan/package_demo
+Author: Sefi Erlich
+Author-email: erlichsefi@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
