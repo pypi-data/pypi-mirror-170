@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "tensossht"
+version = "0.7.0"
+description = "Fast and exact spherical transform for Tensorflow"
+license = "Apache-2.0"
+authors = ["Kagenova <support@kagenova.com>"]
+homepage = "https://tensossht.readthedocs.io/en/main/"
+classifiers = [
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Image Processing",
+  "License :: OSI Approved :: Apache Software License",
+  "Intended Audience :: Science/Research",
+]
+packages = [{include = "tensossht", from = "src"}]
+include = ["*.rst"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+tensorflow = ">=2"
+scipy = "^1.4.1"
+mypy-extensions = "^0.4.3"
+numpy = "^1.22"
+sphinx = { version="^5", optional=true }
+groundwork-sphinx-theme = { version="^1", optional=true }
+Sybil = { version = "^3", optional=true }
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1"
+flake8 = "^5"
+mpmath = "^1.1.0"
+black = "22.8.0"
+bump2version = "^1"
+pyssht = "^1.5"
+isort = "5.10.1"
+pre-commit = "^2.20.0"
+Sybil = { version = "^3", optional=true }
+
+[tool.poetry.extras]
+docs = ["sphinx", "groundwork-sphinx-theme", "Sybil" ]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.pylint.messages_control]
+disable = "C0330, C0326"
+
+[tool.pylint.format]
+max-line-length = 88
+
+[tool.pyright]
+exclude = [".local/", ".direnv"]
+pythonVersion = "3.8"
+useLibraryCodeForTypes = true
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+addopts = "-p no:doctest -rfE"
+testpaths = [ "tests", "src" ]
