@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: ConsultJarvis
+Version: 0.0.0
+Summary: ConsultJarvis description.
+Home-page: https://github.com/ultimatetheory/ConsultJarvis
+Author: Sagar Rao
+Author-email: sagar.rao@neumodlabs.com
+License: Proprietary License
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Jarvis,Jarvis Data Models,Building Design,Building Performance Modeling,EnergyPlus,Automation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
