@@ -1,0 +1,9 @@
+dccutils_server/__init__.py,sha256=K3gBxp_SQcn54X2XFHtzJcJ3n1LEucoTu6WwaJ6jYU0,94
+dccutils_server/__version__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+dccutils_server/api.py,sha256=dJor7db5GJDtCTvX5npHakQXUIU-ysTi44wP03loXmA,8690
+dccutils_server/server.py,sha256=gpGF7tvcHZlhzeMxJcJ4ecGp4FRSuyju4wPTykQmvEw,1747
+dccutils_server-0.1.1.dist-info/LICENSE,sha256=GJerwQciT-s0VKBfrPppUKiqyq_twN-bS458P7oCNdM,1063
+dccutils_server-0.1.1.dist-info/METADATA,sha256=y0D8MFbq0vhsmsrhAI4x_9duK_ObXtLSrGplBMM6zmQ,2913
+dccutils_server-0.1.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+dccutils_server-0.1.1.dist-info/top_level.txt,sha256=HdgY8mIWtSG5xxJbtelk6wWK2RB9YLMuikqTL4fIfTs,16
+dccutils_server-0.1.1.dist-info/RECORD,,
