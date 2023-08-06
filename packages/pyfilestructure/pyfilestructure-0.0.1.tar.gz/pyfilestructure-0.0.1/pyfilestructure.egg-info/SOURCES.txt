@@ -1,0 +1,5 @@
+setup.py
+pyfilestructure.egg-info/PKG-INFO
+pyfilestructure.egg-info/SOURCES.txt
+pyfilestructure.egg-info/dependency_links.txt
+pyfilestructure.egg-info/top_level.txt
