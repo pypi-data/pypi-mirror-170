@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "tier"
+version = "0.0.0"
+description = "Python Versioning CLI"
+authors = ["Josh Wycuff <Joshua.Wycuff@turner.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "tier" }]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
