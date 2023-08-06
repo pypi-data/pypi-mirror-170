@@ -1,0 +1,4 @@
+[console_scripts]
+SongboHuangjinJiyuandeYuanmanZhige = SongboHuangjinJiyuandeYuanmanZhige.__main__:main
+songbo-huangjin-jiyuande-yuanman-zhige = SongboHuangjinJiyuandeYuanmanZhige.__main__:main
+
