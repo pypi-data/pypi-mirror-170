@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ge
+Version: 0.0.3
+Summary: Utils for training models
+Home-page: https://github.com/thorwhalen/ut/tree/master/stats/fit/utils.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# ge
+Utils for training models
+
+
+To install:	```pip install ge```
+
+
