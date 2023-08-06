@@ -1,0 +1,8 @@
+training_plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+training_plugins/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+training_plugins/plugins/validation_plugin.py,sha256=4-Yn0otC3af2akqNjIMGVV4VgJDyhblK3vO9YEML8nk,3413
+training_plugins_ChrisPrein-1.0.0rc1.dist-info/LICENSE,sha256=FFVgpCVC3mMjcRIHBKyRfdJHqHOL4DSRjI-ogLTjXYI,1088
+training_plugins_ChrisPrein-1.0.0rc1.dist-info/METADATA,sha256=BuAxx9_YBFWz-seSYUwvTmAULOhCQ-eRb0j57Als8VI,556
+training_plugins_ChrisPrein-1.0.0rc1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+training_plugins_ChrisPrein-1.0.0rc1.dist-info/top_level.txt,sha256=Ilx1b-QLomQ517HOom3nxY4PheFWXFDujDefXXH2tgI,17
+training_plugins_ChrisPrein-1.0.0rc1.dist-info/RECORD,,
