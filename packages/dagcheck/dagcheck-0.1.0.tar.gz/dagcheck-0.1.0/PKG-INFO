@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dagcheck
+Version: 0.1.0
+Summary: A local testing framework for Airflow DAGs.
+Author: Pablo E.
+Author-email: pabloem@apache.org
+Keywords: airflow,testing,apache airflow,apache
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Provides-Extra: test
+License-File: LICENSE
+
+Dagcheck is a framework to assert for DAG invariants. Users of dagcheck can define DAG invariants to test via DAG assertions, and dagcheck will generate DAG run scenarios that verify these invariants.
