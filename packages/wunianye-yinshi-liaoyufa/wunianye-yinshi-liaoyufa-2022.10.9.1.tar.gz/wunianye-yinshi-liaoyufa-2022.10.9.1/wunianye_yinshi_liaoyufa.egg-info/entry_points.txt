@@ -1,0 +1,4 @@
+[console_scripts]
+WunianyeYinshiLiaoyufa = WunianyeYinshiLiaoyufa.__main__:main
+wunianye-yinshi-liaoyufa = WunianyeYinshiLiaoyufa.__main__:main
+
