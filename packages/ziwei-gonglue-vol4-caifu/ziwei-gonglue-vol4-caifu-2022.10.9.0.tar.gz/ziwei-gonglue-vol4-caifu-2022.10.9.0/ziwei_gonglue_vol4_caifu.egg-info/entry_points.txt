@@ -1,0 +1,4 @@
+[console_scripts]
+ZiweiGonglueVol4Caifu = ZiweiGonglueVol4Caifu.__main__:main
+ziwei-gonglue-vol4-caifu = ZiweiGonglueVol4Caifu.__main__:main
+
