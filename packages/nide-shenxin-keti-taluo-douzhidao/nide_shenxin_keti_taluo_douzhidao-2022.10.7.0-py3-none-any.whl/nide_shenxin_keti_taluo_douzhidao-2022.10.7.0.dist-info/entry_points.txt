@@ -1,0 +1,4 @@
+[console_scripts]
+NideShenxinKetiTaluoDouzhidao = NideShenxinKetiTaluoDouzhidao.__main__:main
+nide-shenxin-keti-taluo-douzhidao = NideShenxinKetiTaluoDouzhidao.__main__:main
+
