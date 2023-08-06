@@ -1,0 +1,9 @@
+setup.py
+cpscripts/__init__.py
+cpscripts/cellpose_predict.py
+cpscripts.egg-info/PKG-INFO
+cpscripts.egg-info/SOURCES.txt
+cpscripts.egg-info/dependency_links.txt
+cpscripts.egg-info/entry_points.txt
+cpscripts.egg-info/not-zip-safe
+cpscripts.egg-info/top_level.txt
