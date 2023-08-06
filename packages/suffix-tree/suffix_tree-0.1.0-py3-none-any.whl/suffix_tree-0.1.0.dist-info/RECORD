@@ -1,0 +1,13 @@
+suffix_tree/__init__.py,sha256=_JZ2R_itgVjc4VbeA7wzHo7cTkic_14C9rN4aic5GIc,76
+suffix_tree/builder.py,sha256=b0rz3tP1ZGMOMpAzC8BBlQXH6Gp_1IeFKpb2wST5w9Q,820
+suffix_tree/lca_mixin.py,sha256=Wzn94VRzz553fyveJDMbTIcaLHG9K3kmmC4BAKKyxww,9124
+suffix_tree/naive.py,sha256=ht7Vp-1_HdohmhnBK37vHD51hBPTy2-k-8Q9iNKPVz0,1807
+suffix_tree/node.py,sha256=K4G0TS4DeP7XPcX9JyuBNnRFrnQZFyBHXE6ffKABIrs,10080
+suffix_tree/tree.py,sha256=Bm7skeVbZPiKmcSG3MWU0Z9q2r2haSUW_nzFHoGcn00,8152
+suffix_tree/ukkonen.py,sha256=wSJpqNEhAphRDACpEI6f51IcfzIQj_h_bURFyYM5-60,9894
+suffix_tree/ukkonen_gusfield.py,sha256=lLoS6r5K35HpE9DFdjzqcFPXNzmMP3qASTskqSPOM4I,14170
+suffix_tree/util.py,sha256=ha_wgPAdX1-uYozKArZ-gWCUw4vdfyBovXNw5uUxhxQ,6667
+suffix_tree-0.1.0.dist-info/METADATA,sha256=LKfb8vgyZvYgUge3xjBjybixau4lk6hUAYIW2YasubA,3850
+suffix_tree-0.1.0.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+suffix_tree-0.1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+suffix_tree-0.1.0.dist-info/RECORD,,
