@@ -1,0 +1,16 @@
+apsg/__init__.py,sha256=v7ksAdUyh0z6BDSai9Z_WSF2NHLyRhO5ZI8G6YV-O_U,1046
+apsg/alchemy.py,sha256=p8iX2AYv4xNMnXHTHauvWmyC9xDH216qCEVZlBXOQLA,12700
+apsg/core.py,sha256=RwIPn943XxzUJUk7T-9CtKCdP5nDDy-VX_fVZfw2cV4,90388
+apsg/database.py,sha256=vm8FY1ahM3ZQwk86AtrcD3VU6VFEHgLZWPvNn2NPwOM,10432
+apsg/helpers.py,sha256=eYa08UiOtMcctoQNQ9xn3dcFykQg85WFzgOe8llApBw,16263
+apsg/paleomag.py,sha256=Fo1biWYPPFgHyjU2kNciiY8GEeQEEA_1fQRIJhPwlvE,16372
+apsg/plotting.py,sha256=yNPZH41SfTxLKIcASyXNJMRhk-MWKajzLz6xXxzBMxc,51785
+apsg/shell.py,sha256=UFIOy01KckLsOlqfB0UomyWZ1ITL36-lBUFhlxWdZLE,718
+apsg/tensors.py,sha256=oZRZPbvzkEhT1sk8fSumI6uyqdbR-vtgB5P3G6XHijQ,28145
+apsg-0.7.2.dist-info/AUTHORS.md,sha256=OEu_2jVMx1fm5EOj4vBlI04uvX4P2sqjPYP12VjPIcI,130
+apsg-0.7.2.dist-info/LICENSE,sha256=NhDqn8b2aOSNn4U4tCfJTOQ6jeggFpLIBgJrAkzdiH0,1117
+apsg-0.7.2.dist-info/METADATA,sha256=forzPKwTRZ0YEtPkEKOdk5oVry6iM3NM8UguAINApHE,14065
+apsg-0.7.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+apsg-0.7.2.dist-info/entry_points.txt,sha256=SowP7_uRI0NJuzznKBXyM9BJcSwBxbXo6Iz5LUo9mEQ,42
+apsg-0.7.2.dist-info/top_level.txt,sha256=xWxwi0nqqOyKdmpsszfR-bmqnNpgVbhnLRuIKGJnaUM,5
+apsg-0.7.2.dist-info/RECORD,,
