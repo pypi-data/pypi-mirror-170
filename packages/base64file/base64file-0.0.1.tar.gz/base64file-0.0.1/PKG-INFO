@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: base64file
+Version: 0.0.1
+Summary: an io wrapper that converts bytes from/to base64 text
+Author-email: Avery Khoo <averykhoo@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# Base64File
+
+* like gzip.GzipFile, but writes out base64 text
+* supports concurrent reading and writing
+
+## Usage
+
+...
+
+## Publishing (notes for myself)
+
+* init
+  * `pip install flit`
+  * `flit init`
+  * make sure `nmd/__init__.py` contains a docstring and version
+* publish / update
+  * increment `__version__` in `nmd/__init__.py`
+  * `flit publish`
