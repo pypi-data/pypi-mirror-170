@@ -1,0 +1,4 @@
+[console_scripts]
+WentiZhishu = WentiZhishu.__main__:main
+wenti-zhishu = WentiZhishu.__main__:main
+
