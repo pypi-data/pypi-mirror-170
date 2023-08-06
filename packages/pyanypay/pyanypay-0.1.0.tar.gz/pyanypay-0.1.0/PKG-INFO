@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyanypay
+Version: 0.1.0
+Summary: Universal library for AnyPay API
+Home-page: https://github.com/FeeeeK/pyAnyPay
+License: MIT
+Keywords: async,asyncio,anypay,anypay-api,anypay-python,pyanypay
+Author: FeeeeK
+Author-email: 26704473+FeeeeK@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Typing :: Typed
+Requires-Dist: aiohttp (>=3.8.3,<4.0.0)
+Requires-Dist: msgspec (>=0.9.0,<0.10.0)
+Project-URL: Bug Tracker, https://github.com/FeeeeK/pyAnyPay/issues
+Project-URL: Repository, https://github.com/FeeeeK/pyAnyPay
+Description-Content-Type: text/markdown
+
+# WIP
+
