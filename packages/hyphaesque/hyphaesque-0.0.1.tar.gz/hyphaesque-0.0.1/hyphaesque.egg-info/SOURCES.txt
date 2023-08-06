@@ -1,0 +1,10 @@
+README.md
+setup.py
+hyphaesque/__init__.py
+hyphaesque/data_util.py
+hyphaesque/mycorrhiza.py
+hyphaesque.egg-info/PKG-INFO
+hyphaesque.egg-info/SOURCES.txt
+hyphaesque.egg-info/dependency_links.txt
+hyphaesque.egg-info/requires.txt
+hyphaesque.egg-info/top_level.txt
