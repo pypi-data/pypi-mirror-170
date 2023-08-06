@@ -1,0 +1,13 @@
+README.md
+setup.py
+MimideMimi/Dockerfile
+MimideMimi/README.md
+MimideMimi/__init__.py
+MimideMimi/__main__.py
+MimideMimi/file.pdf
+MimideMimi/index.html
+mimide_mimi.egg-info/PKG-INFO
+mimide_mimi.egg-info/SOURCES.txt
+mimide_mimi.egg-info/dependency_links.txt
+mimide_mimi.egg-info/entry_points.txt
+mimide_mimi.egg-info/top_level.txt
