@@ -1,0 +1,176 @@
+image: registry-gitlab.offis.de/official/fbe-p_cosima/mosaik-integration:cpp14
+
+# Change pip's cache directory to be inside the project directory since we can
+# only cache local items.
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+    - inet
+stages:
+  - prepare
+  - test
+  - update
+  - deploy
+
+build-inet:
+  stage: prepare
+  script:
+    - |- 
+      if [ ! -d inet/ ]; then 
+       echo "Download and build inet $DOWNLOAD_AND_BUILD_INET"
+       wget https://github.com/inet-framework/inet/releases/download/v4.2.2/inet-4.2.2-src.tgz
+       tar -xzf inet-4.2.2-src.tgz
+       rm inet-4.2.2-src.tgz
+       mv inet4 inet 
+       dir
+       cd inet
+       make makefiles
+       make -j$(grep -c proc /proc/cpuinfo)
+       make MODE=debug -j$(grep -c proc /proc/cpuinfo)
+       cd ..
+       dir
+      fi 
+  artifacts:
+    paths:
+      - inet
+    expire_in: 1 day
+  rules: 
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - when: manual
+
+run-googletests:
+  stage: test
+  before_script:
+    - cd cosima_omnetpp_project
+    - dir
+  script:
+    - opp_makemake  -f --deep -O out -KINET_PROJ=../inet -DINET_IMPORT -I. -I$\(INET_PROJ\)/src -L$\(INET_PROJ\)/src -lINET$\(D\) -- -lprotobuf -lpthread -lgmock -lgtest
+    - make
+    - ./cosima_omnetpp_project -n ../inet/src/inet -f mosaik.ini
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
+run-python-unit-tests:
+  stage: test
+  before_script:
+    - pip3 install pytest
+    - pip3 install -r requirements.txt
+  script:
+    - pytest tests/unit_tests/
+  needs:
+    - job: run-googletests
+      artifacts: false
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
+run-integration-tests:
+  stage: test
+  before_script:
+    - cd cosima_omnetpp_project
+    - rm -r tests
+    - dir
+    - make -f makemakefiles
+    - make
+    - cd ..
+    - dir
+    - python --version  # For debugging
+    - pip3 install virtualenv
+    - virtualenv venv
+    - source venv/bin/activate
+    - pip3 install -r requirements.txt
+    - pip3 uninstall --yes pandas
+    - pip3 install pandas
+  script:
+    - pytest -s tests/integration_tests/
+  needs:
+    - run-googletests
+    - run-python-unit-tests
+  allow_failure: true
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
+update-snapshots:
+  stage: update
+  before_script:
+    - pwd
+    - ls -l
+    - export PYTHONPATH="$PYTHONPATH:."
+    - python -c "import sys;print(sys.path)"
+    - cd cosima_omnetpp_project
+    - rm -r tests
+    - dir
+    - make -f makemakefiles
+    - make
+    - cd ..
+    - dir
+    - python --version  # For debugging
+    - pip3 install virtualenv
+    - virtualenv venv
+    - source venv/bin/activate
+    - pip3 install -r requirements.txt
+    - pip3 uninstall --yes pandas
+    - pip3 install pandas
+  script: 
+    - dir
+    - python3 tests/integration_tests/update_snapshots.py
+  needs:
+    - build-inet
+  artifacts:
+    paths:
+      - tests/integration_tests/scenarios.csv
+  rules: 
+  - when: manual
+
+push-to-official-gitlab:
+  stage: deploy
+  script:
+    - dir
+    - cd ..
+
+    # delete folder if it exists
+    - |- 
+      if [ -d "official_gitlab/" ]; then 
+       rm -r official_gitlab
+      fi
+
+    # Clone the repository via HTTPS inside a new directory
+    - git clone "https://${OFFICIAL_GITLAB_USER_NAME}:${GITLAB_TOKEN_NEW}@gitlab.com//mosaik/examples/cosima.git" "official_gitlab"
+
+    # go into folder 
+    - cd official_gitlab
+
+    # remove contents from folder
+    - rm -r *
+
+    # move everything from mosaik-integration to official_gitlab
+    - mv ../mosaik-integration/* .
+
+    # remove gitlab.yml files
+    - rm .gitlab-ci.yml
+
+    # Add all generated files to Git
+    - git add --all
+
+    # Show the status of files that are about to be created, updated or deleted
+    - git status
+
+    - git config --global user.email "${OFFICIAL_GITLAB_USER_EMAIL}"
+    - git config --global user.name "${OFFICIAL_GITLAB_USER_NAME}"
+
+    # show current branch
+    - git branch
+
+    # Commit all changes
+    - git commit -m "update from internal repository"
+
+    # Update the repository and make sure to skip the pipeline create for this commit
+    - git push -u origin master
+  only:
+    refs:
+      - master
+
+
