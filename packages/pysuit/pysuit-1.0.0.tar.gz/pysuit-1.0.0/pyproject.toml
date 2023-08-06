@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pysuit"
+version = "1.0.0"
+description = "This package will resolve all small intigrities of python data structures(List,Tuple,Dictionary,Set) which are not provided by-default."
+authors = ["Deepak Patidar <deepakp@thoughtwin.com>"]
+keywords = ['py-suite','suite','python bugs', 'features','py-features']
+readme = 'README.md'
+license = "MIT"
+repository = "https://github.com/deep-tw/py-suit.git"
+homepage = "https://github.com/deep-tw/py-suit.git"
+
+classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Operating System :: OS Independent",
+    ]
+
+[tool.poetry.dependencies]
+python = ">= 3.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
