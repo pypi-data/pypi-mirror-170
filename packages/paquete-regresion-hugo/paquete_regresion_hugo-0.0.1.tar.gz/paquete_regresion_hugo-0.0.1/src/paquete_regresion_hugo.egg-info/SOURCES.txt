@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/paquete_regresion_hugo/__init__.py
+src/paquete_regresion_hugo/proyecto7.py
+src/paquete_regresion_hugo.egg-info/PKG-INFO
+src/paquete_regresion_hugo.egg-info/SOURCES.txt
+src/paquete_regresion_hugo.egg-info/dependency_links.txt
+src/paquete_regresion_hugo.egg-info/top_level.txt
