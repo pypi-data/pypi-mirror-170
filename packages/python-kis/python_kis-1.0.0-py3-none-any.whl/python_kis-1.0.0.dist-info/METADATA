@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: python-kis
+Version: 1.0.0
+Summary: 파이썬 한국투자증권 API
+Home-page: https://github.com/soju06/python-kis
+Author: soju06
+Author-email: qlskssk@gmail.com
+License: MIT
+License-File: LICENCE
+Requires-Dist: requests (>=2.28.1)
+Requires-Dist: SQLAlchemy (>=1.4.39)
+Requires-Dist: websocket-client (>=1.4.1)
+Requires-Dist: pycryptodome (>=3.15.0)
+Requires-Dist: colorlog (>=6.7.0)
+
