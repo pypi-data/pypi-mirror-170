@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fastapi_ms_id/__init__.py
+fastapi_ms_id/auth_service.py
+fastapi_ms_id.egg-info/PKG-INFO
+fastapi_ms_id.egg-info/SOURCES.txt
+fastapi_ms_id.egg-info/dependency_links.txt
+fastapi_ms_id.egg-info/requires.txt
+fastapi_ms_id.egg-info/top_level.txt
