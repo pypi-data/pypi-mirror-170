@@ -1,0 +1,8 @@
+requests~=2.24
+urllib3~=1.26
+boto3~=1.17
+botocore<1.23.31,~=1.17
+filelock~=3.0
+geojson~=2.5.0
+deprecation~=2.0
+PyYAML~=5.0
