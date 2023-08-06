@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: xstr_donaldguiles
+Version: 0.0.1
+Summary: package for converting strings to common ones, contains ustr UnderlineString dstr DotString hstr HyphenString
+Author-email: Donald Guiles <donaldg.dev@gmail.com>
+Project-URL: Homepage, https://github.com/Donny-GUI/xstr
+Project-URL: Bug Tracker, https://github.com/Donny-GUI/xstr/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# xstr
+
+#### New python3 strings just dropped. 
+
+# Installation
+
+```bash
+cd <project>
+https://github.com/Donny-GUI/xstr.git
+```
+
+```python3
+from xstr import ustr
+from xtr import dstr
+from xstr import hstr
+```
+
+or
+
+```python3
+
+import xstr
+
+```
+
+or 
+
+```python3
+import hstr
+# import dstr
+# import ustr
+```
+
+
+# HypenString  --    hstr()
+
+```python3
+from xstr import hstr
+
+
+x = hstr('hello new world and all who inhabit it.')
+print(x)
+# hello-new-world-and-all-who-inhabit-it.
+print(x.original())
+# hello new world and all who inhabit it.
+
+```
+
+output
+
+
+```output
+hello-new-world-and-all-who-inhabit-it.
+hello new world and all who inhabit it.
+```
+
+
+# DotString   --  dstr()  
+
+```python3
+from xstr import dstr
+
+
+x = dstr('hello new world and all who inhabit it.')
+print(x)
+# hello.new.world.and.all.who.inhabit.it.
+print(x.original())
+# hello new world and all who inhabit it.
+
+```
+
+
+output
+
+
+```output
+hello.new.world.and.all.who.inhabit.it.
+hello new world and all who inhabit it.
+```
+
+# UnderlineString --  ustr()  
+
+```python3
+from xstr import ustr
+
+
+x = ustr('hello new world and all who inhabit it.')
+print(x)
+# hello_new_world_and_all_who_inhabit_it.
+print(x.original())
+# hello new world and all who inhabit it.
+
+```
+
+output
+
+
+```output
+hello_new_world_and_all_who_inhabit_it.
+hello new world and all who inhabit it.
+```
+

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/xstr_donaldguiles/__init__.py
+src/xstr_donaldguiles/dstr.py
+src/xstr_donaldguiles/hstr.py
+src/xstr_donaldguiles/ustr.py
+src/xstr_donaldguiles/xstr.py
+src/xstr_donaldguiles.egg-info/PKG-INFO
+src/xstr_donaldguiles.egg-info/SOURCES.txt
+src/xstr_donaldguiles.egg-info/dependency_links.txt
+src/xstr_donaldguiles.egg-info/top_level.txt
