@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: guiboweb
+Version: 0.4.2
+Summary: guiboweb description
+Home-page: https://github.com/guofei9987/blind_watermark
+Author: guiboweb
+Author-email: guofei9987@foxmail.com
+License: MIT
+Description: read me..
+Platform: linux
+Platform: windows
+Platform: macos
+Requires-Python: >=1.5
+Description-Content-Type: text/markdown
