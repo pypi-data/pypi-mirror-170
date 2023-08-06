@@ -1,0 +1,4 @@
+[console_scripts]
+Xingguangti = Xingguangti.__main__:main
+xingguangti = Xingguangti.__main__:main
+
