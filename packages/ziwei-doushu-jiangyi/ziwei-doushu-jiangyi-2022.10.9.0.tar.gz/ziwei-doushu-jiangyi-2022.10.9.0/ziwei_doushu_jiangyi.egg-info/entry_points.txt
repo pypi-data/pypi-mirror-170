@@ -1,0 +1,4 @@
+[console_scripts]
+ZiweiDoushuJiangyi = ZiweiDoushuJiangyi.__main__:main
+ziwei-doushu-jiangyi = ZiweiDoushuJiangyi.__main__:main
+
