@@ -1,0 +1,2 @@
+[followthemoney.cli]
+cstore = ftm_columnstore.cli:cli
