@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: RelevanceAI Workflows Core
+Version: 0.0.2
+Home-page: https://relevance.ai/
+Author: Relevance AI
+Author-email: dev@relevance.ai
+Provides-Extra: tests
+Provides-Extra: ray
+License-File: LICENSE
