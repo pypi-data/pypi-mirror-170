@@ -1,0 +1,4 @@
+[console_scripts]
+LiurenJinkoujueZhixuan = LiurenJinkoujueZhixuan.__main__:main
+liuren-jinkoujue-zhixuan = LiurenJinkoujueZhixuan.__main__:main
+
