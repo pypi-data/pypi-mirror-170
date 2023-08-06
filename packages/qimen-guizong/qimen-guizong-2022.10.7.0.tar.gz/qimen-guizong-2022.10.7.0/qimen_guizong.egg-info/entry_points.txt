@@ -1,0 +1,4 @@
+[console_scripts]
+QimenGuizong = QimenGuizong.__main__:main
+qimen-guizong = QimenGuizong.__main__:main
+
