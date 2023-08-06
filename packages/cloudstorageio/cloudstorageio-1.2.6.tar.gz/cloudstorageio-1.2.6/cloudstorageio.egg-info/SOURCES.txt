@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cloudstorageio/__init__.py
+cloudstorageio.egg-info/PKG-INFO
+cloudstorageio.egg-info/SOURCES.txt
+cloudstorageio.egg-info/dependency_links.txt
+cloudstorageio.egg-info/requires.txt
+cloudstorageio.egg-info/top_level.txt
