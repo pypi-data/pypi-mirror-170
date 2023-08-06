@@ -1,0 +1,4 @@
+[console_scripts]
+MimiQingshaonianban = MimiQingshaonianban.__main__:main
+mimi-qingshaonianban = MimiQingshaonianban.__main__:main
+
