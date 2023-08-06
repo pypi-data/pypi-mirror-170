@@ -1,0 +1,13 @@
+README.md
+setup.py
+guiboweb/__init__.py
+guiboweb/guiboweb.py
+guiboweb/optparse.py
+guiboweb/version.py
+guiboweb.egg-info/PKG-INFO
+guiboweb.egg-info/SOURCES.txt
+guiboweb.egg-info/dependency_links.txt
+guiboweb.egg-info/entry_points.txt
+guiboweb.egg-info/not-zip-safe
+guiboweb.egg-info/requires.txt
+guiboweb.egg-info/top_level.txt
