@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: realsense-helpers
+Version: 0.0.0
+Summary: Helpers for working with Intel RealSense cameras.
+Project-URL: Homepage, https://github.com/williamshen-nz/realsense_helpers
+Author-email: William Shen <willshen@mit.edu>
+License-File: LICENSE
+Keywords: cameras,computer vision,realsense,robotics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Requires-Dist: opencv-python
+Requires-Dist: pyrealsense2
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme; extra == 'dev'
+Requires-Dist: sphinxcontrib-apidoc; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# realsense_helpers
+
+[![PyPI - Version](https://img.shields.io/pypi/v/realsense-helpers.svg)](https://pypi.org/project/realsense-helpers)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/realsense-helpers.svg)](https://pypi.org/project/realsense-helpers)
+[![PyPI - License](https://img.shields.io/pypi/l/realsense-helpers.svg)](https://pypi.org/project/realsense-helpers)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/realsense-helpers.svg)](https://pypistats.org/packages/realsense-helpers)
+
+Helpers for using Intel RealSense Cameras in Python. Wraps around `pyrealsense2`.
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+```console
+pip install realsense-helpers
+```
+
+## License
+
+`realsense-helpers` is distributed under the terms of the [MIT license](LICENSE).
