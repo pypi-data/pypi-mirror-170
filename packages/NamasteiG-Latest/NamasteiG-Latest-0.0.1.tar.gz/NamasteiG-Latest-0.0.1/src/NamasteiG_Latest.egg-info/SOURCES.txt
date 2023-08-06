@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/NamasteiG-Latest/__init__.py
+src/NamasteiG-Latest/login.py
+src/NamasteiG_Latest.egg-info/PKG-INFO
+src/NamasteiG_Latest.egg-info/SOURCES.txt
+src/NamasteiG_Latest.egg-info/dependency_links.txt
+src/NamasteiG_Latest.egg-info/top_level.txt
