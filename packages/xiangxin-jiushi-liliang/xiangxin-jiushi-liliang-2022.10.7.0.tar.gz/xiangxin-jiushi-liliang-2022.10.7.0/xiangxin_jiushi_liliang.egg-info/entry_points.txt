@@ -1,0 +1,4 @@
+[console_scripts]
+XiangxinJiushiLiliang = XiangxinJiushiLiliang.__main__:main
+xiangxin-jiushi-liliang = XiangxinJiushiLiliang.__main__:main
+
