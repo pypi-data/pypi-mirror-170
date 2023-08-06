@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nucliadb
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://nuclia.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: uvicorn
+Requires-Dist: pydantic-argparse
+Requires-Dist: nucliadb-one (>=1.0.0)
+Requires-Dist: nucliadb-node-binding (>=0.2.0)
+
+# nucliadb
+
+This package is an aggregation of all the other packages for a monolithic process
+
+
+# CHANGELOG
+
+## 1.0.0
+
+- Initial release
+
+

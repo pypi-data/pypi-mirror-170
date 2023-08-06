@@ -1,0 +1,4 @@
+[console_scripts]
+nucliadb = nucliadb:run
+nucliadb_purge = nucliadb:purge
+
