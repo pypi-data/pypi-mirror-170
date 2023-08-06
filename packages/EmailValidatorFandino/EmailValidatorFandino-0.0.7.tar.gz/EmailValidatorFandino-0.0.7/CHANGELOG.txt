@@ -1,0 +1,6 @@
+Change Log
+==========
+
+0.0.7 (06/10/2022)
+-------------------
+- Fourth Release. Fix bugs
