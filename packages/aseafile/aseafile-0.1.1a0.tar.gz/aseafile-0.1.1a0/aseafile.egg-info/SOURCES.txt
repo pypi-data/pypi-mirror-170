@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+aseafile.egg-info/PKG-INFO
+aseafile.egg-info/SOURCES.txt
+aseafile.egg-info/dependency_links.txt
+aseafile.egg-info/requires.txt
+aseafile.egg-info/top_level.txt
