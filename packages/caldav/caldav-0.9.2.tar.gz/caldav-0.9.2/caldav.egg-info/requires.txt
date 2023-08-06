@@ -1,0 +1,17 @@
+vobject
+lxml
+requests
+six
+pytz
+tzlocal
+
+[test]
+pytest
+pytest-coverage
+icalendar
+coverage
+nose
+tzlocal
+pytz
+xandikos<0.2.4
+radicale
