@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+plprofiler/__init__.py
+plprofiler/plprofiler.py
+plprofiler/plprofiler_report.py
+plprofiler/plprofiler_tool.py
+plprofiler/sql_split.py
+plprofiler/lib/FlameGraph/README
+plprofiler/lib/FlameGraph/README-plprofiler
+plprofiler/lib/FlameGraph/flamegraph.pl
+plprofiler_client.egg-info/PKG-INFO
+plprofiler_client.egg-info/SOURCES.txt
+plprofiler_client.egg-info/dependency_links.txt
+plprofiler_client.egg-info/entry_points.txt
+plprofiler_client.egg-info/requires.txt
+plprofiler_client.egg-info/top_level.txt
