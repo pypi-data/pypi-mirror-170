@@ -1,0 +1,12 @@
+jikan4/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jikan4/aiojikan.py,sha256=26lKEfAtZ41-LBSjtYeRIbC0ZDoy4ttbuYjUQwfxifk,2737
+jikan4/jikan.py,sha256=dzvBu9pbDhayELEZ5JGBnMWIIAcB6usSSx7Vz5sQUMc,2334
+jikan4/models.py,sha256=HD6vFAdVRRiiIpIZgzsHabs0UQlYilMv7-v2Ddqc8_M,4435
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_aiojikan.py,sha256=xCdIe3ra3YHeRulp6Srvuha7EYM1TMKPRPYVsRd2nsE,587
+tests/test_jikan.py,sha256=Fy5vFnWrbPVLyuM5RNcy0OEJUFkoRUSBRawwwsar7sY,543
+jikan4-0.1.0.dist-info/LICENSE,sha256=BBhXHNN5bNKhmoEsPW-mk9AG_rsTyfTSvlo9i2ie7wk,1090
+jikan4-0.1.0.dist-info/METADATA,sha256=JMGI4vKhXX53Lm4iIwz6ZL-q9H3kjNUd283USKeyBWY,998
+jikan4-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jikan4-0.1.0.dist-info/top_level.txt,sha256=AozhKUgYSCZsXS3SamFh0f_6_v1VJRdWrZ12h0qOjAM,13
+jikan4-0.1.0.dist-info/RECORD,,
