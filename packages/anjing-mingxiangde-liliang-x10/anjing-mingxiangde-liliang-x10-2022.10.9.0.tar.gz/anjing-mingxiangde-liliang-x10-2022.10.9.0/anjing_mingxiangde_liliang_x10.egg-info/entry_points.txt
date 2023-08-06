@@ -1,0 +1,4 @@
+[console_scripts]
+AnjingMingxiangdeLiliangX10 = AnjingMingxiangdeLiliangX10.__main__:main
+anjing-mingxiangde-liliang-x10 = AnjingMingxiangdeLiliangX10.__main__:main
+
