@@ -1,0 +1,4 @@
+[console_scripts]
+QimenDunjiaJiezhen = QimenDunjiaJiezhen.__main__:main
+qimen-dunjia-jiezhen = QimenDunjiaJiezhen.__main__:main
+
