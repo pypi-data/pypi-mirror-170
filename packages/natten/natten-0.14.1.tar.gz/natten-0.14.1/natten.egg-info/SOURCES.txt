@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+/natten/natten/src/placeholder.cpp
+natten/__init__.py
+natten/flops.py
+natten/functional.py
+natten/nattencuda.py
+natten/nattencuda1d.py
+natten/nattencuda2d.py
+natten.egg-info/PKG-INFO
+natten.egg-info/SOURCES.txt
+natten.egg-info/dependency_links.txt
+natten.egg-info/requires.txt
+natten.egg-info/top_level.txt
