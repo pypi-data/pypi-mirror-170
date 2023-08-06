@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+newproject/__init__.py
+newproject/main.py
+newproject/project.py
+newproject/template.py
+newproject/util.py
+pursuit_newproject.egg-info/PKG-INFO
+pursuit_newproject.egg-info/SOURCES.txt
+pursuit_newproject.egg-info/dependency_links.txt
+pursuit_newproject.egg-info/entry_points.txt
+pursuit_newproject.egg-info/requires.txt
+pursuit_newproject.egg-info/top_level.txt
