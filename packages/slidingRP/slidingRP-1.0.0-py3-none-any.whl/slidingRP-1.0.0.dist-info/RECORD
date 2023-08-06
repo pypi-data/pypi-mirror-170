@@ -1,0 +1,13 @@
+slidingRP/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slidingRP/computeEstimatedRPs.py,sha256=UfqFDm3A2bHDzKt02ouIn4O3SIIBW1poFxoaxnXqSKY,8948
+slidingRP/exampleScriptIBL.py,sha256=SJTxhAFhmZaSF81br_d9u85FPOyZPnp8mRDaFKO8q1U,2351
+slidingRP/metrics.py,sha256=LVPs7PWgx1QD1K17lCyJriQRSy54e5v5FqdmzynVMkA,19056
+slidingRP/plotEstimatedRPs.py,sha256=goUjqWTJvsz_sbtP3QXD0eVwSaxgzQOq2k3jfJgeJeU,19175
+slidingRP/scratch_ampFrACGFit.py,sha256=Z0sVsmOMBgMlRL6ljrKXPd-vjRxhTBq9ELgk1Bvz2EE,4115
+slidingRP/scriptTestingSimulations.py,sha256=bUZD2-0XXHf3eYbnLCtGhYmtxay2RyQQrmKrWoL8aq8,9817
+slidingRP/script_testSlidingRP.py,sha256=ulqd7Gyog8fZGJBcdexnrok8qWS042GQcH5SnUGdldA,4695
+slidingRP/simulations.py,sha256=-2Ad7B5iPODybKHd39AtrqkPqBMFkJeYDIw8WcHkJaM,9131
+slidingRP-1.0.0.dist-info/METADATA,sha256=t8ItnTjsBhKYLKmg1tWIV7tPvumkvY6dXfyBi8lJ5Vg,1616
+slidingRP-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+slidingRP-1.0.0.dist-info/top_level.txt,sha256=BD3hdvF0E2qszfn5rXWDZHUr_EljDO0XJNYJBOIAMwk,10
+slidingRP-1.0.0.dist-info/RECORD,,
