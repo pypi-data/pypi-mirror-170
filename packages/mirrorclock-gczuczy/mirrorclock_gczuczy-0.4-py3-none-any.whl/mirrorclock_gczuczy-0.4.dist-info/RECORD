@@ -1,0 +1,11 @@
+mirrorclock/api.py,sha256=IryVnWhmjD4cAfx0fbiRrsxx9VxzM0VAn-iTTbg_FMg,1874
+mirrorclock/bi.py,sha256=9Y4pXMm4JTl7SHlecCqYFEFprllX91WidysZqS_-VTs,829
+mirrorclock/cli.py,sha256=Q-449KJD_7Rha_L4PjuyBVlZVhIP1Oq5nX9sdLIkkdY,270
+mirrorclock/standalone.py,sha256=l_9RTeX2RJ36QOa4dGV6t5jCMa7wR2IbzHmXrzH7UR4,334
+mirrorclock/wsgi.py,sha256=n9E4KzCsyJDjWNK4S46BqZblNSUuGHpw4LJIvi7HNtw,353
+mirrorclock_gczuczy-0.4.dist-info/LICENSE,sha256=hDocJ3vu-Yv6iGdjLOB0iEAbi6USoQ-d1Oze8zNPQ8k,1522
+mirrorclock_gczuczy-0.4.dist-info/METADATA,sha256=ExYsDZO0dTlSUhJB8wLQC_pKfDdvQOCrEvFGoR_C0N4,2332
+mirrorclock_gczuczy-0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mirrorclock_gczuczy-0.4.dist-info/entry_points.txt,sha256=EKG6SGRC5z6ZOszA0XXRtLVEDChkFgEfVnCK6W1oV3w,94
+mirrorclock_gczuczy-0.4.dist-info/top_level.txt,sha256=oJ2sc3nYWUSYmOu6Fm4_AtNH0ePOzD7Syj3sg8a8ukQ,12
+mirrorclock_gczuczy-0.4.dist-info/RECORD,,
