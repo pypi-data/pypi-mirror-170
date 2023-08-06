@@ -1,0 +1,2 @@
+[console_scripts]
+donelist = donelist:add_tasks
