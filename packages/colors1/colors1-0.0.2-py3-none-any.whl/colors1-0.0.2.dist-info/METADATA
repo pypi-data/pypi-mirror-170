@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: colors1
+Version: 0.0.2
+Summary: A package where some colors are defined. Very simple, but very useful.
+Author-email: GameGuyOnYT <efeoyun@tahca.com>
+Project-URL: Homepage, https://github.com/GameGuyOnYT/colors1-library
+Project-URL: Bug Tracker, https://github.com/GameGuyOnYT/colors1-library/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Colors1 library for Python
+
+__A library for working with colors in Python.__
+
+## Installation
+
+```bash
+pip install colors1
+```
+
+## Usage
+
+```python
+from colors1 import colors
+
+print(colors.terminalRed + "This is red" + colors.end)
+```
+Add `colors.terminalRed` or any color before your 
+string to make the string
+colored, and use `colors.end`
+to end the color. Use
+`colors.terminal` colors ONLY FOR TERMINAL PRINTING.
+
+You can also use `colors.hexRed` or `colors.rgbRed`
+to get the hex or rgb value of a color.
