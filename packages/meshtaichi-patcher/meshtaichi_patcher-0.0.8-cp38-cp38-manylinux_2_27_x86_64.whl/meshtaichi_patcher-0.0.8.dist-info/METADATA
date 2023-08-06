@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: meshtaichi-patcher
+Version: 0.0.8
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: pymeshlab
+Provides-Extra: test
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+
+UNKNOWN
+
+
