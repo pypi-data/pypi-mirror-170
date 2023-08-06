@@ -1,0 +1,4 @@
+[console_scripts]
+RenzhanHuixuan = RenzhanHuixuan.__main__:main
+renzhan-huixuan = RenzhanHuixuan.__main__:main
+
