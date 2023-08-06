@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/GoogleMailLibrary/GoogleMailLibrary.py
+src/GoogleMailLibrary/__init__.py
+src/rf_googlemaillibrary.egg-info/PKG-INFO
+src/rf_googlemaillibrary.egg-info/SOURCES.txt
+src/rf_googlemaillibrary.egg-info/dependency_links.txt
+src/rf_googlemaillibrary.egg-info/requires.txt
+src/rf_googlemaillibrary.egg-info/top_level.txt
