@@ -1,0 +1,7 @@
+help_desk_client/__init__.py,sha256=kdn5mHciELibhmbDncuPsiQllg7rJ6F_dunOWsvnUQI,480
+help_desk_client/interfaces.py,sha256=bTA8DwakA2PtyIl9ORtxXAJrrzR4NZOM0GeZ-RMebU8,4543
+help_desk_client/zendesk_manager.py,sha256=le2AegeuZsWGhwoL-rSDTrePU3Jqc8z9rNbg8L_3il8,9801
+help_desk_client-0.1.9.dist-info/LICENSE.txt,sha256=cHkt61IbniJsshA1t-VHPRuogrRQ_M59ZOsMOzKCn2o,1091
+help_desk_client-0.1.9.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+help_desk_client-0.1.9.dist-info/METADATA,sha256=-RAM6xSksKAYbpwYOuXgufl5PPi8uiLeW4xiI6HIVu0,1060
+help_desk_client-0.1.9.dist-info/RECORD,,
