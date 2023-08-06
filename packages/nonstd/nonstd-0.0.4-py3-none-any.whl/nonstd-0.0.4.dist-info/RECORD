@@ -1,0 +1,8 @@
+nonstd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nonstd/derivative.py,sha256=RiAz0-js4nyOLEQVBKfto8hz65SUSut47sO-4ctfR3Y,1011
+nonstd/distributions.py,sha256=DKTbZQcoPG5GwNHnVIcahh2jMAOJhhkQToRouhDuxdI,6304
+nonstd/list.py,sha256=VmTg9gGnATd7Ws7HYei8VNCzvkTZVOTThGd_dHPbuXA,2839
+nonstd/sequences.py,sha256=YVHM0AVMCSNVVe1WQ0xUqZDfp0F71qZ9SBZnLasJVkc,797
+nonstd-0.0.4.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+nonstd-0.0.4.dist-info/METADATA,sha256=JJ8a9B8npRq-d1FjcM0rceMqgUpw1Q_DkBLPBsHLpxk,742
+nonstd-0.0.4.dist-info/RECORD,,
