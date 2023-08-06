@@ -1,0 +1,9 @@
+xkcd/__init__.py,sha256=0wopOj0n6CDGIxlZKt0UnIJ1UDYQe8aYgFd4FYE1dwE,118
+xkcd/client.py,sha256=YWlMU_YidvrlPNVYu88MPyuQuU4ZR5zeeg0NAOStHOs,1270
+xkcd/errors.py,sha256=2kKgzB-b-afJAgcW2BA9IV4034C4B5KtWj_SY5eqSM4,45
+xkcd/response.py,sha256=Qx8W-EfjLjlw9eSYtKotrOmBiH3u4TWk4HTKDTTG2j4,805
+pyxkcd-0.0.1.dist-info/LICENSE,sha256=Zju39FyWQAb9AUdeGzQjBo9CSXTirpKy1Aorb3S6lJQ,1049
+pyxkcd-0.0.1.dist-info/METADATA,sha256=FTU9rvUvpmF6ZarQrNNbdr7NKX44W8V3oMYurGzU2dE,926
+pyxkcd-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyxkcd-0.0.1.dist-info/top_level.txt,sha256=EAqmcH70ytJNX5TGWkAj1b8SOZmCcY4MMIdkU8lqh2w,5
+pyxkcd-0.0.1.dist-info/RECORD,,
