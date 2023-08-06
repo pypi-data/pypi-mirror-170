@@ -1,0 +1,6 @@
+gunicorn_uvicorn_runner/__init__.py,sha256=pHExMqTc0CEEC7hqI2cicnRxMR4-45MObqF6RIlYQ-U,133
+gunicorn_uvicorn_runner/core.py,sha256=j0PL5UIjByYJXpVuFlJysgCXiEaMzh1hwSddDgg-igU,1406
+gunicorn_uvicorn_runner-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gunicorn_uvicorn_runner-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+gunicorn_uvicorn_runner-0.1.0.dist-info/METADATA,sha256=zkV52HutvMSOZTj3ICLTjS-_bE9FCajyrYlopfNwF9o,1686
+gunicorn_uvicorn_runner-0.1.0.dist-info/RECORD,,
