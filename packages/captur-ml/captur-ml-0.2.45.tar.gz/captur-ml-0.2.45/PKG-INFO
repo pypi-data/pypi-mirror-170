@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: captur-ml
+Version: 0.2.45
+Summary: The internal Captur Machine Learning SDK
+Home-page: https://github.com/Captur/captur-ml-sdk
+Author: ['Jack Barnett Leveson', 'Jonny Jackson']
+Author-email: jack@capturphotos.com
+License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+Description: # Captur ML SDK
+        
+        This is an internal SDK to build Captur Machine Learning products.
+        
+        <p><a href="https://captur.github.io/captur-ml-engine" target="_blank"><img src="https://img.shields.io/static/v1?style=for-the-badge&label=sdk&message=Documentation&color=informational"></a></p>
+        
+        ## Using this library
+        
+        `pip install captur-ml`
+        
+        ## Publishing a new version of this library
+        
+        `sh publish.sh`
+        
+        ## Building the docs
+        `pdoc --html captur_ml --template-dir docs/templates --output-dir docs --force`
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
