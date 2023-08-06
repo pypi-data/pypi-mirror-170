@@ -1,0 +1,10 @@
+README.rst
+setup.py
+kpireport_sql/__init__.py
+kpireport_sql/datasource.py
+kpireport_sql.egg-info/PKG-INFO
+kpireport_sql.egg-info/SOURCES.txt
+kpireport_sql.egg-info/dependency_links.txt
+kpireport_sql.egg-info/entry_points.txt
+kpireport_sql.egg-info/requires.txt
+kpireport_sql.egg-info/top_level.txt
