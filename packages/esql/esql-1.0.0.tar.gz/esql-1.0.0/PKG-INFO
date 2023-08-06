@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: esql
+Version: 1.0.0
+Summary: a SQL helper
+Home-page: https://github.com/Morgandri1/esql
+Author: Morgan Metz
+Author-email: mlmi4@k12albemarle.org
+Project-URL: Bug Tracker, https://github.com/Morgandri1/esql/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
