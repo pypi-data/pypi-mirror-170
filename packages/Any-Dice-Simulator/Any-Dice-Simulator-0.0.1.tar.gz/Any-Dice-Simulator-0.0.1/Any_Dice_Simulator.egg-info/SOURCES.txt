@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+Any_Dice_Simulator.egg-info/PKG-INFO
+Any_Dice_Simulator.egg-info/SOURCES.txt
+Any_Dice_Simulator.egg-info/dependency_links.txt
+Any_Dice_Simulator.egg-info/top_level.txt
+anyDiceSimulator/__init__.py
+anyDiceSimulator/dieclasses.py
+anyDiceSimulator/myfunctions.py
