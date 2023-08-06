@@ -1,0 +1,2 @@
+[console_scripts]
+carveman = carveman.__main__:main
