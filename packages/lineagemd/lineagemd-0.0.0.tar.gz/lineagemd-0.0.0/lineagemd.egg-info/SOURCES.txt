@@ -1,0 +1,5 @@
+setup.py
+lineagemd.egg-info/PKG-INFO
+lineagemd.egg-info/SOURCES.txt
+lineagemd.egg-info/dependency_links.txt
+lineagemd.egg-info/top_level.txt
