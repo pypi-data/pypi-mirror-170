@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pydantic-fetch
+Version: 0.0.3
+Summary: Extension of pydantic models for HTTP send/recieve
+Home-page: https://github.com/bayinfosys/pydantic-fetch
+Author: ed
+Author-email: ed@bayis.co.uk
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: httpx
+Provides-Extra: tests
+
+# Pydantic-fetch
+
+Extension of `pydantic.BaseModel` which supports sending and parsing from HTTP endpoints.
+
+## Description
+
+`BaseModel` is extended with two class functions:
+
++ `fetch` to recieve a json payload from an endpoint and validate it as the pydantic model
++ `submit` to send a pydantic model to an endpoint as a json payload.
+
+## Usage
+
+```python3
+from pydantic_fetch import BaseModel
+
+class User(BaseModel):
+  id: str
+  name: str
+
+
+def send_user(endpoint, id: str, name: str):
+  user = User(id=id, name=name)
+  user.submit(endpoint)
+
+
+def get_user(endpoint):
+  user = User.fetch(endpoint)
+```
+
