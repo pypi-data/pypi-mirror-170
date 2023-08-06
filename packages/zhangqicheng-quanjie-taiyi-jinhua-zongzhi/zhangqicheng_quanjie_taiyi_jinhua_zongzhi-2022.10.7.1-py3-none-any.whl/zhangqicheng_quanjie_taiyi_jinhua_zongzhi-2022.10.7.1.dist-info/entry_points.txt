@@ -1,0 +1,4 @@
+[console_scripts]
+ZhangqichengQuanjieTaiyiJinhuaZongzhi = ZhangqichengQuanjieTaiyiJinhuaZongzhi.__main__:main
+zhangqicheng-quanjie-taiyi-jinhua-zongzhi = ZhangqichengQuanjieTaiyiJinhuaZongzhi.__main__:main
+
