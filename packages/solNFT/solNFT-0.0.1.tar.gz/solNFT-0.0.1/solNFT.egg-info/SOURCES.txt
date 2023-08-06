@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+solNFT.egg-info/PKG-INFO
+solNFT.egg-info/SOURCES.txt
+solNFT.egg-info/dependency_links.txt
+solNFT.egg-info/requires.txt
+solNFT.egg-info/top_level.txt
+solNFTs/__init__.py

@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: solNFT
+Version: 0.0.1
+Summary: Basic solana NFT tools.
+Home-page: UNKNOWN
+Author: Yahia Shaker
+Author-email: yahiashaker1@gmail.com
+License: MIT
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Basic solNFTs tools to use.
+
+Change Log
+==========
+
+0.0.1 (19/04/2020)
+-------------------
+- First Release
+
