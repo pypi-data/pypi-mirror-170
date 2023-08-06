@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gso/__init__.py
+src/gso/action.py
+src/gso/globalstate.py
+src/gso/gso.py
+src/gso/observable.py
+src/gso/observer.py
+src/gso/state.py
+src/gso.egg-info/PKG-INFO
+src/gso.egg-info/SOURCES.txt
+src/gso.egg-info/dependency_links.txt
+src/gso.egg-info/top_level.txt
