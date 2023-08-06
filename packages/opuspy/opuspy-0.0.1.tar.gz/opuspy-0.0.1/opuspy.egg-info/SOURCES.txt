@@ -1,0 +1,6 @@
+setup.py
+opuspy.egg-info/PKG-INFO
+opuspy.egg-info/SOURCES.txt
+opuspy.egg-info/dependency_links.txt
+opuspy.egg-info/not-zip-safe
+opuspy.egg-info/top_level.txt
