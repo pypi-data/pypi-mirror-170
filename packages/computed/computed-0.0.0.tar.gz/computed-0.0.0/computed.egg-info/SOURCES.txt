@@ -1,0 +1,12 @@
+CHANGELOG.rst
+LICENSE.txt
+MANIFEST.in
+VERSION.txt
+setup.cfg
+setup.py
+computed.egg-info/PKG-INFO
+computed.egg-info/SOURCES.txt
+computed.egg-info/dependency_links.txt
+computed.egg-info/entry_points.txt
+computed.egg-info/top_level.txt
+computed.egg-info/zip-safe

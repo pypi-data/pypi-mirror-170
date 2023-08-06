@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: computed
+Version: 0.0.0
+Summary: A library to create and evaluate symbolic expressions
+Home-page: http://github.com/metagriffin/computed
+Author: metagriffin
+Author-email: mg.pypi@metagriffin.net
+License: GPLv3+
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Disassemblers
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: Software Development :: Pre-processors
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Utilities

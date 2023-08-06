@@ -1,0 +1,5 @@
+include *.rst *.txt *.cfg *.ini *.json *.yaml
+recursive-include computed *.ico *.png *.gif *.jpg
+recursive-include computed *.less *.css *.js *.html *.hbs *.pt *.mak *.mako
+recursive-include computed *.json *.yaml *.xml
+graft computed/res

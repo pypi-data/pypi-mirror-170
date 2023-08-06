@@ -1,0 +1,3 @@
+[console_scripts]
+computed = computed.cli:main
+
