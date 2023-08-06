@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: conda-pip-minimal
+Version: 0.1.0
+Summary: Conda+Pip minimal env exports
+License: MIT
+Author: Venky Iyer
+Author-email: indigoviolet@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: more-itertools (>=8.14.0,<9.0.0)
+Requires-Dist: semver (>=2.13.0,<3.0.0)
+Requires-Dist: trio (>=0.22.0,<0.23.0)
+Requires-Dist: typer (>=0.6.1,<0.7.0)
