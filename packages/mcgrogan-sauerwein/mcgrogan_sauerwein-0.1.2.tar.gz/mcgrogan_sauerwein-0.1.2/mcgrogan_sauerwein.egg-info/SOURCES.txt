@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+mcgrogan_sauerwein.egg-info/PKG-INFO
+mcgrogan_sauerwein.egg-info/SOURCES.txt
+mcgrogan_sauerwein.egg-info/dependency_links.txt
+mcgrogan_sauerwein.egg-info/requires.txt
+mcgrogan_sauerwein.egg-info/top_level.txt
