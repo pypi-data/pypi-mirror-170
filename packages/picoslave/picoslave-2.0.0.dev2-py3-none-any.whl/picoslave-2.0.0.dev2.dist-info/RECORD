@@ -1,0 +1,12 @@
+picoslave/VERSION,sha256=M5mV6hnTkPP6PibawBbfyMB2BDB2fhZxRWbGpK_He_k,12
+picoslave/__init__.py,sha256=sKfd8vSnfgpikDxHVWlpIDEH9vtX1bkbaKQUEd35I5E,70
+picoslave/__main__.py,sha256=to5bJ_U1uyGeee6AekDof4POwXU43srT52DwlR7kYUU,15176
+picoslave/picoslave.py,sha256=8LR5vwpdtwWPCCRW8eLL7dIN-IWXDc4-QH60MD27t_k,19624
+picoslave/version.py,sha256=_OXkRoP_Iw0dka3mBMbVNX0a4aN-zDzp1WduO8QS-gk,4672
+picoslave-2.0.0.dev2.data/scripts/picoslave-install,sha256=rdgnhOlGx7tlkvS76nK0POXW4nVASHVeKVeaW6X5rJ8,655
+picoslave-2.0.0.dev2.dist-info/LICENSE,sha256=i7YCwBXiWELBX6Bo36vhMwuu6hiPRKHXfspwqo2W2fo,1075
+picoslave-2.0.0.dev2.dist-info/METADATA,sha256=ENWH8711_lOlzGwRAfn420CnSCwK5gswLMYY-b8gLqk,19302
+picoslave-2.0.0.dev2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+picoslave-2.0.0.dev2.dist-info/entry_points.txt,sha256=zD3IwXmJpjpKn5Ii2zoIvJI84woKrdtb7o_Bx31Jic0,54
+picoslave-2.0.0.dev2.dist-info/top_level.txt,sha256=KwpkOvInMHGuoDoXXZmpK5mqxD_XBGEgPWPk7JSonGc,10
+picoslave-2.0.0.dev2.dist-info/RECORD,,
