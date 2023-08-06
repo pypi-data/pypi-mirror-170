@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: paquete_regresion_hugo
+Version: 0.0.2
+Summary: Paquete de regresion para el proyecto 7 de la clase de ML
+Author-email: Hugo Fonseca <hugofonseca@usantotomas.edu.co>
+Project-URL: Homepage, https://github.com/zack0712/paquete_regresion_hugo
+Project-URL: Bug Tracker, https://github.com/zack0712/paquete_regresion_hugo/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# paquete_regresion_hugo
+Repositorio creado para almacenar el paquete de regresion del proyecto 7 de la clase de Machine Learning
