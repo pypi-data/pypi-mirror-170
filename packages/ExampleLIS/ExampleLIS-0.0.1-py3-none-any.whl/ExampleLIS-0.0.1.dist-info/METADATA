@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ExampleLIS
+Version: 0.0.1
+Summary: Librería para leer número de caracteres
+Home-page: https://github.com/miguel
+Author: Miguel
+Author-email: miguel@example.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+UNKNOWN
+
+
