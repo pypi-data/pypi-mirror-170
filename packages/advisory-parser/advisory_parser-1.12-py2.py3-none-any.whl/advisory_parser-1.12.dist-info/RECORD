@@ -1,0 +1,14 @@
+advisory_parser/__init__.py,sha256=WsxkBao05JbhCXneDkAa8J3Xa9vMf4ZVIdP1AJbAF2M,155
+advisory_parser/exceptions.py,sha256=JlUl9Rwg53rHB1ddbl5aKG4clfrohc-HL5gDvPSHtTc,482
+advisory_parser/flaw.py,sha256=isH0BEOzGAKLvY6bIGJQMSJK6Sq3YKQyck0K3HukzvM,1992
+advisory_parser/parser.py,sha256=RCHRb4eACe_TQRipzMSzHxkbMed9SGoNJwq-amrItUA,1095
+advisory_parser/parsers/__init__.py,sha256=Hv_5lY7jqRpNTqEkcmp7LDtd1RHDGgaiIPbf8QJDdys,227
+advisory_parser/parsers/chrome.py,sha256=QAjGIVlFWzelhB4VUIqAbyonznZLcFmQXG_eAoh3Pww,5036
+advisory_parser/parsers/flash.py,sha256=D0liaboOpFwI4Uy4_rGpEssAzaQ88NVK-scGerB1iQs,4265
+advisory_parser/parsers/mysql.py,sha256=7d1IZEM1cl-_80QHVioqjjrOjfBMMAvgAcR7InLt3Bc,7358
+advisory_parser/parsers/utils.py,sha256=pyBQ0AKcsYf27ffCNgmTDwBN2O2ikIxufnM6oVbuXl8,1485
+advisory_parser-1.12.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+advisory_parser-1.12.dist-info/METADATA,sha256=o6O-xURfCtHemfcXWE0LWwjRr84MTH-cl9gMvDrrNmU,3154
+advisory_parser-1.12.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+advisory_parser-1.12.dist-info/top_level.txt,sha256=d2RToassaqijaf3Od0VT6MP_qpTnj6PkYps8MJRu-Ac,16
+advisory_parser-1.12.dist-info/RECORD,,
