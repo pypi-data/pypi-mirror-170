@@ -1,0 +1,4 @@
+[console_scripts]
+LinghunYongsheng = LinghunYongsheng.__main__:main
+linghun-yongsheng = LinghunYongsheng.__main__:main
+
