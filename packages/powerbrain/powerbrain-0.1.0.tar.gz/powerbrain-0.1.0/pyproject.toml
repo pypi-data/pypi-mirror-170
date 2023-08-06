@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "powerbrain"
+version = "0.1.0"
+description = "A simple library for interfacing with the REST API of cFos Powerbrain / charging manager EV wallbox charging controllers."
+keywords = ["wallbox", "cfos", "powerbrain", "charging"]
+authors = ["Kevin Read <me@kevin-read.com>"]
+license = "Apache License 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "*"
+
+
+[tool.poetry.dev-dependencies]
+requests-mock = "*"
+pytest = "*"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

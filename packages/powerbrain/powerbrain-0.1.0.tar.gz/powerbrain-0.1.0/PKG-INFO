@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: powerbrain
+Version: 0.1.0
+Summary: A simple library for interfacing with the REST API of cFos Powerbrain / charging manager EV wallbox charging controllers.
+License: Apache-2.0
+Keywords: wallbox,cfos,powerbrain,charging
+Author: Kevin Read
+Author-email: me@kevin-read.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# py-powerbrain
+Python library for interfacing with a cFos Powerbrain wallbox or controller
+
