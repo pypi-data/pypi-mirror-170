@@ -1,0 +1,4 @@
+[console_scripts]
+ShifenzhongMingxiang = ShifenzhongMingxiang.__main__:main
+shifenzhong-mingxiang = ShifenzhongMingxiang.__main__:main
+
