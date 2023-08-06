@@ -1,0 +1,14 @@
+openlca2bw/IPC_Extractor.py,sha256=lsbh5F5Ef_TlvCSKpj09iIHaJTXvNz6XEATxQJwkKRQ,465
+openlca2bw/Json_Extractor.py,sha256=li_ElFJtWEF7JF2yPQ3p9Zo3AmOT9ASURlk2k5hlMUI,2997
+openlca2bw/__init__.py,sha256=DztRQ5Al2tBFv9KvScsaPonA2yeNZixhtauviX7RMX0,813
+openlca2bw/_version.py,sha256=lgNVIa5lfDZCufzlHNxFgwUM2ESqhL9RdKQoTqa4EwQ,528
+openlca2bw/allocation.py,sha256=MXlkaAZOQLegE4wpfv3jhcDFuloGzUaO3p2SKx1II6A,5803
+openlca2bw/bw_write.py,sha256=aR0BeYXfEjT0cHRt8Ly_MXGlkGJ-8Tc5LIRztupjA7k,6987
+openlca2bw/extract.py,sha256=eXJJNhSELvhR1fToJlpqGaV-REQkpyahREcuRTAT1O0,20926
+openlca2bw/main.py,sha256=QG7zrPjtGjkgn7d3RE6WF2uDzBJ9Ry_n5NLISLz7Lyw,21454
+openlca2bw/utils.py,sha256=ujxvtEANKbF-Rf_Dp7T93FySGIBtFXxhzLRZ0WtV8Oc,11064
+openlca2bw-0.2.2.post0.dev0.dist-info/LICENSE.md,sha256=ngs626Phc4oRQ_xa5v9c23Orkbs53t9Is1YQrrEru_s,1463
+openlca2bw-0.2.2.post0.dev0.dist-info/METADATA,sha256=f8nNm_YlVva5huyahlKAW__Qehpr2xgFOST3ja7qkfc,10521
+openlca2bw-0.2.2.post0.dev0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+openlca2bw-0.2.2.post0.dev0.dist-info/top_level.txt,sha256=xvjL5EOkJAMR13y2cjJp640n94BhGMD5l0t0VmcEbns,11
+openlca2bw-0.2.2.post0.dev0.dist-info/RECORD,,
