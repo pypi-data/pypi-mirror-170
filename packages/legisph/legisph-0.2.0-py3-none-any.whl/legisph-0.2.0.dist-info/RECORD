@@ -1,0 +1,8 @@
+legisph/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+legisph/_modidx.py,sha256=ha0_MogvhsxmDWyBvPWxcII8N8Ir9Ib3A2mBw5UVTyA,4888
+legisph/core.py,sha256=mJBBQMJhLdYduggJwjIK3EAIoJaK0tCVsGqhrMnOPbk,247
+legisph/senate.py,sha256=LxnzOE38YkAfHB-pp1Bi4eJv1DeAJD_SmcdgA6JeVkw,14224
+legisph/website.py,sha256=xMoHOSa2gf-2GPiU43RrAksKviuLKAJCK9GxjoAK79k,2026
+legisph-0.2.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+legisph-0.2.0.dist-info/METADATA,sha256=Drx0FHCex_LXadNKPC0Sl-FmH1xZYS6ewnL9iHnYYGc,950
+legisph-0.2.0.dist-info/RECORD,,
