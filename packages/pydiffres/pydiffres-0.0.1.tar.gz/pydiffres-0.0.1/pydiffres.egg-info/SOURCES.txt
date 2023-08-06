@@ -1,0 +1,11 @@
+README.md
+setup.py
+pydiffres/__init__.py
+pydiffres/core.py
+pydiffres/diffres.py
+pydiffres/pooling.py
+pydiffres.egg-info/PKG-INFO
+pydiffres.egg-info/SOURCES.txt
+pydiffres.egg-info/dependency_links.txt
+pydiffres.egg-info/requires.txt
+pydiffres.egg-info/top_level.txt
