@@ -1,0 +1,9 @@
+
+[dev]
+build
+twine
+
+[doc]
+sphinx>=1.0
+furo
+sphinx_design

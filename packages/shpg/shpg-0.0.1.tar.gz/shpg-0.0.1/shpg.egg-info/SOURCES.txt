@@ -1,0 +1,13 @@
+LICENCE
+README.rst
+setup.py
+shpg/__init__.py
+shpg/_version.py
+shpg/html.py
+shpg/page.py
+shpg/simple.py
+shpg.egg-info/PKG-INFO
+shpg.egg-info/SOURCES.txt
+shpg.egg-info/dependency_links.txt
+shpg.egg-info/requires.txt
+shpg.egg-info/top_level.txt
