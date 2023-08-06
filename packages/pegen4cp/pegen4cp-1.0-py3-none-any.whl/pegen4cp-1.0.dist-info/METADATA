@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pegen4cp
+Version: 1.0
+Summary: A pegen modification that generates a one-file complete parser
+Author: nahco314
+Author-email: nahco3_ta@yahoo.co.jp
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pegen
+
+# pegen4cp
+
+A pegen modification that generates a one-file complete (i.e., pegen module-independent) parser.
+
+It is primarily intended to be used when you want a solution that requires only the standard library for competitive programming.
