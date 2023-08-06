@@ -1,0 +1,4 @@
+[console_scripts]
+LinghunZhiai = LinghunZhiai.__main__:main
+linghun-zhiai = LinghunZhiai.__main__:main
+
