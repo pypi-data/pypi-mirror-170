@@ -1,0 +1,4 @@
+[console_scripts]
+YishideTanxian = YishideTanxian.__main__:main
+yishide-tanxian = YishideTanxian.__main__:main
+
