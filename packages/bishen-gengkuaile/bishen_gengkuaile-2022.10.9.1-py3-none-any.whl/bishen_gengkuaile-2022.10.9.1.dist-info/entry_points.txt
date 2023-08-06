@@ -1,0 +1,4 @@
+[console_scripts]
+BishenGengkuaile = BishenGengkuaile.__main__:main
+bishen-gengkuaile = BishenGengkuaile.__main__:main
+
