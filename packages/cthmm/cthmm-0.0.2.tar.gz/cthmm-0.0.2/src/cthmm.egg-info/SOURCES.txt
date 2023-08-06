@@ -1,0 +1,14 @@
+.gitignore
+CTHMM Examples.ipynb
+LICENSE
+README.md
+setup.cfg
+setup.py
+.github/ISSUE_TEMPLATE/feature_request.md
+src/cthmm/__init__.py
+src/cthmm/cthmm.py
+src/cthmm.egg-info/PKG-INFO
+src/cthmm.egg-info/SOURCES.txt
+src/cthmm.egg-info/dependency_links.txt
+src/cthmm.egg-info/requires.txt
+src/cthmm.egg-info/top_level.txt
