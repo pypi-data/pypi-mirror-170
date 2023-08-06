@@ -1,0 +1,5 @@
+setup.py
+src/resistence.egg-info/PKG-INFO
+src/resistence.egg-info/SOURCES.txt
+src/resistence.egg-info/dependency_links.txt
+src/resistence.egg-info/top_level.txt
