@@ -1,0 +1,12 @@
+serv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serv/add_user.py,sha256=wMwKrYotSnNiuKWd1OXKzYGOQ4NV6ab3vv_mzU7BMCI,3962
+serv/config_window.py,sha256=uc_b0c4EhBCx89GSeWVzqA_PW7zUiltVG2QWXjGR3A8,5387
+serv/core.py,sha256=lagUgepWEFy7xRWyGkGV8bkhTHICcP1zWHStMm41NQk,15290
+serv/database.py,sha256=zIthRB35EEZoEqvz_ywwNciHabtNCSHN0vPS3iL_stY,16638
+serv/main_window.py,sha256=eSK1I9-o1dPlwLIWrS2U4jeACglLiczymVdfAuoXdCY,6091
+serv/remove_user.py,sha256=WTPF_1RddyYNr8_dk0jOebvAkZoyUgKCEDP_WvCl59U,2276
+serv/stat_window.py,sha256=APY8_hr56p5DBZNoNd2HPswUl7mShuzqE6wuajAbLE8,2282
+server_chat_pyqt_motr-0.1.dist-info/METADATA,sha256=A2bdar73-gQebu__YuUEjT4eZ3lZuG3Fy68pz2qmBKc,180
+server_chat_pyqt_motr-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+server_chat_pyqt_motr-0.1.dist-info/top_level.txt,sha256=E_ItRpxkhBInenQdImmermi2q_giiPypn2xoL5TD4Bw,5
+server_chat_pyqt_motr-0.1.dist-info/RECORD,,
