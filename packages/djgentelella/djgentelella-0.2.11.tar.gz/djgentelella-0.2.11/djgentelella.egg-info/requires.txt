@@ -1,0 +1,8 @@
+Pillow
+django-markitup>=4.0.0
+django-mptt>=0.13.4
+django>=4.0
+django_filter>=22.1
+djangoajax>=3.3
+djangorestframework>=3.13
+markdown
