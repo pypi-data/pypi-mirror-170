@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tronpy-chek
+Version: 0.2.6
+Summary: TRON Python client library
+Home-page: https://github.com/andelf/tronpy
+Author: andelf
+Author-email: andelf@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6,<4.0
+License-File: LICENSE
+
+UNKNOWN
+
