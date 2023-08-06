@@ -1,0 +1,11 @@
+format_def_indent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+format_def_indent/_base_fixer.py,sha256=3uuGA0orTWoLQAg4mYY17y8QJ_4iWpV6uU4hzWvaUXs,729
+format_def_indent/_helper.py,sha256=fbp4idfgJlh5sQ2mpPUlzeKsHQh9IGd_JzXz7IiTyKM,8749
+format_def_indent/_main_jupyter.py,sha256=XZca8AOcX7Q6A2Ko8M4YA7JtyhWVrIP9WrUlrVJ7Sbw,2447
+format_def_indent/_main_py.py,sha256=CjhGNMOcFdExZt9Dy74UHNBxqdHcWi8NANWBXEU05YM,1888
+format_def_indent-0.1.5.dist-info/LICENSE,sha256=lGyn0-nOIoIac8v-x0OUo24drqMEvEFkjGdFziEM7HQ,1062
+format_def_indent-0.1.5.dist-info/METADATA,sha256=ovwcWaD22CYafWACC83NgIW450MUs5QtLKbdYKM-aEc,3012
+format_def_indent-0.1.5.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+format_def_indent-0.1.5.dist-info/entry_points.txt,sha256=uj6eCUmDV1n5odrSScjZg1m2-_GZZN6x2TR7cd6ME7w,138
+format_def_indent-0.1.5.dist-info/top_level.txt,sha256=ppElczuTpCq1YUzab6kkP43mWlXn1vReJdwyy5gVzpY,18
+format_def_indent-0.1.5.dist-info/RECORD,,
