@@ -1,0 +1,4 @@
+[console_scripts]
+MengChenshuideLiaoyuli = MengChenshuideLiaoyuli.__main__:main
+meng-chenshuide-liaoyuli = MengChenshuideLiaoyuli.__main__:main
+
