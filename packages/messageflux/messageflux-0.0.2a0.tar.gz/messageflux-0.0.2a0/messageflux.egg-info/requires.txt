@@ -1,0 +1,14 @@
+
+[all]
+
+[dev]
+pytest
+pytest-cov
+mypy
+lxml
+flake8
+tox
+
+[rabbitmq]
+pika<2.0,>=1.0
+types-pika
