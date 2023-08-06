@@ -1,0 +1,4 @@
+[console_scripts]
+MimiQuanji = MimiQuanji.__main__:main
+mimi-quanji = MimiQuanji.__main__:main
+
