@@ -1,0 +1,4 @@
+[console_scripts]
+ZishaYulinghun = ZishaYulinghun.__main__:main
+zisha-yulinghun = ZishaYulinghun.__main__:main
+
