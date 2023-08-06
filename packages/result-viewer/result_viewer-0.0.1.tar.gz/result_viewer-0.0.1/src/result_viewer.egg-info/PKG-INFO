@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: result-viewer
+Version: 0.0.1
+Summary: Result viewer
+Home-page: https://github.com/Lexcere/ResultViewer
+Author: Cere
+Author-email: cere@cere.com
+Requires-Python: >=3.6.0
+License-File: LICENSE
+
+Result viewer

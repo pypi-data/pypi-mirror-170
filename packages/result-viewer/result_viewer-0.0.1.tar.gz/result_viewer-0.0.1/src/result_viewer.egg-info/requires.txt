@@ -1,0 +1,6 @@
+numpy
+PyQt5
+openpyxl
+scandir
+ConfigParser
+colorama
