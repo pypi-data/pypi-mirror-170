@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+datasette_external_links_new_tabs/__init__.py
+datasette_external_links_new_tabs.egg-info/PKG-INFO
+datasette_external_links_new_tabs.egg-info/SOURCES.txt
+datasette_external_links_new_tabs.egg-info/dependency_links.txt
+datasette_external_links_new_tabs.egg-info/entry_points.txt
+datasette_external_links_new_tabs.egg-info/requires.txt
+datasette_external_links_new_tabs.egg-info/top_level.txt
