@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: xindata-package-test
+Version: 0.0.1
+Summary: A test package
+Author: Xin_data
+Author-email: jaxmin.lee@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# English
+This is a CSDN blogger Xin_data test project, mainly used to explain the release of custom module testing.
+
+Note: There is nothing nutritious in the package.
+# 中文
+这是csdn博主Xin学数据的一个测试项目，主要是用于讲解发布自定义模块测试。
+注：包中没有什么有营养的东西。
+

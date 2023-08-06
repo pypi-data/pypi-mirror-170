@@ -1,0 +1,14 @@
+xindata_package_test/__init__.py,sha256=Hva6C2dGBaMSKIGQPCyEhv-V1vjVFnW-CzKiElNhcxQ,315
+xindata_package_test/pkg_1.py,sha256=FwVzZlOtG9ucyJYGwsbzo1WlzJMcCq6YJ8dV4hQi_N0,465
+xindata_package_test/pkg_2.py,sha256=wCR5y0UUPGskRzT7p7g6KNdEcwrwYy_bHVddfpxFC0s,465
+xindata_package_test/test1/__init__.py,sha256=iYE7_gnxYtyk2jHUSJgBLtwxzmJoqNYu1oa9LlaJhPI,25
+xindata_package_test/test1/pt_test1_1.py,sha256=kzO2POyuV3Vez0fimtJpMFvrksD1tQHEIdU7W0C1-_E,453
+xindata_package_test/test1/pt_test1_2.py,sha256=_vtrED8Xk7CMgubXrH0Dngd2YvDDaX-Sukc4EAqVsI0,453
+xindata_package_test/test2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xindata_package_test/test2/pt_test2_1.py,sha256=pti_2RHOVDbLAlc-PeQFYyDchDoAGp4Nd0asRPWbrA0,453
+xindata_package_test/test2/pt_test2_2.py,sha256=gbjzWunHfEwdzIeObKVXs_5tnplexwEwKKB1WmWgBG0,453
+xindata_package_test-0.0.1.dist-info/LICENSE.txt,sha256=UcUOLl_MiQM4GpOo_f4iMcBN29WhoBTSw52Bscs4ZnY,1091
+xindata_package_test-0.0.1.dist-info/METADATA,sha256=Nlrc2uG_Qa4ot-ymJyUg--BrrLp2h3nJXV_gFkVWPRA,694
+xindata_package_test-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xindata_package_test-0.0.1.dist-info/top_level.txt,sha256=4XG5Sg8KMuxgcf6UkkmzanTuOUOtfpJtDHjWlITKG8Q,21
+xindata_package_test-0.0.1.dist-info/RECORD,,
