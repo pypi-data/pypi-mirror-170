@@ -1,0 +1,4 @@
+[console_scripts]
+QimenJingcui = QimenJingcui.__main__:main
+qimen-jingcui = QimenJingcui.__main__:main
+
