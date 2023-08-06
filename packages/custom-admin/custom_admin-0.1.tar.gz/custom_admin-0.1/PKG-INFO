@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: custom_admin
+Version: 0.1
+Summary: A base toolkit for building a custom Django amin theme.
+Home-page: https://github.com/avryhof/custom_admin
+Author: Amos Vryhof
+Author-email: amos@vryhofresearch.com
+License: MIT
+Project-URL: GitHub Repo, https://github.com/avryhof/custom_admin
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# Custom Admin Base
+
+A base toolkit for building a Django-Suit compatible Admin theme.
+
+## Installation
+
+```bash
+pip install django-custom-admin-base
+```
+
+### settings.py
+
+This app should come before other admin style modifiers, since it replaces admin/base.html and admin/base_site.html
+
+```python
+INSTALLED_APPS = [
+    "...",
+    "custom_admin",
+    "your_app_to_extend_custom_admin",
+    "...",
+    "django.contrib.admin",
+]
+```
+
+Migrations and Static files
+
+```bash
+manage.py migrate custom_admin
+manage.py collectstatic
+```
