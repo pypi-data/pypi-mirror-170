@@ -1,0 +1,7 @@
+setup.py
+nukelib/__init__.py
+nukelib.egg-info/PKG-INFO
+nukelib.egg-info/SOURCES.txt
+nukelib.egg-info/dependency_links.txt
+nukelib.egg-info/requires.txt
+nukelib.egg-info/top_level.txt
