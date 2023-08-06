@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: openSDUC
+Version: 1.3.28
+Summary: Open Stochastic Daily Unit Commitment of Thermal and Hydro Units (openSDUC) - Version 1.3.28 - April 5, 2022
+Home-page: https://pascua.iit.comillas.edu/aramos/openSDUC/index.html
+Author: IIT-EnergySystemModels
+Author-email: andres.ramos@comillas.edu
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyomo>=5.7.3
+Requires-Dist: matplotlib>=3.3.4
+Requires-Dist: numpy>=1.20.1
+Requires-Dist: pandas>=1.2.3
+Requires-Dist: plotly>=5.7.0
+Requires-Dist: colour>=0.1.5
+Requires-Dist: altair>=4.2.0
+Requires-Dist: psutil>=5.8.0
+
+
+
+.. image:: https://github.com/IIT-EnergySystemModels/openSDUC/blob/main/doc/img/openSDUC.jpg
+   :target: https://pascua.iit.comillas.edu/aramos/openSDUC/index.html
+   :alt: logo
+   :align: center
+   
+|
+   
+.. image:: https://badge.fury.io/py/openSDUC.svg
+    :target: https://badge.fury.io/py/openSDUC
+    :alt: PyPI
+
+.. image:: https://img.shields.io/pypi/pyversions/openSDUC.svg
+   :target: https://pypi.python.org/pypi/openSDUC
+   :alt: versions
+   
+.. image:: https://img.shields.io/readthedocs/opensduc
+   :target: https://opensduc.readthedocs.io/en/latest/index.html
+   :alt: docs
+   
+  
+.. image:: https://img.shields.io/badge/License-GPL%20v3-blue.svg
+   :target: https://github.com/IIT-EnergySystemModels/openSDUC/blob/master/LICENSE
+   :alt: GPL
+
+   
+# openSDUC
+
+The *Open Stochastic Daily Unit Commitment of Thermal and ESS Units* **(openSDUC)** determines the system operation for supplying the demand at minimum cost.
+
+The **openSDUC** model presents a decision support system for defining the generation operation of a large-scale electric system.
+
+The scope of the model corresponds to one day or one week divided in load levels: 01-01 00:00:00+01:00 to 01-21 23:00:00+01:00.
+The time division allows a flexible representation of the periods for evaluating the system operation. For example, by 84 periods of two hours or by the 168 hours of the week.
+
+It considers stochastic short-term yearly uncertainties (scenarios) related to the system operation. The operation scenarios are associated with renewable energy sources and electricity demand.
+  
+The model formulates an optimization problem including binary and continuous operation decisions.
+
+The **unit commitment (UC)** model is a based on a **tight and compact** formulation including operating reserves. It considers different **energy storage systems (ESS)**, e.g., pumped-storage hydro,
+battery, etc. 
+
+The main results of the model can be structured in these topics:
+  
+- **Operation**: the output of different units and technologies (thermal, storage hydro, pumped-storage hydro, RES), RES curtailment
+- **Emissions**: CO2
+- **Marginal**: Short-Run Marginal Costs (SRMC)
+
+A careful implementation has been done to avoid numerical problems by scaling parameters, variables and equations of the optimization problem allowing the model to be used for large-scale cases.
+
