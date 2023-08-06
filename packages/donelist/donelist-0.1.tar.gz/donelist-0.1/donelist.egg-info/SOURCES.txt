@@ -1,0 +1,8 @@
+donelist.py
+setup.py
+donelist.egg-info/PKG-INFO
+donelist.egg-info/SOURCES.txt
+donelist.egg-info/dependency_links.txt
+donelist.egg-info/entry_points.txt
+donelist.egg-info/requires.txt
+donelist.egg-info/top_level.txt
