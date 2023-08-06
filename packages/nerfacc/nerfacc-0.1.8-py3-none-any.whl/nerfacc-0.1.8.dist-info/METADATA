@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: nerfacc
+Version: 0.1.8
+Summary: A General NeRF Acceleration Toolbox.
+Author-email: Ruilong <ruilongli94@gmail.com>
+License: MIT
+Project-URL: Documentation, https://www.nerfacc.com/en/latest/
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ninja (>=1.10.2.3)
+Requires-Dist: pybind11 (>=2.10.0)
+Requires-Dist: torch (>=1.12.0)
+Requires-Dist: rich (>=12)
+Provides-Extra: dev
+Requires-Dist: black[jupyter] (==22.3.0) ; extra == 'dev'
+Requires-Dist: isort (==5.10.1) ; extra == 'dev'
+Requires-Dist: pylint (==2.13.4) ; extra == 'dev'
+Requires-Dist: pytest (==7.1.2) ; extra == 'dev'
+Requires-Dist: pytest-xdist (==2.5.0) ; extra == 'dev'
+Requires-Dist: typeguard (>=2.13.3) ; extra == 'dev'
+Requires-Dist: pyyaml (==6.0) ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# NerfAcc
+[![Core Tests.](https://github.com/KAIR-BAIR/nerfacc/actions/workflows/code_checks.yml/badge.svg)](https://github.com/KAIR-BAIR/nerfacc/actions/workflows/code_checks.yml)
+[![Documentation Status](https://readthedocs.com/projects/plenoptix-nerfacc/badge/?version=latest)](https://www.nerfacc.com/en/latest/?badge=latest)
+
+https://www.nerfacc.com/
+
+This is a **tiny** toolbox  for **accelerating** NeRF training & rendering using PyTorch CUDA extensions. Plug-and-play for most of the NeRFs!
+
+## Installation
+
+```
+pip install nerfacc
+```
+
+## Examples: 
+
+Before running those example scripts, please check the script about which dataset it is needed, and download
+the dataset first.
+
+``` bash
+# Instant-NGP NeRF in 4.5 minutes.
+# See results at here: https://www.nerfacc.com/en/latest/examples/ngp.html
+python examples/train_ngp_nerf.py --train_split trainval --scene lego
+```
+
+``` bash
+# Vanilla MLP NeRF in 1 hour.
+# See results at here: https://www.nerfacc.com/en/latest/examples/vanilla.html
+python examples/train_mlp_nerf.py --train_split train --scene lego
+```
+
+```bash
+# T-NeRF for Dynamic objects in 1 hour.
+# See results at here: https://www.nerfacc.com/en/latest/examples/dnerf.html
+python examples/train_mlp_dnerf.py --train_split train --scene lego
+```
+
+```bash
+# Unbounded scene in 1 hour.
+# See results at here: https://www.nerfacc.com/en/latest/examples/unbounded.html
+python examples/train_ngp_nerf.py --train_split train --scene garden --auto_aabb --unbounded --cone_angle=0.004
+```
