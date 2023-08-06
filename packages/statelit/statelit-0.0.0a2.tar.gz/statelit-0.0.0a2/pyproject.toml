@@ -1,0 +1,58 @@
+[build-system]
+requires = [
+    "flit_core >=3,<4"
+]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "statelit"
+home-page = "https://github.com/dwreeves/statelit"
+license = "MIT"
+author = "Daniel Reeves"
+author-email = "xdanielreeves@gmail.com"
+description-file = "README.md"
+classifiers = [
+    "Framework :: Apache Airflow",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10"
+]
+requires = [
+    "streamlit",
+    "pydantic"
+]
+requires-python = ">=3.7"
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pandas",
+    "pre-commit",
+    "pytest",
+    "pytest-cov"
+]
+doc = [
+    "mkdocs",
+    "pymdown-extensions",
+    "mkdocs-material",
+    "mkdocs-macros-plugin",
+    "pygments"
+]
+
+[tool.isort]
+src_paths = [
+    "statelit",
+    "test"
+]
+lines_after_imports = 2
+
+[tool.pytest.ini_options]
+addopts = "-v --cov=statelit"
+testpaths = [
+    "tests"
+]
