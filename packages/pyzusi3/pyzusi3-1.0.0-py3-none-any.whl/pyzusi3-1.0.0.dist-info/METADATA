@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyzusi3
+Version: 1.0.0
+Summary: Zusi3 TCP Client library with async support and no deps
+License: BSD 3-Clause License
+Keywords: tcp,async
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyzusi3
+Library to talk to Zusi3 without any specialized purpose.
+
+Support for ETCS and ZBS is not yet complete, however the other parts can be used freely.
+
+Intentionally the message parameters are taken almost word-by-word from Zusi documentation to make using the lib easier.
+So be prepared for some mixing of code language (english) and zusi-lib language (german).
