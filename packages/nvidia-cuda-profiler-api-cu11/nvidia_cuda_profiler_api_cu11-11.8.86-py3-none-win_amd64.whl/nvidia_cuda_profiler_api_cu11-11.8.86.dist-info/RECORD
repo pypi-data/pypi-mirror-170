@@ -1,0 +1,10 @@
+nvidia/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nvidia/cuda_profiler_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nvidia/cuda_profiler_api/include/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nvidia/cuda_profiler_api/include/cudaProfiler.h,sha256=LbmZDFnRrw8nkRglPG1Xupcoa8Mg_bG27WsNYXkgCMU,7197
+nvidia/cuda_profiler_api/include/cuda_profiler_api.h,sha256=OJhSt5FQK_FPUANq23Lqltb1VaIjVwhMGQ7UlbfSMJI,7108
+nvidia_cuda_profiler_api_cu11-11.8.86.dist-info/License.txt,sha256=rW9YU_ugyg0VnQ9Y1JrkmDDC-Mk_epJki5zpCttMbM0,59262
+nvidia_cuda_profiler_api_cu11-11.8.86.dist-info/METADATA,sha256=mK6-C29mZTDyxmiUjkGMCMpwKpW3eEw1w2EhzVQS8rU,1551
+nvidia_cuda_profiler_api_cu11-11.8.86.dist-info/WHEEL,sha256=i9qQj8KaD8_YEW0Vc2oS56fKju23RkQ-FVz-QmzVakQ,98
+nvidia_cuda_profiler_api_cu11-11.8.86.dist-info/top_level.txt,sha256=fTkAtiFuL16nUrB9ytDDtpytz2t0B4NvYTnRzwAhO14,7
+nvidia_cuda_profiler_api_cu11-11.8.86.dist-info/RECORD,,
