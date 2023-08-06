@@ -1,0 +1,4 @@
+[console_scripts]
+LingjixianShenghuopian = LingjixianShenghuopian.__main__:main
+lingjixian-shenghuopian = LingjixianShenghuopian.__main__:main
+
