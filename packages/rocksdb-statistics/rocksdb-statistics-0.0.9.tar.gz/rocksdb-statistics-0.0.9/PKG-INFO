@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: rocksdb-statistics
+Version: 0.0.9
+Summary: Parses db_bench.log files outputted from RocksDB
+Home-page: https://github.com/warlo/rocksdb-statistics/
+Author: Hans-Wilhelm Warlo
+Author-email: hw@warlo.no
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: black (==22.8.0)
+Requires-Dist: isort (==5.10.1)
+Requires-Dist: mypy (==0.982)
+Project-URL: Repository, https://github.com/warlo/rocksdb-statistics/
+Description-Content-Type: text/markdown
+
+# rocksdb-statistics
+
+[![PyPI version](https://badge.fury.io/py/rocksdb-statistics.svg)](https://badge.fury.io/py/rocksdb-statistics)
+
+A small snippet I wrote to generate plots for my thesis on [Auto-tuning RocksDB](https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2506148/19718_FULLTEXT.pdf)
+
+Parses db_bench.log files outputted from RocksDB
+Outputs CSV-files and pgfplot of write, compaction and stall statistics.
+
+#### Supported statistics:
+
+- interval_writes
+- cumulative_writes
+- interval_stall
+- cumulative_stall
+- interval_compaction
+- cumulative_compaction
+
+## Usage
+
+`pip install rocksdb-statistics`
+
+`rocksdb-statistics db_bench.log`
+
+Parsed stats are outputted to `output/` in the current directory
+
+Alternatively specify what stats to output
+`rocksdb-statistics db_bench.log --statistics "interval_writes,interval_compaction"`
+
+## Example
+
+Run db_bench with statistics using `stats_interval_seconds` to retrieve stats for each second. Make sure to set `stats_per_interval` to make db_bench output `** DB stats **` for each interval.
+
+`./db_bench --benchmarks="fillrandom,stats" -stats_interval_seconds 1 -stats_per_interval 1 &> db_bench.log`
+`rocksdb-statistics db_bench.log`
+
+The directory `output/` contains the parsed statistics in csv.
+Example files are provided in the `example/` directory.
+
+You can also add `-statistics` to get a summary of a lot of other things.
+`./db_bench --benchmarks="fillrandom,stats" -statistics -stats_interval_seconds 1 -stats_per_interval 1 &> db_bench.log`
+
+## Example plots
+
+Below are some plots I generated using this tool for my thesis.
+
+<img src="example/plots.png" style="width: 50%" />
+
