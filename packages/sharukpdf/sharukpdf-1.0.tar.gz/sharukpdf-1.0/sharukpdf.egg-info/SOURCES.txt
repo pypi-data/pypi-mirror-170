@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sharukpdf/__init__.py
+sharukpdf/pdf2image.py
+sharukpdf/pdf2text.py
+sharukpdf.egg-info/PKG-INFO
+sharukpdf.egg-info/SOURCES.txt
+sharukpdf.egg-info/dependency_links.txt
+sharukpdf.egg-info/top_level.txt
