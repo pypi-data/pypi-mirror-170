@@ -1,0 +1,4 @@
+numpy>=1.23
+hmmlearn>=0.2.8
+cykhash>=2.0
+Cython>=0.29
