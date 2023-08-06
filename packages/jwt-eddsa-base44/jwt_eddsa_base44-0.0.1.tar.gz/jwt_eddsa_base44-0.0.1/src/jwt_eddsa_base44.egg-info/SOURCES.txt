@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/__init__.py
+src/base44.py
+src/jwt.py
+src/jwt_eddsa_base44.egg-info/PKG-INFO
+src/jwt_eddsa_base44.egg-info/SOURCES.txt
+src/jwt_eddsa_base44.egg-info/dependency_links.txt
+src/jwt_eddsa_base44.egg-info/requires.txt
+src/jwt_eddsa_base44.egg-info/top_level.txt
