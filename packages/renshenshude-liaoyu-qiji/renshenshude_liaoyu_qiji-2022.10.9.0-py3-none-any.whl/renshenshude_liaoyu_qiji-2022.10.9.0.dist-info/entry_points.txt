@@ -1,0 +1,4 @@
+[console_scripts]
+RenshenshudeLiaoyuQiji = RenshenshudeLiaoyuQiji.__main__:main
+renshenshude-liaoyu-qiji = RenshenshudeLiaoyuQiji.__main__:main
+
