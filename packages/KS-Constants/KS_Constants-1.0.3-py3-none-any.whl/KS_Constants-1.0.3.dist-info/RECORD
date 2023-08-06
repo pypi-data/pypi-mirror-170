@@ -1,0 +1,11 @@
+ks_constants/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ks_constants/devs.py,sha256=3VMOtQE6S8CbmPAw6ZFkl_DqLT7u_Xx8z3yTB9HC6fA,246
+ks_constants/maps.py,sha256=Ucz9nqM5nlSuq-NPh6cl68Sw3MLBvjcdG3-Xa2nEvYw,1678
+ks_constants/regions.py,sha256=-YnxIb6R7JzXTa0R6FIKDtyYyF-dYMpi4bEAEvMCEwI,476
+ks_constants/roles.py,sha256=FE12kQgOlnC26h_tyiUosviH8Cf51aD47hS42sExVI0,6015
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/basic_tests.py,sha256=FI9qifQodgFMdC-T6I10QjPJkU8liUZhYRO1FSrSiBI,962
+KS_Constants-1.0.3.dist-info/METADATA,sha256=m5Stg9qiOtOvbkphZGwgqQ4kkNCtXaAThW0ZQnK_aec,237
+KS_Constants-1.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+KS_Constants-1.0.3.dist-info/top_level.txt,sha256=TinE6l8s8X2bJW1rzHIF0PVUlzcTygSX5bHBeLaJYPI,19
+KS_Constants-1.0.3.dist-info/RECORD,,
