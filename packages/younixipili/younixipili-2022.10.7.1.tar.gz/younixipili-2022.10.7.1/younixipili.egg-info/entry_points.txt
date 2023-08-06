@@ -1,0 +1,4 @@
+[console_scripts]
+Younixipili = Younixipili.__main__:main
+younixipili = Younixipili.__main__:main
+
