@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: StructNoSQL
+Version: 2.6.7
+Summary: Structured document based NoSQL client for DynamoDB with automatic data validation and advanced database queries functions.
+Home-page: https://github.com/Robinson04/StructNoSQL
+Author: Inoft
+Author-email: robinson@inoft.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: pydantic
+Requires-Dist: boto3
+Requires-Dist: requests
+
