@@ -1,0 +1,4 @@
+# MANIFEST.in
+
+include src/demo/*.toml
+include src/demo/stopwords/*
