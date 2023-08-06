@@ -1,0 +1,12 @@
+natten/_C.cpython-38-x86_64-linux-gnu.so,sha256=mJIzIBG5MZ7rFRU-R_i8z7PrQkgbMzRVyOmO3HNg1Jw,6829920
+natten/__init__.py,sha256=g7Usn1LanrrslvZEkG1IY8ffcQYusayvP5uhUM6wQkQ,319
+natten/flops.py,sha256=ikwN9X-mTLMDeCHYyiGXxp1u0mY4_U_f4vsAI3WdVbs,5463
+natten/functional.py,sha256=BCsvbOJOm15Xlcba9mIjrJmp15tQ729lQnpktwd-I6w,4658
+natten/nattencuda.py,sha256=BrcWsgnLqP8Ros-Bw1PQPXy-wFV-j7qRJiCnmHRQYZw,948
+natten/nattencuda1d.py,sha256=yD5b0QENZhVatcR1J5vwrV6FWsvMsaIy0V0-r5scgas,2276
+natten/nattencuda2d.py,sha256=M1y41XwtKL8u0u8wVDyhqJvfmOkR721BjcflJHf6zFM,3082
+natten-0.14.1.dist-info/LICENSE,sha256=8apmG8Z4TsR_VchdtxbAsCugRAHeVFq5kCZM0Lw6iDQ,1064
+natten-0.14.1.dist-info/METADATA,sha256=4nrTdYc0G5JHl77pkiA3i3fERyEw0ZhbSdR3ZwRGXdI,443
+natten-0.14.1.dist-info/WHEEL,sha256=KUZSkuQMxyAdWwk8_y9mjEqh6Qo2Th8Id2c_HBQK9jE,111
+natten-0.14.1.dist-info/top_level.txt,sha256=LExG6QdIshddCH1wUsio2rNpQUsZ9Jhme5QEX09qy7Q,15
+natten-0.14.1.dist-info/RECORD,,
