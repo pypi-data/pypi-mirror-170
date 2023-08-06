@@ -1,0 +1,4 @@
+[console_scripts]
+ShijieshangZuishenqide24tangke = ShijieshangZuishenqide24tangke.__main__:main
+shijieshang-zuishenqide-24tangke = ShijieshangZuishenqide24tangke.__main__:main
+
