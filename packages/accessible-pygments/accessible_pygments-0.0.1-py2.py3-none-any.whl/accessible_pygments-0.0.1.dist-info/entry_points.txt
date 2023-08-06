@@ -1,0 +1,6 @@
+[pygments.styles]
+a11y-dark = a11y_pygments.a11y_dark.style:Theme
+a11y-high-contrast-dark = a11y_pygments.a11y_high_contrast_dark.style:Theme
+a11y-high-contrast-light = a11y_pygments.a11y_high_contrast_light.style:Theme
+a11y-light = a11y_pygments.a11y_light.style:Theme
+pitaya-smoothie = a11y_pygments.pitaya_smoothie.style:Theme
