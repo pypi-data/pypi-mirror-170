@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+kucoin_websocket/__init__.py
+kucoin_websocket/manager.py
+kucoin_websocket/ws.py
+kucoin_websocket.egg-info/PKG-INFO
+kucoin_websocket.egg-info/SOURCES.txt
+kucoin_websocket.egg-info/dependency_links.txt
+kucoin_websocket.egg-info/requires.txt
+kucoin_websocket.egg-info/top_level.txt
