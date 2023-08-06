@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pypremium
+Version: 1.0.3
+Home-page: https://github.com/lokiclarke/pyplus
+Author: SSoloSkrips
+Author-email: lokiclarke09@gmail.com
+License: MIT
+Keywords: shell,batch,plus,extra,premium,bash,pyp
+Platform: windows
+Platform: mac
+Platform: linux
+License-File: license
+Requires-Dist: pyfiglet
+
