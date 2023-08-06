@@ -1,0 +1,11 @@
+package_Ygor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_Ygor/module1_name/Combination.py,sha256=BHGRRRKKvgaPfBYxMNb8ib1LZ2qfMIP6m0w-J0og3CY,826
+package_Ygor/module1_name/Transformation.py,sha256=12IR-fIdro9-fQP0idcDv47suuQVKVzJodOa1kYgPJE,374
+package_Ygor/module1_name/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_Ygor/module2_name/Io.py,sha256=ZB_kSRaGhhtptyPTnzJ9Jy-XYHkedQOuLhdcCR1zTUE,227
+package_Ygor/module2_name/Plot.py,sha256=TwrENR1uFPBo4gW9JLKIfbZExcfCF7ZFT8Utnc8Yq34,1030
+package_Ygor/module2_name/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_Ygor-0.0.3.dist-info/METADATA,sha256=aV_qruoalkvPWHoAYrs2CwnN5Vs8chp8LlqUjXz1pNs,4149
+package_Ygor-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+package_Ygor-0.0.3.dist-info/top_level.txt,sha256=NnQka9H3eNQjHi2JgvtY4q3Fy0Eu98P1qv-Qrl4fYYc,13
+package_Ygor-0.0.3.dist-info/RECORD,,
