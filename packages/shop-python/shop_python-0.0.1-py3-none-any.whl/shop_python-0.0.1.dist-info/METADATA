@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: shop_python
+Version: 0.0.1
+Summary: A Shopping Python Framework
+Project-URL: Homepage, https://bitbucket.org/Qoyyuum/shoppy
+Project-URL: Bug Tracker, https://bitbucket.org/Qoyyuum/shoppy/jira
+Author-email: Abdul Qoyyuum Bin Haji Abdul Kadir <abdul.qoyyuum@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# My Shop Simulator
+
+Made in Python 3.
+
+Run with `python main.py`

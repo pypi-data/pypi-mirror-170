@@ -1,0 +1,15 @@
+__init__.py,sha256=oTebbBde2KAcGjgp3cBlU41dZ1eC8inJY5BV-Ipwcp4,12
+main.py,sha256=T-How8KeUIPGeB2lVUQph_6qiCwP12KqN13rcFEUZiw,3221
+store/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+store/store.py,sha256=KoBBxb0Eix5UeBsViFCZHntUYolAN6yhmnDsLcIn2EU,7712
+store/customer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+store/customer/customer.py,sha256=E9tguzIGMo51QPDlV4egcW5Gy-SBZu4Laj1om_UzqDg,3956
+store/customer/person.py,sha256=07iNTBPhqLGTEkXa2mdONYc3cnzXRrCH-YpjNqsKX4M,2465
+store/pos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+store/pos/pos.py,sha256=Hq5EdmQSW1AFe9hI0uat09nmRDMt_PhwsJmxLenvx6M,1168
+store/product/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+store/product/product.py,sha256=l0pkolccLRWpWN1fywK51HUSVVeMTRODo2C1N2Eu7OY,2721
+shop_python-0.0.1.dist-info/METADATA,sha256=wUeowaMdVhQFDKrcMM5JzcZROsbbwmk2D6o1IJcID3s,593
+shop_python-0.0.1.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+shop_python-0.0.1.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+shop_python-0.0.1.dist-info/RECORD,,
