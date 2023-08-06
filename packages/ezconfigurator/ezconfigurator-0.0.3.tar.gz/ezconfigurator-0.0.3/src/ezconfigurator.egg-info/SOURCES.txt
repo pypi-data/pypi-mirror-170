@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ezconfigurator/Config.py
+src/ezconfigurator/__init__.py
+src/ezconfigurator.egg-info/PKG-INFO
+src/ezconfigurator.egg-info/SOURCES.txt
+src/ezconfigurator.egg-info/dependency_links.txt
+src/ezconfigurator.egg-info/top_level.txt
