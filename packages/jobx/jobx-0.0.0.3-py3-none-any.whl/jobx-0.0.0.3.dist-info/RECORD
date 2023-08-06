@@ -1,0 +1,10 @@
+jobx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jobx/clitools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jobx/clitools/cli.py,sha256=hCdAAiX05oUycjcpw5x64yPtdyVj6eSmSgUdDG-_ugk,651
+jobx/clitools/task.py,sha256=eUAehj6Vgw6iTI18Xq-h_NpfLqVCIBGGbRe2J2nYyKA,15597
+jobx-0.0.0.3.dist-info/LICENSE,sha256=InTCR4fPRxlrQo6UOHt4O0Qp4kHVZI8tECKonOpEvaU,1084
+jobx-0.0.0.3.dist-info/METADATA,sha256=vLku6IaytArdNC36zRJN24Ti_4PKl39m1F_cF9XdNxI,523
+jobx-0.0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+jobx-0.0.0.3.dist-info/entry_points.txt,sha256=Kj_fIwzdhTS5prcrUNBGCDG2bdVODZdMstBpJC9OS9g,49
+jobx-0.0.0.3.dist-info/top_level.txt,sha256=ssDK0pTamNBnyAFz1o4ITSGZSRB9is56aAf-u3a3-rI,5
+jobx-0.0.0.3.dist-info/RECORD,,
