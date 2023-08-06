@@ -1,0 +1,4 @@
+[console_scripts]
+DiyiciXueziweiDoushuJiuxuehui = DiyiciXueziweiDoushuJiuxuehui.__main__:main
+diyici-xueziwei-doushu-jiuxuehui = DiyiciXueziweiDoushuJiuxuehui.__main__:main
+

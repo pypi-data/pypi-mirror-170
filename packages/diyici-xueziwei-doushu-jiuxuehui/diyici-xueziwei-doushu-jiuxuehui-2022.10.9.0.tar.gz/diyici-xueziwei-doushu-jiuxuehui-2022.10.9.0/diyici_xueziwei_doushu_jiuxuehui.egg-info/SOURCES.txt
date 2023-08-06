@@ -1,0 +1,12 @@
+README.md
+setup.py
+DiyiciXueziweiDoushuJiuxuehui/README.md
+DiyiciXueziweiDoushuJiuxuehui/__init__.py
+DiyiciXueziweiDoushuJiuxuehui/__main__.py
+DiyiciXueziweiDoushuJiuxuehui/file.pdf
+DiyiciXueziweiDoushuJiuxuehui/index.html
+diyici_xueziwei_doushu_jiuxuehui.egg-info/PKG-INFO
+diyici_xueziwei_doushu_jiuxuehui.egg-info/SOURCES.txt
+diyici_xueziwei_doushu_jiuxuehui.egg-info/dependency_links.txt
+diyici_xueziwei_doushu_jiuxuehui.egg-info/entry_points.txt
+diyici_xueziwei_doushu_jiuxuehui.egg-info/top_level.txt
