@@ -1,0 +1,2 @@
+[console_scripts]
+ut_course_catalog = ut_course_catalog.__main__:main
