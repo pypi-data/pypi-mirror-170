@@ -1,0 +1,9 @@
+coucou/__init__.py,sha256=sfmlHU4r7o6oShZhMYKI0w6xw1bD714nlOVWBqohD54,111
+coucou/base.py,sha256=DqO-Tz7znPfADegAIZWsKpCrKLnPqwkfEYLeXYOTu0A,177
+coucou/routing/__init__.py,sha256=9Gw6kPRdd1QCVJ9WA_Eu4wCATntWsaBwFNGkD97wfRQ,37
+coucou/routing/tsp/__init__.py,sha256=MSHoFsEAt25EhX1D6iSwKZBf_bWEJy8vDJDWgVOx-Ek,51
+coucou/routing/tsp/nlkh.py,sha256=XL5u7O5NEFjJ3_YT7rU_L7wf8071-gvTnfknQGQxVnw,148
+coucou-0.1.0.dist-info/LICENSE,sha256=HYpyQYZ-UAUHxVPvJMfKrdild_wsi_E9hu4qSjTiaNI,1070
+coucou-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+coucou-0.1.0.dist-info/METADATA,sha256=ckizM81jLZiwBF68zu6YxuY2x25064o9Thmbhqh4j6U,403
+coucou-0.1.0.dist-info/RECORD,,
