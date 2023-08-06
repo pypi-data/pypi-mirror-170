@@ -1,0 +1,335 @@
+Metadata-Version: 2.1
+Name: ecsdep
+Version: 0.1.0a6
+Summary: AWS ECS Deployment Tool With Terraform
+Home-page: https://gitlab.com/skitai/ecsdep
+Author: Hans Roh
+Author-email: hansroh@gmail.com
+License: MIT
+Download-URL: https://pypi.python.org/pypi/ecsdep
+Platform: posix
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+
+### Introduce
+ECS deploy using `docker compose` and `terraform`.
+
+You need to manage just `yml` file for `docker compose` and:
+```shell
+ecsdep cluster create
+ecsdep service up
+```
+That's all.
+
+
+### Running Docker For Deployment
+
+#### Locally
+Docker contains `terrform`, `awscli` and `ecsdep`.
+```shell
+docker run -d --privileged \
+    --name docker \
+    -v path/to/myproject:/app \
+    hansroh/dep:dind
+docekr exec -it docker bash
+```
+
+#### .gitlab-ci.yml for Gitlab CI/CD
+
+Add these lines:
+```yml
+image: hansroh/dep:latest
+services:
+  - name: docker:dind
+    alias: dind-service
+```
+
+
+### Prerequisitions
+- AWS credebtial for ECS deployment
+  - See [example policy JSON](https://gitlab.com/skitai/ecsdep/-/blob/master/ecsdep/templates/aws-policy.json)
+- AWS certification for ypur service domain
+- AWS secret arn for private docker registry login
+- AWS s3 bucket for terraform state data at your region
+
+### Make Docker Compose File For ECS Deployment
+
+Create `/app/dep/compose.ecs.yml`.
+
+This example launch 2 container - `app` and `nginx` as reverse proxy.
+
+```yaml
+version: '3.9'
+
+services:
+  skitai-app:
+    image: registry.gitlab.com/skitai/ecsdep
+    x-ecs-pull_credentials: arn:aws:secretsmanager:ap-northeast-2:000000000:secret:gitlab/registry/mysecret-PrENMF
+    build:
+      context: ..
+      dockerfile: dep/Dockerfile
+      target: image-${SERVICE_STAGE}
+    container_name: skitai-app
+    logging:
+      x-ecs-driver: awslogs
+    x-ecs-essential: true
+    deploy:
+      resources:
+        reservations:
+          memory: "160M"
+          cpus: "1024"
+        limits:
+          memory: "512M"
+    ports:
+      - 5000
+    healthcheck:
+      test:
+        - "CMD-SHELL"
+        - "wget -O/dev/null -q http://localhost:5000 || exit 1"
+      interval: 30s
+      retries: 3
+
+  skitai-nginx:
+    image: registry.gitlab.com/skitai/ecsdep/nginx
+    x-ecs-pull_credentials: arn:aws:secretsmanager:ap-northeast-2:000000000:secret:gitlab/registry/mysecret-PrENMF
+    build:
+      context: ..
+      dockerfile: dep/Dockerfile.nginx
+    container_name: skitai-nginx
+    build:
+      context: ..
+      dockerfile: dep/Dockerfile.nginx
+    logging:
+      x-ecs-driver: awslogs
+    deploy:
+    depends_on:
+      - skitai-app
+    x-ecs-wait-conditions:
+      - HEALTHY
+    ports:
+      - 80:80
+    deploy:
+      resources:
+        reservations:
+          memory: "16M"
+
+networks:
+  ecsdep:
+
+secrets:
+  REGISTRY_USER:
+    name: "arn:aws:secretsmanager:ap-northeast-2:000000000:secret:gitlab/registry/mysecret-PrENMF:username::"
+    external: true
+
+
+# ECS config --------------------------------------------
+x-ecs-service:
+  name: ecsdep
+  stages:
+    default:
+      env-service-stage: "qa"
+      hosts: ["qa.myservice.com"]
+      listener-priority: 100
+    production:
+      env-service-stage: "production"
+      hosts: ["myservice.com"]
+      listener-priority: 101
+  requires-compatibilities:
+    - FARGATE
+  loadbalancing:
+    pathes:
+      - /*
+    protocol: http
+    healthcheck:
+      path: "/ping"
+      matcher: "200,301,302,404"
+  autoscaling:
+    desired_count: 1
+    min: 1
+    max: 4
+    cpu: 75
+    memory: 80
+
+x-terraform:
+  provider: aws
+  region: ap-northeast-2
+  state-backend:
+    region: "ap-northeast-2"
+    bucket: "states-data"
+    key-prefix: "terraform/ecs-cluster"
+
+x-ecs-cluster:
+  name: mycluster
+  public-key_file: "id_rsa.pub"
+  instance-type: t3.medium
+  ami: amzn2-ami-ecs-hvm-*-x86_64-*
+  autoscaling:
+    min: 1
+    max: 20
+    desired: 1
+    cpu: 80
+    memory: 80
+  loadbalancer:
+    cert-name: myservice.com
+  availability-zones: 2
+  s3-cors_hosts:
+    - http://localhost:5000
+    - https://myservice.com
+    - https://qa.myservice.com
+```
+
+#### Public Key File
+```yml
+x-ecs-cluster:
+  name: mycluster
+  public-key_file: "id_rsa.pub"
+```
+`id_rsa.pub` should be at same location with `compose.ecs.yml` file.
+
+For generating key file,
+```shell
+ssh-keygen -t rsa -b 2048 -C "email@example.com" -f ./id_rsa
+```
+It makes 2 files. `id_rsa` is private key and `id_rsa.pub` is public key.
+Please keep private key file carefully for connecting your EC2 instances.
+
+
+#### GPUs
+If you want to use GPU,
+```yml
+services:
+  skitai-app:
+    ...
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+x-ecs-cluster:
+  ...
+  instance-type: g4dn.2xlarge
+```
+
+`ecsdep` ignores device driver, just care about `count` value.
+Make sure your cluster's instance type has GPU capability.
+
+In some cases, maybe you do not want GPU resources like some stage of
+CI/PD pipeline. Then use `x-ecs-gpus` and it is more priority than above.
+```yml
+services:
+  skitai-app:
+    ...
+    deploy:
+      resources:
+        reservations:
+          memory: "160M"
+          x-ecs-gpus: 1
+```
+
+#### Using Fargate
+```yml
+x-ecs-service:
+  ...
+  fargate:
+    resources:
+      cpu: 2048
+      memory: 4096
+```
+
+### Testing Docker Containers
+```shell
+cd dep
+docker-compose -f compose.ecs.yml build
+docker-compose -f compose.ecs.yml up -d
+docker-compose -f compose.ecs.yml down
+docker-compose -f compose.ecs.yml push
+```
+
+### Deployment
+
+#### Creating/Update ECS Cluster
+```shell
+ecsdep -f compose.ecs.yml cluster plan
+# ecsdep find compose.ecs.yml default,
+ecsdep cluster plan
+# if no error,
+ecsdep cluster create
+```
+
+As a results, AWS resources will be created.
+- VPC
+- Application Load Balancer
+- ECS Cluster
+- Launch Configureation
+- Security Group
+- Auto Scaling Group For Cluster
+- Public Accessable S3 Bucket
+
+#### Deploying Service
+```shell
+export CI_COMMIT_SHA=latest
+export SERVICE_STAGE=qa
+
+ecsdep service plan
+ecsdep service up
+```
+
+Whenever commanding `ecsdep service up`, your containers will be deployed to ECS by rolling update way.
+
+As a results, AWS resources will be created.
+- Task Definition
+- Update Service and Run
+
+#### Removing Service
+```shell
+ecsdep service down
+```
+
+#### Destroying ECS Cluster
+```shell
+ecsdep cluster destroy
+```
+
+
+### Testable Example Project
+```shell
+git clone https://gitlab.com/skitai/ecsdep.git
+cd ecsdep/dep
+docker run -d --privileged --name dep \
+    --workdir /app \
+    -v ${PWD}/ecsdep:/app \
+    hansroh/dep:dind
+docekr exec -it dep bash
+```
+
+Within container,
+```shell
+pip3 install -U ecsdep
+docker login -u <gitlab username> -p <gitlab token> registry.gitlab.com
+aws configure set aws_access_key_id <AWS_ECS_ACCESS_KEY_ID>
+aws configure set aws_secret_access_key <AWS_ECS_SECRET_ACCESS_KEY>
+```
+AWS access key should have proper permissions for ECS control (see above prerequisition section).
+
+Then modify `dep/compose.ecs.yml`. Along this process, you should fulfill all prerequisitions.
+
+Finally,
+```shell
+cd dep
+./test_ecs_docker_build.sh
+./test_ecsdep_deploy.sh
+```
+
+
