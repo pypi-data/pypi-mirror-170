@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pyonlyoffice/__init__.py
+pyonlyoffice/pyonlyoffice.py
+pyonlyoffice.egg-info/PKG-INFO
+pyonlyoffice.egg-info/SOURCES.txt
+pyonlyoffice.egg-info/dependency_links.txt
+pyonlyoffice.egg-info/requires.txt
+pyonlyoffice.egg-info/top_level.txt

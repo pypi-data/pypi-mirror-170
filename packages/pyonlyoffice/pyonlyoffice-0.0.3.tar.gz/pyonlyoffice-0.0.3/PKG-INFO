@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyonlyoffice
+Version: 0.0.3
+Summary: Package for working with OnlyOffice API.
+Home-page: https://github.com/3v01ut10n/pyonlyoffice/
+Author: 3v01ut10n
+Author-email: arxonix7@gmail.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Beginning of work.
+
+1. Create a script and import the module for the library to work:
+
+```
+import pyonlyoffice
+```
+
+2. Add authorization data:
+
+```
+onlyoffice = pyonlyoffice.PyOnlyOffice(
+    username="test@example.com",
+    password="qwerty123",
+    baseurl="https://example.com/",
+)
+```
+
+OnlyOffice API - https://api.onlyoffice.com/
