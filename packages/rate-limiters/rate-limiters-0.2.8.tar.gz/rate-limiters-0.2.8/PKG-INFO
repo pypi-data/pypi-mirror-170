@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rate-limiters
+Version: 0.2.8
+Summary: Rate limiters for APIs and web scraping.
+Author: Dan Kelleher
+Author-email: kelleherjdan@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: distributed
+Requires-Dist: ready-logger (>=0.1.0,<0.2.0)
+Requires-Dist: redis (>=4.1.1,<5.0.0); extra == "distributed"
