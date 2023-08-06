@@ -1,0 +1,4 @@
+[console_scripts]
+YangshengdeYinheFuhao = YangshengdeYinheFuhao.__main__:main
+yangshengde-yinhe-fuhao = YangshengdeYinheFuhao.__main__:main
+
