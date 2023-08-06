@@ -1,0 +1,1 @@
+get corona infomations
