@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: arduino-exporter
+Version: 0.4.0
+Summary: Arduino Prometheus Exporter.
+Home-page: https://github.com/clivern/arduino_exporter/
+Author: Clivern
+Author-email: hello@clivern.com
+License: MIT
+Project-URL: Documentation, https://github.com/clivern/arduino_exporter/
+Project-URL: Source, https://github.com/clivern/arduino_exporter/
+Project-URL: Changelog, https://github.com/clivern/arduino_exporter/blob/main/CHANGELOG.rst
+Project-URL: Tracker, https://github.com/clivern/arduino_exporter/issues
+Project-URL: Download, https://pypi.org/project/arduino_exporter/#files
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE.txt
+
+.. image:: https://img.shields.io/pypi/v/arduino_exporter.svg
+    :alt: PyPI-Server
+    :target: https://pypi.org/project/arduino_exporter/
+.. image:: https://github.com/Clivern/arduino_exporter/actions/workflows/ci.yml/badge.svg
+    :alt: Build Status
+    :target: https://github.com/Clivern/arduino_exporter/actions/workflows/ci.yml
+
+|
+
+================
+Arduino Exporter
+================
+
+    Arduino Prometheus Exporter
+
+
+To use the exporter, follow the following steps
+
+1. Create a python virtual environment.
+
+.. code-block::
+
+    $ python3 -m venv venv
+    $ source venv/bin/activate
+
+
+2. Install arduino-exporter package with pip.
+
+.. code-block::
+
+    $ pip install arduino-exporter
+
+
+3. To run the arduino exporter process.
+
+.. code-block::
+
+    $ python -m arduino_exporter.cli run $serial_port --p $http_port -vv >> /var/log/arduino_exporter.log
+    $ python -m arduino_exporter.cli run /dev/cu.usbmodem14101 --p 8000 -vv >> /var/log/arduino_exporter.log
