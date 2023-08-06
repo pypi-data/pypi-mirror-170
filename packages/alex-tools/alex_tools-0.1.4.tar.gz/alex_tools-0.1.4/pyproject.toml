@@ -1,0 +1,8 @@
+[project]
+name = "alex_tools"
+version = "0.1.4"
+description = "Create a pyproject.toml file for an existing project."
+authors = [
+    {name = "M", email="info@hello.com"},
+    {email = "info@example.com"}
+]

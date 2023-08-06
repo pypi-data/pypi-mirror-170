@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: alex-tools
+Version: 0.1.4
+Summary: Create a pyproject.toml file for an existing project.
+Author-email: M <info@hello.com>, info@example.com
