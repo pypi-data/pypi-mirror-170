@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: statelit
+Version: 0.0.0a2
+Summary: Easy state management in Streamlit with Pydantic.
+Home-page: https://github.com/dwreeves/statelit
+License: MIT
+Author: Daniel Reeves
+Author-email: xdanielreeves@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Framework :: Apache Airflow
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: streamlit
+Requires-Dist: pydantic
+Requires-Dist: mkdocs ; extra == "doc"
+Requires-Dist: pymdown-extensions ; extra == "doc"
+Requires-Dist: mkdocs-material ; extra == "doc"
+Requires-Dist: mkdocs-macros-plugin ; extra == "doc"
+Requires-Dist: pygments ; extra == "doc"
+Requires-Dist: pandas ; extra == "test"
+Requires-Dist: pre-commit ; extra == "test"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Provides-Extra: doc
+Provides-Extra: test
+
+[comment]: <> (<p align="center">)
+[comment]: <> (  <img src="https://github.com/dwreeves/statelit/workflows/tests/badge.svg">)
+[comment]: <> (  <img src="https://github.com/dwreeves/statelit/workflows/docs/badge.svg">)
+[comment]: <> (</p>)
+[comment]: <> (<p align="center">)
+[comment]: <> (  <img src="https://raw.githubusercontent.com/dwreeves/statelit/main/docs/src/img/statelit-logo.png">)
+[comment]: <> (</p>)
+<p align="center">
+    <em>Easy state management in Streamlit with Pydantic.</em>
+</p>
+
+---
+
+# Work in progress!
+
+This repo is currently a work in progress. Check back soon!
+
+# Trademark & Copyright
+
+Streamlit is a trademark of Streamlit Inc.
+
+This package is **unaffiliated** with Streamlit Inc.
+
