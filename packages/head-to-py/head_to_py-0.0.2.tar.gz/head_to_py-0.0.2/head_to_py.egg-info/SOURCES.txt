@@ -1,0 +1,8 @@
+README.md
+setup.py
+head_to_py/__init__.py
+head_to_py/head_to_py.py
+head_to_py.egg-info/PKG-INFO
+head_to_py.egg-info/SOURCES.txt
+head_to_py.egg-info/dependency_links.txt
+head_to_py.egg-info/top_level.txt

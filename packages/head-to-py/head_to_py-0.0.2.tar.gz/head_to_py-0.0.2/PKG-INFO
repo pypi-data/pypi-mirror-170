@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: head_to_py
+Version: 0.0.2
+Summary: Convert enums and structs in a c header to a python equivalent.
+Home-page: https://www.inverseaudio.co.nz
+Author: Zachary Rogers
+Author-email: z.m.rogers@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+
+UNKNOWN
+
