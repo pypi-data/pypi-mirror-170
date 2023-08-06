@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: variousSort
+Version: 0.0.3
+Summary: Various sorting algorithms in one library, ranging from slow bubble sorting to the fastest single-row sorting.
+Home-page: https://github.com/IsMarshevs/VariousSort
+Author: Ilya Marshev
+Author-email: ismarshev@gmail.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ipython (>=6)
+Requires-Dist: nbformat (>=4)
+Requires-Dist: nbconvert (>=5)
+Requires-Dist: requests (>=2)
+
+# VariousSort
