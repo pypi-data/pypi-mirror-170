@@ -1,0 +1,4 @@
+[console_scripts]
+SanshitianXuehuiLinghunChuti = SanshitianXuehuiLinghunChuti.__main__:main
+sanshitian-xuehui-linghun-chuti = SanshitianXuehuiLinghunChuti.__main__:main
+
