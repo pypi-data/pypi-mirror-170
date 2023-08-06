@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+awsdp.egg-info/PKG-INFO
+awsdp.egg-info/SOURCES.txt
+awsdp.egg-info/dependency_links.txt
+awsdp.egg-info/requires.txt
+awsdp.egg-info/top_level.txt
+notebooks/__init__.py
+workflows/__init__.py
+workflows/buckets.py
+workflows/env.py
+workflows/sql_dbs.py
+workspace/__init__.py
+workspace/config.py
+workspace/settings.py
