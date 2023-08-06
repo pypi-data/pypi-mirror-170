@@ -1,0 +1,4 @@
+[console_scripts]
+LongzhiLiliangLiaoyuTutengkaShuomingshu = LongzhiLiliangLiaoyuTutengkaShuomingshu.__main__:main
+longzhi-liliang-liaoyu-tutengka-shuomingshu = LongzhiLiliangLiaoyuTutengkaShuomingshu.__main__:main
+
