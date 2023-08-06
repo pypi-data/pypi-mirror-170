@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: netbox-static-routes-plugin
+Version: 0.2
+Summary: Manage static routes in Netbox
+Home-page: https://github.com/jbparrish17/netbox-static-routes
+Author: Joshua Parrish
+License: Apache 2.0
+License-File: LICENSE
