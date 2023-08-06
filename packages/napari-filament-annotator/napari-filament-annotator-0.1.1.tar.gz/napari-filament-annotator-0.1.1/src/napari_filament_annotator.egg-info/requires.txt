@@ -1,0 +1,17 @@
+Geometry3D
+networkx
+numpy
+magicgui
+pandas
+qtpy
+scipy
+sklearn
+imageio!=2.22.1
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5
