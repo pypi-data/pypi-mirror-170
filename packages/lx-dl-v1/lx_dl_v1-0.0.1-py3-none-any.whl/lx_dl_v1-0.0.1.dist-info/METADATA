@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lx-dl-v1
+Version: 0.0.1
+Summary: LayerX Data Lake Python SDK
+Home-page: UNKNOWN
+Author: layerx
+Author-email: <annotation.manager.dev@gmail.com>
+License: UNKNOWN
+Keywords: python,datalake,datasetsync,ai,annotation,layerx,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: uuid
+
+
+# datalake-python-client
+ Datalake python SDK
+
+
