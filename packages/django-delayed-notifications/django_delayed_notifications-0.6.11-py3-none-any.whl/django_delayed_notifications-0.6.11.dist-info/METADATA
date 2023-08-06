@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: django-delayed-notifications
+Version: 0.6.11
+Summary: django-delayed-notifications provides tracking of notifications, and delayed sending.
+Author-email: François GUÉRIN <fguerin@ville-tourcoing.fr>
+License: MIT
+Project-URL: Homepage, https://gitlab.ville.tg/fguerin/django-notifications
+Keywords: django,notifications,delayed sending
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE
+Requires-Dist: Django (<4.0,>=3.2)
+Requires-Dist: django-ckeditor (<7.0,>=6.4.0)
+Requires-Dist: django-currentuser (~=0.5.0)
+Requires-Dist: django-solo (<2.1,>=1.1.5)
+Requires-Dist: beautifulsoup4 (~=4.10)
+Provides-Extra: docs
+Requires-Dist: Sphinx (>=1.5.5) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+
+# Notifications
+
+This application sends notifications to the user and emails addresses.
+It stores messages into a database, and sends can be delayed through a cron task.
+
+## Installation
+
+```shell
+$ pip istall django-notifications
+```
+
+Add `django_notifications` to your `INSTALLED_APPS`:
+```python
+INSTALLED_APPS = (
+    ...
+    'django_notifications',
+    ...
+)
+```
+
+Apply the migrations:
+
+```shell
+$ ./manage.py migrate
+```
+
+## Notes
+
+The application is available in English and translated to French.
