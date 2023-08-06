@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aiaas_rec
+Version: 0.0.3
+Summary: A variation of the recommenders package based on the business needs at IKEA
+Project-URL: Homepage, https://github.com/ingka-group-digital/aiaas_rec/
+Project-URL: Bug Tracker, https://github.com/ingka-group-digital/aiaas_rec/issues
+Author-email: Ezgi Yildirim <ezgi.yildirim@ingka.ikea.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# aiaas_rec
+A variation of the recommenders package based on the business needs at IKEA
