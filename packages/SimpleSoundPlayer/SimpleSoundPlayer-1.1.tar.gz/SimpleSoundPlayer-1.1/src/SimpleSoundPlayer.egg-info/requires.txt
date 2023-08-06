@@ -1,0 +1,2 @@
+playsound
+python-vlc

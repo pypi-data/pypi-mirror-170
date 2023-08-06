@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+src/SimpleSoundPlayer/__init__.py
+src/SimpleSoundPlayer.egg-info/PKG-INFO
+src/SimpleSoundPlayer.egg-info/SOURCES.txt
+src/SimpleSoundPlayer.egg-info/dependency_links.txt
+src/SimpleSoundPlayer.egg-info/requires.txt
+src/SimpleSoundPlayer.egg-info/top_level.txt
+src/SimpleSoundPlayer/example/__init__.py
+src/tests/__init__.py
+src/tests/example/__init__.py
