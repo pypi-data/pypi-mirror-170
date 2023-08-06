@@ -1,0 +1,14 @@
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+wize/WIZE.py
+wize/__init__.py
+wize.egg-info/PKG-INFO
+wize.egg-info/SOURCES.txt
+wize.egg-info/dependency_links.txt
+wize.egg-info/entry_points.txt
+wize.egg-info/requires.txt
+wize.egg-info/top_level.txt
