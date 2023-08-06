@@ -1,0 +1,11 @@
+LICENSE
+pyproject.toml
+setup.cfg
+setup.py
+src/training_plugins/__init__.py
+src/training_plugins/plugins/__init__.py
+src/training_plugins/plugins/validation_plugin.py
+src/training_plugins_ChrisPrein.egg-info/PKG-INFO
+src/training_plugins_ChrisPrein.egg-info/SOURCES.txt
+src/training_plugins_ChrisPrein.egg-info/dependency_links.txt
+src/training_plugins_ChrisPrein.egg-info/top_level.txt
