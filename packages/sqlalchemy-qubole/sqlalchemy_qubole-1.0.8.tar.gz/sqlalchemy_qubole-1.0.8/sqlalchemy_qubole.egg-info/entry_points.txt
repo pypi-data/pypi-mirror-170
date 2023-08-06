@@ -1,0 +1,4 @@
+[sqlalchemy.dialects]
+qubole = sqlalchemy_qubole.prestodialect:QubolePrestoDialect
+qubole.hive = sqlalchemy_qubole.hivedialect:QuboleHiveDialect
+qubole.presto = sqlalchemy_qubole.prestodialect:QubolePrestoDialect
