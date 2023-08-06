@@ -1,0 +1,17 @@
+streamlit_plotly_events_retro/__init__.py,sha256=QAt4kyyKOsbes-zjh89-pcvZC-jVF7Uj_P1K2blwjKs,5963
+streamlit_plotly_events_retro/frontend/build/asset-manifest.json,sha256=auNZWTEx8tREHg8ME-oTbSuuqEEIRAVPMDRMD_-YBX8,859
+streamlit_plotly_events_retro/frontend/build/index.html,sha256=bBWrxQySMfGAucqAS4tL2ZkkSq_aZsJs-m8arGj8eCQ,2052
+streamlit_plotly_events_retro/frontend/build/precache-manifest.af763285147795fb762b3911f52874eb.js,sha256=uevkUqTsijDDpP5p-N2gbg2Fv8mBzwgB91tJaDZslLQ,564
+streamlit_plotly_events_retro/frontend/build/service-worker.js,sha256=op_Z7U5t4qRKwaaOyGwuuuVcTfwa42uhWJqOVjwIxdo,1183
+streamlit_plotly_events_retro/frontend/build/static/js/2.02ea19d3.chunk.js,sha256=aRYfoqCLT6WOlepmDo-8-ZsEeFG6DaMM8GPU4mAhvxY,4075445
+streamlit_plotly_events_retro/frontend/build/static/js/2.02ea19d3.chunk.js.LICENSE.txt,sha256=UxWZAWpo7L54qKi8BngR_1DBJRDHXc_FLELubiWkrF0,3384
+streamlit_plotly_events_retro/frontend/build/static/js/2.02ea19d3.chunk.js.map,sha256=wWyXN1uap4169fjfIqqyAx5PpLfR1IUDWSb9Y0h0P50,14486971
+streamlit_plotly_events_retro/frontend/build/static/js/main.d2c5e4b3.chunk.js,sha256=DDdx-GuM72e5Kz8ljUtGkIoa0Vedw9K1bj58w9hOSVo,1450
+streamlit_plotly_events_retro/frontend/build/static/js/main.d2c5e4b3.chunk.js.map,sha256=iwDwuQJLZyrtZhQLwFmzg_d3EPnPorvB1M0QjswOiQg,3876
+streamlit_plotly_events_retro/frontend/build/static/js/runtime-main.44d30fc2.js,sha256=toj-1BqxEPzgcNcqTTcDNMeGtNl9LgPrROO3vb-jf8c,1598
+streamlit_plotly_events_retro/frontend/build/static/js/runtime-main.44d30fc2.js.map,sha256=-iE0MrpVwJyyReKi6mqKvIQ_z-xffYHxch4CWSOya4s,8317
+streamlit_plotly_events_retro-0.0.8.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+streamlit_plotly_events_retro-0.0.8.dist-info/METADATA,sha256=8tqFqHopZnUtiPtIcqS9XT0vsLPEwJ2e4UmFD_JEYeY,557
+streamlit_plotly_events_retro-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+streamlit_plotly_events_retro-0.0.8.dist-info/top_level.txt,sha256=v4kPL-GrohuOvUHnBCNVzxF8jAYx2zTrtmLmJyRN3kw,30
+streamlit_plotly_events_retro-0.0.8.dist-info/RECORD,,
