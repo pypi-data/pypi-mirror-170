@@ -1,0 +1,4 @@
+[console_scripts]
+LiurenZhanyanXuanzhu = LiurenZhanyanXuanzhu.__main__:main
+liuren-zhanyan-xuanzhu = LiurenZhanyanXuanzhu.__main__:main
+
