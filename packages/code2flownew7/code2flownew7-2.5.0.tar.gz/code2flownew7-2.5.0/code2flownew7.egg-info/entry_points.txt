@@ -1,0 +1,3 @@
+[console_scripts]
+code2flownew7 = code2flow.engine:main
+
