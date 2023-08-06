@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: medical-dataset-analyzer
+Version: 0.0.1
+Summary: Package to analyze medical datasets
+Author-email: Matej Gazda <gazda.matej@gmail.com>
+Project-URL: Homepage, https://github.com/BraveDistribution/medical_dataset_analyzer
+Project-URL: Bug Tracker, https://github.com/BraveDistribution/medical_dataset_analyzer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#### Package that should extract important information (spacing, shape, intensity stats) of the volumes.
+
+Currently supports:
+- data that can be loaded with torchio.
