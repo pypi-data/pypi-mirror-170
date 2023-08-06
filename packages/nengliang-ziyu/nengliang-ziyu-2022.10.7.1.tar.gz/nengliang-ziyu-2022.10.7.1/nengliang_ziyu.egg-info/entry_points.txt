@@ -1,0 +1,4 @@
+[console_scripts]
+NengliangZiyu = NengliangZiyu.__main__:main
+nengliang-ziyu = NengliangZiyu.__main__:main
+
