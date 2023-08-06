@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: ecsdep
+Version: 0.1.0a1
+Summary: AWS ECS Deployment Tool With Terrafrom
+Home-page: https://gitlab.com/skitai/ecsdep
+Author: Hans Roh
+Author-email: hansroh@gmail.com
+License: MIT
+Download-URL: https://pypi.python.org/pypi/ecsdep
+Platform: posix
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+
+#### Creating Development Dockers
+```shell
+cd hansroh/lib/ecsdep
+docker-compose -f dep/compose.devel.yml
+```
+
+#### Testing `app` and `ecsdep`
+```shell
+docker attach ecsdep
+cd tests && ./test-all.sh
+```
+
+#### Testing Deployment
+```shell
+docker attach docker
+
+test_ecs_docker_build.sh
+test_ecsdep_deploy.sh
+```
+
+#### Testing Gitlab CI/CD
+```shell
+git push origin master
+```
+
+.gitlab.ci
+```shell
+./test_ecs_docker_build.sh
+./test_ecsdep_deploy.sh
+```
+
