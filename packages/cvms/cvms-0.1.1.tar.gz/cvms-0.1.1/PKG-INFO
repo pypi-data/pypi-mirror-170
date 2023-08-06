@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cvms
+Version: 0.1.1
+Summary: Codebase For Attention、Transfomrer、Backbone、Convolution、MLP、Re-parameter、Module
+Home-page: https://pypi.org/project/cvms/
+Author: voi
+Author-email: develop@cvms.com
+License: GPL-3.0
+Keywords: AttentionTransfomrerBackboneConvolutionMLPRe-parameter
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7.0
+
+cvms
+
