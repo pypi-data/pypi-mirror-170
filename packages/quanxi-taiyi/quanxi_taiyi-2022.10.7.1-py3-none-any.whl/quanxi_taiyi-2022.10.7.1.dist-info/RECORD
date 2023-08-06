@@ -1,0 +1,11 @@
+QuanxiTaiyi/Dockerfile,sha256=EL9KrzZTOAXlF3pgAqKipIvt77gtFsypZ63EkDm0fDg,54
+QuanxiTaiyi/README.md,sha256=kgS-GO9ThXoawhOneNM3n6SrdWCUCnAwWDJuGU_ko80,427
+QuanxiTaiyi/__init__.py,sha256=H-FhV-wZe93lFK_14nhau2dEIwI5_v21o9brWC2KiLw,232
+QuanxiTaiyi/__main__.py,sha256=StlRO3acXK2KUuyxyIo8iCn-lrgHJJFtHFGn0N6XCCM,635
+QuanxiTaiyi/file.pdf,sha256=CdWKDtUdqtn56qLUaBgolg2q_DzisCWxDkBn5aF6V78,8814306
+QuanxiTaiyi/index.html,sha256=_MGK6QxkE2rVGIG7ZaJ4ecKGzeeH4FZjepNV-U7xoO4,150
+quanxi_taiyi-2022.10.7.1.dist-info/METADATA,sha256=HIheFoKw9UrE1I2F7Tvk0f7sKGeFjKFszk4dLT16lDk,1502
+quanxi_taiyi-2022.10.7.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+quanxi_taiyi-2022.10.7.1.dist-info/entry_points.txt,sha256=LaFwzexdSeqpSvJQtI4grTb5qODhELmAOoN4BKU_zis,100
+quanxi_taiyi-2022.10.7.1.dist-info/top_level.txt,sha256=MN_YCEX1sI9MV8mCdr9PODXUB9UVXjU6remHhstdFXc,12
+quanxi_taiyi-2022.10.7.1.dist-info/RECORD,,
