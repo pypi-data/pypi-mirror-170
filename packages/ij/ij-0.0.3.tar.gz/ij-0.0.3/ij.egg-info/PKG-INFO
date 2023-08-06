@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ij
+Version: 0.0.3
+Summary: Text feature extraction
+Home-page: https://github.com/thorwhalen/ut/tree/master/ml/feature_extraction/text.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# ij
+Text feature extraction
+
+
+To install:	```pip install ij```
+
+
