@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+stag/__init__.py
+stag/graph.py
+stag/stag_internal.py
+stag/stag_internal_wrap.cxx
+stag/utility.py
+stag.egg-info/PKG-INFO
+stag.egg-info/SOURCES.txt
+stag.egg-info/dependency_links.txt
+stag.egg-info/requires.txt
+stag.egg-info/top_level.txt
+stag/stag_lib/stag.cpp
+stag/stag_lib/stag.h
+stag/stag_lib/utility.cpp
+stag/stag_lib/utility.h
