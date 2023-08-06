@@ -1,0 +1,4 @@
+log_home: '{app_home}/logs'
+md5_store_file: '{app_home}/data/md5_store.db'
+video_process_threads: 8
+text_to_clip: "Levin's Collection"
