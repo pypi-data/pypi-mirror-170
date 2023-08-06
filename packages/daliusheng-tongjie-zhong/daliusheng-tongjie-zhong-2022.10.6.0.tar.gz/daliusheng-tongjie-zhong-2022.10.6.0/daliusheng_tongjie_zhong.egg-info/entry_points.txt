@@ -1,0 +1,4 @@
+[console_scripts]
+DaliushengTongjieZhong = DaliushengTongjieZhong.__main__:main
+daliusheng-tongjie-zhong = DaliushengTongjieZhong.__main__:main
+
