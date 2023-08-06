@@ -1,0 +1,3 @@
+[console_scripts]
+git-hours=git_hours.main:main
+
