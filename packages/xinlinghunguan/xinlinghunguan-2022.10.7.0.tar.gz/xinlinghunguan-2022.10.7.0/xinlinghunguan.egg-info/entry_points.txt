@@ -1,0 +1,4 @@
+[console_scripts]
+Xinlinghunguan = Xinlinghunguan.__main__:main
+xinlinghunguan = Xinlinghunguan.__main__:main
+
