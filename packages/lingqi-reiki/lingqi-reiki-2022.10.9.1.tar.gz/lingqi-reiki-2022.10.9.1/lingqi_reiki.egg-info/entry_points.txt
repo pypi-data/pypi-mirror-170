@@ -1,0 +1,4 @@
+[console_scripts]
+LingqiReiki = LingqiReiki.__main__:main
+lingqi-reiki = LingqiReiki.__main__:main
+
