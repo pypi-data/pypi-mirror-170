@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/yapigo/__init__.py
+src/yapigo/utils.py
+src/yapigo.egg-info/PKG-INFO
+src/yapigo.egg-info/SOURCES.txt
+src/yapigo.egg-info/dependency_links.txt
+src/yapigo.egg-info/top_level.txt
