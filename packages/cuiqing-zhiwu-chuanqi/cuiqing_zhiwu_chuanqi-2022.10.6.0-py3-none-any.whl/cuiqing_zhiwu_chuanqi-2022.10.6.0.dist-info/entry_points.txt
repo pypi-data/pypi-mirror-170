@@ -1,0 +1,4 @@
+[console_scripts]
+CuiqingZhiwuChuanqi = CuiqingZhiwuChuanqi.__main__:main
+cuiqing-zhiwu-chuanqi = CuiqingZhiwuChuanqi.__main__:main
+
