@@ -1,0 +1,9 @@
+cgir/__init__.py,sha256=3l8HNpIVDAqxj10b5An0w1oQ2zT1sFH6LmRvrnAjoPc,43
+cgir/cli.py,sha256=idZlHVvXGqwLmHCEPdmh0oXnaCejQX6GkVouu5jhyA4,8033
+cgir/infrared.py,sha256=aQGobQYTwLETgDeZBbhk4tlJ_qRQ7C03M9NWox0WO9U,15932
+cgir-1.1.dist-info/LICENSE,sha256=B7dXpCzzayxs2T9a4g2nXcomNyKpTNJqa_0MCCJPQaY,11342
+cgir-1.1.dist-info/METADATA,sha256=vr9d9hbe4cAr8xFpm-QqZXYMwJtBeEbiaW7PTEqUAiU,364
+cgir-1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cgir-1.1.dist-info/entry_points.txt,sha256=NFCCrNJp-dgyuW3z-c3DbLAiCMhvZhT4vM77x7NcGV8,34
+cgir-1.1.dist-info/top_level.txt,sha256=-1WAAsSreVy7ZP4JOOSxoVYFzIAU2joRrMgBI5QlNqY,5
+cgir-1.1.dist-info/RECORD,,
