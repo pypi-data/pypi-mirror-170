@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: chimoney-py
+Version: 0.0.2
+Summary: A Python package for Chimoney
+Home-page: https://github.com/Chimoney/chimoney-community-projects/tree/main/submissions/Chimoney-Python
+Author: Asikhalaye Samuel
+Author-email: samuelasikhalaye@gmail.com
+License: MIT
+Description: # PyChimoney
+        
+        pychimoney is a python wrapper for <a href="https://chimoney.io"> Chimoney </a>
+        
+            - Account
+            - Info
+            - Payout
+            - Mobile Money 
+            - Wallet
+            - Sub-Account
+            - Redeem
+        
+        ## Getting Started
+        - Register with <a href="https://chimoney.io"> Chimoney </a>
+        - Request for API KEY from support
+        - set Your "CHIMONEY_AUTH_KEY" environment variable
+        
+        ## Installing 
+            - pip install chimoney-py
+        ### OR
+            - git clone "the repo"
+            - cd pychimoney
+            - python setup.py install or
+            - pip3 install .
+        
+        ## Usage
+        #### Importing the package
+        ```python
+        from chimoney import Chimoney
+        ```
+        #### Creating an instance of the Chimoney class
+        ```python
+        chimoney = Chimoney.set_api_key("API-KEY")
+        ```
+        
+        #### Full Example
+        ```python
+            from pychimoney import Chimoney
+            import os
+        
+            # Initialize Chimoney
+            chimoney = Chimoney.set_api_key("CHIMONEY_AUTH_KEY")
+        ```
+         #### Using the Account API
+         ```python
+        
+            chimoney.account.required_function(params)
+        ```
+        
+        ## TODO
+        
+        - [x] Add all Endpoints
+        - [ ] Write Unit Tests
+        - [x] Package the Library
+        - [x] Add to Pip
+        - [ ] Add Pytest and Covrage for Test
+        - [ ] Documentation
+        
+Keywords: Chimoney,Python,Chimoney-Python,Chimoney Python,Chimoney Python Wrapper
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
