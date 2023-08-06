@@ -1,0 +1,3 @@
+[console_scripts]
+ipath = ipath.main:main
+
