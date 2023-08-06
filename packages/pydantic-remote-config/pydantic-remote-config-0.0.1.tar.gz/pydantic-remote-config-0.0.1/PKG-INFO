@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pydantic-remote-config
+Version: 0.0.1
+Summary: Utility to fetch configuration values from remote sources that integrates with Pydantic settings models
+Home-page: https://github.com/nplutt/pydantic-remote-config
+License: MIT
+Keywords: pydantic,remote,config,settings
+Author: nplutt
+Author-email: nplutt@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: aws
+Requires-Dist: pydantic (>=1.0.0,<2.0.0)
+Project-URL: Repository, https://github.com/nplutt/pydantic-remote-config
+Description-Content-Type: text/markdown
+
+# pydantic-remote-config
+pydantic extension to fetch configuration from various remote sources including SSM, SecretsManager, Vault, etc.
+
+## Contributing
+
+#### Installation
+
+#### Development Dependencies
+* `asdf` for managing multiple python version
+* `pre-commit` for formatting & linting code before commits
+*
+
