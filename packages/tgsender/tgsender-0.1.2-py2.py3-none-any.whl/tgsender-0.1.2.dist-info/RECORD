@@ -1,0 +1,17 @@
+tgsender/__init__.py,sha256=EHfeci99MYn2zbA4F0MbCvSO9yt7SNPDA7fF-yya5_0,196
+tgsender/cli.py,sha256=jcg-jP2JcbwtIB3xr5N5QWmauVYMMwSqVlvIOnZLm1Y,469
+tgsender/config.ini,sha256=x94Jx2mfWtMRFqxe61TVqH6QLYbe5rFyvtwmQ4qiwsU,91
+tgsender/tgsender.py,sha256=wka9K3wf9OX61K_VSfRM2higsvQPUEOcBsN5uZCL_mc,11333
+tgsender/api/__init__.py,sha256=i1BmFcS2TdZMdAKLV17WwuMd7oWTxPfKVWnlALef3Mw,27
+tgsender/api/api_telegram.py,sha256=kGz_1TEW0BXPp8xrni8i2U0phAzNdc1HA4A1DnLzX1c,13331
+tgsender/mediainfo/__init__.py,sha256=LMNKCXEaBOwoY9UuHDhVG3LLSbSoWvv-T6YOBZxbevw,28
+tgsender/mediainfo/ffprobe_micro.py,sha256=STizVCIFVTCCpnCx26oA4-lz8N3EonMaQL-CQdWtI6c,2555
+tgsender/utils/__init__.py,sha256=nzX2vixf0jgvDnApDOmvAabXlkaJSNPkbMk5WX2O5SU,22
+tgsender/utils/utils.py,sha256=PzxLiver2PMXCfJEgSBSs4jBR4U_M3MgOSPUMZph8_c,3012
+tgsender-0.1.2.dist-info/AUTHORS.rst,sha256=OOIvbNjY2pPr5BfVZkDd9GZke8KbyoXbi8JCFyZz8uE,165
+tgsender-0.1.2.dist-info/LICENSE,sha256=TkomZ5hGQe4tIYw5ymBsYZxP4XE1U3tkKibkVqMqJSk,1089
+tgsender-0.1.2.dist-info/METADATA,sha256=sAvRhc3PH5mS1oLsv8U2ZcpJ595KHrJ13tE7WWrL-ms,1839
+tgsender-0.1.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tgsender-0.1.2.dist-info/entry_points.txt,sha256=Q8rE8wan47QVg_O8ZaXE680Wdf6NjvwlLLDhV3RZtus,47
+tgsender-0.1.2.dist-info/top_level.txt,sha256=LKbPpOlHXh-w97K2ahEI6858PCB9Kn1zSCNDt2D8Z30,9
+tgsender-0.1.2.dist-info/RECORD,,
