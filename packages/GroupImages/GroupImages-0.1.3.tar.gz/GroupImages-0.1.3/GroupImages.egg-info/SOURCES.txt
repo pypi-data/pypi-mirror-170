@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+GroupImages.egg-info/PKG-INFO
+GroupImages.egg-info/SOURCES.txt
+GroupImages.egg-info/dependency_links.txt
+GroupImages.egg-info/entry_points.txt
+GroupImages.egg-info/requires.txt
+GroupImages.egg-info/top_level.txt
+group_images/__init__.py
+group_images/interface_file.py
+group_images/main.py
+group_images/feature_extractor/__init__.py
+group_images/feature_extractor/feat_extract.py
+group_images/feature_extractor/image_loader.py
+group_images/separate/__init__.py
+group_images/separate/separate.py

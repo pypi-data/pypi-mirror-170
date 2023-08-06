@@ -1,0 +1,2 @@
+[console_scripts]
+cluster_images = group_images.main:terminal_exec
