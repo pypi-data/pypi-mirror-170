@@ -1,0 +1,2 @@
+[console_scripts]
+cklogger = cklogger.__main__:cli

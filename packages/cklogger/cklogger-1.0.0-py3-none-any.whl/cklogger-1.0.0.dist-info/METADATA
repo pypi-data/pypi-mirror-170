@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: cklogger
+Version: 1.0.0
+Summary: Simple pure python utility for sniffing CloudKit usages on iDevices
+Home-page: https://github.com/doronz88/cklogger
+Author: DoronZ
+Project-URL: pymobiledevice3, https://github.com/doronz88/cklogger
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: pymobiledevice3 (>=1.29.1)
+Requires-Dist: pygments
+Requires-Dist: bpylist2
+Requires-Dist: coloredlogs
+
+# cklogger
+
+## Description
+
+Simple pure python utility for sniffing CloudKit usages on iDevices
+
+## Installation
+
+- Install the package:
+  ```shell
+  python3 -m pip install --user -U cklogger
+  ```
+- Install
+  the [CloudKit Debugging Profile](https://developer.apple.com/services-account/download?path=/iOS/iOS_Logs/CloudKit.mobileconfig)
+- Restart the device for the profile to take full affect
+
+## Usage
+
+```
+Usage: python -m cklogger [OPTIONS]
+
+Options:
+  --help  Show this message and exit.
+```
