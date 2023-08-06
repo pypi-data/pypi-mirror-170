@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+WannierOwl/__init__.py
+WannierOwl.egg-info/PKG-INFO
+WannierOwl.egg-info/SOURCES.txt
+WannierOwl.egg-info/dependency_links.txt
+WannierOwl.egg-info/requires.txt
+WannierOwl.egg-info/top_level.txt
