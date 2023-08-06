@@ -1,0 +1,11 @@
+pydanticscim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydanticscim/enterprise_user.py,sha256=XwBxjrjydH8jQi3GR7sguseCD9BlgiiNmWl9qt68Hko,1606
+pydanticscim/group.py,sha256=tiPNTQMFQEVpFme-ZG0UshdhGt7xlRdlHGtnvY0uyPQ,882
+pydanticscim/resource_type.py,sha256=L1FWh6W2TQ_eiGdKyDuZB1ZayimJVk3ANb0-867ybMg,1681
+pydanticscim/service_provider.py,sha256=ZNH_U9zhMWfWOi5rN0V4APJmVsfD3TjdwSGl80UDGcU,2868
+pydanticscim/user.py,sha256=zNh6XUfs3nEVK4f3nyphX2xm3WVQNw8KdYMlEq9Yvdg,13303
+pydantic_scim-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pydantic_scim-0.0.3.dist-info/METADATA,sha256=DAz4R3i5_COh2pLETdby1-gTP6Lm5YcifY5V66bG1zQ,525
+pydantic_scim-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pydantic_scim-0.0.3.dist-info/top_level.txt,sha256=uYIjlfBoNcRdg-KeGT0eJBa8T6IMnuu_gkiXjpKMI5E,13
+pydantic_scim-0.0.3.dist-info/RECORD,,
