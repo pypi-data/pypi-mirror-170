@@ -1,0 +1,13 @@
+pyyc/__init__.py,sha256=LJ8y4bpv40yqbKN8V0VaHye8dm_Z0bcDo9xnCEHOU3U,197
+pyyc/config/default.cfg,sha256=_-0iXnLRB498Tjn1gvWbrKjop6ewAvMtvl8F3UD7-7I,27
+pyyc/config/default.cfg~,sha256=FVb__kAQjABZCILDJRIrpnHBDgcYYitTGLl6SmBQS5Y,13
+pyyc/subpkgA/__init__.py,sha256=i72ua2f6yDO6ZdGxxJ3mfHPNXtYEO9BiNvMtyNH5Ohs,225
+pyyc/subpkgA/modA1.py,sha256=UPYFdvEkVF8eK6PGGfAWTsG7lWOZ5cxdk2O3aOKub3U,124
+pyyc/subpkgA/modA2.py,sha256=omjIqkucJq8T3B7BYLDq8GsASbxhpTbcUifHsemk1ts,139
+pyyc/subpkgB/__init__.py,sha256=aIi0lX7IkC-ywe9dQgT9cu7RCBUu354fYJaHcI_oe1s,115
+pyyc/subpkgB/mod.py,sha256=XUZ_XAmooMbpqdnvz70Ebc_UkArpmcL50q-4eZnRsn8,1860
+pyyc-0.1.dist-info/LICENSE,sha256=0GmtG5Z4GXCvpfFu8zTkYlu-OQ3FY1yexNooYvXJCK4,1532
+pyyc-0.1.dist-info/METADATA,sha256=SH0HRK5qPbk1XVZkKpci2GTf2xiOkrMfKOdTeL61-O8,1676
+pyyc-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyyc-0.1.dist-info/top_level.txt,sha256=Y2Pqm5v4st47VKw7VmFqra3r56LbQmQy_LWv8ctwMRU,5
+pyyc-0.1.dist-info/RECORD,,

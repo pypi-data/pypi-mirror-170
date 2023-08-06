@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: pyyc
+Version: 0.1
+Summary: Test package.
+Home-page: https://gitlab.in2p3.fr/ycopin/pyyc
+Author: Yannick Copin
+Author-email: y.copin@ipnl.in2p3.fr
+License: BSD 3-Clause "New" or "Revised" License
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Education
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: importlib-resources ; python_version < "3.10"
+Provides-Extra: docs
+Requires-Dist: nbsphinx ; extra == 'docs'
+Requires-Dist: ipython ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+
+pyyc - a sample project
+=======================
+
+A sample project.
+
+Package initialization (`__init__.py`)
+--------------------------------------
+
+>>> import pyyc
+Initialisation  A1
+Initialisation  A2
+Initialisation  A1B
+>>> pyyc.subpkgA.modA1.version
+'A1'
+>>> pyyc.subpkgB.version
+'A1B'
+
+Data files (e.g. `config/`)
+---------------------------
+
+Example to access data file at runtime:
+
+>>> from pyyc.subpkgB.mod import read_config  # always possible, no matter __all__
+>>> cfg = read_config()                       # will look for config files distributed along pyyc
+>>> cfg['DEFAULT']['version']
+'cfg-1.0'
+
+Source: https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime
+
+To be completed
+---------------
+
+* sphinx documentation (`docs/`),
+* continuous integration (`.gitlab-ci.yml`),
+* tests (`tests/`),
+* coverage.
