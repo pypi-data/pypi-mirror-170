@@ -1,0 +1,8 @@
+typer>=0.6.1
+rich>=12.6.0
+pebble>=5.0.1
+mypy
+
+[test]
+coverage[toml]>=6.2
+pytest>=6.2.5

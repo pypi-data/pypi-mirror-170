@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+promypy/__init__.py
+promypy/main.py
+promypy.egg-info/PKG-INFO
+promypy.egg-info/SOURCES.txt
+promypy.egg-info/dependency_links.txt
+promypy.egg-info/entry_points.txt
+promypy.egg-info/requires.txt
+promypy.egg-info/top_level.txt
+tests/__init__.py
+tests/test_main.py
