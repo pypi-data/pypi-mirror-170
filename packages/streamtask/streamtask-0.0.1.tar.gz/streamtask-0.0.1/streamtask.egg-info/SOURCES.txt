@@ -1,0 +1,7 @@
+README.md
+setup.py
+streamtask.egg-info/PKG-INFO
+streamtask.egg-info/SOURCES.txt
+streamtask.egg-info/dependency_links.txt
+streamtask.egg-info/requires.txt
+streamtask.egg-info/top_level.txt
