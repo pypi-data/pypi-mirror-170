@@ -1,0 +1,4 @@
+[console_scripts]
+CongxinlingDaoxibaodeLiaoyu = CongxinlingDaoxibaodeLiaoyu.__main__:main
+congxinling-daoxibaode-liaoyu = CongxinlingDaoxibaodeLiaoyu.__main__:main
+
