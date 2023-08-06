@@ -1,0 +1,4 @@
+[console_scripts]
+LiangziChuliaoVer2 = LiangziChuliaoVer2.__main__:main
+liangzi-chuliao-ver2 = LiangziChuliaoVer2.__main__:main
+
