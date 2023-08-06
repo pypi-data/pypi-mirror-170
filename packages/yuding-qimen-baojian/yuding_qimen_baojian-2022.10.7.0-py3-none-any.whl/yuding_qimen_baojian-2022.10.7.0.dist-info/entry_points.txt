@@ -1,0 +1,4 @@
+[console_scripts]
+YudingQimenBaojian = YudingQimenBaojian.__main__:main
+yuding-qimen-baojian = YudingQimenBaojian.__main__:main
+
