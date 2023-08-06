@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+relativebilbying/relativebinninglikelihood.py
+relativebilbying.egg-info/PKG-INFO
+relativebilbying.egg-info/SOURCES.txt
+relativebilbying.egg-info/dependency_links.txt
+relativebilbying.egg-info/requires.txt
+relativebilbying.egg-info/top_level.txt

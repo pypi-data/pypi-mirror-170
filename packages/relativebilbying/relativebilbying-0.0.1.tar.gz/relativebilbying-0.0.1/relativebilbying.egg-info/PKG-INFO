@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: relativebilbying
+Version: 0.0.1
+Summary: Code to use relative binning in bilby
+Home-page: https://github.com/lemnis12/relativebilbying
+Author: Justin Janquart, Anna Puecher
+Author-email: j.janquart@uu.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+License-File: LICENSE
+
+UNKNOWN
+
