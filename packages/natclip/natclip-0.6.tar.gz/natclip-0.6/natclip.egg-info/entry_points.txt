@@ -1,0 +1,3 @@
+[console_scripts]
+natclip = natclip.main:main
+
