@@ -1,0 +1,2 @@
+[console_scripts]
+oss-notice-tool = tool.oss_notice_tool:main
