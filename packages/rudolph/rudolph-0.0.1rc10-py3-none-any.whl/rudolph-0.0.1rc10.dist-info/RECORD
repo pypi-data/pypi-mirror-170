@@ -1,0 +1,14 @@
+rudolph/__init__.py,sha256=exfs0PZcBTHyuNMAzjuZT5tVbsDEit0QS1ycwfDmxhw,136
+rudolph/api.py,sha256=i38k_U8NX7FIL0oVflzapj0f0bUNy8_JPD_7ACQsN8g,31258
+rudolph/utils.py,sha256=dT8RG-WwRreP-6Z7eQVObYogmy_kE0bCp-v61m90rGs,968
+rudolph/model/__init__.py,sha256=SAMkBNCzGJT7kWIk35hQ_e036yalQynHoBGInjf6h9M,6493
+rudolph/model/fp16.py,sha256=nlULImPMxZi6ZP4DD5zpxn6P3BfXBrmzMd-TRGZJFOs,2077
+rudolph/model/image_attention.py,sha256=Vh2eUM68jY2jJ8UXaFur9GhmvG3bYlnjeL9le5GKCc8,2362
+rudolph/model/model.py,sha256=vz6LnOAm-9tp_Rze1EpNAZ-Yc9Y_BmEbt8eb5NLLLPs,9005
+rudolph/model/transformer.py,sha256=phIQRSloqh7aPXCmRDw8MeNw0zdnKRtsmQt65-_5KvQ,16919
+rudolph/model/utils.py,sha256=O2uAQbi7V_FTmrjlbR26-7cFrF5zTaLp6LW_vyyoM5I,1955
+rudolph-0.0.1rc10.dist-info/LICENSE.txt,sha256=RnZtlQikLBcZQiQ3RKHUOp-zOLvznHgzpExNryGfzYM,11345
+rudolph-0.0.1rc10.dist-info/METADATA,sha256=czo5B00dvaBg57rurvHuJTUEYPO2obEMK_NtYrZgR28,3079
+rudolph-0.0.1rc10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rudolph-0.0.1rc10.dist-info/top_level.txt,sha256=HwLtIkYLQy4sUUYcQrozGPIBCOBfnmqwMu5nYZiKyZQ,22
+rudolph-0.0.1rc10.dist-info/RECORD,,
