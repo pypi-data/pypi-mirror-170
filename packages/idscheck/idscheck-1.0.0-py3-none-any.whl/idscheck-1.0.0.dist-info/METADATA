@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: idscheck
+Version: 1.0.0
+Summary: A command line tool for IDS student to check GPU allocation
+Home-page: https://github.com/NaiboWang/IDSCheck
+Author: Naibo Wang
+Author-email: naibowang@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# IDS Check
+
+A library for ids friends to check the GPU and CPU utilization by simple command line commands.
+
+## Install
+
+Use `pip3` to install the library `idscheck`:
+
+```
+pip3 install idscheck
+```
+
+## How to Use
+
+After install, you can just use the following easy commands to check the status of GPU and CPU.
+
+### Check GPU Utilization Info
+
+Just like `nvidia-smi`, use `idsgpu` or `ids gpu` to check GPU utilization.
+
+```shell
+idsgpu
+```
+
+or
+
+```shell
+ids gpu
+```
+
+Example output:
+```
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 510.73.08    Driver Version: 510.73.08    CUDA Version: 11.6     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A100-SXM...  On   | 00000000:07:00.0 Off |                    0 |
+| N/A   44C    P0   109W / 400W |   4606MiB / 40960MiB |     35%      Default |
+|                               |                      |             Disabled |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A100-SXM...  On   | 00000000:0F:00.0 Off |                    0 |
+| N/A   35C    P0   126W / 400W |   3829MiB / 40960MiB |     22%      Default |
+|                               |                      |             Disabled |
+|   2  NVIDIA A100-SXM...  On   | 00000000:BD:00.0 Off |                    0 |
+| N/A   58C    P0   263W / 400W |   3427MiB / 40960MiB |     91%      Default |
+|                               |                      |             Disabled |
++-------------------------------+----------------------+----------------------+
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A    423426      C   python_naibo                     3425MiB |
+|    0   N/A  N/A    432801      C   python_naibo                     1391MiB |
+|    1   N/A  N/A    430531      C   python_naibo                     3827MiB |
+|    2   N/A  N/A    882885      C   python                          26355MiB |
++-----------------------------------------------------------------------------+
+
+```
+
+### Check Process
+
+Just like the `top` commands, user `idstop` or ids top` to check all the running processes:
+
+```shell
+idstop
+```
+
+Or you can filter some information, e.g, check who is running process with PID `423426`:
+
+```shell
+ids top | grep 423426
+```
+
+### Check User Information to contact them
+
+Use `idsquery` or `ids query` to get all the user's email addresses to contact them if you want them to leave some GPU/CPU resources for you:
+
+```shell
+idsquery
+```
+
+Example Output:
+```
++--------------+---------------------------+
+|  Username    |       Email Address       |
++--------------+---------------------------+
+|   naibo      | naibowang@comp.nus.edu.sg |
+|   xiaoming   |                           |
++--------------+---------------------------+
+```
+
+
+### Check All Information
+
+Use `ids` command to output both `idsgpu` and `idstop` information together.
+
+### Check All processes' information
+
+Use `idstopall` or `ids topall` to get all the processes' information, including the root user.
+
