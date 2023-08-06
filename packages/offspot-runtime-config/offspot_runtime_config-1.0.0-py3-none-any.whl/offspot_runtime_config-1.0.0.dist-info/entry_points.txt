@@ -1,0 +1,7 @@
+[console_scripts]
+offspot-config-ap = offspot_runtime_config.ap:entrypoint
+offspot-config-containers = offspot_runtime_config.containers:entrypoint
+offspot-config-ethernet = offspot_runtime_config.ethernet:entrypoint
+offspot-config-fromfile = offspot_runtime_config.fromfile:entrypoint
+offspot-config-hostname = offspot_runtime_config.hostname:entrypoint
+offspot-config-timezone = offspot_runtime_config.timezone:entrypoint
