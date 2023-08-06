@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: xperimental-data-conv
+Version: 1.0.2
+Summary: convert excel resources into sbol and flapjack and upload them
+Home-page: https://github.com/SynBioDex/Experimental-Data-Convertor
+Maintainer: Jet Mante
+Maintainer-email: jet.mante@colorado.edu
+License: BSD 3-clause
+Requires-Dist: excel2flapjack (~=1.0.2)
+Requires-Dist: excel2sbol (~=1.0.20)
+
+This library is a collection of functions used to convert an excel template into SBOL libraries and compositions.
