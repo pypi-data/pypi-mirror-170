@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+setlipy/__init__.py
+setlipy/client.py
+setlipy/string_encoding.py
+setlipy.egg-info/PKG-INFO
+setlipy.egg-info/SOURCES.txt
+setlipy.egg-info/dependency_links.txt
+setlipy.egg-info/top_level.txt
