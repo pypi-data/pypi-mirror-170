@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+src/example/__init__.py
+src/example/coloredtext.py
+src/simplecoloredtext.egg-info/PKG-INFO
+src/simplecoloredtext.egg-info/SOURCES.txt
+src/simplecoloredtext.egg-info/dependency_links.txt
+src/simplecoloredtext.egg-info/requires.txt
+src/simplecoloredtext.egg-info/top_level.txt
