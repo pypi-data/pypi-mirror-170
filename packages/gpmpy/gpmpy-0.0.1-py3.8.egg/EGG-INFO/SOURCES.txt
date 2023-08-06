@@ -1,0 +1,7 @@
+setup.py
+gpmpy/__init__.py
+gpmpy/gpm.py
+gpmpy.egg-info/PKG-INFO
+gpmpy.egg-info/SOURCES.txt
+gpmpy.egg-info/dependency_links.txt
+gpmpy.egg-info/top_level.txt
