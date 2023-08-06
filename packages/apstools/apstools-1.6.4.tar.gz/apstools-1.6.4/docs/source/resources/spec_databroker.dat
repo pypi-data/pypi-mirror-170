@@ -1,0 +1,38 @@
+#F spec_databroker.dat
+#E 1551280334
+#D Wed Feb 27 09:12:14 2019
+#C BlueSky  user = mintadmin  host = mint-vm
+
+#S 1152  rel_scan(detectors=['scaler'], num=10, args=['m2', -1, 1], per_step=None)
+#D Wed Feb 27 09:11:53 2019
+#C Wed Feb 27 09:11:53 2019.  plan_type = generator
+#C Wed Feb 27 09:11:53 2019.  uid = ed60831f-d058-47b9-beb0-7b64d5bd68ed
+#MD APSTOOLS_VERSION = 2019.0225.0+6.g60de551.dirty
+#MD BLUESKY_VERSION = 1.4.1
+#MD OPHYD_VERSION = 1.3.0
+#MD SESSION_START = 2019-02-27 09:11:46.449405
+#MD beamline_id = developer
+#MD ipython_session_start = 2018-02-14 12:54:06.447450
+#MD login_id = mintadmin@mint-vm
+#MD motors = ['m2']
+#MD num_intervals = 9
+#MD num_points = 10
+#MD pid = 8009
+#MD plan_pattern = inner_product
+#MD plan_pattern_args = {'num': 10, 'args': ["EpicsMotor(prefix='prj:m2', name='m2', settle_time=0.0, timeout=None, read_attrs=['user_readback', 'user_setpoint'], configuration_attrs=['user_offset', 'user_offset_dir', 'velocity', 'acceleration', 'motor_egu'])", -1, 1]}
+#MD plan_pattern_module = bluesky.plan_patterns
+#MD proposal_id = None
+#N 10
+#L m2  Epoch  Epoch_float  scaler_time  m2_user_setpoint  clock  monitor  detector
+-1.0 2 2.2812697887420654 0.2 -1.0 2000000.0 0.0 0.0
+-0.78 3 3.1915488243103027 0.2 -0.7777777777777778 2000000.0 0.0 0.0
+-0.56 4 3.993082284927368 0.2 -0.5555555555555556 2000000.0 1.0 1.0
+-0.33 5 4.795122861862183 0.2 -0.33333333333333337 2000000.0 1.0 1.0
+-0.11 5 5.497302055358887 0.1 -0.11111111111111116 1000000.0 0.0 0.0
+0.11 6 6.298046350479126 0.1 0.11111111111111116 1000000.0 0.0 0.0
+0.33 7 6.999767303466797 0.2 0.33333333333333326 2000000.0 0.0 1.0
+0.56 8 7.800537824630737 0.2 0.5555555555555554 2000000.0 1.0 1.0
+0.78 9 8.603376865386963 0.2 0.7777777777777777 2000000.0 0.0 0.0
+1.0 9 9.30357551574707 0.2 1.0 2000000.0 1.0 0.0
+#C Wed Feb 27 09:12:03 2019.  num_events_primary = 10
+#C Wed Feb 27 09:12:03 2019.  exit_status = success
