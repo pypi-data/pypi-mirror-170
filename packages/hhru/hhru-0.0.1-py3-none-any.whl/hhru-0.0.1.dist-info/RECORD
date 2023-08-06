@@ -1,0 +1,12 @@
+hhru/__init__.py,sha256=v_YlOS57JLB7rexOhAvltCSbi8YWHdKM43iP3obt2_g,900
+hhru/__version__.py,sha256=ML7a2zpjsJ9DfyTSrXXtPN72XhwM2ICTdVMsBFcmqU4,336
+hhru/api.py,sha256=UbrmZVflKdb59GdkpPRxk9P2EJIhU6uePbjJDyw5U5M,1568
+hhru/auth.py,sha256=WqHmIozrEYTmA1aQY1XiTIfmcGhWwvmhTVOKwRG0uO4,149
+hhru/client.py,sha256=mXDLq0scOeqSNDIKKMUDF4WPDpdCK5wvc5-D9LoL-IU,1975
+hhru/consts.py,sha256=xFMrhtZ93t2gQecBWBJz0igdiRxifWKvDtlCeX5kEEs,1130
+hhru/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hhru/response.py,sha256=S9TvhSWSZGbCbQG5desOegZy0U0mpOMx2ZSdSuBsfIY,2178
+hhru-0.0.1.dist-info/LICENSE,sha256=iOTGOL9gySMhEHSPgffkdwj9ymcnAqOBUYizLE9qOJM,1091
+hhru-0.0.1.dist-info/WHEEL,sha256=Ce7-weO3JOtk49dJjXwbGXQH1LXffks6iBShL5GQ2XM,88
+hhru-0.0.1.dist-info/METADATA,sha256=t46N5FkTQldKn3Zl4XSjea03RZt3Anc17t2r29YUv0Y,543
+hhru-0.0.1.dist-info/RECORD,,
