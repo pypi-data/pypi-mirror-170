@@ -1,0 +1,7 @@
+# [0.3.20] - 2022-09-29
+## Added
+- delete_metrics method in the client
+
+## Fixed
+- Added warning when attempting to delete a metric that was created by Bigconfig.  Attempt to delete will be ignored and
+warning will be issued.
