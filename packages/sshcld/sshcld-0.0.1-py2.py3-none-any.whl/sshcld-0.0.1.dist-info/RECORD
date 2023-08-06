@@ -1,0 +1,12 @@
+sshcld/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+sshcld/cli.py,sha256=8OzvKUPTTaDCEjxzYwrk-qpNdxsH4HV95spP8XAA_dk,8775
+sshcld/errors.py,sha256=rsd3tTljd9iTmQQ4pRARGfBmZBG5sIEMa4gCJSWPrDs,131
+sshcld/sshcld.yaml,sha256=IsefTrvpPxM1dVss4L0WW9Ooed5WTHMVzno8zxL6LLs,759
+sshcld/plugins/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+sshcld/plugins/aws.py,sha256=wlC2ki52YKO9Zt59xv5nrmf6Jzoi0zIFngBevyDVJ8A,4208
+sshcld-0.0.1.dist-info/LICENSE,sha256=PsFW1Lp1QsU7xHDcY-6nzmHFDiUBSpZ7gin9YkxIa5k,1071
+sshcld-0.0.1.dist-info/METADATA,sha256=JSyxSD-T1OO6tlfQJtSkq9JG-i7Bl2AIdcxBUKZO1Zg,4818
+sshcld-0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+sshcld-0.0.1.dist-info/entry_points.txt,sha256=0lyfP43eqh3aSZTUVHyNDKolWMIY20Cg02mUGBRetUc,53
+sshcld-0.0.1.dist-info/top_level.txt,sha256=Ah2LSrT5Y4Rhk2V31jyG0VFtBWkrP_P6ZL5MF1cp30w,7
+sshcld-0.0.1.dist-info/RECORD,,
