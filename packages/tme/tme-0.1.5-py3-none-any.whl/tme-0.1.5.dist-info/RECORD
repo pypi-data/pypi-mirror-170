@@ -1,0 +1,9 @@
+tme/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tme/base_jax.py,sha256=brwBgQ8OTiAJL9okGXJLlFhiACL0j_apheB3dfuIaLw,8913
+tme/base_sympy.py,sha256=j_e7vnGCjC4PXNy--HdvprNjyM1_0pvqxLNkZ9l-eDE,10592
+tme/base_tf.py,sha256=63YA-NkppP5jlYoLZ57v21MCxahPbrYz3EGfzwcp1tc,52
+tme-0.1.5.dist-info/LICENSE,sha256=s9acQqt74kIsPLeb-GAveB83OOYMHR5dQGtdNXx8Cn0,684
+tme-0.1.5.dist-info/METADATA,sha256=QJkuv5OqqkJV-sMGtKQP_znqKXGm59vvVjjB7Lx-0PU,2020
+tme-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tme-0.1.5.dist-info/top_level.txt,sha256=j63Mo93v1HYe3jaBesLoBssArSKOMkpf_aDObPfOkWo,4
+tme-0.1.5.dist-info/RECORD,,
