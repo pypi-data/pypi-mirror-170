@@ -1,0 +1,8 @@
+README.md
+setup.py
+layerx/__init__.py
+layerx_sdk.egg-info/PKG-INFO
+layerx_sdk.egg-info/SOURCES.txt
+layerx_sdk.egg-info/dependency_links.txt
+layerx_sdk.egg-info/requires.txt
+layerx_sdk.egg-info/top_level.txt
