@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/Paq_LR/__init__.py
+src/Paq_LR/modelo.py
+src/Paq_LR.egg-info/PKG-INFO
+src/Paq_LR.egg-info/SOURCES.txt
+src/Paq_LR.egg-info/dependency_links.txt
+src/Paq_LR.egg-info/top_level.txt
