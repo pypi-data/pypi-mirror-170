@@ -1,0 +1,8 @@
+pygitgrab
+pyjsoncfg
+pyautogui
+pyperclip
+cryptography
+semver
+pytkfaicons
+tkinter-tooltip
