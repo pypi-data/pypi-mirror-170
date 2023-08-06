@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: ashdisperse
+Version: 0.2.13
+Summary: Steady state advection-diffusion-sedimentation solver for volcanic ash dispersion
+Home-page: UNKNOWN
+Author: Mark Woodhouse
+Author-email: mark.woodhouse@bristol.ac.uk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
