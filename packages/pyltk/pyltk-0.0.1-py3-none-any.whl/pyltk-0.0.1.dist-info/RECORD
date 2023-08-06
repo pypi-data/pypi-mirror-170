@@ -1,0 +1,8 @@
+pyltk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyltk/constants.py,sha256=1NWk5kHjERG3ofL99x8ZDXlq5zZ1YDS5ytqOZj7Pn7I,4517
+pyltk/stemmer.py,sha256=KgHmlE_lfen92273E6SUeaBLpEEwgdoYWo2Jvz0XRP4,10325
+pyltk/tokenizer.py,sha256=2Fm-6SAimrek_UwcKkhpAvC6M9z6hZfjGufuCithIe4,424
+pyltk-0.0.1.dist-info/LICENSE,sha256=j53v47_mQxYWiYmDDUB5OlB08lqLE_O7iwk5FKfCf3M,1091
+pyltk-0.0.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pyltk-0.0.1.dist-info/METADATA,sha256=Z2RhFlOksRzkwm1CMGSn5mKwxmyY29oswAcnE3rg8LQ,530
+pyltk-0.0.1.dist-info/RECORD,,
