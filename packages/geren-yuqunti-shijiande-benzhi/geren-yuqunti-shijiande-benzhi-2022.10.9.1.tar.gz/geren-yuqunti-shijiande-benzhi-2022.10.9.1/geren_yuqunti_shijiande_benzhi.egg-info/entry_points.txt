@@ -1,0 +1,4 @@
+[console_scripts]
+GerenYuquntiShijiandeBenzhi = GerenYuquntiShijiandeBenzhi.__main__:main
+geren-yuqunti-shijiande-benzhi = GerenYuquntiShijiandeBenzhi.__main__:main
+
