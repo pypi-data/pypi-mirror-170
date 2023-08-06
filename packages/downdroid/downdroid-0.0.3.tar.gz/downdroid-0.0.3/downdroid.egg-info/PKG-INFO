@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: downdroid
+Version: 0.0.3
+Summary: A CLI tool to download android versions
+Home-page: https://github.com/Dpbm/downdroid
+Author: Dpbm
+License: MIT
+Keywords: android,android-X86,ISO,systems,linux,virtualization,CLI,cli-tool
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: Pipfile
+License-File: Pipfile.lock
+License-File: pyproject.toml
+License-File: qiskit-vscode-log.out
+License-File: readme.md
+License-File: requirements.txt
+License-File: setup.py
