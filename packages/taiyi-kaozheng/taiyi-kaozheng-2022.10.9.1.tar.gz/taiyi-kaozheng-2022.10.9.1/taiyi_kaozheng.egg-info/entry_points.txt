@@ -1,0 +1,4 @@
+[console_scripts]
+TaiyiKaozheng = TaiyiKaozheng.__main__:main
+taiyi-kaozheng = TaiyiKaozheng.__main__:main
+
