@@ -1,0 +1,4 @@
+[console_scripts]
+ZiweiChujieYixueJiutongXia = ZiweiChujieYixueJiutongXia.__main__:main
+ziwei-chujie-yixue-jiutong-xia = ZiweiChujieYixueJiutongXia.__main__:main
+
