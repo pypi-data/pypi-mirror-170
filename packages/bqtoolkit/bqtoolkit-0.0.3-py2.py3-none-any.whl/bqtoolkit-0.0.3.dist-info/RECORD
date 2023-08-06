@@ -1,0 +1,9 @@
+bqtoolkit/__init__.py,sha256=gPCsGY3OlezGgNDLyiTkCeNjLA849JXPPQHbeVFXa5k,100
+bqtoolkit/_helpers.py,sha256=qWQi3YAfV_2UGM-aKSEX4HQCQUqHkc9BQWc6PamX7XM,1691
+bqtoolkit/partition.py,sha256=gj6UKhABO8jVgHFbYmwEjf6vX2ZJsQD8-H9kN0OiORU,3301
+bqtoolkit/table.py,sha256=FtEcHonsDtl9KH1JPj0SPX4mieGTAnPXgy0c9iUoG8w,23193
+bqtoolkit-0.0.3.dist-info/LICENSE.txt,sha256=TZ4CpzDAgVSDtDXhRkstSa3TNoznPcUkjmTYUDs3zzI,1059
+bqtoolkit-0.0.3.dist-info/METADATA,sha256=-YM-CcbwpS3eXh1YfWLl_bh8jpQITUh9Nwpty8qbe-I,1297
+bqtoolkit-0.0.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+bqtoolkit-0.0.3.dist-info/top_level.txt,sha256=eExyus9jUw3KTw93nDKKMNhLkVlx8z0WenwAY-aFO7Y,10
+bqtoolkit-0.0.3.dist-info/RECORD,,
