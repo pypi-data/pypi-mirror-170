@@ -1,0 +1,5 @@
+#!python
+from downdroid.downdroid import main
+
+if __name__ == '__main__':
+    main()
