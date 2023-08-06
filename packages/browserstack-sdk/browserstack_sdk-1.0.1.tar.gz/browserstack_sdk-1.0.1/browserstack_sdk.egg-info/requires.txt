@@ -1,0 +1,4 @@
+psutil
+pyyaml
+browserstack-local
+packaging
