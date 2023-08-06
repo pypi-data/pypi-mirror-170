@@ -1,0 +1,9 @@
+prologging/__init__.py,sha256=51sD2MNnLWKy0SCNtxiEtT1ixqzifeF5INHncI3YaEo,137
+prologging/output.py,sha256=OsRdt7DcGj79wbBgneyaSxwkh5qlgjfnwE40TpEmYPU,198
+prologging/prologging.py,sha256=nQOjPqd6l3s2XluWpKseoCtmHG2WuLoest8KEV8jKdc,875
+prologging/handler/api.py,sha256=OAZLfZwTDeOhsRzcCSH7TFgpXVWf802pR-TytzXa2kc,680
+prologging/handler/file.py,sha256=dTNJ-ikvZZDsKDxq19xyFxFFZJOxTtG6wr6F8yGXBFA,676
+ProLogging-0.1.0.dist-info/METADATA,sha256=NiBs2bKyBmFNCvG8YICQP3_QyzJKijtrr9KRcU1V9fE,539
+ProLogging-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ProLogging-0.1.0.dist-info/top_level.txt,sha256=XoLTFgiUYiqlMsSqT_YFyDKvmpXGpQcQSsVln3En9ik,11
+ProLogging-0.1.0.dist-info/RECORD,,
