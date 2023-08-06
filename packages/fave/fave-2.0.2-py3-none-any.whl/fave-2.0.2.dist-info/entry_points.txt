@@ -1,0 +1,6 @@
+[console_scripts]
+FAAValign=fave.FAAValign:setup
+extractFormants=fave.extractFormants:main
+fave-align=fave.FAAValign:setup
+fave-extract=fave.extractFormants:main
+
