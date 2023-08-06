@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: jj-wingman
+Version: 0.0.1
+Summary: Wingman library for AI projects.
+Home-page: https://github.com/jjshoots/Wingman
+Author: Jet
+Author-email: Jet <taijunjet@hotmail.com>
+Project-URL: Homepage, https://github.com/jjshoots/Wingman
+Keywords: Machine Learning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7, <3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: wandb
+Requires-Dist: pyyaml
+
