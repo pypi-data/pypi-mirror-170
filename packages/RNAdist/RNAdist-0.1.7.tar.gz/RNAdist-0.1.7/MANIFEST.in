@@ -1,0 +1,4 @@
+include versioneer.py
+include RNAdist/_version.py
+include RNAdist/DPModels/_dp_calculations.pyx
+include *.pyx
