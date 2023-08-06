@@ -1,0 +1,22 @@
+licence = "GPL-3.0-or-later"
+
+[tool.poetry]
+name = "tibber-influx"
+version = "0.1.0"
+description = ""
+authors = ["Kristian Aurlien <kristian@aurlien.net>"]
+readme = "README.md"
+packages = [
+    { include = "tibber-influx", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyTibber = "^0.25.2"
+python-dotenv = "^0.21.0"
+influxdb-client = {extras = ["async"], version = "^1.32.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
