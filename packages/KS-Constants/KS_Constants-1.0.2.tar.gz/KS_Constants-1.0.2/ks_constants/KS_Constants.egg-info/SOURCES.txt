@@ -1,0 +1,5 @@
+setup.py
+ks_constants/KS_Constants.egg-info/PKG-INFO
+ks_constants/KS_Constants.egg-info/SOURCES.txt
+ks_constants/KS_Constants.egg-info/dependency_links.txt
+ks_constants/KS_Constants.egg-info/top_level.txt
