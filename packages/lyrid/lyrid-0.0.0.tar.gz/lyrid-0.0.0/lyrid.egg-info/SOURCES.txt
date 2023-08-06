@@ -1,0 +1,7 @@
+MANIFEST.in
+requirements.txt
+setup.py
+lyrid.egg-info/PKG-INFO
+lyrid.egg-info/SOURCES.txt
+lyrid.egg-info/dependency_links.txt
+lyrid.egg-info/top_level.txt
