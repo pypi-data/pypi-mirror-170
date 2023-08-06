@@ -1,0 +1,9 @@
+src/__init__.py,sha256=SiwCo8gtZeTyR71xT3MaEDDslSoROQmkcaV3DI8Uuvc,66
+src/base/API.py,sha256=b1JjyXxTG9y7Obn7okhOlvAPxg0fCb2WjFj0rv1Ct_Y,2158
+src/base/__init__.py,sha256=9GupLJB09drc35Wg_lm_T5z_VTcc0TWP680A6DkaXEo,78
+src/base/loop.py,sha256=OqtjwHh5gRkBtn45Z4uORASaoCAKLImpQE_yX-z1p0I,1538
+src/bot.py,sha256=9K0mZBqdYcjxvrK3BC843TCgCVJVuBCtCKXQXdUNKgc,1433
+discorsebotlib-1.0.0.dist-info/LICENSE,sha256=M-q3HCUdXujDM3cYs8Vh9ZC-kSRRfJp7798fd7aN_3I,1072
+discorsebotlib-1.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+discorsebotlib-1.0.0.dist-info/METADATA,sha256=njz795C0am_-atML55GCMEpmgOtls2aT-u2UB2CDbAY,394
+discorsebotlib-1.0.0.dist-info/RECORD,,
