@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+xindata_package_test/__init__.py
+xindata_package_test/pkg_1.py
+xindata_package_test/pkg_2.py
+xindata_package_test.egg-info/PKG-INFO
+xindata_package_test.egg-info/SOURCES.txt
+xindata_package_test.egg-info/dependency_links.txt
+xindata_package_test.egg-info/top_level.txt
+xindata_package_test/test1/__init__.py
+xindata_package_test/test1/pt_test1_1.py
+xindata_package_test/test1/pt_test1_2.py
+xindata_package_test/test2/__init__.py
+xindata_package_test/test2/pt_test2_1.py
+xindata_package_test/test2/pt_test2_2.py
