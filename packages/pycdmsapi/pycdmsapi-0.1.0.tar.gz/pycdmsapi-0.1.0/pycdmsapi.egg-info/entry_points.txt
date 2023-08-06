@@ -1,0 +1,3 @@
+[console_scripts]
+pycdmsapi = pycdmsapi.cli:main
+
