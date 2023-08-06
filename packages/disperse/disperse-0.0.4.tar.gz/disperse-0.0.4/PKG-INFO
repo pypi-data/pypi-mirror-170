@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: disperse
+Version: 0.0.4
+Summary: automation for creation of releases
+Home-page: https://github.com/jelmer/disperse
+Author: Jelmer Vernooij
+Author-email: jelmer@jelmer.uk
+Project-URL: Repository, https://github.com/jelmer/disperse.git
+License-File: LICENSE

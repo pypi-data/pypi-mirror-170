@@ -1,0 +1,4 @@
+breezy
+protobuf>=2.4
+pygithub
+silver-platter@ git+https://github.com/jelmer/silver-platter
