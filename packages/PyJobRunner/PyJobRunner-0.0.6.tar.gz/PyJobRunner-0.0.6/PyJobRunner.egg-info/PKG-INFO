@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: PyJobRunner
+Version: 0.0.6
+Summary: Job runner for scientific computing workloads
+Home-page: UNKNOWN
+Author: Akash Dhruv
+Author-email: UNKNOWN
+License: MIT License
+Description: Jobrunner
+        =========
+        
+        Jobrunner is a minimal command line tool to manage and deploy computing jobs and organize your directories. Created because I cannot do anything without organizing it first.
+        
+        Examples:
+        
+        `Channel Flow <https://github.com/akashdhruv/channel-flow-container>`_
+        
+        `Nucleate Boiling <https://github.com/akashdhruv/nucleate-boiling>`_
+        
+        Install in development mode
+        ---------------------------
+        
+        ::
+        
+           cd jobrunner
+           python3 setup.py develop --user
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
