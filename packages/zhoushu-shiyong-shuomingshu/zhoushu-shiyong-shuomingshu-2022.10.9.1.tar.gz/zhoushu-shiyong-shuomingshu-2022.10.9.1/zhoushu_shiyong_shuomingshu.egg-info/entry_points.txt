@@ -1,0 +1,4 @@
+[console_scripts]
+ZhoushuShiyongShuomingshu = ZhoushuShiyongShuomingshu.__main__:main
+zhoushu-shiyong-shuomingshu = ZhoushuShiyongShuomingshu.__main__:main
+
