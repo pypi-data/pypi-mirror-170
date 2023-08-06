@@ -1,0 +1,2 @@
+[console_scripts]
+xova = xova.apps.xova.app:main

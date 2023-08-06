@@ -1,0 +1,11 @@
+codex-africanus[dask]>=0.3.2
+dask-ms!=0.2.12,!=0.2.13,>=0.2.6
+progress>=1.6
+fsspec
+numpy<=1.19.5
+loguru
+
+[testing]
+pytest
+pytest-flake8
+flake8<5.0.0,>=4.0.0
