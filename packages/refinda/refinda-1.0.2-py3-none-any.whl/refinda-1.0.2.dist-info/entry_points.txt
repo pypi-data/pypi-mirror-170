@@ -1,0 +1,2 @@
+[console_scripts]
+refinda = refinda.__main__:main
