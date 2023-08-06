@@ -1,0 +1,7 @@
+license.txt.txt
+setup.py
+PhysPackage/_init_.py
+PhysPackage.egg-info/PKG-INFO
+PhysPackage.egg-info/SOURCES.txt
+PhysPackage.egg-info/dependency_links.txt
+PhysPackage.egg-info/top_level.txt
