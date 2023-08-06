@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: package-gabriel-pereira
+Version: 0.0.1
+Summary: Teste para criar pacotes DIO.me
+Home-page: https://github.com/gabbrielpereira/learningpython/package-gabriel-pereira
+Author: Gabriel
+Author-email: pereissgabriel@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# package_name
+
+Description. 
+The package package_name is used to:
+	- Testar a criaÃ§Ã£o de pacotes
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package-gabriel-pereira
+
+```bash
+pip install package-gabriel-pereira
+```
+
+## Usage
+
+```python
+from package-gabriel-pereira import file1_name
+file1_name.my_function()
+```
+
+## Author
+Gabriel Pereira
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
