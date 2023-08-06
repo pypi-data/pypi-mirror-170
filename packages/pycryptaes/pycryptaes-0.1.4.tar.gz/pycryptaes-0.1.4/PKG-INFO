@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pycryptaes
+Version: 0.1.4
+Summary: Encrypt and Decrypt Data via AES encryption - a pycryptodome python package wrapper
+Author: Gwang Jin Kim
+Author-email: gwang.jin.kim.phd@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pycryptodome (>=3.15.0,<4.0.0)
