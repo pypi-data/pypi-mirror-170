@@ -1,0 +1,12 @@
+_dbdreader.cp39-win_amd64.pyd,sha256=gyvFQK8htsZYs-cWYFUKdbyN4yWJlbBoyD67dI15v38,16384
+dbdreader/__init__.py,sha256=cyh2iPE46mS8CKTHUBq2g_w_fCAJxoviYhSAuHQ7Y4E,72
+dbdreader/dbdreader.py,sha256=HOooVPPPg2TPpEWI2uX32tz9kyxUuSELC7MDWdRNpZA,61301
+dbdreader-0.4.11.data/scripts/cac_gen.py,sha256=IonePC7gZUL7fZh3CJQDqgPja-eAodUBoJzoy-aj8dE,2418
+dbdreader-0.4.11.data/scripts/dbdrename.py,sha256=glkfKuDjNM6KONWIHq-ENyDN0rJSXdvKo_E_Vb0SLv0,4164
+dbdreader-0.4.11.dist-info/COPYING,sha256=IE2O_5L5WqxN9sgSK8FQX0aPOpAeWkzAiUDg7eGTiZQ,18009
+dbdreader-0.4.11.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+dbdreader-0.4.11.dist-info/METADATA,sha256=18Pcf2cf7ZqJt2xqvchICRKC9fJE-FEGV1RTn0GBkJY,6278
+dbdreader-0.4.11.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+dbdreader-0.4.11.dist-info/entry_points.txt,sha256=mUNMmpYTR3SQX28bXHIajDqBXHktexsbcq1_r41xrys,36
+dbdreader-0.4.11.dist-info/top_level.txt,sha256=HetMbDUdd-IXUrr21gTJKvo3FfUHTuPcJEJi_gi4Bgg,21
+dbdreader-0.4.11.dist-info/RECORD,,
