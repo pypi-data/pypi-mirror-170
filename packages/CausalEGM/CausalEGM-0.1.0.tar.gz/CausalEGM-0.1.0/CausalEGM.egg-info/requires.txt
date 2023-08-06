@@ -1,0 +1,7 @@
+tensorflow-gpu
+sklearn
+dateutil
+datetime
+tensorflow-determinism
+yaml
+pandas
