@@ -1,0 +1,9 @@
+teext/__init__.py,sha256=RVD2vG2rRfXEQRMVKPqYI6ImTJ8v753lQaeQvLLl_U8,73
+teext/constraints.py,sha256=6zIPmRitUK6U5VfcFYdgY_XMsytyTgZPI_uMofaCdZA,3027
+teext/optional.py,sha256=ktZPtHH7am9qxXQLwqifr88_WrBctz-6oXjjtDo05GU,963
+teext/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teext/result.py,sha256=0C8cXi3XhGI_ubIujsAsZHEko8ahNCdaALY4oGD4Qic,370
+teext-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+teext-0.1.4.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+teext-0.1.4.dist-info/METADATA,sha256=3NpiSVMa_s9QHfKSl3Vpa_lShErvDjwxpAHC1PrWEmQ,1269
+teext-0.1.4.dist-info/RECORD,,

@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: teext
+Version: 0.1.4
+Summary: Typing extensions extensions
+License: Apache-2.0
+Author: Thomas MK
+Author-email: tmke@posteo.net
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Requires-Dist: typing-extensions (>=4.4.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# teext – typing extensions extensions
+
+Package which provides useful types.
+
+### [Documentation](https://wearepal.github.io/teext/)
+
+## Examples
+
+### Value-constraint types without runtime overhead
+
+These types are most useful in conjunction with static type checkers like mypy.
+
+```python
+import teext as tx
+
+def f(x: tx.PositiveInt) -> None:
+    print(x)
+
+a = 5
+assert tx.is_positive_int(a)
+f(a)  # OK
+f(7)  # works at runtime but mypy gives error
+
+assert tx.is_positive_int(-3)  # AssertionError
+```
+
