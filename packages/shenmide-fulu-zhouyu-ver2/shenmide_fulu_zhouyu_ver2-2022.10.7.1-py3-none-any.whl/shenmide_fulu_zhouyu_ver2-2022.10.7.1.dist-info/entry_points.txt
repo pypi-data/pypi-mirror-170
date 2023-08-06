@@ -1,0 +1,4 @@
+[console_scripts]
+ShenmideFuluZhouyuVer2 = ShenmideFuluZhouyuVer2.__main__:main
+shenmide-fulu-zhouyu-ver2 = ShenmideFuluZhouyuVer2.__main__:main
+
