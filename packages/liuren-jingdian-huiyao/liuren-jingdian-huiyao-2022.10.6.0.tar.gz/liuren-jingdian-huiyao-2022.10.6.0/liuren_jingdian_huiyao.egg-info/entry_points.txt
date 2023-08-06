@@ -1,0 +1,4 @@
+[console_scripts]
+LiurenJingdianHuiyao = LiurenJingdianHuiyao.__main__:main
+liuren-jingdian-huiyao = LiurenJingdianHuiyao.__main__:main
+
