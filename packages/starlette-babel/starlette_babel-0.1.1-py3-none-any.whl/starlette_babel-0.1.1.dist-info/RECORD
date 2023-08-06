@@ -1,0 +1,12 @@
+starlette_babel/__init__.py,sha256=ZnhyI2I--rSFwzXMySk_m5UFt_It_W2G25KEjLKr4j8,1454
+starlette_babel/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starlette_babel/contrib/jinja.py,sha256=WPRUfwFlke0L9ApGblzh5KipObqy3JAmUViHgPFby6Y,1808
+starlette_babel/formatters.py,sha256=KNoB1N1xHuCMwH1lvSOOjzKFojH5awihDbjfYUmoG00,4437
+starlette_babel/locale.py,sha256=SaeXAUsW2YnxB-7U4DDpAMxkyCCEYrdur_ayYOkk8Kw,6453
+starlette_babel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starlette_babel/timezone.py,sha256=nwYdFUWGF9xToAFfTm39LMnql4m8U3rWFEodGMDyj5g,4593
+starlette_babel/translator.py,sha256=Npwl4poE5Ir0NDBjH585SGt12q4MPQFPTa3fa1t40yo,5979
+starlette_babel-0.1.1.dist-info/LICENSE,sha256=e7rSfX5G0RZFmKc2-m8WazsMidzrQjpt6O8cHw_gook,1074
+starlette_babel-0.1.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+starlette_babel-0.1.1.dist-info/METADATA,sha256=RAY4riEHKP0oYzDXMaFv9RvYA2B6TFnT0SeQiREiXC4,14453
+starlette_babel-0.1.1.dist-info/RECORD,,
