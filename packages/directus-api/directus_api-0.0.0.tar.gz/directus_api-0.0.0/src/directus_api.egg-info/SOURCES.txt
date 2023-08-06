@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/directus_api.py
+src/directus_api.egg-info/PKG-INFO
+src/directus_api.egg-info/SOURCES.txt
+src/directus_api.egg-info/dependency_links.txt
+src/directus_api.egg-info/top_level.txt
