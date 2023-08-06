@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+localdeps/__init__.py
+localdeps.egg-info/PKG-INFO
+localdeps.egg-info/SOURCES.txt
+localdeps.egg-info/dependency_links.txt
+localdeps.egg-info/entry_points.txt
+localdeps.egg-info/top_level.txt
