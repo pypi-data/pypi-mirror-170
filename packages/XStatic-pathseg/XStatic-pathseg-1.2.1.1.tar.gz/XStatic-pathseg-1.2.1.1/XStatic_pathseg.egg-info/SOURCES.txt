@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+XStatic_pathseg.egg-info/PKG-INFO
+XStatic_pathseg.egg-info/SOURCES.txt
+XStatic_pathseg.egg-info/dependency_links.txt
+XStatic_pathseg.egg-info/namespace_packages.txt
+XStatic_pathseg.egg-info/not-zip-safe
+XStatic_pathseg.egg-info/top_level.txt
+xstatic/pkg/__init__.py
+xstatic/pkg/pathseg/__init__.py
+xstatic/pkg/pathseg/data/pathseg.js
