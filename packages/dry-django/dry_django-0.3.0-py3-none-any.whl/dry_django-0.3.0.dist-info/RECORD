@@ -1,0 +1,9 @@
+dry_django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dry_django/selectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dry_django/selectors/generic.py,sha256=03Dl3n3skgI4q8T0Z1kfE5SESwFZ57uB7ASJMsyuBfs,5894
+dry_django/services/__init__.py,sha256=1vfrYbCP40xS1I718dup8BI_AlX2bRsoiXNU6o1WXXY,45
+dry_django/services/generic.py,sha256=pme_4OLBmI6fiY3ECPekjSdUBBK9sh4KFHiVYM8Kq0Q,653
+dry_django/services/mixins.py,sha256=6OnZn6vuT7L4cbXfJ0nmBMHF4k9Kg8bmVobZXrahgNE,3265
+dry_django-0.3.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+dry_django-0.3.0.dist-info/METADATA,sha256=i9zweUrmYIIAJspqYMZ6ww15OKIfl6Jjg8OeEVupis0,798
+dry_django-0.3.0.dist-info/RECORD,,
