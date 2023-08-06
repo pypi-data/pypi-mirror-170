@@ -1,0 +1,13 @@
+[console_scripts]
+cif2cq = AtomicAI.tools.cif2cq:cif2cq
+classification_plot = AtomicAI.plots.classification_plot:classification_plot
+cq2cif = AtomicAI.tools.cq2cif:cq2cif
+cq2vasp = AtomicAI.tools.cq2vasp:cq2vasp
+laaf = AtomicAI.descriptors.calculate_laaf_des:calculate_laaf_des
+pca = AtomicAI.classifications.pca:pca
+plt_md_stats = AtomicAI.tools.plt_md_stats:plt_md_stats
+rdf = AtomicAI.tools.rdf:RDF
+structure_analysis = AtomicAI.tools.structure_analysis:structure_analysis
+vasp2cif = AtomicAI.tools.vasp2cif:vasp2cif
+vasp2cq = AtomicAI.tools.vasp2cq:vasp2cq
+xyz2vasp = AtomicAI.tools.xyz2vasp:xyz2vasp
