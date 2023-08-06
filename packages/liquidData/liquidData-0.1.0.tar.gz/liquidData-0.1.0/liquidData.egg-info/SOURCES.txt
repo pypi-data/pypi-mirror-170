@@ -1,0 +1,13 @@
+HISTORY.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+liquidData/__init__.py
+liquidData/dataFrames.py
+liquidData/liquidData.py
+liquidData.egg-info/PKG-INFO
+liquidData.egg-info/SOURCES.txt
+liquidData.egg-info/dependency_links.txt
+liquidData.egg-info/not-zip-safe
+liquidData.egg-info/top_level.txt
