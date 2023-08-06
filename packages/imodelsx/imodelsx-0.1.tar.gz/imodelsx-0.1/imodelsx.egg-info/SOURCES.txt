@@ -1,0 +1,10 @@
+setup.py
+imodelsx/__init__.py
+imodelsx.egg-info/PKG-INFO
+imodelsx.egg-info/SOURCES.txt
+imodelsx.egg-info/dependency_links.txt
+imodelsx.egg-info/requires.txt
+imodelsx.egg-info/top_level.txt
+imodelsx/embgam/__init__.py
+imodelsx/embgam/embed.py
+imodelsx/embgam/embgam.py

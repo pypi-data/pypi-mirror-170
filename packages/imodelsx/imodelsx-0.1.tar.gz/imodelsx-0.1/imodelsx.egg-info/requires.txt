@@ -1,0 +1,8 @@
+datasets
+numpy
+pandas
+scikit-learn
+spacy
+torch
+tqdm
+transformers[torch]
