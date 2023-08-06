@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: password-maker
+Version: 0.0.2
+Summary: A module that generates a random password
+Home-page: https://github.com/RuhamLeal/making_package_module
+Author: Ruham Leal
+Author-email: ruhamxlpro@hotmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# password_maker
+
+Description. 
+The package password_maker is used to:
+	- Generate a list with random password(s)
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install password_maker
+
+```bash
+pip install password_maker
+```
+
+## Usage
+
+```python
+import random
+from password_maker import generate
+generate.make_my_passwords()
+```
+
+## Author
+Ruham Leal
