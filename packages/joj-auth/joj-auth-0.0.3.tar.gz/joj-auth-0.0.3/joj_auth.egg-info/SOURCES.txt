@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+joj_auth/__init__.py
+joj_auth/__main__.py
+joj_auth/command_line.py
+joj_auth/joj.py
+joj_auth/login.py
+joj_auth.egg-info/PKG-INFO
+joj_auth.egg-info/SOURCES.txt
+joj_auth.egg-info/dependency_links.txt
+joj_auth.egg-info/entry_points.txt
+joj_auth.egg-info/requires.txt
+joj_auth.egg-info/top_level.txt
