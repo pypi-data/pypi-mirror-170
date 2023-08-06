@@ -1,0 +1,3 @@
+[console_scripts]
+nodecdn = commandLine.m:main
+
