@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+turboshtein.c
+test/test_all.py
+test/test_performance.py
+turboshtein.egg-info/PKG-INFO
+turboshtein.egg-info/SOURCES.txt
+turboshtein.egg-info/dependency_links.txt
+turboshtein.egg-info/top_level.txt
