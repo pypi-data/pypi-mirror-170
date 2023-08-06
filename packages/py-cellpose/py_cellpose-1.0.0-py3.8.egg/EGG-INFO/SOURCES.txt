@@ -1,0 +1,9 @@
+setup.py
+py-cellpose/__init__.py
+py-cellpose/cellpose_predict.py
+py_cellpose.egg-info/PKG-INFO
+py_cellpose.egg-info/SOURCES.txt
+py_cellpose.egg-info/dependency_links.txt
+py_cellpose.egg-info/entry_points.txt
+py_cellpose.egg-info/not-zip-safe
+py_cellpose.egg-info/top_level.txt
