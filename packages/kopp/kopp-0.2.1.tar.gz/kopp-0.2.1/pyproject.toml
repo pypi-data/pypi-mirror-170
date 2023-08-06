@@ -1,0 +1,65 @@
+[project]
+name = "kopp"
+description = "Korean postpositions processing package"
+authors = [
+    { name = "dowon", email = "ks2515@naver.com" },
+]
+dependencies = []
+requires-python = ">=3.7"
+readme = "README.md"
+dynamic = []
+keywords = [
+    "korean",
+    "kopp",
+    "josa",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing :: Linguistic",
+    "Natural Language :: Korean",
+]
+version = "0.2.1"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+
+[project.urls]
+Repository = "https://github.com/Bing-su/kopp"
+
+[project.scripts]
+kopp = "kopp.__main__:cli"
+
+[tool.pdm.version]
+source = "file"
+path = "kopp/__version__.py"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black",
+    "isort",
+    "ruff",
+    "pre-commit",
+]
+
+[tool.pdm.scripts]
+doctest = "python kopp/main.py"
+unittest = "python test.py"
+lint = "pre-commit run -a"
+
+[tool.pdm.scripts.test]
+composite = [
+    "doctest",
+    "unittest",
+]
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
