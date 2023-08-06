@@ -1,0 +1,2 @@
+[lektor.plugins]
+jinja-content = lektor_jinja_content:JinjaContentPlugin
