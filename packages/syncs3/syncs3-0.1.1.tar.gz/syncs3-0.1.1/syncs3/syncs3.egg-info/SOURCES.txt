@@ -1,0 +1,8 @@
+README.md
+setup.py
+syncs3/syncs3.py
+syncs3/syncs3.egg-info/PKG-INFO
+syncs3/syncs3.egg-info/SOURCES.txt
+syncs3/syncs3.egg-info/dependency_links.txt
+syncs3/syncs3.egg-info/requires.txt
+syncs3/syncs3.egg-info/top_level.txt
