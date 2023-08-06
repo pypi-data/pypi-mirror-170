@@ -1,0 +1,4 @@
+[console_scripts]
+MofaXuetuVol2 = MofaXuetuVol2.__main__:main
+mofa-xuetu-vol2 = MofaXuetuVol2.__main__:main
+
