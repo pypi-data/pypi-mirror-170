@@ -1,0 +1,11 @@
+tmpl8/__init__.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+tmpl8/cli.py,sha256=uG4kuFQnkcBbRdOneTjI7vKVOH1XU5RZ0s7xEhb2DH4,2365
+tmpl8/command.py,sha256=aBnsWP2i1z3lp6NjYtRpjau9jExOqg99CdL_klJjpy4,4289
+tmpl8/data.py,sha256=XHVPNM-zv21-E44QsnnE5gHhTR-c-vBiy_5FPocfdiU,576
+tmpl8/template.py,sha256=OWNqGHLcAkPM0r3CMRZL741HQ2a0gLUIBoX7zX4J8us,817
+tmpl8-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tmpl8-0.1.1.dist-info/METADATA,sha256=nrYOgyuZVqWC6MzLVMbrzfz1na2BB8q7EAXNzGeHkDg,863
+tmpl8-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tmpl8-0.1.1.dist-info/entry_points.txt,sha256=GvnXiG9bghD1VhEbcNg5s4nyX_qRYPxz3cDIMlrNoew,42
+tmpl8-0.1.1.dist-info/top_level.txt,sha256=YKV6IgTsvjEtsZ5BJgS7OEubaVz62mys75-FXcZ90b0,6
+tmpl8-0.1.1.dist-info/RECORD,,
