@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: audioProcessingWisrovi
+Version: 0.21.1
+Summary: Procesamiento de audios
+Home-page: https://github.com/wisrovi/ProcessAudio
+Download-URL: http://chardet.feedparser.org/download/python3-chardet-1.0.1.tgz
+Author: William Rodriguez
+Author-email: wisrovi.rodriguez@gmail.com
+License: GPLv3
+Keywords: encoding,i18n,xml
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.txt
+
+# ProcessAudio
+ Libreria python para extraer caracteristicas a audios
+
+## Initialization
+
+```bash
+pip install audioProcessingWisrovi
+```
+
+A `ProcessAudio` object should be created and use its attributes.
+
+```python
+from audioProcessingWisrovi import ProcessAudio
+processAudio = ProcessAudio()
+processAudio.set_data("audio_file.wav")
+caracteristicas = processAudio.get_all()  # Extrayendo caracteristicas audios, salen 26 caracteristicas
+```
+
+### ProcessAudio methods
+
+* `get_all()`: returns all featuresconfigured folder, returns the new filename.
+

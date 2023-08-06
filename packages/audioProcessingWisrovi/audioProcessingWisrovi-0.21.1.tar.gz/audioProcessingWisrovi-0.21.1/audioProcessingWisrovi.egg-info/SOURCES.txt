@@ -1,0 +1,14 @@
+LICENSE
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+ProcessAudio/ProcessAudio.py
+ProcessAudio/README.md
+ProcessAudio/__init__.py
+audioProcessingWisrovi.egg-info/PKG-INFO
+audioProcessingWisrovi.egg-info/SOURCES.txt
+audioProcessingWisrovi.egg-info/dependency_links.txt
+audioProcessingWisrovi.egg-info/requires.txt
+audioProcessingWisrovi.egg-info/top_level.txt
