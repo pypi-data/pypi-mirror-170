@@ -1,0 +1,53 @@
+[tool.black]
+line-length = 88
+skip-string-normalization = true
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | out
+    | ressources
+  )/
+  | .coveragerc
+                     # the root of the project
+)
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.poetry]
+name = "celery-skinos"
+version = "1.0.4"
+description = "Custom consumer for celery integration"
+authors = ["DIP - Université de Strasbourg <dnum-dip@unistra.fr>"]
+readme = "README.md"
+packages = [{include = "skinos"}]
+keywords = ["RabbitMQ","Celery"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+celery = ">=4.2.0"
+sentry-sdk = ">=0.8"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^6.5.0"
+black = "^22.8.0"
+pylint = "^2.15.3"
+safety = "^2.3.1"
+bandit = "^1.7.4"
+pytype = "^2022.9.27"
+tox = "^3.26.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
