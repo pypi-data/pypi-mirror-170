@@ -1,0 +1,4 @@
+[console_scripts]
+HeoubonuobonuodeXingfuQiji = HeoubonuobonuodeXingfuQiji.__main__:main
+heoubonuobonuode-xingfu-qiji = HeoubonuobonuodeXingfuQiji.__main__:main
+
