@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+printTudo/__init__.py
+printTudo/printTudo.py
+printTudo.egg-info/PKG-INFO
+printTudo.egg-info/SOURCES.txt
+printTudo.egg-info/dependency_links.txt
+printTudo.egg-info/requires.txt
+printTudo.egg-info/top_level.txt
