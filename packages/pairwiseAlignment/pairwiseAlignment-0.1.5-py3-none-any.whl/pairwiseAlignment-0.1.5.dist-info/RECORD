@@ -1,0 +1,10 @@
+src/PairwiseSeqAlignment.py,sha256=aOkKMFj-u1HLu-M2_Ry-peMtE1cn49YqkSWEv117F94,13378
+src/__init__.py,sha256=H1mR80ZdrBpghZx7t2XDxYEYVyICn_3XTPetP716o3s,23
+src/run.py,sha256=sOaG0Sc7wvtMYB8xRVtzrDs2cl9HWgqLdaVkjpsCQqI,2226
+src/utils.py,sha256=tL44nzU78k40a9aRqw0AVoTJQXQr0s-_eplyc2s_D3s,98
+pairwiseAlignment-0.1.5.dist-info/LICENSE.txt,sha256=5ysxPVgCglHhazjLrlnVQ-IxisGf6XbJecZ1BAQUkbc,1094
+pairwiseAlignment-0.1.5.dist-info/METADATA,sha256=A22bbrxGgavcwDDO7WDRet7_iYq2n_BoDv9IVmY-v7Y,1674
+pairwiseAlignment-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pairwiseAlignment-0.1.5.dist-info/entry_points.txt,sha256=_6THjqhIe5YIuop4WaRfbeBIcJMiHxYrbKqg2GDykwE,51
+pairwiseAlignment-0.1.5.dist-info/top_level.txt,sha256=h2lV-OJ5AWwI0_-TQ0Q0RsijQ3qZHJHLM5KOpp8oChM,22
+pairwiseAlignment-0.1.5.dist-info/RECORD,,
