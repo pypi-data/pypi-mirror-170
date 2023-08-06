@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: splatplost
+Version: 0.2.0.dev4
+Summary: A software-based SplatPost plotter.
+Home-page: https://github.com/Victrid/splatplost
+Author: Weihao Jiang
+Author-email: weihau.chiang@gmail.com
+License: GPLv3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (~=1.23.2)
+Requires-Dist: Pillow (~=9.2.0)
+Requires-Dist: setuptools (~=65.3.0)
+Requires-Dist: scipy (~=1.9.1)
+Requires-Dist: tqdm (~=4.64.0)
+Requires-Dist: scikit-image (~=0.19.3)
+Requires-Dist: libnxctrl (~=0.2.1)
+Requires-Dist: tsp-solver2 (~=0.4.1)
+Requires-Dist: PyQt6 (~=6.3.1)
+Requires-Dist: requests (~=2.26.0)
+Requires-Dist: pyserial (~=3.5)
+Provides-Extra: nxbt
+Requires-Dist: libnxctrl[nxbt] (~=0.2.1) ; extra == 'nxbt'
+Requires-Dist: sys-platform (=='linux') ; extra == 'nxbt'
+Provides-Extra: usb
+Requires-Dist: libnxctrl[usb] (~=0.2.1) ; extra == 'usb'
+
