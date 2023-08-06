@@ -1,0 +1,4 @@
+[console_scripts]
+LinghunCallout = LinghunCallout.__main__:main
+linghun-callout = LinghunCallout.__main__:main
+
