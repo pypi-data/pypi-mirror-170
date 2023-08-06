@@ -1,0 +1,15 @@
+fox_orm/__init__.py,sha256=ahOpB1dP3eNfaoCEDV1Hv3SzY9JtJi0Yl8fsW72Fw8Y,61
+fox_orm/controller.py,sha256=C4_R76xQ99Hs1v-Hlei9Xhoesk7UA-LD1gtNiusaiB8,2907
+fox_orm/exceptions.py,sha256=WEtDoZwoOg9RYbsSimTDitoyzFOEGIVYN_jL7Pewf2E,235
+fox_orm/fields.py,sha256=na9SULkn-HpxHGxEX6H6AS_4ie3AK4HodFJAa-gOaCs,1837
+fox_orm/internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fox_orm/internal/columns.py,sha256=eADOE9SDde34NHisBbO0i9dU6XrFoc8LSRFSfB94Fbc,635
+fox_orm/internal/const.py,sha256=IzHtslJMG22Fv0DFs3CYmOkgxqWF5DqygSbyAAzqRTc,596
+fox_orm/internal/table.py,sha256=XxggHSaUGYL8jJY8S38Woi4gR_YaPu_Qgl8RoKlo44Y,2697
+fox_orm/internal/utils.py,sha256=73bItJBu-Rn7hBJ4bYspeY1N0Jhuubcod64TeiTrO2Y,5140
+fox_orm/model.py,sha256=wVBqGk8czVkMUcGGSGVRTaxVPRtg798OSE3djfTzlx4,17296
+fox_orm/relations.py,sha256=sM-UBt-9wxmCSnD_KIxLDET6UaA4acnZkUTEmimxiGg,12150
+fox_orm-0.3.6.1.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+fox_orm-0.3.6.1.dist-info/WHEEL,sha256=Jaj29f-PvHzZb5kImTcJS9QszpaO6CVzAqOolIz_WEw,90
+fox_orm-0.3.6.1.dist-info/METADATA,sha256=z2aa1-ebTvQ8FYQyvQbC1LARPzIr7V27qC4Q0e0Nmug,439
+fox_orm-0.3.6.1.dist-info/RECORD,,

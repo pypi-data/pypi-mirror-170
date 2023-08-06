@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fox-orm
+Version: 0.3.6.1
+Summary: Simple databases based ORM with pythonic syntax
+License: MIT
+Author: vanutp
+Author-email: hello@vanutp.dev
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: databases (>=0.5.3,<0.6.0)
