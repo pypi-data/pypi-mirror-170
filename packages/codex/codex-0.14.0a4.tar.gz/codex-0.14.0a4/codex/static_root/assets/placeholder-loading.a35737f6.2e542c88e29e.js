@@ -1,0 +1,1 @@
+import{n as r}from"./main.b4eed4bd.js";import{_ as o}from"./confirm-footer.5652188c.js";const a={name:"PlaceholderLoading",props:{size:{type:Number,default:128}}};var l=function(){var e=this,n=e._self._c;return n(o,{attrs:{indeterminate:"",size:e.size,color:"#cc7b19","aria-label":"loading"}})},s=[],t=r(a,l,s,!1,null,null,null,null);const m=t.exports;export{m as P};
