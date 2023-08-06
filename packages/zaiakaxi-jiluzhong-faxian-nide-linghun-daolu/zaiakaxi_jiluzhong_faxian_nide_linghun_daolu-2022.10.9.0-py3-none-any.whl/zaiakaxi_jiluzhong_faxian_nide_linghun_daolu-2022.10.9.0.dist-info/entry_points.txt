@@ -1,0 +1,4 @@
+[console_scripts]
+ZaiakaxiJiluzhongFaxianNideLinghunDaolu = ZaiakaxiJiluzhongFaxianNideLinghunDaolu.__main__:main
+zaiakaxi-jiluzhong-faxian-nide-linghun-daolu = ZaiakaxiJiluzhongFaxianNideLinghunDaolu.__main__:main
+
