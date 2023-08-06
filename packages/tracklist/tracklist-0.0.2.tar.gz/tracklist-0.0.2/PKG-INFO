@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: tracklist
+Version: 0.0.2
+Summary: Library and CLI tool for processing tracklists
+Home-page: https://github.com/fwcd/python-tracklist
+License-File: LICENSE
