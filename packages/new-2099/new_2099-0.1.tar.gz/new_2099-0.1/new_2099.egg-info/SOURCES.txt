@@ -1,0 +1,10 @@
+setup.py
+new_2099/Binomialdistribution.py
+new_2099/Gaussiandistribution.py
+new_2099/Generaldistribution.py
+new_2099/__init__.py
+new_2099.egg-info/PKG-INFO
+new_2099.egg-info/SOURCES.txt
+new_2099.egg-info/dependency_links.txt
+new_2099.egg-info/not-zip-safe
+new_2099.egg-info/top_level.txt
