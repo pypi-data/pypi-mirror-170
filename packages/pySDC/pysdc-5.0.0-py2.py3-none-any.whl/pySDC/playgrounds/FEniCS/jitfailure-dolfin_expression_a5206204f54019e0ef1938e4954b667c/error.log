@@ -1,0 +1,7 @@
+/var/folders/bl/dnqb3_wx5w3cydb56gd8xh840000gn/T/tmp3f1krii9/dolfin_expression_a5206204f54019e0ef1938e4954b667c.cpp:63:33: error: expected ')'
+          values[0] = sin(k*pi*x;
+                                ^
+/var/folders/bl/dnqb3_wx5w3cydb56gd8xh840000gn/T/tmp3f1krii9/dolfin_expression_a5206204f54019e0ef1938e4954b667c.cpp:63:26: note: to match this '('
+          values[0] = sin(k*pi*x;
+                         ^
+1 error generated.

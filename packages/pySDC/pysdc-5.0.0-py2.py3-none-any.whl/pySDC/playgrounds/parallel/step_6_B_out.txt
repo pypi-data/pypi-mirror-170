@@ -1,0 +1,38 @@
+Working with  1 processes...
+Error classic: 1.47748494e-07
+Number of iterations for time 0.00: 4 
+Number of iterations for time 0.06: 4 
+Number of iterations for time 0.12: 4 
+Number of iterations for time 0.19: 4 
+Number of iterations for time 0.25: 4 
+Number of iterations for time 0.31: 4 
+Number of iterations for time 0.38: 4 
+Number of iterations for time 0.44: 4 
+Number of iterations for time 0.50: 4 
+Number of iterations for time 0.56: 3 
+Number of iterations for time 0.62: 3 
+Number of iterations for time 0.69: 3 
+Number of iterations for time 0.75: 3 
+Number of iterations for time 0.81: 3 
+Number of iterations for time 0.88: 3 
+Number of iterations for time 0.94: 3 
+
+Working with  1 processes...
+Error classic: 5.39929811e-01
+Number of iterations for time 0.00: 4 
+Number of iterations for time 0.06: 4 
+Number of iterations for time 0.12: 4 
+Number of iterations for time 0.19: 4 
+Number of iterations for time 0.25: 4 
+Number of iterations for time 0.31: 4 
+Number of iterations for time 0.38: 4 
+Number of iterations for time 0.44: 4 
+Number of iterations for time 0.50: 4 
+Number of iterations for time 0.56: 3 
+Number of iterations for time 0.62: 3 
+Number of iterations for time 0.69: 3 
+Number of iterations for time 0.75: 3 
+Number of iterations for time 0.81: 3 
+Number of iterations for time 0.88: 3 
+Number of iterations for time 0.94: 3 
+

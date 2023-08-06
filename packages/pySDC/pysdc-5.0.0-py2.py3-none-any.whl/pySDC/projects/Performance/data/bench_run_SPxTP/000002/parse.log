@@ -1,0 +1,21 @@
+[2019-08-15 10:40:38,924]:DEBUG: Parsing bench_run_SPxTP/000002/configuration.xml
+[2019-08-15 10:40:38,926]:DEBUG:   --> Preprocess run 1 <--
+[2019-08-15 10:40:38,926]:DEBUG:   Remove invalid tags
+[2019-08-15 10:40:38,926]:DEBUG:     Available tags: 
+[2019-08-15 10:40:38,926]:DEBUG:   Remove invalid tags
+[2019-08-15 10:40:38,927]:DEBUG:     Available tags: 
+[2019-08-15 10:40:38,927]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-08-15 10:40:38,927]:DEBUG:   Preprocess xml tree
+[2019-08-15 10:40:38,927]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-08-15 10:40:38,927]:DEBUG:     path: bench_run_SPxTP/000002
+[2019-08-15 10:40:38,927]:DEBUG:   Remove invalid tags
+[2019-08-15 10:40:38,927]:DEBUG:     Available tags: 
+[2019-08-15 10:40:38,927]:DEBUG:   Preprocess done
+[2019-08-15 10:40:38,927]:DEBUG:   Preprocess benchmark xml tree
+[2019-08-15 10:40:38,927]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-08-15 10:40:38,928]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-08-15 10:40:38,928]:DEBUG:   Parsing <fileset name="files">
+[2019-08-15 10:40:38,928]:DEBUG:   Parsing <patternset name="pattern">
+[2019-08-15 10:40:38,928]:DEBUG:   Parsing <step name="sub_step">
+[2019-08-15 10:40:38,928]:DEBUG:   Parsing <analyser name="analyse">
+[2019-08-15 10:40:38,929]:DEBUG: Parsing bench_run_SPxTP/000002/workpackages.xml

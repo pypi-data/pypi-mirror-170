@@ -1,0 +1,528 @@
+[2019-07-09 09:41:41,172]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-09 09:41:41,178]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-09 09:41:41,178]:DEBUG:   Remove invalid tags
+[2019-07-09 09:41:41,178]:DEBUG:     Available tags: 
+[2019-07-09 09:41:41,179]:DEBUG:   Remove invalid tags
+[2019-07-09 09:41:41,179]:DEBUG:     Available tags: 
+[2019-07-09 09:41:41,181]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-09 09:41:41,181]:DEBUG:   Preprocess xml tree
+[2019-07-09 09:41:41,181]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-09 09:41:41,181]:DEBUG:     path: .
+[2019-07-09 09:41:41,181]:DEBUG:   Remove invalid tags
+[2019-07-09 09:41:41,181]:DEBUG:     Available tags: 
+[2019-07-09 09:41:41,182]:DEBUG:   Preprocess done
+[2019-07-09 09:41:41,182]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-09 09:41:41,183]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-09 09:41:41,183]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-09 09:41:41,183]:DEBUG:   Parsing <fileset name="files">
+[2019-07-09 09:41:41,184]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-09 09:41:41,184]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-09 09:41:41,184]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-09 09:41:41,185]:DEBUG: Start consistency check
+[2019-07-09 09:41:41,185]:DEBUG: Create benchmark directory
+[2019-07-09 09:42:52,393]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-09 09:42:52,410]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-09 09:42:52,410]:DEBUG:   Remove invalid tags
+[2019-07-09 09:42:52,410]:DEBUG:     Available tags: 
+[2019-07-09 09:42:52,410]:DEBUG:   Remove invalid tags
+[2019-07-09 09:42:52,410]:DEBUG:     Available tags: 
+[2019-07-09 09:42:52,412]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-09 09:42:52,412]:DEBUG:   Preprocess xml tree
+[2019-07-09 09:42:52,412]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-09 09:42:52,412]:DEBUG:     path: .
+[2019-07-09 09:42:52,413]:DEBUG:   Remove invalid tags
+[2019-07-09 09:42:52,413]:DEBUG:     Available tags: 
+[2019-07-09 09:42:52,413]:DEBUG:   Preprocess done
+[2019-07-09 09:42:52,414]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-09 09:42:52,414]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-09 09:42:52,415]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-09 09:42:52,415]:DEBUG:   Parsing <fileset name="files">
+[2019-07-09 09:42:52,415]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-09 09:42:52,415]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-09 09:42:52,416]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-09 09:42:52,416]:DEBUG: Start consistency check
+[2019-07-09 09:42:52,416]:DEBUG: Create benchmark directory
+[2019-07-09 09:43:00,060]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-09 09:43:00,070]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-09 09:43:00,070]:DEBUG:   Remove invalid tags
+[2019-07-09 09:43:00,070]:DEBUG:     Available tags: 
+[2019-07-09 09:43:00,071]:DEBUG:   Remove invalid tags
+[2019-07-09 09:43:00,071]:DEBUG:     Available tags: 
+[2019-07-09 09:43:00,073]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-09 09:43:00,073]:DEBUG:   Preprocess xml tree
+[2019-07-09 09:43:00,073]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-09 09:43:00,073]:DEBUG:     path: .
+[2019-07-09 09:43:00,073]:DEBUG:   Remove invalid tags
+[2019-07-09 09:43:00,073]:DEBUG:     Available tags: 
+[2019-07-09 09:43:00,074]:DEBUG:   Preprocess done
+[2019-07-09 09:43:00,074]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-09 09:43:00,075]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-09 09:43:00,075]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-09 09:43:00,075]:DEBUG:   Parsing <fileset name="files">
+[2019-07-09 09:43:00,076]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-09 09:43:00,076]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-09 09:43:00,076]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-09 09:43:00,080]:DEBUG: Start consistency check
+[2019-07-09 09:43:00,080]:DEBUG: Create benchmark directory
+[2019-07-09 09:44:50,485]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-09 09:44:50,489]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-09 09:44:50,489]:DEBUG:   Remove invalid tags
+[2019-07-09 09:44:50,490]:DEBUG:     Available tags: 
+[2019-07-09 09:44:50,490]:DEBUG:   Remove invalid tags
+[2019-07-09 09:44:50,490]:DEBUG:     Available tags: 
+[2019-07-09 09:44:50,492]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-09 09:44:50,492]:DEBUG:   Preprocess xml tree
+[2019-07-09 09:44:50,492]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-09 09:44:50,492]:DEBUG:     path: .
+[2019-07-09 09:44:50,492]:DEBUG:   Remove invalid tags
+[2019-07-09 09:44:50,492]:DEBUG:     Available tags: 
+[2019-07-09 09:44:50,493]:DEBUG:   Preprocess done
+[2019-07-09 09:44:50,493]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-09 09:44:50,493]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-09 09:44:50,494]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-09 09:44:50,494]:DEBUG:   Parsing <fileset name="files">
+[2019-07-09 09:44:50,494]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-09 09:44:50,494]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-09 09:44:50,495]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-09 09:44:50,495]:DEBUG: Start consistency check
+[2019-07-09 09:44:50,495]:DEBUG: Create benchmark directory
+[2019-07-09 09:49:10,422]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-09 09:49:10,429]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-09 09:49:10,429]:DEBUG:   Remove invalid tags
+[2019-07-09 09:49:10,429]:DEBUG:     Available tags: 
+[2019-07-09 09:49:10,430]:DEBUG:   Remove invalid tags
+[2019-07-09 09:49:10,430]:DEBUG:     Available tags: 
+[2019-07-09 09:49:10,431]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-09 09:49:10,431]:DEBUG:   Preprocess xml tree
+[2019-07-09 09:49:10,431]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-09 09:49:10,432]:DEBUG:     path: .
+[2019-07-09 09:49:10,432]:DEBUG:   Remove invalid tags
+[2019-07-09 09:49:10,432]:DEBUG:     Available tags: 
+[2019-07-09 09:49:10,432]:DEBUG:   Preprocess done
+[2019-07-09 09:49:10,432]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-09 09:49:10,433]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-09 09:49:10,434]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-09 09:49:10,434]:DEBUG:   Parsing <fileset name="files">
+[2019-07-09 09:49:10,434]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-09 09:49:10,434]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-09 09:49:10,434]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-09 09:49:10,435]:DEBUG: Start consistency check
+[2019-07-09 09:49:10,435]:DEBUG: Create benchmark directory
+[2019-07-09 09:52:37,680]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-09 09:52:37,687]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-09 09:52:37,687]:DEBUG:   Remove invalid tags
+[2019-07-09 09:52:37,687]:DEBUG:     Available tags: 
+[2019-07-09 09:52:37,688]:DEBUG:   Remove invalid tags
+[2019-07-09 09:52:37,688]:DEBUG:     Available tags: 
+[2019-07-09 09:52:37,689]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-09 09:52:37,689]:DEBUG:   Preprocess xml tree
+[2019-07-09 09:52:37,689]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-09 09:52:37,689]:DEBUG:     path: .
+[2019-07-09 09:52:37,690]:DEBUG:   Remove invalid tags
+[2019-07-09 09:52:37,690]:DEBUG:     Available tags: 
+[2019-07-09 09:52:37,690]:DEBUG:   Preprocess done
+[2019-07-09 09:52:37,690]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-09 09:52:37,691]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-09 09:52:37,691]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-09 09:52:37,692]:DEBUG:   Parsing <fileset name="files">
+[2019-07-09 09:52:37,692]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-09 09:52:37,692]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-09 09:52:37,692]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-09 09:52:37,693]:DEBUG: Start consistency check
+[2019-07-09 09:52:37,693]:DEBUG: Create benchmark directory
+[2019-07-09 10:04:48,739]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-09 10:04:48,750]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-09 10:04:48,750]:DEBUG:   Remove invalid tags
+[2019-07-09 10:04:48,750]:DEBUG:     Available tags: 
+[2019-07-09 10:04:48,751]:DEBUG:   Remove invalid tags
+[2019-07-09 10:04:48,751]:DEBUG:     Available tags: 
+[2019-07-09 10:04:48,754]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-09 10:04:48,754]:DEBUG:   Preprocess xml tree
+[2019-07-09 10:04:48,754]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-09 10:04:48,754]:DEBUG:     path: .
+[2019-07-09 10:04:48,755]:DEBUG:   Remove invalid tags
+[2019-07-09 10:04:48,755]:DEBUG:     Available tags: 
+[2019-07-09 10:04:48,755]:DEBUG:   Preprocess done
+[2019-07-09 10:04:48,756]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-09 10:04:48,757]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-09 10:04:48,758]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-09 10:04:48,758]:DEBUG:   Parsing <fileset name="files">
+[2019-07-09 10:04:48,758]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-09 10:04:48,759]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-09 10:04:48,759]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-09 10:04:48,760]:DEBUG: Start consistency check
+[2019-07-09 10:04:48,760]:DEBUG: Create benchmark directory
+[2019-07-09 10:14:13,044]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-09 10:14:13,047]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-09 10:14:13,047]:DEBUG:   Remove invalid tags
+[2019-07-09 10:14:13,047]:DEBUG:     Available tags: 
+[2019-07-09 10:14:13,047]:DEBUG:   Remove invalid tags
+[2019-07-09 10:14:13,047]:DEBUG:     Available tags: 
+[2019-07-09 10:14:13,047]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-09 10:14:13,047]:DEBUG:   Preprocess xml tree
+[2019-07-09 10:14:13,047]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-09 10:14:13,047]:DEBUG:     path: .
+[2019-07-09 10:14:13,048]:DEBUG:   Remove invalid tags
+[2019-07-09 10:14:13,048]:DEBUG:     Available tags: 
+[2019-07-09 10:14:13,048]:DEBUG:   Preprocess done
+[2019-07-09 10:14:13,048]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-09 10:14:13,048]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-09 10:14:13,049]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-09 10:14:13,049]:DEBUG:   Parsing <fileset name="files">
+[2019-07-09 10:14:13,049]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-09 10:14:13,050]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-09 10:14:13,050]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-09 10:14:13,051]:DEBUG: Start consistency check
+[2019-07-09 10:14:13,051]:DEBUG: Create benchmark directory
+[2019-07-09 10:41:48,327]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-09 10:41:48,329]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-09 10:41:48,329]:DEBUG:   Remove invalid tags
+[2019-07-09 10:41:48,330]:DEBUG:     Available tags: 
+[2019-07-09 10:41:48,330]:DEBUG:   Remove invalid tags
+[2019-07-09 10:41:48,330]:DEBUG:     Available tags: 
+[2019-07-09 10:41:48,330]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-09 10:41:48,330]:DEBUG:   Preprocess xml tree
+[2019-07-09 10:41:48,330]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-09 10:41:48,330]:DEBUG:     path: .
+[2019-07-09 10:41:48,330]:DEBUG:   Remove invalid tags
+[2019-07-09 10:41:48,331]:DEBUG:     Available tags: 
+[2019-07-09 10:41:48,331]:DEBUG:   Preprocess done
+[2019-07-09 10:41:48,331]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-09 10:41:48,331]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-09 10:41:48,332]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-09 10:41:48,332]:DEBUG:   Parsing <fileset name="files">
+[2019-07-09 10:41:48,332]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-09 10:41:48,332]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-09 10:41:48,332]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-09 10:41:48,343]:DEBUG: Start consistency check
+[2019-07-09 10:41:48,344]:DEBUG: Create benchmark directory
+[2019-07-09 11:56:27,525]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-09 11:56:27,548]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-09 11:56:27,548]:DEBUG:   Remove invalid tags
+[2019-07-09 11:56:27,548]:DEBUG:     Available tags: 
+[2019-07-09 11:56:27,548]:DEBUG:   Remove invalid tags
+[2019-07-09 11:56:27,548]:DEBUG:     Available tags: 
+[2019-07-09 11:56:27,548]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-09 11:56:27,549]:DEBUG:   Preprocess xml tree
+[2019-07-09 11:56:27,549]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-09 11:56:27,549]:DEBUG:     path: .
+[2019-07-09 11:56:27,549]:DEBUG:   Remove invalid tags
+[2019-07-09 11:56:27,549]:DEBUG:     Available tags: 
+[2019-07-09 11:56:27,549]:DEBUG:   Preprocess done
+[2019-07-09 11:56:27,549]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-09 11:56:27,549]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-09 11:56:27,550]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-09 11:56:27,550]:DEBUG:   Parsing <fileset name="files">
+[2019-07-09 11:56:27,550]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-09 11:56:27,550]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-09 11:56:27,550]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-09 11:56:27,551]:DEBUG: Start consistency check
+[2019-07-09 11:56:27,551]:DEBUG: Create benchmark directory
+[2019-07-09 11:58:52,482]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-09 11:58:52,483]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-09 11:58:52,483]:DEBUG:   Remove invalid tags
+[2019-07-09 11:58:52,483]:DEBUG:     Available tags: 
+[2019-07-09 11:58:52,484]:DEBUG:   Remove invalid tags
+[2019-07-09 11:58:52,484]:DEBUG:     Available tags: 
+[2019-07-09 11:58:52,484]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-09 11:58:52,484]:DEBUG:   Preprocess xml tree
+[2019-07-09 11:58:52,484]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-09 11:58:52,484]:DEBUG:     path: .
+[2019-07-09 11:58:52,484]:DEBUG:   Remove invalid tags
+[2019-07-09 11:58:52,484]:DEBUG:     Available tags: 
+[2019-07-09 11:58:52,484]:DEBUG:   Preprocess done
+[2019-07-09 11:58:52,484]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-09 11:58:52,484]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-09 11:58:52,485]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-09 11:58:52,485]:DEBUG:   Parsing <fileset name="files">
+[2019-07-09 11:58:52,485]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-09 11:58:52,485]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-09 11:58:52,485]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-09 11:58:52,485]:DEBUG: Start consistency check
+[2019-07-09 11:58:52,486]:DEBUG: Create benchmark directory
+[2019-07-10 07:18:47,669]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-10 07:18:47,692]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-10 07:18:47,692]:DEBUG:   Remove invalid tags
+[2019-07-10 07:18:47,692]:DEBUG:     Available tags: 
+[2019-07-10 07:18:47,692]:DEBUG:   Remove invalid tags
+[2019-07-10 07:18:47,692]:DEBUG:     Available tags: 
+[2019-07-10 07:18:47,694]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-10 07:18:47,695]:DEBUG:   Preprocess xml tree
+[2019-07-10 07:18:47,695]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-10 07:18:47,695]:DEBUG:     path: .
+[2019-07-10 07:18:47,695]:DEBUG:   Remove invalid tags
+[2019-07-10 07:18:47,695]:DEBUG:     Available tags: 
+[2019-07-10 07:18:47,696]:DEBUG:   Preprocess done
+[2019-07-10 07:18:47,696]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-10 07:18:47,697]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-10 07:18:47,697]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-10 07:18:47,698]:DEBUG:   Parsing <fileset name="files">
+[2019-07-10 07:18:47,698]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-10 07:18:47,698]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-10 07:18:47,703]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-10 07:18:47,704]:DEBUG: Start consistency check
+[2019-07-10 07:18:47,704]:DEBUG: Create benchmark directory
+[2019-07-10 07:48:24,386]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-10 07:48:24,392]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-10 07:48:24,392]:DEBUG:   Remove invalid tags
+[2019-07-10 07:48:24,392]:DEBUG:     Available tags: 
+[2019-07-10 07:48:24,393]:DEBUG:   Remove invalid tags
+[2019-07-10 07:48:24,393]:DEBUG:     Available tags: 
+[2019-07-10 07:48:24,395]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-10 07:48:24,395]:DEBUG:   Preprocess xml tree
+[2019-07-10 07:48:24,395]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-10 07:48:24,395]:DEBUG:     path: .
+[2019-07-10 07:48:24,395]:DEBUG:   Remove invalid tags
+[2019-07-10 07:48:24,395]:DEBUG:     Available tags: 
+[2019-07-10 07:48:24,396]:DEBUG:   Preprocess done
+[2019-07-10 07:48:24,396]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-10 07:48:24,397]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-10 07:48:24,397]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-10 07:48:24,398]:DEBUG:   Parsing <fileset name="files">
+[2019-07-10 07:48:24,398]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-10 07:48:24,398]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-10 07:48:24,398]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-10 07:48:24,399]:DEBUG: Start consistency check
+[2019-07-10 07:48:24,399]:DEBUG: Create benchmark directory
+[2019-07-10 07:49:19,072]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-10 07:49:19,077]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-10 07:49:19,077]:DEBUG:   Remove invalid tags
+[2019-07-10 07:49:19,077]:DEBUG:     Available tags: 
+[2019-07-10 07:49:19,077]:DEBUG:   Remove invalid tags
+[2019-07-10 07:49:19,077]:DEBUG:     Available tags: 
+[2019-07-10 07:49:19,079]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-10 07:49:19,079]:DEBUG:   Preprocess xml tree
+[2019-07-10 07:49:19,079]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-10 07:49:19,079]:DEBUG:     path: .
+[2019-07-10 07:49:19,079]:DEBUG:   Remove invalid tags
+[2019-07-10 07:49:19,080]:DEBUG:     Available tags: 
+[2019-07-10 07:49:19,080]:DEBUG:   Preprocess done
+[2019-07-10 07:49:19,080]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-10 07:49:19,081]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-10 07:49:19,081]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-10 07:49:19,082]:DEBUG:   Parsing <fileset name="files">
+[2019-07-10 07:49:19,082]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-10 07:49:19,082]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-10 07:49:19,082]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-10 07:49:19,082]:DEBUG: Start consistency check
+[2019-07-10 07:49:19,083]:DEBUG: Create benchmark directory
+[2019-07-10 09:55:15,326]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-10 09:55:15,332]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-10 09:55:15,332]:DEBUG:   Remove invalid tags
+[2019-07-10 09:55:15,332]:DEBUG:     Available tags: 
+[2019-07-10 09:55:15,332]:DEBUG:   Remove invalid tags
+[2019-07-10 09:55:15,333]:DEBUG:     Available tags: 
+[2019-07-10 09:55:15,333]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-10 09:55:15,333]:DEBUG:   Preprocess xml tree
+[2019-07-10 09:55:15,333]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-10 09:55:15,333]:DEBUG:     path: .
+[2019-07-10 09:55:15,334]:DEBUG:   Remove invalid tags
+[2019-07-10 09:55:15,334]:DEBUG:     Available tags: 
+[2019-07-10 09:55:15,334]:DEBUG:   Preprocess done
+[2019-07-10 09:55:15,334]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-10 09:55:15,335]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-10 09:55:15,336]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-10 09:55:15,336]:DEBUG:   Parsing <fileset name="files">
+[2019-07-10 09:55:15,336]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-10 09:55:15,337]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-10 09:55:15,337]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-10 09:55:15,338]:DEBUG: Start consistency check
+[2019-07-10 09:55:15,338]:DEBUG: Create benchmark directory
+[2019-07-10 09:58:52,415]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-10 09:58:52,416]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-10 09:58:52,416]:DEBUG:   Remove invalid tags
+[2019-07-10 09:58:52,416]:DEBUG:     Available tags: 
+[2019-07-10 09:58:52,417]:DEBUG:   Remove invalid tags
+[2019-07-10 09:58:52,417]:DEBUG:     Available tags: 
+[2019-07-10 09:58:52,417]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-10 09:58:52,417]:DEBUG:   Preprocess xml tree
+[2019-07-10 09:58:52,417]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-10 09:58:52,417]:DEBUG:     path: .
+[2019-07-10 09:58:52,417]:DEBUG:   Remove invalid tags
+[2019-07-10 09:58:52,417]:DEBUG:     Available tags: 
+[2019-07-10 09:58:52,417]:DEBUG:   Preprocess done
+[2019-07-10 09:58:52,417]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-10 09:58:52,417]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-10 09:58:52,418]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-10 09:58:52,418]:DEBUG:   Parsing <fileset name="files">
+[2019-07-10 09:58:52,418]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-10 09:58:52,418]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-10 09:58:52,418]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-10 09:58:52,418]:DEBUG: Start consistency check
+[2019-07-10 09:58:52,419]:DEBUG: Create benchmark directory
+[2019-07-10 11:13:31,644]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-10 11:13:31,650]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-10 11:13:31,651]:DEBUG:   Remove invalid tags
+[2019-07-10 11:13:31,651]:DEBUG:     Available tags: 
+[2019-07-10 11:13:31,651]:DEBUG:   Remove invalid tags
+[2019-07-10 11:13:31,651]:DEBUG:     Available tags: 
+[2019-07-10 11:13:31,651]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-10 11:13:31,651]:DEBUG:   Preprocess xml tree
+[2019-07-10 11:13:31,651]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-10 11:13:31,651]:DEBUG:     path: .
+[2019-07-10 11:13:31,651]:DEBUG:   Remove invalid tags
+[2019-07-10 11:13:31,651]:DEBUG:     Available tags: 
+[2019-07-10 11:13:31,652]:DEBUG:   Preprocess done
+[2019-07-10 11:13:31,652]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-10 11:13:31,652]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-10 11:13:31,652]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-10 11:13:31,653]:DEBUG:   Parsing <fileset name="files">
+[2019-07-10 11:13:31,653]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-10 11:13:31,653]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-10 11:13:31,653]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-10 11:13:31,653]:DEBUG: Start consistency check
+[2019-07-10 11:13:31,653]:DEBUG: Create benchmark directory
+[2019-07-10 11:36:09,776]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-10 11:36:09,777]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-10 11:36:09,777]:DEBUG:   Remove invalid tags
+[2019-07-10 11:36:09,777]:DEBUG:     Available tags: 
+[2019-07-10 11:36:09,777]:DEBUG:   Remove invalid tags
+[2019-07-10 11:36:09,777]:DEBUG:     Available tags: 
+[2019-07-10 11:36:09,777]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-10 11:36:09,777]:DEBUG:   Preprocess xml tree
+[2019-07-10 11:36:09,777]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-10 11:36:09,778]:DEBUG:     path: .
+[2019-07-10 11:36:09,778]:DEBUG:   Remove invalid tags
+[2019-07-10 11:36:09,778]:DEBUG:     Available tags: 
+[2019-07-10 11:36:09,778]:DEBUG:   Preprocess done
+[2019-07-10 11:36:09,778]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-10 11:36:09,778]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-10 11:36:09,778]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-10 11:36:09,779]:DEBUG:   Parsing <fileset name="files">
+[2019-07-10 11:36:09,779]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-10 11:36:09,779]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-10 11:36:09,779]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-10 11:36:09,780]:DEBUG: Start consistency check
+[2019-07-10 11:36:09,780]:DEBUG: Create benchmark directory
+[2019-07-10 11:37:38,582]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-07-10 11:37:38,583]:DEBUG:   --> Preprocess run 1 <--
+[2019-07-10 11:37:38,584]:DEBUG:   Remove invalid tags
+[2019-07-10 11:37:38,584]:DEBUG:     Available tags: 
+[2019-07-10 11:37:38,584]:DEBUG:   Remove invalid tags
+[2019-07-10 11:37:38,584]:DEBUG:     Available tags: 
+[2019-07-10 11:37:38,584]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-07-10 11:37:38,584]:DEBUG:   Preprocess xml tree
+[2019-07-10 11:37:38,584]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-07-10 11:37:38,584]:DEBUG:     path: .
+[2019-07-10 11:37:38,584]:DEBUG:   Remove invalid tags
+[2019-07-10 11:37:38,584]:DEBUG:     Available tags: 
+[2019-07-10 11:37:38,584]:DEBUG:   Preprocess done
+[2019-07-10 11:37:38,585]:DEBUG:   Preprocess benchmark xml tree
+[2019-07-10 11:37:38,585]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-07-10 11:37:38,585]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-07-10 11:37:38,585]:DEBUG:   Parsing <fileset name="files">
+[2019-07-10 11:37:38,585]:DEBUG:   Parsing <patternset name="pattern">
+[2019-07-10 11:37:38,585]:DEBUG:   Parsing <step name="sub_step">
+[2019-07-10 11:37:38,585]:DEBUG:   Parsing <analyser name="analyse">
+[2019-07-10 11:37:38,586]:DEBUG: Start consistency check
+[2019-07-10 11:37:38,586]:DEBUG: Create benchmark directory
+[2019-08-15 08:28:05,384]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-08-15 08:28:05,459]:DEBUG:   --> Preprocess run 1 <--
+[2019-08-15 08:28:05,459]:DEBUG:   Remove invalid tags
+[2019-08-15 08:28:05,459]:DEBUG:     Available tags: 
+[2019-08-15 08:28:05,460]:DEBUG:   Remove invalid tags
+[2019-08-15 08:28:05,460]:DEBUG:     Available tags: 
+[2019-08-15 08:28:05,463]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-08-15 08:28:05,463]:DEBUG:   Preprocess xml tree
+[2019-08-15 08:28:05,463]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-08-15 08:28:05,463]:DEBUG:     path: .
+[2019-08-15 08:28:05,463]:DEBUG:   Remove invalid tags
+[2019-08-15 08:28:05,464]:DEBUG:     Available tags: 
+[2019-08-15 08:28:05,465]:DEBUG:   Preprocess done
+[2019-08-15 08:28:05,465]:DEBUG:   Preprocess benchmark xml tree
+[2019-08-15 08:28:05,466]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-08-15 08:28:05,467]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-08-15 08:28:05,467]:DEBUG:   Parsing <fileset name="files">
+[2019-08-15 08:28:05,467]:DEBUG:   Parsing <patternset name="pattern">
+[2019-08-15 08:28:05,468]:DEBUG:   Parsing <step name="sub_step">
+[2019-08-15 08:28:05,468]:DEBUG:   Parsing <analyser name="analyse">
+[2019-08-15 08:28:05,468]:DEBUG: Start consistency check
+[2019-08-15 08:28:05,469]:DEBUG: Create benchmark directory
+[2019-08-15 08:32:34,375]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-08-15 08:32:34,380]:DEBUG:   --> Preprocess run 1 <--
+[2019-08-15 08:32:34,380]:DEBUG:   Remove invalid tags
+[2019-08-15 08:32:34,380]:DEBUG:     Available tags: 
+[2019-08-15 08:32:34,381]:DEBUG:   Remove invalid tags
+[2019-08-15 08:32:34,381]:DEBUG:     Available tags: 
+[2019-08-15 08:32:34,382]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-08-15 08:32:34,382]:DEBUG:   Preprocess xml tree
+[2019-08-15 08:32:34,383]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-08-15 08:32:34,383]:DEBUG:     path: .
+[2019-08-15 08:32:34,383]:DEBUG:   Remove invalid tags
+[2019-08-15 08:32:34,383]:DEBUG:     Available tags: 
+[2019-08-15 08:32:34,383]:DEBUG:   Preprocess done
+[2019-08-15 08:32:34,384]:DEBUG:   Preprocess benchmark xml tree
+[2019-08-15 08:32:34,384]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-08-15 08:32:34,385]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-08-15 08:32:34,408]:DEBUG:   Parsing <fileset name="files">
+[2019-08-15 08:32:34,408]:DEBUG:   Parsing <patternset name="pattern">
+[2019-08-15 08:32:34,408]:DEBUG:   Parsing <step name="sub_step">
+[2019-08-15 08:32:34,409]:DEBUG:   Parsing <analyser name="analyse">
+[2019-08-15 08:32:34,409]:DEBUG: Start consistency check
+[2019-08-15 08:32:34,410]:DEBUG: Create benchmark directory
+[2019-08-15 08:35:50,653]:DEBUG: Parsing jube_run_pySDC_AC.xml
+[2019-08-15 08:35:50,664]:DEBUG:   --> Preprocess run 1 <--
+[2019-08-15 08:35:50,664]:DEBUG:   Remove invalid tags
+[2019-08-15 08:35:50,664]:DEBUG:     Available tags: 
+[2019-08-15 08:35:50,665]:DEBUG:   Remove invalid tags
+[2019-08-15 08:35:50,665]:DEBUG:     Available tags: 
+[2019-08-15 08:35:50,667]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-08-15 08:35:50,667]:DEBUG:   Preprocess xml tree
+[2019-08-15 08:35:50,667]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-08-15 08:35:50,667]:DEBUG:     path: .
+[2019-08-15 08:35:50,667]:DEBUG:   Remove invalid tags
+[2019-08-15 08:35:50,668]:DEBUG:     Available tags: 
+[2019-08-15 08:35:50,668]:DEBUG:   Preprocess done
+[2019-08-15 08:35:50,668]:DEBUG:   Preprocess benchmark xml tree
+[2019-08-15 08:35:50,669]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-08-15 08:35:50,670]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-08-15 08:35:50,670]:DEBUG:   Parsing <fileset name="files">
+[2019-08-15 08:35:50,670]:DEBUG:   Parsing <patternset name="pattern">
+[2019-08-15 08:35:50,671]:DEBUG:   Parsing <step name="sub_step">
+[2019-08-15 08:35:50,671]:DEBUG:   Parsing <analyser name="analyse">
+[2019-08-15 08:35:50,671]:DEBUG: Start consistency check
+[2019-08-15 08:35:50,672]:DEBUG: Create benchmark directory
+[2019-08-15 08:39:06,618]:DEBUG: Parsing jube_run_pySDC_AC_spacetime.xml
+[2019-08-15 08:39:06,623]:DEBUG:   --> Preprocess run 1 <--
+[2019-08-15 08:39:06,623]:DEBUG:   Remove invalid tags
+[2019-08-15 08:39:06,623]:DEBUG:     Available tags: 
+[2019-08-15 08:39:06,624]:DEBUG:   Remove invalid tags
+[2019-08-15 08:39:06,624]:DEBUG:     Available tags: 
+[2019-08-15 08:39:06,626]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-08-15 08:39:06,626]:DEBUG:   Preprocess xml tree
+[2019-08-15 08:39:06,626]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-08-15 08:39:06,626]:DEBUG:     path: .
+[2019-08-15 08:39:06,626]:DEBUG:   Remove invalid tags
+[2019-08-15 08:39:06,626]:DEBUG:     Available tags: 
+[2019-08-15 08:39:06,627]:DEBUG:   Preprocess done
+[2019-08-15 08:39:06,627]:DEBUG:   Preprocess benchmark xml tree
+[2019-08-15 08:39:06,628]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-08-15 08:39:06,628]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-08-15 08:39:06,628]:DEBUG:   Parsing <fileset name="files">
+[2019-08-15 08:39:06,629]:DEBUG:   Parsing <patternset name="pattern">
+[2019-08-15 08:39:06,629]:DEBUG:   Parsing <step name="sub_step">
+[2019-08-15 08:39:06,629]:DEBUG:   Parsing <analyser name="analyse">
+[2019-08-15 08:39:06,629]:DEBUG: Start consistency check
+[2019-08-15 08:39:06,630]:DEBUG: Create benchmark directory
+[2019-08-15 08:40:13,560]:DEBUG: Parsing jube_run_pySDC_AC_spacetime.xml
+[2019-08-15 08:40:13,566]:DEBUG:   --> Preprocess run 1 <--
+[2019-08-15 08:40:13,566]:DEBUG:   Remove invalid tags
+[2019-08-15 08:40:13,566]:DEBUG:     Available tags: 
+[2019-08-15 08:40:13,566]:DEBUG:   Remove invalid tags
+[2019-08-15 08:40:13,566]:DEBUG:     Available tags: 
+[2019-08-15 08:40:13,568]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-08-15 08:40:13,569]:DEBUG:   Preprocess xml tree
+[2019-08-15 08:40:13,569]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-08-15 08:40:13,569]:DEBUG:     path: .
+[2019-08-15 08:40:13,569]:DEBUG:   Remove invalid tags
+[2019-08-15 08:40:13,569]:DEBUG:     Available tags: 
+[2019-08-15 08:40:13,570]:DEBUG:   Preprocess done
+[2019-08-15 08:40:13,570]:DEBUG:   Preprocess benchmark xml tree
+[2019-08-15 08:40:13,571]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-08-15 08:40:13,576]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-08-15 08:40:13,576]:DEBUG:   Parsing <fileset name="files">
+[2019-08-15 08:40:13,577]:DEBUG:   Parsing <patternset name="pattern">
+[2019-08-15 08:40:13,577]:DEBUG:   Parsing <step name="sub_step">
+[2019-08-15 08:40:13,577]:DEBUG:   Parsing <analyser name="analyse">
+[2019-08-15 08:40:13,578]:DEBUG: Start consistency check
+[2019-08-15 08:40:13,578]:DEBUG: Create benchmark directory

@@ -1,0 +1,42 @@
+[2019-08-15 10:40:29,006]:DEBUG: Parsing bench_run_SPxTS/000004/configuration.xml
+[2019-08-15 10:40:29,009]:DEBUG:   --> Preprocess run 1 <--
+[2019-08-15 10:40:29,010]:DEBUG:   Remove invalid tags
+[2019-08-15 10:40:29,010]:DEBUG:     Available tags: 
+[2019-08-15 10:40:29,010]:DEBUG:   Remove invalid tags
+[2019-08-15 10:40:29,010]:DEBUG:     Available tags: 
+[2019-08-15 10:40:29,010]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-08-15 10:40:29,010]:DEBUG:   Preprocess xml tree
+[2019-08-15 10:40:29,011]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-08-15 10:40:29,011]:DEBUG:     path: bench_run_SPxTS/000004
+[2019-08-15 10:40:29,011]:DEBUG:   Remove invalid tags
+[2019-08-15 10:40:29,011]:DEBUG:     Available tags: 
+[2019-08-15 10:40:29,011]:DEBUG:   Preprocess done
+[2019-08-15 10:40:29,011]:DEBUG:   Preprocess benchmark xml tree
+[2019-08-15 10:40:29,012]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-08-15 10:40:29,013]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-08-15 10:40:29,013]:DEBUG:   Parsing <fileset name="files">
+[2019-08-15 10:40:29,013]:DEBUG:   Parsing <patternset name="pattern">
+[2019-08-15 10:40:29,013]:DEBUG:   Parsing <step name="sub_step">
+[2019-08-15 10:40:29,013]:DEBUG:   Parsing <analyser name="analyse">
+[2019-08-15 10:40:29,014]:DEBUG: Parsing bench_run_SPxTS/000004/workpackages.xml
+[2019-08-15 10:40:31,498]:DEBUG: Parsing bench_run_SPxTS/000004/configuration.xml
+[2019-08-15 10:40:31,500]:DEBUG:   --> Preprocess run 1 <--
+[2019-08-15 10:40:31,500]:DEBUG:   Remove invalid tags
+[2019-08-15 10:40:31,500]:DEBUG:     Available tags: 
+[2019-08-15 10:40:31,500]:DEBUG:   Remove invalid tags
+[2019-08-15 10:40:31,500]:DEBUG:     Available tags: 
+[2019-08-15 10:40:31,501]:DEBUG:   Read $JUBE_INCLUDE_PATH
+[2019-08-15 10:40:31,501]:DEBUG:   Preprocess xml tree
+[2019-08-15 10:40:31,501]:DEBUG:     path: /usr/local/software/jureca/Stages/2019a/software/JUBE/2.2.2/platform/slurm
+[2019-08-15 10:40:31,501]:DEBUG:     path: bench_run_SPxTS/000004
+[2019-08-15 10:40:31,501]:DEBUG:   Remove invalid tags
+[2019-08-15 10:40:31,501]:DEBUG:     Available tags: 
+[2019-08-15 10:40:31,501]:DEBUG:   Preprocess done
+[2019-08-15 10:40:31,501]:DEBUG:   Preprocess benchmark xml tree
+[2019-08-15 10:40:31,501]:DEBUG:   Parsing <parameterset name="param_set">
+[2019-08-15 10:40:31,502]:DEBUG:   Parsing <substituteset name="substitute">
+[2019-08-15 10:40:31,502]:DEBUG:   Parsing <fileset name="files">
+[2019-08-15 10:40:31,502]:DEBUG:   Parsing <patternset name="pattern">
+[2019-08-15 10:40:31,502]:DEBUG:   Parsing <step name="sub_step">
+[2019-08-15 10:40:31,502]:DEBUG:   Parsing <analyser name="analyse">
+[2019-08-15 10:40:31,502]:DEBUG: Parsing bench_run_SPxTS/000004/workpackages.xml

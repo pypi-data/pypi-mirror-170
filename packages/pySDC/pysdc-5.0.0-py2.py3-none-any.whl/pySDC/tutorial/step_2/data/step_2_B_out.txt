@@ -1,0 +1,12 @@
+Time 0.10 of 0 -- Iteration:  1 -- Residual: 4.11190756e-03
+Time 0.10 of 0 -- Iteration:  2 -- Residual: 6.68442666e-04
+Time 0.10 of 0 -- Iteration:  3 -- Residual: 8.80377581e-05
+Time 0.10 of 0 -- Iteration:  4 -- Residual: 1.21707903e-05
+Time 0.10 of 0 -- Iteration:  5 -- Residual: 1.38272106e-06
+Time 0.10 of 0 -- Iteration:  6 -- Residual: 6.36444607e-07
+Time 0.10 of 0 -- Iteration:  7 -- Residual: 1.68954545e-07
+Time 0.10 of 0 -- Iteration:  8 -- Residual: 3.52597014e-08
+Time 0.10 of 0 -- Iteration:  9 -- Residual: 6.07325271e-09
+Time 0.10 of 0 -- Iteration: 10 -- Residual: 8.27554364e-10
+Time 0.10 of 0 -- Iteration: 11 -- Residual: 1.18638132e-10
+Time 0.10 of 0 -- Iteration: 12 -- Residual: 1.44734294e-11

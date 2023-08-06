@@ -1,0 +1,5 @@
+export A=test
+
+if [A == 'test']; then
+    echo 'HUUU'
+fi

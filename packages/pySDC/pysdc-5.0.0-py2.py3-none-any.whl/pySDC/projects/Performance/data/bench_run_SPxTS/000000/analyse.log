@@ -1,0 +1,65 @@
+[2019-08-15 08:30:14,002]:DEBUG: Run analyser "analyse"
+[2019-08-15 08:30:14,002]:DEBUG:   available pattern:
+[2019-08-15 08:30:14,002]:DEBUG:          pattern    | value                                  
+[2019-08-15 08:30:14,003]:DEBUG:          -----------+----------------------------------------
+[2019-08-15 08:30:14,003]:DEBUG:          niter_pat  | Mean number of iterations: $jube_pat_fp
+[2019-08-15 08:30:14,003]:DEBUG:          timing_pat | Time to solution: $jube_pat_fp sec.    
+[2019-08-15 08:30:14,003]:DEBUG: 
+[2019-08-15 08:30:14,003]:DEBUG:   available derived pattern:
+[2019-08-15 08:30:14,003]:DEBUG:          pattern | value
+[2019-08-15 08:30:14,003]:DEBUG:          --------+------
+[2019-08-15 08:30:14,003]:DEBUG:   analyse step "sub_step"
+[2019-08-15 08:30:14,005]:DEBUG:     scan file bench_run_SPxTS/000000/000000_sub_step/work/run.out
+[2019-08-15 08:30:14,008]:DEBUG:       file "run.out" scanned pattern found:
+[2019-08-15 08:30:14,008]:DEBUG:          timing_pat | std:0, cnt:1, last:31.9186, min:31.9186,
+[2019-08-15 08:30:14,008]:DEBUG:                     | max:31.9186, sum:31.9186,               
+[2019-08-15 08:30:14,008]:DEBUG:                     | sum2:1018.79702596, avg:31.9186,        
+[2019-08-15 08:30:14,009]:DEBUG:                     | first:31.9186                           
+[2019-08-15 08:30:14,009]:DEBUG:           niter_pat |         std:0, cnt:1, last:4.0, min:4.0,
+[2019-08-15 08:30:14,009]:DEBUG:                     | max:4.0, sum:4.0, sum2:16.0, avg:4.0,   
+[2019-08-15 08:30:14,009]:DEBUG:                     | first:4.0                               
+[2019-08-15 08:30:14,011]:DEBUG:     scan file bench_run_SPxTS/000000/000001_sub_step/work/run.out
+[2019-08-15 08:30:14,013]:DEBUG:       file "run.out" scanned pattern found:
+[2019-08-15 08:30:14,014]:DEBUG:          timing_pat | std:0, cnt:1, last:21.8401, min:21.8401,
+[2019-08-15 08:30:14,014]:DEBUG:                     | max:21.8401, sum:21.8401,               
+[2019-08-15 08:30:14,014]:DEBUG:                     | sum2:476.98996801, avg:21.8401,         
+[2019-08-15 08:30:14,014]:DEBUG:                     | first:21.8401                           
+[2019-08-15 08:30:14,014]:DEBUG:           niter_pat |         std:0, cnt:1, last:5.0, min:5.0,
+[2019-08-15 08:30:14,014]:DEBUG:                     | max:5.0, sum:5.0, sum2:25.0, avg:5.0,   
+[2019-08-15 08:30:14,014]:DEBUG:                     | first:5.0                               
+[2019-08-15 08:30:14,017]:DEBUG:     scan file bench_run_SPxTS/000000/000002_sub_step/work/run.out
+[2019-08-15 08:30:14,019]:DEBUG:       file "run.out" scanned pattern found:
+[2019-08-15 08:30:14,019]:DEBUG:          timing_pat | std:0, cnt:1, last:13.9255, min:13.9255,
+[2019-08-15 08:30:14,019]:DEBUG:                     | max:13.9255, sum:13.9255,               
+[2019-08-15 08:30:14,019]:DEBUG:                     | sum2:193.91955025, avg:13.9255,         
+[2019-08-15 08:30:14,019]:DEBUG:                     | first:13.9255                           
+[2019-08-15 08:30:14,019]:DEBUG:           niter_pat |         std:0, cnt:1, last:5.5, min:5.5,
+[2019-08-15 08:30:14,019]:DEBUG:                     | max:5.5, sum:5.5, sum2:30.25, avg:5.5,  
+[2019-08-15 08:30:14,019]:DEBUG:                     | first:5.5                               
+[2019-08-15 08:30:14,022]:DEBUG:     scan file bench_run_SPxTS/000000/000003_sub_step/work/run.out
+[2019-08-15 08:30:14,024]:DEBUG:       file "run.out" scanned pattern found:
+[2019-08-15 08:30:14,024]:DEBUG:          timing_pat | std:0, cnt:1, last:11.2158, min:11.2158,
+[2019-08-15 08:30:14,024]:DEBUG:                     | max:11.2158, sum:11.2158,               
+[2019-08-15 08:30:14,024]:DEBUG:                     | sum2:125.79416964, avg:11.2158,         
+[2019-08-15 08:30:14,024]:DEBUG:                     | first:11.2158                           
+[2019-08-15 08:30:14,024]:DEBUG:           niter_pat |       std:0, cnt:1, last:5.75, min:5.75,
+[2019-08-15 08:30:14,024]:DEBUG:                     | max:5.75, sum:5.75, sum2:33.0625,       
+[2019-08-15 08:30:14,027]:DEBUG:                     | avg:5.75, first:5.75                    
+[2019-08-15 08:30:14,030]:DEBUG:     scan file bench_run_SPxTS/000000/000004_sub_step/work/run.out
+[2019-08-15 08:30:14,032]:DEBUG:       file "run.out" scanned pattern found:
+[2019-08-15 08:30:14,032]:DEBUG:          timing_pat |   std:0, cnt:1, last:9.3756, min:9.3756,
+[2019-08-15 08:30:14,033]:DEBUG:                     | max:9.3756, sum:9.3756,                 
+[2019-08-15 08:30:14,033]:DEBUG:                     | sum2:87.90187536, avg:9.3756,           
+[2019-08-15 08:30:14,033]:DEBUG:                     | first:9.3756                            
+[2019-08-15 08:30:14,033]:DEBUG:           niter_pat |         std:0, cnt:1, last:7.0, min:7.0,
+[2019-08-15 08:30:14,033]:DEBUG:                     | max:7.0, sum:7.0, sum2:49.0, avg:7.0,   
+[2019-08-15 08:30:14,033]:DEBUG:                     | first:7.0                               
+[2019-08-15 08:30:14,036]:DEBUG:     scan file bench_run_SPxTS/000000/000005_sub_step/work/run.out
+[2019-08-15 08:30:14,038]:DEBUG:       file "run.out" scanned pattern found:
+[2019-08-15 08:30:14,038]:DEBUG:          timing_pat | std:0, cnt:1, last:10.7577, min:10.7577,
+[2019-08-15 08:30:14,038]:DEBUG:                     | max:10.7577, sum:10.7577,               
+[2019-08-15 08:30:14,038]:DEBUG:                     | sum2:115.72810929, avg:10.7577,         
+[2019-08-15 08:30:14,038]:DEBUG:                     | first:10.7577                           
+[2019-08-15 08:30:14,038]:DEBUG:           niter_pat |         std:0, cnt:1, last:9.0, min:9.0,
+[2019-08-15 08:30:14,038]:DEBUG:                     | max:9.0, sum:9.0, sum2:81.0, avg:9.0,   
+[2019-08-15 08:30:14,038]:DEBUG:                     | first:9.0                               
