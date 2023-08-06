@@ -1,0 +1,15 @@
+.gitignore
+README.rst
+setup.cfg
+setup.py
+tox.ini
+.github/workflows/main.yml
+gsone/__init__.py
+gsone/gsone.py
+gsone.egg-info/PKG-INFO
+gsone.egg-info/SOURCES.txt
+gsone.egg-info/dependency_links.txt
+gsone.egg-info/requires.txt
+gsone.egg-info/top_level.txt
+tests/__init__.py
+tests/test_gsone.py
