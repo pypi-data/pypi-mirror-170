@@ -1,0 +1,14 @@
+950f013fa5d8a4b2a533__mypyc.cpython-310-darwin.so,sha256=FHqDk7e5tbinrirwiJkKq4oRaEu903n5N-FBWLzO-6w,152112
+log_color/__init__.py,sha256=3l2NVtlYZ1R1semh5eUbWuWpm27WB5jGW9f8Tjh1FPY,110
+log_color/colors.py,sha256=bZtWepcmp5meBqTSGJ-i0Jcej6vy8OSwpZDnGYF_Ktc,1397
+log_color/formatters.cpython-310-darwin.so,sha256=L89Kj4xuVrqUWHJcQpQtME3YJRswFA-_sJC45f46xbM,33712
+log_color/formatters.py,sha256=nMwhSUEuDSiClOFFuGsDvh-Vw_1JkozrvgM56bWnqsw,1980
+log_color/lib.cpython-310-darwin.so,sha256=TPFR2jgDuVJW-bEiqO3HauUL6gnhF1hiFiNmUJJFgHs,33672
+log_color/lib.py,sha256=yxRuh7Lq2ZYKZYjx_-SS_o_bKiaK-Jbtn-gKnuX3ck4,3280
+log_color/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+log_color/regex.py,sha256=Wsv1iMFrVtYtb_XKEN9DURL3FfEQIHcDw4dhsO828Ec,78
+log_color-2.0.1rc0.dist-info/LICENSE,sha256=JCz-XNyHmb8M1wLPDaqBuJAsQLuHjRtNGsD4BbfYkas,531
+log_color-2.0.1rc0.dist-info/METADATA,sha256=cTYRTAKftArN0T8Oi4vEQqX46DRoflM-y18rsmYeMMQ,3404
+log_color-2.0.1rc0.dist-info/WHEEL,sha256=wHXPjcF1PbvralrZAZffaBRfMW8u_7d-L-q3slIS7Go,111
+log_color-2.0.1rc0.dist-info/top_level.txt,sha256=3CWoLY-6f1B8LyMxyPWC22we8UpKEki2F6tnG2qWZbo,38
+log_color-2.0.1rc0.dist-info/RECORD,,
