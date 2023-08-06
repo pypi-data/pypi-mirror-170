@@ -1,0 +1,4 @@
+[console_scripts]
+YushenDuihuaXiangeiQingshaonian = YushenDuihuaXiangeiQingshaonian.__main__:main
+yushen-duihua-xiangei-qingshaonian = YushenDuihuaXiangeiQingshaonian.__main__:main
+
