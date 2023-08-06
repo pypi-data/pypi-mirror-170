@@ -1,0 +1,4 @@
+[console_scripts]
+XiyinliFazeShiyongShouce = XiyinliFazeShiyongShouce.__main__:main
+xiyinli-faze-shiyong-shouce = XiyinliFazeShiyongShouce.__main__:main
+
