@@ -1,0 +1,4 @@
+[console_scripts]
+Shouzhiwu = Shouzhiwu.__main__:main
+shouzhiwu = Shouzhiwu.__main__:main
+
