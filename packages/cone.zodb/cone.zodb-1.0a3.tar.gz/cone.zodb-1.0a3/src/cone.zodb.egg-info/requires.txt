@@ -1,0 +1,9 @@
+setuptools
+node.ext.zodb
+repoze.catalog
+pyramid_tm
+pyramid_zodbconn
+cone.app
+
+[test]
+zope.testrunner
