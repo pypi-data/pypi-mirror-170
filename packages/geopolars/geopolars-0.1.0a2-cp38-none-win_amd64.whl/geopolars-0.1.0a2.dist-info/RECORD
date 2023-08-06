@@ -1,0 +1,17 @@
+geopolars-0.1.0a2.dist-info/METADATA,sha256=ZzoFaKW_GnnQri_l5A_PJgH6I6tTo_hZPYW4d0Os6Cg,628
+geopolars-0.1.0a2.dist-info/WHEEL,sha256=DlkmIwqPkqp4WGZiVpBBD-Oydg1itxHokYxGDkifmMU,95
+geopolars/convert.py,sha256=GFHlwfPc55Y-tBCrzL0DxI0I7ChPxZhpEz4T53quIS4,2534
+geopolars/datasets/naturalearth_cities.arrow,sha256=5ZUSR2LQXd_bxlFKjgQLh3z1tRjEm2-KQSjA87ujr8s,11018
+geopolars/datasets/naturalearth_lowres.arrow,sha256=LKK1NIAvzuBwoQmgn6D8r1Q5qiKU-cVSQVDvDw03Y70,159402
+geopolars/datasets/nybb.arrow,sha256=iODMeqYsww9gd458UkYwkN13oD0ahIorKKxQO9fqVV8,936786
+geopolars/datasets/README.md,sha256=ilAApzOD19xLzV8NxUY2gTfuLd1hmDiX_1tz7mOd-sc,913
+geopolars/datasets/__init__.py,sha256=-adM0VXnXfTXEazH_YPPWmVz6i6WWUhhsncysN-z1ok,1297
+geopolars/internals/geodataframe.py,sha256=F8LRpqDRX2FMZyWwV4cPjpLYZWWrwAFVqL96qhRsbtQ,2105
+geopolars/internals/geoseries.py,sha256=G2Ywy78cpztcQwVALBEUNTZcMxDxYryrxv9aE7CeuEU,8167
+geopolars/internals/types.py,sha256=o1au9YRXfjzgRV3Jk2RTHRznt7csmM7eGcRLJhgKbVA,312
+geopolars/internals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geopolars/io/file.py,sha256=LD3TMkbqX0zmmBAIO-7SItWNX7fPrwKzDVvRqFE5wvc,3948
+geopolars/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geopolars/__init__.py,sha256=fHKJZIy6izNhKTXOlIiYA548X7UO8a_0CDfGbRtVUgI,439
+geopolars/geopolars.cp38-win_amd64.pyd,sha256=41GzeZjXxnxVVqHzE3fIt3ZrMZNq4Z1Y9yh6tewyEtQ,12540928
+geopolars-0.1.0a2.dist-info/RECORD,,
