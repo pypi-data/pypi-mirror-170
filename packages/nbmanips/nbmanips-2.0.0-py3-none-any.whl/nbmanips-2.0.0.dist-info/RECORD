@@ -1,0 +1,17 @@
+nbmanips/VERSION,sha256=wo_MpTY3vIjhJK8XJd8Ty5jGne3v1i-zzb4c22t2BiQ,6
+nbmanips/__init__.py,sha256=jMJXI_H1KRbmGiHJSF_rIewWakxn3HjQ-2llS8rDWq4,392
+nbmanips/__main__.py,sha256=HuJ3bZwtVRz1ldnZ-KlprfHz5SOfghD65-schLSYBvk,749
+nbmanips/_utils.py,sha256=t-JdNUa8f7_3TPH3SSjaeRexLJgpuCgvZ4QeP5P6h0I,249
+nbmanips/exporters.py,sha256=RAzMSMgWkkhgR09sKiNzuIJcLbLOLDzq7V0_v7e6-YI,4997
+nbmanips/cli/__init__.py,sha256=35bKjLyEwlZK1bVkfwvX2Ovl5EsoTiLXTifEBQUJPE0,1114
+nbmanips/cli/collection.py,sha256=fdquVxcQGsVi-HeCskXmpRJs7YM386zYzY1028_cAmA,1054
+nbmanips/cli/convert.py,sha256=LUknUhbeW2wfSCbAuypxj7vS1LAY14oV2uSCKm7E0xY,6948
+nbmanips/cli/explore.py,sha256=tWOdBcVS_AITalnAPV_NrKHNL7OL-yeY2L2nTlZdjwE,3905
+nbmanips/cli/select.py,sha256=L6bD4UjWSawbUHihZ0h69UOMZPIe7l5EL6u4udq8_i4,5082
+nbmanips/cli/transform.py,sha256=boFi5THagxyNL6CpH9lwBbgs_CJCLHhBFEnRd4j9b80,6256
+nbmanips-2.0.0.dist-info/LICENSE,sha256=gW8RZmln3pArqAszs5WoS9h3BqI6yjnUB6tyxtv6iMs,1067
+nbmanips-2.0.0.dist-info/METADATA,sha256=XZ3OnAa7htCrDMJ3C1fIa4gFDDFUNe-b0lnj5exHENA,6734
+nbmanips-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nbmanips-2.0.0.dist-info/entry_points.txt,sha256=Ra4dk8fMybiKvAHbmVoms6YyqOBIG_XU6pY0I9fAx70,88
+nbmanips-2.0.0.dist-info/top_level.txt,sha256=YZknfBg-iHj8tWHyGM-XEoVdzeslicAMwm4OE-CXgyo,9
+nbmanips-2.0.0.dist-info/RECORD,,
