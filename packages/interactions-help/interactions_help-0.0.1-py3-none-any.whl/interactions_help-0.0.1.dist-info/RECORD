@@ -1,0 +1,9 @@
+interactions/ext/help/__init__.py,sha256=fdVRpI-i4trYf_5htXKV1QdotcSP3NSRiU5zc6sLBHk,20
+interactions/ext/help/help.py,sha256=w0wxElzUaMSqubscULRhtLhVySn3oDNMWnZys8blHZo,10451
+interactions/ext/helpcmd/__init__.py,sha256=FZ1IolyRDt7C9ZO8lUkIeA0ZvYkBEVPO_USzjD1dvu0,23
+interactions/ext/helpcmd/helpcmd.py,sha256=qYDVkw0ilfAPSTKN-XC9fzZRK4NrTf3uDMwv9F4jk3k,2811
+interactions_help-0.0.1.dist-info/LICENSE,sha256=7b4fgh4-eDzcVggCheha9H0QPcalyrb50MCjFk9O2ec,1072
+interactions_help-0.0.1.dist-info/METADATA,sha256=Euqu-ke12VareAIFWyACzyP_l2sI9aJSPmNaPXmhhhQ,2511
+interactions_help-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+interactions_help-0.0.1.dist-info/top_level.txt,sha256=6JGZJLyYYS31pX0unnc-w68SixoVQ_vd0-abkVS3_m0,13
+interactions_help-0.0.1.dist-info/RECORD,,
