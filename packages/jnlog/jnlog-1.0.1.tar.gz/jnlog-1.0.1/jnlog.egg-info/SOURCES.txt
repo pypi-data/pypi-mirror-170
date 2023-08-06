@@ -1,0 +1,7 @@
+LICENSE
+README.rst
+setup.py
+jnlog.egg-info/PKG-INFO
+jnlog.egg-info/SOURCES.txt
+jnlog.egg-info/dependency_links.txt
+jnlog.egg-info/top_level.txt
