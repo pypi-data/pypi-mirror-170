@@ -1,0 +1,9 @@
+README.md
+setup.py
+slack-msngr/__init__.py
+slack-msngr/slack_msngr.py
+slack_msngr.egg-info/PKG-INFO
+slack_msngr.egg-info/SOURCES.txt
+slack_msngr.egg-info/dependency_links.txt
+slack_msngr.egg-info/requires.txt
+slack_msngr.egg-info/top_level.txt
