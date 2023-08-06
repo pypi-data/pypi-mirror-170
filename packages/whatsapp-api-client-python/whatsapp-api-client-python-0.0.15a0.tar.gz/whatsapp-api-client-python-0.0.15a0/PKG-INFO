@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: whatsapp-api-client-python
+Version: 0.0.15a0
+Summary: This library helps you easily create a python '        'application to connect the WhatsApp API using service green-api.com
+Home-page: https://github.com/green-api/whatsapp-api-client-python
+Author: Ivan Sadovy
+Author-email: sadiv@bk.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# whatsapp-api-client-python
+
+[![Python application](https://github.com/green-api/whatsapp-api-client-python/actions/workflows/python-app.yml/badge.svg)](https://github.com/green-api/whatsapp-api-client-python/actions/workflows/python-app.yml)
+[![Upload Python Package](https://github.com/green-api/whatsapp-api-client-python/actions/workflows/python-publish.yml/badge.svg)](https://github.com/green-api/whatsapp-api-client-python/actions/workflows/python-publish.yml)
+
+Python библиотека для интеграции с мессенджером WhatsAPP через API сервиса [green-api.com](https://green-api.com). Чтобы воспользоваться библиотекой нужно получить регистрационный токен и id аккаунта в [личном кабинете](https://cabinet.green-api.com). Есть бесплатный тариф аккаунта разработчика.
+
+## API
+
+Документация к REST API находится по [ссылке](https://green-api.com/docs/api/). Библиотека является оберткой к REST API, поэтому документация по ссылке выше применима и к самой библиотеке.
+
+## Установка
+
+```
+pip install whatsapp-api-client-python
+```
+
+## Import 
+
+```
+from whatsapp_api_client_python import API
+```
+## Авторизация 
+
+Чтобы отправить сообщение или выполнить другой метод Green-API, аккаунт WhatsApp в приложении телефона должен быть в авторизованном состоянии. Для авторизации аккаунта перейдите в [личный кабинет](https://cabinet.green-api.com) и сканируйте QR-код с использованием прилоения WhatsApp.
+
+## Примеры
+
+### Отправка сообщения на номер WhatsApp
+
+[sendText.py](https://github.com/green-api/whatsapp-api-client-python/blob/master/examples/sendText.py)
+
+Обратите внимание, что ключи можно получать из переменных среды:
+```
+from os import environ
+
+ID_INSTANCE = environ['ID_INSTANCE']
+API_TOKEN_INSTANCE = environ['API_TOKEN_INSTANCE']
+```
+
+## Сторонние продукты
+
+* [requests](https://requests.readthedocs.io) - для http запросов
+
+## Лицензия
+
+Лицензировано на условиях MIT. Смотрите файл [LICENSE](LICENSE)
