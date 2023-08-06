@@ -1,0 +1,10 @@
+dendrify/__init__.py,sha256=uXfHHAbgZJiDsG8uqgBep3m6xr7pikXtE8N15LqeQ5k,165
+dendrify/compartment.py,sha256=jBz30VwhJM7syfHrbufy1u0lFNVo6a53Y3Y4lwT-b3s,27110
+dendrify/ephysproperties.py,sha256=26I5oQWZrbxYVYnGAog7PAJFBCoLee6R6KlJNLXENgA,5262
+dendrify/equations.py,sha256=N04OZbQqmesU-2C4upznk_se_4GxIg3HXVZeL2_cuCM,4045
+dendrify/neuronmodel.py,sha256=3QGEtpiZ3q7q9Bsus3wzaRbGsieVm-hXfAzokr9ZiWE,16227
+dendrify-1.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dendrify-1.0.2.dist-info/METADATA,sha256=hDy6u8WgJ6jgNHpQjmZuW1dYsSQ3xHUTxsloReZV-zs,582
+dendrify-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dendrify-1.0.2.dist-info/top_level.txt,sha256=QwNENwOM3gPb9sfrc0j-be4XC5E2ZFBbl6aYzYk7OEs,9
+dendrify-1.0.2.dist-info/RECORD,,
