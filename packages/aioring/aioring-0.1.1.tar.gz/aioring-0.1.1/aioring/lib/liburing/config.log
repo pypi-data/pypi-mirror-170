@@ -1,0 +1,30 @@
+Compiling test case stringop_overflow
+gcc -D_GNU_SOURCE -include config-host.h -Werror -Wstringop-overflow=0 -o /tmp/tmp.0cF5xBjydZ/liburing-conf.exe /tmp/tmp.0cF5xBjydZ/liburing-conf.c
+configure: line 144: gcc: command not found
+Compiling test case array_bounds
+gcc -D_GNU_SOURCE -include config-host.h -Werror -Warray-bounds=0 -o /tmp/tmp.0cF5xBjydZ/liburing-conf.exe /tmp/tmp.0cF5xBjydZ/liburing-conf.c
+configure: line 144: gcc: command not found
+Compiling test case __kernel_rwf_t
+gcc -D_GNU_SOURCE -include config-host.h -o /tmp/tmp.0cF5xBjydZ/liburing-conf.exe /tmp/tmp.0cF5xBjydZ/liburing-conf.c
+configure: line 144: gcc: command not found
+Compiling test case __kernel_timespec
+gcc -D_GNU_SOURCE -include config-host.h -o /tmp/tmp.0cF5xBjydZ/liburing-conf.exe /tmp/tmp.0cF5xBjydZ/liburing-conf.c
+configure: line 144: gcc: command not found
+Compiling test case open_how
+gcc -D_GNU_SOURCE -include config-host.h -o /tmp/tmp.0cF5xBjydZ/liburing-conf.exe /tmp/tmp.0cF5xBjydZ/liburing-conf.c
+configure: line 144: gcc: command not found
+Compiling test case statx
+gcc -D_GNU_SOURCE -include config-host.h -o /tmp/tmp.0cF5xBjydZ/liburing-conf.exe /tmp/tmp.0cF5xBjydZ/liburing-conf.c
+configure: line 144: gcc: command not found
+Compiling test case glibc_statx
+gcc -D_GNU_SOURCE -include config-host.h -o /tmp/tmp.0cF5xBjydZ/liburing-conf.exe /tmp/tmp.0cF5xBjydZ/liburing-conf.c
+configure: line 144: gcc: command not found
+Compiling test case C++
+g++ -D_GNU_SOURCE -include config-host.h -o /tmp/tmp.0cF5xBjydZ/liburing-conf.exe /tmp/tmp.0cF5xBjydZ/liburing-conf-2.cpp
+configure: line 137: g++: command not found
+Compiling test case has_ucontext
+gcc -D_GNU_SOURCE -include config-host.h -o /tmp/tmp.0cF5xBjydZ/liburing-conf.exe /tmp/tmp.0cF5xBjydZ/liburing-conf.c
+configure: line 144: gcc: command not found
+Compiling test case nvme uring cmd
+gcc -D_GNU_SOURCE -include config-host.h -o /tmp/tmp.0cF5xBjydZ/liburing-conf.exe /tmp/tmp.0cF5xBjydZ/liburing-conf.c
+configure: line 144: gcc: command not found
