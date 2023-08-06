@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: whatapackage
+Version: 0.0.8
+Summary: this is the first package i do
+Home-page: https://github.com/python/cpython
+Project-URL: link 1, https://youtube.com
+Project-URL: FBB, https://facebook.com
+Description-Content-Type: text/plain
+
+What a very long desc version fake 2
