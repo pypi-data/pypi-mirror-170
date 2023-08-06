@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/PyDigital.egg-info/PKG-INFO
+src/PyDigital.egg-info/SOURCES.txt
+src/PyDigital.egg-info/dependency_links.txt
+src/PyDigital.egg-info/requires.txt
+src/PyDigital.egg-info/top_level.txt
+src/pydigital/__init__.py
+src/pydigital/linecoding.py
+src/pydigital/parity_generation.py
+src/pydigital/utils.py
+src/pydigital.egg-info/PKG-INFO
+src/pydigital.egg-info/SOURCES.txt
+src/pydigital.egg-info/dependency_links.txt
+src/pydigital.egg-info/top_level.txt
