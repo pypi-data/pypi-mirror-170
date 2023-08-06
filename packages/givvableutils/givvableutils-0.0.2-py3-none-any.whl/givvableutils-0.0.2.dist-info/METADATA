@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: givvableutils
+Version: 0.0.2
+Summary: utility tools for givvable
+Home-page: https://dev.azure.com/givvable/givvable%20data/_git/givvableutils
+Author: Jatin Wadhwa
+Author-email: jatin@givvable.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psycopg2-binary (>=2.9.3)
+Requires-Dist: configparser (>=5.3.0)
+Requires-Dist: azure-storage-file-datalake (>=12.8.0)
+Requires-Dist: azure-core (>=1.24.0)
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+Requires-Dist: twine (>=3.4.2) ; extra == 'dev'
+
+# Introduction 
+This is a project to expose some of the utility tools used by givvable for easy version and use in projects throughout ouur code.
+
+## DB
+Helps connect to postgresql DB
+
+```python3
+import db
+db.get_conn('stage-postgresql')
+```
+
+# Developing
+To install givvableutils, along with the tools you need to develop and run tests, run the following in your virtualenv:
+
+```bash
+pip install -e .[dev]
+python3 setup.py bdist_wheel
+python3 setup.py sdist
+twine upload dist/*
+```
+
