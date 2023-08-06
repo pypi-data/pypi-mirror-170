@@ -1,0 +1,9 @@
+LICENSE
+README.md
+harf_serde.py
+pyproject.toml
+harf_serde.egg-info/PKG-INFO
+harf_serde.egg-info/SOURCES.txt
+harf_serde.egg-info/dependency_links.txt
+harf_serde.egg-info/requires.txt
+harf_serde.egg-info/top_level.txt
