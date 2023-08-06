@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+xperimental_data_conv/__init__.py
+xperimental_data_conv/main.py
+xperimental_data_conv.egg-info/PKG-INFO
+xperimental_data_conv.egg-info/SOURCES.txt
+xperimental_data_conv.egg-info/dependency_links.txt
+xperimental_data_conv.egg-info/not-zip-safe
+xperimental_data_conv.egg-info/requires.txt
+xperimental_data_conv.egg-info/top_level.txt
