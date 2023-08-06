@@ -1,0 +1,7 @@
+credit_semaphore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+credit_semaphore/async_credit_semaphore.py,sha256=4pswnmWdj2RLFYfZL-aTQkI8w8mLbrKarALVM1NowGA,3097
+credit_semaphore/semutils.py,sha256=UGh713dML9Eb6sLj-BF7MFwCQHKL8DU-EMkuRsp7T84,1061
+credit_semaphore-0.1.1.dist-info/METADATA,sha256=khqTeH6xudUU_9NkRaNFO0FI2M1wLw5uc56GKeLjC_k,11686
+credit_semaphore-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+credit_semaphore-0.1.1.dist-info/top_level.txt,sha256=OuOf4SAabEM8rmX_HeWkuwWowN4Xwhz4UaOKlxHaRcw,17
+credit_semaphore-0.1.1.dist-info/RECORD,,
