@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mpms
+Version: 2.1.0.1
+Summary: Simple python Multiprocesses-Multithreads task queue
+Home-page: https://github.com/aploium/mpms
+Author: aploium
+Author-email: i@z.codes
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+
