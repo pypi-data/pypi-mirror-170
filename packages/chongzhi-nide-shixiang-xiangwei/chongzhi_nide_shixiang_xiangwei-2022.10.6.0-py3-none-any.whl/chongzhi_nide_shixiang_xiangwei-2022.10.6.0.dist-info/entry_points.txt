@@ -1,0 +1,4 @@
+[console_scripts]
+ChongzhiNideShixiangXiangwei = ChongzhiNideShixiangXiangwei.__main__:main
+chongzhi-nide-shixiang-xiangwei = ChongzhiNideShixiangXiangwei.__main__:main
+
