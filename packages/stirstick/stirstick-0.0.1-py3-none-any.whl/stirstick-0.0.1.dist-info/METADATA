@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: stirstick
+Version: 0.0.1
+Summary: for geochemical mixing
+Home-page: https://github.com/jlubbersgeo/stirstick
+Author: Jordan Lubbers
+Author-email: jelubber@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+
+# stirstick
+the repository for the package stirstick devoted to creating and visualizing geochemical mixtures.
+
+UNDER DEVELOPMENT. Stay tuned.
+
