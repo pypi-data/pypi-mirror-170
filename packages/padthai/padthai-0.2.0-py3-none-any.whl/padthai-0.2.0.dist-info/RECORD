@@ -1,0 +1,12 @@
+padthai/__init__.py,sha256=3zfe12iQbT8NEfJomP_j2ymTx8mBJbNogHK23LFCdYQ,83
+padthai/dataset/__init__.py,sha256=QNpegongijnPj6xrASFI0Y5qydxZp_JV3qXP8uYhvKI,33
+padthai/dataset/dataset.py,sha256=TwndhjTOss4S8e4Ts2tLwPNuMwZds9yGmn3E2JW4CuI,1541
+padthai/flax/__init__.py,sha256=vTAeujrBVDetX42rZMeoA9lOkgNXM9UfeLHTTyjGC4w,35
+padthai/flax/model.py,sha256=5yfSrqcNfxe4Xuwkaw6S4xMAow9r26l0DEfdIo3GKjE,7663
+padthai/gpt_neo/__init__.py,sha256=KwtterRLFv5Of9nUa9Gjpoea8wVs4VutlYnbX1hx_Kg,33
+padthai/gpt_neo/model.py,sha256=fVPRhfwPzC7RVUoqyYyZalyGIAuc5AESTRSjfB49wsY,8724
+padthai-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+padthai-0.2.0.dist-info/METADATA,sha256=ZPBbcewC1zQFiVSBV2s2vv9U5LqP2SjQb-qU1w8jbVQ,1524
+padthai-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+padthai-0.2.0.dist-info/top_level.txt,sha256=LnB68v2k05r97J_mrdCFBFm9_-kMcYrDy41R5OKKQBM,8
+padthai-0.2.0.dist-info/RECORD,,
