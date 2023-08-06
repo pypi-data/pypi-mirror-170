@@ -1,0 +1,9 @@
+wordseg/__init__.py,sha256=n793rQO_CQAmGL4bDnhU9ggVZCxfHkqa2sHhIx8Hwkk,352
+wordseg/base_segmenter.py,sha256=_nyC01Hhepzs1sgiCe2DamphAdfeN-dNy--iN5BbziI,1547
+wordseg/longest_string_matching.py,sha256=PEgft6hOj-2W0z2Fa3PMKzdlQOd4to3tGWMFD4pAeGE,1692
+wordseg/random_segmenter.py,sha256=BQhIUg6_5Kp-6VO76nJsrVemuCrngrkXmWmY5n-36Rs,1294
+wordseg-0.0.4.dist-info/LICENSE.txt,sha256=uze_lgBh57lXZgZaoHePcKSKg4s6TlpxHXzMMtH4fS4,1076
+wordseg-0.0.4.dist-info/METADATA,sha256=72ss1yasmrY-M-rvDBlaGaHoR1NL6-vthSS8Nok_h0o,4951
+wordseg-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wordseg-0.0.4.dist-info/top_level.txt,sha256=eiijcNAYQzlmIs0KpHjeQ7u8EoY48qL5EKproEdnCWA,8
+wordseg-0.0.4.dist-info/RECORD,,
