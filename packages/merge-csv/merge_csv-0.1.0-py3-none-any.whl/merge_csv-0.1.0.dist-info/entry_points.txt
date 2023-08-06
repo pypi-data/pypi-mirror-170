@@ -1,0 +1,4 @@
+[console_scripts]
+mcsv=merge_csv:merge_csv
+merge_csv=merge_csv:merge_csv
+
