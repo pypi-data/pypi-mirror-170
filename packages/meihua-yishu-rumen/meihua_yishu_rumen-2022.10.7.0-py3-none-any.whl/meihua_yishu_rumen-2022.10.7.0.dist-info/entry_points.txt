@@ -1,0 +1,4 @@
+[console_scripts]
+MeihuaYishuRumen = MeihuaYishuRumen.__main__:main
+meihua-yishu-rumen = MeihuaYishuRumen.__main__:main
+
