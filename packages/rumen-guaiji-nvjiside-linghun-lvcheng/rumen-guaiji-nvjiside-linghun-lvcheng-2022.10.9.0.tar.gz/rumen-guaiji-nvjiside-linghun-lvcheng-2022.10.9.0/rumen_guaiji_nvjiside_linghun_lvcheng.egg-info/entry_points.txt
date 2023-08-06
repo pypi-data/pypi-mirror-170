@@ -1,0 +1,4 @@
+[console_scripts]
+RumenGuaijiNvjisideLinghunLvcheng = RumenGuaijiNvjisideLinghunLvcheng.__main__:main
+rumen-guaiji-nvjiside-linghun-lvcheng = RumenGuaijiNvjisideLinghunLvcheng.__main__:main
+
