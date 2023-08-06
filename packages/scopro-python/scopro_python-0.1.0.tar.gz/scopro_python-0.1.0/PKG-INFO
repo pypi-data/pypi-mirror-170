@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: scopro_python
+Version: 0.1.0
+Summary: "SCOPRO_python (SCOre PROjection) is a python package that assigns a score projection from 0 to 1 between a given in vivo stage and each single cluster from an in vitro dataset. The score is assigned based on the the fraction of specific markers of the in vivo stage that are conserved in the in vitro clusters."
+Home-page: https://github.com/ScialdoneLab/SCOPRO_python
+Author: Marco Stock
+Author-email: marco.stock@tum.de
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SCOPRO_python
+

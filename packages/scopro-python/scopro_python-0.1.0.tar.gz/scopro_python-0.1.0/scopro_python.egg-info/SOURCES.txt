@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+scopro_python/__init__.py
+scopro_python/scopro.py
+scopro_python.egg-info/PKG-INFO
+scopro_python.egg-info/SOURCES.txt
+scopro_python.egg-info/dependency_links.txt
+scopro_python.egg-info/requires.txt
+scopro_python.egg-info/top_level.txt
