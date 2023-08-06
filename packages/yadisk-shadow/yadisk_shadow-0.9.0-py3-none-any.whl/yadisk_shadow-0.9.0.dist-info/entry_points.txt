@@ -1,0 +1,2 @@
+[console_scripts]
+yadisk-shadow = yadisk_shadow.yadisk_shadow:main

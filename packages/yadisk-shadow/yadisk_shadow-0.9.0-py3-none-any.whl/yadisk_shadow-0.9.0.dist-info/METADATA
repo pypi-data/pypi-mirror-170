@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: yadisk-shadow
+Version: 0.9.0
+Summary: Yandex Disk Shared Folders Metadata & Files Downloader
+Project-URL: Homepage, https://github.com/regnveig/yadisk-shadow
+Project-URL: Bug Tracker, https://github.com/regnveig/yadisk-shadow/issues
+Author-email: Emil Viesná <regnveig@yandex.ru>
+License-File: LICENSE
+Keywords: disk,downloader,shared,yandex
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Requires-Dist: requests
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# yadisk-shadow
+
+Yandex Disk Shared Folders Metadata & Files Downloader
+
+## Usage
+
+Download shared folder metadata (file tree):
+
+```bash
+# Full tree meta
+yadisk-shadow Metadata -l "https://disk.yandex.ru/d/XXXXXXXXXXXXXX" -o "metadata.json"
+
+# Subfolder meta
+yadisk-shadow Metadata -l "https://disk.yandex.ru/d/XXXXXXXXXXXXXX" -o "metadata.json" -s "/my/shared/subfolder"
+```
+
+Download files:
+
+```bash
+yadisk-shadow Download -d "/my/parent/directory" -m "metadata.json"
+```
