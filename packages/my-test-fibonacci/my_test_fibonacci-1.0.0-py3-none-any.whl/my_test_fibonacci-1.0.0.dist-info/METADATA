@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: my-test-fibonacci
+Version: 1.0.0
+Summary: implementation of fibonacci function
+Home-page: UNKNOWN
+Maintainer: Ru Zhang
+Maintainer-email: heavenmarshal@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: numpy (>=1.21.0)
+
+UNKNOWN
+
