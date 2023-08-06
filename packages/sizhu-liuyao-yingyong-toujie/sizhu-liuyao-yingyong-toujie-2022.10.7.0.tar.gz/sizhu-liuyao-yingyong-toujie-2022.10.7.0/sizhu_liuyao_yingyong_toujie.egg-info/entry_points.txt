@@ -1,0 +1,4 @@
+[console_scripts]
+SizhuLiuyaoYingyongToujie = SizhuLiuyaoYingyongToujie.__main__:main
+sizhu-liuyao-yingyong-toujie = SizhuLiuyaoYingyongToujie.__main__:main
+
