@@ -1,0 +1,4 @@
+include a_pandas_ex_intersection_difference/requirements.txt
+include a_pandas_ex_intersection_difference/thirdparty.json
+include a_pandas_ex_intersection_difference/README.MD
+include a_pandas_ex_intersection_difference/LICENSE

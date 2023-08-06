@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+a_pandas_ex_intersection_difference/LICENSE
+a_pandas_ex_intersection_difference/README.MD
+a_pandas_ex_intersection_difference/__init__.py
+a_pandas_ex_intersection_difference/requirements.txt
+a_pandas_ex_intersection_difference/thirdparty.json
+a_pandas_ex_intersection_difference.egg-info/PKG-INFO
+a_pandas_ex_intersection_difference.egg-info/SOURCES.txt
+a_pandas_ex_intersection_difference.egg-info/dependency_links.txt
+a_pandas_ex_intersection_difference.egg-info/requires.txt
+a_pandas_ex_intersection_difference.egg-info/top_level.txt
