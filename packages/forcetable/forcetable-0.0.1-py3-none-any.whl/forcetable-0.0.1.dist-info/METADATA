@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: forcetable
+Version: 0.0.1
+Summary: Creates records and fields also calculates fields cartesian product.
+Home-page: https://github.com/sekgobela-kevin/forcetable
+Author: Sekgobela Kevin
+Author-email: kevinnoko23@gmail.com
+Project-URL: Bug Tracker, https://github.com/sekgobela-kevin/forcetable/issues
+Keywords: fields,records,table,items
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: prodius
+
