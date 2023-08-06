@@ -1,0 +1,4 @@
+[console_scripts]
+DongwuLingqiLiaoyu = DongwuLingqiLiaoyu.__main__:main
+dongwu-lingqi-liaoyu = DongwuLingqiLiaoyu.__main__:main
+
