@@ -1,0 +1,15 @@
+node.ext.fs-1.0-py3.7-nspkg.pth,sha256=pxdpyNuhNcjU-Q29nqcnNrSi8_bXTB9R8mmVN4Vu3o0,1654
+node/ext/fs/__init__.py,sha256=eyFZSd-5xSF1DTEhSFkAb5kDU6fyZHlP8mkXMeb7NmM,471
+node/ext/fs/directory.py,sha256=WOL23ICqJGFnlGECF8csSfx8kVFv0LXW1myaMPPKR7w,5478
+node/ext/fs/file.py,sha256=Zi7npOTTRlxxmq17oxa2hMCGqiv968doqe9sWJtK62c,2638
+node/ext/fs/interfaces.py,sha256=NjnZ1wgUhNO1lKpdA9Sdt7pDPixtlwkTqfoq0nnfGyM,1834
+node/ext/fs/location.py,sha256=RUQB0kOcahqJqYSCMZMEO-JJ_x9d8Uw1fU4oIGqcSk0,894
+node/ext/fs/mode.py,sha256=UmtZWbKMfnNRvpRnN9OS2brElZkLx_W8_yo7D2jjd5M,981
+node/ext/fs/tests.py,sha256=cvXu8xXVGedttUsB_izUTDcXjZVLEDXj7YOUatdgtI0,20317
+node.ext.fs-1.0.dist-info/LICENSE.rst,sha256=jgfTO2MvCoa9u5jneRQCwHVN-IgQ8IaI1sbDUJXyuWs,1378
+node.ext.fs-1.0.dist-info/METADATA,sha256=453K3kAifyHVwYlK8h_oqBDeRY93MAiNid2-Ih1xKgA,12050
+node.ext.fs-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+node.ext.fs-1.0.dist-info/namespace_packages.txt,sha256=uhxsfV4otbiU8wWTd9fCwrpB5uZeLpNnCVctg9p35uY,14
+node.ext.fs-1.0.dist-info/top_level.txt,sha256=OJtG8ERXOPa1F97xZcPkkO-i64glxpW4rIIhVl545Po,5
+node.ext.fs-1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+node.ext.fs-1.0.dist-info/RECORD,,
