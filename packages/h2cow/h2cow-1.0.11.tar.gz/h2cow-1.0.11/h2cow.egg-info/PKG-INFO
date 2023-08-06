@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: h2cow
+Version: 1.0.11
+Summary: Monitoring drinking behaviour of animals.
+Home-page: https://github.com/danielvh8/Master-Research-Project-2022
+Author: Daniël M. van Herwijnen
+Author-email: danielvh8@gmail.com
+License: MIT
+Requires-Python: ==3.10.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Master-Research-Project-2022
+Cow identification and diurnal drinking monitoring
