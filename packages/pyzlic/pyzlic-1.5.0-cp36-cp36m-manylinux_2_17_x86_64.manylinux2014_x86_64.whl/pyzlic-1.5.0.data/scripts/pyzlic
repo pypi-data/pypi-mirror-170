@@ -1,0 +1,238 @@
+#!python
+# -*- coding: utf-8 -*-
+
+import argparse
+import sys
+import re
+from datetime import datetime, timedelta, timezone
+
+import zlic
+import zlic.version
+from zlic import util as zlicutil
+from zlic.licfile import License, LicenseFile
+from zlic.licfile import LicenseFormatError, InvalidLicenseFile
+from zlic.security import RSAKey, RSAKeyError
+
+
+# Regular expression utility class
+##############################################################################
+
+class Re(object):
+    """Wraps a regular expression and also saves its last match."""
+
+    def __init__(self, regex, ignore_case=False):
+        flags = re.IGNORECASE if ignore_case else 0
+        self._regex = re.compile(regex, flags)
+        self._last_match = None
+
+    @property
+    def last_match(self):
+        return self._last_match
+
+    def match(self, text):
+        self._last_match = self._regex.match(text)
+        return self._last_match
+
+    def search(self, text):
+        self._last_match = self._regex.search(text)
+        return self._last_match
+
+    def group(self, identifier):
+        return self._last_match.group(identifier)
+
+    def groups(self):
+        return self._last_match.groups()
+
+
+#
+##############################################################################
+
+def main() -> int:
+    try:
+        print("PyZLic, using zlic version {0} {1}".format(
+            zlic.version.__version__, zlic.version.version_info.release_level))
+
+        args = parse_command_line(sys.argv[1:])
+        return args.run_fn(args)
+    except KeyboardInterrupt:
+        print("Program interrupted by user")
+
+
+#
+##############################################################################
+
+def run_generate_key(args) -> int:
+    if args.key_size < 1024:
+        print("Key size must be at least 1024 bits")
+        return -1
+
+    try:
+        print("Generating new key ({0} bits)".format(args.key_size))
+        key = RSAKey.new_key(args.key_size)
+
+        private_path = args.prefix + "-key.pem"
+        public_path = args.prefix + ".pem"
+
+        print(" + Private key:", private_path)
+        if args.password:
+            key.save_private_key_as_pem(private_path, args.password)
+            print("  - Private key encrypted")
+        else:
+            key.save_private_key_as_pem(private_path)
+
+        print(" + Public key:", public_path)
+        key.save_public_key_as_pem(public_path)
+        return 0
+    except (IOError, PermissionError, RSAKeyError) as e:
+        print("[ERROR]", e)
+        return -1
+
+
+#
+##############################################################################
+
+def run_generate_license(args) -> int:
+    try:
+        if args.password:
+            key = RSAKey.load_pem_private_key(args.key, args.password)
+        else:
+            key = RSAKey.load_pem_private_key(args.key)
+
+        print("Please introduce the requested data")
+        print("")
+        print(" -- Date formats --")
+        print("  * 10-05-2010 15:00:00+0000")
+        print("  * now       (current date & time)")
+        print("  * today     (current date)")
+        print("  * +<days>   (add days to 'today')")
+        print("")
+
+        organization = input("Organization: ").strip()
+        username = input("Username: ").strip()
+        issued = datetime.utcnow().replace(tzinfo=timezone.utc)
+        start = read_date("Start date: ")
+        end = read_date("End date: ")
+
+        lic = License(organization=organization,
+                      username=username,
+                      issued_date=issued,
+                      start_date=start,
+                      end_date=end)
+        f_lic = LicenseFile(lic)
+        f_lic.save_file(args.output, key)
+    except (ValueError, FileNotFoundError, RSAKeyError) as e:
+        print("[ERROR]", e)
+        return -1
+
+    return 0
+
+
+#
+##############################################################################
+
+def run_validate_license(args) -> int:
+    key = RSAKey.load_pem_public_key(args.key)
+    try:
+        lic = LicenseFile.load_file(args.license)
+        print("Validating file:", args.license)
+        lic.validate(key)
+        print("Validation ok")
+    except InvalidLicenseFile as e:
+        print("Validation failed, causes:")
+        for err in e.errors:
+            print(" *", err)
+        return -10
+    except (FileNotFoundError, LicenseFormatError) as e:
+        print("[ERROR]", e)
+        return -1
+
+    return 0
+
+
+# Utility functions
+##############################################################################
+
+def read_date(msg):
+    re_now = Re(r'\s*[Nn][Oo][Ww]\s*')
+    re_today = Re(r'\s*[Tt][Oo][Dd][Aa][Yy]\s*')
+    re_days = Re(r'\s*\+(\d+)')
+
+    now = datetime.utcnow().replace(tzinfo=timezone.utc)
+    today = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    while True:
+        try:
+            t = input(msg).strip()
+            if re_now.match(t):
+                return now
+            if re_today.match(t):
+                return today
+            elif re_days.match(t):
+                return today + timedelta(days=int(re_days.group(1)))
+            return zlicutil.parse_datetime(t)
+        except ValueError:
+            print("Could not parse date, try again")
+
+
+#
+##############################################################################
+
+def parse_command_line(args):
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    subparsers = parser.add_subparsers(dest='command')
+    subparsers.required = True
+
+    # ----- generate key -----
+
+    gk_parser = subparsers.add_parser(
+        'genkey',
+        help="Generates a pair of keys (private, public) to create and"
+             " validate licences.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
+    gk_parser.add_argument('-s', '--key-size', type=int, default=1024,
+                           help="Size of the generated keys in bytes.")
+    gk_parser.add_argument('-p', '--password', default=None,
+                           help="Password to protect the private key.")
+    gk_parser.add_argument('--prefix', default="lickey",
+                           help="Output file prefix.")
+
+    gk_parser.set_defaults(run_fn=run_generate_key)
+
+    # ----- generate license -----
+
+    gl_parser = subparsers.add_parser(
+        'genlic', help="Generates a license.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
+    gl_parser.add_argument('-k', '--key', required=True,
+                           help="PEM file with the key to sign the license.")
+    gl_parser.add_argument('-o', '--output', default="license.lic",
+                           help="License file name.")
+    gl_parser.add_argument('-p', '--password', default=None,
+                           help="Key file password.")
+
+    gl_parser.set_defaults(run_fn=run_generate_license)
+
+    # ----- validate license -----
+
+    v_parser = subparsers.add_parser(
+        'validate', help="Validates a license.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
+    v_parser.add_argument('-k', '--key', required=True,
+                          help="PEM file with the key to validate the"
+                               " license.")
+    v_parser.add_argument('-l', '--license', required=True,
+                          help="License file.")
+
+    v_parser.set_defaults(run_fn=run_validate_license)
+
+    return parser.parse_args(args)
+
+
+#
+##############################################################################
+
+if __name__ == '__main__':
+    sys.exit(main())

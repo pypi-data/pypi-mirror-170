@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyzlic
+Version: 1.5.0
+Summary: UNKNOWN
+Home-page: https://ulog.udl.cat
+Author: Logic and Optimization Group
+Author-email: 
+License: UNKNOWN
+Keywords: license validation security
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography (>=1.2.3)
+
+Pyzlic
+======
+
+Python library to create, load and validate local license files. This library
+aims to provide a simple but good enough mechanism to include a licensing
+system into your software, specially at early stages.
+
