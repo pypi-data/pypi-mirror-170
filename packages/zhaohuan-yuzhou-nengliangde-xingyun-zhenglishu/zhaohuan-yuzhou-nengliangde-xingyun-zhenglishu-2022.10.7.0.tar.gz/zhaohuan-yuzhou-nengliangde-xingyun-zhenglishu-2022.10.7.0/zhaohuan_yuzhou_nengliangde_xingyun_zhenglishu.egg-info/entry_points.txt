@@ -1,0 +1,4 @@
+[console_scripts]
+ZhaohuanYuzhouNengliangdeXingyunZhenglishu = ZhaohuanYuzhouNengliangdeXingyunZhenglishu.__main__:main
+zhaohuan-yuzhou-nengliangde-xingyun-zhenglishu = ZhaohuanYuzhouNengliangdeXingyunZhenglishu.__main__:main
+
