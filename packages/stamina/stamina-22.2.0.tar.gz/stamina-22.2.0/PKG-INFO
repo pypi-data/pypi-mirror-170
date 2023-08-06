@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: stamina
+Version: 22.2.0
+Summary: Easy mode for Tenacity.
+Project-URL: Documentation, https://github.com/hynek/stamina#readme
+Project-URL: Source, https://github.com/hynek/stamina
+Project-URL: Changelog, https://github.com/hynek/stamina/blob/main/CHANGELOG.md
+Project-URL: Funding, https://github.com/sponsors/hynek
+Project-URL: Ko-fi, https://ko-fi.com/the_hynek
+Author-email: Hynek Schlawack <hs@ox.cx>
+License-File: LICENSE
+Keywords: reliability,retries,retry,tenacity
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Requires-Dist: tenacity
+Requires-Dist: typing-extensions; python_version < '3.10'
+Provides-Extra: dev
+Requires-Dist: nox; extra == 'dev'
+Requires-Dist: stamina[tests,typing]; extra == 'dev'
+Provides-Extra: tests
+Requires-Dist: pytest; extra == 'tests'
+Requires-Dist: pytest-asyncio; extra == 'tests'
+Provides-Extra: typing
+Requires-Dist: mypy; extra == 'typing'
+Description-Content-Type: text/markdown
+
+# stamina
+
+[![PyPI - Version](https://img.shields.io/pypi/v/stamina.svg)](https://pypi.org/project/stamina)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/stamina.svg)](https://pypi.org/project/stamina)
+[![License: MIT](https://img.shields.io/badge/license-MIT-C06524)](https://github.com/hynek/stamina/blob/main/LICENSE)
+
+
+Transient failures are common in distributed systems.
+To deal with them, you need to **retry** failed operations.
+[*Tenacity*](https://tenacity.readthedocs.io/) is an *amazing* and beautifully *composable* toolkit for handling retries that I've been using it for years.
+In practice, I've found myself to use only very few knobs and wished it wouldn't erase the types of the callables that I decorate with `@tenacity.retry`.
+
+*stamina* is an **opinionated** thin layer around *Tenacity* that I've been copy-pasting between my projects for a long time:
+
+- Retry only on certain exceptions.
+- [Exponential backoff with _jitter_](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/) between retries.
+- Limit the number of retries **and** total time.
+- Preserve type hints of the decorated callable.
+- Count ([*Prometheus*](https://github.com/prometheus/client_python)) and log ([*structlog*](https://www.structlog.org/)) retries with basic metadata (if they're installed).
+- Easy deactivation for testing.
+
+
+## Release Information
+
+### Added
+
+- Retries are now instrumented.
+  If [*prometheus-client*](https://github.com/prometheus/client_python) is installed, retries are counted using the *Prometheus* counter `stamina_retries_total`.
+  If [*structlog*](https://www.structlog.org/) is installed, they are logged using a *structlog* logger at warning level.
+  These two instrumentations are *independent* from each other.
+
+
+## License
+
+*stamina* is written by [Hynek Schlawack](https://hynek.me/) and distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
