@@ -1,0 +1,4 @@
+[console_scripts]
+XiyinliFazeYouqiubiying = XiyinliFazeYouqiubiying.__main__:main
+xiyinli-faze-youqiubiying = XiyinliFazeYouqiubiying.__main__:main
+
