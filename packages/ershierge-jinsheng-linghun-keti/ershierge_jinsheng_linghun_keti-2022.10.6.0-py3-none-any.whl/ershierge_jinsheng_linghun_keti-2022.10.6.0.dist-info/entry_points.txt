@@ -1,0 +1,4 @@
+[console_scripts]
+ErshiergeJinshengLinghunKeti = ErshiergeJinshengLinghunKeti.__main__:main
+ershierge-jinsheng-linghun-keti = ErshiergeJinshengLinghunKeti.__main__:main
+
