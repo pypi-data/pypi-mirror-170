@@ -1,0 +1,10 @@
+tcd_pipeline/__init__.py,sha256=G4gN3_q3D-wgkdCFN7SFwS_iY7jo0GuTaHIBUlK4qFw,136
+tcd_pipeline/commands/generate_workflows.py,sha256=sM5wRRUyKjJK-0LN2r2WUJLveutduWtBNqo529DgR40,777
+tcd_pipeline/config/logging.yaml,sha256=zX_52tPjIXTeNOmjU4eCXdyBXtIvj11XrO85svbd06M,536
+tcd_pipeline/config/logging_config.py,sha256=CiBvT0DNOpteInLbSwy9uUR-eKS9TPYC4G5oMS0X004,2424
+tcd_pipeline/main.py,sha256=1PbFSUWHql9N7RBD3_1wT6SCI1lx-oz07QmMhynEXl0,273
+tcd_pipeline/pipeline.py,sha256=MgznsZ7P6o4MkGyAobKo61PxQBgrBLLHS1e0btqCZPo,4684
+tcd_pipeline-0.1.2.dist-info/entry_points.txt,sha256=sJXehvIsJjgaGlv-IOdYoQ3M4wSUg33P6vs5Ppp2DNQ,54
+tcd_pipeline-0.1.2.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+tcd_pipeline-0.1.2.dist-info/METADATA,sha256=ZgDR8bmsNo7INIIvqKZ5rdf6SzyX51QFnMZtK8vXN0w,380
+tcd_pipeline-0.1.2.dist-info/RECORD,,
