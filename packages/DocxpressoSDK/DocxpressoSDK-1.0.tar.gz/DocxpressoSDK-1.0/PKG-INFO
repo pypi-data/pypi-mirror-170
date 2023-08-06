@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: DocxpressoSDK
+Version: 1.0
+Summary: SDK package
+Home-page: https://docxpresso.com
+Author: Docxpresso
+Author-email: eduardo@docxpresso.com
+License: MIT
+Keywords: Docxpresso SDK
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# Docxpresso
+
+This is the python version of Docxpresso SDK
+
+
+## Install
+### Prerequisites
+- Python 3.9
+
+### Install Package
+```
+pip install DocxpressoSDK
+```
+
+## Quick Start
+The following is the minimum needed code to generate a one time link. Use this example, and modify the data[] variables:
+
+```python
+
+import DocxpressoSDK
+
+
+Example = DocxpressoSDK.Utils({'pKey':'*********','docxpressoInstallation':'***********'})
+
+data = {}
+data['id'] = 1111
+data['token'] = '*******'
+
+Example.regenerateDocument(data)
+
+
+```
+
+Once you execute this code, it will generate a one time link to validate a document in the associated Docxpresso SERVER interface
+
+
+
+
+Change Log
+==========
+
+1.0.0 (4/10/2022)
+------------------    
+- first Release
