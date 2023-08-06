@@ -1,0 +1,5 @@
+setup.py
+QQABC.py.egg-info/PKG-INFO
+QQABC.py.egg-info/SOURCES.txt
+QQABC.py.egg-info/dependency_links.txt
+QQABC.py.egg-info/top_level.txt
