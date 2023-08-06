@@ -1,0 +1,7 @@
+acme>=0.21.1
+certbot>=0.21.1
+dns-lexicon>=2.2.1
+mock
+setuptools
+zope.interface
+PyNamecheap

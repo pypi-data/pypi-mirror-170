@@ -1,0 +1,3 @@
+[certbot.plugins]
+dns-namecheap = certbot_dns_namecheap.dns_namecheap:Authenticator
+

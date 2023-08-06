@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+certbot_dns_namecheap/__init__.py
+certbot_dns_namecheap/dns_namecheap.py
+certbot_dns_namecheap/dns_namecheap_test.py
+certbot_dns_namecheap.egg-info/PKG-INFO
+certbot_dns_namecheap.egg-info/SOURCES.txt
+certbot_dns_namecheap.egg-info/dependency_links.txt
+certbot_dns_namecheap.egg-info/entry_points.txt
+certbot_dns_namecheap.egg-info/requires.txt
+certbot_dns_namecheap.egg-info/top_level.txt
