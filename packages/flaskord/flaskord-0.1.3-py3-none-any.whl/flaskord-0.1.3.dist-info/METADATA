@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: flaskord
+Version: 0.1.3
+Summary: Simple discord API-requester. Especially cool with flask, but you can use it anywhere
+Home-page: https://github.com/Fadix47/flaskord
+Author: Fadix Meier
+Author-email: fadix18123@gmail.com
+Project-URL: Bug Tracker, https://github.com/Fadix47/flaskord/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+
+**Documentation**
+You can find documentation here: https://github.com/Fadix47/flaskord/blob/main/README.md
