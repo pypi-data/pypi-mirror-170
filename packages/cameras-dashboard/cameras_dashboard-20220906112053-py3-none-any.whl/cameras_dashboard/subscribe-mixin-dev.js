@@ -1,0 +1,10 @@
+const __DEMO__ = false;
+    const __SUPERVISOR__ = true;
+    const __BUILD__ = "latest"
+
+import { _ as _decorate, d as e, j as _get, k as _getPrototypeOf } from './main-dev.js';
+
+const SubscribeMixin=superClass=>{let SubscribeClass=_decorate(null,function(_initialize,_superClass){class SubscribeClass extends _superClass{constructor(...args){super(...args);_initialize(this);}}return {F:SubscribeClass,d:[{kind:"field",decorators:[e({attribute:false})],key:"hass",value:void 0},{kind:"field",key:"hassSubscribeRequiredHostProps",value:void 0},{kind:"field",key:"__unsubs",value:void 0},{kind:"method",key:"connectedCallback",value:// we wait with subscribing till these properties are set on the host element
+function connectedCallback(){_get(_getPrototypeOf(SubscribeClass.prototype),"connectedCallback",this).call(this);this.__checkSubscribed();}},{kind:"method",key:"disconnectedCallback",value:function disconnectedCallback(){_get(_getPrototypeOf(SubscribeClass.prototype),"disconnectedCallback",this).call(this);if(this.__unsubs){while(this.__unsubs.length){const unsub=this.__unsubs.pop();if(unsub instanceof Promise){unsub.then(unsubFunc=>unsubFunc());}else {unsub();}}this.__unsubs=undefined;}}},{kind:"method",key:"updated",value:function updated(changedProps){_get(_getPrototypeOf(SubscribeClass.prototype),"updated",this).call(this,changedProps);if(changedProps.has("hass")){this.__checkSubscribed();return;}if(!this.hassSubscribeRequiredHostProps){return;}for(const key of changedProps.keys()){if(this.hassSubscribeRequiredHostProps.includes(key)){this.__checkSubscribed();return;}}}},{kind:"method",key:"hassSubscribe",value:function hassSubscribe(){return [];}},{kind:"method",key:"__checkSubscribed",value:function __checkSubscribed(){var _this$hassSubscribeRe;if(this.__unsubs!==undefined||!this.isConnected||this.hass===undefined||(_this$hassSubscribeRe=this.hassSubscribeRequiredHostProps)!==null&&_this$hassSubscribeRe!==void 0&&_this$hassSubscribeRe.some(prop=>this[prop]===undefined)){return;}this.__unsubs=this.hassSubscribe();}}]};},superClass);return SubscribeClass;};
+
+export { SubscribeMixin as S };
