@@ -1,0 +1,4 @@
+[console_scripts]
+ChuangzaoShengmingdeQiji = ChuangzaoShengmingdeQiji.__main__:main
+chuangzao-shengmingde-qiji = ChuangzaoShengmingdeQiji.__main__:main
+
