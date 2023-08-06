@@ -1,0 +1,3 @@
+[console_scripts]
+modTable = modTable.__main__:main
+

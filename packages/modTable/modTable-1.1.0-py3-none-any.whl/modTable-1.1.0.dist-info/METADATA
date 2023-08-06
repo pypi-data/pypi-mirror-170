@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: modTable
+Version: 1.1.0
+Summary: Prints addition and multiplication tables for Z mod m*Z
+Home-page: https://github.com/jrowellfx/modTable
+Author: James Philip Rowell
+Author-email: james@alpha-eleven.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# About modTable
+
+`modTable` prints the addition and multiplication tables for
+the ring of integers modulo n, denoted &#8484;/n&#8484;. The ring of integers
+modulo n is a field, if and only if n is prime.
+
+
