@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/chandler/__init__.py
+src/chandler/handler.py
+src/chandler_handler.egg-info/PKG-INFO
+src/chandler_handler.egg-info/SOURCES.txt
+src/chandler_handler.egg-info/dependency_links.txt
+src/chandler_handler.egg-info/requires.txt
+src/chandler_handler.egg-info/top_level.txt
