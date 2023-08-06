@@ -1,0 +1,4 @@
+[console_scripts]
+XinxiangshichengdeHuangjinSanbuzhou = XinxiangshichengdeHuangjinSanbuzhou.__main__:main
+xinxiangshichengde-huangjin-sanbuzhou = XinxiangshichengdeHuangjinSanbuzhou.__main__:main
+
