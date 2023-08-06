@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tmpl8/__init__.py
+tmpl8/cli.py
+tmpl8/command.py
+tmpl8/data.py
+tmpl8/template.py
+tmpl8.egg-info/PKG-INFO
+tmpl8.egg-info/SOURCES.txt
+tmpl8.egg-info/dependency_links.txt
+tmpl8.egg-info/entry_points.txt
+tmpl8.egg-info/requires.txt
+tmpl8.egg-info/top_level.txt
