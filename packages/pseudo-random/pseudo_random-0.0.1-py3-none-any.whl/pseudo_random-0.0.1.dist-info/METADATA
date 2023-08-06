@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pseudo-random
+Version: 0.0.1
+Summary: Python library for generating pseudo-random numbers
+Home-page: https://github.com/jlara6/pseudo_random
+Author: Jorge Lara
+Author-email: jlara@iee.unsj.edu.ar
+License: BSD license
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+
+UNKNOWN
+
+
