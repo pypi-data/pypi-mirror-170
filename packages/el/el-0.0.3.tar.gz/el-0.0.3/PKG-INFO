@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: el
+Version: 0.0.3
+Summary: Includes functions to manipulate adwords datasets
+Home-page: https://github.com/thorwhalen/ut/tree/master/aw/manip.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# el
+Includes functions to manipulate adwords datasets
+
+
+To install:	```pip install el```
+
+
