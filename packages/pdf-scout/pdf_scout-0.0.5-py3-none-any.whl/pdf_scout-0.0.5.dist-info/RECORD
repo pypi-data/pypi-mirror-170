@@ -1,0 +1,12 @@
+pdf_scout/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_scout/app.py,sha256=Ro80Oc3TgEKctLrF-uCAG92qiiRRzQ8NlEY1yX9rlm4,1883
+pdf_scout/bookmarks.py,sha256=_W_FSF8uxRPfmYGCzeEyPALcAAmYICd0e4AgHqld44c,2682
+pdf_scout/cache.py,sha256=ITQ-LQ2qh5Ybc6Hkq5az_Wp3rE96DogRjVUiJYoJGVY,208
+pdf_scout/extract.py,sha256=zf1l4UUmnXb2bKNIJBjDZMk73m-fPHpHWbp2bF93Q2E,6169
+pdf_scout/logger.py,sha256=1z7yB_lt0tzZHiqXBn-ZulVqMwHInEe1wyNTV0cvPSQ,234
+pdf_scout/scoring.py,sha256=Cr4e7LNYcrxcEVXplJnaO6jA6jGwl3MwAmqFnWS7k6g,2597
+pdf_scout/types.py,sha256=0zkMtqDTc19zh7brLP2ODWTjqZ5n0Ij0dz1UEBrtKU8,726
+pdf_scout-0.0.5.dist-info/entry_points.txt,sha256=1ll1TOV2vCyVePcuIY_mr9cRhannTJR4xSuuV2xQPhs,49
+pdf_scout-0.0.5.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pdf_scout-0.0.5.dist-info/METADATA,sha256=yiFZxez9AkjyLosNGGYInPE3EIz3Of0Dwna3t1u5r2A,3022
+pdf_scout-0.0.5.dist-info/RECORD,,
