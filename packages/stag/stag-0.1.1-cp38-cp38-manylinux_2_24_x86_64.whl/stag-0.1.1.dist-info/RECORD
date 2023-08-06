@@ -1,0 +1,9 @@
+stag-0.1.1.dist-info/WHEEL,sha256=Z_Rb1HK01l8x9Vg4167UbAebNFSDPepf_z300ONs1JA,112
+stag-0.1.1.dist-info/top_level.txt,sha256=Ttz8ZkiYUA6OUCDajwPA7q-Rhlgwvmp0rk2JX7Jzevo,5
+stag-0.1.1.dist-info/RECORD,,
+stag-0.1.1.dist-info/METADATA,sha256=7DZNvc074Tryj8euQkXYYo8cVLCQF9hOTEZhlCNzuq4,633
+stag/utility.py,sha256=meAgJIFqo5F2xtTnXj7BBbKYHXKPi9B874blVLR6kQc,819
+stag/_stag_internal.cpython-38-x86_64-linux-gnu.so,sha256=QK6rSRLMuRzP4rutRXqWvVsX6cUlb9V5jw3dSsTs_Gc,3347056
+stag/graph.py,sha256=giapEsYoYmp5gWG_wr3EN0JMQt1FIUaJ7Lm1EOtjIEw,2254
+stag/__init__.py,sha256=SVnpZ2TzY0KEZYduyK-VuBR6BZPU2C_st5UgFz7v4UQ,46
+stag/stag_internal.py,sha256=yNUMRyI3yGAvJBFnX4D36DEWxVUSODF4VCoKsde6oI8,10826
