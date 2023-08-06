@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mirroclock_gczuczy.egg-info/PKG-INFO
+src/mirroclock_gczuczy.egg-info/SOURCES.txt
+src/mirroclock_gczuczy.egg-info/dependency_links.txt
+src/mirroclock_gczuczy.egg-info/entry_points.txt
+src/mirroclock_gczuczy.egg-info/requires.txt
+src/mirroclock_gczuczy.egg-info/top_level.txt
+src/mirrorclock/api.py
+src/mirrorclock/bi.py
+src/mirrorclock/cli.py
+src/mirrorclock/wsgi.py
