@@ -1,0 +1,4 @@
+[console_scripts]
+NibuzhidaodeZiranLiaofa = NibuzhidaodeZiranLiaofa.__main__:main
+nibuzhidaode-ziran-liaofa = NibuzhidaodeZiranLiaofa.__main__:main
+
