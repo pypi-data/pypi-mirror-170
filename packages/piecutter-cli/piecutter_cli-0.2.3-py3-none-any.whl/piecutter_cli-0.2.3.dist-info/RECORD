@@ -1,0 +1,13 @@
+piecutter/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+piecutter/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+piecutter/commands/add.py,sha256=CQ_5OwnMtq0iaEyMTXoYXpFiw5x0pSXjVoDmNdvEiP0,2039
+piecutter/generators/code.py,sha256=BWGll87E9kU-9_VRLmH7A1Ztk2-OaoT2vQ7hWTfDZa0,14747
+piecutter/generators/files.py,sha256=VovP6yTlAR-hfAbUaALOQJYK2ftS6F3sn6VQ9jcx9jQ,1714
+piecutter/generators/folders.py,sha256=nioSni23wkKPGQ3R_t7DdTGCpuMf4BYCs1rEDBXl0sM,981
+piecutter/main.py,sha256=_bCQCCsIFyEJWrvkSw3raUv846sVobKfDKgO4b65jMw,1983
+piecutter/utils.py,sha256=3GZrtPqYtZ94QcCJa5_QUm_AVReeMJLOuBCr7JvYvdA,504
+piecutter_cli-0.2.3.dist-info/entry_points.txt,sha256=W09JE95a_8zwnSCBtlvZJufw4-i94wo3F3ym3YLhpcY,48
+piecutter_cli-0.2.3.dist-info/LICENSE,sha256=RWUdavRcZ0s53o-1lRPPAyyF7RUS7lf1I8xblQ-AUGY,1070
+piecutter_cli-0.2.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+piecutter_cli-0.2.3.dist-info/METADATA,sha256=_i-hI3qnlef1ZCnrc7jcnMI0TTKW5-H2H4PZkpWOn2M,8371
+piecutter_cli-0.2.3.dist-info/RECORD,,
