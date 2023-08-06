@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: my-test-fibonacci
+Version: 1.0.1.dev1
+Summary: implementation of fibonacci function
+Maintainer: Ru Zhang
+Maintainer-email: heavenmarshal@gmail.com
+Requires-Python: >=3.7
