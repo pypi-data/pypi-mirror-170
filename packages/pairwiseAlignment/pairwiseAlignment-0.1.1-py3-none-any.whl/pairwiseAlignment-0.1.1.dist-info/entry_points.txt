@@ -1,0 +1,2 @@
+[console_scripts]
+pairwiseAlignment = main:main
