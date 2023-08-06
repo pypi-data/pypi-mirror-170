@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: KeyConfig
+Version: 0.0.2
+Summary: KeyConfig is a very simple module to read simple configuration files.
+Home-page: https://github.com/JHubi1/KeyConfig
+Author: JHubi
+Author-email: info@jh-web.xyz
+License: APACHE LICENSE, VERSION 2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+License-File: LICENSE
