@@ -1,0 +1,7 @@
+docx
+lxml
+Pillow
+PyPDF2
+typing_extensions
+python-docx
+regex
