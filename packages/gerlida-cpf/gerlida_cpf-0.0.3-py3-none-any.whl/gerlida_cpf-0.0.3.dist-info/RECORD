@@ -1,0 +1,9 @@
+gerlida_cpf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gerlida_cpf/gera_cpf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gerlida_cpf/gera_cpf/gerador_cpf.py,sha256=VobdYI96V_36aREPyLq0G5165FN6rBCUiPe8MMG6MlQ,981
+gerlida_cpf/valida_cpf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gerlida_cpf/valida_cpf/validacpf.py,sha256=Cx0ajgTNCp9h1DPU2mzHC2-I5p5FlCcFtZEv4-GjS8E,1186
+gerlida_cpf-0.0.3.dist-info/METADATA,sha256=G7CY6GPDA2tcz3iX1TxOOY0_52K_SI5eBbuft3_CQLs,853
+gerlida_cpf-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gerlida_cpf-0.0.3.dist-info/top_level.txt,sha256=zoyrxsAnVSwINQrSwpV4gsmftDeBThJP-TG-1X2RfGQ,12
+gerlida_cpf-0.0.3.dist-info/RECORD,,
