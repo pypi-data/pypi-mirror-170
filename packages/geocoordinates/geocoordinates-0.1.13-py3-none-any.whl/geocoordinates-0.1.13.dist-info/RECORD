@@ -1,0 +1,6 @@
+geocoordinates/__init__.py,sha256=3ACCfi697m5WuvSwUdbcQTYOPNwBMPuskGtPtGOTrNY,94
+geocoordinates/geocoordinates.py,sha256=eOUiX3Nlo0twuVvU2MkaVnSoW2Wgk8-DENwWiJVF0r4,4102
+geocoordinates/lla_coordinate_time_series.csv,sha256=odCvKdzEi_jM93BCVt0zMBLEx38-KK0eyJv_Z99dPeU,57459
+geocoordinates-0.1.13.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+geocoordinates-0.1.13.dist-info/METADATA,sha256=es12OVZZkJAf7-35NLgyKh0R_euc16VdBCxB3P-NkHo,1278
+geocoordinates-0.1.13.dist-info/RECORD,,
