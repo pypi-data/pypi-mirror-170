@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: stag
+Version: 0.1.2
+Summary: STAG - Spectral Algorithms for Graphs
+Home-page: https://pmacg.github.io
+Author: Peter Macgregor
+Author-email: <macgregor.pr@gmail.com>
+License: UNKNOWN
+Keywords: python,spectral,graph,algorithms,clustering,cheeger
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+Requires-Dist: scipy
+
+This library provides several methods and algorithms relating to spectral graph theory in python.
+
