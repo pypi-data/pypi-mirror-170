@@ -1,0 +1,5 @@
+flaco-0.6.0rc4.dist-info/METADATA,sha256=tilFeTtQqJqSUl-R_LtqvkwJH3nrMHWBdIhQhztcgms,3069
+flaco-0.6.0rc4.dist-info/WHEEL,sha256=oWEwOWivR3eRbtafY86jIBtm5UGJiuRYmHx_KgeOX0A,92
+flaco/__init__.py,sha256=MnDJshnFKxqiG_2woaB7FRcZadqnWuJZjjcMi4u12h4,103
+flaco/flaco.cp310-win32.pyd,sha256=b7ohFtutxsXjdXVxtcg149PmkBvOgCgH0dceoPnU2oU,2643968
+flaco-0.6.0rc4.dist-info/RECORD,,
