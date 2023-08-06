@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+fancyprint/__init__.py
+fancyprint/printer.py
+fancyprint.egg-info/PKG-INFO
+fancyprint.egg-info/SOURCES.txt
+fancyprint.egg-info/dependency_links.txt
+fancyprint.egg-info/top_level.txt
