@@ -1,0 +1,9 @@
+fastapi_sqla/__init__.py,sha256=79WHAr0nOJZQCwB5PiHX4RnJ_P_g-5tPmBxbzWGv-tw,10938
+fastapi_sqla/_pytest_plugin.py,sha256=MBPtlQwG-RxHbq0EE2jDs4nloCgJiogiLUKKI-sHBzg,5290
+fastapi_sqla/asyncio_support.py,sha256=1npem6dzUX9AxQo8klNp9ldwMWpL8XATHdXh6k-SKpY,3704
+fastapi_sqla/aws_rds_iam_support.py,sha256=mQEb7NQW3ogztBnU25bP5rf0HkEOBT-gi1LlfCCxzzQ,1106
+fastapi_sqla-2.4.0.dist-info/entry_points.txt,sha256=haa0EueKcRo8-AlJTpHBMn08wMBiULNGA53nkvaDWj0,53
+fastapi_sqla-2.4.0.dist-info/LICENSE,sha256=8G0-nWLqi3xRYRrtRlTE8n1mkYJcnCRoZGUhv6ZE29c,1064
+fastapi_sqla-2.4.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+fastapi_sqla-2.4.0.dist-info/METADATA,sha256=BaAJ4p6xZ9z4qFU1hCGzWBTGF83lg1FBE2QVRkpAJe0,15429
+fastapi_sqla-2.4.0.dist-info/RECORD,,
