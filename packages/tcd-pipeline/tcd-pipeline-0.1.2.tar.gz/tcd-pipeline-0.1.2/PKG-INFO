@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tcd-pipeline
+Version: 0.1.2
+Summary: 
+Author: chitchai
+Author-email: chitchaic@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Description-Content-Type: text/markdown
+
+# TCD pipeline tool
+
