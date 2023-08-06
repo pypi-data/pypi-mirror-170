@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: jemawa
+Version: 1.0.2
+Summary: Python CLI tool that spam the mentimeter live vote
+Home-page: https://github.com/k1m0ch1/jemawa-menti-choices-spammer
+Author: k1m0ch1
