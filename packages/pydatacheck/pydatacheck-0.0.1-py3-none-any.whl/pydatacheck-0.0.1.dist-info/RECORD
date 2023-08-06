@@ -1,0 +1,10 @@
+pydatacheck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydatacheck/configs.py,sha256=CISMwW-Y7FMh_4g0ulz1ZsEkLYkMDFQK708lJe3rURg,143
+pydatacheck/main.py,sha256=9DRIeF8VQNjHFUTC880lW3Ij0yDFz4AXbBxWpsS-M-g,502
+pydatacheck/route.py,sha256=2s-ow37c9pCLsVhEFjmzEFD3qq8PB-tdleYkwN3QDYo,34
+pydatacheck/static.py,sha256=qYjSUsNQf9e-l_wcdW-fcU3QqI0F6A7G2vkLih4sb4U,187
+pydatacheck-0.0.1.dist-info/LICENSE,sha256=B3D1kVWAgbBtYwPAnnRvqQs4sTkTuq3L9jbTt5P44LM,1069
+pydatacheck-0.0.1.dist-info/METADATA,sha256=solhEzcxY-DJHAMwitD89mQg6V-M0k_jcrmsxtNNBKE,1530
+pydatacheck-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pydatacheck-0.0.1.dist-info/top_level.txt,sha256=EHa6SRwnrDkW25-Fh2Z3Ea9ObH6u1Yo6ws_AaB1sAHM,12
+pydatacheck-0.0.1.dist-info/RECORD,,
