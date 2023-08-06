@@ -1,0 +1,10 @@
+
+        [ckan.plugins]
+        matomo=ckanext.matomo.plugin:MatomoPlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+
+        [paste.paster_command]
+        matomo = ckanext.matomo.paster:matomo
+    
