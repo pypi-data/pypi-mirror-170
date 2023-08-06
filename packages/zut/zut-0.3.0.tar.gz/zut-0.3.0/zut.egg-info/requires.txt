@@ -1,0 +1,13 @@
+
+[extra]
+tabulate>=0.8.10
+django>=4.0.4
+djangorestframework>=3.13.1
+psycopg2-binary>=2.9.3
+django-postgres-copy>=2.7.1
+cmarkgfm>=0.8.0
+python-dotenv>=0.20.0
+
+[extra:sys_platform == "win32"]
+pywin32>=304
+keyring>=23.7.0

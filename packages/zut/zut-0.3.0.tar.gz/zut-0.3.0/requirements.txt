@@ -1,0 +1,31 @@
+#
+# All requirements are optional: the main library (accessed through zut.__init__)
+# does not have any external dependency.
+#
+
+# for zut.out (only if headers and rows are used) and zut.cred (only for command handle)
+tabulate >= 0.8.10
+
+# for zut.cred and zut.net.win
+pywin32 >= 304; sys_platform == "win32"
+
+# for zut.cred
+keyring >= 23.7.0; sys_platform == "win32"
+
+# for zut.management, zut.middleware, zut.templatetags, zut.views
+django >= 4.0.4
+
+# for zut.middleware
+djangorestframework >= 3.13.1
+
+# for zut.db.postgresql
+psycopg2-binary >= 2.9.3
+
+# for zut.db.transfer (load_from_csv)
+django-postgres-copy >= 2.7.1
+
+# for zut.views.MarkdownTemplateView
+cmarkgfm >= 0.8.0
+
+# for test.settings
+python-dotenv >= 0.20.0
