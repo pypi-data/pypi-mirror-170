@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+analogVoiceModem/__init__.py
+analogVoiceModem/recordAndPlay.py
+analogVoiceModem.egg-info/PKG-INFO
+analogVoiceModem.egg-info/SOURCES.txt
+analogVoiceModem.egg-info/dependency_links.txt
+analogVoiceModem.egg-info/entry_points.txt
+analogVoiceModem.egg-info/not-zip-safe
+analogVoiceModem.egg-info/top_level.txt
