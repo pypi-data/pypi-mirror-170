@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: inline-sql
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/ekzhang/inline-sql#readme
+Project-URL: Issues, https://github.com/ekzhang/inline-sql/issues
+Project-URL: Source, https://github.com/ekzhang/inline-sql
+Author-email: Eric Zhang <ekzhang1@gmail.com>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Inline SQL
+
+[![PyPI - Version](https://img.shields.io/pypi/v/inline-sql.svg)](https://pypi.org/project/inline-sql)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/inline-sql.svg)](https://pypi.org/project/inline-sql)
+
+---
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install inline-sql
+```
+
+## Contributions
+
+Contributions are appreciated, especially in the following areas:
+
+- Additional query engines
+- File format support (CSV, Parquet, Arrow)
+- Support for dataframe libraries (e.g., Polars)
+- Distributed computing (Ray, Dask)
+- Documentation
+
+## License
+
+`inline-sql` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
