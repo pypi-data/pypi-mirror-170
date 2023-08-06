@@ -1,0 +1,12 @@
+core_of_theaisphere/__init__.py,sha256=Km0Gfqnh-OvSdYUkyPKJdfGNry04Z46Zl8X-Yb_ipu0,112
+core_of_theaisphere/_version.py,sha256=Mpv4klDKDm-RnAb_uzsPJP5fLYTi2JJlStHp611p1Rg,170
+core_of_theaisphere/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_of_theaisphere/examples/best_practices.py,sha256=ZKgrHih6rd2JFQQK08BvwcE0yzTPzKNkQvY7fuc0fro,1965
+core_of_theaisphere/examples/building_mlp.py,sha256=IaacM6Cy2flukWwPQpNjCWv67poRcwdtrUkV2PGFSYg,496
+core_of_theaisphere/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_of_theaisphere/utils/build_sequential_mlp.py,sha256=VY4nQJB8RBdk0yosYQZpXK9J0sQDsvuVXG8ZFhVFreQ,5807
+core_of_theaisphere-0.0.0a0.dist-info/LICENSE,sha256=SzmiXUd3sXmLFQPfsUrQ2jpXo3XLzcDgmqjEK1KZgAE,1068
+core_of_theaisphere-0.0.0a0.dist-info/METADATA,sha256=gd1I91cFdfJzSd3eoki1UeF_N4PJem1kHawcQ70kIdU,1066
+core_of_theaisphere-0.0.0a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+core_of_theaisphere-0.0.0a0.dist-info/top_level.txt,sha256=5tLr17XQOZQc6hfklJ7ZS4FiY1anwC3pLsCpsc-r5Lc,20
+core_of_theaisphere-0.0.0a0.dist-info/RECORD,,
