@@ -1,0 +1,4 @@
+[console_scripts]
+QianshiJinshengShiliutangShengsiQimengke = QianshiJinshengShiliutangShengsiQimengke.__main__:main
+qianshi-jinsheng-shiliutang-shengsi-qimengke = QianshiJinshengShiliutangShengsiQimengke.__main__:main
+
