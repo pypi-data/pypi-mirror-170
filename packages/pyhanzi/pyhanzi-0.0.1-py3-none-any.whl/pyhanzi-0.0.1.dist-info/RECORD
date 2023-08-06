@@ -1,0 +1,10 @@
+pyhanzi/__init__.py,sha256=RxCQFvBHbK8xSJ2H5IsXAVUC6CdJgfqIF9ijv1wg_r0,495
+pyhanzi/compat.py,sha256=3FBfIJ26EB5jBcw9TY1pfqaFJgr50NLhjP9sTn7uLns,661
+pyhanzi/runner.py,sha256=Koi1XGJgugd8qV_x9c7j6EWOcgismNzxu8ujVR00vjo,2484
+pyhanzi/core/__init__.py,sha256=fzGtxyLA7hmuJuRf-YqMaVffXRQPsKnpcHD7WbT8V-M,37
+pyhanzi-0.0.1.dist-info/LICENSE,sha256=4hN5J4_B31L8v3ADTxyXeiPeXdoAIuN7fO2MejEwrb0,1091
+pyhanzi-0.0.1.dist-info/METADATA,sha256=BUwiG1xqqjQpE-FFZYybmW7g9-J5d3ossvIsoTfr18Q,2308
+pyhanzi-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyhanzi-0.0.1.dist-info/entry_points.txt,sha256=AtjaXs1lj9S40HCRJXDB2JLMy_A0m39kiFe2XSWq4Nw,44
+pyhanzi-0.0.1.dist-info/top_level.txt,sha256=A4hb7KijuR9ns6cb1hsCjYgAWP5svMLH2UT8rrl66PE,8
+pyhanzi-0.0.1.dist-info/RECORD,,
