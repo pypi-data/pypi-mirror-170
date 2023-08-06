@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: libnxctrl
+Version: 0.2.1.dev0
+Summary: Python Library Emulating Nintendo Switch Controllers
+Home-page: https://github.com/Victrid/libnxctrl
+Author: Weihao Jiang
+Author-email: weihau.chiang@gmail.com
+License: GPLv3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: joycontrol
+Requires-Dist: hid (~=1.0.5) ; extra == 'joycontrol'
+Requires-Dist: aioconsole (~=0.5.1) ; extra == 'joycontrol'
+Provides-Extra: nxbt
+Requires-Dist: dbus-python (<1.4.0,>=1.2.16) ; extra == 'nxbt'
+Requires-Dist: Flask (<2.3.0,>=1.1.2) ; extra == 'nxbt'
+Requires-Dist: Flask-SocketIO (<5.4.0,>=5.0.1) ; extra == 'nxbt'
+Requires-Dist: eventlet (<0.34,>=0.31) ; extra == 'nxbt'
+Requires-Dist: blessed (<1.20.0,>=1.17.10) ; extra == 'nxbt'
+Requires-Dist: pynput (~=1.7.1) ; extra == 'nxbt'
+Requires-Dist: psutil (~=5.6.6) ; extra == 'nxbt'
+Requires-Dist: cryptography (<38.1.0,>=3.3.2) ; extra == 'nxbt'
+Provides-Extra: usb
+Requires-Dist: pyserial (~=3.5) ; extra == 'usb'
+
+# libnxctrl
+
+Python Library Emulating Nintendo Switch Controllers
+
+## Installation
+
+There are multiple backends: nxbt and splatplost USB. The nxbt backend can only be used on Linux, while the splatplost
+USB backend can be used on Linux and Windows.
+
+```bash
+pip install libnxctrl[nxbt]
+pip install libnxctrl[usb]
+```
+
+## Usage
+
+If running libnxctrl as a linux bluetooth daemon, for example, on a raspberry Pi which doesn't have a GUI interface, you
+can run with the following command:
+
+```bash
+libnxctrl --host 0.0.0.0 --port 15973
+```
+
+Use splatplost and select Remote Backend to connect to the daemon. For example, if you access your raspberry Pi
+from `192.168.1.123` and set the port to `12345`, fill the `Remote Server` field with `http://192.168.1.123:12345`.
