@@ -1,0 +1,15 @@
+cacp/__init__.py,sha256=fz35YmTClucJD4I9lTIiPKOa59hcqK8e7mzO3z7VzeU,389
+cacp/comparison.py,sha256=jL3CQFg5FzLTVeswktczKom2u2D3hDVeNgMVvvwhkc4,4879
+cacp/dataset.py,sha256=I3GUj5jVF3bnwbsRL9cec1hvCapWB7lpM4z-kQGrBAs,10773
+cacp/info.py,sha256=eGuCX0VC9ETe_ze5CzaMTEJA812nSOPIRYliiHwqOvw,2540
+cacp/plot.py,sha256=GDtrwmWlm-iQ1f8WpJOXb7a-cfZbBsrMO_VKskZcOLk,1519
+cacp/result.py,sha256=OAQVqk1WI12m44mM_2RNdPmIZm8mKlwN0LdrtIWiTd8,1764
+cacp/run.py,sha256=iaURrbga0-O8n4YquWbz3FgaebP_3k7AlOCcPfky8OI,2628
+cacp/time.py,sha256=OIIIiOrK2vnVWMk95ZpZKFIm1wJ_XS-kumyRf70l2Uw,947
+cacp/util.py,sha256=7RY_zRJclSLzwjZnXVr5MJQdh4t8-Dbw-6S5l4gqn5c,2361
+cacp/wilcoxon.py,sha256=9qi6Dm3jCaOVuL2VIc_LpXaAghsvevZXU2QQoLD-ExA,4306
+cacp/winner.py,sha256=xstOUa_YWcM0r3O7TaHfvl9MF5h4MhF58iJ4oSA6Duk,3213
+cacp-0.3.0a0.dist-info/LICENSE,sha256=KeOfVsE0yvHVdjFbpea1Dd6hccCHbYIScszrYhpN2Kc,1074
+cacp-0.3.0a0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+cacp-0.3.0a0.dist-info/METADATA,sha256=B63VkP7HZ4zF6-xL0pLmNQaAC4exNtRsZeiCnms5PYw,5222
+cacp-0.3.0a0.dist-info/RECORD,,
