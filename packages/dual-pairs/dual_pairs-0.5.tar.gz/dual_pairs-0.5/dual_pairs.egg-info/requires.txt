@@ -1,0 +1,4 @@
+sagemath
+
+[doc]
+sphinx>=2
