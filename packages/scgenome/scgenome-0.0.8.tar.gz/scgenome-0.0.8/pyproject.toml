@@ -1,0 +1,41 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "scgenome"
+authors = [{name = "Andrew McPherson", email = "andrew.mcpherson@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "adjustText",
+    "anndata",
+    "bamread",
+    "bokeh",
+    "brewer2mpl",
+    "csverve",
+    "hdbscan",
+    "hmmlearn",
+    "lda",
+    "matplotlib",
+    "numba",
+    "numexpr",
+    "numpy",
+    "pandas",
+    "pyBigWig",
+    "pyfaidx",
+    "pyranges",
+    "pysam",
+    "PyYAML",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "statsmodels",
+    "umap-learn",
+    "wgs_analysis",
+]
+
+[project.urls]
+Home = "https://scgenome.readthedocs.io/"
