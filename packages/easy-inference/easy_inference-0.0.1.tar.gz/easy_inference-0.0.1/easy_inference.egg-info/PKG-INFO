@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: easy-inference
+Version: 0.0.1
+Summary: Got a working detection model file? Want to quickly setup inference pipelines? You are in the right place!
+Author: Chadi Salmi
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: gpu
+Provides-Extra: testing
+
+# Easy Inference
+
+Welcome to the easy inference repository! The main goal of this repository is to provide a clean, simple and short way of setting up inference pipelines for 2D (and 3D) visual detection.
+The interfaces to camera drivers are abstracted away as python `generators`. A simple inference pipeline for a webcam based inference pipeline looks as follows:
+
+```Python3
+from easy_inference.providers.webcam import Webcam
+
+provider = Webcam(source=0)
+
+for frame in provider:
+
+  # run my detection 
+```
+
+See the examples directory for some `yolov7` pipelines.
+
