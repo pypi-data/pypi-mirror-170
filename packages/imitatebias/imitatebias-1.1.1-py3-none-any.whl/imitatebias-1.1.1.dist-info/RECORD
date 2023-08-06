@@ -1,0 +1,10 @@
+imitatebias/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+imitatebias/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imitatebias/cancels.py,sha256=werDXvm6EwjhVqW6YWs3hyQbGFaBK9Nlyz0IW-g50WQ,11951
+imitatebias/generators.py,sha256=M9PhAjg-W6p6L-UN4FRh6R054R3E_OaeTvy0Qk87JDc,6710
+imitatebias/imitate.py,sha256=rLjJuyYcxqFLL2yzJP3qDydeYGIJ8BZ77RPb1gDO60U,25307
+imitatebias/mimic.py,sha256=AW4gVDuMD8NS4up-cYXzwSpXfL5ZQOetG_kVeImjhQY,33188
+imitatebias-1.1.1.dist-info/METADATA,sha256=EBZm0xxhXVMhg2ug7DrqJnK7WF8d9qLKf3sCsuDXJbg,5448
+imitatebias-1.1.1.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+imitatebias-1.1.1.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+imitatebias-1.1.1.dist-info/RECORD,,
