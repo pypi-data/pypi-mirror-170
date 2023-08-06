@@ -1,0 +1,4 @@
+[console_scripts]
+ShenmixueXingyu = ShenmixueXingyu.__main__:main
+shenmixue-xingyu = ShenmixueXingyu.__main__:main
+
