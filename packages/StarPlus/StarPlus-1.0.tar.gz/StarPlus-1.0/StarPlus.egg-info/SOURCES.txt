@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+StarPlus/FaceDetector.py
+StarPlus/FaceMeshDetector.py
+StarPlus/HandDetector.py
+StarPlus/PoseDetector.py
+StarPlus/Screen.py
+StarPlus/SelfieSegmentation.py
+StarPlus/Utils.py
+StarPlus/__init__.py
+StarPlus.egg-info/PKG-INFO
+StarPlus.egg-info/SOURCES.txt
+StarPlus.egg-info/dependency_links.txt
+StarPlus.egg-info/requires.txt
+StarPlus.egg-info/top_level.txt
