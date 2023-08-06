@@ -1,0 +1,10 @@
+vkgdr-0.1.dist-info/top_level.txt,sha256=JVmrXbatIKQ0w349460lDrE8r3sV7sn2d0Tt8YIghSM,6
+vkgdr-0.1.dist-info/LICENSE,sha256=BAHzBiS3KiPqEwaoYuKjX7UEMKkaVJRwCjC-xB-Q1_o,1998
+vkgdr-0.1.dist-info/METADATA,sha256=D70m5HVd1ztihhfbm6RQO5_5qlogrPpLv_cYArO_jrY,881
+vkgdr-0.1.dist-info/RECORD,,
+vkgdr-0.1.dist-info/WHEEL,sha256=xW7ukmK0Ld3aBhQNgZ7D9JHfahvEg2yqqGkJINd71Bc,217
+vkgdr/pycuda.py,sha256=tFPntQgep6EvSLXchPVIAAbowy2ffQGN7KEU4T8-ZXQ,2866
+vkgdr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vkgdr/build.py,sha256=WJClcR7GlRhyLV61OG4Zd_2RV61IzmHKAmwlC2_G2Lo,2154
+vkgdr/__init__.py,sha256=qg_5hjHCBdCejesZbYZ7cO_Y1KpqDnBmv3WV7VCfOhM,6829
+vkgdr/_vkgdr.abi3.so,sha256=u2r0PIRZrYV7zwKFLKD5fPGG6NUWAyDjluzpq5NIKYg,137200

@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: vkgdr
+Version: 0.1
+Summary: Use Vulkan to allocate CUDA memory that is writable from the host
+Home-page: https://github.com/ska-sa/vkgdr
+Author: Bruce Merry
+Author-email: cbf@sarao.ac.za
+License: Modified BSD
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: cffi (>=1.12.0)
+Provides-Extra: pycuda
+Requires-Dist: pycuda ; extra == 'pycuda'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pycuda ; extra == 'test'
+Requires-Dist: numpy ; extra == 'test'
+
+Use Vulkan to allocate CUDA memory that is writable from the host.
+
+See the documentation in the doc/ directory for further information.
