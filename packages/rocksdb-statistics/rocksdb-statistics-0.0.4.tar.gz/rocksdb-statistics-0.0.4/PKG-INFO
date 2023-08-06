@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: rocksdb-statistics
+Version: 0.0.4
+Summary: Parses db_bench.log files outputted from RocksDB
+Home-page: https://github.com/warlo/rocksdb-statistics/
+Author: Hans-Wilhelm Warlo
+Author-email: hw@warlo.no
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: black (==22.8.0)
+Requires-Dist: isort (==5.10.1)
+Requires-Dist: mypy (==0.982)
+Project-URL: Repository, https://github.com/warlo/rocksdb-statistics/
+Description-Content-Type: text/markdown
+
+# rocksdb-statistics
+
+Small python script to generate basic pgfplots axes using regex
+
+## Usage
+
+`pip install rocksdb-statistics`
+`python -m rocksdb-statistics db_bench.log`
+
