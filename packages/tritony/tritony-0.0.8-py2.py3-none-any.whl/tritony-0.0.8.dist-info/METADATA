@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: tritony
+Version: 0.0.8
+Summary: Tiny configuration for Triton Inference Server
+Home-page: https://github.com/rtzr/tritony
+Author: Arthur
+Author-email: arthur@rtzr.ai
+License: BSD
+Keywords: grpc,http,triton,tensorrt,inference,server,service,client,nvidia,rtzr
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tritonclient[all] (>=2.18.0)
+Requires-Dist: protobuf (<3.20,>=3.5.0)
+Requires-Dist: orjson (>=3.6.8)
+Requires-Dist: reretry (>=0.11.1)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+
+# tritony - Tiny configuration for Triton Inference Server
+
+![CI](https://github.com/rtzr/tritony/actions/workflows/pre-commit_pytest.yml/badge.svg)
+
+## Key Features
+
+- [x] Simple configuration. Only `$host:$port` and `$model_name` are required.
+- [x] Generating asynchronous requests with `asyncio.Queue`
+
+## Requirements
+
+    $ pip install tritonclient[all]
+
+## Install
+
+    $ pip install tritony
+
+## Test
+
+### With Triton
+
+```bash
+docker run --rm \
+    -v ${PWD}:/models \
+    nvcr.io/nvidia/tritonserver:22.01-pyt-python-py3 \
+    tritonserver --model-repo=/models
+```
+
+```bash
+pytest -m -s tests/test_tritony.py
+```
+
+### Example with image_client.py
+
+- Follow steps
+  in [the official triton server documentation](https://github.com/triton-inference-server/server#serve-a-model-in-3-easy-steps)
+
+```bash
+# Download Images from https://github.com/triton-inference-server/server.git
+python ./example/image_client.py --image_folder "./server/qa/images"
+```
+
