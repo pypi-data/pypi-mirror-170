@@ -1,0 +1,9 @@
+pkgu.py,sha256=9qUJ9CL-77aHQSetdWhjUtKG0gkzHPpNA0L9E1roJnA,9401
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pkgu.py,sha256=H4uyQlvQvicY_aSX0GvN-osaCJPa_yusaXiwZl44bbM,504
+pkgu-0.0.10.dist-info/LICENSE,sha256=jbggnSlmeDGtLO-kr8YI-66HEVIsJhJzDqRN3HZOteI,1071
+pkgu-0.0.10.dist-info/METADATA,sha256=hfp4_RXBX3bha0bju2YC2Is-oLJ0APheXlX2JL7cEkA,2684
+pkgu-0.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pkgu-0.0.10.dist-info/entry_points.txt,sha256=hRXb9Y4HNGoP420mzUW32wERo3ZLxcP2A2ktBFSHaZc,36
+pkgu-0.0.10.dist-info/top_level.txt,sha256=qvWOXnZNfex3qxvTSTx_H3DAt_M0pznPHdNAojEPibY,21
+pkgu-0.0.10.dist-info/RECORD,,
