@@ -1,0 +1,16 @@
+gitpython==3.*
+pyyaml==5.*
+
+[dev]
+build
+ipdb
+ipython
+sphinx
+sphinx-toolbox
+numpydoc
+black
+pytest
+pytest-watch
+coverage
+tqdm
+jupyter
