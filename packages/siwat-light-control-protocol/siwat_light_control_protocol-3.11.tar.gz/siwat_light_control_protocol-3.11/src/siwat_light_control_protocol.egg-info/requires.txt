@@ -1,0 +1,5 @@
+numpy
+paho-mqtt
+pyserial
+scipy
+wheel
