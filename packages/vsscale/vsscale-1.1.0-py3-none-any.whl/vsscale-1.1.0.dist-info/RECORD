@@ -1,0 +1,14 @@
+vsscale/__init__.py,sha256=Y8I_n5y9cuyVMqVqBDTkJTGn87pJEngnpvuQsl9XyXw,252
+vsscale/_metadata.py,sha256=TaaXgPjkdrAvXYO6DvHLLdSPTSO_SCIdr6jNwCeULCg,364
+vsscale/descale.py,sha256=lw2XUWAQ0pihVFypzA18hL8UqBbmgxMfTczQmcC6uzU,12383
+vsscale/exceptions.py,sha256=zUl4sc0xOf28sZG8JriyO1kr61IW3DXrI-JZ0StXvec,566
+vsscale/gamma.py,sha256=8tBiz8rcWA4evRbckqhsLYqLNIMwblZrthG7ccR7Ym0,2584
+vsscale/mask.py,sha256=ghYKZqQRjqlxYu4hhYSR3vjhzyvNnguWlhvMK1kV0to,4819
+vsscale/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsscale/scale.py,sha256=nACTYIxN1hMzDzVRI7gGWOrWRmYaL2SWV0cHiHqPNZQ,8704
+vsscale/types.py,sha256=qNbzmv0NomjYWVojv1y7aCsYdo3Ynh_qHeLq0RMRJ5o,6591
+vsscale-1.1.0.dist-info/LICENSE,sha256=c7zRrcdsvNZLijyo88GQRpJcrBlQTR-ANFAUH1PCi24,1088
+vsscale-1.1.0.dist-info/METADATA,sha256=sFDhPkXCmfLNEryjMCgTYyoASx_DA25T3PPbyO3n8Z0,1339
+vsscale-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vsscale-1.1.0.dist-info/top_level.txt,sha256=e8d42HINOykR9B4ZI7um2m6KsbVFqUvimTZlgF-6meY,8
+vsscale-1.1.0.dist-info/RECORD,,
