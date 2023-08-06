@@ -1,0 +1,4 @@
+[console_scripts]
+ZiweiSihua = ZiweiSihua.__main__:main
+ziwei-sihua = ZiweiSihua.__main__:main
+

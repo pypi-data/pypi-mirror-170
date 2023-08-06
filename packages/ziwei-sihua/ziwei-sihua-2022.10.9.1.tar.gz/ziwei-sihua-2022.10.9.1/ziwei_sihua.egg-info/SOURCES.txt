@@ -1,0 +1,12 @@
+README.md
+setup.py
+ZiweiSihua/README.md
+ZiweiSihua/__init__.py
+ZiweiSihua/__main__.py
+ZiweiSihua/file.pdf
+ZiweiSihua/index.html
+ziwei_sihua.egg-info/PKG-INFO
+ziwei_sihua.egg-info/SOURCES.txt
+ziwei_sihua.egg-info/dependency_links.txt
+ziwei_sihua.egg-info/entry_points.txt
+ziwei_sihua.egg-info/top_level.txt
