@@ -1,0 +1,8 @@
+LICENCE.txt
+README.md
+pyproject.toml
+src/simple-countdowntimer/__init__.py
+src/simple_countdowntimer.egg-info/PKG-INFO
+src/simple_countdowntimer.egg-info/SOURCES.txt
+src/simple_countdowntimer.egg-info/dependency_links.txt
+src/simple_countdowntimer.egg-info/top_level.txt

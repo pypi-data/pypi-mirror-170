@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: simple-countdowntimer
+Version: 0.0.1
+Summary: A simple countdown timer library for Python or MicroPython
+Author-email: Kevin McAleer <kevinmcaleer@gmail.com>
+Project-URL: Homepage, https://github.com/kevinmcaleer/countdowntimer
+Project-URL: Bug Tracker, https://github.com/kevinmcaleer/countdowntimer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# Countdown Timer
+
+This simple class allows you to simplify project that require a countdown timer. Simply set the duration of the timer either using `countdowntimer.duration` or `countdowntimer.duration_in_seconds` and then run `countdowntimer.reset()`. It will then countdown from the future time - `current_time + duration`. Once the timer is up the `isalarm` variable will become `True`. This can be put into a simple loop such as:
+
+``` python
+c = CountDownTimer()
+c.duration = 1 # minute
+
+c.reset()
+while not c.isalarm():
+    c.status()
+    sleep(0.25)
+
+print("Timer is done")
+
+```
+
+---
+
+## Functional reference
+
+Below is a description of each of the functions
+
+---
+
+### tick
+
+The countdowntimer class has a `tick` function that will return the remaining time as a simple printable time string:
+
+`countdowntimer.tick()`
+
+---
+
+### target_time
+
+Returns the Target time, that is the start_time + the duration in minutes
+
+`countdowntimer.target_time`
+
+---
+
+### target_str
+
+The countdowntimer class has a `target_time_str` function that will return the future, or target time as a pretty printable string.
+
+`countdowntimer.target_time_str()`
+
+---
+
+### start_time_str
+
+The countdowntimer class has a `start_time_str` function that will return the start time - the time the counter started counting from as a pretty printable string.
+
+`countdowntimer.start_time_str()`
+
+---
+
+### remaining_str
+
+Returns the remaining time as a pretty printable string.
+
+`countdowntimer.remaining_str()`
+
+---
+
+### isalarm
+
+Returns `True` if the countdown timer target time has been reached, and `False` if the time has yet to be achieved.
+
+`countdowntimer.isalarm()`
+
+---
+
+### status
+
+If the timer hasn't reached its target time, this function prints out a single line showing:
+
+* The Start time
+* The Current Time
+* The Remaining Time
+
+`countdowntimer.status()`
+
+---
+
+## Why this class was created
+
+This library was created for both the AI Assistant Pomodoro skill as well as the `Build your own Cute Pomodoro Desk Robot - HeyBot!` [see video below](#youtube-video).
+
+The full BYO Cute Pomodoro Desk Robot code is [available here](https://github.com/kevinmcaleer/heybot).
+
+---
+
+# YouTube Video
+
+Click the thumbnail below to watch the show all about this build.
+
+[![YouTube Thumbnail](https://img.youtube.com/vi/MWg1xdmgE04/0.jpg)](https://youtu.be/MWg1xdmgE04)
