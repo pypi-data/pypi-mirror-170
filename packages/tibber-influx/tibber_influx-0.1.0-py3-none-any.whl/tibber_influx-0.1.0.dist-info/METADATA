@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tibber-influx
+Version: 0.1.0
+Summary: 
+Author: Kristian Aurlien
+Author-email: kristian@aurlien.net
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: influxdb-client[async] (>=1.32.0,<2.0.0)
+Requires-Dist: pyTibber (>=0.25.2,<0.26.0)
+Requires-Dist: python-dotenv (>=0.21.0,<0.22.0)
+Description-Content-Type: text/markdown
+
+# Tibber-Influx extractor
+
+Extract price- and power usage data from Tibber, and store in InfluxDB. 

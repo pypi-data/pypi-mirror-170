@@ -1,0 +1,6 @@
+tibber-influx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tibber-influx/app.py,sha256=N1iKT99Ofx3JgEQUAIc8vMWxllWS-pFouRRBWWSKrvQ,858
+tibber-influx/price_service.py,sha256=Kfi3_sWivdMAfRr7Hp9FiONAZpyRdAoP9gN7DF-9tGU,1246
+tibber_influx-0.1.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+tibber_influx-0.1.0.dist-info/METADATA,sha256=xDdgZWLjbGZns3kYB_lc-ieYhr1SaAO8utjJuAmlm4o,592
+tibber_influx-0.1.0.dist-info/RECORD,,
