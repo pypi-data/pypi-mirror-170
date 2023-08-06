@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nj
+Version: 0.0.3
+Summary: Triangle plots
+Home-page: https://github.com/thorwhalen/ut/tree/master/others/triangle.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# nj
+Triangle plots
+
+
+To install:	```pip install nj```
+
+
