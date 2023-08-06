@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: price-val-engine
+Version: 0.1.10
+Summary: last price revision validation rules
+Author: Chandan Kumar Ojha
+Author-email: mr.chandanojha@gmail.com
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Price Validation Engine
+
+## Overview
+
+Price Validation Engine is framework to create skeleton to validate last price revision 
+
+
+## requirements
+
+- python 3.6+
+- Linux, MacOS, windows
+
+
+### install
+
+    pip install price-val-engine
+
+
+### Start Project
+    python -m price_val_engine startproject project_name 
+
+
+### Project template structure
+    - base_dir
+        - project_name 
+            - __init__.py
+            - settings.py
+            - validtion_rules.py
+        - run.py
+
+
+### Run project
+
+    python run.py --input=input.csv --output=output.csv 
+
+
+### input as s3 csv file
+
+    python run.py --input=s3://bucket_name/path/input.csv --output=s3://bucket_name/path/input.csv
+
+### settings.py
+
+ - default validation pipeline
+
+        VALIDATION_PIPELINES = [  
+            'price_val_engine.core.validations.general_rules.NullNegativeZeroValidationRule',  
+            'price_val_engine.core.validations.general_rules.OutOfRangeValidationRule',  
+            'price_val_engine.core.validations.revision_rules.AbsoluteDeltaPercentageRangeValidationRule',  
+        ]
+
+
+### Add new custom validation rule
+
+    - step 1 you can define your custom validtion rules in the file `project_name/validation_rules.py`
+
+        class MyValidationRule(BaseRule)
+            name = "validation_rules.myvalidation_rule"
+            message = "price could not be gte {max_price}"
+            severity = ''
+
+            def is_valid(self, item):
+                max_price = 50
+                if item['price'] >= max_price:
+                    self.message.format(max_price)
+                    self.severity = 'HIGH' # you can define severity LOW, MEDIUM and HIGH
+    
+    - step 2 add your newly defined rule in `setting.py`
+
+        VALIDATION_PIPELINES = [  
+            ...,
+            'project_name.validation_rules.MyValidationRule
+        ]
+
+
+
+### Validation_rules
+
+#### `price_val_engine.core.validations.general_rules.NullNegativeZeroValidationRule`
+
+#### `price_val_engine.core.validations.general_rules.OutOfRangeValidationRule`
+
+#### `price_val_engine.core.validations.revision_rules.AbsoluteDeltaPercentageRangeValidationRule`
+
+#### `price_val_engine.core.validations.revision_rules.DeltaPercentageValidationRule`
+
+#### `price_val_engine.core.validations.revision_rules.DeltaValidationRule`
+
+
+
+### Default Settings:
+##### NullNegativeZeroValidationRule config
+    - EMPTY_VALUES:  (None, "", [], (), {})
+    
+##### OutOfRangeValidationRule config
+    - GEN_VAL_OUT_OF_RANGE_VALUE: 
+
+            {
+                'min_value': 100000.0,
+                'max_value': 10000000.0
+            }
+
+##### AbsoluteDeltaPercentageRangeValidationRule config
+    - DEFAULT_LP_FIELD: 'final_liquidation_price'
+    - DEFAULT_PREV_DAY_LP_FIELD: 'lp'
+
+    - DELTA_PCT_VAL_DEFAULT:  (-5, 5)
+    - DELTA_PCT_VAL_LOW: (-7, 7)
+    - DELTA_PCT_VAL_MEDIUM: (-10, 10)
+    
+    
+##### slack notification 
+    - SLACK_ENABLED: False
+    - SLACK_BOT_TOKEN: os.environ.get("SLACK_BOT_TOKEN")
+    - SLACK_CHANNEL: os.environ.get("SLACK_CHANNEL")
+    - COLUMNS_TO_BE_SEND_ON_ALERT: '__all__'
+##### Read Write CSV file from S3
+    - AWS_ACCESS_KEY_ID: os.environ.get('AWS_ACCESS_KEY_ID')
+    - AWS_SECRET_ACCESS_KEY: os.environ.get('AWS_SECRET_ACCESS_KEY')
+    - AWS_SESSION_TOKEN: os.environ.get('AWS_SESSION_TOKEN')
