@@ -1,0 +1,4 @@
+opencv-python
+gdown
+onnx
+onnxruntime==1.7
