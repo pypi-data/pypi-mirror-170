@@ -1,0 +1,2 @@
+[console_scripts]
+blns-recovery = blns_recovery.main:main
