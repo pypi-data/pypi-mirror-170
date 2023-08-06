@@ -1,0 +1,46 @@
+[build-system]
+requires = ["flit_core >=3.6,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+dynamic = ["version", "description"]
+name = "sphinx-autopyproject"
+authors = [{name = "Christian Sachs", email = "sachs.christian@gmail.com"}]
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = []
+dependencies = [
+    "build>=0.8",
+    "tomli; python_version < '3.11'",
+]
+
+[project.optional-dependencies]
+check = ["black", "isort", "pyproject-flake8", "pylint", "mypy"]
+
+[project.urls]
+Home = "https://github.com/csachs/sphinx-autopyproject"
+
+[project.scripts]
+spinx-autopyproject-build = "sphinx_autopyproject.__main__:main"
+
+[tool.flit.module]
+name = "sphinx_autopyproject"
+
+[tool.black]
+skip-string-normalization = 1
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203"]
+max-complexity = 10
+exclude = "venv"
+
+[tool.pylint.'MESSAGE CONTROL']
+disable = "missing-module-docstring,missing-class-docstring,missing-function-docstring,invalid-name,import-error"
+
+[tool.mypy]
+ignore_missing_imports = true
