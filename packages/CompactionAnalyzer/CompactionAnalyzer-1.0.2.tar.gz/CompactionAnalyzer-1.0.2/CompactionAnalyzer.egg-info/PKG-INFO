@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: CompactionAnalyzer
+Version: 1.0.2
+Summary: A Python package to analyze tissue compaction around cells in fiber materials
+Home-page: 
+Download-URL: 
+Author: David Böhringer, Andreas Bauer
+Author-email: david.boehringer@fau.de
+License: GNU General Public License v3.0
+Keywords: structure,contractility,compaction,fibrosis,biophysics
+License-File: LICENSE
