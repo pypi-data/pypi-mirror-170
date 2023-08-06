@@ -1,0 +1,8 @@
+aiida_eos/__init__.py,sha256=NT7iT0VjiJfkZZZk2j1a4U901A7A9gefN9FSyL1SdCs,92
+aiida_eos/eos.py,sha256=i1hwF3KmwmX3qzBf5f1jcIWaIa2Qj5Z6JYO676hu1PI,3917
+aiida_eos/rescale.py,sha256=AEHjaTvbN_Kkbylm_YU78-U_YZ6phqSEvB3QECno_tE,407
+aiida_eos-0.0.1.dist-info/entry_points.txt,sha256=AjGUSnUuLfh-TMWAV19q73llBanlaQTAt6IglmlXjAM,58
+aiida_eos-0.0.1.dist-info/LICENSE,sha256=v6XDc-PUly1UI3XQAT7E-3F2iUQnMVpGhapVerx98AU,1079
+aiida_eos-0.0.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+aiida_eos-0.0.1.dist-info/METADATA,sha256=wl4IcZT3EgEkkX1OXKIrvedhDD0saEm_qsGwrfAcQsk,8986
+aiida_eos-0.0.1.dist-info/RECORD,,

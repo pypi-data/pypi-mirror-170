@@ -1,0 +1,3 @@
+[aiida.workflows]
+eos.base=aiida_eos.eos:EquationOfState
+
