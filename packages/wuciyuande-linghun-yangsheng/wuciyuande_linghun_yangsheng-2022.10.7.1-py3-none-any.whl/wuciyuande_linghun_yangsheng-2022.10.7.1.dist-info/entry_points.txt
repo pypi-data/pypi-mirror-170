@@ -1,0 +1,4 @@
+[console_scripts]
+WuciyuandeLinghunYangsheng = WuciyuandeLinghunYangsheng.__main__:main
+wuciyuande-linghun-yangsheng = WuciyuandeLinghunYangsheng.__main__:main
+
