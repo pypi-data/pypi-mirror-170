@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: couchdblink
+Version: 0.0.1
+Summary: A thin layer of abstraction for linking python projects to data in CouchDB servers.
+Home-page: https://github.com/MerfaSmean/couchdblink
+Author: Samuel Freeman
+Author-email: soundmaking@merfasmean.com
+License: MIT
+Download-URL: https://github.com/MerfaSmean/couchdblink/archive/refs/heads/main.zip
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# couchdblink
+A thin layer of abstraction for linking python projects to data in CouchDB servers.
+
+- [setup notes](SETUP.md)
+- [changes](CHANGELOG.md)
+
+

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+couchdblink/__init__.py
+couchdblink/config.py
+couchdblink/server_functions.py
+couchdblink.egg-info/PKG-INFO
+couchdblink.egg-info/SOURCES.txt
+couchdblink.egg-info/dependency_links.txt
+couchdblink.egg-info/requires.txt
+couchdblink.egg-info/top_level.txt
