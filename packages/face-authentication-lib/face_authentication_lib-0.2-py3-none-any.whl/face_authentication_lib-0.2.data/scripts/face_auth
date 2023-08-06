@@ -1,0 +1,28 @@
+#!python
+
+import sys
+from face_authentication_lib import FaceAuth
+
+
+api_key = sys.argv[1]
+image_file = sys.argv[2]
+video_file = sys.argv[3]
+accuracy = sys.argv[4]
+face_detection_model = sys.argv[5]
+face_recognition_model = sys.argv[6]
+if sys.argv[7]:
+    detect_face_spoofing = True
+
+
+# Instantiate a FaceAuth object using API key
+face_auth = FaceAuth(api_key)
+
+# Call 'authenticate' method to perform face authentication given an image and video of user's face
+authentication_result = face_auth.authenticate(image_file,
+                                               video_file,
+                                               accuracy='normal',
+                                               face_detection_model="default",
+                                               face_recognition_model="default",
+                                               detect_face_spoofing=False)
+
+print(authentication_result)
