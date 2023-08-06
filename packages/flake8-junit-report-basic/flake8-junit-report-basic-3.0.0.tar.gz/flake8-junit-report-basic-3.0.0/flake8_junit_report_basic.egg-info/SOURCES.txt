@@ -1,0 +1,12 @@
+AUTHORS.rst
+LICENSE
+README.rst
+setup.py
+flake8_junit_report_basic.egg-info/PKG-INFO
+flake8_junit_report_basic.egg-info/SOURCES.txt
+flake8_junit_report_basic.egg-info/dependency_links.txt
+flake8_junit_report_basic.egg-info/entry_points.txt
+flake8_junit_report_basic.egg-info/top_level.txt
+junit_conversor/__about__.py
+junit_conversor/__init__.py
+junit_conversor/__main__.py
