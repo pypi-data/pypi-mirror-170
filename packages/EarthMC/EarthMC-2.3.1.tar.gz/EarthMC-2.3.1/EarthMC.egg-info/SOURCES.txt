@@ -1,0 +1,8 @@
+README.md
+setup.py
+EarthMC.egg-info/PKG-INFO
+EarthMC.egg-info/SOURCES.txt
+EarthMC.egg-info/dependency_links.txt
+EarthMC.egg-info/top_level.txt
+src/Utils.py
+src/__init__.py
